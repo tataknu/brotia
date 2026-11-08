@@ -87,7 +87,6 @@ export function SceneTry({ t }: { t: number }) {
           </svg>
         </div>
         <div className="st-try-url" style={{ opacity: ramp(t, 3000, 3500) }}>{DEMO_URL_LABEL}</div>
-        <div className="st-try-note" style={{ opacity: ramp(t, 3400, 3900) }}>Live demo · offline snapshot of 7 Nov 2026</div>
       </div>
     </div>
   );

@@ -48,7 +48,12 @@ Speak at a calm pace: about 2.5 words per second.
 
 **→**
 
-## 7 · Close (about 3 s)
+## 7 · Try it yourself (about 5 s)
+> This is the real report for that portfolio, and the Los Ángeles block is right at the top. Scan the code and try it yourself.
+
+**→**
+
+## 8 · Close (about 3 s)
 > BrotIA: climate risk for agricultural lending. Let's go inside.
 
 **→** (enter the platform)

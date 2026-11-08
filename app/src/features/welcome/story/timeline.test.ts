@@ -10,7 +10,7 @@ describe('story timeline', () => {
   });
 
   it('ends with the CTA, then the try-it-yourself QR slide', () => {
-    expect(SCENES.slice(-2).map((s) => s.id)).toEqual(['cta', 'try']);
+    expect(SCENES.slice(-2).map((s) => s.id)).toEqual(['try', 'cta']);
   });
 
   it('pauses, resumes and seeks exactly', () => {

@@ -12,8 +12,8 @@ export const SCENES: SceneDef[] = [
   { id: 'field', label: 'Field', dur: 5000 },
   { id: 'season', label: 'Season', dur: 10500 },
   { id: 'loan', label: 'Loan', dur: 9300 },
-  { id: 'cta', label: 'CTA', dur: 3000 },
   { id: 'try', label: 'Try it', dur: 5000 },
+  { id: 'cta', label: 'CTA', dur: 3000 },
 ];
 
 export const TOTAL = SCENES.reduce((s, x) => s + x.dur, 0);
