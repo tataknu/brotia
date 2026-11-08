@@ -118,9 +118,10 @@ export const QA_CARDS: Card[] = [
     glyph: G_SPARK,
     color: GREEN,
     items: [
-      { k: 'Farming agent', v: "Claude reads the field's history and runs backtests, e.g. 14 frost seasons incl. the Sept 2013 frost" },
-      { k: 'Proposals', v: 'zone and farm thresholds and baseline length; it can only propose numbers its tools produced' },
-      { k: 'Guard rails', v: 'changes land in the crop templates (6 crops × growth stage, per zone and farm) with an audit trail, and only on the user’s Apply' },
+      { k: 'Farming agent', v: 'Claude with 6 tools: crop template, zone, history, events, backtest, propose change' },
+      { k: 'Crop library', v: '6 crops × growth stage: sensitivity to 10 perils, frost / heat / rain thresholds, Kc · sourced from FAO and Agroseguros' },
+      { k: 'Backtests', v: 'against curated reference events, e.g. 14 frost seasons incl. the Sept 2013 frost' },
+      { k: 'Guard rails', v: 'it only proposes numbers its tools produced; values inherit template → zone → farm, audited, applied only by the user' },
       { k: 'Super-res', v: 'SEN2SRLite, 10 m → 2.5 m, for imagery display only' },
       { k: 'Not AI', v: 'the score is transparent math, explainable driver by driver; gap-filling is Whittaker smoothing' },
     ],
