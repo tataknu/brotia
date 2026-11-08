@@ -49,9 +49,9 @@ Speak at a calm pace: about 2.5 words per second.
 **→**
 
 ## 7 · Business model (about 8 s)
-> The business model is printer-and-ink. Banks pay a flat fee for the tool, priced near cost.
-> Suyana earns its margin on the cover sold inside it: the analyst sees the uninsured exposure, and quotes and binds in one click.
-> The more of the book a bank insures, the lower the premium. We start with a one-season pilot with one lender.
+> The tool is priced near cost: an annual fee for up to 1,000 hectares, plus an add-on for every extra 100.
+> Suyana earns its margin on the insurance sold through the tool: the analyst sees each field's risk and the uninsured exposure, and one click sends a quote with a policy tailored to that field.
+> That's our edge: a per-field policy other insurers can't price, inside the tool the bank already uses, sharper every season.
 
 **→**
 

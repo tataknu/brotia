@@ -232,3 +232,12 @@
 .st-biz-line i { width: 0.75cqw; height: 0.75cqw; border-radius: 21%; background: #4cc072; }
 .st-biz-line b { color: #4cc072; font-weight: 600; }
 .st-biz-line span { color: #8da096; }
+
+/* S6 · platform package: 1,000 ha base (one cell per 100 ha) plus +100 ha add-ons */
+.st-biz-ha { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5cqw; margin-top: 1.6cqw; }
+.st-biz-ha-base { display: flex; gap: 0.25cqw; }
+.st-biz-ha-base i, .st-biz-ha-add i { display: block; width: 1.1cqw; height: 1.1cqw; border-radius: 21%; }
+.st-biz-ha-add { display: inline-flex; align-items: center; gap: 0.3cqw; }
+.st-biz-ha-add em { font-style: normal; font-size: 0.8cqw; color: #9bdb8a; }
+.st-biz-ha-adds { flex-basis: 100%; display: flex; gap: 1.2cqw; }
+.st-biz-ha-l { flex-basis: 100%; font-size: 0.8cqw; letter-spacing: 0.18em; text-transform: uppercase; color: #8da096; }

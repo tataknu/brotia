@@ -1,8 +1,7 @@
 /**
- * S6 · Business model. Printer-and-ink: the platform is a flat fee at cost; the margin is the Suyana cover sold inside
- * the tool. Three columns assemble in sequence: (1) platform fee, muted; (2) insurance in the tool, with the CLSO2
- * exposure by risk tier from the snapshot; (3) the volume discount, whose stepped bars grow and discounts count in.
- * The pilot line fades in last. Pure function of `t`.
+ * S6 · Business model (team deck v07, slide 9). The tool at cost, the margin on insurance: (1) an annual platform fee
+ * for a 1,000 ha package plus add-ons per extra 100 ha; (2) insurance in the tool, with the CLSO2 exposure by risk
+ * tier from the snapshot; (3) why banks insure here. The pilot line fades in last. Pure function of `t`.
  */
 import { PixelGlyph, TIER_COLOR, Typed, fmtMoney } from './pixel';
 import type { StoryData } from './useStoryData';
@@ -14,7 +13,7 @@ const LEAF = '#9BDB8A';
 
 const G_BANK = ['...#...', '..###..', '.#####.', '.......', '.#.#.#.', '.#.#.#.', '#######'];
 const G_SHIELD = ['.#####.', '#######', '#####.#', '##.#.##', '.##.##.', '..###..', '...#...'];
-const G_STEPS = ['......#', '......#', '....#.#', '....#.#', '..#.#.#', '..#.#.#', '#.#.#.#'];
+const G_STAR = ['...#...', '...#...', '.#####.', '#######', '.#####.', '.##.##.', '##...##'];
 
 // Choreography (ms of scene time).
 const HEAD = [250, 1900] as const;
@@ -27,11 +26,8 @@ const LINE = 7400;
 
 const TIERS = ['normal', 'watch', 'high'] as const;
 const EXPO_CELLS = 12;
-const STEPS = [
-  { share: 'Under 25%', cells: 2, off: 0 },
-  { share: '25–60%', cells: 5, off: 5 },
-  { share: 'Over 60%', cells: 8, off: 10 },
-];
+const BASE_CELLS = 10; // the 1,000 ha package, one cell per 100 ha
+const ADDONS = 3; // +100 ha add-ons
 
 const rise = (t: number, a: number, dur = 500) => {
   const p = easeOut(ramp(t, a, a + dur));
@@ -73,20 +69,42 @@ export function SceneBusiness({ t, d }: { t: number; d: StoryData | null }) {
         <Typed text="The tool at cost. The margin on insurance." p={head} />
       </div>
       <div className="st-biz-sub" style={{ opacity: ramp(t, SUB, SUB + 500) }}>
-        Printer-and-ink: banks pay a flat fee; Suyana earns on the cover sold inside the tool.
+        The tool is priced near cost; Suyana earns its margin on the insurance sold through the tool.
       </div>
 
       <div className="st-biz-cols">
-        {/* 1 · Platform: muted, at cost. */}
+        {/* 1 · Platform: annual fee for a 1,000 ha package, plus add-ons per extra 100 ha. */}
         <section className="st-biz-col st-biz-muted" style={rise(t, COL[0])}>
           <header>
             <PixelGlyph rows={G_BANK} color={MUTED} size="2.2cqw" p={ramp(t, COL[0], COL[0] + 700)} />
             <div className="st-biz-h">
               <b>Platform</b>
-              <span>One simple fee</span>
+              <span>Annual fee · priced near cost</span>
             </div>
           </header>
-          <Bullets t={t} at={COL[0] + 350} items={['Flat annual subscription per bank, sized by portfolio', 'No per-loan charges', 'Goal: adoption, not profit']} />
+          <Bullets t={t} at={COL[0] + 350} items={['Fixed annual price for a package of up to 1,000 ha', 'Add-on fee for every extra 100 ha']} />
+          <div className="st-biz-ha" aria-label="1,000 ha base plus three 100 ha add-ons">
+            <span className="st-biz-ha-base">
+              {Array.from({ length: BASE_CELLS }, (_, c) => {
+                const on = clamp01(ramp(t, COL[0] + 1000, COL[0] + 1900) * BASE_CELLS - c);
+                return <i key={c} style={{ background: MUTED, opacity: 0.15 + 0.85 * on }} />;
+              })}
+            </span>
+            <span className="st-biz-ha-l" style={{ opacity: ramp(t, COL[0] + 1500, COL[0] + 1900) }}>
+              1,000 ha base
+            </span>
+            <span className="st-biz-ha-adds">
+            {Array.from({ length: ADDONS }, (_, k) => {
+              const p = easeOut(ramp(t, COL[0] + 2000 + k * 300, COL[0] + 2400 + k * 300));
+              return (
+                <span key={k} className="st-biz-ha-add" style={{ opacity: p, transform: `scale(${0.6 + 0.4 * p})` }}>
+                  <i style={{ background: LEAF }} />
+                  <em>+100</em>
+                </span>
+              );
+            })}
+            </span>
+          </div>
         </section>
 
         {/* 2 · Insurance in the tool: the margin. */}
@@ -106,7 +124,7 @@ export function SceneBusiness({ t, d }: { t: number; d: StoryData | null }) {
           <Bullets
             t={t}
             at={COL[1] + 350}
-            items={['Uninsured exposure by zone, at a glance', 'Quote and bind in one click, prefilled with loan data', 'Cover for next season, before bloom, never after an event']}
+            items={["The analyst sees each field's risk and the uninsured exposure", 'One click sends a quote with a policy tailored to each field', 'Suyana earns its margin on every policy sold']}
           />
           {byTier && maxTier > 0 && (
             <div className="st-biz-expo" style={{ opacity: ramp(t, EXPO - 200, EXPO + 200) }}>
@@ -136,47 +154,20 @@ export function SceneBusiness({ t, d }: { t: number; d: StoryData | null }) {
           )}
         </section>
 
-        {/* 3 · Volume discount: more of the exposure insured, lower premium. */}
+        {/* 3 · Competitive advantage: why banks insure here. */}
         <section className="st-biz-col st-biz-vol" style={rise(t, COL[2])}>
           <header>
-            <PixelGlyph rows={G_STEPS} color={LEAF} size="2.2cqw" p={ramp(t, COL[2], COL[2] + 700)} />
+            <PixelGlyph rows={G_STAR} color={LEAF} size="2.2cqw" p={ramp(t, COL[2], COL[2] + 700)} />
             <div className="st-biz-h">
-              <b>Volume discount</b>
-              <span className="st-biz-by">
-                <Tag t={t} at={COL[2] + 400} />
-              </span>
+              <b>Competitive advantage</b>
+              <span>Why banks insure here</span>
             </div>
           </header>
-          <div className="st-biz-k" style={{ opacity: ramp(t, COL[2] + 300, COL[2] + 700) }}>
-            Share of exposure insured → premium
-          </div>
-          <div className="st-biz-steps">
-            {STEPS.map((s, i) => {
-              const a = VOL + i * 330;
-              const p = easeOut(ramp(t, a, a + 650));
-              const lp = ramp(t, a + 350, a + 900);
-              const off = Math.round(easeOut(lp) * s.off);
-              return (
-                <div key={i} className="st-biz-step" aria-label={`${s.share} → ${s.off ? `−${s.off}%` : 'list price'}`}>
-                  <span className={`st-biz-off${s.off ? '' : ' st-biz-list-price'}`} style={{ opacity: lp > 0 ? 0.3 + 0.7 * lp : 0 }}>
-                    {s.off ? `−${off}%` : 'list price'}
-                  </span>
-                  <span className="st-biz-stack">
-                    {Array.from({ length: s.cells }, (_, c) => {
-                      const on = clamp01(p * s.cells - c);
-                      return <i key={c} style={{ background: s.off ? GREEN : MUTED, opacity: on, transform: `scale(${0.5 + 0.5 * on})` }} />;
-                    })}
-                  </span>
-                  <span className="st-biz-share" style={{ opacity: ramp(t, a, a + 400) }}>
-                    {s.share}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-          <div className="st-biz-note" style={{ opacity: ramp(t, VOL + 1200, VOL + 1600) }}>
-            Illustrative tiers
-          </div>
+          <Bullets
+            t={t}
+            at={COL[2] + 350}
+            items={["Tailor-made policy per field, which other insurers can't price", 'The quote arrives inside the tool the bank already uses', 'Every season of data sharpens the pricing']}
+          />
         </section>
       </div>
 
