@@ -205,12 +205,12 @@
 .st-biz-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.75cqw; }
 .st-biz-list li { display: flex; gap: 0.8cqw; align-items: baseline; font-size: 0.95cqw; line-height: 1.4; color: #eaf3ee; }
 .st-biz-list li i { flex: none; width: 0.55cqw; height: 0.55cqw; border-radius: 21%; background: #4cc072; transform: translateY(-0.12cqw); }
-.st-biz-muted { border-color: rgba(141, 160, 150, 0.16); background: rgba(14, 25, 20, 0.4); }
+.st-biz-muted { border-color: rgba(76, 192, 114, 0.5); box-shadow: 0 0 2cqw rgba(76, 192, 114, 0.06); }
 .st-biz-muted .st-biz-h b { color: #b9c8bf; }
 .st-biz-muted .st-biz-list li { color: #8da096; }
 .st-biz-muted .st-biz-list li i { background: #5f7d6c; }
 .st-biz-main { border-color: rgba(76, 192, 114, 0.5); box-shadow: 0 0 2cqw rgba(76, 192, 114, 0.06); }
-.st-biz-vol { border-color: rgba(76, 192, 114, 0.3); }
+.st-biz-vol { border-color: rgba(76, 192, 114, 0.5); box-shadow: 0 0 2cqw rgba(76, 192, 114, 0.06); }
 .st-biz-k { font-size: 0.75cqw; letter-spacing: 0.2em; text-transform: uppercase; color: #8da096; margin-bottom: 0.2cqw; }
 .st-biz-expo { margin-top: auto; padding-top: 1cqw; border-top: 1px solid rgba(141, 160, 150, 0.18); display: flex; flex-direction: column; gap: 0.5cqw; }
 .st-biz-expo-row { display: flex; align-items: center; gap: 0.9cqw; font-size: 0.85cqw; font-variant-numeric: tabular-nums; }
