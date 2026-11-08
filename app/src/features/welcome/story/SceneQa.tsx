@@ -74,8 +74,12 @@ export const QA_CARDS: Card[] = [
     ],
     weights: ['a = 0.65', 'b = 0.35', 'c = 0.30'],
     items: [
-      { k: 'C · D', v: 'climate and disaster perils, x = severity 0–1, s = crop-stage sensitivity' },
-      { k: 'Tiers', v: 'watch ≥ 35 · high ≥ 60 · credit rules can raise the tier, never lower it' },
+      { k: 'sₚ', v: 'crop sensitivity to peril p at its growth stage, 0–1 (crop template)' },
+      { k: 'xₚ', v: 'severity of peril p right now, 0–1 (satellite, weather, events)' },
+      { k: 'C', v: 'climate: frost, heat, harvest rain, chill, water, vigour, abandonment' },
+      { k: 'D', v: 'disaster: fire, flood, declared emergency · same product over its perils' },
+      { k: 'G', v: 'geography: frost pocket, fire recurrence, water security · mean' },
+      { k: 'a · b · c', v: 'climate 0.65 · disaster 0.35 · geography amplifier 0.30' },
     ],
     note: 'One severe driver is enough (½·max). Geography amplifies, never scores alone.',
   },
@@ -141,6 +145,14 @@ export const QA_CARDS: Card[] = [
     ],
   },
 ];
+
+/** The risk formula typeset as math (MathML), as in the team deck; s_p and x_p in green. */
+const G_ = 'mathcolor="#4CC072"';
+const RISK_MATHML = [
+  `<math display="block"><mrow><mtext>Risk</mtext><mo>=</mo><mn>100</mn><mo>·</mo><mi>min</mi><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mspace width="0.3em"/><mtext>base</mtext><mo>·</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>c</mi><mi>G</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></math>`,
+  `<math display="block"><mrow><mtext>base</mtext><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mrow><mi>a</mi><mi>C</mi><mo>+</mo><mi>b</mi><mi>D</mi></mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>max</mi><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></math>`,
+  `<math display="block"><mrow><mi>C</mi><mo>=</mo><mn>1</mn><mo>−</mo><munder><mo>∏</mo><mi>p</mi></munder><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub ${G_}><mi>s</mi><mi>p</mi></msub><mo stretchy="false" ${G_}>(</mo><mtext ${G_}>crop, stage</mtext><mo stretchy="false" ${G_}>)</mo><mo>·</mo><msub ${G_}><mi>x</mi><mi>p</mi></msub><mo stretchy="false">)</mo></mrow></math>`,
+].join('');
 
 /* ---------- small deterministic pixel helpers ---------- */
 
@@ -320,14 +332,7 @@ function Big({ card }: { card: Card }): ReactNode {
     case 'risk':
       return (
         <div className="st-qa-v st-qa-v-risk">
-          <pre className="st-qa-mono st-qa-in" style={d(0)}>
-            {card.mono!.map((m, k) => (
-              <span key={k} className={k === card.mono!.length - 1 ? 'st-qa-mono-hi' : undefined}>
-                {m.l}
-                {m.tag && <em>{m.tag}</em>}
-              </span>
-            ))}
-          </pre>
+          <div className="st-qa-math st-qa-in" style={d(0)} dangerouslySetInnerHTML={{ __html: RISK_MATHML }} />
           <div className="st-qa-weights st-qa-in" style={d(1)}>
             {card.weights!.map((w) => (
               <span key={w} className="st-qa-chip st-qa-chip-on">
@@ -607,7 +612,7 @@ export function SceneQa({ t }: { t: number }) {
                   <Big card={card} />
                 </div>
                 <div className="st-qa-ans">
-                  <ul className="st-qa-list">
+                  <ul className={`st-qa-list${card.topic === 'risk' ? ' st-qa-list-math' : ''}`}>
                     {card.items.map((x, k) => (
                       <li key={k} className="st-qa-in" style={d(k + 1)}>
                         {x.k && <b>{x.k}</b>}

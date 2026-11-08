@@ -427,3 +427,10 @@
 .st-qa-v-row { display: flex; align-items: center; gap: 1.2cqw; padding: 1cqw 1.1cqw; border-radius: 0.35cqw; border: 1px solid rgba(227, 201, 59, 0.3); background: rgba(227, 201, 59, 0.04); }
 .st-qa-v-row > span { display: flex; flex-direction: column; gap: 0.3cqw; }
 .st-qa-v-data { justify-content: center; }
+
+/* Q&A risk panel: the formula typeset as math */
+.st-qa-math { display: flex; flex-direction: column; gap: 0.9cqw; padding: 1.2cqw 1.4cqw; border: 1px solid rgba(141, 160, 150, 0.22);
+  border-radius: 0.4cqw; background: rgba(8, 16, 12, 0.55); color: #eaf3ee; }
+.st-qa-math math { display: block; margin: 0; text-align: left; font-family: 'STIX Two Math', 'Latin Modern Math', 'Cambria Math', math;
+  font-size: 1.7cqw; color: #eaf3ee; }
+.st-qa-v-risk ~ * .st-qa-list li b, .st-qa-list-math li b { text-transform: none; font-size: 0.8cqw; letter-spacing: 0.04em; }
