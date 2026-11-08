@@ -1,4 +1,4 @@
-/** S6 · CTA: the BrotIA lockup, small, assembled from its pixel cells, plus the tagline. */
+/** CTA: the BrotIA lockup, assembled from its pixel cells, the tagline and "by Suyana" with the official mark. */
 import { RAMP } from './pixel';
 import { easeOut, ramp } from './timeline';
 import { hash } from './pixel';
@@ -27,6 +27,11 @@ export function SceneCta({ t }: { t: number }) {
       </div>
       <div className="st-cta-tag" style={{ opacity: ramp(t, 1200, 1800) }}>
         Climate risk · Agricultural lending
+      </div>
+      <div className="st-cta-by" style={{ opacity: ramp(t, 1700, 2300) }}>
+        <span>by</span>
+        <img src={`${import.meta.env.BASE_URL}partners/suyana.svg`} alt="" />
+        <b>Suyana</b>
       </div>
     </div>
   );

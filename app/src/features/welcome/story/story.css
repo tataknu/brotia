@@ -156,6 +156,10 @@
 .st-cta-word { font-size: 4.2cqw; font-weight: 600; letter-spacing: -0.02em; }
 .st-cta-word span { color: #5ccb7e; }
 .st-cta-tag { font-size: 1.1cqw; letter-spacing: 0.22em; text-transform: uppercase; color: #8da096; }
+.st-cta-by { display: flex; align-items: center; gap: 0.7cqw; margin-top: 0.6cqw; font-size: 1.3cqw; color: #eaf3ee; }
+.st-cta-by span { color: #8da096; letter-spacing: 0.06em; }
+.st-cta-by img { height: 2.2cqw; width: auto; }
+.st-cta-by b { font-weight: 600; letter-spacing: 0.02em; }
 
 /* Step indicator + hint (rendered by WelcomePage) */
 .st-steps { position: absolute; left: 3vmax; bottom: 2.6vmax; z-index: 30; display: flex; align-items: center; gap: 0.9em;
