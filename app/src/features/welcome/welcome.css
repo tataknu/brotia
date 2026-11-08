@@ -66,3 +66,9 @@
 
 /* The corner "Enter platform" button is hidden for the recording; Enter or the last → still enter the platform. */
 .wl-next { display: none !important; }
+
+/* "by Suyana" under the tagline on the logo slide */
+.wl-by { display: flex; align-items: center; gap: 0.7cqw; margin-top: -2cqw; font-size: 1.35cqw; color: var(--s-ink); }
+.wl-by span { color: var(--s-muted); letter-spacing: 0.06em; }
+.wl-by img { height: 2.3cqw; width: auto; }
+.wl-by b { font-weight: 600; letter-spacing: 0.02em; }

@@ -21,7 +21,7 @@ const GRID = ['.....AA', '.B..AAA', 'BBBSAA.', '.BBS...', '...S...', '...S...', 
 const RAMP = ['#1F6B43', '#2FA05A', '#8CC63F', '#E3C93B', '#E8933A', '#D0533A', '#9E2F3A'];
 const STEP = 14.5833; // (7.5 + 1.25) / 60, in %
 const LAND = 1500; // seed impact (ms)
-const NEXT_AT = 7400; // the Next arrow appears once the tagline has landed (ms)
+const NEXT_AT = 7800; // the Next arrow appears once the tagline has landed (ms)
 const EASE = { out: 'cubic-bezier(.2,.8,.2,1)', back: 'cubic-bezier(.34,1.56,.64,1)' };
 // 5×5 pixel arrow pointing right
 const ARROW = ['..#..', '...#.', '#####', '...#.', '..#..'];
@@ -83,6 +83,7 @@ export function WelcomePage() {
     const ia = root.querySelector<HTMLElement>('.wl-word .wl-ia')!;
     const tag = root.querySelector<HTMLElement>('.wl-tagline')!;
     const corner = root.querySelector<HTMLElement>('.wl-corner')!;
+    const bySuyana = root.querySelector<HTMLElement>('.wl-by')!;
 
     // Soil: the risk row, left to right
     soil.forEach((c) => anim(c.el, [{ opacity: 0, transform: 'translateY(60%) scaleY(.4)' }, { opacity: 1, transform: 'none' }], c.k * 70, 400));
@@ -173,6 +174,7 @@ export function WelcomePage() {
     anim(ia, [{ opacity: 0, transform: 'scale(.5)' }, { opacity: 1, transform: 'none' }], 6100, 520, EASE.back);
     anim(tag, [{ opacity: 0, transform: 'translateY(40%)' }, { opacity: 1, transform: 'none' }], 6700, 600);
     anim(corner, [{ opacity: 0 }, { opacity: 0.7 }], 6900, 600);
+    anim(bySuyana, [{ opacity: 0, transform: 'translateY(30%)' }, { opacity: 1, transform: 'none' }], 7200, 600);
     timer.current = window.setTimeout(() => setShowNext(true), NEXT_AT);
   }, [reduce]);
 
@@ -317,6 +319,11 @@ export function WelcomePage() {
             </div>
           </div>
           <div className="wl-tagline">Climate risk · Agricultural lending</div>
+          <div className="wl-by">
+            <span>by</span>
+            <img src={`${import.meta.env.BASE_URL}partners/suyana.svg`} alt="" />
+            <b>Suyana</b>
+          </div>
         </div>
       </div>
       <div className="wl-corner">brotia · 2026</div>
