@@ -60,3 +60,6 @@
 /* On the map slide, keep Esri's attribution and the fly-in HUD clear */
 .wl.wl-on-map .st-steps { left: 50%; transform: translateX(-50%); }
 .wl.wl-on-map .wl-next { bottom: 6.5vmax; }
+
+/* Opening frame: pure black over everything (logo, counter, buttons) until → or a click */
+.wl-blank { position: fixed; inset: 0; z-index: 1000; background: #000; cursor: none; }

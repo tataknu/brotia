@@ -46,6 +46,10 @@ export function WelcomePage() {
   const noMap = params.get('nomap') === '1';
   const [startDone, setStartDone] = useState(params.get('end') === '1'); // review: open ?scene=N on its final frame
   const [step, setStep] = useState(initialStep); // 0 = logo, 1..N = story scenes
+  // A fully black opening frame before the logo (skipped when ?scene= is given); → or a click starts the logo.
+  const [blank, setBlank] = useState(!params.has('scene'));
+  const blankRef = useRef(blank);
+  blankRef.current = blank;
   const initialSub = params.get('beat') === '2' ? 1 : 0;
   const [sub, setSub] = useState(initialSub); // beat inside the map slide: 0 = portfolio, 1 = dive
   const freezeAt = params.get('at') != null ? Math.min(1, Math.max(0, Number(params.get('at')) || 0)) : undefined;
@@ -196,7 +200,9 @@ export function WelcomePage() {
     mk('wl-seed');
     for (let i = 0; i < 8; i++) mk('wl-dust');
     // Start once the font is ready so the name doesn't jump
-    (document.fonts?.ready ?? Promise.resolve()).then(play);
+    (document.fonts?.ready ?? Promise.resolve()).then(() => {
+      if (!blankRef.current) play();
+    });
     return () => window.clearTimeout(timer.current);
   }, [play]);
 
@@ -219,6 +225,11 @@ export function WelcomePage() {
   }, []);
 
   const next = useCallback(() => {
+    if (blankRef.current) {
+      setBlank(false);
+      play();
+      return;
+    }
     if (step === 0) {
       if (!showNext) finishLogo();
       else setStep(1);
@@ -237,15 +248,19 @@ export function WelcomePage() {
       setSub(0);
       setStep(step + 1);
     }
-  }, [step, showNext, finishLogo, enter, onMap, sub]);
+  }, [step, showNext, finishLogo, enter, onMap, sub, play]);
 
   const back = useCallback(() => {
+    if (step === 0) {
+      setBlank(true); // back to the black opening frame
+      return;
+    }
     if (onMap && sub === 1) setSub(0);
     else {
       setSub(0);
       setStep((s) => Math.max(0, s - 1));
     }
-  }, [onMap, sub]);
+  }, [onMap, sub, step]);
   useEffect(() => {
     if (step !== initialStep || sub !== initialSub) setStartDone(false);
   }, [step, initialStep, sub, initialSub]);
@@ -287,6 +302,7 @@ export function WelcomePage() {
     <div ref={rootRef} className={`wl${leaving ? ' wl-leaving' : ''}${step > 0 ? ' wl-in-story' : ''}${onMap ? ' wl-on-map' : ''}`} data-bg={bg}>
       {/* Loads the platform's data while the deck plays, so Home opens fully drawn */}
       <WarmUp />
+      {blank && <div className="wl-blank" onClick={next} aria-label="Start" />}
       <div className="wl-slide" role="img" aria-label="BrotIA. Climate risk, agricultural lending." onClick={next}>
         <div className="wl-stage">
           <div className="wl-lockup">
