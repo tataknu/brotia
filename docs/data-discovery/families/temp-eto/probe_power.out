@@ -1,0 +1,36 @@
+status 200 latency 1.53 bytes 13711
+units {'T2M_MAX': 'C', 'T2M_MIN': 'C', 'T2M': 'C', 'RH2M': '%', 'T2MDEW': 'C', 'WS2M': 'm/s', 'ALLSKY_SFC_SW_DWN': 'MJ/m^2/day', 'CLRSKY_SFC_SW_DWN': 'MJ/m^2/day', 'PS': 'kPa', 'EVPTRNS': 'MJ/m^2/day', 'PRECTOTCORR': 'mm/day'}
+last valid per var {'T2M_MAX': '20261103', 'T2M_MIN': '20261103', 'T2M': '20261103', 'RH2M': '20261103', 'T2MDEW': '20261103', 'WS2M': '20261103', 'ALLSKY_SFC_SW_DWN': '20261102', 'CLRSKY_SFC_SW_DWN': '20261009', 'PS': '20261103', 'EVPTRNS': '20261103', 'PRECTOTCORR': '20261103'}
+         T2M_MAX T2M_MIN    T2M   RH2M T2MDEW  WS2M ALLSKY_SFC_SW_DWN CLRSKY_SFC_SW_DWN     PS EVPTRNS PRECTOTCORR
+20261028   26.72   20.06  23.27  77.13  19.02  2.31               4.2              <NA>  98.05    1.17        9.95
+20261029   27.51   18.65  22.84  73.51  17.66  1.75             17.31              <NA>  97.96    2.24        1.22
+20261030   28.24   20.98  24.73  74.88  19.94  1.12             15.65              <NA>  97.63     1.8        1.69
+20261031   34.09   22.08  27.91  69.16  21.31  1.78             21.08              <NA>  97.44     4.1        4.99
+20261101   35.69   24.15  29.77  63.51  21.59  3.38              23.7              <NA>  97.31    5.01        2.13
+20261102   36.84   26.32  31.27  56.74  21.31  3.14             24.49              <NA>  97.35    5.78        2.04
+20261103   38.14   26.33  31.95  52.21  20.52  3.13              <NA>              <NA>  97.33    5.84        0.85
+20261104    <NA>    <NA>   <NA>   <NA>   <NA>  <NA>              <NA>              <NA>   <NA>    <NA>        <NA>
+20261105    <NA>    <NA>   <NA>   <NA>   <NA>  <NA>              <NA>              <NA>   <NA>    <NA>        <NA>
+20261106    <NA>    <NA>   <NA>   <NA>   <NA>  <NA>              <NA>              <NA>   <NA>    <NA>        <NA>
+full history CSV status 200 latency 1.46 bytes 639993
+   YEAR  DOY T2M_MAX T2M_MIN ALLSKY_SFC_SW_DWN   RH2M  WS2M
+0  1981    1   32.22   24.13              <NA>  70.72  0.26
+1  1981    2   28.11   23.19              <NA>  87.35  0.24
+rows 16746
+T2M_MAX first valid row [1981, 1] n missing 3
+ALLSKY_SFC_SW_DWN first valid row [1984, 1] n missing 1100
+RH2M first valid row [1981, 1] n missing 3
+WS2M first valid row [1981, 1] n missing 3
+-BEGIN HEADER-
+NASA/POWER Source Native Resolution Daily Data 
+Dates (month/day/year): 01/01/1981 through 11/06/2026 in LST
+Location: latitude  -16.86   longitude -62.52 
+elevation from MERRA-2: Average for 0.5 x 0.625 degree lat/lon region = 276.15 meters
+The value for missing source data that cannot be computed or is outside of the sources availability range: -999 
+parameter(s): 
+T2M_MAX               MERRA-2 Temperature at 2 Meters Maximum (C) 
+T2M_MIN               MERRA-2 Temperature at 2 Meters Minimum (C) 
+ALLSKY_SFC_SW_DWN     CERES SYN1deg All Sky Surface Shortwave Downward Irradiance (MJ/m^2/day) 
+RH2M                  MERRA-2 Relative Humidity at 2 Meters (%) 
+WS2M                  MERRA-2 Wind Speed at 2 Meters (m/s) 
+-END HEADER-

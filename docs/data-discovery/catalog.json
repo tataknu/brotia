@@ -1,0 +1,5836 @@
+{
+  "generated": "2026-11-07",
+  "notes": "Synthesised from 22 family research+verification reports, critic pass and follow-ups 02/04/06. Follow-ups 01 (era5-open-paths), 03 (precip-primary-backtest) and 05 (bolivia-institutions) were NOT run. Market priority: Chile primary, Bolivia second (team decision; ADRs and sample farms are Bolivian).",
+  "followups": {
+    "run": [
+      "02-farm-relocation",
+      "04-s2-modis-calibration",
+      "06-hail-validation"
+    ],
+    "not_run": [
+      "01-era5-open-paths",
+      "03-precip-primary-backtest",
+      "05-bolivia-institutions"
+    ]
+  },
+  "sample_fields": "followups/02-farm-relocation/farms_fields.geojson",
+  "sources": [
+    {
+      "id": "chirps-v3-chc",
+      "name": "CHIRPS v3.0 daily/pentad/monthly COGs",
+      "provider": "UCSB Climate Hazards Center",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "HTTPS COG range reads (rasterio /vsicurl); FTP/rsync preferred by CHC but unreachable from sandbox",
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/",
+      "auth": "none",
+      "licence": "Public domain + CC BY 4.0 (cite Funk et al. 2026)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "precip": "primary"
+      },
+      "latency": "final ~5 weeks; prelim sat daily ~6 d; prelim pentad 2-4 d",
+      "history_start": "1981-01-01 (use 1991+)",
+      "spatial_res": "0.05 deg",
+      "notes": "Not homogeneous pre-1991 (~-18%). HTTP 429 even at 6 s spacing: budget ~10 s/request, offline build. No nodata declared: mask <0. Store source_mtime (archive regenerated 2026-04). Daily = split pentads; prefer pentad totals.",
+      "families": [
+        "gridded-precip",
+        "gapfill-fusion"
+      ]
+    },
+    {
+      "id": "chirps-v2-climateserv",
+      "name": "CHIRPS v2 via ClimateSERV (dt 0)",
+      "provider": "NASA/USAID SERVIR",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "REST async jobs",
+      "url": "https://climateserv.servirglobal.net/api/",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "precip": "reject"
+      },
+      "latency": "to M-1 (~5-6 weeks)",
+      "history_start": "1981-01-01",
+      "spatial_res": "0.05 deg",
+      "notes": "Inhomogeneous at Santa Cruz (2023/24 only p13-p23); CHIRPS v2 production ends Dec 2026.",
+      "families": [
+        "gridded-precip",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "imerg-v07-climateserv",
+      "name": "IMERG V07 Late (dt 226) / Early (dt 227) via ClimateSERV",
+      "provider": "NASA/USAID SERVIR",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "dry_spell",
+        "heavy_rain"
+      ],
+      "access": "REST async jobs (submitDataRequest -> progress -> getDataFromRequest)",
+      "url": "https://climateserv.servirglobal.net/api/",
+      "auth": "none",
+      "licence": "NASA open data; service has no SLA/licence",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "dry_spell": "primary",
+        "precip_tail": "fallback"
+      },
+      "latency": "Late ~3 d, Early ~2 d",
+      "history_start": "Late 2000-06-08, Early 2000-06-02",
+      "spatial_res": "0.1 deg",
+      "notes": "Missing dates are omitted silently (May 2024 entirely): treat as unknown. 26-47% wetter than CHIRPS: use own percentiles. V06 dt 26/91 died silently 2024-06; health-check latest date. ~20 y per request max.",
+      "families": [
+        "gridded-precip",
+        "hail-validation"
+      ]
+    },
+    {
+      "id": "imerg-gesdisc",
+      "name": "GPM IMERG V07 (GES DISC direct)",
+      "provider": "NASA GES DISC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "OPeNDAP/Harmony/HTTPS",
+      "url": "https://gpm1.gesdisc.eosdis.nasa.gov/opendap/GPM_L3/",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "precip": "fallback"
+      },
+      "latency": "Early/Late daily to 2026-11-05 (CMR)",
+      "history_start": "1998-01-01",
+      "spatial_res": "0.1 deg",
+      "notes": "Earthdata login required for data; CMR metadata keyless.",
+      "families": [
+        "gridded-precip"
+      ]
+    },
+    {
+      "id": "cpc-unified-psl",
+      "name": "CPC Unified Gauge-Based Daily Precipitation",
+      "provider": "NOAA CPC / PSL",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "OPeNDAP ASCII slices per year file",
+      "url": "https://psl.noaa.gov/thredds/dodsC/Datasets/cpc_global_precip/",
+      "auth": "none",
+      "licence": "NOAA public domain",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "precip": "validation-only"
+      },
+      "latency": "~2 d",
+      "history_start": "1979-01-01",
+      "spatial_res": "0.5 deg",
+      "notes": "V1.0 -> V1.0 RT break in 2006: not a percentile baseline. 1 cell x 1 y slice ~23 s.",
+      "families": [
+        "gridded-precip"
+      ]
+    },
+    {
+      "id": "chirps3-gefs",
+      "name": "CHIRPS3-GEFS 16-day forecast",
+      "provider": "UCSB CHC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip_forecast"
+      ],
+      "access": "HTTPS GeoTIFF (66 MB global, range read)",
+      "url": "https://data.chc.ucsb.edu/products/CHIRPS-GEFS/v3/16_day/",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "precip_outlook": "primary"
+      },
+      "latency": "issued same day",
+      "history_start": "hindcast 2001-2019, 2021-present",
+      "spatial_res": "0.05 deg",
+      "notes": "Optional outlook.",
+      "families": [
+        "gridded-precip"
+      ]
+    },
+    {
+      "id": "openmeteo-archive-era5",
+      "name": "Open-Meteo Historical Weather API (models=era5)",
+      "provider": "Open-Meteo / ECMWF",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin",
+        "et0_fao56",
+        "hourly_t2m",
+        "dewpoint",
+        "wind",
+        "radiation"
+      ],
+      "access": "REST JSON",
+      "url": "https://archive-api.open-meteo.com/v1/archive",
+      "auth": "none",
+      "licence": "Data CC BY 4.0; free API non-commercial (evaluation/prototyping allowed)",
+      "commercial_ok": "demo-only",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "tmax_tmin": "primary(demo)",
+        "eto": "primary(demo)",
+        "precip": "fallback",
+        "heat": "primary(demo)",
+        "frost": "primary(demo)"
+      },
+      "latency": "~6-7 d",
+      "history_start": "1940-01-01",
+      "spatial_res": "0.25 deg",
+      "notes": "Weighted per-IP quota (<600/min, 5k/h, 10k/day); exhausted for the team IP on 2026-11-07. Never use best_match for baselines. ERA5 Tmin +1.1..+2.0 C warm on coldest nights; heat days ~45% low vs station. Production: CDS/ARCO/NCAR or paid plan.",
+      "families": [
+        "temp-eto",
+        "gridded-precip",
+        "frost-heat-hail",
+        "platforms-access",
+        "soil-moisture",
+        "gapfill-fusion"
+      ]
+    },
+    {
+      "id": "openmeteo-archive-era5land",
+      "name": "Open-Meteo Historical Weather API (models=era5_land)",
+      "provider": "Open-Meteo / ECMWF",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "root_zone_soil_moisture",
+        "soil_moisture_layers",
+        "snow_depth",
+        "hourly_t2m"
+      ],
+      "access": "REST JSON",
+      "url": "https://archive-api.open-meteo.com/v1/archive",
+      "auth": "none",
+      "licence": "Data CC BY 4.0; free API non-commercial",
+      "commercial_ok": "demo-only",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "root_zone_soil_moisture": "primary(demo)",
+        "chill": "fallback",
+        "heat": "reject",
+        "frost_absolute": "reject"
+      },
+      "latency": "~6 d",
+      "history_start": "1950-01-01",
+      "spatial_res": "0.1 deg",
+      "notes": "precipitation_sum and et0 are null: use models=era5. Tmax cold bias (Requinoa 1 vs 41 hot days; SLVR -1..-3 C). ERA5 forcing missed Aug-2020 event -> false drought. Use percentiles only.",
+      "families": [
+        "soil-moisture",
+        "frost-heat-hail",
+        "chile-crops-perils",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "openmeteo-forecast",
+      "name": "Open-Meteo Forecast API (past_days)",
+      "provider": "Open-Meteo",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "tmax",
+        "tmin",
+        "et0",
+        "precip",
+        "cape",
+        "soil_moisture"
+      ],
+      "access": "REST JSON",
+      "url": "https://api.open-meteo.com/v1/forecast",
+      "auth": "none",
+      "licence": "CC BY 4.0; free tier non-commercial",
+      "commercial_ok": "demo-only",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "nowcast_tail": "fallback"
+      },
+      "latency": "0 d",
+      "history_start": "past_days up to ~92",
+      "spatial_res": "~9-25 km",
+      "notes": "Different model from ERA5: label 'estimated', never inside percentiles. Soil layer 27_to_81cm != ERA5-Land 28_to_100cm. Separate quota still worked on 2026-11-07.",
+      "families": [
+        "temp-eto",
+        "soil-moisture",
+        "frost-heat-hail",
+        "platforms-access",
+        "hail-validation"
+      ]
+    },
+    {
+      "id": "openmeteo-historical-forecast",
+      "name": "Open-Meteo Historical Forecast API (GFS CAPE / LI)",
+      "provider": "Open-Meteo / NOAA GFS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "cape",
+        "lifted_index",
+        "freezing_level"
+      ],
+      "access": "REST JSON",
+      "url": "https://historical-forecast-api.open-meteo.com/v1/forecast",
+      "auth": "none",
+      "licence": "CC BY 4.0; free tier non-commercial",
+      "commercial_ok": "demo-only",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "hail_env": "context"
+      },
+      "latency": "near real time",
+      "history_start": "2021-03-23 (GFS CAPE/LI)",
+      "spatial_res": "~0.25 deg",
+      "notes": "ICON/UKMO/GEM have CAPE from 2022 (no LI); ECMWF none. Hail out of scope v1.",
+      "families": [
+        "frost-heat-hail",
+        "hail-validation"
+      ]
+    },
+    {
+      "id": "openmeteo-flood-glofas",
+      "name": "Open-Meteo Flood API (GloFAS v4)",
+      "provider": "Open-Meteo / CEMS GloFAS",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "river_discharge",
+        "discharge_forecast"
+      ],
+      "access": "REST JSON",
+      "url": "https://flood-api.open-meteo.com/v1/flood",
+      "auth": "none",
+      "licence": "CC BY 4.0; free tier non-commercial",
+      "commercial_ok": "demo-only",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "river_discharge": "primary(demo)"
+      },
+      "latency": "daily; consolidated_v4 ends 2025-05-31, forecast_v4 from 2023-06-01; usable horizon ~180 d",
+      "history_start": "1997-01-01 (docs say 1984: nulls)",
+      "spatial_res": "0.05 deg",
+      "notes": "Map farm to max-mean-discharge cell per latitude row. Missed Dec-2025 Pirai flood. Wrong for narrow Andean valleys (Aconcagua, Cachapoal, Maipo, Limari). Rio Grande Puerto Pailas Oct-2026 = p7.",
+      "families": [
+        "sar-flood-water",
+        "chile-water"
+      ]
+    },
+    {
+      "id": "openmeteo-s3-mirror",
+      "name": "Open-Meteo open data on AWS (s3://openmeteo)",
+      "provider": "Open-Meteo / AWS Open Data",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "era5_precip",
+        "era5_temperature",
+        "era5_soil_moisture",
+        "era5land_temperature",
+        "era5land_soil_moisture"
+      ],
+      "access": "S3 .om chunk files; needs self-hosted Open-Meteo server (AGPLv3) or reader",
+      "url": "https://openmeteo.s3.amazonaws.com/",
+      "auth": "none",
+      "licence": "CC BY 4.0 (AWS registry)",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "era5": "fallback(production)"
+      },
+      "latency": "unknown",
+      "history_start": "1940",
+      "spatial_res": "0.1-0.25 deg",
+      "notes": "Bucket list 200 only; reader/feasibility unverified (follow-up 01 not run). ERA5-Land prefix lacks precipitation.",
+      "families": [
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "arco-era5",
+      "name": "Google ARCO-ERA5 public Zarr",
+      "provider": "Google Research / ECMWF",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "all ERA5 single and pressure levels hourly",
+        "cape"
+      ],
+      "access": "Zarr on GCS (xarray+gcsfs, HTTPS)",
+      "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3",
+      "auth": "none",
+      "licence": "CC BY 4.0 (Copernicus)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "partial",
+      "fit": {
+        "era5": "fallback(production)"
+      },
+      "latency": "final to 2026-06-30; ERA5T to 2026-10-31",
+      "history_start": "1940-01-01",
+      "spatial_res": "0.25 deg",
+      "notes": "Only metadata probed; chunked by time (one global chunk per hour) so point series are heavy. 30-y point timing not measured (follow-up 01 not run).",
+      "families": [
+        "platforms-access",
+        "frost-heat-hail"
+      ]
+    },
+    {
+      "id": "nsf-ncar-era5",
+      "name": "NSF NCAR ERA5 (ds633.0) on AWS",
+      "provider": "NSF NCAR / AWS Open Data",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "cape",
+        "ERA5 surface analysis variables"
+      ],
+      "access": "Anonymous S3 / HTTPS NetCDF monthly files",
+      "url": "https://nsf-ncar-era5.s3.amazonaws.com",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "cape_baseline": "fallback",
+        "era5": "fallback(production)"
+      },
+      "latency": "~2-3 months",
+      "history_start": "1940-01",
+      "spatial_res": "0.25 deg",
+      "notes": "CAPE monthly files 194001-202608 verified; point read ~92 s per month-file. Other variables/ERA5-Land not checked.",
+      "families": [
+        "frost-heat-hail",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "cds-era5",
+      "name": "Copernicus CDS ERA5 / ERA5-Land / AgERA5 / satellite soil moisture",
+      "provider": "ECMWF / C3S",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "era5",
+        "era5_land",
+        "agera5",
+        "satellite_soil_moisture"
+      ],
+      "access": "cdsapi async queue",
+      "url": "https://cds.climate.copernicus.eu/",
+      "auth": "free-signup",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "catalogue-only",
+      "fit": {
+        "era5": "fallback(production)",
+        "soil_moisture": "fallback(production)"
+      },
+      "latency": "ERA5T ~5 d; AgERA5 extent to 2026-10-30",
+      "history_start": "1940 / 1950 / 1979",
+      "spatial_res": "0.1-0.25 deg",
+      "notes": "Instant free account + licence click. Retrieval untested.",
+      "families": [
+        "temp-eto",
+        "soil-moisture",
+        "platforms-access",
+        "frost-heat-hail"
+      ]
+    },
+    {
+      "id": "nasa-power",
+      "name": "NASA POWER daily/hourly point API",
+      "provider": "NASA LaRC",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin",
+        "rh",
+        "ws10m",
+        "radiation",
+        "gwetroot"
+      ],
+      "access": "REST JSON/CSV",
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point",
+      "auth": "none",
+      "licence": "NASA open data (explicit licence page 404)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "tmax_tmin": "fallback",
+        "eto": "fallback",
+        "soil_moisture": "validation-only",
+        "precip": "validation-only"
+      },
+      "latency": "met ~3-4 d; radiation ~5 d",
+      "history_start": "daily 1981-01-01; hourly 2001-01-01",
+      "spatial_res": "0.5 x 0.625 deg",
+      "notes": "MERRA-2 -> GEOS-IT seam 2026-10-01 (Tmin step): as-of 2026-09-30. WS2M broken per cell: derive u2 from WS10M (FAO-56 eq 47). Tmax dry-season warm bias +2.5..4.5 C. Foothill cells wrong (Requinoa cell 1766 m). Convert -999 to NaN.",
+      "families": [
+        "temp-eto",
+        "gridded-precip",
+        "soil-moisture",
+        "frost-heat-hail",
+        "platforms-access",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "chirts-era5",
+      "name": "CHIRTS-ERA5 daily Tmax/Tmin",
+      "provider": "UCSB CHC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "tmax",
+        "tmin",
+        "heat_index",
+        "wbgt",
+        "vpd"
+      ],
+      "access": "HTTP GeoTIFF (27 MB, non-COG)",
+      "url": "https://data.chc.ucsb.edu/experimental/CHIRTS-ERA5/",
+      "auth": "none",
+      "licence": "Public domain / CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "heat_display": "fallback"
+      },
+      "latency": "5-6 d (holes, e.g. 2026-10-31)",
+      "history_start": "1980-01-01",
+      "spatial_res": "0.05 deg",
+      "notes": "429 throttling can silently corrupt GDAL reads: validate geotransform/value range, pace >=10 s. Tmin anomaly carries Tmax correction. Not better than ERA5 at El Trompillo.",
+      "families": [
+        "temp-eto",
+        "frost-heat-hail"
+      ]
+    },
+    {
+      "id": "terraclimate",
+      "name": "TerraClimate",
+      "provider": "University of Idaho",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "pet",
+        "aet",
+        "soil",
+        "tmax",
+        "tmin"
+      ],
+      "access": "THREDDS NCSS per-year files",
+      "url": "http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/data/catalog.html",
+      "auth": "none",
+      "licence": "CC0 (not verified)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "aet": "baseline-only",
+        "soil_moisture": "baseline-only"
+      },
+      "latency": "yearly (latest 2025-12)",
+      "history_start": "1958",
+      "spatial_res": "~4 km",
+      "notes": "Climatology only.",
+      "families": [
+        "temp-eto",
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "wapor-v3",
+      "name": "FAO WaPOR v3 L1 (AETI, RET, NPP)",
+      "provider": "FAO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "actual_et",
+        "reference_et",
+        "npp"
+      ],
+      "access": "gismgr REST catalogue + public COGs",
+      "url": "https://data.apps.fao.org/gismgr/api/v2/catalog/workspaces/WAPOR-3/mapsets",
+      "auth": "none",
+      "licence": "CC BY 4.0 (dataset; portal listed CC-BY-NC-SA elsewhere)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "actual_et": "primary"
+      },
+      "latency": "AETI ~2 d after dekad; RET-E 1 d",
+      "history_start": "2018-01-01",
+      "spatial_res": "300 m",
+      "notes": "Aggregate over polygon; compute only in crop window; low AETI/RET outside season = fallow. RET is not a validation of ERA5 ET0.",
+      "families": [
+        "temp-eto"
+      ]
+    },
+    {
+      "id": "modis-mod16-ornl",
+      "name": "MODIS MOD16A2GF / MOD16A2 actual ET via ORNL",
+      "provider": "NASA / ORNL DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "actual_et",
+        "pet"
+      ],
+      "access": "REST JSON subset",
+      "url": "https://modis.ornl.gov/rst/api/v1/",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "actual_et": "fallback"
+      },
+      "latency": "GF annual; non-GF ~3 weeks",
+      "history_start": "2000 (GF)",
+      "spatial_res": "500 m",
+      "notes": "Splicing GF baseline with non-GF current adds inhomogeneity.",
+      "families": [
+        "temp-eto"
+      ]
+    },
+    {
+      "id": "ssebop-v61",
+      "name": "SSEBop v6.1 global actual ET",
+      "provider": "USGS / FEWS NET",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "actual_et"
+      ],
+      "access": "HTTP zipped GeoTIFF (136 MB global)",
+      "url": "https://edcintl.cr.usgs.gov/downloads/sciweb1/shared/fews/web/global/monthly/etav61/downloads/monthly/",
+      "auth": "none",
+      "licence": "Public domain",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "listing-only",
+      "fit": {
+        "actual_et": "baseline-only"
+      },
+      "latency": "~1 week",
+      "history_start": "2012",
+      "spatial_res": "~1 km",
+      "notes": "Values not read.",
+      "families": [
+        "temp-eto"
+      ]
+    },
+    {
+      "id": "gleam-v4",
+      "name": "GLEAM v4",
+      "provider": "Ghent Univ / VU Amsterdam",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "actual_et",
+        "root_zone_soil_moisture"
+      ],
+      "access": "SFTP after registration",
+      "url": "https://www.gleam.eu/",
+      "auth": "free-signup",
+      "licence": "free for research (unverified)",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "actual_et": "baseline-only"
+      },
+      "latency": "~1 year",
+      "history_start": "1980",
+      "spatial_res": "0.1 deg",
+      "notes": "No current-season data.",
+      "families": [
+        "temp-eto",
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "soilgrids-v2",
+      "name": "ISRIC SoilGrids v2.0 REST",
+      "provider": "ISRIC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "field_capacity",
+        "wilting_point",
+        "taw",
+        "texture"
+      ],
+      "access": "REST JSON",
+      "url": "https://rest.isric.org/soilgrids/v2.0/properties/query",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "taw": "primary"
+      },
+      "latency": "static",
+      "history_start": "n/a",
+      "spatial_res": "250 m",
+      "notes": "Fair use 5 calls/min; beta; 13-68 s, >120 s timeouts. Precompute TAW once. ISRIC advises against farm-level use: label 'regional estimate'. Units wv raw/1000 = m3/m3.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "cpc-soil-moisture",
+      "name": "NOAA CPC leaky-bucket soil moisture monthly",
+      "provider": "NOAA CPC / PSL",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "soil_moisture_column"
+      ],
+      "access": "OPeNDAP",
+      "url": "https://psl.noaa.gov/thredds/dodsC/Datasets/cpcsoil/soilw.mon.mean.nc",
+      "auth": "none",
+      "licence": "US public domain",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "root_zone_soil_moisture": "fallback"
+      },
+      "latency": "<1 week after month end",
+      "history_start": "1948-01",
+      "spatial_res": "0.5 deg",
+      "notes": "Independent of ERA5 (caught Aug 2020) but anomaly r only ~0.4 with ERA5-Land: tag as fallback. Long slices 26-35 s or time out; fetch tails.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "grace-da-ndmc",
+      "name": "NASA GRACE-DA drought indicators (NDMC GeoTIFF)",
+      "provider": "NDMC / NASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "root_zone_soil_moisture_percentile",
+        "surface_sm_percentile",
+        "groundwater_percentile"
+      ],
+      "access": "HTTPS GeoTIFF per week",
+      "url": "https://nasagrace.unl.edu/globaldata/",
+      "auth": "none",
+      "licence": "NASA open (upstream)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "root_zone_soil_moisture": "fallback"
+      },
+      "latency": "~1 week",
+      "history_start": "2003-02-03",
+      "spatial_res": "0.25 deg",
+      "notes": "rtzsm_perc tif 915 KB in 0.57 s; already a percentile.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "sissa-grace",
+      "name": "CRC-SAS SISSA GRACE-DA point series",
+      "provider": "CRC-SAS",
+      "regions": [
+        "bolivia",
+        "southern-south-america"
+      ],
+      "variables": [
+        "root_zone_soil_moisture_percentile"
+      ],
+      "access": "Undocumented REST JSON",
+      "url": "https://dashboard.crc-sas.org/api-sissa/v0.1.0/informes/grace/comparar/rtzsm_inst/",
+      "auth": "none",
+      "licence": "Unknown (no terms)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "root_zone_soil_moisture": "fallback"
+      },
+      "latency": "~1 week",
+      "history_start": "2003-02-03 (earlier windows silently truncated)",
+      "spatial_res": "0.25 deg",
+      "notes": "Use id rtzsm_inst; nombre labels swapped. 6-61 s per query. Server omits Sectigo intermediate cert.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "sissa-smap",
+      "name": "CRC-SAS SISSA SMAP point series",
+      "provider": "CRC-SAS",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "surface_soil_moisture"
+      ],
+      "access": "Undocumented REST JSON",
+      "url": "https://dashboard.crc-sas.org/api-sissa/v0.1.0/informes/smap/comparar/",
+      "auth": "none",
+      "licence": "Unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "surface_soil_moisture": "fallback"
+      },
+      "latency": "~6 d",
+      "history_start": "2015-04-01",
+      "spatial_res": "9-36 km",
+      "notes": "<=3-year windows work (~40 s).",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "smap-l4",
+      "name": "SMAP L4 SPL4SMGP v008",
+      "provider": "NASA NSIDC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "root_zone_soil_moisture",
+        "surface_soil_moisture"
+      ],
+      "access": "HDF5 via Earthdata / AppEEARS / Harmony",
+      "url": "https://nsidc.org/data/spl4smgp",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "root_zone_soil_moisture": "validation-only"
+      },
+      "latency": "~2-3 d",
+      "history_start": "2015-03-31",
+      "spatial_res": "9 km",
+      "notes": "Granules ~143 MB, 8/day: cross-check only.",
+      "families": [
+        "soil-moisture",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "smap-l3",
+      "name": "SMAP L3 radiometer (SPL3SMP / _E)",
+      "provider": "NASA NSIDC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "surface_soil_moisture"
+      ],
+      "access": "HDF5 Earthdata",
+      "url": "https://nsidc.org/data/spl3smp_e",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "surface_soil_moisture": "validation-only"
+      },
+      "latency": "~1 d",
+      "history_start": "2015-03-31",
+      "spatial_res": "9-36 km",
+      "notes": "",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "esa-cci-sm",
+      "name": "ESA CCI Soil Moisture v09.2 COMBINED (CEDA)",
+      "provider": "ESA CCI / TU Wien",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "surface_soil_moisture"
+      ],
+      "access": "HTTPS daily netCDF",
+      "url": "https://dap.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v09.2/",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "surface_soil_moisture": "validation-only"
+      },
+      "latency": "ends 2024-12-31",
+      "history_start": "1978-11",
+      "spatial_res": "0.25 deg",
+      "notes": "Good satellite check for the 2023/24 backtest.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "clms-swi",
+      "name": "CLMS Soil Water Index 12.5 km v4",
+      "provider": "Copernicus Land / CDSE",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "soil_water_index"
+      ],
+      "access": "CDSE STAC + S3",
+      "url": "https://stac.dataspace.copernicus.eu/v1/collections/clms_swi_global_12.5km_daily_v4_cog",
+      "auth": "free-signup",
+      "licence": "Copernicus open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "soil_moisture": "fallback"
+      },
+      "latency": "latest item 2026-09-15",
+      "history_start": "2007-01-01",
+      "spatial_res": "12.5 km",
+      "notes": "Download untested.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "gldas-fldas",
+      "name": "GLDAS-2.1/2.2 and FLDAS Noah",
+      "provider": "NASA GES DISC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "soil_moisture_layers",
+        "evap"
+      ],
+      "access": "netCDF Earthdata",
+      "url": "https://hydro1.gesdisc.eosdis.nasa.gov/data/",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "listing-only",
+      "fit": {
+        "soil_moisture": "baseline-only"
+      },
+      "latency": "GLDAS ~3 months; FLDAS ~5-6 weeks",
+      "history_start": "1982 (FLDAS) / 2000 (GLDAS 2.1)",
+      "spatial_res": "0.1-0.25 deg",
+      "notes": "Data rods service discontinued.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "hwsd-v2",
+      "name": "HWSD v2.0",
+      "provider": "FAO / IIASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "awc",
+        "texture"
+      ],
+      "access": "zip download (22 MB raster)",
+      "url": "https://s3.eu-west-1.amazonaws.com/data.gaezdev.aws.fao.org/HWSD/HWSD2_RASTER.zip",
+      "auth": "none",
+      "licence": "FAO open (cite)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "head-only",
+      "fit": {
+        "taw": "fallback"
+      },
+      "latency": "static",
+      "history_start": "n/a",
+      "spatial_res": "~1 km",
+      "notes": "Contents not checked.",
+      "families": [
+        "soil-moisture"
+      ]
+    },
+    {
+      "id": "ogimet-synop",
+      "name": "OGIMET raw SYNOP (getsynop)",
+      "provider": "OGIMET (G. Ballester Valor)",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "precip_24h",
+        "tmax",
+        "tmin",
+        "hourly_temperature",
+        "present_weather"
+      ],
+      "access": "HTTP text GET",
+      "url": "https://www.ogimet.com/cgi-bin/getsynop",
+      "auth": "none",
+      "licence": "Copyright G. Ballester Valor; 'No any critical mission should use this data'",
+      "commercial_ok": "no",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_precip": "validation-only",
+        "station_tmax_tmin": "validation-only"
+      },
+      "latency": "SLVR 1-3 h; SLET 8-10 h; Chile <30 min",
+      "history_start": "SLVR between 1999-04 and 1999-10",
+      "spatial_res": "point",
+      "notes": "Section-333 Tx/Tn missing at SLVR since 2026-11-04. 6RRR4 section-1 is a first-class rain path. DMC 7RRRR at non-12Z = since 12Z. 501 throttling for old archive; resumable backfill. Up to 100% of main-hour bulletins missing 2001-2012. Not a bank-product source of record.",
+      "families": [
+        "global-stations",
+        "bolivia-national",
+        "chile-global-stations",
+        "temp-eto"
+      ]
+    },
+    {
+      "id": "ghcnh",
+      "name": "NOAA GHCNh (hourly)",
+      "provider": "NOAA NCEI",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "hourly_temperature",
+        "precipitation_24_hour",
+        "precipitation_1h_bufr"
+      ],
+      "access": "S3-style listing + PSV/parquet by year",
+      "url": "https://www.ncei.noaa.gov/oa/global-historical-climatology-network/hourly/access/by-year/",
+      "auth": "none",
+      "licence": "US Gov open (non-US data may carry WMO Res 40 caveats)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_tmax_tmin": "fallback",
+        "station_precip": "fallback"
+      },
+      "latency": "~2.5-3 d (daily rewrite sometimes skipped)",
+      "history_start": "SLVR 1984",
+      "spatial_res": "point",
+      "notes": "SYNOP continues as FM94_1 BUFR (not dead). Rows only on wet days; missing != 0. Quality_Code=1 is not a pass. Mis-codes 911 mm, 135 mm/h. IDs: BLI0000SLVR, BLI0000SLET; no Chillan 2026.",
+      "families": [
+        "global-stations",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "iem-metar",
+      "name": "Iowa Environmental Mesonet METAR (BO__ASOS, CL__ASOS)",
+      "provider": "Iowa State University",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "hourly_temperature",
+        "tmax",
+        "tmin"
+      ],
+      "access": "CGI CSV",
+      "url": "https://mesonet.agron.iastate.edu/request/download.phtml",
+      "auth": "none",
+      "licence": "Public domain (attribution appreciated)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_tmax_tmin": "fallback"
+      },
+      "latency": "SLVR <=1 h; SLET 8-10 h",
+      "history_start": "1984 (SLVR); 1942 (SLET)",
+      "spatial_res": "point",
+      "notes": "precip_in always 0/None: treat as missing. 429 on back-to-back requests. Offset vs SYNOP is period-dependent (~+0.2..+0.7 C Tx recently); refit.",
+      "families": [
+        "global-stations",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "ghcn-daily",
+      "name": "NOAA GHCN-Daily",
+      "provider": "NOAA NCEI",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin"
+      ],
+      "access": "HTTPS CSV / ADS JSON / AWS",
+      "url": "https://www.ncei.noaa.gov/data/global-historical-climatology-network-daily/access/",
+      "auth": "none",
+      "licence": "US Gov open; WMO Res 40 caveat",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_tmax": "baseline-only",
+        "station_precip": "reject"
+      },
+      "latency": "frozen 2025-08-24 (Osorno via SSOD)",
+      "history_start": "1958 (SLET), 1984 (SLVR), 1957 (Curico)",
+      "spatial_res": "point",
+      "notes": "GSOD-sourced (flag S) precip undercounted (Curico 2023 175 vs 674 mm; Chillan 220 vs 984). Chile Tmax/precip labelled +1 day. SLVR PRCP sparse; 1985-1998 provisional only.",
+      "families": [
+        "global-stations",
+        "bolivia-national",
+        "frost-heat-hail",
+        "chile-global-stations",
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "gsod-isd",
+      "name": "NOAA GSOD / ISD",
+      "provider": "NOAA NCEI",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin"
+      ],
+      "access": "HTTPS CSV",
+      "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/",
+      "auth": "none",
+      "licence": "US Gov open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "retired 2025-08",
+      "history_start": "1942",
+      "spatial_res": "point",
+      "notes": "End of life Aug 2025; replaced by GHCNh / SSOD.",
+      "families": [
+        "global-stations",
+        "temp-eto",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "meteostat",
+      "name": "Meteostat bulk / API",
+      "provider": "Meteostat",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin"
+      ],
+      "access": "gz CSV; RapidAPI",
+      "url": "https://dev.meteostat.net/",
+      "auth": "none",
+      "licence": "CC BY-NC 4.0",
+      "commercial_ok": "no",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "daily",
+      "history_start": "1984",
+      "spatial_res": "point",
+      "notes": "Precip model-filled (DWD MOSMIX / metno_forecast, 100% of 2026). Station crosswalk JSON only.",
+      "families": [
+        "global-stations",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "wmo-oscar",
+      "name": "WMO OSCAR/Surface",
+      "provider": "WMO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "station_metadata"
+      ],
+      "access": "REST JSON",
+      "url": "https://oscar.wmo.int/surface/rest/api/search/station",
+      "auth": "none",
+      "licence": "WMO public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "station_registry": "primary"
+      },
+      "latency": "n/a",
+      "history_start": "n/a",
+      "spatial_res": "point",
+      "notes": "Confirms no WMO station in the Santa Cruz eastern soy belt.",
+      "families": [
+        "global-stations",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "senamhi-wfs",
+      "name": "SENAMHI GeoServer WFS (senamhi:estaciones, senamhi:municipio)",
+      "provider": "SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "station_metadata",
+        "municipality_lookup"
+      ],
+      "access": "OGC WFS GeoJSON",
+      "url": "https://senageo.senamhi.gob.bo/geoserver/senamhi/wfs",
+      "auth": "none",
+      "licence": "AccessConstraints NONE (GetCapabilities)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_registry": "primary"
+      },
+      "latency": "static",
+      "history_start": "station records 1942+ (metadata only)",
+      "spatial_res": "point",
+      "notes": "Do not filter on clasificacion (112/147 null). Dedupe '(F)' records. No end dates.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "senamhi-alerts",
+      "name": "SENAMHI active weather alerts JSON",
+      "provider": "SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "weather_warnings"
+      ],
+      "access": "REST JSON (GeoJSON MultiPolygon)",
+      "url": "https://senamhi.gob.bo/index.php/api/alertas/active-alerts",
+      "auth": "none",
+      "licence": "'Derechos Reservados SENAMHI'; terms link is a placeholder",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "official_warnings": "primary"
+      },
+      "latency": "real time (forecast, issued 0-1 d ahead)",
+      "history_start": "current only (no archive)",
+      "spatial_res": "province-scale polygon",
+      "notes": "Forecast warnings, not observed events. Type 28 = cold front, not frost. Heat/hail types unseen. Backend X-RateLimit-Limit 100; poll <=1/h and archive.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "senamhi-hydro-alerts",
+      "name": "SENAMHI active hydrological alerts JSON",
+      "provider": "SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "flood_warnings"
+      ],
+      "access": "REST JSON (HTML text + base64 images)",
+      "url": "https://senamhi.gob.bo/index.php/api/alertas/active-hydro-alerts",
+      "auth": "none",
+      "licence": "Unresolved",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_warnings": "fallback"
+      },
+      "latency": "real time",
+      "history_start": "current only",
+      "spatial_res": "basin text",
+      "notes": "Covers Santa Cruz basins (Pirai, Yapacani, Ichilo, Surutu). Strip base64 images.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "senamhi-backend",
+      "name": "SENAMHI geovisor backend (senab.senamhi.gob.bo/api)",
+      "provider": "SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "station_observations",
+        "eto"
+      ],
+      "access": "Undocumented REST",
+      "url": "https://sena.senamhi.gob.bo/public/public-geoanalisys",
+      "auth": "institutional",
+      "licence": "Unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "station_observations": "reject"
+      },
+      "latency": "unknown",
+      "history_start": "unknown",
+      "spatial_res": "point",
+      "notes": "Do not use without written SENAMHI permission; official request dirmethi@senamhi.gob.bo.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "senamhi-pdfs",
+      "name": "SENAMHI monthly climate summary + dekadal agromet bulletin PDFs",
+      "provider": "SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "monthly_station_precip",
+        "anomalies",
+        "eto_forecast"
+      ],
+      "access": "PDF",
+      "url": "https://senamhi.gob.bo/index.php/clima/monitoreo-climatico",
+      "auth": "none",
+      "licence": "Unresolved",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "validation": "validation-only"
+      },
+      "latency": "~1 month",
+      "history_start": "2024 online",
+      "spatial_res": "station",
+      "notes": "Drought monitor page returned HTTP 500 (not re-probed; follow-up 05 not run).",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "ine-bolivia",
+      "name": "INE Bolivia crop yield tables (xlsx)",
+      "provider": "INE Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "yield",
+        "area",
+        "production"
+      ],
+      "access": "xlsx via Nextcloud share links",
+      "url": "https://www.ine.gob.bo/index.php/estadisticas-economicas/agropecuaria/agricultura-cuadros-estadisticos/",
+      "auth": "none",
+      "licence": "No reuse statement",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "yield_baseline": "baseline-only"
+      },
+      "latency": "annual",
+      "history_start": "1983-84",
+      "spatial_res": "department",
+      "notes": "Use summer-campaign table (Fq9AIIMIFiTtyZY): soy 2023-24 = 1815 kg/ha. Latency 1-70 s; snapshot.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "anapo-memoria",
+      "name": "ANAPO Memoria Anual (2023-2025)",
+      "provider": "ANAPO",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "municipal_yield",
+        "seasonal_rain",
+        "crop_calendar",
+        "area_affected"
+      ],
+      "access": "PDF via WordPress media API",
+      "url": "https://anapobolivia.org/wp-content/uploads/2025/03/MEMORIA-OK.pdf",
+      "auth": "none",
+      "licence": "No licence text",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "backtest_truth": "primary",
+        "crop_calendar": "primary"
+      },
+      "latency": "annual (~March)",
+      "history_start": "2017 (first pass only)",
+      "spatial_res": "municipality / zone",
+      "notes": "2023/24 truth (Pailon 0.42 t/ha 349 mm; Cuatro Canadas 0.55 t/ha); 2024/25 control (Este 892 mm, 2.31 t/ha). Intermittent Mod_Security 406. Calendar must be split by zone.",
+      "families": [
+        "bolivia-national",
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "sissa-station-spi",
+      "name": "CRC-SAS SISSA station drought indices (SENAMHI gauges)",
+      "provider": "CRC-SAS / SENAMHI Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "spi",
+        "spei",
+        "drought_events"
+      ],
+      "access": "Undocumented REST JSON",
+      "url": "https://dashboard.crc-sas.org/api-sissa/v0.1.0/informes/indices-sequia/",
+      "auth": "none",
+      "licence": "Unknown (no terms); data belongs to SENAMHI",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "drought_truth": "baseline-only"
+      },
+      "latency": "stale since ~2025-03",
+      "history_start": "El Trompillo/Concepcion 1962, San Javier 1968",
+      "spatial_res": "station",
+      "notes": "Viru Viru has no index (drop). Trompillo SPI-3 event 2023-10-16..2024-02-25 (clipped -3.0); SPI-6 2023-11-11..2024-05-10 min -2.94. Needs Sectigo intermediate in CA bundle.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "sissa-ndvi-province",
+      "name": "CRC-SAS SISSA provincial MODIS NDVI anomaly",
+      "provider": "CRC-SAS",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "ndvi_anomaly_province"
+      ],
+      "access": "Undocumented REST JSON",
+      "url": "https://dashboard.crc-sas.org/api-sissa/v0.1.0/informes/indices-vegetacion/escala-local/",
+      "auth": "none",
+      "licence": "Unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi": "validation-only"
+      },
+      "latency": "~3 weeks",
+      "history_start": "resumen 2001",
+      "spatial_res": "province",
+      "notes": "Filter |x|>1 (mid-November fill rows). 'distribuciones' exists but returns only a PNG.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "sissa-chirps-cdi-esi",
+      "name": "CRC-SAS SISSA CHIRPS SPI / CDI / ESI",
+      "provider": "CRC-SAS",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "spi",
+        "cdi",
+        "esi"
+      ],
+      "access": "Undocumented REST JSON",
+      "url": "https://dashboard.crc-sas.org/api-sissa/v0.1.0/informes/chirps/productos",
+      "auth": "none",
+      "licence": "Unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "drought": "validation-only"
+      },
+      "latency": "SPI to 2026-10-16; ESI stale 2026-07-09",
+      "history_start": "CHIRPS SPI 2017; ESI 2002-01-08",
+      "spatial_res": "0.05 deg",
+      "notes": "Reject CDI for Bolivia (reports 0 with null input).",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "crc-sas-ws",
+      "name": "CRC-SAS raw-data web services",
+      "provider": "CRC-SAS",
+      "regions": [
+        "southern-south-america"
+      ],
+      "variables": [
+        "station_daily"
+      ],
+      "access": "REST HTTP Basic",
+      "url": "https://api.crc-sas.org/ws-api/",
+      "auth": "institutional",
+      "licence": "n/a",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "n/a",
+      "history_start": "n/a",
+      "spatial_res": "point",
+      "notes": "401.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "smn-argentina",
+      "name": "SMN Argentina open data",
+      "provider": "SMN Argentina",
+      "regions": [
+        "argentina"
+      ],
+      "variables": [
+        "tmax",
+        "tmin",
+        "hourly_obs"
+      ],
+      "access": "HTTPS fixed-width text",
+      "url": "https://ssl.smn.gob.ar/dpd/descarga_opendata.php",
+      "auth": "none",
+      "licence": "Argentine open data (not checked)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "all": "validation-only"
+      },
+      "latency": "1 d",
+      "history_start": "2020",
+      "spatial_res": "point",
+      "notes": "Nearest station 599 km; no precip.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "neighbour-national-rejected",
+      "name": "INTA SIGA / INMET / CEMADEN / Paraguay DMH / SENAMHI Peru / CIIFEN",
+      "provider": "various",
+      "regions": [
+        "regional"
+      ],
+      "variables": [
+        "station_weather"
+      ],
+      "access": "various",
+      "url": "",
+      "auth": "various",
+      "licence": "various",
+      "commercial_ok": "no",
+      "verified_live": false,
+      "verification": "mixed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "n/a",
+      "history_start": "n/a",
+      "spatial_res": "point",
+      "notes": "All >=578 km from farms; INMET resets connection; DMH paid; CIIFEN JPEG only.",
+      "families": [
+        "regional-national"
+      ]
+    },
+    {
+      "id": "gaceta-santa-cruz",
+      "name": "Gaceta Oficial Santa Cruz departmental decrees",
+      "provider": "Gobernacion de Santa Cruz",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "emergency_declarations"
+      ],
+      "access": "PDF per decree",
+      "url": "https://gacetaoficial.santacruz.gob.bo/verpdf/decreto-departamental-207",
+      "auth": "none",
+      "licence": "Public gazette",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "official_declarations": "fallback"
+      },
+      "latency": "days",
+      "history_start": "2010s",
+      "spatial_res": "department / municipality text",
+      "notes": "Manual curation.",
+      "families": [
+        "bolivia-national",
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "bolivia-unreachable",
+      "name": "VIDECI, SENASAG, MDRyT Observatorio, SIAPRO, GeoBolivia, ABT SIMB, SENAMHI onsc",
+      "provider": "Bolivian government",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "various"
+      ],
+      "access": "web",
+      "url": "",
+      "auth": "none",
+      "licence": "n/a",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "blocked",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "n/a",
+      "history_start": "n/a",
+      "spatial_res": "n/a",
+      "notes": "403 to scripts (VIDECI, SENASAG) or public DNS failure. Successor hosts not searched (follow-up 05 not run).",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "bolivia-not-probed",
+      "name": "INSA (Instituto del Seguro Agrario); Gobernacion de Santa Cruz SAT/COED",
+      "provider": "Bolivian government",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "insurance_losses",
+        "early_warning_bulletins"
+      ],
+      "access": "web",
+      "url": "https://www.insa.gob.bo/",
+      "auth": "unknown",
+      "licence": "unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "not-probed",
+      "fit": {
+        "all": "unknown"
+      },
+      "latency": "unknown",
+      "history_start": "unknown",
+      "spatial_res": "n/a",
+      "notes": "Follow-up 05 not run.",
+      "families": [
+        "critic"
+      ]
+    },
+    {
+      "id": "cao-stats",
+      "name": "CAO Numeros de Nuestra Tierra",
+      "provider": "Camara Agropecuaria del Oriente",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "ag_statistics"
+      ],
+      "access": "paid CD / on request",
+      "url": "https://cao.org.bo/estadisticas/",
+      "auth": "paid",
+      "licence": "n/a",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "n/a",
+      "history_start": "n/a",
+      "spatial_res": "zone",
+      "notes": "",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "fan-satrifo-abt",
+      "name": "FAN SATRIFO / ABT heat-foci bulletins",
+      "provider": "FAN Bolivia / ABT",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "fire_risk",
+        "heat_foci"
+      ],
+      "access": "web / PDF",
+      "url": "https://incendios.fan-bo.org/Satrifo/",
+      "auth": "none",
+      "licence": "unresolved",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "landing-only",
+      "fit": {
+        "fire": "validation-only"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "Use FIRMS instead.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "iniaf",
+      "name": "INIAF",
+      "provider": "INIAF Bolivia",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "documents"
+      ],
+      "access": "PDF",
+      "url": "https://iniaf.gob.bo/",
+      "auth": "none",
+      "licence": "n/a",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "landing-only",
+      "fit": {
+        "crop_calendar": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "No crop-calendar dataset found.",
+      "families": [
+        "bolivia-national"
+      ]
+    },
+    {
+      "id": "pc-sentinel2-l2a",
+      "name": "Sentinel-2 L2A on Microsoft Planetary Computer",
+      "provider": "Microsoft / ESA",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "scl"
+      ],
+      "access": "STAC + Azure COGs with anonymous SAS token",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/sentinel-2-l2a",
+      "auth": "none",
+      "licence": "Copernicus free and open (attribution); PC preview terms",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi_current": "primary",
+        "ndmi_current": "primary",
+        "s2_history": "primary"
+      },
+      "latency": "7-11 h (blob Last-Modified)",
+      "history_start": "2015-08/10 (tile-dependent)",
+      "spatial_res": "10-20 m",
+      "notes": "-1000 DN only when s2:processing_baseline >= 04.00 (per item, not date). Dedupe same datatake (highest baseline) / different datatakes (most valid pixels). Revisit 2-4 d. SAS token <1 h.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "platforms-access",
+        "chile-satellite-fit",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "pc-data-api",
+      "name": "Planetary Computer data API (TiTiler item/statistics, item/point)",
+      "provider": "Microsoft",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "scl_histogram",
+        "point_values"
+      ],
+      "access": "REST POST GeoJSON + expression, asset_as_band=true",
+      "url": "https://planetarycomputer.microsoft.com/api/data/v1/item/statistics",
+      "auth": "none",
+      "licence": "PC preview terms (no SLA)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi_current": "primary"
+      },
+      "latency": "per scene",
+      "history_start": "as collection",
+      "spatial_res": "native",
+      "notes": "One call with ';'-separated expressions: where(clear,ndvi,0); clear*1.0 (+B04*0 for 10 m grid); NDVI=mean1/mean2. nan or -9999 fallback -> HTTP 500. ~0.3-1 s/call; 0 errors in 1,495 calls. Empty duplicate items return 500.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "platforms-access",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "earth-search-s2-c1",
+      "name": "Earth Search sentinel-2-c1-l2a",
+      "provider": "Element84 / AWS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "scl"
+      ],
+      "access": "STAC + public S3 COGs (no signing)",
+      "url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-c1-l2a",
+      "auth": "none",
+      "licence": "Copernicus free and open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi_current": "fallback"
+      },
+      "latency": "~4.5 h (3-6 h fresher than PC)",
+      "history_start": "2018-01/02 (2022 sparse)",
+      "spatial_res": "10 m",
+      "notes": "Always subtract 1000 (reprocessed >=05.00); metadata offset -0.1 correct. Not for history. Datetime needs Z suffix.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "platforms-access",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "earth-search-s2-legacy",
+      "name": "Earth Search sentinel-2-l2a (legacy)",
+      "provider": "Element84 / AWS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi"
+      ],
+      "access": "STAC + public COGs",
+      "url": "https://earth-search.aws.element84.com/v1/collections/sentinel-2-l2a",
+      "auth": "none",
+      "licence": "Copernicus",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "ndvi": "reject"
+      },
+      "latency": "same day",
+      "history_start": "2017-01-03",
+      "spatial_res": "10 m",
+      "notes": "boa_offset_applied=true but metadata still says -0.1: never subtract. Prefer c1.",
+      "families": [
+        "sentinel2-landsat-hls"
+      ]
+    },
+    {
+      "id": "pc-hls",
+      "name": "HLS v2.0 S30/L30 on Planetary Computer",
+      "provider": "NASA / Microsoft",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "fmask"
+      ],
+      "access": "STAC + COG (anonymous SAS)",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/hls2-s30",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "gap_fill": "fallback",
+        "haze_check": "fallback"
+      },
+      "latency": "S30 ~4 d",
+      "history_start": "S30 2020-01; L30 2017-08",
+      "spatial_res": "30 m",
+      "notes": "~10% granule holes vs CMR-STAC. S30 NDVI ~+0.08 vs S2 B08 (use B8A). Fmask catches haze SCL misses.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "lpdaac-hls",
+      "name": "HLS v2.0 on NASA LP DAAC",
+      "provider": "NASA LP DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "fmask"
+      ],
+      "access": "CMR-STAC (open) + protected COGs",
+      "url": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "gap_fill": "fallback"
+      },
+      "latency": "~2 d",
+      "history_start": "L30 2013; S30 2016",
+      "spatial_res": "30 m",
+      "notes": "Complete archive; Earthdata login.",
+      "families": [
+        "sentinel2-landsat-hls"
+      ]
+    },
+    {
+      "id": "pc-landsat-c2-l2",
+      "name": "Landsat Collection 2 Level-2 on Planetary Computer",
+      "provider": "USGS / Microsoft",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "qa_pixel"
+      ],
+      "access": "STAC + COG (anonymous SAS) + data API",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/landsat-c2-l2",
+      "auth": "none",
+      "licence": "Public domain (USGS)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndmi_baseline": "primary",
+        "ndvi_baseline_chile": "primary"
+      },
+      "latency": "2-10 d at USGS (PC 'created' is a re-index)",
+      "history_start": "1984-04-07",
+      "spatial_res": "30 m",
+      "notes": "Calibrate to S2 per block (offset +0.06..+0.16 on sparse blocks). Dedupe overlapping WRS rows. Keep T2, mask with qa_pixel. Landsat NDMI = 1.030*S2(B8A/B11)+0.037.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "chile-satellite-fit",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "landsat-requester-pays",
+      "name": "Landsat C2 on Earth Search / AWS usgs-landsat; USGS LandsatLook",
+      "provider": "USGS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi"
+      ],
+      "access": "STAC + requester-pays S3 / ERS login",
+      "url": "https://landsatlook.usgs.gov/stac-server",
+      "auth": "paid / free-signup",
+      "licence": "Public domain",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "ndvi": "reject"
+      },
+      "latency": "",
+      "history_start": "1984",
+      "spatial_res": "30 m",
+      "notes": "Use PC mirror.",
+      "families": [
+        "sentinel2-landsat-hls"
+      ]
+    },
+    {
+      "id": "cdse",
+      "name": "Copernicus Data Space Ecosystem (STAC, OData, openEO, Sentinel Hub)",
+      "provider": "ESA / EC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "ndmi",
+        "s1_grd",
+        "clms"
+      ],
+      "access": "STAC open; processing via openEO / Sentinel Hub Statistical API",
+      "url": "https://dataspace.copernicus.eu",
+      "auth": "free-signup",
+      "licence": "Copernicus free and open",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi_production": "fallback"
+      },
+      "latency": "same day",
+      "history_start": "2015 (N0500 reprocessed archive)",
+      "spatial_res": "10 m",
+      "notes": "Free tier: Sentinel Hub 10k requests + 10k PU/month, 300/min; openEO 12 sync/min (10k credits a temporary boost). Commercial production on free tier unverified.",
+      "families": [
+        "sentinel2-landsat-hls",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "pc-modis-13q1",
+      "name": "Planetary Computer modis-13Q1-061 (MOD13Q1/MYD13Q1)",
+      "provider": "Microsoft / NASA LP DAAC",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "evi",
+        "pixel_reliability",
+        "vi_quality"
+      ],
+      "access": "STAC + COG window reads (container SAS token modiseuwest/modis-061-cogs)",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-13Q1-061",
+      "auth": "none",
+      "licence": "NASA open (STAC licence field 'other')",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "refuted",
+      "fit": {
+        "ndvi_baseline": "primary"
+      },
+      "latency": "STAC ~1 composite behind LP DAAC (blobs often newer)",
+      "history_start": "2000-02-18 (Terra), 2002-07-04 (Aqua)",
+      "spatial_res": "250 m",
+      "notes": "Holes: 2025-07-03..2025-11-16 plus scattered (A2023049, A2024225, A2024353...). Fill via CMR-id blob URL then ORNL. Duplicate reprocessed items: dedupe on (product, AYYYYDDD, tile). platform field empty on many items: filter by id prefix. Reliability nodata 255 (old) vs -1 (2026).",
+      "families": [
+        "modis-viirs-ndvi",
+        "gapfill-fusion",
+        "platforms-access",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "ornl-modis-subset",
+      "name": "ORNL DAAC MODIS/VIIRS subset REST",
+      "provider": "NASA ORNL DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "mod13q1",
+        "mcd12q1",
+        "mcd12q2",
+        "lst_8day",
+        "mod16"
+      ],
+      "access": "REST JSON, max 10 dates per call",
+      "url": "https://modis.ornl.gov/rst/api/v1/",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndvi_baseline": "fallback",
+        "phenology": "fallback",
+        "land_cover": "validation-only"
+      },
+      "latency": "MOD13Q1 current (2026-10-16); MYD13Q1 lags ~1 month",
+      "history_start": "2000-02-18",
+      "spatial_res": "250-500 m",
+      "notes": "Backfills PC hole for MOD13Q1 (verified all 8 composites). No MCD43A4 or daily LST for Bolivia; VNP13A1 stops 2024-05. 3-60 s per call; 502s under load; cache only.",
+      "families": [
+        "modis-viirs-ndvi",
+        "gapfill-fusion",
+        "crop-masks-phenology",
+        "s2-modis-calibration"
+      ]
+    },
+    {
+      "id": "nasa-cmr",
+      "name": "NASA CMR granule search / CMR-STAC",
+      "provider": "NASA EOSDIS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "granule_metadata"
+      ],
+      "access": "REST JSON",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "latency_oracle": "primary"
+      },
+      "latency": "real time",
+      "history_start": "n/a",
+      "spatial_res": "n/a",
+      "notes": "Keyless search; downloads need Earthdata.",
+      "families": [
+        "modis-viirs-ndvi",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "viirs-vi-v002",
+      "name": "VIIRS VNP13A1 / VJ113A1 / VJ213A1 v002",
+      "provider": "NASA LP DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi",
+        "evi"
+      ],
+      "access": "HDF5 via earthaccess / AppEEARS",
+      "url": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/VNP13A1.002/",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "catalogue-only",
+      "fit": {
+        "ndvi_continuity": "fallback"
+      },
+      "latency": "~2 weeks",
+      "history_start": "2012-01-17 (S-NPP)",
+      "spatial_res": "500 m",
+      "notes": "MODIS continuity path (Terra end of life ~2027, unverified). VNP13A1 lists future-ending windows; check window end.",
+      "families": [
+        "modis-viirs-ndvi"
+      ]
+    },
+    {
+      "id": "appeears",
+      "name": "NASA AppEEARS",
+      "provider": "NASA LP DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "mod13q1",
+        "viirs_vi",
+        "smap",
+        "mcd43a4"
+      ],
+      "access": "REST async tasks",
+      "url": "https://appeears.earthdatacloud.nasa.gov/api/",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "baseline_prefetch": "fallback"
+      },
+      "latency": "minutes-hours",
+      "history_start": "2000",
+      "spatial_res": "native",
+      "notes": "Product list public; tasks need login.",
+      "families": [
+        "modis-viirs-ndvi",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "pc-modis-43a4",
+      "name": "Planetary Computer modis-43A4-061 (MCD43A4 NBAR)",
+      "provider": "Microsoft / NASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "nbar_reflectance",
+        "ndvi",
+        "ndmi"
+      ],
+      "access": "STAC + COG",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-43A4-061",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ndmi_baseline": "fallback"
+      },
+      "latency": "~9 d",
+      "history_start": "2000-02-16",
+      "spatial_res": "500 m",
+      "notes": "2025-07..2025-11 hole with no keyless backfill (ORNL lacks MCD43A4 for Bolivia). Pixels not read.",
+      "families": [
+        "modis-viirs-ndvi"
+      ]
+    },
+    {
+      "id": "noaa-cdr-ndvi",
+      "name": "NOAA CDR NDVI (AVHRR / VIIRS)",
+      "provider": "NOAA NCEI",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ndvi"
+      ],
+      "access": "HTTPS daily NetCDF (66 MB)",
+      "url": "https://www.ncei.noaa.gov/data/land-normalized-difference-vegetation-index/access/",
+      "auth": "none",
+      "licence": "NOAA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "listing-only",
+      "fit": {
+        "ndvi": "baseline-only"
+      },
+      "latency": "2-4 d",
+      "history_start": "1981-06-24",
+      "spatial_res": "0.05 deg",
+      "notes": "Regional context only; sensor break.",
+      "families": [
+        "modis-viirs-ndvi"
+      ]
+    },
+    {
+      "id": "gee",
+      "name": "Google Earth Engine",
+      "provider": "Google",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "chirps",
+        "modis",
+        "era5_land",
+        "dynamic_world",
+        "mapbiomas_chile"
+      ],
+      "access": "earthengine-api",
+      "url": "https://earthengine.googleapis.com/v1",
+      "auth": "key",
+      "licence": "Companies count as commercial (paid tiers)",
+      "commercial_ok": "no",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "Discovery only.",
+      "families": [
+        "platforms-access",
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "pc-modis-lst",
+      "name": "Planetary Computer MOD11A1/MYD11A1 LST",
+      "provider": "Microsoft / NASA",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "lst_night",
+        "lst_day"
+      ],
+      "access": "STAC + COG / data API point",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-11A1-061",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "frost_corroboration": "primary",
+        "cold_pool_downscaling": "fallback"
+      },
+      "latency": "~2-3 d",
+      "history_start": "2000-02-24 (Terra), 2002-07 (Aqua)",
+      "spatial_res": "1 km",
+      "notes": "Hole 2025-07-01..2025-12-01. Clear on ~25-50% of cold nights (site-dependent). Aqua view-time drift 2-3 h. Search by bbox not point; bounds-check pixels. F1 ~0.7 at 0 C out of sample.",
+      "families": [
+        "frost-heat-hail",
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "pc-modis-snow",
+      "name": "Planetary Computer MOD10A1/MOD10A2 snow cover",
+      "provider": "Microsoft / NASA",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "snow_cover",
+        "snow_cover_percentile"
+      ],
+      "access": "STAC + data API stats",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/modis-10A1-061",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "unverifiable-in-verify",
+      "fit": {
+        "snow_cover": "primary"
+      },
+      "latency": "~6 d daily; ~3 weeks 8-day",
+      "history_start": "2000-02-24",
+      "spatial_res": "500 m",
+      "notes": "Saturates at high elevation in early spring; cloud code 50.",
+      "families": [
+        "chile-water",
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "pc-sentinel1-rtc",
+      "name": "Sentinel-1 RTC on Planetary Computer",
+      "provider": "Microsoft / ESA",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "vv",
+        "vh",
+        "waterlogging_proxy",
+        "rvi"
+      ],
+      "access": "STAC + COG (anonymous SAS)",
+      "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-rtc",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "waterlogging": "primary",
+        "cloud_gap_veg": "display-only"
+      },
+      "latency": "~3 d",
+      "history_start": "2014-10 (dual-pol 2017)",
+      "spatial_res": "10 m",
+      "notes": "Stay on descending track 10. Thin 2022-24 (13-25 scenes/yr). Token ~45 min. msft:requires_account=true policy risk. Fixed water thresholds give ~0%.",
+      "families": [
+        "sar-flood-water",
+        "gapfill-fusion"
+      ]
+    },
+    {
+      "id": "pc-sentinel1-grd",
+      "name": "Sentinel-1 GRD (PC; Earth Search requester-pays)",
+      "provider": "Microsoft / AWS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "vv",
+        "vh"
+      ],
+      "access": "STAC + COG",
+      "url": "https://planetarycomputer.microsoft.com/dataset/sentinel-1-grd",
+      "auth": "none / paid",
+      "licence": "Copernicus",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "sar": "reject"
+      },
+      "latency": "~3 d",
+      "history_start": "2014",
+      "spatial_res": "10 m",
+      "notes": "RTC is preferred.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "cems-gfm",
+      "name": "Copernicus Global Flood Monitoring (GFM) via EODC STAC/COG",
+      "provider": "Copernicus EMS / EODC",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "flood_observed",
+        "surface_water",
+        "exclusion_mask",
+        "reference_water"
+      ],
+      "access": "STAC + COG (EPSG:27707) + WMS-T",
+      "url": "https://stac.eodc.eu/api/v1/collections/GFM",
+      "auth": "none",
+      "licence": "Copernicus free, full and open (attribution)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_observed": "primary"
+      },
+      "latency": "2-6.5 h after S1 pass; one valid descending pass every 12 d (wet-season gaps up to 24 d)",
+      "history_start": "2015-01-01",
+      "spatial_res": "20 m",
+      "notes": "0 = no flood OR excluded: read exclusion_mask (62-78% excluded at some farms). Filter items on SA020M and valid pixels. EMSR853 recall <=28% of polygon, high precision.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "noaa-vfm",
+      "name": "NOAA/GMU VIIRS flood map (VFM) 1-day GeoTIFF",
+      "provider": "NOAA JPSS / GMU",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "flood_fraction"
+      ],
+      "access": "Public S3 GeoTIFF (tile GLB034)",
+      "url": "https://noaa-jpss.s3.amazonaws.com/index.html",
+      "auth": "none",
+      "licence": "NOAA public domain",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_observed": "fallback"
+      },
+      "latency": "~1 d",
+      "history_start": "2012 (archive gap 2021-01..2023-07)",
+      "spatial_res": "~375 m",
+      "notes": "Optical, cloud-blind in wet season; legend partly unverified. Near-real-time only.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "gibs-flood",
+      "name": "NASA LANCE MODIS/VIIRS combined flood via GIBS WMS",
+      "provider": "NASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "flood_imagery"
+      ],
+      "access": "WMS PNG",
+      "url": "https://gibs.earthdata.nasa.gov/",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_observed": "display-only"
+      },
+      "latency": "~1 d",
+      "history_start": "MODIS 2021; VIIRS 2025-06",
+      "spatial_res": "250 m",
+      "notes": "60-100% 'insufficient data' in wet season; dry-season false positives.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "cems-rapid-mapping",
+      "name": "Copernicus EMS Rapid Mapping activations",
+      "provider": "Copernicus EMS",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "flood_extent",
+        "burnt_area",
+        "aoi"
+      ],
+      "access": "REST JSON + product zips (302 to signed S3)",
+      "url": "https://rapidmapping.emergency.copernicus.eu/backend/dashboard-api/public-activations-info/?limit=500",
+      "auth": "none",
+      "licence": "Copernicus free and open (attribution)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_events": "validation-only",
+        "fire_events": "fallback"
+      },
+      "latency": "days after activation",
+      "history_start": "2023-03 keyless (EMSR656+; older 403)",
+      "spatial_res": "vector",
+      "notes": "EMSR853 (Dec-2025 Pirai) observed flood 16-28 km from farms; several products not produced. Chile EMSR715, EMSR859 burnt areas.",
+      "families": [
+        "sar-flood-water",
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "jrc-gsw",
+      "name": "JRC Global Surface Water",
+      "provider": "EC JRC / Google",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "surface_water_occurrence",
+        "seasonality"
+      ],
+      "access": "PC COG (to 2020) or GCS v1.4 tiles",
+      "url": "https://global-surface-water.appspot.com/download",
+      "auth": "none",
+      "licence": "Free, without restriction of use; attribution 'Source: EC JRC/Google'",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "flood_prone_static": "primary"
+      },
+      "latency": "static",
+      "history_start": "1984-2021",
+      "spatial_res": "30 m",
+      "notes": "Static mask only.",
+      "families": [
+        "sar-flood-water",
+        "platforms-access",
+        "farm-relocation"
+      ]
+    },
+    {
+      "id": "cems-ewds-glofas",
+      "name": "GloFAS via CEMS Early Warning Data Store",
+      "provider": "ECMWF / CEMS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "river_discharge",
+        "return_periods"
+      ],
+      "access": "cdsapi",
+      "url": "https://ewds.climate.copernicus.eu/",
+      "auth": "free-signup",
+      "licence": "Copernicus open",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "river_discharge": "fallback(production)"
+      },
+      "latency": "daily",
+      "history_start": "1979",
+      "spatial_res": "0.05 deg",
+      "notes": "Not probed.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "dfo-archive",
+      "name": "Dartmouth Flood Observatory archive",
+      "provider": "DFO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "flood_events"
+      ],
+      "access": "ArcGIS FeatureServer",
+      "url": "https://floodobservatory.colorado.edu/",
+      "auth": "none",
+      "licence": "Research with citation",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "flood_events": "baseline-only"
+      },
+      "latency": "stale 2021",
+      "history_start": "1985",
+      "spatial_res": "event polygons",
+      "notes": "",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "global-flood-db",
+      "name": "Global Flood Database (Cloud to Street)",
+      "provider": "Cloud to Street",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "historical_flood_extent"
+      ],
+      "access": "GEE",
+      "url": "https://global-flood-database.cloudtostreet.ai/",
+      "auth": "free-signup",
+      "licence": "CC BY-NC 4.0",
+      "commercial_ok": "no",
+      "verified_live": false,
+      "verification": "catalogue-only",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "static",
+      "history_start": "2000-2018",
+      "spatial_res": "250 m",
+      "notes": "Non-commercial.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "merit-copdem",
+      "name": "MERIT Hydro HAND / Copernicus DEM",
+      "provider": "Univ Tokyo / ESA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "hand",
+        "elevation"
+      ],
+      "access": "registration / PC STAC",
+      "url": "https://hydro.iis.u-tokyo.ac.jp/~yamadai/MERIT_Hydro/",
+      "auth": "institutional / none",
+      "licence": "MERIT CC BY-NC / Cop-DEM open",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "waterlogging_susceptibility": "fallback"
+      },
+      "latency": "static",
+      "history_start": "static",
+      "spatial_res": "30-90 m",
+      "notes": "Not probed.",
+      "families": [
+        "sar-flood-water"
+      ]
+    },
+    {
+      "id": "gdo-drought-tracking",
+      "name": "GDO Drought Tracking (jspeS)",
+      "provider": "Copernicus EMS / JRC GDO",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "drought_events",
+        "drought_footprints"
+      ],
+      "access": "HTTPS yearly zip of GeoJSON",
+      "url": "https://drought.emergency.copernicus.eu/data/Drought_Observatories_datasets/GDO_Drought_Tracking/ver1-0-0/",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "refuted",
+      "fit": {
+        "drought_events": "baseline-only"
+      },
+      "latency": "files ~2 weeks; events published 3-6 months after they end; ongoing never",
+      "history_start": "1991",
+      "spatial_res": "0.25 deg",
+      "notes": "Union multi-part features per (id_cl_st,time); do not dedupe. Clusters up to 12.2M km2: regional flag, cannot rank farms.",
+      "families": [
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "gdo-rdri-agri",
+      "name": "GDO Risk of Drought Impact for Agriculture",
+      "provider": "JRC GDO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "ag_drought_risk_class"
+      ],
+      "access": "HTTPS netCDF4",
+      "url": "https://drought.emergency.copernicus.eu/data/Drought_Observatories_datasets/GDO_Risk_of_Drought_Impacts_for_Agriculture/ver4-0-1/",
+      "auth": "none",
+      "licence": "Copernicus open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "drought": "fallback"
+      },
+      "latency": "~3-4 weeks",
+      "history_start": "2010",
+      "spatial_res": "1 deg",
+      "notes": "Too coarse to rank farms.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "gdo-wms",
+      "name": "GDO WMS",
+      "provider": "JRC GDO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "spi_map",
+        "sma_map",
+        "fapar_map"
+      ],
+      "access": "WMS 1.1.1 PNG",
+      "url": "https://drought.emergency.copernicus.eu/api/wms",
+      "auth": "none",
+      "licence": "Copernicus open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "map_layers": "display-only"
+      },
+      "latency": "to 2026-10-21",
+      "history_start": "1991",
+      "spatial_res": "varies",
+      "notes": "No GetFeatureInfo; 1.3.0 returns 502.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "gdacs",
+      "name": "GDACS events API",
+      "provider": "EC JRC / UN OCHA",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "event_index",
+        "alert_level",
+        "glide"
+      ],
+      "access": "REST GeoJSON",
+      "url": "https://www.gdacs.org/gdacsapi/api/events/geteventlist/SEARCH",
+      "auth": "none",
+      "licence": "Not stated (disclaimer only)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "event_index": "primary",
+        "footprints": "reject"
+      },
+      "latency": "<1 d",
+      "history_start": "FL 2001; DR ~2018; WF 2021-07",
+      "spatial_res": "points / coarse polygons",
+      "notes": "Pass alertlevel=green;orange;red. FL/DR polygons department-sized or national: never intersect with farms. No DR event for Bolivia 2024/2025. Normalise alert case. WF alert does not track size.",
+      "families": [
+        "events-catalogs",
+        "sar-flood-water",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "firms-keyless",
+      "name": "NASA FIRMS keyless CSVs (yearly country + 7-day NRT)",
+      "provider": "NASA LANCE FIRMS",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "active_fire",
+        "frp"
+      ],
+      "access": "HTTPS CSV",
+      "url": "https://firms.modaps.eosdis.nasa.gov/data/country/",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "fire_baseline": "primary",
+        "fire_nrt": "primary"
+      },
+      "latency": "NRT ~4 h; yearly ~10 months (2026 yearly 404)",
+      "history_start": "2000 (MODIS), 2012 (VIIRS)",
+      "spatial_res": "375 m-1 km points",
+      "notes": "No keyless Jan-Oct 2026. Use NOAA-20/21 (SNPP stopped ~2026-11-02). Terra/Aqua orbit drift 2023-25. Managed cane/rice burning near Mineros.",
+      "families": [
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "firms-area-api",
+      "name": "NASA FIRMS area API (MAP_KEY)",
+      "provider": "NASA LANCE FIRMS",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "active_fire"
+      ],
+      "access": "REST CSV",
+      "url": "https://firms.modaps.eosdis.nasa.gov/api/area/",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "docs-only",
+      "fit": {
+        "fire_2026_gap": "primary"
+      },
+      "latency": "NRT",
+      "history_start": "2000",
+      "spatial_res": "points",
+      "notes": "Free email MAP_KEY; DAY_RANGE 1-5; 5000 transactions / 10 min; ~60 calls/source for Jan-Oct 2026.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "inpe-queimadas",
+      "name": "INPE Queimadas CSV",
+      "provider": "INPE Brazil",
+      "regions": [
+        "bolivia",
+        "southern-south-america"
+      ],
+      "variables": [
+        "active_fire"
+      ],
+      "access": "HTTPS CSV daily / monthly / annual",
+      "url": "https://dataserver-coids.inpe.br/queimadas/queimadas/focos/csv/",
+      "auth": "none",
+      "licence": "Not verified",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "fire_2026_gap": "fallback"
+      },
+      "latency": "same day",
+      "history_start": "2003 (AMS annual); daily kept from 2026-05-14",
+      "spatial_res": "points",
+      "notes": "Monthly files up to 186 MB. Different satellites/algorithms from FIRMS.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "gwis-ba-poly",
+      "name": "GWIS/EFFIS near-real-time burned area polygons (nrt.ba.poly)",
+      "provider": "Copernicus EMS / JRC GWIS",
+      "regions": [
+        "chile",
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "burned_area"
+      ],
+      "access": "OGC WFS 1.1 GeoJSON with OGC Filter",
+      "url": "https://maps.effis.emergency.copernicus.eu/gwis?service=WFS&request=GetFeature&typename=ms:nrt.ba.poly",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "burned_area": "primary"
+      },
+      "latency": "~1 d (provisional 2-3 weeks)",
+      "history_start": "2012-01-01",
+      "spatial_res": "~100 ha floor",
+      "notes": "Use geometry union (~12% overlap). Includes agricultural burning (Apr-May peaks). Envelope lat,lon inside OGC Filter; KVP bbox lon,lat. No 5000 cap observed with filter.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "glide",
+      "name": "GLIDE number JSON",
+      "provider": "ADRC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "event_ids",
+        "narratives"
+      ],
+      "access": "REST JSON",
+      "url": "https://www.glidenumber.net/glide/jsonglideset.jsp",
+      "auth": "none",
+      "licence": "free",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "event_join_key": "primary"
+      },
+      "latency": "days-weeks",
+      "history_start": "~2000",
+      "spatial_res": "none",
+      "notes": "Sparse (10 Bolivia records 2015-2022).",
+      "families": [
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "ifrc-go",
+      "name": "IFRC GO events API",
+      "provider": "IFRC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "disaster_events",
+        "glide"
+      ],
+      "access": "REST JSON",
+      "url": "https://goadmin.ifrc.org/api/v2/event/",
+      "auth": "none",
+      "licence": "IFRC terms",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "event_index": "fallback"
+      },
+      "latency": "days",
+      "history_start": "2000s",
+      "spatial_res": "country",
+      "notes": "Bolivia id 33, Chile id 46; check hazard/date before trusting GLIDE.",
+      "families": [
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "reliefweb",
+      "name": "ReliefWeb disasters RSS (API v2 needs approved appname)",
+      "provider": "UN OCHA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "disaster_list"
+      ],
+      "access": "RSS",
+      "url": "https://reliefweb.int/disasters/rss.xml",
+      "auth": "none (RSS) / institutional (API)",
+      "licence": "free",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "event_index": "fallback"
+      },
+      "latency": "days",
+      "history_start": "~1981",
+      "spatial_res": "country",
+      "notes": "Bolivia C39, Chile C57.",
+      "families": [
+        "events-catalogs",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "desinventar",
+      "name": "DesInventar (Bolivia, Chile)",
+      "provider": "UNDRR",
+      "regions": [
+        "bolivia",
+        "chile"
+      ],
+      "variables": [
+        "historical_disasters"
+      ],
+      "access": "web profile / zip export",
+      "url": "https://www.desinventar.net/",
+      "auth": "none",
+      "licence": "open",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "events": "baseline-only"
+      },
+      "latency": "stale (BOL 2015, CHL 2014)",
+      "history_start": "1970",
+      "spatial_res": "municipality",
+      "notes": "Context only.",
+      "families": [
+        "events-catalogs",
+        "bolivia-national",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "events-rejected",
+      "name": "EM-DAT, IFRC Montandon, FEWS NET, GEOGLAM Crop Monitor, GWIS fire events API",
+      "provider": "various",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "events"
+      ],
+      "access": "various",
+      "url": "",
+      "auth": "various",
+      "licence": "various",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "mixed",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "EM-DAT needs key; Montandon 401; FEWS NET no Bolivia.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "tb-queimadas-wfs",
+      "name": "TerraBrasilis Queimadas WFS",
+      "provider": "INPE",
+      "regions": [
+        "southern-south-america"
+      ],
+      "variables": [
+        "active_fire"
+      ],
+      "access": "WFS 2.0",
+      "url": "https://terrabrasilis.dpi.inpe.br/queimadas/geoserver/wfs",
+      "auth": "none",
+      "licence": "unverified",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "partial",
+      "fit": {
+        "fire": "validation-only"
+      },
+      "latency": "",
+      "history_start": "1998",
+      "spatial_res": "points",
+      "notes": "Date filters returned 0.",
+      "families": [
+        "events-catalogs"
+      ]
+    },
+    {
+      "id": "glad-soy",
+      "name": "GLAD/UMD South America soybean annual maps",
+      "provider": "UMD GLAD",
+      "regions": [
+        "bolivia",
+        "southern-south-america"
+      ],
+      "variables": [
+        "soy_mask"
+      ],
+      "access": "HTTPS GeoTIFF /vsicurl",
+      "url": "https://glad.umd.edu/projects/AnnualClassMapsV1/SouthAmerica_Soybean_{YYYY}.tif",
+      "auth": "none",
+      "licence": "Not stated (ask glad@umd.edu)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "soy_mask": "primary"
+      },
+      "latency": "~19 months after season",
+      "history_start": "2001",
+      "spatial_res": "~30 m",
+      "notes": "Summer-season soy only. 2024 layer unusable (collapse in Bolivia and Mato Grosso): max 2021-2023.",
+      "families": [
+        "crop-masks-phenology",
+        "farm-relocation"
+      ]
+    },
+    {
+      "id": "mapbiomas-bolivia-mirror",
+      "name": "MapBiomas Bolivia land cover (source.coop COG mirror)",
+      "provider": "MapBiomas Bolivia / FAN (third-party mirror)",
+      "regions": [
+        "bolivia"
+      ],
+      "variables": [
+        "cropland_mask",
+        "soy_class_39",
+        "land_cover"
+      ],
+      "access": "COG per year",
+      "url": "https://data.source.coop/tristangruppwri/mapbiomas/mapbiomas-bolivia/",
+      "auth": "none",
+      "licence": "CC BY 4.0 (upstream; mirror metadata says CC-BY-SA)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "cropland_mask": "primary"
+      },
+      "latency": "latest 2024",
+      "history_start": "2019 (mirror); 1985 official",
+      "spatial_res": "30 m",
+      "notes": "Agriculture classes {18,39,72} + 21 partial; no class 40/20 in region. Official GCS bucket 403. HEAD-check mirror at startup.",
+      "families": [
+        "crop-masks-phenology",
+        "farm-relocation"
+      ]
+    },
+    {
+      "id": "mapbiomas-official",
+      "name": "MapBiomas Bolivia / Chile official downloads and GEE",
+      "provider": "MapBiomas",
+      "regions": [
+        "bolivia",
+        "chile"
+      ],
+      "variables": [
+        "land_cover",
+        "fire"
+      ],
+      "access": "GCS (403 anonymous) / GEE",
+      "url": "https://bolivia.mapbiomas.org/downloads/mapas-para-descargar-geotiff/",
+      "auth": "free-signup",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "blocked",
+      "fit": {
+        "land_cover": "fallback"
+      },
+      "latency": "annual",
+      "history_start": "1985 (BOL), 1999 (CHL)",
+      "spatial_res": "30 m",
+      "notes": "Anonymous GCS 403/401.",
+      "families": [
+        "crop-masks-phenology",
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "esa-worldcover",
+      "name": "ESA WorldCover 2020/2021 (PC)",
+      "provider": "ESA / Microsoft",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "land_cover",
+        "cropland_class_40"
+      ],
+      "access": "STAC + COG",
+      "url": "https://planetarycomputer.microsoft.com/dataset/esa-worldcover",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "cropland_mask": "fallback"
+      },
+      "latency": "static",
+      "history_start": "2020",
+      "spatial_res": "10 m",
+      "notes": "Binary farmland test; fractions differ up to ~0.2 from MapBiomas.",
+      "families": [
+        "crop-masks-phenology",
+        "gapfill-fusion",
+        "chile-satellite-fit",
+        "farm-relocation"
+      ]
+    },
+    {
+      "id": "io-lulc",
+      "name": "Esri/Impact Observatory annual LULC v02 (PC)",
+      "provider": "Esri / IO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "land_cover"
+      ],
+      "access": "STAC + COG",
+      "url": "https://planetarycomputer.microsoft.com/dataset/io-lulc-annual-v02",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "cropland_mask": "fallback"
+      },
+      "latency": "latest 2023",
+      "history_start": "2017",
+      "spatial_res": "10 m",
+      "notes": "",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "worldcereal",
+      "name": "ESA WorldCereal 2021 (Terrascope titiler)",
+      "provider": "ESA / VITO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "temporary_crops",
+        "active_cropland",
+        "maize",
+        "winter_cereals"
+      ],
+      "access": "STAC + public titiler /statistics POST",
+      "url": "https://stac.terrascope.be/collections/esa-worldcereal-temporarycrops-10m-2021-v1",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "cropland_mask": "validation-only"
+      },
+      "latency": "static",
+      "history_start": "2021",
+      "spatial_res": "10 m",
+      "notes": "Crop-type layers under-detect (maize 0.00 at maize farms).",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "mcd12q1-q2",
+      "name": "MODIS MCD12Q1 land cover / MCD12Q2 phenology (ORNL)",
+      "provider": "NASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "igbp_land_cover",
+        "greenup",
+        "senescence",
+        "num_cycles"
+      ],
+      "access": "ORNL REST",
+      "url": "https://modis.ornl.gov/rst/api/v1/MCD12Q2/subset",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "phenology": "fallback",
+        "baseline_year_mask": "primary"
+      },
+      "latency": "~1 yr",
+      "history_start": "2001",
+      "spatial_res": "500 m",
+      "notes": "Fill years 10-30% per pixel. Assign cycles by date, not product year. 3-6 s/call.",
+      "families": [
+        "crop-masks-phenology",
+        "gapfill-fusion"
+      ]
+    },
+    {
+      "id": "fao-crop-calendar",
+      "name": "FAO Crop Calendar API",
+      "provider": "FAO",
+      "regions": [
+        "bolivia",
+        "global"
+      ],
+      "variables": [
+        "sowing_window",
+        "harvest_window"
+      ],
+      "access": "REST JSON",
+      "url": "https://api-cropcalendar.apps.fao.org/api/v1/countries/BO/cropCalendar",
+      "auth": "none",
+      "licence": "FAO copyright: non-commercial without permission",
+      "commercial_ok": "no",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "crop_calendar": "primary(demo)"
+      },
+      "latency": "lastUpdated 2025-03",
+      "history_start": "n/a",
+      "spatial_res": "AEZ",
+      "notes": "No lowland maize/sunflower/sugarcane/chia. /aez has no geometry. Ask copyright@fao.org; do not redistribute payload.",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "geoglam-cm4ew",
+      "name": "GEOGLAM Crop Monitor sub-national calendars v1.3",
+      "provider": "GEOGLAM / UMD",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "crop_stage_doy"
+      ],
+      "access": "Zenodo zip (.dbf via range)",
+      "url": "https://zenodo.org/records/15850408",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "crop_calendar": "fallback"
+      },
+      "latency": "2025-07",
+      "history_start": "n/a",
+      "spatial_res": "department",
+      "notes": "Maize 1 and winter wheat only; no soybean.",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "ggcmi-p3",
+      "name": "GGCMI phase 3 crop calendar",
+      "provider": "Jaegermeyr et al. / Zenodo",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "planting_day",
+        "maturity_day"
+      ],
+      "access": "Zenodo NetCDF",
+      "url": "https://zenodo.org/records/5062513",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "crop_calendar": "baseline-only"
+      },
+      "latency": "static",
+      "history_start": "n/a",
+      "spatial_res": "0.5 deg",
+      "notes": "Winter crops misplaced (~4 months).",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "geoglam-bacs",
+      "name": "GEOGLAM BACS crop masks",
+      "provider": "GEOGLAM",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "crop_fraction"
+      ],
+      "access": "Zenodo zip",
+      "url": "https://zenodo.org/records/7230863",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "crop_mask": "baseline-only"
+      },
+      "latency": "static",
+      "history_start": "n/a",
+      "spatial_res": "~0.05 deg",
+      "notes": "Too coarse.",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "fao56-kc",
+      "name": "FAO-56 Tables 11/12 crop coefficients",
+      "provider": "FAO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "kc",
+        "stage_lengths"
+      ],
+      "access": "HTML",
+      "url": "https://www.fao.org/4/x0490e/x0490e0b.htm",
+      "auth": "none",
+      "licence": "FAO copyright; cite values as facts",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "kc": "primary"
+      },
+      "latency": "static",
+      "history_start": "1998",
+      "spatial_res": "n/a",
+      "notes": "Values extracted for Bolivia and Chile crops.",
+      "families": [
+        "crop-masks-phenology",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "fao-frost-tables",
+      "name": "FAO Frost Protection Vol.1 critical temperatures (T10/T90)",
+      "provider": "FAO",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "critical_temperatures"
+      ],
+      "access": "PDF",
+      "url": "https://fao.org/4/y7223s/y7223s05.pdf",
+      "auth": "none",
+      "licence": "FAO copyright",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "frost_thresholds": "primary"
+      },
+      "latency": "static",
+      "history_start": "2010",
+      "spatial_res": "n/a",
+      "notes": "Bing cherry full bloom -2.4/-3.9 C etc.",
+      "families": [
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "dynamic-world",
+      "name": "Dynamic World V1",
+      "provider": "Google / WRI",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "land_cover_probabilities"
+      ],
+      "access": "GEE only",
+      "url": "https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1",
+      "auth": "free-signup",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "crop_activity": "reject"
+      },
+      "latency": "days",
+      "history_start": "2015",
+      "spatial_res": "10 m",
+      "notes": "No keyless path.",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "usda-ipad",
+      "name": "USDA FAS IPAD",
+      "provider": "USDA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "crop_calendars"
+      ],
+      "access": "HTML",
+      "url": "https://ipad.fas.usda.gov/",
+      "auth": "none",
+      "licence": "US public domain",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "retired",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "Retired; new pages block scripts.",
+      "families": [
+        "crop-masks-phenology"
+      ]
+    },
+    {
+      "id": "cr2met",
+      "name": "CR2MET v2.5 (R1 / NRT / best) on ftp.cr2.cl; Zenodo v2.5 archive",
+      "provider": "CR2, Universidad de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "precip",
+        "tmax",
+        "tmin",
+        "tmean",
+        "et0_hargreaves",
+        "spi",
+        "spei"
+      ],
+      "access": "HTTPS monthly NetCDF3 with HTTP Range (netCDF4 #mode=bytes); Zenodo zips 2.5 / 6.8 GB",
+      "url": "https://ftp.cr2.cl/browse/cr2met/",
+      "auth": "none",
+      "licence": "CC BY 4.0 for Zenodo v2.5 (1960-2021); R1/NRT/best terms not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "precip": "primary",
+        "tmax_tmin": "primary",
+        "eto": "primary",
+        "spi": "primary"
+      },
+      "latency": "NRT pr ~10 d; NRT txn ~6 d; R1 P-3 months; best monthly",
+      "history_start": "1959-02 (R1/best); use 1991-2020",
+      "spatial_res": "0.05 deg",
+      "notes": "Baselines from R1+NRT only (best splices obs-adjusted v2.5 to 2021 -> 2022 break). Pre-1980 bias. ~10 s per var-month remote read; bulk-download months (~19-22 MB pr). cl_mask required. Missing NRT days (2026-10-31). Bias site-specific (Curico +32% rain, Tmin -2.1; Temuco +24%, Tmin +0.1). et0 is Hargreaves-Samani.",
+      "families": [
+        "chile-national-met",
+        "chile-global-stations",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "dmc-annual-tables",
+      "name": "DMC annual station tables (HTML)",
+      "provider": "Direccion Meteorologica de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "precip_daily",
+        "tmax_daily",
+        "tmin_daily",
+        "frost_events"
+      ],
+      "access": "Keyless HTML GET /application/anual/{aguaCaidaAnual|temperaturaMaximaAnual|temperaturaMinimaAnual}/{code}/{year}; /application/anualb/monitoreoHeladasEstacion",
+      "url": "https://climatologia.meteochile.gob.cl/application/anual/aguaCaidaAnual/340031/2023",
+      "auth": "none",
+      "licence": "Public use; cite DMC as source",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "station_precip": "primary",
+        "station_tmax_tmin": "primary"
+      },
+      "latency": "~1 d",
+      "history_start": "1960s at main stations; FDF/INIA ~2005-2010",
+      "spatial_res": "point",
+      "notes": "'s/p' = 0, '.' = not yet (ambiguity: cross-check wet days). Precompute; scraping fragile. FDF/INIA third-party terms unverified.",
+      "families": [
+        "chile-national-met",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "dmc-geoservicios",
+      "name": "DMC geoservicios (GeoJSON)",
+      "provider": "Direccion Meteorologica de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "fire_weather_risk",
+        "heat_waves",
+        "cold_waves",
+        "regional_bulletins",
+        "ema_daily"
+      ],
+      "access": "Keyless REST GeoJSON",
+      "url": "https://climatologia.meteochile.gob.cl/application/geoservicios/",
+      "auth": "none",
+      "licence": "Public use; cite DMC",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "heat_cold_waves": "primary",
+        "fire_weather": "primary"
+      },
+      "latency": "same day / 1 d",
+      "history_start": "bulletins usable from ~2015 (DMC stations only); waves last 90 d",
+      "spatial_res": "point",
+      "notes": "AWS data not QC'd; mangled double UTF-8 in some endpoints.",
+      "families": [
+        "chile-national-met"
+      ]
+    },
+    {
+      "id": "dmc-warnings-aaa",
+      "name": "DMC Avisos/Alertas/Alarmas datos_AAA.json + zone GeoJSON",
+      "provider": "Direccion Meteorologica de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "weather_warnings"
+      ],
+      "access": "Keyless JSON + GeoJSON",
+      "url": "https://archivos.meteochile.gob.cl/portaldmc/AAA/datos_AAA.json",
+      "auth": "none",
+      "licence": "Not stated (cite DMC)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "official_warnings": "primary"
+      },
+      "latency": "real time (max-age 60)",
+      "history_start": "none (no archive anywhere)",
+      "spatial_res": "forecast zone",
+      "notes": "Archive hourly. desde/hasta are Spanish free text; America/Santiago timezone.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "dmc-token-api",
+      "name": "DMC Servicios Climaticos token API",
+      "provider": "Direccion Meteorologica de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "ema_recent",
+        "daily_summary",
+        "temperature_history"
+      ],
+      "access": "REST JSON ?usuario=&token=",
+      "url": "https://climatologia.meteochile.gob.cl/application/servicios/",
+      "auth": "free-signup",
+      "licence": "Public use; cite DMC",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "blocked-without-token",
+      "fit": {
+        "station": "fallback"
+      },
+      "latency": "near real time",
+      "history_start": "unknown",
+      "spatial_res": "point",
+      "notes": "Self-service signup; keyless tables cover v1. getEstacionesRedEma is keyless (150 EMAs, WMO crosswalk).",
+      "families": [
+        "chile-national-met",
+        "chile-agromet",
+        "chile-global-stations"
+      ]
+    },
+    {
+      "id": "ran-agromet",
+      "name": "RAN Red Agroclimatica Nacional (agromet.cl getGraphData)",
+      "provider": "Minagri + Consorcio RAN (INIA, FDF, ASOEX, CEAZA, DMC)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "hourly_temperature",
+        "tmin",
+        "tmax",
+        "precip",
+        "rh",
+        "radiation",
+        "wind_max",
+        "gdd10",
+        "chill_hours_7"
+      ],
+      "access": "Undocumented PHP returning pipe-delimited XML",
+      "url": "https://www.agromet.cl/ext/aux/getGraphData.php",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "frost_hours": "primary",
+        "heat_hours": "primary",
+        "chill": "primary",
+        "eto_inputs": "primary"
+      },
+      "latency": "1.5-2.5 h",
+      "history_start": "2010-01-01 (most stations)",
+      "spatial_res": "point (442 stations)",
+      "notes": "Missing Sectigo DV R36 intermediate (custom CA bundle). WAF blocks some clients. robots.txt Crawl-delay 10. Endpoint pads rows to dateTo; some stations all-NaN.",
+      "families": [
+        "chile-agromet",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "inia-agrometeorologia",
+      "name": "INIA agrometeorologia.cl (table view + products) / API v2",
+      "provider": "INIA Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "eto",
+        "frost_events",
+        "chill",
+        "gdd",
+        "station_daily"
+      ],
+      "access": "HTML POST table view; CSV export captcha; API v2 needs key",
+      "url": "https://agrometeorologia.cl/",
+      "auth": "none (table) / key (API v2)",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "refuted",
+      "fit": {
+        "eto": "reject(for now)",
+        "station_daily": "fallback"
+      },
+      "latency": "near real time",
+      "history_start": "2009 (form)",
+      "spatial_res": "point (489 stations)",
+      "notes": "/evapotranspiracion/, /heladas/ POST and items-resumen.json returned 403 on verification day. Contact INIA before automated use.",
+      "families": [
+        "chile-agromet",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "ceaza-met",
+      "name": "CEAZA-Met web service",
+      "provider": "CEAZA",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "tmin",
+        "tmax",
+        "precip",
+        "eto",
+        "chill"
+      ],
+      "access": "REST CSV",
+      "url": "https://www.ceazamet.cl/ws/pop_ws.php",
+      "auth": "free-signup (emailed username)",
+      "licence": "Attribution 'Datos provistos por El laboratorio de meteorologia CEAZA' + link; commercial not explicit",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "station": "fallback"
+      },
+      "latency": "~1 h",
+      "history_start": "2004 (some stations)",
+      "spatial_res": "point (94, Coquimbo)",
+      "notes": "Anonymous capped at 24 rows.",
+      "families": [
+        "chile-agromet"
+      ]
+    },
+    {
+      "id": "fdf-agroclima",
+      "name": "FDF Agroclima",
+      "provider": "Fundacion para el Desarrollo Fruticola",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "latest_reading"
+      ],
+      "access": "POST JSON (latest only); history behind login",
+      "url": "https://www.agroclima.cl/",
+      "auth": "none / institutional",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "station": "validation-only"
+      },
+      "latency": "15-60 min",
+      "history_start": "unknown",
+      "spatial_res": "point",
+      "notes": "FDF stations are exposed via RAN/INIA.",
+      "families": [
+        "chile-agromet"
+      ]
+    },
+    {
+      "id": "cr2-explorador",
+      "name": "CR2 Explorador Climatico (request.php)",
+      "provider": "CR2",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "station_precip",
+        "station_t",
+        "streamflow"
+      ],
+      "access": "GET request.php?options=JSON",
+      "url": "https://explorador.cr2.cl/request.php",
+      "auth": "none",
+      "licence": "Cite CR2 and DGA (academic)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "streamflow_baseline": "baseline-only"
+      },
+      "latency": "frozen (flow to 2020-06)",
+      "history_start": "1936",
+      "spatial_res": "gauge",
+      "notes": "Anomaly flag must be boolean false; time range must end at data end. Station queries failed for some families.",
+      "families": [
+        "chile-water",
+        "chile-national-met",
+        "chile-agromet"
+      ]
+    },
+    {
+      "id": "cr2-station-zips",
+      "name": "CR2 station databases (prDaily, tasDaily, qflxDaily)",
+      "provider": "CR2",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "station_precip",
+        "streamflow"
+      ],
+      "access": "zip behind usage form",
+      "url": "https://www.cr2.cl/datos-de-precipitacion/",
+      "auth": "free-signup",
+      "licence": "Academic",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "baseline": "baseline-only"
+      },
+      "latency": "frozen 2018/2019",
+      "history_start": "1900",
+      "spatial_res": "point",
+      "notes": "Not downloaded.",
+      "families": [
+        "chile-national-met"
+      ]
+    },
+    {
+      "id": "camels-cl",
+      "name": "CAMELS-CL",
+      "provider": "CR2 / Alvarez-Garreton et al. (PANGAEA)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "streamflow",
+        "basin_precip",
+        "basin_swe",
+        "catchment_attributes"
+      ],
+      "access": "zip download",
+      "url": "https://doi.pangaea.de/10.1594/PANGAEA.894885",
+      "auth": "none",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "streamflow_baseline": "baseline-only"
+      },
+      "latency": "frozen 2018-03",
+      "history_start": "1913",
+      "spatial_res": "516 catchments",
+      "notes": "Basin polygons and regulated/natural flag.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "dga-weekly-bulletin",
+      "name": "DGA Boletin hidrometeorologico semanal",
+      "provider": "Direccion General de Aguas (MOP)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "reservoir_storage",
+        "snow_depth",
+        "swe_estimated",
+        "precip_vs_normal"
+      ],
+      "access": "HTML index scrape + PDF (pdftotext)",
+      "url": "https://dga.mop.gob.cl/servicios-de-informacion/boletines/",
+      "auth": "none",
+      "licence": "No explicit licence; provisional data",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "reservoir_storage": "primary",
+        "snowpack": "primary"
+      },
+      "latency": "~1 week",
+      "history_start": "2024-01 (weekly archive)",
+      "spatial_res": "25 reservoirs, 10 snow routes",
+      "notes": "SWE = depth x 450 kg/m3 (use depth anomaly). Score reservoirs vs historical monthly mean, not % capacity. Snow tables only in some issues. Column-position parser with tests.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "dga-monthly-bulletin",
+      "name": "DGA Boletin mensual (hydrometric)",
+      "provider": "Direccion General de Aguas (MOP)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "river_discharge_monthly",
+        "groundwater",
+        "reservoirs"
+      ],
+      "access": "HTML index scrape + PDF",
+      "url": "https://dga.mop.gob.cl/servicios-de-informacion/boletines/",
+      "auth": "none",
+      "licence": "No explicit licence; provisional",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "refuted",
+      "fit": {
+        "river_discharge": "primary"
+      },
+      "latency": "published ~2 weeks after month end (staleness 2-6 weeks)",
+      "history_start": "2005 with gaps (~continuous from 2011-11)",
+      "spatial_res": "gauge",
+      "notes": "Regex parser returned wrong station (Biobio Rucalhue Sep-2026 = 941.1 m3/s, 168%, not 220). Rows can have 11 values. Map by column position.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "dga-snowmelt-forecast",
+      "name": "DGA Pronostico de caudales de deshielo",
+      "provider": "Direccion General de Aguas (MOP)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "seasonal_snowmelt_volume"
+      ],
+      "access": "PDF",
+      "url": "https://dga.mop.gob.cl/uploads/sites/13/2026/10/Pronostico-DGA-Deshielos-2026-2027.pdf",
+      "auth": "none",
+      "licence": "No explicit licence",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "irrigation_supply": "primary"
+      },
+      "latency": "yearly (October)",
+      "history_start": "2009-10 season",
+      "spatial_res": "19 gauges (Copiapo-Nuble)",
+      "notes": "Deterministic +/-20% natural-regime volume vs historical Q20/50/85; not probabilistic, not an allocation; no Biobio.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "dga-decrees-xls",
+      "name": "DGA historical water-scarcity decrees XLS",
+      "provider": "Direccion General de Aguas (MOP)",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "water_scarcity_decree"
+      ],
+      "access": "XLS linked from HTML page",
+      "url": "https://dga.mop.gob.cl/derechos-de-agua/proteccion-de-las-fuentes/decretos-de-escasez-2/",
+      "auth": "none",
+      "licence": "Public government data (no licence)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "water_scarcity": "primary"
+      },
+      "latency": "updated 2026-09-04 (XLS lags; page 'vigentes' fresher)",
+      "history_start": "2008",
+      "spatial_res": "province / basin / commune text",
+      "notes": "251 decrees (drop 19 embedded header rows, forward-fill year, parse text + Excel-serial expiry). Latest No.185 Choapa. Filename dated: scrape page.",
+      "families": [
+        "chile-water",
+        "chile-ag-stats-credit",
+        "chile-crops-perils",
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "dga-arcgis",
+      "name": "DGA / MOP ArcGIS layers (ALERTAS, Decretos polygons, Red_Hidrometrica, ESTACION_EMBALSE)",
+      "provider": "DGA / MOP SIT",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "flood_alert_flag",
+        "decree_polygons",
+        "station_catalog"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://rest-sit.mop.gob.cl/arcgis/rest/services/DGA/",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "flood_alert": "validation-only",
+        "decree_history_geometry": "baseline-only"
+      },
+      "latency": "ALERTAS live; decree polygons stale 2023; reservoir layer dead 2019",
+      "history_start": "2008",
+      "spatial_res": "vector",
+      "notes": "ALERTAS is a sparse alert flag (11/426 non-zero), not a level. Never use VIGENTE flag.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "dga-snia-bna",
+      "name": "DGA SNIA / BNA Consultas",
+      "provider": "DGA",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "river_discharge_daily"
+      ],
+      "access": "portal login / 403 to scripts",
+      "url": "https://snia.mop.gob.cl/BNAConsultas/reportes",
+      "auth": "free-signup",
+      "licence": "Public data",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "blocked",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "unknown",
+      "history_start": "decades",
+      "spatial_res": "gauge",
+      "notes": "Not circumvented.",
+      "families": [
+        "chile-water"
+      ]
+    },
+    {
+      "id": "ciren-catastro-fruticola",
+      "name": "CIREN/IDE Minagri Catastro Fruticola polygons (layers 55-68)",
+      "provider": "CIREN / ODEPA",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "orchard_polygons",
+        "species"
+      ],
+      "access": "ArcGIS REST MapServer query (JSON/GeoJSON); WMS",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/CATASTRO_FRUTICOLA/MapServer",
+      "auth": "none",
+      "licence": "Not stated (copyrightText empty)",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "crop_polygons": "primary"
+      },
+      "latency": "survey cycle ~3 y",
+      "history_start": "single vintage per region 2022-2025",
+      "spatial_res": "parcel",
+      "notes": "~4 s/query, ~2 concurrent. Errors are HTTP 200 with 'error' body. 6% polygons <0.5 ha. Add still-an-orchard gate. rolpredi is personal data: do not display.",
+      "families": [
+        "chile-ag-stats-credit",
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "odepa-catastro-csv",
+      "name": "ODEPA Catastro Fruticola CSV (CKAN) / ArcGIS table",
+      "provider": "ODEPA / CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "species_area_by_commune",
+        "variety",
+        "planting_year",
+        "irrigation_method"
+      ],
+      "access": "CKAN CSV; ArcGIS Online table",
+      "url": "https://datos.odepa.gob.cl/dataset/ea82304e-917f-4cdb-abf6-555782483dc1",
+      "auth": "none",
+      "licence": "CC BY (CKAN license_id cc-by)",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "orchard_attributes": "primary",
+        "irrigated_share": "fallback"
+      },
+      "latency": "annual release",
+      "history_start": "1999",
+      "spatial_res": "commune / block",
+      "notes": "Filter to latest survey year per region (double counting otherwise). BOM, decimal comma. ROL join possible (personal data).",
+      "families": [
+        "chile-ag-stats-credit",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "ciren-land-use",
+      "name": "CIREN USO_DE_LA_TIERRA_CIREN_2",
+      "provider": "CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "annual_crop_polygons",
+        "vineyard_polygons",
+        "land_use"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/USO_DE_LA_TIERRA_CIREN_2/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "annual_crop_mask": "primary"
+      },
+      "latency": "years",
+      "history_start": "2019-2026 vintages",
+      "spatial_res": "polygon",
+      "notes": "60-68% of CULTIVO ANUAL unclassified in Maule/Nuble: add species_known flag. Field names vary by region; mojibake. Service without _2 has query disabled.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "ciren-hidrico",
+      "name": "CIREN Emergencias/HIDRICO_PUBLICO (irrigated areas, intakes, canals)",
+      "provider": "CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "irrigated_area_polygons",
+        "intakes",
+        "canals"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/Emergencias/HIDRICO_PUBLICO/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "irrigated_flag": "primary"
+      },
+      "latency": "static",
+      "history_start": "2016-2022",
+      "spatial_res": "polygon",
+      "notes": "Use 500 m proximity / polygon intersect; never single point. No layer south of Maule (Nuble intakes only). Geometry not returned.",
+      "families": [
+        "chile-ag-stats-credit",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "ciren-propiedades-rurales",
+      "name": "CIREN PROPIEDADES_RURALES",
+      "provider": "CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "rural_parcels"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/PROPIEDADES_RURALES/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "field_polygons": "fallback"
+      },
+      "latency": "static",
+      "history_start": "2013-2023 vintages",
+      "spatial_res": "parcel",
+      "notes": "Keyed by rol (personal data).",
+      "families": [
+        "chile-satellite-fit"
+      ]
+    },
+    {
+      "id": "ciren-incendios",
+      "name": "CIREN IDEMINAGRI/INCENDIOS + Feb-2024 fire impact",
+      "provider": "CONAF via CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "fire_points",
+        "burn_scars",
+        "ag_area_burned",
+        "fire_damage_cost"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/INCENDIOS/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "fire": "validation-only"
+      },
+      "latency": "season",
+      "history_start": "2024-25 only",
+      "spatial_res": "points / polygons",
+      "notes": "Use GWIS for history.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "ciren-seguro-agricola",
+      "name": "CIREN SEGURO_AGRICOLA",
+      "provider": "Agroseguros via CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "insurance_or_credit_losses_2017"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/SEGURO_AGRICOLA/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "unverifiable",
+      "fit": {
+        "insurance_context": "baseline-only"
+      },
+      "latency": "stale",
+      "history_start": "2017",
+      "spatial_res": "commune",
+      "notes": "Layer group named 'SINIESTRALIDAD DE CREDITOS'; units/meaning undocumented.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "ciren-censo-2007",
+      "name": "CIREN Censo Agropecuario 2007 layers / CONAF vegetation cadastre",
+      "provider": "INE / CONAF via CIREN",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "irrigated_area_by_commune",
+        "land_cover"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://esri.ciren.cl/server/rest/services/IDEMINAGRI/CENSO_AGROPECUARIO/MapServer",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "context": "fallback"
+      },
+      "latency": "stale",
+      "history_start": "2007 / 2011-2019",
+      "spatial_res": "commune / polygon",
+      "notes": "Only option for Los Lagos (generic).",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "ine-chile-censo-2021",
+      "name": "INE Censo Agropecuario 2021",
+      "provider": "INE Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "crop_area_by_commune"
+      ],
+      "access": "HTML portal (JS links)",
+      "url": "https://www.ine.gob.cl/censoagropecuario",
+      "auth": "none",
+      "licence": "unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "context": "fallback"
+      },
+      "latency": "one-off",
+      "history_start": "2021",
+      "spatial_res": "commune",
+      "notes": "Manual download.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "bcch-cmf",
+      "name": "Banco Central BDE API / CMF API",
+      "provider": "Banco Central de Chile / CMF",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "bank_loans_by_sector"
+      ],
+      "access": "REST",
+      "url": "https://api.cmfchile.cl/",
+      "auth": "free-signup / key",
+      "licence": "unknown",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "blocked-without-key",
+      "fit": {
+        "credit_context": "baseline-only"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "national",
+      "notes": "No farm-level credit data.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "indap-resolutions",
+      "name": "INDAP emergency credit / extension resolutions",
+      "provider": "INDAP",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "lender_forbearance_events"
+      ],
+      "access": "PDF",
+      "url": "https://www.indap.gob.cl/",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "forbearance_events": "fallback"
+      },
+      "latency": "ad hoc",
+      "history_start": "",
+      "spatial_res": "region",
+      "notes": "URLs only resolve with NFD-encoded accents.",
+      "families": [
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "agroseguros-policies",
+      "name": "Agroseguros / INDAP policy sheets",
+      "provider": "Agroseguros",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "peril_definitions",
+        "thresholds"
+      ],
+      "access": "PDF / HTML",
+      "url": "https://www.agroseguros.gob.cl/seguros-agricolas-2/",
+      "auth": "none",
+      "licence": "Public",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "unverifiable",
+      "fit": {
+        "peril_definitions": "primary"
+      },
+      "latency": "static",
+      "history_start": "2016-2022 texts",
+      "spatial_res": "n/a",
+      "notes": "Exact PDF URLs to record before quoting thresholds. Cherry 10/30 mm harvest rule is a team proposal, not insurer-defined.",
+      "families": [
+        "chile-crops-perils",
+        "chile-ag-stats-credit"
+      ]
+    },
+    {
+      "id": "diario-oficial",
+      "name": "Diario Oficial daily index (emergencia agricola, escasez hidrica, catastrofe)",
+      "provider": "Diario Oficial de Chile",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "ag_emergency_declarations",
+        "scarcity_decrees"
+      ],
+      "access": "HTML index scrape + PDF",
+      "url": "https://www.diariooficial.interior.gob.cl/edicionelectronica/index.php",
+      "auth": "none",
+      "licence": "Public legal record",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "corrected",
+      "fit": {
+        "ag_emergency": "primary"
+      },
+      "latency": "same day as publication",
+      "history_start": "2016-08-17 (per-act index)",
+      "spatial_res": "commune / province / region text",
+      "notes": "Tighten regex (false positives). Declarations have no end date: inferred end is an assumption. Store signing and publication dates.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "conaf-sidco",
+      "name": "CONAF SIDCO perimeters via SENAPRED ArcGIS",
+      "provider": "CONAF / SENAPRED",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "fire_perimeters"
+      ],
+      "access": "ArcGIS REST",
+      "url": "https://visor-grd.senapred.gob.cl/arcgis/rest/services/interoperabilidad/sidco_ide/MapServer/0",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "refuted",
+      "fit": {
+        "fire_current": "enrichment-only"
+      },
+      "latency": "stale since 2026-09-08",
+      "history_start": "current season only",
+      "spatial_res": "vector",
+      "notes": "Missed the largest Jan-2026 fires; status field unreliable.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "conaf-geprif",
+      "name": "CONAF GEPRIF ArcGIS Online (ignitions >50 ha 2002-2024, IPO, Comunas)",
+      "provider": "CONAF",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "fire_ignition_points",
+        "fire_probability",
+        "commune_boundaries"
+      ],
+      "access": "ArcGIS FeatureServer",
+      "url": "https://services5.arcgis.com/A1ELWse9bRAi2JiV/arcgis/rest/services/PUNTOS_DE_INICIO_2002_2024_MAYOR_A_50_HA/FeatureServer/0",
+      "auth": "none",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "fire_baseline": "baseline-only",
+        "commune_join": "primary"
+      },
+      "latency": "points to 2024-04; IPO daily",
+      "history_start": "2002-11",
+      "spatial_res": "points / communes",
+      "notes": "Comunas layer gives CUT codes for decree joins.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "pangaea-fire-scars-chile",
+      "name": "Landscape Fire Scars Database for Chile",
+      "provider": "Miranda et al. 2022 / PANGAEA",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "fire_scars"
+      ],
+      "access": "XLSX summary; raster zips",
+      "url": "https://doi.pangaea.de/10.1594/PANGAEA.941127",
+      "auth": "none / free-signup (bulk)",
+      "licence": "CC BY 4.0",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "fire_baseline": "baseline-only"
+      },
+      "latency": "static",
+      "history_start": "1985-2018",
+      "spatial_res": "30 m",
+      "notes": "",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "senapred-alerts",
+      "name": "SENAPRED alerts (AppSync) and ad-hoc ArcGIS layers",
+      "provider": "SENAPRED",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "official_alerts"
+      ],
+      "access": "GraphQL (Cognito)",
+      "url": "https://visor-grd.senapred.gob.cl/arcgis/rest/services",
+      "auth": "institutional",
+      "licence": "Not stated",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "official_alerts": "reject"
+      },
+      "latency": "real time (behind auth)",
+      "history_start": "unknown",
+      "spatial_res": "commune",
+      "notes": "401.",
+      "families": [
+        "chile-emergencies"
+      ]
+    },
+    {
+      "id": "chile-dead-or-empty",
+      "name": "climatedatalibrary.cl, datos.gob.cl emergency datasets, IDE Minagri GeoServer, CONAF statistics pages",
+      "provider": "various",
+      "regions": [
+        "chile"
+      ],
+      "variables": [
+        "various"
+      ],
+      "access": "web",
+      "url": "",
+      "auth": "none",
+      "licence": "n/a",
+      "commercial_ok": "no",
+      "verified_live": true,
+      "verification": "dead",
+      "fit": {
+        "all": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "Domain lapsed (spam), stale 2013 CSVs, 404s.",
+      "families": [
+        "chile-water",
+        "chile-satellite-fit",
+        "chile-emergencies",
+        "chile-crops-perils"
+      ]
+    },
+    {
+      "id": "goes-glm",
+      "name": "NOAA GOES-19 / GOES-16 GLM L2 LCFA lightning",
+      "provider": "NOAA (AWS Open Data)",
+      "regions": [
+        "bolivia",
+        "chile",
+        "global"
+      ],
+      "variables": [
+        "lightning_flashes"
+      ],
+      "access": "Public S3 HTTPS listing + netCDF4/HDF5 20-s files",
+      "url": "https://noaa-goes19.s3.amazonaws.com/GLM-L2-LCFA/",
+      "auth": "none",
+      "licence": "NOAA open data, no restrictions",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "hail": "context",
+        "storm_occurred": "display-only"
+      },
+      "latency": "<1 min",
+      "history_start": "GOES-19 2025-01-15; GOES-16 2018-02-13 to 2025-04-07",
+      "spatial_res": "~8-14 km",
+      "notes": "~1.7 GB/day: event-driven sampling only (one 20-s file per 10 min). Shows storms but cannot separate hail from ordinary thunderstorms. Disclose instrument change in baselines.",
+      "families": [
+        "frost-heat-hail",
+        "hail-validation"
+      ]
+    },
+    {
+      "id": "goes-abi-lst-dsi",
+      "name": "NOAA GOES ABI-L2-LSTF (hourly LST) / ABI-L2-DSIF (stability)",
+      "provider": "NOAA (AWS)",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "lst_hourly",
+        "cape_satellite"
+      ],
+      "access": "S3 netCDF (geostationary projection)",
+      "url": "https://noaa-goes19.s3.amazonaws.com/",
+      "auth": "none",
+      "licence": "NOAA open",
+      "commercial_ok": "yes",
+      "verified_live": false,
+      "verification": "listing-only",
+      "fit": {
+        "frost_corroboration": "fallback",
+        "hail_env": "reject"
+      },
+      "latency": "<1 h",
+      "history_start": "GOES-16 2017/2019",
+      "spatial_res": "2-10 km",
+      "notes": "LSTF unparsed (geostationary pixel math); DSIF clear-sky only.",
+      "families": [
+        "frost-heat-hail"
+      ]
+    },
+    {
+      "id": "viirs-lst",
+      "name": "VIIRS LST VNP21A1N / VJ121A1N",
+      "provider": "NASA LP DAAC",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "lst_night"
+      ],
+      "access": "CMR search keyless; download Earthdata",
+      "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+      "auth": "free-signup",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "catalogue-only",
+      "fit": {
+        "frost_corroboration": "fallback"
+      },
+      "latency": "2-4 d",
+      "history_start": "2012",
+      "spatial_res": "750 m",
+      "notes": "Planned replacement for drifting MODIS night LST.",
+      "families": [
+        "frost-heat-hail"
+      ]
+    },
+    {
+      "id": "persiann",
+      "name": "PERSIANN-CDR (NCEI) / PDIR-Now (CHRS)",
+      "provider": "UC Irvine CHRS / NOAA NCEI",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "HTTPS per-day files",
+      "url": "https://www.ncei.noaa.gov/data/precipitation-persiann/access/",
+      "auth": "none",
+      "licence": "NOAA CDR open / CHRS free",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "listing-only",
+      "fit": {
+        "precip": "validation-only"
+      },
+      "latency": "CDR ~3 months; PDIR-Now same day",
+      "history_start": "1983 / 2000-03",
+      "spatial_res": "0.25 / 0.04 deg",
+      "notes": "No point API; files heavy.",
+      "families": [
+        "gridded-precip"
+      ]
+    },
+    {
+      "id": "iri-data-library",
+      "name": "IRI Data Library (CHIRPS, CPC)",
+      "provider": "Columbia IRI",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "Ingrid URL expressions",
+      "url": "https://iridl.ldeo.columbia.edu/",
+      "auth": "free-signup",
+      "licence": "n/a",
+      "commercial_ok": "unresolved",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "precip": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "Now requires sign-in (was the classic keyless CHIRPS extractor).",
+      "families": [
+        "gridded-precip",
+        "platforms-access"
+      ]
+    },
+    {
+      "id": "pc-gpm-imerg-hhr",
+      "name": "Planetary Computer gpm-imerg-hhr",
+      "provider": "Microsoft / NASA",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "STAC",
+      "url": "https://planetarycomputer.microsoft.com/api/stac/v1",
+      "auth": "none",
+      "licence": "NASA open",
+      "commercial_ok": "yes",
+      "verified_live": true,
+      "verification": "confirmed",
+      "fit": {
+        "precip": "reject"
+      },
+      "latency": "ends 2021-05-31",
+      "history_start": "2000",
+      "spatial_res": "0.1 deg",
+      "notes": "Stale; no CHIRPS collection on PC.",
+      "families": [
+        "gridded-precip"
+      ]
+    },
+    {
+      "id": "precip-rejects",
+      "name": "GSMaP / MSWEP-MSWX / TAMSAT",
+      "provider": "JAXA / GloH2O / Univ. Reading",
+      "regions": [
+        "global"
+      ],
+      "variables": [
+        "precip"
+      ],
+      "access": "FTP registration / application / HTTPS",
+      "url": "",
+      "auth": "free-signup / institutional",
+      "licence": "various (MSWEP non-commercial)",
+      "commercial_ok": "unresolved",
+      "verified_live": false,
+      "verification": "unverified",
+      "fit": {
+        "precip": "reject"
+      },
+      "latency": "",
+      "history_start": "",
+      "spatial_res": "",
+      "notes": "GSMaP needs registration (untested); MSWEP approval not instant; TAMSAT Africa only.",
+      "families": [
+        "gridded-precip"
+      ]
+    }
+  ],
+  "matrix": [
+    {
+      "region": "chile",
+      "variable": "precip_daily",
+      "primary": "cr2met",
+      "fallback": [
+        "openmeteo-archive-era5 (demo) / cds-era5"
+      ],
+      "baseline": "cr2met R1 1991-2020",
+      "resolution": "0.05 deg",
+      "latency": "NRT ~10 d",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "precip_station_truth",
+      "primary": "dmc-annual-tables",
+      "fallback": [
+        "ogimet-synop",
+        "ghcnh"
+      ],
+      "baseline": "DMC 1960s-",
+      "resolution": "station",
+      "latency": "~1 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "tmax_tmin",
+      "primary": "cr2met",
+      "fallback": [
+        "dmc-annual-tables",
+        "ran-agromet"
+      ],
+      "baseline": "cr2met R1 1991-2020",
+      "resolution": "0.05 deg",
+      "latency": "~6 d",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "frost_heat_hours",
+      "primary": "ran-agromet",
+      "fallback": [
+        "dmc-annual-tables",
+        "ogimet-synop"
+      ],
+      "baseline": "station 2010-2025 + cr2met percentiles",
+      "resolution": "station",
+      "latency": "1.5-2.5 h",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "reference_et",
+      "primary": "ran-agromet (in-house FAO-56) / cr2met et0",
+      "fallback": [
+        "cds-era5"
+      ],
+      "baseline": "cr2met et0 1991-2020",
+      "resolution": "station / 0.05 deg",
+      "latency": "~6 d",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": "partial"
+    },
+    {
+      "region": "chile",
+      "variable": "chill_gdd",
+      "primary": "ran-agromet",
+      "fallback": [
+        "inia-agrometeorologia"
+      ],
+      "baseline": "station 2010-",
+      "resolution": "station",
+      "latency": "hours",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": "partial"
+    },
+    {
+      "region": "chile",
+      "variable": "irrigation_water_supply",
+      "primary": "dga-snowmelt-forecast + dga-weekly-bulletin",
+      "fallback": [
+        "pc-modis-snow",
+        "openmeteo-flood-glofas"
+      ],
+      "baseline": "normals in PDFs; MODIS 2001-",
+      "resolution": "basin",
+      "latency": "weekly / yearly",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "river_discharge",
+      "primary": "dga-monthly-bulletin",
+      "fallback": [
+        "openmeteo-flood-glofas (large rivers)"
+      ],
+      "baseline": "cr2-explorador 1936-2020; camels-cl 1913-2018",
+      "resolution": "gauge",
+      "latency": "2-6 weeks",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "water_scarcity_decrees",
+      "primary": "dga-decrees-xls",
+      "fallback": [
+        "diario-oficial"
+      ],
+      "baseline": "2008-",
+      "resolution": "province/basin text",
+      "latency": "weeks",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "ag_emergency_declarations",
+      "primary": "diario-oficial",
+      "fallback": [
+        "indap-resolutions"
+      ],
+      "baseline": "2016-08-17-",
+      "resolution": "commune",
+      "latency": "same day",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "orchard_polygons",
+      "primary": "ciren-catastro-fruticola",
+      "fallback": [
+        "ciren-propiedades-rurales"
+      ],
+      "baseline": "single vintage 2022-2025",
+      "resolution": "parcel",
+      "latency": "~3 y",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "orchard_attributes",
+      "primary": "odepa-catastro-csv",
+      "fallback": [],
+      "baseline": "1999-2025",
+      "resolution": "commune/block",
+      "latency": "annual",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "annual_crop_mask",
+      "primary": "ciren-land-use",
+      "fallback": [
+        "mapbiomas-official",
+        "ciren-censo-2007"
+      ],
+      "baseline": "2019-2026",
+      "resolution": "polygon",
+      "latency": "years",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "irrigated_flag",
+      "primary": "ciren-hidrico",
+      "fallback": [
+        "odepa-catastro-csv"
+      ],
+      "baseline": "static",
+      "resolution": "polygon",
+      "latency": "static",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "ndvi_ndmi_current",
+      "primary": "pc-sentinel2-l2a + pc-data-api",
+      "fallback": [
+        "earth-search-s2-c1",
+        "pc-hls"
+      ],
+      "baseline": "-",
+      "resolution": "10 m",
+      "latency": "7-11 h",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "ndvi_baseline",
+      "primary": "pc-landsat-c2-l2",
+      "fallback": [
+        "pc-sentinel2-l2a",
+        "pc-modis-13q1 (pure pixels only)"
+      ],
+      "baseline": "Landsat 1984-",
+      "resolution": "30 m",
+      "latency": "2-10 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "wildfire_burned_area",
+      "primary": "gwis-ba-poly",
+      "fallback": [
+        "cems-rapid-mapping"
+      ],
+      "baseline": "GWIS 2012-; conaf-geprif 2002-2024; pangaea 1985-2018",
+      "resolution": "~100 ha",
+      "latency": "~1 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "active_fire",
+      "primary": "firms-keyless",
+      "fallback": [
+        "conaf-sidco (enrichment)"
+      ],
+      "baseline": "FIRMS 2000-",
+      "resolution": "375 m",
+      "latency": "~4 h",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "weather_warnings",
+      "primary": "dmc-warnings-aaa",
+      "fallback": [
+        "ifrc-go"
+      ],
+      "baseline": "self-archive",
+      "resolution": "zone",
+      "latency": "real time",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "heat_cold_waves",
+      "primary": "dmc-geoservicios",
+      "fallback": [
+        "cr2met"
+      ],
+      "baseline": "last 90 d",
+      "resolution": "station",
+      "latency": "1 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "chile",
+      "variable": "rain_at_harvest",
+      "primary": "dmc-annual-tables / ran-agromet",
+      "fallback": [
+        "cr2met"
+      ],
+      "baseline": "station history",
+      "resolution": "station",
+      "latency": "1 d",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "precip_deficit_percentile",
+      "primary": "chirps-v3-chc",
+      "fallback": [
+        "openmeteo-archive-era5 (demo) / cds-era5 / arco-era5",
+        "cpc-unified-psl (cross-check)"
+      ],
+      "baseline": "CHIRPS v3 1991-2020",
+      "resolution": "0.05 deg",
+      "latency": "final ~5 w; prelim ~6 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "dry_spell_heavy_rain",
+      "primary": "imerg-v07-climateserv",
+      "fallback": [
+        "chirps-v3-chc"
+      ],
+      "baseline": "IMERG 2000-06-",
+      "resolution": "0.1 deg",
+      "latency": "~2-3 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "tmax_tmin",
+      "primary": "openmeteo-archive-era5 (demo; production cds-era5/arco-era5/nsf-ncar-era5)",
+      "fallback": [
+        "nasa-power",
+        "chirts-era5"
+      ],
+      "baseline": "ERA5 1991-2020",
+      "resolution": "0.25 deg",
+      "latency": "~6-7 d",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "reference_et",
+      "primary": "openmeteo-archive-era5 (et0_fao)",
+      "fallback": [
+        "nasa-power (refet, u2 from WS10M)"
+      ],
+      "baseline": "same ERA5 stream",
+      "resolution": "0.25 deg",
+      "latency": "~6-7 d",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "root_zone_soil_moisture",
+      "primary": "openmeteo-archive-era5land (demo; production cds-era5)",
+      "fallback": [
+        "FAO-56 bucket forced by chirps-v3-chc",
+        "grace-da-ndmc",
+        "cpc-soil-moisture"
+      ],
+      "baseline": "ERA5-Land 1991-2020",
+      "resolution": "0.1 deg",
+      "latency": "~6 d",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "actual_et",
+      "primary": "wapor-v3",
+      "fallback": [
+        "modis-mod16-ornl"
+      ],
+      "baseline": "WaPOR 2018-",
+      "resolution": "300 m",
+      "latency": "~1 week",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "ndvi_baseline",
+      "primary": "pc-modis-13q1",
+      "fallback": [
+        "ornl-modis-subset"
+      ],
+      "baseline": "MOD13Q1 2000-",
+      "resolution": "250 m",
+      "latency": "~1 composite behind LP DAAC",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "ndvi_current",
+      "primary": "pc-sentinel2-l2a + pc-data-api",
+      "fallback": [
+        "earth-search-s2-c1"
+      ],
+      "baseline": "cross-cal MODIS = 0.940*S2(B8A)+0.048",
+      "resolution": "10 m",
+      "latency": "7-11 h",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "ndmi",
+      "primary": "pc-sentinel2-l2a (B8A/B11)",
+      "fallback": [
+        "pc-landsat-c2-l2"
+      ],
+      "baseline": "Landsat 1984-",
+      "resolution": "10-30 m",
+      "latency": "days",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "flood_observed",
+      "primary": "cems-gfm",
+      "fallback": [
+        "noaa-vfm",
+        "gibs-flood (display)"
+      ],
+      "baseline": "GFM 2015-",
+      "resolution": "20 m",
+      "latency": "2-6.5 h after pass",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "river_discharge",
+      "primary": "openmeteo-flood-glofas (demo)",
+      "fallback": [
+        "cems-ewds-glofas"
+      ],
+      "baseline": "consolidated_v4 1997-2025-05",
+      "resolution": "0.05 deg",
+      "latency": "daily",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "waterlogging_proxy",
+      "primary": "pc-sentinel1-rtc",
+      "fallback": [
+        "cems-gfm"
+      ],
+      "baseline": "own 2017- same track",
+      "resolution": "10 m",
+      "latency": "~3 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "flood_prone_static",
+      "primary": "jrc-gsw",
+      "fallback": [
+        "cems-gfm"
+      ],
+      "baseline": "1984-2021",
+      "resolution": "30 m",
+      "latency": "static",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "frost",
+      "primary": "openmeteo-archive-era5 (Tmin percentile)",
+      "fallback": [
+        "nasa-power",
+        "pc-modis-lst (corroboration)"
+      ],
+      "baseline": "ERA5 1991-2020",
+      "resolution": "0.25 deg / 1 km",
+      "latency": "~6 d",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "heat",
+      "primary": "openmeteo-archive-era5 (percentiles)",
+      "fallback": [
+        "chirts-era5"
+      ],
+      "baseline": "ERA5 1991-2020",
+      "resolution": "0.25 deg",
+      "latency": "~6 d",
+      "auth": "none",
+      "commercial_ok": "demo-only",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "hail",
+      "primary": "out-of-scope-v1",
+      "fallback": [
+        "context: goes-glm, persistent NDVI drop flag"
+      ],
+      "baseline": "-",
+      "resolution": "-",
+      "latency": "-",
+      "auth": "none",
+      "commercial_ok": "-",
+      "verified_live": "partial"
+    },
+    {
+      "region": "bolivia",
+      "variable": "active_fire",
+      "primary": "firms-keyless",
+      "fallback": [
+        "firms-area-api",
+        "inpe-queimadas"
+      ],
+      "baseline": "FIRMS 2000-",
+      "resolution": "375 m-1 km",
+      "latency": "~4 h",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "burned_area",
+      "primary": "gwis-ba-poly",
+      "fallback": [],
+      "baseline": "2012-",
+      "resolution": "~100 ha",
+      "latency": "~1 d",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "drought_events",
+      "primary": "own SPI/SPEI percentile signals",
+      "fallback": [
+        "gdo-drought-tracking (older)",
+        "gdacs (context)"
+      ],
+      "baseline": "jspeS 1991-",
+      "resolution": "0.25 deg",
+      "latency": "own: as source",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "official_warnings",
+      "primary": "senamhi-alerts",
+      "fallback": [
+        "senamhi-hydro-alerts"
+      ],
+      "baseline": "self-archive",
+      "resolution": "province polygon",
+      "latency": "real time",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "cropland_mask",
+      "primary": "mapbiomas-bolivia-mirror",
+      "fallback": [
+        "esa-worldcover",
+        "io-lulc"
+      ],
+      "baseline": "-",
+      "resolution": "10-30 m",
+      "latency": "annual",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "soy_mask",
+      "primary": "glad-soy (max 2021-2023)",
+      "fallback": [
+        "mapbiomas-bolivia-mirror (class 39)"
+      ],
+      "baseline": "2001-2023",
+      "resolution": "30 m",
+      "latency": "~19 months",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "crop_calendar",
+      "primary": "fao-crop-calendar + anapo-memoria",
+      "fallback": [
+        "geoglam-cm4ew"
+      ],
+      "baseline": "climatological",
+      "resolution": "AEZ/zone",
+      "latency": "static",
+      "auth": "none",
+      "commercial_ok": "no (FAO non-commercial)",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "phenology",
+      "primary": "own NDVI history (Whittaker)",
+      "fallback": [
+        "mcd12q1-q2"
+      ],
+      "baseline": "MOD13Q1 2000-",
+      "resolution": "250 m",
+      "latency": "-",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": "partial"
+    },
+    {
+      "region": "bolivia",
+      "variable": "backtest_truth",
+      "primary": "anapo-memoria + sissa-station-spi",
+      "fallback": [
+        "ine-bolivia"
+      ],
+      "baseline": "2023/24 drought; 2024/25 control",
+      "resolution": "municipality/station",
+      "latency": "annual",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "station_validation",
+      "primary": "ogimet-synop",
+      "fallback": [
+        "iem-metar",
+        "ghcnh"
+      ],
+      "baseline": "OGIMET 1999- (cache to build)",
+      "resolution": "station",
+      "latency": "1-3 h",
+      "auth": "none",
+      "commercial_ok": "no",
+      "verified_live": true
+    },
+    {
+      "region": "bolivia",
+      "variable": "station_metadata",
+      "primary": "senamhi-wfs",
+      "fallback": [
+        "wmo-oscar"
+      ],
+      "baseline": "-",
+      "resolution": "point",
+      "latency": "static",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "global",
+      "variable": "latency_oracle",
+      "primary": "nasa-cmr",
+      "fallback": [
+        "pc-data-api"
+      ],
+      "baseline": "-",
+      "resolution": "-",
+      "latency": "real time",
+      "auth": "none",
+      "commercial_ok": "yes",
+      "verified_live": true
+    },
+    {
+      "region": "global",
+      "variable": "event_index",
+      "primary": "glide + ifrc-go + gdacs",
+      "fallback": [
+        "reliefweb"
+      ],
+      "baseline": "-",
+      "resolution": "-",
+      "latency": "<1 d-weeks",
+      "auth": "none",
+      "commercial_ok": "unresolved",
+      "verified_live": true
+    },
+    {
+      "region": "global",
+      "variable": "era5_licence_clean",
+      "primary": "cds-era5 / arco-era5 / nsf-ncar-era5",
+      "fallback": [
+        "openmeteo-s3-mirror"
+      ],
+      "baseline": "1940-",
+      "resolution": "0.25 deg",
+      "latency": "~5 d (ERA5T)",
+      "auth": "none / free-signup",
+      "commercial_ok": "yes",
+      "verified_live": "partial"
+    }
+  ],
+  "methods": [
+    {
+      "name": "Same-stream percentile anomaly",
+      "purpose": "Weather/soil anomaly vs field's own same-time-of-year history",
+      "inputs": "one homogeneous daily series; +/-7 d DOY window; current year excluded; >=15 years; 1991-2020",
+      "libs": "pandas, scipy",
+      "recommended": true,
+      "notes": "Never mix products between baseline and current value; label near-real-time tails 'estimated'."
+    },
+    {
+      "name": "SPI-3/6 gamma fit",
+      "purpose": "Drought index and backtest reference",
+      "inputs": "monthly precip 1991-2020",
+      "libs": "climate_indices or scipy",
+      "recommended": true,
+      "notes": "climate_indices clips at +/-3.09; own scipy SPI unclipped (r 0.998-0.999)."
+    },
+    {
+      "name": "S2 one-call masked polygon statistics",
+      "purpose": "Current NDVI/NDMI per field",
+      "inputs": "PC data API item/statistics; expressions where(clear,ndvi,0);clear*1.0",
+      "libs": "requests",
+      "recommended": true,
+      "notes": "-1000 DN when processing_baseline>=04.00 (PC) / always (Earth Search c1). Skip clear fraction <0.5. SCL 3 not clear."
+    },
+    {
+      "name": "MODIS portfolio-window COG prefetch + QA-masked polygon median",
+      "purpose": "NDVI baseline 2000-",
+      "inputs": "PC modis-13Q1-061 + CMR inventory diff + ORNL backfill",
+      "libs": "requests, rasterio, pyproj, numpy, duckdb",
+      "recommended": true,
+      "notes": "reliability 0/1; strict VI_Quality; good fraction >=0.5; report n_years per composite; mask pre-clearing years."
+    },
+    {
+      "name": "S2-to-MODIS cross-calibration",
+      "purpose": "Put S2 on MOD13Q1 scale",
+      "inputs": "S2 16-day max composites (B8A) aligned to MOD13Q1 dates",
+      "libs": "numpy, scipy",
+      "recommended": true,
+      "notes": "Pooled Theil-Sen MODIS = 0.940*S2 + 0.048 (R2 0.899, RMSE 0.050, n=308); per farm when >=30 pairs."
+    },
+    {
+      "name": "Weighted Whittaker smoother",
+      "purpose": "NDVI gap-filling",
+      "inputs": "daily grid at acquisition day; QA weights 1/0.5/0",
+      "libs": "numpy, scipy.sparse",
+      "recommended": true,
+      "notes": "lambda 500 (or SG 5,2). No upper envelope on cropland. Flag values >32 d from good obs as gap-filled."
+    },
+    {
+      "name": "Hold last good observation (as-of NDVI)",
+      "purpose": "Current NDVI value",
+      "inputs": "last clear MODIS or calibrated S2",
+      "libs": "pandas",
+      "recommended": true,
+      "notes": "Never worse than extrapolation; label 'estimated' after 16 d."
+    },
+    {
+      "name": "NDVI z-score with persistence",
+      "purpose": "Anomaly decision",
+      "inputs": "smoothed curve, DOY +/-8 d, other years",
+      "libs": "pandas",
+      "recommended": true,
+      "notes": "2 consecutive composites or 32-day mean z; sd floor ~0.05 (proposed, untested)."
+    },
+    {
+      "name": "FAO-56 single bucket",
+      "purpose": "Root-zone soil water fallback",
+      "inputs": "CHIRPS precip + ETo + SoilGrids TAW + Kc",
+      "libs": "numpy, pandas",
+      "recommended": true,
+      "notes": "Force with CHIRPS, not ERA5, to avoid shared failure."
+    },
+    {
+      "name": "refet FAO-56 ETo",
+      "purpose": "ETo fallback",
+      "inputs": "Tmax, Tmin, ea, Rs, WS10M (zw=10)",
+      "libs": "refet",
+      "recommended": true,
+      "notes": "Never use POWER WS2M."
+    },
+    {
+      "name": "ERA5 to CHIRPS quantile mapping",
+      "purpose": "Wet-day counts only",
+      "inputs": "monthly empirical CDFs 1991-2020",
+      "libs": "numpy",
+      "recommended": false,
+      "notes": "Flood tail fails out of sample; do not use for flood72hMm."
+    },
+    {
+      "name": "Basin water availability composite (Chile)",
+      "purpose": "Irrigated-farm water supply stress",
+      "inputs": "snowmelt forecast %, reservoir vs monthly mean, snow depth / MODIS snow percentile, monthly Q vs mean, decree flag",
+      "libs": "requests, pandas, xlrd, pdftotext",
+      "recommended": true,
+      "notes": "Design input; would gate ADR-0001 irrigated x0.4 drought weighting. Decree sets floor at 'watch'."
+    },
+    {
+      "name": "Polygon vs mask fraction",
+      "purpose": "Is the farm polygon farmland / soy",
+      "inputs": "MapBiomas, WorldCover, GLAD COGs",
+      "libs": "rasterio",
+      "recommended": true,
+      "notes": "Binary test; fractions differ up to ~0.2 between products."
+    },
+    {
+      "name": "Daily alert snapshotting + point-in-polygon",
+      "purpose": "Build warning history (SENAMHI, DMC)",
+      "inputs": "alerts JSON, farm geometry",
+      "libs": "requests, shapely, duckdb",
+      "recommended": true,
+      "notes": "<=1 poll/hour; store publicationDate."
+    },
+    {
+      "name": "DMC SYNOP daily reconstruction",
+      "purpose": "Station daily rain/T from raw SYNOP",
+      "inputs": "OGIMET text",
+      "libs": "pandas",
+      "recommended": true,
+      "notes": "7RRRR at non-12Z = since 12Z; dedupe bulletins; rain day 12Z->12Z."
+    },
+    {
+      "name": "GHCN-D day-shift alignment",
+      "purpose": "Join GHCN-D to other sources",
+      "inputs": "GHCN-D + reference",
+      "libs": "pandas",
+      "recommended": true,
+      "notes": "Chile Tmax/precip +1 d, Tmin 0."
+    },
+    {
+      "name": "STARFM / ESTARFM / FSDAF fusion",
+      "purpose": "Spatiotemporal fusion",
+      "inputs": "-",
+      "libs": "-",
+      "recommended": false,
+      "notes": "Skip: hours per tile, no benefit for polygon means."
+    },
+    {
+      "name": "Station kriging / IDW",
+      "purpose": "Interpolate station weather",
+      "inputs": "-",
+      "libs": "pykrige",
+      "recommended": false,
+      "notes": "Skip: 9 stations at 11-109 km."
+    },
+    {
+      "name": "Harmonic / HANTS smoothing",
+      "purpose": "NDVI smoothing",
+      "inputs": "-",
+      "libs": "numpy",
+      "recommended": false,
+      "notes": "Worst on cropland."
+    },
+    {
+      "name": "Hail inference",
+      "purpose": "Hail peril",
+      "inputs": "GFS CAPE/LI + GLM + persistent NDVI drop",
+      "libs": "h5py",
+      "recommended": false,
+      "notes": "Out of scope v1: no validated event; keep 'unexplained persistent vegetation loss' flag only."
+    }
+  ]
+}

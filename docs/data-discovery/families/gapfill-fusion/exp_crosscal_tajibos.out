@@ -1,0 +1,14 @@
+S2 scenes read: 214; clear>=0.8 on MODIS cell: 153, on 3x3 box: 147
+MODIS composites: 122; reliability 0: 90
+
+S2 window = exact MODIS cell
+  A strict (+-2 d, rel=0, clear>=.8) n= 54  OLS MODIS = +0.251 + 0.688*S2  R2=0.767  RMSE=0.040  | Theil-Sen +0.251 + 0.686*S2 | mean diff MODIS-S2=+0.023
+  B S2 vs WS-smoothed MODIS          n=149  OLS MODIS = +0.435 + 0.440*S2  R2=0.527  RMSE=0.058  | Theil-Sen +0.266 + 0.678*S2 | mean diff MODIS-S2=+0.046
+  B wet season (Nov-Apr)             n= 36  OLS MODIS = +0.712 + 0.131*S2  R2=0.052  RMSE=0.060  | Theil-Sen +0.165 + 0.813*S2 | mean diff MODIS-S2=+0.023
+  B dry season (May-Oct)             n=113  OLS MODIS = +0.432 + 0.429*S2  R2=0.566  RMSE=0.050  | Theil-Sen +0.294 + 0.630*S2 | mean diff MODIS-S2=+0.054
+
+S2 window = 3x3 MODIS cells
+  A strict (+-2 d, rel=0, clear>=.8) n= 52  OLS MODIS = +0.226 + 0.723*S2  R2=0.899  RMSE=0.026  | Theil-Sen +0.225 + 0.713*S2 | mean diff MODIS-S2=+0.022
+  B S2 vs WS-smoothed MODIS          n=144  OLS MODIS = +0.402 + 0.485*S2  R2=0.613  RMSE=0.053  | Theil-Sen +0.247 + 0.704*S2 | mean diff MODIS-S2=+0.043
+  B wet season (Nov-Apr)             n= 35  OLS MODIS = +0.599 + 0.278*S2  R2=0.172  RMSE=0.047  | Theil-Sen +0.238 + 0.723*S2 | mean diff MODIS-S2=+0.017
+  B dry season (May-Oct)             n=109  OLS MODIS = +0.429 + 0.430*S2  R2=0.573  RMSE=0.049  | Theil-Sen +0.271 + 0.651*S2 | mean diff MODIS-S2=+0.051

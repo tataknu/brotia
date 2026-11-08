@@ -1,0 +1,37 @@
+{
+ "S2C_MSIL2A_20261102T141711_R010_T20KNG_20261102T174009": {
+  "scl_categorical": {
+   "status": 200,
+   "latency_s": 0.52,
+   "classes": {
+    "4": 3009.0,
+    "5": 16.0
+   }
+  },
+  "masked_multiply_ndvi": {
+   "status": 200,
+   "latency_s": 0.42,
+   "mean": 0.794,
+   "count": 11990.0
+  }
+ },
+ "S2B_MSIL2A_20261028T141709_R010_T20KNG_20261028T211119": {
+  "scl_categorical": {
+   "status": 200,
+   "latency_s": 0.43,
+   "classes": {
+    "9": 3025.0
+   }
+  },
+  "masked_multiply_ndvi": {
+   "status": 200,
+   "latency_s": 0.44,
+   "mean": 0.0,
+   "count": 11990.0
+  }
+ },
+ "gesdisc_opendap_dmr": {
+  "status": 200,
+  "bytes": 12385
+ }
+}

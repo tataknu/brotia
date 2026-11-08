@@ -1,0 +1,24 @@
+== clms_swi_global_12.5km_daily_v4_cog extent: {'interval': [['2007-01-01T12:00:00.000Z', None]]}
+  search -datetime: HTTP 200 1.05s c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog 2026-09-15T12:00:00.000000Z
+   asset ssf s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SSF_202609161200 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi001 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SWI001_202609161 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi005 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SWI005_202609161 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi010 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SWI010_202609161 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi015 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SWI015_202609161 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi020 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_daily_v4/2026/09/16/c_gls_SWI_202609161200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI-SWI020_202609161 image/tiff; application=geotiff; profile=cloud-optimized
+   HEAD no-auth: 405 
+  search +datetime: HTTP 200 0.36s c_gls_SWI_200701021200_GLOBE_ASCAT_V4.0.1_cog 2007-01-01T12:00:00.000000Z
+== clms_swi_global_12.5km_10daily_v4_cog extent: {'interval': [['2007-01-10T12:00:00.000Z', None]]}
+  search -datetime: HTTP 200 0.35s c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog 2026-08-31T12:00:00.000000Z
+   asset swi001 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI001_202 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi005 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI005_202 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi010 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI010_202 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi015 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI015_202 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi020 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI020_202 image/tiff; application=geotiff; profile=cloud-optimized
+   asset swi040 s3://eodata/CLMS/bio-geophysical/soil_water_index/swi_global_12.5km_10daily_v4/2026/09/01/c_gls_SWI10_202609011200_GLOBE_ASCAT_V4.0.1_cog/c_gls_SWI10-SWI040_202 image/tiff; application=geotiff; profile=cloud-optimized
+   HEAD no-auth: 405 
+  search +datetime: HTTP 200 0.45s c_gls_SWI10_200701111200_GLOBE_ASCAT_V4.0.1_cog 2007-01-10T12:00:00.000000Z
+== clms_swi-timeseries_global_12.5km_daily_v4_nc extent: {'interval': [['2007-01-01T12:00:00.000Z', None]]}
+  search -datetime: HTTP 200 0.46s c_gls_SWI-TS_202512310000_C0646_ASCAT_V4.0.1_nc 2007-01-02T12:00:00.000000Z
+   asset Product s3://eodata/CLMS/bio-geophysical/soil_water_index/swi-timeseries_global_12.5km_daily_v4/2025/12/31/c_gls_SWI-TS_202512310000_C0646_ASCAT_V4.0.1_nc/c_gls_SWI-TS_ application/netcdf
+  search +datetime: HTTP 200 0.34s c_gls_SWI-TS_202512310000_C0646_ASCAT_V4.0.1_nc 2007-01-02T12:00:00.000000Z

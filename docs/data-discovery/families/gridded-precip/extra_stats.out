@@ -1,0 +1,20 @@
+(a) ERA5 Oct23-Mar24 total, pctile vs 1991-2020, base mean
+  Estancia Los Tajibos             cell=(-16.75,-62.5)    502 mm  p  0  mean    904
+  Agropecuaria Brecha 8            cell=(-17.0,-62.75)    652 mm  p  0  mean    994
+  Colonia Cuatro Canadas Lote 7    cell=(-17.25,-62.5)    498 mm  p  0  mean    889
+  Hacienda El Cusi                 cell=(-17.5,-62.5)    479 mm  p  0  mean    828
+  Agricola Pailon Norte            cell=(-17.5,-62.75)    550 mm  p  0  mean    890
+  Granja Las Londras               cell=(-17.75,-62.75)    540 mm  p  0  mean    807
+  Finca Okinawa Dos                cell=(-17.25,-62.75)    555 mm  p  0  mean    888
+  Parcela Okinawa Uno              cell=(-17.25,-63.0)    644 mm  p  0  mean   1006
+  Arrocera Mineros                 cell=(-17.25,-63.25)    749 mm  p  0  mean   1135
+  Canaveral San Antonio            cell=(-17.25,-63.25)    749 mm  p  0  mean   1135
+  Agricola Warnes Sur              cell=(-17.5,-63.0)    698 mm  p  7  mean    929
+  Estancia Mineros Norte           cell=(-17.0,-63.25)    696 mm  p  0  mean   1101
+(b) Oct23-Mar24: wet days(>=1mm) / max dry spell (<1mm) / clim wet days per season 1991-2020
+  Estancia Los Tajibos   ERA5      wet= 70 maxdry= 17 climwet= 99.8
+  Estancia Los Tajibos   CHIRPSv2  wet= 51 maxdry= 18 climwet= 63.2
+  Estancia Los Tajibos   POWER     wet= 75 maxdry= 21 climwet= 99.6
+  Arrocera Mineros       ERA5      wet= 95 maxdry= 18 climwet=116.5
+  Arrocera Mineros       CHIRPSv2  wet= 49 maxdry= 17 climwet= 64.4
+  Arrocera Mineros       POWER     wet= 69 maxdry= 21 climwet= 97.6

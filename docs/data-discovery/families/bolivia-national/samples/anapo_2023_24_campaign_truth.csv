@@ -1,0 +1,16 @@
+campaign,zone,municipality_or_subzone,crop,sown_ha,affected_ha,lost_ha,yield_t_ha_over_sown,rain_oct_mar_mm,rain_prev_season_mm,source_page
+verano 2023/24,Este,ALL,soy,800900,480800,102350,1.20,455,899,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,Cuatro Canadas,soy,220000,,,0.55,403,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,Pailon,soy,202000,,,0.42,349,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,San Julian,soy,155000,,,,509,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,San Jose de Chiquitos,soy,60900,,,0.71,353,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,El Puente,soy,35000,,,,507,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,Guarayos,soy,8000,,,,469,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Este,San Ignacio de Velasco,soy,120000,,,,594,,ANAPO Memoria 2024 p.97-98
+verano 2023/24,Integrada,ALL,soy,355700,125200,20900,1.64,,,ANAPO Memoria 2024 p.99 (lost ha mainly waterlogging Apr 2024)
+verano 2023/24,Integrada,Sur Integrada (Mennonite colonies),soy,9500,,,0.27,,,ANAPO Memoria 2024 p.99
+verano 2023/24,Integrada,Central Integrada,soy,9200,,,0.51,,,ANAPO Memoria 2024 p.99
+verano 2023/24,Integrada,Montero/Okinawa,soy,40000,,,1.85,,,ANAPO Memoria 2024 p.99 (text says 1.85 kg/ha; t/ha intended)
+verano 2023/24,Integrada,Minero/Peta Grande,soy,258000,,,1.75,,,ANAPO Memoria 2024 p.99
+verano 2023/24,Integrada,Montero/Yapacani,soy,39000,,,1.31,,,ANAPO Memoria 2024 p.99
+invierno 2024,Este,ALL,soy,51750,,1350,,,,ANAPO Memoria 2024 p.101

@@ -1,0 +1,258 @@
+<title>BrotIA Risk Formula</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one pixel-grid sheet; drivers flow left → right into C, D, G, then base, then the 0–100 score column. */
+:root{
+  --bg:#FFFFFF; --ink:#0E2A23; --muted:#6A766F; --faint:#E4EBE6; --line:#CFDAD3;
+  --grid:rgba(30,80,50,.06); --panel:#F6F8F7;
+  --A:#2FA05A; --B:#6CC26F; --S:#1F6B43;
+  --r0:#1F6B43; --r1:#2FA05A; --r2:#8CC63F; --r3:#E3C93B; --r4:#E8933A; --r5:#D0533A; --r6:#9E2F3A;
+  --cC:#2FA05A; --cD:#D0533A; --cG:#C8924E;
+  --f-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --f-body:'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0E1914; --ink:#EAF3EE; --muted:#8DA096; --faint:#1C2C25; --line:#2A3D34;
+  --grid:rgba(140,190,160,.07); --panel:#13221B;
+  --A:#4CC072; --B:#9BDB8A; --S:#2E8A57; --cC:#4CC072; --cG:#D9A55B; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0E1914; --ink:#EAF3EE; --muted:#8DA096; --faint:#1C2C25; --line:#2A3D34;
+  --grid:rgba(140,190,160,.07); --panel:#13221B;
+  --A:#4CC072; --B:#9BDB8A; --S:#2E8A57; --cC:#4CC072; --cG:#D9A55B; color-scheme:dark }
+
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px;padding-block:32px 48px;display:grid;gap:28px}
+header{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.word{font-family:var(--f-mono);font-weight:600;font-size:30px;letter-spacing:-.02em;line-height:1}
+.word b{color:var(--A);font-weight:600}
+.tag{font-family:var(--f-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-mono);font-weight:600;font-size:22px;margin:0;text-wrap:balance}
+.lede{color:var(--muted);max-width:68ch;margin:6px 0 0}
+.formula{font-family:var(--f-mono);font-size:14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;
+  padding:14px 16px;overflow-x:auto;white-space:pre;line-height:1.7}
+.formula .k{color:var(--A);font-weight:600}
+.sheet{border:1px solid var(--line);border-radius:8px;background:var(--bg);overflow-x:auto}
+.sheet svg{display:block;width:100%;min-width:780px;height:auto}
+svg text{font-family:var(--f-mono)}
+.t-ink{fill:var(--ink)} .t-mut{fill:var(--muted)} .t-hd{font-size:11px;letter-spacing:.16em;font-weight:600}
+.wire{stroke:var(--line);stroke-width:1.5;fill:none}
+.node{fill:var(--bg);stroke:var(--line);stroke-width:1.2}
+.lab{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:760px){.lab{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:8px;background:var(--bg);padding:18px;display:grid;gap:14px;min-width:0}
+.card h2{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0;font-weight:600}
+.row{display:grid;grid-template-columns:88px minmax(0,1fr) 52px;align-items:center;gap:12px}
+.row label{font-family:var(--f-mono);font-size:13px}
+.row output{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+input[type=range]{width:100%;accent-color:var(--S)}
+.presets{display:flex;flex-wrap:wrap;gap:8px}
+.presets button{font-family:var(--f-mono);font-size:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);
+  border-radius:4px;padding:6px 10px;cursor:pointer}
+.presets button:hover{border-color:var(--S)}
+.presets button:focus-visible,input:focus-visible{outline:2px solid var(--A);outline-offset:2px}
+.readout{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.score{font-family:var(--f-mono);font-size:44px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.chip{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border-radius:4px;color:#fff}
+.steps{font-family:var(--f-mono);font-size:13px;color:var(--muted);line-height:1.7;font-variant-numeric:tabular-nums}
+.steps span{color:var(--ink)}
+.ex{font-size:14px;color:var(--muted);display:grid;gap:10px}
+.ex p{margin:0;max-width:62ch}
+.ex code{font-family:var(--f-mono);color:var(--ink);font-size:13px}
+.pix{display:flex;gap:3px}
+.pix i{width:14px;height:14px;border-radius:3px;background:var(--faint);display:block}
+.foot{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <svg id="mark" width="56" height="56" viewBox="0 0 60 60" aria-hidden="true"></svg>
+    <div>
+      <div class="word">Brot<b>IA</b></div>
+      <div class="tag">Climate risk · Agricultural lending</div>
+    </div>
+  </header>
+
+  <section>
+    <h1>Risk(crop, stage, zone)</h1>
+    <p class="lede">Each driver is scored 0–1 and weighted by how sensitive the crop is at its current stage. Climate and disaster drivers combine so that one severe event is enough to raise the score. Geography never raises risk by itself; it multiplies it.</p>
+  </section>
+
+  <div class="formula" aria-label="Formula"><span class="k">impact</span> = s(crop, stage) × x            x = driver severity 0–1
+<span class="k">C</span> = 1 − ∏(1 − impact)   climate drivers   (noisy-OR)
+<span class="k">D</span> = 1 − ∏(1 − impact)   disaster drivers
+<span class="k">G</span> = mean of available geography factors
+<span class="k">base</span>  = ½·(a·C + b·D)/(a + b) + ½·max(C, D)        a = 0.65  b = 0.35
+<span class="k">score</span> = 100 · min(1, base · (1 + c·G))              c = 0.30
+tiers:  normal &lt; 35 ≤ watch &lt; 60 ≤ high</div>
+
+  <div class="sheet">
+    <svg id="flow" viewBox="0 0 1070 570" role="img" aria-label="Diagram: drivers combine into C, D and G, then base, then the 0 to 100 score"></svg>
+  </div>
+
+  <div class="lab">
+    <div class="card">
+      <h2>Try it</h2>
+      <div class="presets" role="group" aria-label="Example situations">
+        <button type="button" data-p="0.05,0,0.2">Calm season</button>
+        <button type="button" data-p="0.7,0,0.6">Hard frost at bloom</button>
+        <button type="button" data-p="1,0.1,0.3">Abandoned orchard</button>
+        <button type="button" data-p="0.1,0.8,0.4">Fire on the farm</button>
+      </div>
+      <div class="row"><label for="sC">C climate</label><input id="sC" type="range" min="0" max="1" step="0.01" value="0.4"><output id="oC">0.40</output></div>
+      <div class="row"><label for="sD">D disaster</label><input id="sD" type="range" min="0" max="1" step="0.01" value="0.1"><output id="oD">0.10</output></div>
+      <div class="row"><label for="sG">G geography</label><input id="sG" type="range" min="0" max="1" step="0.01" value="0.5"><output id="oG">0.50</output></div>
+      <div class="readout">
+        <span class="score" id="score">0</span>
+        <span class="chip" id="chip">normal</span>
+      </div>
+      <div class="steps" id="steps"></div>
+    </div>
+
+    <div class="card">
+      <h2>How NDVI enters</h2>
+      <div class="ex">
+        <p><code>vigour</code>: NDVI z-score against the same dates in this farm's own past seasons. <code>x = ramp(z, −1.0 → −2.5)</code>. The weight s is 0 in dormancy and rises to 0.6–0.8 at fruit growth and harvest.</p>
+        <div class="pix" aria-label="Example: s 0.6 times x 0.67 gives impact 0.40">
+          <i style="background:var(--S)"></i><i style="background:var(--S)"></i><i style="background:var(--S)"></i><i style="background:var(--S)"></i><i></i><i></i>
+        </div>
+        <p>Cherry at fruit growth, z = −2.0: <code>0.6 × 0.67 = 0.40</code> impact on C.</p>
+        <p><code>abandonment</code>: NDVI stays near bare soil through the dry season while neighbouring orchards stay green. s = 1.0 at every stage, so a confirmed flag sets C = 1 and the score lands between about 83 and 100.</p>
+        <p>Scores use native 10 m pixels only. AI-enhanced 2.5 m images are for display.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">ADR-0013 D6 · service/app/risk/formula.py · weights editable per crop, zone and farm</div>
+</div>
+
+<script>
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const RAMP = ["--r0","--r1","--r2","--r3","--r4","--r5","--r6"];
+  const el = (tag, attrs, parent, text) => {
+    const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text !== undefined) e.textContent = text;
+    if (parent) parent.appendChild(e);
+    return e;
+  };
+
+  // Logo mark from the brand grid.
+  const GRID = [".....AA", ".B..AAA", "BBBSAA.", ".BBS...", "...S...", "...S...", "0123456"];
+  const mark = document.getElementById("mark");
+  GRID.forEach((row, r) => [...row].forEach((ch, k) => {
+    const fill = ch === "." ? "var(--faint)" : /\d/.test(ch) ? `var(${RAMP[+ch]})` : `var(--${ch})`;
+    el("rect", { x: k * 8.75, y: r * 8.75, width: 7.5, height: 7.5, rx: 1.6, style: `fill:${fill}` }, mark);
+  }));
+
+  // Flow diagram.
+  const svg = document.getElementById("flow");
+  const groups = [
+    { key: "C", title: "C · CLIMATE", color: "--cC", y0: 40, rows: [
+      ["frost", "station Tmin"], ["heat", "station Tmax"],
+      ["harvest rain", "72 h rain at harvest"], ["chill", "winter chill deficit"],
+      ["water", "NDMI + snowmelt"], ["vigour", "NDVI z, own history"],
+      ["abandonment", "NDVI collapse vs peers"] ] },
+    { key: "D", title: "D · DISASTER", color: "--cD", y0: 300, rows: [
+      ["fire", "burn area, hotspots"], ["flood", "mapped flood extent"],
+      ["emergency", "declared emergency"] ] },
+    { key: "G", title: "G · GEOGRAPHY", color: "--cG", y0: 440, rows: [
+      ["frost pocket", "DEM relative height"], ["fire recurrence", "past burned area"],
+      ["water security", "basin decree history"] ] },
+  ];
+  const nodeY = {};
+  groups.forEach(g => {
+    el("text", { x: 24, y: g.y0, class: "t-mut t-hd" }, svg, g.title);
+    const ys = g.rows.map((_, i) => g.y0 + 30 + i * 30);
+    g.rows.forEach(([name, src], i) => {
+      const y = ys[i];
+      el("rect", { x: 24, y: y - 11, width: 12, height: 12, rx: 2.6, style: `fill:var(${g.color})` }, svg);
+      el("text", { x: 46, y, class: "t-ink", "font-size": 13 }, svg, name);
+      el("text", { x: 186, y, class: "t-mut", "font-size": 11 }, svg, src);
+      el("path", { d: `M335 ${y - 5} H355`, class: "wire" }, svg);
+    });
+    const mid = (ys[0] + ys[ys.length - 1]) / 2 - 5;
+    el("path", { d: `M355 ${ys[0] - 5} V${ys[ys.length - 1] - 5} M355 ${mid} H380`, class: "wire" }, svg);
+    nodeY[g.key] = mid;
+    const box = el("g", {}, svg);
+    el("rect", { x: 380, y: mid - 34, width: 200, height: 68, rx: 6, class: "node" }, box);
+    el("rect", { x: 380, y: mid - 34, width: 6, height: 68, rx: 2, style: `fill:var(${g.color})` }, box);
+    el("text", { x: 400, y: mid - 8, class: "t-ink", "font-size": 18, "font-weight": 600 }, box, g.key);
+    el("text", { x: 562, y: mid - 8, class: "t-ink", "font-size": 18, "font-weight": 600, "text-anchor": "end", id: "n" + g.key }, box, "0.00");
+    el("text", { x: 400, y: mid + 18, class: "t-mut", "font-size": 12 }, box,
+      g.key === "G" ? "mean of factors" : "1 − ∏(1 − s·x)");
+  });
+
+  // base node
+  const bY = 225;
+  el("path", { d: `M580 ${nodeY.C} H612 V${bY + 30} H640 M580 ${nodeY.D} H612 V${bY + 62} H640`, class: "wire" }, svg);
+  el("rect", { x: 640, y: bY, width: 200, height: 92, rx: 6, class: "node" }, svg);
+  el("text", { x: 658, y: bY + 26, class: "t-ink", "font-size": 15, "font-weight": 600 }, svg, "base");
+  el("text", { x: 822, y: bY + 26, class: "t-ink", "font-size": 15, "font-weight": 600, "text-anchor": "end", id: "nB" }, svg, "0.00");
+  el("text", { x: 658, y: bY + 52, class: "t-mut", "font-size": 12 }, svg, "½·(a·C + b·D)/(a+b)");
+  el("text", { x: 658, y: bY + 72, class: "t-mut", "font-size": 12 }, svg, "+ ½·max(C, D)");
+
+  // multiplier node
+  const mY = 430;
+  el("path", { d: `M740 ${bY + 92} V${mY}`, class: "wire" }, svg);
+  el("path", { d: `M580 ${nodeY.G} H612 V${mY + 34} H640`, class: "wire" }, svg);
+  el("rect", { x: 640, y: mY, width: 200, height: 68, rx: 6, class: "node" }, svg);
+  el("text", { x: 658, y: mY + 28, class: "t-ink", "font-size": 15, "font-weight": 600 }, svg, "× (1 + c·G)");
+  el("text", { x: 822, y: mY + 28, class: "t-ink", "font-size": 15, "font-weight": 600, "text-anchor": "end", id: "nM" }, svg, "×1.00");
+  el("text", { x: 658, y: mY + 52, class: "t-mut", "font-size": 12 }, svg, "geography amplifies");
+
+  // score column: 20 pixel cells, 0 at the bottom
+  const top = 60, bot = 530, X = 960, cells = 20, h = (bot - top) / cells;
+  const rampAt = t => { const i = Math.min(6, Math.floor(t * 6.999)); return `var(${RAMP[i]})`; };
+  for (let i = 0; i < cells; i++) {
+    const y = bot - (i + 1) * h;
+    el("rect", { x: X, y: y + 1.5, width: 22, height: h - 3, rx: 3, style: `fill:${rampAt((i + 0.5) / cells)}` }, svg);
+  }
+  const yOf = s => bot - (s / 100) * (bot - top);
+  [[0, "0"], [35, "35 watch"], [60, "60 high"], [100, "100"]].forEach(([v, t]) => {
+    el("path", { d: `M${X + 26} ${yOf(v)} H${X + 34}`, class: "wire" }, svg);
+    el("text", { x: X + 38, y: yOf(v) + 4, class: v === 35 || v === 60 ? "t-ink" : "t-mut", "font-size": 11 }, svg, t);
+  });
+  el("text", { x: X + 11, y: top - 22, class: "t-mut t-hd", "text-anchor": "middle" }, svg, "SCORE");
+  const link = el("path", { class: "wire", "stroke-dasharray": "4 4" }, svg);
+  const pointer = el("g", {}, svg);
+  el("rect", { x: X - 22, y: -6, width: 12, height: 12, rx: 2.6, style: "fill:var(--ink)" }, pointer);
+  const pLabel = el("text", { x: (858 + X - 24) / 2, y: -8, class: "t-ink", "font-size": 15, "font-weight": 600, "text-anchor": "middle" }, pointer, "0");
+
+  // live model
+  const $ = id => document.getElementById(id);
+  const sC = $("sC"), sD = $("sD"), sG = $("sG");
+  const tierOf = s => s >= 60 ? ["high", "--r5"] : s >= 35 ? ["watch", "--r4"] : ["normal", "--r1"];
+  function update() {
+    const C = +sC.value, D = +sD.value, G = +sG.value, a = 0.65, b = 0.35, c = 0.30;
+    const base = 0.5 * (a * C + b * D) / (a + b) + 0.5 * Math.max(C, D);
+    const mult = 1 + c * G;
+    const score = Math.round(1000 * Math.min(1, base * mult)) / 10;
+    $("oC").value = C.toFixed(2); $("oD").value = D.toFixed(2); $("oG").value = G.toFixed(2);
+    $("nC").textContent = C.toFixed(2); $("nD").textContent = D.toFixed(2); $("nG").textContent = G.toFixed(2);
+    $("nB").textContent = base.toFixed(2); $("nM").textContent = "×" + mult.toFixed(2);
+    $("score").textContent = score.toFixed(1);
+    const [t, col] = tierOf(score);
+    $("chip").textContent = t; $("chip").style.background = `var(${col})`;
+    $("score").style.color = `var(${col})`;
+    $("steps").innerHTML =
+      `base = ½·(0.65·<span>${C.toFixed(2)}</span> + 0.35·<span>${D.toFixed(2)}</span>) + ½·<span>${Math.max(C, D).toFixed(2)}</span> = <span>${base.toFixed(3)}</span><br>` +
+      `score = 100·min(1, <span>${base.toFixed(3)}</span> × <span>${mult.toFixed(2)}</span>) = <span>${score.toFixed(1)}</span>`;
+    const y = yOf(score);
+    pointer.setAttribute("transform", `translate(0 ${y})`);
+    pLabel.textContent = score.toFixed(1);
+    link.setAttribute("d", `M840 ${mY + 34} H858 V${y} H${X - 24}`);
+  }
+  [sC, sD, sG].forEach(s => s.addEventListener("input", update));
+  document.querySelectorAll(".presets button").forEach(b => b.addEventListener("click", () => {
+    const [C, D, G] = b.dataset.p.split(",");
+    sC.value = C; sD.value = D; sG.value = G; update();
+  }));
+  update();
+})();
+</script>

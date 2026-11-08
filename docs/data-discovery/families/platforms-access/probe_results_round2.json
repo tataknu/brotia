@@ -1,0 +1,98 @@
+{
+ "es_s2_c1_latest": {
+  "status": 200,
+  "ids": [
+   "S2A_T20KNG_20261104T142519_L2A",
+   "S2C_T20KNG_20261102T142455_L2A",
+   "S2B_T20KNG_20261028T142325_L2A"
+  ],
+  "dt": [
+   "2026-11-04T14:27:30.202000Z",
+   "2026-11-02T14:27:20.570000Z",
+   "2026-10-28T14:27:24.918000Z"
+  ],
+  "red_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/20/K/NG/2026/11/S2A_T20KNG_20261104T142519_L2A/B04.tif",
+  "latency_s": 0.16
+ },
+ "es_s2_l2a_latest": {
+  "status": 200,
+  "ids": [
+   "S2A_20KNG_20261104_0_L2A",
+   "S2C_20KNG_20261102_0_L2A",
+   "S2B_20KNG_20261028_1_L2A"
+  ],
+  "dt": [
+   "2026-11-04T14:27:30.202000Z",
+   "2026-11-02T14:27:20.570000Z",
+   "2026-10-28T14:27:24.918000Z"
+  ],
+  "red_href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/20/K/NG/2026/11/S2A_20KNG_20261104_0_L2A/B04.tif",
+  "latency_s": 0.28
+ },
+ "es_s2_c1_earliest": {
+  "dt": [
+   "2018-02-07T14:27:20.300000Z"
+  ],
+  "latency_s": 0.16
+ },
+ "pc_data_point_s2": {
+  "status": 200,
+  "body": "{\"coordinates\":[-62.52,-16.86],\"values\":[1371.0,4910.0,4.0],\"band_names\":[\"B04_b1\",\"B08_b1\",\"SCL_b1\"]}",
+  "latency_s": 0.68
+ },
+ "pc_data_stats_s2_ndvi": {
+  "status": 500,
+  "body": "{\"detail\":\"Could not find any valid assets in \\u0027(B08_b1-B04_b1)/(B08_b1\\u002BB04_b1)\\u0027 expression. Assets are: [\\u0027AOT\\u0027, \\u0027B01\\u0027, \\u0027B02\\u0027, \\u0027B03\\u0027, \\u0027B04\\u0027, \\u0027B05\\u0027, \\u0027B06\\u0027, \\u0027B07\\u0027, \\u0027B08\\u0027, \\u0027B09\\u0027, \\u0027B11\\u0027, \\u0027B12\\u0027, \\u0027B8A\\u0027, \\u0027SCL\\u0027, \\u0027WVP\\u0027, \\u0027visual\\u0027]\"}",
+  "latency_s": 0.22
+ },
+ "pc_data_point_modis": {
+  "status": 200,
+  "body": "{\"coordinates\":[-62.52,-16.86],\"values\":[7382.0],\"band_names\":[\"250m_16_days_NDVI_b1\"]}",
+  "latency_s": 0.49
+ },
+ "om_archive_bestmatch": {
+  "status": 200,
+  "first": "2026-10-20",
+  "last_nonnull": "2026-11-07",
+  "n": 19,
+  "latency_s": 0.43
+ },
+ "om_historical_forecast": {
+  "status": 200,
+  "first": "2026-10-20",
+  "last_nonnull": "2026-11-07",
+  "n": 19,
+  "latency_s": 0.46
+ },
+ "om_forecast_past92": {
+  "status": 200,
+  "first": "2026-08-07",
+  "last_nonnull": "2026-11-07",
+  "n": 93,
+  "latency_s": 0.45
+ },
+ "iri_dl_login": {
+  "status": 200,
+  "final_url": "https://iridl.ldeo.columbia.edu/auth/login?redirect=%2FSOURCES%2F.UCSB%2F.CHIRPS%2F.v2p0%2F",
+  "login_wall": true,
+  "latency_s": 0.08
+ },
+ "ornl_modis_subset_retry": {
+  "status": 200,
+  "rows": [
+   [
+    "2026-09-30",
+    [
+     7382
+    ]
+   ],
+   [
+    "2026-10-16",
+    [
+     8601
+    ]
+   ]
+  ],
+  "latency_s": 37.86
+ }
+}

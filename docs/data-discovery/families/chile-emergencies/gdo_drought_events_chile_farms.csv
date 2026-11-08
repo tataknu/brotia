@@ -1,0 +1,16 @@
+event_id,start,last_dekad,n_dekads,n_farms,farms,max_area_km2
+5097,2019-04-11,2019-04-21,2,1,Osorno potatoes,210335
+5322,2019-11-11,2020-03-11,13,9,Chillan blueberries; Curico apples & cherries; Los Angeles maize & wheat; Ovalle/Limari table grapes; Parral rice; Quillota avocados; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards,525030
+5346,2020-06-01,2020-06-01,1,6,Chillan blueberries; Curico apples & cherries; Parral rice; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards,97373
+5478,2021-01-01,2021-01-11,2,8,Chillan blueberries; Curico apples & cherries; Ovalle/Limari table grapes; Parral rice; Quillota avocados; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards,240287
+5549,2021-03-21,2021-05-11,6,2,Osorno potatoes; Temuco wheat & oats,276956
+5714,2021-10-21,2022-01-01,8,2,Ovalle/Limari table grapes; Quillota avocados,165012
+5981,2022-12-21,2022-12-21,1,1,Talca vineyards,12564
+6128,2023-02-11,2023-05-11,10,11,Chillan blueberries; Curico apples & cherries; Los Angeles maize & wheat; Osorno potatoes; Ovalle/Limari table grapes; Parral rice; Quillota avocados; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards; Temuco wheat & oats,3417083
+6337,2023-09-01,2023-09-01,1,1,Ovalle/Limari table grapes,8426902
+6288,2023-12-21,2024-01-01,2,2,Ovalle/Limari table grapes; Quillota avocados,438692
+6290,2024-01-11,2024-01-21,2,3,Ovalle/Limari table grapes; Quillota avocados; Temuco wheat & oats,457453
+6639,2025-02-01,2025-03-21,6,10,Chillan blueberries; Curico apples & cherries; Los Angeles maize & wheat; Ovalle/Limari table grapes; Parral rice; Quillota avocados; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards; Temuco wheat & oats,5049449
+6571,2025-05-01,2025-07-11,5,1,Ovalle/Limari table grapes,413420
+6587,2025-08-11,2025-08-21,2,1,Temuco wheat & oats,150714
+6806,2025-10-11,2026-07-01,26,10,Chillan blueberries; Curico apples & cherries; Los Angeles maize & wheat; Ovalle/Limari table grapes; Parral rice; Quillota avocados; Requinoa cherries; Santa Cruz (Colchagua) wine grapes; Talca vineyards; Temuco wheat & oats,478255

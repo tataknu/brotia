@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://schemas.opengis.net/wms/1.1.1/WMS_MS_Capabilities.dtd" [
+<!ELEMENT VendorSpecificCapabilities EMPTY>
+]>
+<!-- end of DOCTYPE declaration -->
+<WMT_MS_Capabilities version="1.1.1">
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>CEMS European (EDO) and Global (GDO) Drought Observatories - Drought Products WMS</Title>
+  <Abstract>WMS delivering maps of drought products provided by the European (EDO) and Global (GDO) Drought Observatories</Abstract>
+  <KeywordList>
+      <Keyword>WMS</Keyword>
+      <Keyword>drought</Keyword>
+      <Keyword>drought monitoring</Keyword>
+      <Keyword>Copernicus</Keyword>
+      <Keyword>CEMS</Keyword>
+      <Keyword>European Drought Observatory (EDO)</Keyword>
+      <Keyword>Global Drought Observatory (GDO)</Keyword>
+  </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>Andrea Toreti</ContactPerson>
+      <ContactOrganization>EC-JRC-E1</ContactOrganization>
+    </ContactPersonPrimary>
+      <ContactPosition/>
+    <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>via E.Fermi 2749</Address>
+        <City>Ispra</City>
+        <StateOrProvince>Varese</StateOrProvince>
+        <PostCode>I-21027</PostCode>
+        <Country>Italy</Country>
+    </ContactAddress>
+      <ContactVoiceTelephone/>
+      <ContactFacsimileTelephone/>
+  <ContactElectronicMailAddress>JRC-EMS-DROUGHT@ec.europa.eu</ContactElectronicMailAddress>
+  </ContactInformation>
+  <Fees>no fees</Fees>
+  <AccessConstraints>no constraints</AccessConstraints>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>application/vnd.ogc.wms_xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <Format>image/gif</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/tiff</Format>
+      <Format>image/png; mode=8bit</Format>
+      <Format>image/vnd.jpeg-png</Format>
+      <Format>image/vnd.jpeg-png8</Format>
+      <Format>application/x-pdf</Format>
+      <Format>image/svg+xml</Format>
+      <Format>application/vnd.google-earth.kml+xml</Format>
+      <Format>application/vnd.google-earth.kmz</Format>
+      <Format>application/vnd.mapbox-vector-tile</Format>
+      <Format>application/x-protobuf</Format>
+      <Format>application/json</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <DescribeLayer>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeLayer>
+    <GetLegendGraphic>
+      <Format>image/png</Format>
+      <Format>image/gif</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/png; mode=8bit</Format>
+      <Format>image/vnd.jpeg-png</Format>
+      <Format>image/vnd.jpeg-png8</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetLegendGraphic>
+    <GetStyles>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://drought.emergency.copernicus.eu/api/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetStyles>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+    <Format>application/vnd.ogc.se_inimage</Format>
+    <Format>application/vnd.ogc.se_blank</Format>
+  </Exception>
+  <VendorSpecificCapabilities/>
+  <UserDefinedSymbolization SupportSLD="1" UserLayer="0" UserStyle="1" RemoteWFS="0"/>
+  <Layer>
+    <Name>edo_wms</Name>
+    <Title>CEMS European (EDO) and Global (GDO) Drought Observatories - Drought Products WMS</Title>
+    <Abstract>WMS delivering maps of drought products provided by the European (EDO) and Global (GDO) Drought Observatories</Abstract>
+    <KeywordList>
+        <Keyword>WMS</Keyword>
+        <Keyword>drought</Keyword>
+        <Keyword>drought monitoring</Keyword>
+        <Keyword>Copernicus</Keyword>
+        <Keyword>CEMS</Keyword>
+        <Keyword>European Drought Observatory (EDO)</Keyword>
+        <Keyword>Global Drought Observatory (GDO)</Keyword>
+    </KeywordList>
+    <SRS>EPSG:3035</SRS>
+    <SRS>EPSG:4326</SRS>
+    <SRS>EPSG:3034</SRS>
+    <SRS>EPSG:4258</SRS>
+    <SRS>EPSG:900913</SRS>
+    <SRS>EPSG:3857</SRS>
+    <LatLonBoundingBox minx="-50.514942" miny="23.910406" maxx="74.004975" maxy="72.662910"/>
+    <BoundingBox SRS="EPSG:3035" minx="1.44952e+06" miny="750000" maxx="7.50048e+06" maxy="5.5e+06"/>
+    <ScaleHint min="498.902848429637" max="10710.0472278087"/>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>smian</Name>
+        <Title>SMI Anomaly</Title>
+        <Abstract>&lt;p&gt;Soil Moisture Anomaly (SMA) at 1 arcmin spatial resolution, computed as standardized deviation from a baseline period 1995-2024. The dataset is derived from 6-hourly LISFLOOD modelled soil moisture in the top two soil layers, as produced for EFAS5.&lt;/p&gt;</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1995-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=smian"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="273" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=smian&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+    <Layer>
+<!-- WARNING: The layer name 'Soil Moisture' might contain spaces or invalid characters or may start with a number. This could lead to potential problems. -->
+      <Name>Soil Moisture</Name>
+<!-- WARNING: Mandatory metadata "wms_GROUP_TITLE" or "ows_GROUP_TITLE" was missing in this context. -->
+      <Title>Soil Moisture</Title>
+      <Abstract>Soil Moisture</Abstract>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="103" height="189">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=Soil Moisture&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>smang</Name>
+        <Title>Soil Moisture Index Anomaly</Title>
+        <SRS>EPSG:4326</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1995-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=smang"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="103" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=smang&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+<!-- WARNING: The layer name 'Vegetation response' might contain spaces or invalid characters or may start with a number. This could lead to potential problems. -->
+      <Name>Vegetation response</Name>
+<!-- WARNING: Mandatory metadata "wms_GROUP_TITLE" or "ows_GROUP_TITLE" was missing in this context. -->
+      <Title>Vegetation response</Title>
+      <Abstract>Vegetation response</Abstract>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="103" height="189">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=Vegetation response&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>fpanv</Name>
+        <Title>fAPAR Anomaly (VIIRS)</Title>
+        <Abstract>Quicklook of fAPAR Anomaly by VIIRS.</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2012-01-21/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=fpanv"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="103" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=fpanv&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer>
+      <Name>Precipitation</Name>
+<!-- WARNING: Mandatory metadata "wms_GROUP_TITLE" or "ows_GROUP_TITLE" was missing in this context. -->
+      <Title>Precipitation</Title>
+      <Abstract>Precipitation</Abstract>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="228" height="925">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=Precipitation&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>spaST</Name>
+        <Title>SPI ERA5 Short Term</Title>
+        <Abstract>Soil Moisture Anomaly v.1.0.0 produced by GloFAS at 3 arcmin (0.05 dd) spatial resolution</Abstract>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" default="2026-10-21" nearestValue="0">1991-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=spaST"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=spaST&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>spaLT</Name>
+        <Title>SPI ERA5 Long Term</Title>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" default="2026-10-01" nearestValue="0">1991-01-01/2026-10-01/P1M</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=spaLT"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=spaLT&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>spcST</Name>
+        <Title>SPI CHIRPS Short-term</Title>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" default="2026-10-11" nearestValue="0">1991-01-01/2026-10-11/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=spcST"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=spcST&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>spcLT</Name>
+        <Title>SPI CHIRPS Long-term</Title>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" default="2026-09-01" nearestValue="0">1991-01-01/2026-09-01/P1M</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=spcLT"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=spcLT&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>spgTS</Name>
+        <Title>SPI GPCC</Title>
+        <Abstract>The Standardized Precipitation Index (SPI) is used to monitor the occurrence of meteorological droughts. The lower the SPI, the more intense is the drought. It is updated monthly.&lt;br /&gt;&lt;br /&gt;The SPI is a statistical index comparing the total precipitation received at a particular location during a period of n months with the long-term precipitation distribution for the same period of time at that location (reference period is 1981-2010). Monthly accumulation periods (n) are 1, 3, 6, 9, 12, 24 or 48 months. The corresponding SPIs are denoted as SPI-1, SPI-3, SPI-6, etc. &lt;br /&gt;&lt;br /&gt;Each accumulation period describes a different aspect of the drought and its potential impacts. SPIs for short accumulation periods (e.g., SPI-1 to SPI-3) are indicators for immediate impacts such as reduced soil moisture, snowpack, and flow in smaller creeks. SPIs for medium accumulation periods (e.g., SPI-3 to SPI-12) are indicators for reduced stream flow and reservoir storage. SPIs for long accumulation periods (SPI-12 to SPI-48) are indicators for reduced reservoir and groundwater recharge, for example.  The  exact  relationship  between  accumulation  period and  impact  depends  on  the  natural environment (e.g., geology, soils) and the human interference (e.g., existence of irrigation schemes).&lt;br /&gt;&lt;br /&gt;The SPIs are calculated from the monthly precipitation data provided by the Global Precipitation Climatology Centre (GPCC - &lt;a target='_ref' href='http://gpcc.dwd.de/'&gt;http://gpcc.dwd.de/&lt;/a&gt;), specifically 'First guess' product for the two months prior to current month, then updated to 'Monitoring (version 4)' product for the three months prior to current and backwards.&lt;br /&gt;&lt;br /&gt;Resolution is one decimal degree.</Abstract>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <LatLonBoundingBox minx="-179.900000" miny="-89.900000" maxx="179.900000" maxy="89.900000"/>
+        <BoundingBox SRS="EPSG:3035" minx="-6.37354e+06" miny="-9.18573e+06" maxx="1.69973e+07" maxy="1.48787e+07"/>
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1981-01-01/2026-09-01/P1M</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=spgTS"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=spgTS&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>cdiad</Name>
+        <Title>Combined Drought Indicator (CDI) v4.1</Title>
+        <Abstract>&lt;p&gt;The CDI is an indicator for drought early warning, specifically designed to monitor agricultural drought. Through the combination of spatial patterns of precipitation, soil moisture and greenness vegetation anomalies, the CDI identifies areas at risk of agricultural drought, areas where the vegetation has already been affected by drought and areas in the process of recovery to normal conditions. Accordingly, the CDI classification scheme defines three primary drought classes (Watch, Warning and Alert) and three recovery classes (Temporary Soil Moisture Recovery, Temporary Vegetation Recovery and Recovery). Only the three primary classes are displayed by this layer.&lt;/p&gt;</Abstract>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <LatLonBoundingBox minx="-32.000000" miny="25.000000" maxx="70.000000" maxy="72.000000"/>
+        <BoundingBox SRS="EPSG:3035" minx="182466" miny="239573" maxx="9.89904e+06" maxy="6.29339e+06"/>
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2012-01-01/2026-10-11/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=cdiad"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="99" height="74">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cdiad&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>cdirc</Name>
+        <Title>No Drought and Recovery CDI v.4</Title>
+        <Abstract>&lt;p&gt;The CDI is an indicator for drought early warning, specifically designed to monitor agricultural drought. Through the combination of spatial patterns of precipitation, soil moisture and greenness vegetation anomalies, the CDI identifies areas at risk of agricultural drought, areas where the vegetation has already been affected by drought and areas in the process of recovery to normal conditions. Accordingly, the CDI classification scheme defines three primary drought classes (Watch, Warning and Alert) and three recovery classes (Temporary Soil Moisture Recovery, Temporary Vegetation Recovery and Recovery). Only no drought and three recovery classes are displayed by this layer.&lt;/p&gt;</Abstract>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <LatLonBoundingBox minx="-32.000000" miny="25.000000" maxx="70.000000" maxy="72.000000"/>
+        <BoundingBox SRS="EPSG:3035" minx="182466" miny="239573" maxx="9.89904e+06" maxy="6.29339e+06"/>
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2012-01-01/2026-10-11/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=cdirc"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="251" height="97">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=cdirc&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>lfinx_300_sms</Name>
+        <Title>Low-Flow Index (LFI)</Title>
+        <Abstract>Low-Flow Index (LFI) v.3.0.0: the image produced by FWC Hydro is loaded and colourized</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1995-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=lfinx_300_sms"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="169" height="120">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=lfinx_300_sms&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="5986.83418115564" max="0"/>
+        <!-- WARNING: Only MINSCALEDENOM and no MAXSCALEDENOM specified in the mapfile. A default value of 0 has been returned for the Max ScaleHint but this is probably not what you want. -->
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>lfinx_300_mds</Name>
+        <Title>Low-Flow Index (LFI)</Title>
+        <Abstract>Low-Flow Index (LFI) v.3.0.0: the image produced by FWC Hydro is loaded and colourized</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1995-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=lfinx_300_mds"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="169" height="120">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=lfinx_300_mds&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="1496.70854528891" max="5986.83418115564"/>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>lfinx_300_lgs</Name>
+        <Title>Low-Flow Index (LFI)</Title>
+        <Abstract>Low-Flow Index (LFI) v.3.0.0: the image produced by FWC Hydro is loaded and colourized</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:900913</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">1995-01-01/2026-10-21/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=lfinx_300_lgs"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="169" height="120">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=lfinx_300_lgs&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+        <ScaleHint min="0" max="1496.70854528891"/>
+    </Layer>
+    <Layer>
+      <Name>Hydrology</Name>
+<!-- WARNING: Mandatory metadata "wms_GROUP_TITLE" or "ows_GROUP_TITLE" was missing in this context. -->
+      <Title>Hydrology</Title>
+      <Abstract>Hydrology</Abstract>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="228" height="189">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=Hydrology&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>twsan</Name>
+        <Title>GRACE TWS Anomaly</Title>
+        <Abstract>The Total Water Storage (TWS) anomaly is computed as standardized deviation of the GRACE satellite Liquid Water Equivalent (JPL TELLUS, Level 3 release 6.0, https://grace.jpl.nasa.gov/) from the baseline 2002-2017. The dataset is monthly at 1 degree resolution.&lt;br /&gt;&lt;br /&gt;Details on the relationship between this indicator and classic meteorological drought indices (e.g., SPI) can be found in Cammalleri et al. (2019).&lt;br /&gt;&lt;br /&gt;Cammalleri, C., Barbosa, P., Vogt, J.V., 2019. Analysing the Relationship between Multiple-Timescale SPI and GRACE Terrestrial Water Storage in the Framework of Drought Monitoring. Water 11(8), 1672, &lt;a href=https://doi.org/10.3390/w11081672 target=_new&gt;https://doi.org/10.3390/w11081672&lt;/a&gt;.</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=twsan"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="228" height="189">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=twsan&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>msfTS</Name>
+        <Title>Forecasts of Unusually Wet and Dry conditions (Multi-system)</Title>
+        <Abstract>This layer provides an early warning of persistent extreme wet and dry precipitation events over Europe derived from 1-, 3-, and 6-month Standardized Precipitation Index (SPI1, SPI3 and SPI6 respectively). The forecasts of SPI are derived from the forecasted of precipitation provided by the ECMWF probabilistic seasonal model (S5). The early warning is plotted only when and where the forecast is considered robust (with at least 40% of the ensemble members associated with extreme forecasts) and associated with relative extreme values (SPI lower than -1). The colors indicate the return period of the intensity and the coherency of the ensemble members of the forecast model according to the reference period that spans from 1981 to 2010.</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2026-10-01/2026-10-01/P1M</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=msfTS"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="211" height="212">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=msfTS&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>snwvi</Name>
+        <Title>Snow Mask</Title>
+        <Abstract>&lt;p&gt;The Snow Masks used in the European Drought Observatory (EDO) are a collection of time-varying binary spatial layers (one for each 10-day period of the year) used to depict the location and extent of snow on the ground. The input data for calculating the snow masks is the NASA VNP10A1 product&lt;/p&gt;</Abstract>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <!-- WARNING: Optional LatLonBoundingBox could not be established for this layer.  Consider setting the EXTENT in the LAYER object, or wms_extent metadata. Also check that your data exists in the DATA statement -->
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=snwvi"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="170" height="28">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=snwvi&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+    </Layer>
+    <Layer>
+<!-- WARNING: The layer name 'Risk of Drought Impact' might contain spaces or invalid characters or may start with a number. This could lead to potential problems. -->
+      <Name>Risk of Drought Impact</Name>
+<!-- WARNING: Mandatory metadata "wms_GROUP_TITLE" or "ows_GROUP_TITLE" was missing in this context. -->
+      <Title>Risk of Drought Impact</Title>
+      <Abstract>Risk of Drought Impact</Abstract>
+    <Style>
+       <Name>default</Name>
+       <Title>default</Title>
+       <LegendURL width="97" height="74">
+          <Format>image/png</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=Risk of Drought Impact&amp;format=image/png&amp;STYLE=default"/>
+       </LegendURL>
+    </Style>
+      <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>rdria</Name>
+        <Title>Risk of Drought Impact for Agriculture</Title>
+        <Abstract>The Risk of Drought Impact for Agriculture (RDrI-Agri) is a categorized risk index, indicating the probability of having impacts from a drought, with particular focus on vegetation. Formerly known as Likelihood of Drought Impact (LDI), it differs from the latter in that soil moisture anomaly is included and the index is updated every ten days, instead of eight. It is a dynamic theme, updated every ten days.&lt;br /&gt;&lt;br /&gt;The RDrI-Agri combines drought hazard, drought exposure (i.e. the total population, its livelihoods and assets in an area in which drought events may occur), vulnerability (i.e. the propensity of exposed elements to suffer adverse effects when impacted by a drought event) and hazard. Drought hazard is expressed as the combination of rainfall anomaly (SPI, Standardized Precipitation Index), anomaly of the photosynthetic activity of the vegetation cover (fAPAR anomaly - fraction of Absorbed Photosynthetically Active Radiation Anomaly) and soil moisture anomalies.&lt;br /&gt;&lt;br /&gt;Resolution is one decimal degree.&lt;br /&gt;&lt;br /&gt;More details in &lt;a target='_ref' href='https://www.sciencedirect.com/science/article/pii/S0959378016300565'&gt;Carr&amp;atilde;o, H., Naumann, G., Barbosa, P., 2016. Mapping global patterns of drought risk: An empirical framework based on sub-national estimates of hazard, exposure and vulnerability. Global Environ. Change 39: 108-124.&lt;/a&gt;.</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <LatLonBoundingBox minx="-180.000000" miny="-90.000000" maxx="180.000000" maxy="90.000000"/>
+        <BoundingBox SRS="EPSG:4326" minx="-180.000000" miny="-90.000000" maxx="180.000000" maxy="90.000000"/>
+        <Dimension name="time" units="ISO8601"/>
+        <Extent name="time" nearestValue="0">2010-01-01/2026-10-11/P10D</Extent>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=rdria"/>
+        </MetadataURL>
+        <Style>
+          <Name>default</Name>
+          <Title>default</Title>
+          <LegendURL width="97" height="74">
+             <Format>image/png</Format>
+             <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?version=1.1.1&amp;service=WMS&amp;request=GetLegendGraphic&amp;layer=rdria&amp;format=image/png&amp;STYLE=default"/>
+          </LegendURL>
+        </Style>
+      </Layer>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>ne_10m_ocean_mask</Name>
+        <Title>Natural Earth ocean mask</Title>
+        <Abstract>Natural Earth 10m ocean polygon, served as an opaque sea / transparent land mask, so that stacking it over a map hides the sea and leaves the land visible. For details please see https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-ocean/.</Abstract>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:3035</SRS>
+        <SRS>EPSG:4258</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3857</SRS>
+        <LatLonBoundingBox minx="-180.000000" miny="-90.000000" maxx="180.000000" maxy="90.000000"/>
+        <BoundingBox SRS="EPSG:4326" minx="-180.000000" miny="-90.000000" maxx="180.000000" maxy="90.000000"/>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=ne_10m_ocean_mask"/>
+        </MetadataURL>
+    </Layer>
+    <Layer queryable="0" opaque="0" cascaded="0">
+        <Name>copyright_wms</Name>
+        <Title>copyright</Title>
+        <SRS>EPSG:4326</SRS>
+        <SRS>EPSG:900913</SRS>
+        <SRS>EPSG:3035</SRS>
+        <LatLonBoundingBox minx="-179.900000" miny="-89.900000" maxx="179.900000" maxy="89.900000"/>
+        <BoundingBox SRS="EPSG:4326" minx="-179.900000" miny="-89.900000" maxx="179.900000" maxy="89.900000"/>
+        <MetadataURL type="TC211">
+          <Format>text/xml</Format>
+          <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://drought.emergency.copernicus.eu/api/wms?request=GetMetadata&amp;layer=copyright_wms"/>
+        </MetadataURL>
+    </Layer>
+  </Layer>
+</Capability>
+</WMT_MS_Capabilities>

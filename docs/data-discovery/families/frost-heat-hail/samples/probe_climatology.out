@@ -1,0 +1,60 @@
+
+Agricola Pailon Norte (wheat) era5_land status=200 0.72s rows=13088 last=2026-10-31 absmin=5.1 on 1994-06-27 absmax=40.4
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.0  Tmax>=35: 11.5  Tmax>=38: 0.9
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       7.7      40.4       0       0      0      51      18
+2024       8.3      39.3       0       0      0      39       3
+2025       8.2      37.5       0       0      0      24       0
+2026       9.1      36.1       0       0      0       4       0
+
+Agricola Pailon Norte (wheat) era5 status=200 0.73s rows=13088 last=2026-10-31 absmin=4.4 on 2021-07-01 absmax=41.5
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.1  Tmax>=35: 30.7  Tmax>=38: 3.0
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       8.2      41.5       0       0      0      75      27
+2024       8.6      38.9       0       0      0      75       7
+2025       9.1      38.8       0       0      0      51       8
+2026       8.4      37.7       0       0      0      21       0
+
+Viru Viru SLVR era5_land status=200 0.69s rows=13088 last=2026-10-31 absmin=5.3 on 2010-07-19 absmax=39.4
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.0  Tmax>=35: 4.2  Tmax>=38: 0.2
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       8.2      39.4       0       0      0      29       2
+2024       8.6      38.3       0       0      0      22       2
+2025       9.0      36.4       0       0      0       7       0
+2026       8.9      34.7       0       0      0       0       0
+
+Viru Viru SLVR era5 status=200 0.71s rows=13088 last=2026-10-31 absmin=5.1 on 2010-07-19 absmax=40.6
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.0  Tmax>=35: 15.7  Tmax>=38: 0.9
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       8.5      40.6       0       0      0      50       7
+2024       8.5      38.3       0       0      0      47       2
+2025       8.3      38.1       0       0      0      20       2
+2026       8.7      36.0       0       0      0       5       0
+
+Estancia Los Tajibos era5_land status=200 0.73s rows=13088 last=2026-10-31 absmin=6.6 on 2021-07-01 absmax=39.8
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.0  Tmax>=35: 13.1  Tmax>=38: 0.7
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       9.4      39.8       0       0      0      51      13
+2024      10.6      38.6       0       0      0      48       6
+2025       9.0      36.6       0       0      0      16       0
+2026      10.3      37.3       0       0      0      12       0
+
+Estancia Los Tajibos era5 status=200 0.75s rows=13088 last=2026-10-31 absmin=3.9 on 2021-07-01 absmax=39.9
+years w/ Tmin<=0: []  years w/ Tmin<=2: []
+mean days/yr Tmin<=5: 0.0  Tmax>=35: 30.4  Tmax>=38: 1.2
+      tmin_abs  tmax_abs  frost0  frost2  cold5  heat35  heat38
+y                                                              
+2023       8.7      39.9       0       0      0      74      19
+2024       9.8      37.9       0       0      0      82       0
+2025       8.9      38.1       0       0      0      41       2
+2026       9.8      38.7       0       0      0      25       2

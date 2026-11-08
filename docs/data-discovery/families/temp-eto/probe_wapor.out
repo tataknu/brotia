@@ -1,0 +1,22 @@
+mapsets 42
+['L1-NBWP-A', 'L1-PCP-D', 'L1-PCP-A', 'L1-PCP-E', 'L1-PCP-M', 'L1-QUAL-LST-D', 'L1-RET-A', 'L1-RET-D', 'L1-RET-E', 'L1-RET-M', 'L1-RSM-D', 'L1-T-D', 'L1-AETI-M', 'L1-NPP-D', 'L1-QUAL-NDVI-D', 'L1-GBWP-A', 'L1-T-A', 'L1-AETI-A', 'L1-AETI-D', 'L1-E-D', 'L1-I-D', 'L1-NPP-M', 'L1-I-A', 'L1-TBP-A', 'L1-E-A']
+
+L1-RET-D: n=318 first=WAPOR-3.L1-RET-D.2018-01-D1 last=WAPOR-3.L1-RET-D.2026-10-D3 listing 4.4s url=https://storage.googleapis.com/fao-gismgr-wapor-3-data/DATA/WAPOR-3/MAPSET/L1-RET-D/WAPOR-3.L1-RET-D.2026-10-D3.tif
+  bounds BoundingBox(left=-180.15625, bottom=-90.125, right=179.84375, top=90.125) res (0.3125, 0.25) crs EPSG:4326 scale (0.1,) nodata 255.0
+  sample {'Tajibos': 53.0, 'Mineros': 43.0}
+
+L1-AETI-D: n=318 first=WAPOR-3.L1-AETI-D.2018-01-D1 last=WAPOR-3.L1-AETI-D.2026-10-D3 listing 4.3s url=https://storage.googleapis.com/fao-gismgr-wapor-3-data/DATA/WAPOR-3/MAPSET/L1-AETI-D/WAPOR-3.L1-AETI-D.2026-10-D3.tif
+  bounds BoundingBox(left=-180.0, bottom=-90.0, right=180.0, top=90.0) res (0.0029296875, 0.0029296875) crs EPSG:4326 scale (0.1,) nodata -9999.0
+  sample {'Tajibos': 47.0, 'Mineros': 32.0}
+
+L1-AETI-M: n=106 first=WAPOR-3.L1-AETI-M.2018-01 last=WAPOR-3.L1-AETI-M.2026-10 listing 1.7s url=https://storage.googleapis.com/fao-gismgr-wapor-3-data/DATA/WAPOR-3/MAPSET/L1-AETI-M/WAPOR-3.L1-AETI-M.2026-10.tif
+  bounds BoundingBox(left=-180.0, bottom=-90.0, right=180.0, top=90.0) res (0.0029296875, 0.0029296875) crs EPSG:4326 scale (0.1,) nodata -9999.0
+  sample {'Tajibos': 1267.0, 'Mineros': 822.0}
+
+L1-RET-E: n=3231 first=WAPOR-3.L1-RET-E.2018-01-01 last=WAPOR-3.L1-RET-E.2026-11-05 listing 41.9s url=https://storage.googleapis.com/fao-gismgr-wapor-3-data/DATA/WAPOR-3/MAPSET/L1-RET-E/WAPOR-3.L1-RET-E.2026-11-05.tif
+  bounds BoundingBox(left=-180.15625, bottom=-90.125, right=179.84375, top=90.125) res (0.3125, 0.25) crs EPSG:4326 scale (0.1,) nodata 255.0
+  sample {'Tajibos': 34.0, 'Mineros': 33.0}
+
+L1-NPP-D: n=318 first=WAPOR-3.L1-NPP-D.2018-01-D1 last=WAPOR-3.L1-NPP-D.2026-10-D3 listing 4.1s url=https://storage.googleapis.com/fao-gismgr-wapor-3-data/DATA/WAPOR-3/MAPSET/L1-NPP-D/WAPOR-3.L1-NPP-D.2026-10-D3.tif
+  bounds BoundingBox(left=-180.0, bottom=-90.0, right=180.0, top=90.0) res (0.0029296875, 0.0029296875) crs EPSG:4326 scale (0.001,) nodata -9999.0
+  sample {'Tajibos': 3243.0, 'Mineros': 2794.0}

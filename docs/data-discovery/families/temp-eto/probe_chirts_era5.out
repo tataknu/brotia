@@ -1,0 +1,6 @@
+profile (0.05000000074505806, 0.05000000074505806) BoundingBox(left=-180.0, bottom=-60.000001937150955, right=180.00000536441803, top=70.0) ('float32',) None tiled False 7200 1 overviews []
+2026-11-01 Tmax {'Tajibos': 29.833770751953125, 'SLVR': 28.353679656982422} 5.6s
+26 reads in 94s
+CHIRTS-ERA5 Tmax vs SLVR 2023 weekly: n=13 bias=-0.48 MAE=0.78 r=0.983
+CHIRTS-ERA5 Tmin vs SLVR 2023 weekly: n=13 bias=+1.22 MAE=1.37 r=0.959
+failed reads: 0 []

@@ -1,0 +1,138 @@
+{
+ "mapbiomas2024": {
+  "href": "/vsicurl/https://data.source.coop/tristangruppwri/mapbiomas/mapbiomas-bolivia/mapbiomas_bolivia_2024/mapbiomas_bolivia_2024.tif",
+  "shape": [
+   4156,
+   4008
+  ],
+  "res": [
+   0.0002694945852358563,
+   -0.0002694945852358563
+  ],
+  "s": 3.2,
+  "values": {
+   "3": 1889913,
+   "6": 26269,
+   "12": 162137,
+   "15": 2346324,
+   "21": 536404,
+   "23": 100249,
+   "24": 467564,
+   "25": 22359,
+   "33": 69523,
+   "39": 3879118,
+   "68": 25111,
+   "72": 7123553
+  }
+ },
+ "gladsoy2021": {
+  "href": "/vsicurl/https://glad.umd.edu/projects/AnnualClassMapsV1/SouthAmerica_Soybean_2021.tif",
+  "shape": [
+   4480,
+   4320
+  ],
+  "res": [
+   0.0002499999999999943,
+   -0.0002499999999999943
+  ],
+  "s": 1.4,
+  "values": {
+   "0": 14123379,
+   "1": 5230221
+  }
+ },
+ "gladsoy2022": {
+  "href": "/vsicurl/https://glad.umd.edu/projects/AnnualClassMapsV1/SouthAmerica_Soybean_2022.tif",
+  "shape": [
+   4480,
+   4320
+  ],
+  "res": [
+   0.0002499999999999943,
+   -0.0002499999999999943
+  ],
+  "s": 1.1,
+  "values": {
+   "0": 14168971,
+   "1": 5184629
+  }
+ },
+ "gladsoy2023": {
+  "href": "/vsicurl/https://glad.umd.edu/projects/AnnualClassMapsV1/SouthAmerica_Soybean_2023.tif",
+  "shape": [
+   4480,
+   4320
+  ],
+  "res": [
+   0.0002499999999999943,
+   -0.0002499999999999943
+  ],
+  "s": 1.1,
+  "values": {
+   "0": 12750614,
+   "1": 6602986
+  }
+ },
+ "worldcover2021_0": {
+  "href": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S18W066_Map.tif",
+  "shape": [
+   13440,
+   5040
+  ],
+  "res": [
+   8.333333333333333e-05,
+   -8.333333333333333e-05
+  ],
+  "s": 3.7,
+  "values": {
+   "10": 18774402,
+   "20": 879836,
+   "30": 21525787,
+   "40": 22382292,
+   "50": 3274144,
+   "60": 530620,
+   "80": 355492
+  }
+ },
+ "worldcover2021_1": {
+  "href": "https://ai4edataeuwest.blob.core.windows.net/esa-worldcover/v200/2021/map/ESA_WorldCover_10m_2021_v200_S18W063_Map.tif",
+  "shape": [
+   13440,
+   7920
+  ],
+  "res": [
+   8.333333333333333e-05,
+   -8.333333333333333e-05
+  ],
+  "s": 4.2,
+  "values": {
+   "10": 21477853,
+   "20": 1346313,
+   "30": 20448310,
+   "40": 61372363,
+   "50": 499551,
+   "60": 452338,
+   "80": 779693
+  }
+ },
+ "jrcocc_0": {
+  "href": "https://ai4edataeuwest.blob.core.windows.net/jrcglobalwater/occurrence/occurrence_70W_10Sv1_3_2020cog.tif",
+  "shape": [
+   4480,
+   4320
+  ],
+  "res": [
+   0.00025,
+   -0.00025
+  ],
+  "s": 1.4,
+  "values": {
+   "0": 19060748,
+   "1": 64410,
+   "2": 51135,
+   "3": 43656,
+   "4": 30336,
+   "5": 22888
+  }
+ }
+}

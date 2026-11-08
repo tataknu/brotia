@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "truncated": false,
+  "features": [
+    {
+      "type": "Feature",
+      "id": 663,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.24342,
+              -30.58173
+            ],
+            [
+              -71.24252,
+              -30.58386
+            ],
+            [
+              -71.24122,
+              -30.58411
+            ],
+            [
+              -71.24005,
+              -30.58401
+            ],
+            [
+              -71.24096,
+              -30.58178
+            ],
+            [
+              -71.24342,
+              -30.58173
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "objectId": 663,
+        "especie": "VID DE MESA",
+        "crop": "table_grape",
+        "areaHa": 5.82,
+        "comuna": "OVALLE",
+        "sourceLayer": "CATASTRO_FRUTICOLA/58"
+      }
+    }
+  ],
+  "provenance": {
+    "source": "ciren_catastro",
+    "sourceLabel": "CIREN Catastro Frutícola (IDE Minagri)",
+    "observedAt": null,
+    "fetchedAt": "2026-11-07T15:40:00Z",
+    "resolution": "polygon",
+    "licenceTier": "unresolved",
+    "dataTier": "enhanced",
+    "stale": false,
+    "estimated": false,
+    "note": null
+  }
+}

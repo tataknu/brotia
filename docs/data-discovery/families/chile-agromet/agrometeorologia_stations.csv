@@ -1,0 +1,489 @@
+form_id,id,api,institucion,nombre,comuna,region,lat,lon,elev_m,status,dias_activa
+INIA-78,78,INIA,INIA,Visviri,General Lagos,Arica y Parinacota,-17.594605,-69.477417,4122,en línea,3566
+INIA-134,134,INIA,INIA,Putre,Putre,Arica y Parinacota,-18.196949,-69.55374,3577,en línea,3566
+EXT-120,120,DMC,DMC,Putre DMC,Putre,Arica y Parinacota,-18.2,-69.5625,3532,en línea,3419
+INIA-43,43,INIA,INIA,Socoroma,Putre,Arica y Parinacota,-18.263889,-69.607675,3077,en línea,3566
+INIA-80,80,INIA,INIA,Lago Chungará,Putre,Arica y Parinacota,-18.280792,-69.137992,4570,en línea,3566
+EXT-225,225,DMC/H,DMC,Aeropuerto Chacalluta,Arica,Arica y Parinacota,-18.35555,-70.34028,50,en línea,1296
+EXT-69,69,HOBO,ANPROS,Concordia Medio,Arica,Arica y Parinacota,-18.360768,-70.293211,115,fuera de línea,2649
+INIA-302,302,INIA,INIA,Pampa Concordia,Arica,Arica y Parinacota,-18.362922,-70.302033,65,en línea,3122
+INIA-152,152,INIA,INIA,Chapiquiña,Putre,Arica y Parinacota,-18.389472,-69.539417,3300,en línea,3173
+INIA-75,75,INIA,INIA,Lluta Alto,Arica,Arica y Parinacota,-18.393556,-69.963339,895,en línea,3566
+INIA-34,34,INIA,INIA,Lluta Bajo,Arica,Arica y Parinacota,-18.409467,-70.233833,222,en línea,3566
+INIA-38,38,INIA,INIA,Lluta Medio,Arica,Arica y Parinacota,-18.452168,-70.067102,532,en línea,3566
+INIA-156,156,INIA,INIA,Belén,Putre,Arica y Parinacota,-18.468208,-69.523279,3208,en línea,3566
+EXT-1044,1044,SERVIMET,SERVIMET,Capitanía de Puerto Arica,Arica,Arica y Parinacota,-18.47692,-70.321945,8,en línea,84
+EXT-121,121,DMC,DMC,Defensa Civil,Arica,Arica y Parinacota,-18.49111,-70.30139,71,en línea,3419
+EXT-117,117,DMC,DMC,Cerro Sombrero AR,Arica,Arica y Parinacota,-18.5125,-70.26556,122,en línea,3378
+EXT-72,72,HOBO,ANPROS,La Violeta Open,Arica,Arica y Parinacota,-18.513323,-70.218336,199,fuera de línea,2649
+INIA-39,39,INIA,INIA,Azapa Medio,Arica,Arica y Parinacota,-18.547728,-70.124646,393,en línea,3566
+INIA-63,63,INIA,INIA,Cerro Blanco,Arica,Arica y Parinacota,-18.57507,-70.069739,525,en línea,3566
+INIA-81,81,INIA,INIA,Azapa Alto,Arica,Arica y Parinacota,-18.577454,-69.9472636,838,en línea,3566
+INIA-149,149,INIA,INIA,Ticnamar,Putre,Arica y Parinacota,-18.58007,-69.495965,3220,en línea,3566
+INIA-150,150,INIA,INIA,Caleta Vitor,Arica,Arica y Parinacota,-18.781479,-70.283902,88,en línea,3566
+INIA-79,79,INIA,INIA,Salar de Surire,Putre,Arica y Parinacota,-18.794647,-69.084443,4269,fuera de línea,2623
+INIA-137,137,INIA,INIA,Chaca,Arica,Arica y Parinacota,-18.820388,-70.140868,328,en línea,3566
+INIA-76,76,INIA,INIA,Codpa,Camarones,Arica y Parinacota,-18.832508,-69.745559,1870,en línea,3566
+INIA-77,77,INIA,INIA,Camarones,Camarones,Arica y Parinacota,-19.011167,-69.857194,730,en línea,3566
+INIA-204,204,INIA,INIA,Cuya,Camarones,Arica y Parinacota,-19.161922,-70.180968,97,fuera de línea,3398
+EXT-1012,1012,DMC,DMC,Colchane,Colchane,Tarapacá,-19.27694,-68.63972,3700,en línea,1050
+EXT-1045,1045,SERVIMET,SERVIMET,Alcaldía de Mar Pisagua,Huara,Tarapacá,-19.59594,-70.2112,8,fuera de línea,84
+INIA-352,352,INIA,INDAP-CONADI,Bajo Soga,Huara,Tarapacá,-19.73416,-69.78861,1177,en línea,385
+INIA-350,350,INIA,INDAP-CONADI,Pachica,Huara,Tarapacá,-19.865293,-69.435462,1604,en línea,473
+EXT-1046,1046,SERVIMET,SERVIMET,Capitanía de Puerto Iquique,Iquique,Tarapacá,-20.21128,-70.15343,12,en línea,84
+EXT-123,123,DMC,DMC,Universidad Arturo Prat,Iquique,Tarapacá,-20.27083,-70.13083,30,en línea,3391
+INIA-202,202,INIA,INIA,Pica,Pica,Tarapacá,-20.501476,-69.342572,1325,en línea,3398
+EXT-99,99,DMC,DMC,Aeropuerto Diego Aracena,Iquique,Tarapacá,-20.53972,-70.17861,52,en línea,3355
+EXT-1047,1047,SERVIMET,SERVIMET,Capitanía de Puerto Patache,Iquique,Tarapacá,-20.79975,-70.18801,6,en línea,84
+INIA-62,62,INIA,INIA,Ollagüe,Ollagüe,Antofagasta,-21.223937,-68.255607,3706,en línea,3566
+EXT-124,124,DMC,DMC,Ollagüe DMC,Ollagüe,Antofagasta,-21.22417,-68.25583,3708,en línea,3419
+EXT-1048,1048,SERVIMET,SERVIMET,Capitanía de Puerto Tocopilla,Tocopilla,Antofagasta,-22.09409,-70.20578,5,en línea,84
+INIA-56,56,INIA,INIA,Caspana,Calama,Antofagasta,-22.338547,-68.211284,3577,en línea,3566
+EXT-1017,1017,DMC,MMA-DMC,Chorrillos MMA,Calama,Antofagasta,-22.45,-68.91028,2298,en línea,861
+INIA-61,61,INIA,INIA,Calama Rural,Calama,Antofagasta,-22.471688,-68.94979,2244,en línea,3566
+EXT-125,125,DMC,DMC,Aeródromo El Loa,Calama,Antofagasta,-22.49528,-68.90444,2293,en línea,3391
+INIA-59,59,INIA,INIA,San Pedro de Atacama,San Pedro de Atacama,Antofagasta,-22.9322,-68.213458,2416,en línea,3566
+EXT-203,203,DMC,DMC,Llano de Chajnantor,San Pedro de Atacama,Antofagasta,-23.00583,-67.75917,5000,en línea,2383
+EXT-177,177,DMC,DMC,Mejillones,Mejillones,Antofagasta,-23.10917,-70.44333,31,en línea,2775
+EXT-127,127,DMC,DMC,Toconao,San Pedro de Atacama,Antofagasta,-23.18611,-68.00556,2495,en línea,3419
+INIA-58,58,INIA,INIA,Toconao,San Pedro de Atacama,Antofagasta,-23.195058,-68.007675,2478,en línea,3566
+INIA-216,216,INIA,INIA,Camar,San Pedro de Atacama,Antofagasta,-23.407102,-67.963735,2694,fuera de línea,3379
+INIA-218,218,INIA,INIA,Altos la Portada,Antofagasta,Antofagasta,-23.504087,-70.403095,119,en línea,3376
+INIA-57,57,INIA,INIA,Socaire,San Pedro de Atacama,Antofagasta,-23.590586,-67.890063,3357,fuera de línea,3566
+EXT-126,126,DMC,DMC,Universidad Católica del Norte,Antofagasta,Antofagasta,-23.68083,-70.41111,31,en línea,3419
+EXT-202,202,DMC,DMC,Cerro Paranal,Antofagasta,Antofagasta,-24.6275,-70.40472,2648,en línea,2383
+EXT-1049,1049,SERVIMET,SERVIMET,Capitanía de Puerto Taltal,Taltal,Antofagasta,-25.40759,-70.48841,5,en línea,84
+EXT-128,128,DMC,DMC,Taltal,Taltal,Antofagasta,-25.41111,-70.48417,37,en línea,3419
+INIA-225,225,INIA,INIA,La Cachina,Taltal,Antofagasta,-25.433987,-70.453243,213,en línea,3321
+INIA-223,223,INIA,INIA,Falda Verde,Chañaral,Atacama,-26.299806,-70.624111,127,en línea,3356
+EXT-1007,1007,DMC,DMC,Aeródromo Ricardo García Posada,Diego de Almagro,Atacama,-26.31305,-69.75139,1610,en línea,1128
+EXT-1050,1050,SERVIMET,SERVIMET,Capitanía de Puerto Chañaral,Chañaral,Atacama,-26.351111,-70.6377,8,en línea,84
+EXT-1051,1051,SERVIMET,SERVIMET,Capitanía de Puerto Caldera,Caldera,Atacama,-27.06558,-70.823258,6,fuera de línea,84
+EXT-1052,1052,SERVIMET,SERVIMET,Capitanía de Puerto Hanga Roa,Isla de Pascua,Valparaíso,-27.14987,-109.43702,10,en línea,84
+EXT-116,116,DMC,DMC,Aeropuerto Mataveri,Isla de Pascua,Valparaíso,-27.16056,-109.42722,48,en línea,3368
+EXT-227,227,DMC/H,DMC,Aeródromo Caldera,Caldera,Atacama,-27.25444,-70.78111,197,en línea,1296
+EXT-969,969,FDF,APECO-FDF,María Isabel,Tierra Amarilla,Atacama,-27.335098,-70.78038,146,en línea,1507
+EXT-965,965,FDF,APECO-FDF,Mayorquina,Copiapó,Atacama,-27.337763,-70.567184,233,en línea,1507
+INIA-224,224,INIA,INIA,La Copa,Copiapó,Atacama,-27.345439,-70.622009,188,en línea,3355
+EXT-129,129,DMC,DMC,Universidad de Atacama,Copiapó,Atacama,-27.35889,-70.35333,362,en línea,3419
+EXT-968,968,FDF,APECO-FDF,Amalfi,Copiapó,Atacama,-27.411203,-70.30263,421,fuera de línea,1507
+EXT-966,966,FDF,APECO-FDF,Copayapu,Tierra Amarilla,Atacama,-27.456638,-70.26414,502,en línea,1507
+EXT-970,970,FDF,APECO-FDF,Nantoco,Tierra Amarilla,Atacama,-27.55176,-70.26957,649,en línea,1507
+EXT-967,967,FDF,APECO-FDF,Las Canteras,Tierra Amarilla,Atacama,-27.742834,-70.18213,872,en línea,1507
+EXT-964,964,FDF,APECO-FDF,Casa Rosada,Tierra Amarilla,Atacama,-27.84914,-70.0875,1292,en línea,1507
+INIA-97,97,INIA,INIA,Amolana,Tierra Amarilla,Atacama,-27.955861,-70.005999,1090,en línea,3566
+EXT-971,971,FDF,APECO-FDF,Altar de la Virgen,Tierra Amarilla,Atacama,-27.99994,-69.98,1385,en línea,1507
+EXT-1053,1053,SERVIMET,SERVIMET,Capitanía de Puerto Huasco,Huasco,Atacama,-28.461647,-71.226654,17,en línea,84
+EXT-130,130,DMC,DMC,Freirina Nicolasa,Freirina,Atacama,-28.51694,-71.01,156,en línea,3419
+INIA-65,65,INIA,INIA,Centro Experimental Huasco,Vallenar,Atacama,-28.58113,-70.79829,470,en línea,3566
+INIA-356,356,INIA,INIA,Alto del Carmen,Alto del Carmen,Atacama,-28.762106,-70.486991,820,en línea,148
+INIA-353,353,INIA,INIA,El Tránsito,Alto del Carmen,Atacama,-28.879936,-70.278694,1128,fuera de línea,345
+EXT-27,27,CEAZA,CEAZA,Cachiyuyo,Vallenar,Atacama,-29.0572,-70.90517,950,fuera de línea,2909
+EXT-6,6,CEAZA,CEAZA,Punta de Choros,La Higuera,Coquimbo,-29.24724,-71.46797,7,en línea,2909
+EXT-954,954,DMC,DMC,Cerro La Silla,La Higuera,Coquimbo,-29.25833,-70.73444,2377,en línea,1989
+EXT-31,31,CEAZA,CEAZA,Punta Colorada,La Higuera,Coquimbo,-29.35411,-71.03286,379,fuera de línea,2909
+EXT-10,10,CEAZA,CEAZA,El Romeral,La Serena,Coquimbo,-29.75406,-71.25744,162,en línea,2909
+EXT-36,36,CEAZA,CEAZA,Universidad de La Serena,La Serena,Coquimbo,-29.91502,-71.24221,90,fuera de línea,2909
+EXT-100,100,DMC,DMC,Aeródromo La Florida,La Serena,Coquimbo,-29.9175,-71.20111,142,en línea,2902
+EXT-1054,1054,SERVIMET,SERVIMET,Faro Punta Tortuga Coquimbo,Coquimbo,Coquimbo,-29.93544,-71.3422,25,en línea,84
+EXT-62,62,CEAZA,CEAZA,Cerro Grande,La Serena,Coquimbo,-29.93848,-71.22351,513,fuera de línea,2909
+EXT-15,15,CEAZA,CEAZA,UCN Guayacan,Coquimbo,Coquimbo,-29.96663,-71.35284,1,en línea,2909
+EXT-14,14,CEAZA,CEAZA,Gabriela Mistral,La Serena,Coquimbo,-29.97852,-71.08039,198,en línea,2909
+EXT-11,11,CEAZA,CEAZA,El Panul,Coquimbo,Coquimbo,-29.99874,-71.39852,122,en línea,2909
+EXT-102,102,DMC,DMC,Parque Los Pimientos,Vicuña,Coquimbo,-30.03361,-70.69722,642,en línea,2902
+EXT-13,13,CEAZA,CEAZA,Vicuña,Vicuña,Coquimbo,-30.03832,-70.69655,634,en línea,2909
+EXT-12,12,CEAZA,CEAZA,Pan de Azúcar,Coquimbo,Coquimbo,-30.07465,-71.23895,135,en línea,2909
+EXT-8,8,CEAZA,CEAZA,Pisco Elqui,Paiguano,Coquimbo,-30.12903,-70.49471,1240,fuera de línea,2909
+EXT-32,32,CEAZA,CEAZA,El Tapado,Vicuña,Coquimbo,-30.1583,-69.90818,4306,fuera de línea,2909
+EXT-131,131,DMC,DMC,El Tololo,Vicuña,Coquimbo,-30.16833,-70.80361,2154,fuera de línea,3419
+EXT-26,26,CEAZA,CEAZA,La Laguna - Elqui,Vicuña,Coquimbo,-30.20311,-70.03722,3209,fuera de línea,2909
+EXT-35,35,CEAZA,CEAZA,Collowara,Andacollo,Coquimbo,-30.24875,-71.06526,1281,en línea,2909
+EXT-7,7,CEAZA,CEAZA,Las Cardas,Coquimbo,Coquimbo,-30.25145,-71.2569,282,en línea,2909
+EXT-20,20,CEAZA,CEAZA,Lavaderos,Río Hurtado,Coquimbo,-30.3093,-70.62565,1462,en línea,2909
+EXT-63,63,CEAZA,CEAZA,Estero Derecho,Paiguano,Coquimbo,-30.38407,-70.41286,3020,fuera de línea,2909
+EXT-28,28,CEAZA,CEAZA,Pichasca,Río Hurtado,Coquimbo,-30.41323,-70.90277,670,en línea,2909
+EXT-16,16,CEAZA,CEAZA,Quebrada Seca CEAZA,Ovalle,Coquimbo,-30.49613,-71.49051,183,en línea,2909
+EXT-38,38,CEAZA,CEAZA,Laguna Hurtado,Río Hurtado,Coquimbo,-30.50903,-70.44594,2500,fuera de línea,2909
+EXT-1040,1040,VDCH,CyT,Quebrada Seca CyT,Ovalle,Coquimbo,-30.52726,-71.45012,190,en línea,85
+EXT-61,61,CEAZA,CEAZA,Guandacol,Río Hurtado,Coquimbo,-30.54363,-70.3329,2983,en línea,2909
+EXT-101,101,DMC,DMC,Escuela Agrícola Ovalle,Ovalle,Coquimbo,-30.58,-71.18667,314,en línea,2902
+EXT-18,18,CEAZA,CEAZA,Talhuén,Ovalle,Coquimbo,-30.59203,-71.24797,292,fuera de línea,2909
+INIA-64,64,INIA,INIA,Algarrobo Bajo,Ovalle,Coquimbo,-30.6331,-71.45141,80,en línea,3566
+EXT-43,43,CEAZA,IEB-CEAZA,Fray Jorge Bosque,Ovalle,Coquimbo,-30.64975,-71.68576,541,en línea,2909
+EXT-42,42,CEAZA,IEB-CEAZA,Fray Jorge Quebrada,Ovalle,Coquimbo,-30.65819,-71.66399,230,en línea,2909
+EXT-103,103,DMC,DMC,Monte Patria - Centro Cultural,Monte Patria,Coquimbo,-30.69833,-70.95778,406,en línea,2902
+INIA-74,74,INIA,INIA,Campo Lindo (ex Camarico),Ovalle,Coquimbo,-30.69899,-71.3217,290,fuera de línea,3566
+INIA-319,319,INIA,INIA,Los Acacios,Ovalle,Coquimbo,-30.700483,-71.286422,254,en línea,1823
+EXT-1,1,CEAZA,CEAZA,Rapel,Monte Patria,Coquimbo,-30.7228,-70.77249,862,en línea,2909
+EXT-23,23,CEAZA,CEAZA,Los Molles - Bocatoma,Monte Patria,Coquimbo,-30.746,-70.41923,2543,fuera de línea,2909
+INIA-66,66,INIA,INIA,El Palqui,Monte Patria,Coquimbo,-30.774544,-70.926831,504,en línea,3566
+INIA-323,323,INIA,INIA,Las Naranjas,Punitaqui,Coquimbo,-30.843472,-71.347139,407,fuera de línea,1621
+INIA-229,229,INIA,INIA,Chaguaral,Monte Patria,Coquimbo,-30.857084,-70.730689,1194,en línea,3654
+INIA-305,305,INIA,INIA,La Polvareda,Punitaqui,Coquimbo,-30.882719,-71.239736,265,en línea,2854
+INIA-304,304,INIA,INIA,Ajial de Quiles,Punitaqui,Coquimbo,-30.920303,-71.3841,464,en línea,2854
+EXT-64,64,CEAZA,CEAZA,El Polvo,Monte Patria,Coquimbo,-31.18314,-70.5848,2561,fuera de línea,2909
+EXT-173,173,DMC,DMC,Liceo Samuel Román Rojas,Combarbalá,Coquimbo,-31.18806,-70.99889,936,en línea,2796
+EXT-29,29,CEAZA,CEAZA,Combarbalá Sur,Combarbalá,Coquimbo,-31.20022,-71.00015,1136,en línea,2909
+EXT-37,37,CEAZA,CEAZA,Tascadero,Monte Patria,Coquimbo,-31.26295,-70.53999,3427,fuera de línea,2909
+EXT-172,172,DMC,DMC,Liceo Padre José Herde,Canela,Coquimbo,-31.39,-71.41278,343,fuera de línea,2796
+EXT-24,24,CEAZA,CEAZA,Canela,Canela,Coquimbo,-31.39089,-71.41298,350,en línea,2909
+EXT-19,19,CEAZA,CEAZA,Huintil,Illapel,Coquimbo,-31.57331,-70.99815,590,en línea,2909
+INIA-220,220,INIA,INIA,Huentelauquén,Canela,Coquimbo,-31.5885,-71.509833,22,en línea,3358
+EXT-33,33,CEAZA,CEAZA,Mincha Sur,Canela,Coquimbo,-31.59425,-71.42159,50,en línea,2909
+EXT-174,174,DMC,DMC,Vivero CONAF,Illapel,Coquimbo,-31.6325,-71.15194,333,en línea,2796
+EXT-5,5,CEAZA,CEAZA,Illapel,Illapel,Coquimbo,-31.64814,-71.19695,275,en línea,2909
+EXT-1009,1009,DMC,DMC,Pisco Capel,Salamanca,Coquimbo,-31.78722,-70.95944,516,fuera de línea,1128
+EXT-25,25,CEAZA,CEAZA,Chillepín,Salamanca,Coquimbo,-31.88563,-70.71395,887,en línea,2909
+EXT-1055,1055,SERVIMET,SERVIMET,Capitanía de Puerto Los Vilos,Los Vilos,Coquimbo,-31.90931,-71.51366,5,en línea,84
+EXT-194,194,CEAZA,CEAZA,Tilama,Los Vilos,Coquimbo,-32.08163,-71.16277,499,en línea,2654
+INIA-221,221,INIA,INIA,Quilimarí,Los Vilos,Coquimbo,-32.119098,-71.460005,27,en línea,3357
+EXT-105,105,DMC,DMC,Liceo Agrícola Chincolco,Petorca,Valparaíso,-32.2225,-70.83167,665,en línea,2902
+EXT-133,133,DMC,DMC,Catapilco,Zapallar,Valparaíso,-32.56139,-71.29778,81,en línea,3419
+EXT-1018,1018,DMC,DMC,El Tártaro,Putaendo,Valparaíso,-32.57083,-70.70417,933,en línea,861
+INIA-165,165,INIA,INIA,El Maqui,Puchuncaví,Valparaíso,-32.754967,-71.343432,179,en línea,3597
+EXT-192,192,DMC,DMC,Escuela Agrícola San Felipe,San Felipe,Valparaíso,-32.75528,-70.70694,662,en línea,2654
+EXT-972,972,DMC,DMC,Catemu,Catemu,Valparaíso,-32.75889,-70.94278,443,en línea,1505
+EXT-1016,1016,DMC,DMC,Panquehue,Panquehue,Valparaíso,-32.76917,-70.835,519,en línea,861
+EXT-1056,1056,SERVIMET,SERVIMET,Capitanía de Puerto Quintero,Quintero,Valparaíso,-32.77551,-71.52544,10,en línea,84
+EXT-106,106,DMC,DMC,Quintero - Climatológica,Quintero,Valparaíso,-32.78417,-71.52278,5,en línea,2902
+EXT-1028,1028,DMC,DMC,Liceo San Esteban,San Esteban,Valparaíso,-32.80111,-70.57805,835,en línea,609
+INIA-51,51,INIA,INIA,La Cruz,La Cruz,Valparaíso,-32.822,-71.2304,181,en línea,3566
+EXT-132,132,DMC,DMC,Los Libertadores,Los Andes,Valparaíso,-32.84556,-70.11917,2955,en línea,3419
+EXT-104,104,DMC,DMC,Las Peñas,Llaillay,Valparaíso,-32.88139,-70.91306,436,en línea,2902
+EXT-1029,1029,DMC,DMC,Liceo Agrícola Quillota,Quillota,Valparaíso,-32.90722,-71.27139,123,en línea,609
+EXT-175,175,DMC,MMA-DMC,Aeródromo Torquemada,Concón,Valparaíso,-32.94944,-71.47611,141,en línea,2796
+EXT-1057,1057,SERVIMET,SERVIMET,Faro Extremo Molo de Abrigo Valparaíso,Valparaíso,Valparaíso,-33.03798,-71.62734,40,en línea,84
+EXT-134,134,DMC,DMC,Jardín Botánico,Viña del Mar,Valparaíso,-33.045,-71.50194,50,en línea,3419
+EXT-973,973,DMC,MMA-DMC,La Dormida,Tiltil,Metropolitana,-33.04944,-71.00139,1450,en línea,1488
+EXT-135,135,DMC,DMC,Aeródromo Rodelillo,Viña del Mar,Valparaíso,-33.06528,-71.55639,335,en línea,3419
+EXT-980,980,DMC,DMC,Aeródromo Peldehue,Colina,Metropolitana,-33.11389,-70.68583,683,en línea,1296
+EXT-978,978,DMC,DMC,Polpaico,Tiltil,Metropolitana,-33.12389,-70.82805,547,fuera de línea,1296
+EXT-179,179,DMC,DMC,Regimiento de Colina,Colina,Metropolitana,-33.16222,-70.64306,726,en línea,2775
+INIA-213,213,INIA,INIA,Colliguay,Quilpué,Valparaíso,-33.167397,-71.15596,580,en línea,3382
+INIA-313,313,INIA,INIA,Chacabuco,Colina,Metropolitana,-33.2488,-70.72322,519,en línea,2076
+EXT-149,149,DMC,MMA-DMC,Lo Pinto,Colina,Metropolitana,-33.26806,-70.73222,512,en línea,3419
+INIA-311,311,INIA,INIA,El Oasis,Lampa,Metropolitana,-33.286187,-70.837279,485,en línea,2193
+INIA-314,314,INIA,INIA,Chorrillos,Lampa,Metropolitana,-33.34368,-70.8185,485,en línea,2053
+EXT-108,108,DMC,DMC,El Colorado,Lo Barnechea,Metropolitana,-33.35,-70.29361,2750,en línea,2902
+EXT-138,138,DMC,DMC,Pudahuel ,Pudahuel,Metropolitana,-33.39194,-70.79444,482,en línea,3419
+EXT-150,150,DMC,DMC,Aeródromo Curacaví,Curacaví,Metropolitana,-33.41111,-71.16778,208,en línea,3419
+INIA-318,318,INIA,INIA,La Aurora,Curacaví,Metropolitana,-33.429661,-71.029152,205,fuera de línea,1913
+EXT-145,145,DMC,MMA-DMC,San Pablo-DASA,Pudahuel,Metropolitana,-33.44222,-70.74667,490,en línea,3419
+EXT-137,137,DMC,DMC,Quinta Normal,Quinta Normal,Metropolitana,-33.445,-70.68278,534,en línea,3419
+EXT-136,136,DMC,DMC,Aeródromo Eulogio Sánchez,La Reina,Metropolitana,-33.45528,-70.54861,650,en línea,3419
+EXT-142,142,DMC,MMA-DMC,Cerro San Francisco,Lo Prado,Metropolitana,-33.45806,-70.94861,1068,en línea,3419
+INIA-162,162,INIA,INIA,Rinconada - U de Chile,Maipú,Metropolitana,-33.497093,-70.845436,462,en línea,3566
+INIA-320,320,INIA,INIA,El Parrón,María Pinto,Metropolitana,-33.508555,-71.084029,166,en línea,1740
+EXT-141,141,DMC,DMC,Chorombo Hacienda,María Pinto,Metropolitana,-33.52944,-71.22917,145,en línea,3419
+EXT-167,167,DMC,DMC,Lo Zarate,Cartagena,Valparaíso,-33.53056,-71.50611,103,en línea,2891
+INIA-315,315,INIA,INIA,El Villorrio,Padre Hurtado,Metropolitana,-33.562443,-70.875305,406,en línea,1988
+INIA-4,4,INIA,INIA,La Platina,La Pintana,Metropolitana,-33.56987082,-70.62797303,630,en línea,3566
+EXT-1058,1058,SERVIMET,SERVIMET,Faro Punta Panul San Antonio,San Antonio,Valparaíso,-33.57503,-71.62514,90,fuera de línea,84
+EXT-143,143,DMC,MMA-DMC,Guayacán,San José de Maipo,Metropolitana,-33.61528,-70.35056,928,en línea,3419
+EXT-140,140,DMC,DMC,Juan Fernández,Juan Fernández,Valparaíso,-33.63583,-78.83306,40,en línea,3419
+EXT-1059,1059,SERVIMET,SERVIMET,Capitanía de Puerto Juan Fernández,Juan Fernández,Valparaíso,-33.63604,-78.82943,23,fuera de línea,84
+EXT-139,139,DMC,DMC,Aeródromo Santo Domingo,Santo Domingo,Valparaíso,-33.655,-71.61417,75,en línea,3419
+EXT-118,118,DMC,DMC,Talagante,Talagante,Metropolitana,-33.67028,-70.84944,390,en línea,3392
+INIA-316,316,INIA,INIA,Santa Amelia,Talagante,Metropolitana,-33.674938,-70.919914,360,en línea,1962
+EXT-144,144,DMC,MMA-DMC,El Paico,Talagante,Metropolitana,-33.70639,-71.00806,275,en línea,3419
+INIA-6,6,INIA,INIA,Los Tilos,Buin,Metropolitana,-33.70726005,-70.70165517,530,en línea,3566
+INIA-358,358,INIA,CORPORACIONBUIN,Liceo Los Guindos,Buin,Metropolitana,-33.712138,-70.721517,506,en línea,36
+EXT-107,107,DMC,DMC,Río Clarillo,Pirque,Metropolitana,-33.72833,-70.49667,876,en línea,2902
+INIA-100,100,INIA,INIA,San Antonio de Naltahua,Isla de Maipo,Metropolitana,-33.732181,-71.039443,249,en línea,3566
+INIA-167,167,INIA,INIA,Cuncumén,San Antonio,Valparaíso,-33.736215,-71.421579,215,fuera de línea,3410
+EXT-109,109,DMC,DMC,El Milagro,Buin,Metropolitana,-33.75444,-70.76444,460,fuera de línea,2902
+INIA-321,321,INIA,INIA,Valdivia de Paine,Buin,Metropolitana,-33.7986592,-70.8413394,360,en línea,1686
+INIA-101,101,INIA,INIA,San Pedro de Melipilla,San Pedro,Metropolitana,-33.897935,-71.452881,145,en línea,3566
+INIA-307,307,INIA,INIA,Licancheu,Navidad,O'Higgins,-33.9297485,-71.8010025,24,en línea,2613
+EXT-1043,1043,VDCH,CyT,Ucuquer,Navidad,O'Higgins,-33.97803,-71.69775,157,en línea,85
+INIA-210,210,INIA,INIA,El Asiento,Alhué,Metropolitana,-34.029282,-70.995098,351,en línea,3388
+EXT-1034,1034,HOBO,EACO,Escuela Agrícola Cristo Obrero,Graneros,O'Higgins,-34.09394,-70.741099,461,en línea,459
+INIA-55,55,INIA,INIA,Hidango,Litueche,O'Higgins,-34.112466,-71.797339,296,en línea,3566
+EXT-153,153,DMC,DMC,Aeródromo La Independencia,Rancagua,O'Higgins,-34.17222,-70.77611,482,en línea,3419
+EXT-78,78,DMC,MMA-DMC,Portezuelo-Codelco,Machalí,O'Higgins,-34.19833,-70.57917,1185,en línea,3419
+EXT-154,154,DMC,DMC,Quimávida,Coltauco,O'Higgins,-34.215,-70.99694,316,en línea,3419
+INIA-303,303,INIA,INIA,Rayentué,Rengo,O'Higgins,-34.321704,-70.833901,376,en línea,3081
+INIA-332,332,INIA,VDCH,Altair,Requinoa,O'Higgins,-34.353423,-70.715616,480,en línea,807
+INIA-163,163,INIA,INIA,El Arenal,Quinta de Tilcoco,O'Higgins,-34.35575,-70.991278,266,en línea,3566
+EXT-1060,1060,SERVIMET,SERVIMET,Capitanía de Puerto Pichilemu,Pichilemu,O'Higgins,-34.38495,-72.00851,6,en línea,84
+INIA-217,217,INIA,INIA,Puente Negro,Pichilemu,O'Higgins,-34.386351,-71.98571,10,en línea,3379
+INIA-334,334,INIA,VDCH,Calleuque,Peralillo,O'Higgins,-34.3903,-71.444431,140,en línea,808
+EXT-110,110,DMC,DMC,Aeródromo Pichilemu,Pichilemu,O'Higgins,-34.39417,-72.01861,25,en línea,2902
+INIA-228,228,INIA,INIA,Liceo Jean Buchanan,Peumo,O'Higgins,-34.3972892,-71.1646719,185,en línea,3279
+INIA-52,52,INIA,INIA,El Tambo,San Vicente,O'Higgins,-34.470992321899,-70.986951436879,250,en línea,3566
+EXT-1041,1041,VDCH,CyT,Idahue,San Vicente,O'Higgins,-34.49054,-71.20247,215,en línea,85
+INIA-329,329,INIA,VDCH,Los Lingues,San Fernando,O'Higgins,-34.502129,-70.894723,317,en línea,808
+EXT-155,155,DMC,DMC,Nilahue - La Quebrada,Pumanque,O'Higgins,-34.66083,-71.73528,81,en línea,3419
+EXT-1042,1042,VDCH,CyT,Nilahue,Lolol,O'Higgins,-34.69942,-71.76865,94,en línea,85
+INIA-317,317,INIA,INIA,Peor es Nada,Chimbarongo,O'Higgins,-34.783248,-71.043411,283,en línea,1961
+EXT-1031,1031,WU,ARAUCO,Teno,Teno,Maule,-34.862039,-71.091697,333,en línea,490
+EXT-152,152,DMC,DMC,Aeródromo General Freire,Curicó,Maule,-34.96639,-71.21667,230,en línea,3419
+EXT-983,983,WU,ARAUCO,Hualañé,Hualañé,Maule,-34.983367,-71.781691,68,fuera de línea,1256
+EXT-963,963,HOBO,AGRICHILE,Los Niches,Curicó,Maule,-35.05202,-71.148239,273,fuera de línea,1684
+INIA-215,215,INIA,INIA,San Jorge Los Niches,Curicó,Maule,-35.0918,-71.120579,310,en línea,3381
+EXT-1000,1000,FDF,EAM-FDF,Escuela Agrícola de Molina,Molina,Maule,-35.098057,-71.275,243,en línea,1188
+EXT-1004,1004,WU,ARAUCO,Curepto,Curepto,Maule,-35.100907,-72.007541,74,fuera de línea,1128
+INIA-214,214,INIA,INIA,Deuca,Curepto,Maule,-35.127819,-71.955951,48,en línea,3382
+INIA-331,331,INIA,VDCH,La Reserva,Río Claro,Maule,-35.157928,-71.290304,265,en línea,806
+EXT-986,986,WU,ARAUCO,Palhuen,Curepto,Maule,-35.200259,-71.993045,255,en línea,1254
+EXT-1003,1003,WU,ARAUCO,Carrizal,Constitución,Maule,-35.237651,-72.262868,167,en línea,1180
+EXT-958,958,HOBO,AGRICHILE,Camarico,Río Claro,Maule,-35.256908,-71.340973,223,en línea,1684
+EXT-959,959,HOBO,AGRICHILE,San Sebastián,Río Claro,Maule,-35.264213,-71.548013,144,en línea,1684
+EXT-993,993,WU,ARAUCO,Vivero Quivolgo,Constitución,Maule,-35.306042,-72.384781,13,en línea,1210
+EXT-1061,1061,SERVIMET,SERVIMET,Capitanía de Puerto Constitución,Constitución,Maule,-35.324167,-72.408056,8,en línea,84
+EXT-156,156,DMC,DMC,Panguilemo,Talca,Maule,-35.37778,-71.60111,119,en línea,3419
+EXT-992,992,WU,ARAUCO,El Auquil,Pelarco,Maule,-35.391303,-71.29552,262,en línea,1223
+EXT-982,982,WU,ARAUCO,Talca,Talca,Maule,-35.414716,-71.611857,115,en línea,1256
+INIA-333,333,INIA,VDCH,Pencahue,Pencahue,Maule,-35.44522,-71.83436,59,en línea,809
+EXT-981,981,WU,ARAUCO,Santa Estela,Constitución,Maule,-35.486856,-72.232686,239,en línea,1261
+INIA-135,135,INIA,INIA,San Clemente,San Clemente,Maule,-35.530653,-71.479505,221,en línea,3566
+EXT-991,991,WU,ARAUCO,Cuyuname,Empedrado,Maule,-35.68494,-72.159667,263,fuera de línea,1233
+EXT-977,977,FDF,FDF,Villa Alegre,Villa Alegre,Maule,-35.69611,-71.68222,127,en línea,1306
+INIA-22,22,INIA,INIA,Chanco,Chanco,Maule,-35.714077,-72.521301,116,en línea,3566
+INIA-11,11,INIA,INIA,Sauzal,Cauquenes,Maule,-35.719059,-72.117767,164,en línea,3566
+EXT-1095,1095,WU,ARAUCO,Purapel,San Javier,Maule,-35.721364,-72.041063,139,en línea,2
+INIA-136,136,INIA,INIA,Santa Amada,Linares,Maule,-35.764696,-71.574996,150,en línea,3566
+INIA-227,227,INIA,INIA,Miraflores,Longaví,Maule,-35.818051,-71.775019,124,en línea,3287
+INIA-212,212,INIA,INIA,Lomas,Pelluhue,Maule,-35.8354491,-72.587489,172,en línea,3382
+EXT-974,974,DMC,MMA-DMC,Escuela de Artillería,Linares,Maule,-35.83694,-71.59278,160,en línea,1449
+EXT-1039,1039,VDCH,CyT,Keule,Cauquenes,Maule,-35.8631,-72.05086,120,en línea,85
+INIA-327,327,INIA,VDCH,Villa Seca,Retiro,Maule,-35.890453,-71.85712,121,en línea,829
+INIA-46,46,INIA,INIA,Cauquenes,Cauquenes,Maule,-35.95597397,-72.2899376,162,en línea,3566
+INIA-7,7,INIA,INIA,Santa Sofía,Cauquenes,Maule,-35.97764359,-72.35986381,151,en línea,3566
+INIA-12,12,INIA,INIA,Coronel de Maule,Cauquenes,Maule,-36.05909279,-72.47768878,172,en línea,3566
+INIA-14,14,INIA,INIA,Los Despachos,Cauquenes,Maule,-36.06211462,-72.37143919,167,en línea,3566
+EXT-161,161,DMC,MMA-DMC,Copihue,Retiro,Maule,-36.07556,-71.75806,162,en línea,3419
+EXT-960,960,HOBO,AGRICHILE,Parral,Parral,Maule,-36.197588,-71.814217,180,en línea,1684
+EXT-989,989,WU,ARAUCO,Zorzal Blanco,Quirihue,Ñuble,-36.220606,-72.548486,266,en línea,1233
+INIA-154,154,INIA,INIA,Monte Flor-Tucapel,Parral,Maule,-36.244802,-71.934291,548,en línea,3566
+EXT-961,961,HOBO,AGRICHILE,San Gregorio,Ñiquén,Ñuble,-36.283505,-71.840564,180,fuera de línea,1684
+INIA-47,47,INIA,INIA,Ninhue,Chillán,Ñuble,-36.398105,-72.395203,91,en línea,3566
+INIA-139,139,INIA,INIA,Centro Experimental Arroz,San Carlos,Ñuble,-36.409298,-72.006731,162,en línea,3566
+INIA-211,211,INIA,INIA,Puralihue,Treguaco,Ñuble,-36.431036,-72.647783,36,en línea,3381
+EXT-1020,1020,WU,ARAUCO,Bandurrias,San Fabián,Ñuble,-36.445723,-71.674046,139,fuera de línea,794
+EXT-1008,1008,DMC,DMC,Liceo San Nicolás,San Nicolás,Ñuble,-36.50556,-72.21944,118,fuera de línea,1128
+EXT-994,994,WU,ARAUCO,Totoral,Coelemu,Ñuble,-36.525887,-72.638553,47,en línea,1210
+INIA-23,23,INIA,INIA,Portezuelo,Portezuelo,Ñuble,-36.53203766,-72.36826801,109,en línea,3566
+INIA-17,17,INIA,INIA,Santa Rosa,Chillán,Ñuble,-36.535195,-71.916434,194,en línea,3566
+EXT-157,157,DMC,DMC,Aeródromo Gral. Bernardo O'Higgins,Chillán,Ñuble,-36.58722,-72.04,151,en línea,3419
+INIA-351,351,INIA,INIA,Quilamapu,Chillán,Ñuble,-36.595,-72.0897,135,en línea,392
+INIA-24,24,INIA,INIA,Nueva Aldea,Ránquil,Ñuble,-36.6489,-72.51349,82,fuera de línea,3566
+INIA-10,10,INIA,INIA,Punta Parra,Tomé,Biobío,-36.67239402,-72.96468405,190,en línea,3566
+INIA-310,310,INIA,INIA,Santa Lucía,Florida,Biobío,-36.69746,-72.704216,268,en línea,2544
+EXT-1062,1062,SERVIMET,SERVIMET,Capitanía de Puerto Lirquén,Penco,Biobío,-36.702778,-72.9775,4,en línea,84
+EXT-1030,1030,WU,ARAUCO,El Espolón,Chillán,Ñuble,-36.703266,-72.024025,198,en línea,490
+EXT-1011,1011,DMC,MMA-DMC,Cerro Cayumanque,Quillón,Ñuble,-36.70694,-72.52778,800,fuera de línea,1050
+EXT-1063,1063,SERVIMET,SERVIMET,Gobernación Marítima de Talcahuano,Talcahuano,Biobío,-36.708056,-73.112778,8,en línea,84
+INIA-330,330,INIA,VDCH,Larqui,Bulnes,Ñuble,-36.719225,-72.357628,69,fuera de línea,805
+EXT-1001,1001,WU,ARAUCO,El Kayser,Coihueco,Ñuble,-36.730083,-71.750486,482,en línea,1180
+EXT-997,997,WU,ARAUCO,Coyanco,Quillón,Ñuble,-36.74882,-72.588716,90,en línea,1201
+EXT-111,111,DMC,DMC,Carriel Sur,Concepción,Biobío,-36.77833,-73.0625,17,en línea,2902
+EXT-1033,1033,WU,ARAUCO,Litral,Bulnes,Ñuble,-36.791732,-72.418885,78,en línea,490
+EXT-160,160,DMC,MMA-DMC,Chillán Mayulermo,San Ignacio,Ñuble,-36.82806,-71.86694,396,fuera de línea,3419
+EXT-996,996,WU,ARAUCO,Cangrejillo,Florida,Biobío,-36.877961,-72.803711,175,en línea,1201
+EXT-158,158,DMC,DMC,Termas de Chillán,Pinto,Ñuble,-36.90361,-71.41,1708,fuera de línea,3419
+INIA-73,73,INIA,INIA,Navidad,El Carmen,Ñuble,-36.916365,-71.834824,314,en línea,3566
+EXT-1019,1019,WU,ARAUCO,Remolinos,Pemuco,Ñuble,-36.943523,-72.328589,39,en línea,794
+EXT-1064,1064,SERVIMET,SERVIMET,Capitanía de Puerto Coronel,Coronel,Biobío,-37.027223,-73.148612,9,en línea,84
+EXT-1065,1065,SERVIMET,SERVIMET,Capitanía de Puerto Lota,Lota,Biobío,-37.096944,-73.158611,3,en línea,84
+EXT-1094,1094,WU,ARAUCO,Cruz del Ciprés,Yungay,Ñuble,-37.134479,-72.176946,199,en línea,2
+INIA-49,49,INIA,INIA,Yungay,Yungay,Ñuble,-37.141385,-72.011761,265,en línea,3566
+EXT-999,999,WU,ARAUCO,Siberia,Yungay,Ñuble,-37.174782,-72.064874,241,en línea,1201
+EXT-998,998,WU,ARAUCO,Santa Juana,Santa Juana,Biobío,-37.175533,-72.963727,54,en línea,1201
+EXT-1093,1093,WU,ARAUCO,Horcones,Arauco,Biobío,-37.214692,-73.229034,14,en línea,2
+EXT-1006,1006,WU,ARAUCO,Tanahullin,Santa Juana,Biobío,-37.224953,-72.816584,222,en línea,1128
+INIA-312,312,INIA,INIA,La Colonia,Laja,Biobío,-37.288681,-72.59151,120,en línea,2119
+INIA-308,308,INIA,INIA,Las Puentes,Arauco,Biobío,-37.305126,-73.436712,120,en línea,2596
+EXT-229,229,DMC/H,DMC,Aeródromo María Dolores,Los Ángeles,Biobío,-37.39694,-72.42389,118,en línea,1381
+EXT-1092,1092,WU,ARAUCO,Humenco,Quileco,Biobío,-37.404191,-72.020398,298,en línea,2
+EXT-990,990,WU,ARAUCO,La Colcha,Curanilahue,Biobío,-37.424383,-73.352436,158,fuera de línea,1233
+EXT-1015,1015,DMC,MMA-DMC,La Colcha MMA,Curanilahue,Biobío,-37.425,-73.3525,144,en línea,861
+INIA-21,21,INIA,INIA,Human,Los Ángeles,Biobío,-37.43355687,-72.24397526,195,en línea,3566
+EXT-162,162,DMC,DMC,Liceo Agrícola El Huertón,Los Ángeles,Biobío,-37.45694,-72.275,173,en línea,3419
+EXT-1091,1091,WU,ARAUCO,Duqueco,Quileco,Biobío,-37.510262,-71.773073,484,en línea,2
+INIA-325,325,INIA,INIA,La Hijuela,Nacimiento,Biobío,-37.519751,-72.695735,94,en línea,842
+EXT-1066,1066,SERVIMET,SERVIMET,Capitanía de Puerto Lebu,Lebu,Biobío,-37.60467,-73.6537,8,en línea,84
+EXT-1014,1014,WU,ARAUCO,Los Alamos,Los Álamos,Biobío,-37.6280675,-73.4617517,53,en línea,862
+INIA-354,354,INIA,INIA,Colegio Agrícola Los Mayos,Santa Bárbara,Biobío,-37.674984,-71.935074,267,en línea,318
+INIA-84,84,INIA,INIA,Lebu,Lebu,Biobío,-37.682541,-73.522167,194,en línea,3566
+EXT-180,180,DMC,DMC,Húsares,Angol,La Araucanía,-37.74583,-72.69167,69,fuera de línea,2775
+INIA-328,328,INIA,VDCH,Chumulco,Mulchén,Biobío,-37.753808,-72.299674,196,en línea,828
+INIA-36,36,INIA,INIA,Llenquehue (ex GTT Peleco),Cañete,Biobío,-37.7538486,-73.445092,125,en línea,3566
+INIA-144,144,INIA,INIA,Manzanares,Renaico,La Araucanía,-37.7725,-72.546111,88,fuera de línea,3566
+INIA-237,237,INIA,INIA,El Vergel,Angol,La Araucanía,-37.8278098,-72.6596649,81,en línea,3173
+EXT-1005,1005,WU,ARAUCO,Santa Amelia,Collipulli,La Araucanía,-37.978802,-72.417784,273,en línea,1128
+INIA-322,322,INIA,INIA,Contulmo Urbano,Contulmo,Biobío,-38.018318,-73.230247,46,en línea,1639
+INIA-157,157,INIA,INIA,La Isla,Purén,La Araucanía,-38.03,-72.982,76,en línea,3566
+INIA-145,145,INIA,INIA,Surco y Semilla,Collipulli,La Araucanía,-38.0325,-72.285278,379,en línea,3566
+INIA-209,209,INIA,INIA,San Rafael,Los Sauces,La Araucanía,-38.070667,-72.724176,173,en línea,3390
+INIA-206,206,INIA,INIA,Gaby Ranquilco,Lumaco,La Araucanía,-38.116919,-72.883497,76,en línea,3395
+INIA-238,238,INIA,INIA,Pailahueque,Ercilla,La Araucanía,-38.145552,-72.298333,379,en línea,3173
+EXT-1037,1037,WU,ARAUCO,Baltimore,Collipulli,La Araucanía,-38.1506,-71.96052,814,en línea,305
+INIA-146,146,INIA,INIA,Las Palmas,Victoria,La Araucanía,-38.227778,-72.273333,388,en línea,3566
+EXT-181,181,DMC,DMC,Regimiento Victoria,Victoria,La Araucanía,-38.22889,-72.34333,336,en línea,2775
+INIA-161,161,INIA,INIA,Ponotro,Tirúa,Biobío,-38.27529,-73.498489,143,en línea,3566
+INIA-33,33,INIA,INIA,La Providencia,Traiguén,La Araucanía,-38.289444,-72.611389,254,en línea,3566
+EXT-955,955,DMC,DMC,Aeródromo Lequecahue,Tirúa,Biobío,-38.35944,-73.48833,153,en línea,1747
+EXT-975,975,DMC,DMC,Aeródromo Isla Mocha,Lebu,Biobío,-38.38389,-73.86917,16,fuera de línea,1449
+INIA-48,48,INIA,INIA,San Luis,Curacautín,La Araucanía,-38.409987,-71.915218,549,en línea,3566
+INIA-235,235,INIA,INIA,San Sebastián,Perquenco,La Araucanía,-38.435064,-72.399024,299,en línea,3173
+EXT-164,164,DMC,DMC,Lonquimay,Lonquimay,La Araucanía,-38.455,-71.36194,912,en línea,3419
+INIA-147,147,INIA,INIA,Caballería,Galvarino,La Araucanía,-38.455941,-72.740668,167,en línea,3566
+INIA-143,143,INIA,INIA,Santa Inés,Lautaro,La Araucanía,-38.504722,-72.343611,263,en línea,3566
+INIA-239,239,INIA,INIA,Collimallin,Temuco,La Araucanía,-38.606698,-72.701057,60,en línea,3173
+INIA-28,28,INIA,INIA,Quiripio,Carahue,La Araucanía,-38.639722,-73.244167,322,fuera de línea,3566
+EXT-166,166,DMC,MMA-DMC,Rucamanque - UFRO,Temuco,La Araucanía,-38.66083,-72.60556,344,en línea,3419
+INIA-138,138,INIA,INIA,Perales,Cholchol,La Araucanía,-38.663889,-72.808889,55,fuera de línea,3566
+INIA-8,8,INIA,INIA,Carillanca,Vilcún,La Araucanía,-38.688787,-72.4189357,200,en línea,3566
+INIA-18,18,INIA,INIA,Tranapuente,Carahue,La Araucanía,-38.690206,-73.352888,64,en línea,3566
+INIA-148,148,INIA,INIA,Marimenuco,Lonquimay,La Araucanía,-38.731667,-71.140833,1084,en línea,3566
+INIA-41,41,INIA,INIA,Santa Adela,Nueva Imperial,La Araucanía,-38.7560589,-72.8929552,47,en línea,3566
+EXT-163,163,DMC,DMC,Aeródromo Maquehue,Padre las Casas,La Araucanía,-38.76778,-72.63194,86,en línea,3419
+EXT-1067,1067,SERVIMET,SERVIMET,Capitanía de Puerto Carahue,Saavedra,La Araucanía,-38.788333,-73.397222,10,en línea,84
+EXT-74,74,HOBO,ANPROS,Temuco,Temuco,La Araucanía,-38.821389,-72.432778,157,en línea,2649
+INIA-355,355,INIA,INIA,Lago Icalma,Lonquimay,La Araucanía,-38.824156,-71.281349,1167,en línea,178
+INIA-236,236,INIA,INIA,Taplon,Padre las Casas,La Araucanía,-38.83295,-72.506385,130,en línea,3173
+INIA-141,141,INIA,INIA,El Membrillo,Melipeuco,La Araucanía,-38.834167,-71.6825,527,fuera de línea,3566
+EXT-79,79,DMC,MMA-DMC,Maquehue - UFRO,Freire,La Araucanía,-38.83778,-72.69444,74,en línea,3419
+INIA-29,29,INIA,INIA,Dominguez,Saavedra,La Araucanía,-38.903321,-73.225275,93,en línea,3566
+INIA-164,164,INIA,INIA,El Quincho,Cunco,La Araucanía,-38.913175,-72.183514,293,en línea,3566
+EXT-165,165,DMC,DMC,Aeropuerto Araucanía,Freire,La Araucanía,-38.93444,-72.65333,96,en línea,3419
+INIA-31,31,INIA,INIA,Llollinco,Teodoro Schmidt,La Araucanía,-38.976944,-72.997778,24,en línea,3566
+INIA-233,233,INIA,INIA,Radal,Freire,La Araucanía,-38.98547,-72.381617,168,en línea,3182
+EXT-962,962,HOBO,AGRICHILE,Caracas,Cunco,La Araucanía,-39.011256,-72.321039,208,en línea,1684
+INIA-168,168,INIA,INIA,Faja Maisan,Pitrufquén,La Araucanía,-39.071148,-72.92198,56,en línea,3385
+INIA-203,203,INIA,INIA,Los Arrayanes,Toltén,La Araucanía,-39.1041699,-73.1618209,18,en línea,3398
+INIA-40,40,INIA,INIA,Cuarta Faja,Gorbea,La Araucanía,-39.115556,-72.605278,115,en línea,3566
+EXT-75,75,DMC,DMC,Villarrica,Villarrica,La Araucanía,-39.19,-72.11222,393,en línea,1747
+INIA-205,205,INIA,INIA,San Enrique,Pucón,La Araucanía,-39.261711,-71.868097,279,en línea,3397
+INIA-140,140,INIA,INIA,Huiscapi,Villarrica,La Araucanía,-39.263333,-72.398889,266,en línea,3566
+EXT-979,979,DMC,DMC,Aeródromo Pucón,Pucón,La Araucanía,-39.29111,-71.91694,264,en línea,1296
+INIA-142,142,INIA,INIA,Puala,Curarrehue,La Araucanía,-39.381944,-71.5725,393,en línea,3566
+INIA-208,208,INIA,INIA,La Paz,Loncoche,La Araucanía,-39.428135,-72.718521,86,en línea,3391
+EXT-995,995,WU,ARAUCO,Llongo,Mariquina,Los Ríos,-39.551265,-72.90805,38,en línea,1201
+EXT-82,82,DMC,DMC,Panguipulli,Panguipulli,Los Ríos,-39.63444,-72.34389,229,en línea,3419
+EXT-80,80,DMC,DMC,Aeropuerto Pichoy,Mariquina,Los Ríos,-39.65056,-73.08083,21,en línea,3419
+INIA-102,102,INIA,INIA,Santa Carla,Los Lagos,Los Ríos,-39.679571,-72.611389,264,en línea,3566
+INIA-99,99,INIA,INIA,Las Lomas,Máfil,Los Ríos,-39.700929,-73.014793,22,en línea,3566
+EXT-1035,1035,HOBO,UFRO,Mamalona,Panguipulli,Los Ríos,-39.776942,-71.75206,589,fuera de línea,455
+INIA-151,151,INIA,UACh,Austral,Valdivia,Los Ríos,-39.787428,-73.234546,15,en línea,3566
+EXT-81,81,DMC,DMC,Isla Teja - UACh,Valdivia,Los Ríos,-39.79944,-73.25833,15,en línea,3419
+EXT-985,985,WU,ARAUCO,Pancul,Los Lagos,Los Ríos,-39.848681,-72.819804,34,en línea,1255
+EXT-1068,1068,SERVIMET,SERVIMET,Capitanía de Puerto Corral,Corral,Los Ríos,-39.887778,-73.428611,2,en línea,84
+EXT-112,112,DMC,DMC,Corral - ESSAL,Corral,Los Ríos,-39.88806,-73.43333,13,fuera de línea,2902
+EXT-1027,1027,COLUN,COLUN,El Copihue,Paillaco,Los Ríos,-40.041222,-72.746767,170,en línea,792
+EXT-1010,1010,DMC,DMC,Fundo el Maitén,Paillaco,Los Ríos,-40.08361,-72.65889,194,en línea,1128
+EXT-1026,1026,COLUN,COLUN,La Estrella,Futrono,Los Ríos,-40.103339,-72.419044,192,en línea,792
+INIA-72,72,INIA,INIA,Lago Verde,Paillaco,Los Ríos,-40.165081,-72.633843,248,en línea,3566
+EXT-1032,1032,WU,ARAUCO,Oldenburgo,La Unión,Los Ríos,-40.165742,-73.102967,221,en línea,490
+INIA-132,132,INIA,INIA,Palermo,La Unión,Los Ríos,-40.259225,-73.106543,78,en línea,3566
+EXT-984,984,WU,ARAUCO,La Unión,La Unión,Los Ríos,-40.309847,-73.026404,76,en línea,1255
+EXT-976,976,DMC,MMA-DMC,Liceo Agrotec,La Unión,Los Ríos,-40.31,-73.00389,60,en línea,1381
+EXT-1023,1023,COLUN,COLUN,Ignao,Río Bueno,Los Ríos,-40.339544,-72.576714,235,en línea,792
+EXT-1025,1025,COLUN,COLUN,Piruco,Río Bueno,Los Ríos,-40.34154,-72.925813,76,en línea,792
+INIA-133,133,INIA,INIA,Quilacahuin,San Pablo,Los Lagos,-40.347946,-73.307493,17,en línea,3566
+INIA-71,71,INIA,INIA,El Cardal,Río Bueno,Los Ríos,-40.386737,-72.919058,80,en línea,3566
+EXT-1024,1024,COLUN,COLUN,Crucero,Río Bueno,Los Ríos,-40.44107,-72.834118,96,en línea,792
+INIA-19,19,INIA,INIA,Remehue,Osorno,Los Lagos,-40.522204,-73.063655,73,en línea,3566
+EXT-83,83,DMC,DMC,Bahía Mansa,San Juan de la Costa,Los Lagos,-40.58667,-73.73528,102,fuera de línea,1747
+EXT-76,76,DMC,DMC,Adolfo Matthei,Osorno,Los Lagos,-40.59056,-73.11222,53,en línea,3419
+INIA-155,155,INIA,INIA,Rucatayo,Río Bueno,Los Ríos,-40.598896,-72.586541,278,en línea,3566
+EXT-201,201,DMC,DMC,Aeropuerto de Cañal Bajo,Osorno,Los Lagos,-40.61444,-73.0575,61,fuera de línea,2383
+INIA-201,201,INIA,INIA,Huacamapu,San Juan de la Costa,Los Lagos,-40.659175,-73.491723,144,en línea,3402
+INIA-104,104,INIA,INIA,Desagüe Rupanco,Puyehue,Los Lagos,-40.752634,-72.663894,272,en línea,3566
+INIA-45,45,INIA,INIA,La Pampa,Purranque,Los Lagos,-40.860639,-73.156917,96,en línea,3566
+INIA-326,326,INIA,INIA,Chiriuco,Puerto Octay,Los Lagos,-40.881924,-72.839258,178,en línea,835
+INIA-70,70,INIA,INIA,Octay,Puerto Octay,Los Lagos,-40.957156,-72.885495,178,fuera de línea,3566
+INIA-50,50,INIA,INIA,Quilanto,Frutillar,Los Lagos,-41.026123,-73.007003,161,en línea,3566
+INIA-68,68,INIA,INIA,Polizones,Fresia,Los Lagos,-41.115147,-73.376628,137,en línea,3566
+INIA-69,69,INIA,INIA,Colegual,Llanquihue,Los Lagos,-41.221843,-73.259856,177,en línea,3566
+INIA-105,105,INIA,INIA,Ensenada,Puerto Varas,Los Lagos,-41.233469,-72.516119,76,en línea,3566
+EXT-1022,1022,ULMOS,ULMOS,Casona Los Ulmos,Puerto Varas,Los Lagos,-41.27557,-72.56363,246,fuera de línea,793
+EXT-1021,1021,ULMOS,ULMOS,Pampa Los Ulmos ,Puerto Varas,Los Lagos,-41.29153,-72.57928,511,fuera de línea,793
+EXT-114,114,DMC,DMC,Puerto Varas - ESSAL,Puerto Varas,Los Lagos,-41.32444,-72.97667,70,en línea,2902
+EXT-113,113,DMC,DMC,Aeropuerto El Tepual ,Puerto Montt,Los Lagos,-41.435,-73.09778,85,en línea,2902
+EXT-85,85,DMC,DMC,Escuela Mirasol,Puerto Montt,Los Lagos,-41.47944,-72.96889,100,en línea,3419
+INIA-26,26,INIA,INIA,Los Canelos,Los Muermos,Los Lagos,-41.481326,-73.474378,105,en línea,3566
+EXT-1070,1070,SERVIMET,SERVIMET,Alcaldía de Mar isla Tenglo,Puerto Montt,Los Lagos,-41.484509,-72.961352,7,en línea,84
+EXT-1069,1069,SERVIMET,SERVIMET,Capitanía de Puerto Maullín,Maullín,Los Lagos,-41.615796,-73.595366,6,en línea,84
+INIA-324,324,INIA,INIA,Putenio,Calbuco,Los Lagos,-41.670875,-73.133367,70,en línea,1114
+INIA-207,207,INIA,INIA,Carelmapu,Maullín,Los Lagos,-41.709733,-73.6722625,29,en línea,3395
+EXT-1072,1072,SERVIMET,SERVIMET,Alcaldía de Mar Chacao,Ancud,Los Lagos,-41.829468,-73.518691,10,en línea,84
+EXT-84,84,DMC,DMC,Liceo Agrícola de Ancud,Ancud,Los Lagos,-41.86611,-73.81639,31,en línea,3419
+EXT-1071,1071,SERVIMET,SERVIMET,Capitanía de Puerto Ancud,Ancud,Los Lagos,-41.866305,-73.830931,7,en línea,84
+EXT-1073,1073,SERVIMET,SERVIMET,Capitanía de Puerto Quemchi,Quemchi,Los Lagos,-42.144883,-73.473004,8,en línea,84
+INIA-25,25,INIA,INIA,Butalcura,Dalcahue,Los Lagos,-42.261762,-73.650812,148,en línea,3566
+INIA-309,309,INIA,INIA,Tenaún,Dalcahue,Los Lagos,-42.312857,-73.399934,130,en línea,2599
+INIA-20,20,INIA,INIA,Huyar Alto,Curaco de Vélez,Los Lagos,-42.403919,-73.568192,155,en línea,3566
+INIA-230,230,INIA,INIA,Pid-Pid,Castro,Los Lagos,-42.411747,-73.783913,81,en línea,3201
+INIA-231,231,INIA,INIA,Quilquico,Castro,Los Lagos,-42.491512,-73.708817,109,en línea,3201
+INIA-232,232,INIA,INIA,Isla Chelin,Castro,Los Lagos,-42.589153,-73.532906,33,en línea,3200
+EXT-1074,1074,SERVIMET,SERVIMET,Capitanía de Puerto Chonchi,Chonchi,Los Lagos,-42.618734,-73.770499,5,en línea,84
+INIA-67,67,INIA,INIA,Tara,Chonchi,Los Lagos,-42.703731,-73.788517,145,fuera de línea,3566
+EXT-86,86,DMC,DMC,Nueva Chaitén,Chaitén,Los Lagos,-42.785,-72.83472,10,en línea,3419
+EXT-1075,1075,SERVIMET,SERVIMET,Capitanía de Puerto Chaitén,Chaitén,Los Lagos,-42.91462,-72.71182,6,en línea,84
+EXT-1076,1076,SERVIMET,SERVIMET,Capitanía de Puerto Quellón,Quellón,Los Lagos,-43.120653,-73.621714,11,en línea,84
+EXT-193,193,DMC,DMC,Aeródromo de Quellón,Quellón,Los Lagos,-43.13417,-73.63194,13,en línea,2654
+EXT-200,200,DMC,DMC,Aeródromo de Futaleufú,Futaleufú,Los Lagos,-43.18889,-71.85222,347,en línea,2383
+INIA-357,357,INIA,INIA,Palena Medio,Palena,Los Lagos,-43.616222,-71.783325,267,en línea,135
+EXT-1077,1077,SERVIMET,SERVIMET,Capitanía de Puerto Melinka,Guaitecas,Aysén,-43.896585,-73.748891,8,en línea,84
+EXT-198,198,DMC,DMC,Aeródromo Melinka,Guaitecas,Aysén,-43.89667,-73.74028,11,en línea,2556
+INIA-166,166,INIA,INIA,La Junta,Cisnes,Aysén,-43.916933,-72.387343,40,en línea,3566
+EXT-87,87,DMC,DMC,Puyuhuapi,Cisnes,Aysén,-44.32333,-72.55528,11,en línea,3419
+INIA-234,234,INIA,INIA,Arroyo el Gato,Coyhaique,Aysén,-45.162902,-71.943627,504,en línea,3354
+EXT-1078,1078,SERVIMET,SERVIMET,Capitanía de Puerto Aguirre,Aisén,Aysén,-45.164667,-73.52172,4,en línea,84
+INIA-301,301,INIA,INIA,Ñirehuao,Coyhaique,Aysén,-45.249744,-71.69425,510,en línea,3173
+EXT-88,88,DMC,DMC,Aeródromo Puerto Aysén,Aisén,Aysén,-45.39944,-72.67722,11,en línea,3419
+EXT-1079,1079,SERVIMET,SERVIMET,Capitanía de Puerto Chacabuco,Aisén,Aysén,-45.465045,-72.821494,6,en línea,84
+EXT-197,197,DMC,MMA-DMC,Mirador Marchant,Coyhaique,Aysén,-45.52528,-72.09806,438,en línea,2565
+INIA-98,98,INIA,INIA,El Claro,Coyhaique,Aysén,-45.5812,-72.092267,319,en línea,3566
+EXT-89,89,DMC,DMC,Aeródromo Teniente Vidal,Coyhaique,Aysén,-45.59389,-72.10861,310,en línea,3419
+INIA-16,16,INIA,INIA,Tamelaike,Coyhaique,Aysén,-45.759114,-72.061843,470,en línea,3566
+EXT-222,222,DMC,DMC,Aeródromo Balmaceda,Coyhaique,Aysén,-45.91833,-71.67778,517,en línea,1712
+INIA-44,44,INIA,INIA,Vista Hermosa,Coyhaique,Aysén,-45.936818,-71.835342,740,en línea,3566
+INIA-226,226,INIA,INIA,Bajada Ibañez,Río Ibáñez,Aysén,-46.180619,-72.043261,523,en línea,3314
+INIA-306,306,INIA,INIA,Puerto Ibáñez,Río Ibáñez,Aysén,-46.278309,-71.941433,225,en línea,2669
+INIA-13,13,INIA,INIA,Chile Chico,Chile Chico,Aysén,-46.5432423,-71.69929765,213,en línea,3566
+INIA-32,32,INIA,INIA,Cochrane,Cochrane,Aysén,-47.24173333,-72.58220278,246,en línea,3566
+EXT-90,90,DMC,DMC,Subcomisaría de Villa O'Higgins,O’Higgins,Aysén,-48.47139,-72.56028,280,en línea,3419
+EXT-1080,1080,SERVIMET,SERVIMET,Capitanía de Puerto Edén,Natales,Magallanes,-49.129167,-74.429179,6,en línea,84
+INIA-159,159,INIA,INIA,Cerro Castillo,Torres del Paine,Magallanes,-51.176975,-72.435811,115,en línea,3566
+EXT-956,956,DMC,DMC,Río Serrano,Torres del Paine,Magallanes,-51.21667,-72.97028,22,en línea,1745
+INIA-339,339,INIA,GORE-MAGALLANES,Complejo Torres del Paine,Torres del Paine,Magallanes,-51.386105,-72.78492,51,en línea,700
+EXT-91,91,DMC,DMC,Aeródromo Teniente Gallardo,Natales,Magallanes,-51.66722,-72.52889,69,en línea,3419
+INIA-35,35,INIA,INIA,Puerto Natales,Natales,Magallanes,-51.698367,-72.483082,80,en línea,3566
+EXT-1081,1081,SERVIMET,SERVIMET,Capitanía de Puerto Puerto Natales,Natales,Magallanes,-51.7291,-72.514,8,en línea,84
+INIA-338,338,INIA,GORE-MAGALLANES,Estancia Berta,Natales,Magallanes,-52.007645,-72.037323,168,fuera de línea,700
+INIA-347,347,INIA,GORE-MAGALLANES,La Pelecha,San Gregorio,Magallanes,-52.249817,-70.750206,290,fuera de línea,578
+INIA-336,336,INIA,GORE-MAGALLANES,Estancia Laguna Blanca,Laguna Blanca,Magallanes,-52.26881,-71.189728,201,en línea,700
+INIA-346,346,INIA,GORE-MAGALLANES,Punta Delgada,San Gregorio,Magallanes,-52.316971,-69.8564,287,fuera de línea,581
+EXT-94,94,DMC,DMC,Villa Tehuelche,Laguna Blanca,Magallanes,-52.42889,-71.41611,176,en línea,3419
+INIA-219,219,INIA,INIA,Estancia 5 de Enero,San Gregorio,Magallanes,-52.432478,-70.360583,113,en línea,3362
+INIA-335,335,INIA,GORE-MAGALLANES,Estancia El Ovejero,Laguna Blanca,Magallanes,-52.495389,-71.392194,131,en línea,700
+INIA-337,337,INIA,GORE-MAGALLANES,Estancia Skyring,Río Verde,Magallanes,-52.527622,-71.936264,56,en línea,700
+INIA-37,37,INIA,INIA,Kampenaike,Laguna Blanca,Magallanes,-52.61204835,-70.9432231,6,en línea,3566
+EXT-176,176,DMC,DMC,Cerro Sombrero MA,Primavera,Magallanes,-52.77639,-69.29472,64,en línea,2796
+INIA-83,83,INIA,INIA,Tierra del Fuego,Primavera,Magallanes,-52.805431,-69.273691,58,en línea,3566
+INIA-342,342,INIA,GORE-MAGALLANES,Rita,Primavera,Magallanes,-52.833639,-69.715389,46,fuera de línea,630
+EXT-1082,1082,SERVIMET,SERVIMET,Faro Bahía Félix,Punta Arenas,Magallanes,-52.96,-74.070833,12,fuera de línea,84
+EXT-223,223,DMC/H,DMC,Aeropuerto Carlos Ibañez,Punta Arenas,Magallanes,-53.00167,-70.83861,36,en línea,1296
+INIA-341,341,INIA,GORE-MAGALLANES,Rosita,Porvenir,Magallanes,-53.023944,-68.807222,85,fuera de línea,627
+INIA-103,103,INIA,INIA,Isla Riesco,Río Verde,Magallanes,-53.030495,-71.933637,68,en línea,3566
+INIA-82,82,INIA,INIA,Punta Arenas Rural,Punta Arenas,Magallanes,-53.068313,-70.873761,50,fuera de línea,3566
+EXT-92,92,DMC,DMC,Instituto de la Patagonia,Punta Arenas,Magallanes,-53.13,-70.8875,11,en línea,3419
+EXT-93,93,DMC,DMC,Unidad Aeropolicial,Punta Arenas,Magallanes,-53.15278,-70.92639,53,en línea,3419
+EXT-96,96,DMC,DMC,Escuela Alberto Hurtado,Punta Arenas,Magallanes,-53.16694,-70.94528,60,en línea,3419
+EXT-95,95,DMC,DMC,Aeródromo Fuentes Martínez,Porvenir,Magallanes,-53.25361,-70.32611,25,en línea,3419
+INIA-222,222,INIA,INIA,Estancia Zenia,Porvenir,Magallanes,-53.319496,-69.698147,151,en línea,3356
+INIA-340,340,INIA,GORE-MAGALLANES,La Fueguina,Porvenir,Magallanes,-53.326917,-70.283222,91,en línea,631
+INIA-345,345,INIA,GORE-MAGALLANES,Tres Hermanos,Porvenir,Magallanes,-53.508569,-69.175883,199,en línea,626
+INIA-348,348,INIA,GORE-MAGALLANES,Fuerte Bulnes,Punta Arenas,Magallanes,-53.630394,-70.919266,33,en línea,577
+INIA-344,344,INIA,GORE-MAGALLANES,La Pirucha,Timaukel,Magallanes,-53.791878,-69.37429,199,fuera de línea,435
+INIA-343,343,INIA,GORE-MAGALLANES,Río Grande,Timaukel,Magallanes,-53.893217,-68.896183,114,en línea,625
+EXT-115,115,DMC,DMC,Pampa Guanaco,Timaukel,Magallanes,-54.05083,-68.80389,150,en línea,2902
+EXT-1083,1083,SERVIMET,SERVIMET,Alcaldía de Mar Paso Timbales,Cabo de Hornos,Magallanes,-54.862778,-70.2775,3,fuera de línea,84
+EXT-1084,1084,SERVIMET,SERVIMET,Alcaldía de Mar Puerto Navarino,Cabo de Hornos,Magallanes,-54.92564,-68.323644,6,en línea,84
+EXT-97,97,DMC,DMC,Aeropuerto Guardiamarina Zañartu,Cabo de Hornos,Magallanes,-54.93167,-67.61556,15,en línea,3419
+INIA-349,349,INIA,GORE-MAGALLANES,Huertos Familiares,Cabo de Hornos,Magallanes,-54.934448,-67.569885,3,fuera de línea,528
+EXT-1085,1085,SERVIMET,SERVIMET,Alcaldía de Mar Puerto Corrientes,Cabo de Hornos,Magallanes,-54.98857,-68.344444,18,en línea,84
+EXT-98,98,DMC,DMC,Base Eduardo Frei Montalva,Antártica,Magallanes,-62.19306,-58.9825,45,en línea,3419

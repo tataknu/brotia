@@ -1,0 +1,121 @@
+{
+  "portfolioId": "sample-cl",
+  "asOf": "2026-11-07",
+  "currency": "USD",
+  "totalExposure": 240000.0,
+  "exposureByTier": {
+    "normal": 120000.0,
+    "watch": 120000.0,
+    "high": 0.0
+  },
+  "farmsByTier": {
+    "normal": 1,
+    "watch": 1,
+    "high": 0
+  },
+  "ranked": [
+    {
+      "farmId": "cl-ovalle-table-grape",
+      "name": "Ovalle table grapes",
+      "crop": "table_grape",
+      "zoneId": "auto-cl-ovalle-table-grape",
+      "score": 58.6,
+      "tier": "watch",
+      "exposure": 120000.0,
+      "headline": "Bloom: Water-scarcity decree No. 177 covers the Limarí province until 10 Jul 2027.",
+      "stage": {
+        "key": "bloom",
+        "label": "Bloom"
+      },
+      "nextInstallment": {
+        "dueDate": "2026-11-30",
+        "amount": 30000.0
+      }
+    },
+    {
+      "farmId": "cl-requinoa-cherry",
+      "name": "Requínoa cherries",
+      "crop": "cherry",
+      "zoneId": "auto-cl-requinoa-cherry",
+      "score": 13.4,
+      "tier": "normal",
+      "exposure": 120000.0,
+      "headline": "Fruit set and growth: Hottest day 31.2 °C on 5 Nov; fruit heat stress starts at 32 °C.",
+      "stage": {
+        "key": "fruit_growth",
+        "label": "Fruit set and growth"
+      },
+      "nextInstallment": {
+        "dueDate": "2027-01-31",
+        "amount": 60000.0
+      }
+    }
+  ],
+  "byCrop": [
+    {
+      "crop": "cherry",
+      "farms": 1,
+      "exposure": 120000.0,
+      "stressedExposure": 0.0
+    },
+    {
+      "crop": "table_grape",
+      "farms": 1,
+      "exposure": 120000.0,
+      "stressedExposure": 120000.0
+    }
+  ],
+  "byZone": [
+    {
+      "zoneId": "auto-cl-ovalle-table-grape",
+      "farms": 1,
+      "exposure": 120000.0,
+      "stressedExposure": 120000.0
+    },
+    {
+      "zoneId": "auto-cl-requinoa-cherry",
+      "farms": 1,
+      "exposure": 120000.0,
+      "stressedExposure": 0.0
+    }
+  ],
+  "events": [
+    {
+      "id": "dga_decree:177-2026",
+      "kind": "declared_emergency",
+      "title": "Water-scarcity decree No. 177 (Limarí province)",
+      "region": "Coquimbo · Limarí",
+      "start": "2026-07-09",
+      "end": "2027-07-10",
+      "severity": "severe",
+      "source": "DGA",
+      "evidenceKind": "official_declaration",
+      "geometry": null,
+      "affectedFarmIds": [
+        "cl-ovalle-table-grape"
+      ],
+      "affectedExposure": 120000.0,
+      "provenance": {
+        "source": "dga_decrees",
+        "sourceLabel": "DGA water-scarcity decrees",
+        "observedAt": "2026-07-09",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "province",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": "Decree list XLS + decree page scrape (ADR-0006)"
+      }
+    }
+  ],
+  "creditActions": [
+    {
+      "farmId": "cl-ovalle-table-grape",
+      "ruleId": "cr-decree-low-snowmelt",
+      "action": "watch",
+      "message": "Water-scarcity decree active and snowmelt below 70 % of normal: irrigation supply at risk."
+    }
+  ],
+  "warnings": []
+}

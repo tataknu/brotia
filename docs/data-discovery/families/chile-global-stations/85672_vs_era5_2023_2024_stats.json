@@ -1,0 +1,57 @@
+{
+ "tmax_c vs temperature_2m_max_era5_land": {
+  "n": 661,
+  "bias": -0.66,
+  "mae": 1.57,
+  "r": 0.978,
+  "hot_days_station": 97,
+  "hot_days_model": 48,
+  "hits": 47
+ },
+ "tmin_c vs temperature_2m_min_era5_land": {
+  "n": 730,
+  "bias": 1.29,
+  "mae": 1.89,
+  "r": 0.899,
+  "frost_days_station": 58,
+  "frost_days_model": 30,
+  "hits": 27
+ },
+ "tmax_c vs temperature_2m_max_era5": {
+  "n": 661,
+  "bias": -0.53,
+  "mae": 1.05,
+  "r": 0.992,
+  "hot_days_station": 97,
+  "hot_days_model": 50,
+  "hits": 50
+ },
+ "tmin_c vs temperature_2m_min_era5": {
+  "n": 730,
+  "bias": 0.97,
+  "mae": 1.35,
+  "r": 0.948,
+  "frost_days_station": 58,
+  "frost_days_model": 29,
+  "hits": 28
+ },
+ "precip daily vs ERA5 lag0": {
+  "n": 666,
+  "r": 0.725,
+  "wetdays_station": 116,
+  "wetdays_era5": 128
+ },
+ "precip daily vs ERA5 lag1": {
+  "n": 665,
+  "r": 0.699,
+  "wetdays_station": 116,
+  "wetdays_era5": 126
+ },
+ "precip monthly vs ERA5": {
+  "n": 21,
+  "r": 0.98,
+  "ratio_era5_over_station": 1.53,
+  "station_total": 1528.0,
+  "era5_total": 2332.0
+ }
+}

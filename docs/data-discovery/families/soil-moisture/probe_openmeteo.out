@@ -1,0 +1,28 @@
+== archive ERA5-Land recent: HTTP 200 8.11s  bytes=23741
+  lat/lon/elev: -16.900002 -62.5 246.0 units: {'time': 'iso8601', 'soil_moisture_0_to_7cm': 'm³/m³', 'soil_moisture_7_to_28cm': 'm³/m³', 'soil_moisture_28_to_100cm': 'm³/m³', 'soil_moisture_100_to_255cm': 'm³/m³'}
+  soil_moisture_0_to_7cm: first=2026-10-15T00:00 0.458  last_non_null=2026-11-01T23:00 0.384  n=432/552
+  soil_moisture_7_to_28cm: first=2026-10-15T00:00 0.437  last_non_null=2026-11-01T23:00 0.382  n=432/552
+  soil_moisture_28_to_100cm: first=2026-10-15T00:00 0.385  last_non_null=2026-11-01T23:00 0.378  n=432/552
+  soil_moisture_100_to_255cm: first=2026-10-15T00:00 0.385  last_non_null=2026-11-01T23:00 0.383  n=432/552
+== archive best_match recent: HTTP 200 0.44s  bytes=24227
+  lat/lon/elev: -16.836555 -62.526306 246.0 units: {'time': 'iso8601', 'soil_moisture_0_to_7cm': 'm³/m³', 'soil_moisture_7_to_28cm': 'm³/m³', 'soil_moisture_28_to_100cm': 'm³/m³', 'soil_moisture_100_to_255cm': 'm³/m³'}
+  soil_moisture_0_to_7cm: first=2026-10-15T00:00 0.397  last_non_null=2026-11-06T23:00 0.32  n=552/552
+  soil_moisture_7_to_28cm: first=2026-10-15T00:00 0.4  last_non_null=2026-11-06T23:00 0.371  n=552/552
+  soil_moisture_28_to_100cm: first=2026-10-15T00:00 0.365  last_non_null=2026-11-06T23:00 0.377  n=552/552
+  soil_moisture_100_to_255cm: first=2026-10-15T00:00 0.309  last_non_null=2026-11-06T23:00 0.309  n=552/552
+== archive daily soil (mean): HTTP 200 0.50s  bytes=1895
+  lat/lon/elev: -16.836555 -62.526306 246.0 units: {'time': 'iso8601', 'soil_moisture_0_to_7cm_mean': 'm³/m³', 'soil_moisture_7_to_28cm_mean': 'm³/m³', 'soil_moisture_28_to_100cm_mean': 'm³/m³', 'soil_moisture_0_to_100cm_mean': 'm³/m³'}
+  soil_moisture_0_to_7cm_mean: first=2026-10-01 0.444  last_non_null=2026-11-06 0.349  n=37/37
+  soil_moisture_7_to_28cm_mean: first=2026-10-01 0.338  last_non_null=2026-11-06 0.377  n=37/37
+  soil_moisture_28_to_100cm_mean: first=2026-10-01 0.397  last_non_null=2026-11-06 0.379  n=37/37
+  soil_moisture_0_to_100cm_mean: first=2026-10-01 0.388  last_non_null=2026-11-06 0.376  n=37/37
+== archive 1950 start: HTTP 200 0.56s  bytes=1490
+  lat/lon/elev: -16.900002 -62.5 246.0 units: {'time': 'iso8601', 'soil_moisture_28_to_100cm': 'm³/m³'}
+  soil_moisture_28_to_100cm: first=1950-01-01T00:00 0.491  last_non_null=1950-01-02T23:00 0.484  n=48/48
+== forecast past_days=10: HTTP 200 0.18s  bytes=13480
+  lat/lon/elev: -16.836555 -62.526306 246.0 units: {'time': 'iso8601', 'soil_moisture_0_to_1cm': 'm³/m³', 'soil_moisture_1_to_3cm': 'm³/m³', 'soil_moisture_3_to_9cm': 'm³/m³', 'soil_moisture_9_to_27cm': 'm³/m³', 'soil_moisture_27_to_81cm': 'm³/m³'}
+  soil_moisture_0_to_1cm: first=2026-10-28T00:00 0.344  last_non_null=2026-11-07T23:00 0.347  n=264/264
+  soil_moisture_1_to_3cm: first=2026-10-28T00:00 0.344  last_non_null=2026-11-07T23:00 0.347  n=264/264
+  soil_moisture_3_to_9cm: first=2026-10-28T00:00 0.344  last_non_null=2026-11-07T23:00 0.347  n=264/264
+  soil_moisture_9_to_27cm: first=2026-10-28T00:00 0.385  last_non_null=2026-11-07T23:00 0.363  n=264/264
+  soil_moisture_27_to_81cm: first=2026-10-28T00:00 0.383  last_non_null=2026-11-07T23:00 0.376  n=264/264

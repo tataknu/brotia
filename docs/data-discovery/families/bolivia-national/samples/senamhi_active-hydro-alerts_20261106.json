@@ -1,0 +1,38 @@
+[
+ {
+  "id": 1546,
+  "code": null,
+  "date": null,
+  "fecha": "2026-11-06",
+  "fechaf": "2026-11-14",
+  "idAlertType": null,
+  "idEventType": null,
+  "status": null,
+  "titulo": "AVISO DE AMENAZA HIDROLÓGICA PARA EMISIÓN DE ALERTA N° 47/2026",
+  "description": null
+ },
+ {
+  "id": 1545,
+  "code": null,
+  "date": null,
+  "fecha": "2026-11-05",
+  "fechaf": "2026-11-09",
+  "idAlertType": null,
+  "idEventType": null,
+  "status": null,
+  "titulo": "AVISO DE AMENAZA HIDROLÓGICA PARA EMISIÓN DE ALERTA N° 45/2026",
+  "description": null
+ },
+ {
+  "id": 1544,
+  "code": null,
+  "date": null,
+  "fecha": "2026-11-04",
+  "fechaf": "2026-11-09",
+  "idAlertType": null,
+  "idEventType": null,
+  "status": null,
+  "titulo": "AVISO DE AMENAZA HIDROLÓGICA PARA EMISIÓN DE ALERTA N° 46/2026",
+  "description": null
+ }
+]

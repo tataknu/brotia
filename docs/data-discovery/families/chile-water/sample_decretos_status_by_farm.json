@@ -1,0 +1,241 @@
+{
+ "Quillota avocados": {
+  "provincia": "Quillota",
+  "comuna": "Quillota",
+  "basin": "Aconcagua",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2013",
+   "2014",
+   "2015",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2008,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Ovalle/Limari grapes": {
+  "provincia": "Limari",
+  "comuna": "Ovalle",
+  "basin": "Limari",
+  "active_now_per_dga_xls": true,
+  "active_decree": [
+   {
+    "decreto": "N° 177 de 09 de julio de 2026",
+    "caducidad": "2027-07-10 00:00:00",
+    "area": "Provincia de Limarí"
+   }
+  ],
+  "years_with_decree_xls_text_match": [
+   "2008",
+   "2011",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2024",
+   "2025",
+   "2026"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Requinoa cherries": {
+  "provincia": "Cachapoal",
+  "comuna": "Requinoa",
+  "basin": "Rapel (Cachapoal)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2011,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Santa Cruz wine": {
+  "provincia": "Colchagua",
+  "comuna": "Santa Cruz",
+  "basin": "Rapel (Tinguiririca)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Curico apples": {
+  "provincia": "Curico",
+  "comuna": "Curico",
+  "basin": "Mataquito (Teno/Lontue)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2008,
+   2011,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Talca vineyards": {
+  "provincia": "Talca",
+  "comuna": "Talca",
+  "basin": "Maule",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2014,
+   2015,
+   2016,
+   2017,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Parral rice": {
+  "provincia": "Linares",
+  "comuna": "Parral",
+  "basin": "Maule (Perquilauquen/Longavi)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2008",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2021",
+   "2022"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2015,
+   2016,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Chillan blueberries": {
+  "provincia": "Diguillin",
+  "comuna": "Chillan",
+  "basin": "Itata (Nuble)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2023
+  ],
+  "arcgis_VIGENTE_flag_STALE": true
+ },
+ "Los Angeles maize": {
+  "provincia": "Biobio",
+  "comuna": "Los Angeles",
+  "basin": "Biobio (Laja)",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2008"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Temuco wheat": {
+  "provincia": "Cautin",
+  "comuna": "Temuco",
+  "basin": "Imperial/Cautin",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [],
+  "years_with_decree_arcgis_polygons_2008_2023": [],
+  "arcgis_VIGENTE_flag_STALE": false
+ },
+ "Osorno potatoes": {
+  "provincia": "Osorno",
+  "comuna": "Osorno",
+  "basin": "Bueno/Rahue",
+  "active_now_per_dga_xls": false,
+  "active_decree": [],
+  "years_with_decree_xls_text_match": [
+   "2021"
+  ],
+  "years_with_decree_arcgis_polygons_2008_2023": [
+   2021
+  ],
+  "arcgis_VIGENTE_flag_STALE": false
+ }
+}

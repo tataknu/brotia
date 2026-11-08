@@ -1,0 +1,863 @@
+{
+ "type": "FeatureCollection",
+ "name": "climate_loan_monitor_sample_fields_v2",
+ "properties": {
+  "generated": "2026-11-07",
+  "crs": "EPSG:4326",
+  "field": "900 m x 900 m square in UTM 20S (~81 ha)"
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Estancia Los Tajibos",
+    "crop": "soy",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 1.74,
+    "orig_lonlat": [
+     -62.52,
+     -16.86
+    ],
+    "centre_lonlat": [
+     -62.52396,
+     -16.87521
+    ],
+    "flag": null,
+    "mb2024_agri": 0.95,
+    "mb39_soy": 0.315,
+    "mb72_other_crops": 0.635,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.947,
+    "glad_soy_max_2021_2023": 0.967,
+    "glad_soy_by_year": [
+     0.824,
+     0.782,
+     0.923
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.837,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+    "ndvi_julaug": 0.359,
+    "ndvi_julaug_date": "2026-08-14",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+    "ndvi_amplitude": 0.478,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.528171,
+       -16.879289
+      ],
+      [
+       -62.519722,
+       -16.87927
+      ],
+      [
+       -62.519742,
+       -16.871134
+      ],
+      [
+       -62.528191,
+       -16.871154
+      ],
+      [
+       -62.528171,
+       -16.879289
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Agropecuaria Brecha 8",
+    "crop": "maize",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 1.28,
+    "orig_lonlat": [
+     -62.7,
+     -16.97
+    ],
+    "centre_lonlat": [
+     -62.68862,
+     -16.97385
+    ],
+    "flag": null,
+    "mb2024_agri": 0.99,
+    "mb39_soy": 0.019,
+    "mb72_other_crops": 0.968,
+    "mb21_mosaic": 0.006,
+    "wc2021_cropland40": 0.856,
+    "glad_soy_max_2021_2023": 0.947,
+    "glad_soy_by_year": [
+     0.683,
+     0.779,
+     0.934
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.719,
+    "ndvi_janfeb_date": "2026-02-10",
+    "ndvi_janfeb_item": "S2B_MSIL2A_20260210T141709_R010_T20KNG_20260210T193550",
+    "ndvi_julaug": 0.334,
+    "ndvi_julaug_date": "2026-08-14",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+    "ndvi_amplitude": 0.385,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.692838,
+       -16.977921
+      ],
+      [
+       -62.684384,
+       -16.977908
+      ],
+      [
+       -62.684398,
+       -16.969773
+      ],
+      [
+       -62.692851,
+       -16.969786
+      ],
+      [
+       -62.692838,
+       -16.977921
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Colonia Cuatro Canadas Lote 7",
+    "crop": "soy",
+    "status": "kept",
+    "area_ha": 81.1,
+    "moved_km": 0.0,
+    "orig_lonlat": [
+     -62.47,
+     -17.3
+    ],
+    "centre_lonlat": [
+     -62.47,
+     -17.3
+    ],
+    "flag": null,
+    "mb2024_agri": 0.938,
+    "mb39_soy": 0.701,
+    "mb72_other_crops": 0.235,
+    "mb21_mosaic": 0.004,
+    "wc2021_cropland40": 0.863,
+    "glad_soy_max_2021_2023": 0.931,
+    "glad_soy_by_year": [
+     0.852,
+     0.683,
+     0.893
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 5,
+    "ndvi_janfeb": 0.694,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+    "ndvi_julaug": 0.326,
+    "ndvi_julaug_date": "2026-08-26",
+    "ndvi_julaug_item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+    "ndvi_amplitude": 0.368,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.474223,
+       -17.304079
+      ],
+      [
+       -62.465754,
+       -17.304056
+      ],
+      [
+       -62.465778,
+       -17.295921
+      ],
+      [
+       -62.474246,
+       -17.295944
+      ],
+      [
+       -62.474223,
+       -17.304079
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Hacienda El Cusi",
+    "crop": "sorghum",
+    "status": "kept",
+    "area_ha": 81.1,
+    "moved_km": 0.0,
+    "orig_lonlat": [
+     -62.55,
+     -17.38
+    ],
+    "centre_lonlat": [
+     -62.55,
+     -17.38
+    ],
+    "flag": null,
+    "mb2024_agri": 0.983,
+    "mb39_soy": 0.676,
+    "mb72_other_crops": 0.307,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.739,
+    "glad_soy_max_2021_2023": 0.891,
+    "glad_soy_by_year": [
+     0.698,
+     0.109,
+     0.827
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 15,
+    "modis250_px_full": 7,
+    "ndvi_janfeb": 0.785,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+    "ndvi_julaug": 0.416,
+    "ndvi_julaug_date": "2026-08-26",
+    "ndvi_julaug_item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+    "ndvi_amplitude": 0.369,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.554226,
+       -17.384077
+      ],
+      [
+       -62.545754,
+       -17.384058
+      ],
+      [
+       -62.545774,
+       -17.375923
+      ],
+      [
+       -62.554246,
+       -17.375942
+      ],
+      [
+       -62.554226,
+       -17.384077
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Agricola Pailon Norte",
+    "crop": "wheat",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 1.71,
+    "orig_lonlat": [
+     -62.68,
+     -17.56
+    ],
+    "centre_lonlat": [
+     -62.6808,
+     -17.54464
+    ],
+    "flag": null,
+    "mb2024_agri": 0.952,
+    "mb39_soy": 0.818,
+    "mb72_other_crops": 0.134,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.884,
+    "glad_soy_max_2021_2023": 0.996,
+    "glad_soy_by_year": [
+     0.988,
+     0.791,
+     0.973
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 15,
+    "modis250_px_full": 7,
+    "ndvi_janfeb": 0.853,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+    "ndvi_julaug": 0.574,
+    "ndvi_julaug_date": "2026-08-26",
+    "ndvi_julaug_item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+    "ndvi_amplitude": 0.279,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.685035,
+       -17.548711
+      ],
+      [
+       -62.676555,
+       -17.548697
+      ],
+      [
+       -62.67657,
+       -17.540562
+      ],
+      [
+       -62.685049,
+       -17.540576
+      ],
+      [
+       -62.685035,
+       -17.548711
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Granja Las Londras",
+    "crop": "sunflower",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 4.46,
+    "orig_lonlat": [
+     -62.76,
+     -17.74
+    ],
+    "centre_lonlat": [
+     -62.79722,
+     -17.72116
+    ],
+    "flag": null,
+    "mb2024_agri": 0.976,
+    "mb39_soy": 0.008,
+    "mb72_other_crops": 0.968,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.99,
+    "glad_soy_max_2021_2023": 0.995,
+    "glad_soy_by_year": [
+     0.993,
+     0.989,
+     0.961
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.824,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+    "ndvi_julaug": 0.572,
+    "ndvi_julaug_date": "2026-08-26",
+    "ndvi_julaug_item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+    "ndvi_amplitude": 0.252,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.801464,
+       -17.725227
+      ],
+      [
+       -62.792975,
+       -17.725218
+      ],
+      [
+       -62.792985,
+       -17.717084
+      ],
+      [
+       -62.801473,
+       -17.717092
+      ],
+      [
+       -62.801464,
+       -17.725227
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Finca Okinawa Dos",
+    "crop": "maize",
+    "status": "kept",
+    "area_ha": 81.1,
+    "moved_km": 0.0,
+    "orig_lonlat": [
+     -62.85,
+     -17.18
+    ],
+    "centre_lonlat": [
+     -62.85,
+     -17.18
+    ],
+    "flag": null,
+    "mb2024_agri": 1.0,
+    "mb39_soy": 1.0,
+    "mb72_other_crops": 0.0,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 1.0,
+    "glad_soy_max_2021_2023": 1.0,
+    "glad_soy_by_year": [
+     1.0,
+     0.045,
+     1.0
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.859,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+    "ndvi_julaug": 0.54,
+    "ndvi_julaug_date": "2026-08-14",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+    "ndvi_amplitude": 0.319,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.854228,
+       -17.184071
+      ],
+      [
+       -62.845765,
+       -17.184065
+      ],
+      [
+       -62.845772,
+       -17.175929
+      ],
+      [
+       -62.854235,
+       -17.175935
+      ],
+      [
+       -62.854228,
+       -17.184071
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Parcela Okinawa Uno",
+    "crop": "soy",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 2.13,
+    "orig_lonlat": [
+     -62.93,
+     -17.27
+    ],
+    "centre_lonlat": [
+     -62.91634,
+     -17.25601
+    ],
+    "flag": null,
+    "mb2024_agri": 0.983,
+    "mb39_soy": 0.695,
+    "mb72_other_crops": 0.272,
+    "mb21_mosaic": 0.033,
+    "wc2021_cropland40": 0.916,
+    "glad_soy_max_2021_2023": 0.863,
+    "glad_soy_by_year": [
+     0.439,
+     0.508,
+     0.823
+    ],
+    "jrc_ever_water": 0.006,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.843,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KMG_20260205T175909",
+    "ndvi_julaug": 0.451,
+    "ndvi_julaug_date": "2026-08-14",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+    "ndvi_amplitude": 0.392,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.920572,
+       -17.260077
+      ],
+      [
+       -62.912105,
+       -17.260074
+      ],
+      [
+       -62.912109,
+       -17.251938
+      ],
+      [
+       -62.920576,
+       -17.251942
+      ],
+      [
+       -62.920572,
+       -17.260077
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Arrocera Mineros",
+    "crop": "rice",
+    "status": "moved_provisional",
+    "area_ha": 81.1,
+    "moved_km": 1.52,
+    "orig_lonlat": [
+     -63.29,
+     -17.2
+    ],
+    "centre_lonlat": [
+     -63.28204,
+     -17.18863
+    ],
+    "flag": "RICE NOT VERIFIABLE: MapBiomas 2024 has no rice class (40) here and no cropland block (MB agri >=0.95, no water/forest/sand pixels) within 10 km reaches 5% JRC ever-water (16 blocks reach 2%); provisional non-soy cropland, weak NDVI amplitude (could be cane). Do not use for a rice story.",
+    "mb2024_agri": 0.959,
+    "mb39_soy": 0.022,
+    "mb72_other_crops": 0.937,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.857,
+    "glad_soy_max_2021_2023": 0.0,
+    "glad_soy_by_year": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 12,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.621,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+    "ndvi_julaug": 0.519,
+    "ndvi_julaug_date": "2026-08-27",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+    "ndvi_amplitude": 0.102,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -63.286283,
+       -17.192696
+      ],
+      [
+       -63.277819,
+       -17.192708
+      ],
+      [
+       -63.277807,
+       -17.184572
+      ],
+      [
+       -63.28627,
+       -17.184561
+      ],
+      [
+       -63.286283,
+       -17.192696
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Canaveral San Antonio",
+    "crop": "sugarcane",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 1.79,
+    "orig_lonlat": [
+     -63.21,
+     -17.29
+    ],
+    "centre_lonlat": [
+     -63.19392,
+     -17.29482
+    ],
+    "flag": "CANE NOT CLASS-VERIFIABLE: no sugarcane class in MapBiomas Bolivia 2024; evidence = cropland (MB72+WC40), never soy in GLAD 2021-23, ~7.8 km NE of Montero town centre (approx. coordinate, unverified), inside the Montero-Mineros cane belt by local knowledge (unverified).",
+    "mb2024_agri": 0.96,
+    "mb39_soy": 0.0,
+    "mb72_other_crops": 0.948,
+    "mb21_mosaic": 0.025,
+    "wc2021_cropland40": 0.872,
+    "glad_soy_max_2021_2023": 0.0,
+    "glad_soy_by_year": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 12,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.694,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+    "ndvi_julaug": 0.472,
+    "ndvi_julaug_date": "2026-08-22",
+    "ndvi_julaug_item": "S2B_MSIL2A_20260822T142709_R053_T20KMF_20260822T180618",
+    "ndvi_amplitude": 0.222,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -63.198159,
+       -17.298879
+      ],
+      [
+       -63.18969,
+       -17.298887
+      ],
+      [
+       -63.189682,
+       -17.290751
+      ],
+      [
+       -63.19815,
+       -17.290743
+      ],
+      [
+       -63.198159,
+       -17.298879
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Agricola Warnes Sur",
+    "crop": "soy",
+    "status": "moved_provisional",
+    "area_ha": 81.1,
+    "moved_km": 14.72,
+    "orig_lonlat": [
+     -63.08,
+     -17.56
+    ],
+    "centre_lonlat": [
+     -62.95299,
+     -17.50664
+    ],
+    "flag": "no multi-year soy field within 10 km; nearest one found within 20 km",
+    "mb2024_agri": 0.976,
+    "mb39_soy": 0.153,
+    "mb72_other_crops": 0.823,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.923,
+    "glad_soy_max_2021_2023": 0.868,
+    "glad_soy_by_year": [
+     0.451,
+     0.755,
+     0.839
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.754,
+    "ndvi_janfeb_date": "2026-02-05",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+    "ndvi_julaug": 0.509,
+    "ndvi_julaug_date": "2026-08-26",
+    "ndvi_julaug_item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+    "ndvi_amplitude": 0.245,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -62.95723,
+       -17.510706
+      ],
+      [
+       -62.948752,
+       -17.510704
+      ],
+      [
+       -62.948754,
+       -17.502569
+      ],
+      [
+       -62.957232,
+       -17.502571
+      ],
+      [
+       -62.95723,
+       -17.510706
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "name": "Estancia Mineros Norte",
+    "crop": "soy",
+    "status": "moved",
+    "area_ha": 81.1,
+    "moved_km": 4.3,
+    "orig_lonlat": [
+     -63.18,
+     -17.03
+    ],
+    "centre_lonlat": [
+     -63.14999,
+     -17.00403
+    ],
+    "flag": null,
+    "mb2024_agri": 0.991,
+    "mb39_soy": 0.476,
+    "mb72_other_crops": 0.515,
+    "mb21_mosaic": 0.0,
+    "wc2021_cropland40": 0.948,
+    "glad_soy_max_2021_2023": 0.888,
+    "glad_soy_by_year": [
+     0.733,
+     0.657,
+     0.741
+    ],
+    "jrc_ever_water": 0.0,
+    "modis250_px_centres": 16,
+    "modis250_px_full": 8,
+    "ndvi_janfeb": 0.682,
+    "ndvi_janfeb_date": "2026-02-18",
+    "ndvi_janfeb_item": "S2C_MSIL2A_20260218T142711_R053_T20KMG_20260218T180412",
+    "ndvi_julaug": 0.441,
+    "ndvi_julaug_date": "2026-08-27",
+    "ndvi_julaug_item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+    "ndvi_amplitude": 0.241,
+    "s2_baseline": [
+     "05.12",
+     "05.12"
+    ]
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -63.154223,
+       -17.008095
+      ],
+      [
+       -63.145768,
+       -17.008101
+      ],
+      [
+       -63.145762,
+       -16.999966
+      ],
+      [
+       -63.154217,
+       -16.999959
+      ],
+      [
+       -63.154223,
+       -17.008095
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

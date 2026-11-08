@@ -1,0 +1,28 @@
+aez n=5 0.46s; cropCalendar n=32 1.28s
+AEZ None Altiplano (or Puna) | -
+AEZ None Interandinos valleys | -
+AEZ None Oriental plains and Humid Tropic | -
+AEZ None Gran Chaco | -
+AEZ None Amazonia | -
+crops: ['Banana', 'Barley', 'Bean', 'Carrot', 'Cassava', 'Corn', 'Grape', 'Lettuce', 'Oats', 'Onion', 'Peanut', 'Potato', 'Quinoa', 'Rice', 'Sorghum', 'Soybean', 'Sugarcane', 'Tomato', 'Wheat, bread']
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Rice', 'updated': '19/03/2025', 'sow': ['15/09', '30/11'], 'harvest': ['01/03', '31/03'], 'growing_days': 180, 'info': '(manual seeding). Mostly rainfed.'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Rice', 'updated': '19/03/2025', 'sow': ['15/10', '15/12'], 'harvest': ['01/03', '30/04'], 'growing_days': '120-150', 'info': 'Combined manual / mechanized seeding. Mostly rainfed.'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Rice', 'updated': '19/03/2025', 'sow': ['15/10', '15/12'], 'harvest': ['01/03', '30/04'], 'growing_days': '120-150', 'info': 'mechanized seeding / rainfed'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Rice', 'updated': '19/03/2025', 'sow': ['15/10', '15/12'], 'harvest': ['01/03', '30/04'], 'growing_days': '120-150', 'info': 'mechanized seeding / Irrigated'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Sorghum', 'updated': '19/03/2025', 'sow': ['01/03', '30/04'], 'harvest': ['01/06', '31/07'], 'growing_days': '90-110', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Sorghum', 'updated': '19/03/2025', 'sow': ['01/09', '31/10'], 'harvest': ['01/12', '10/01'], 'growing_days': '90-110', 'info': '(2nd season)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Wheat, bread', 'updated': '19/03/2025', 'sow': ['20/05', '30/05'], 'harvest': ['10/10', '20/10'], 'growing_days': '120-150', 'info': 'Northern zone (<600 a.s.l.m.)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Wheat, bread', 'updated': '19/03/2025', 'sow': ['01/05', '20/05'], 'harvest': ['15/09', '10/10'], 'growing_days': '120-150', 'info': 'Northern zone (<600 a.s.l.m.)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Wheat, bread', 'updated': '19/03/2025', 'sow': ['10/04', '30/04'], 'harvest': ['25/08', '15/09'], 'growing_days': '120-150', 'info': 'Eastern zone'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Peanut', 'updated': '19/03/2025', 'sow': ['01/11', '31/01'], 'harvest': ['01/03', '31/05'], 'growing_days': '120-140', 'info': ''}
+{'aez': 'Gran Chaco', 'aez_id': '004', 'crop': 'Peanut', 'updated': '19/03/2025', 'sow': ['01/11', '31/12'], 'harvest': ['01/03', '30/04'], 'growing_days': '120-140', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Soybean', 'updated': '19/03/2025', 'sow': ['15/11', '20/12'], 'harvest': ['01/03', '15/04'], 'growing_days': '120-130', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Soybean', 'updated': '19/03/2025', 'sow': ['01/06', '30/06'], 'harvest': ['10/10', '20/11'], 'growing_days': '120-130', 'info': '(2nd season)'}
+{'aez': 'Gran Chaco', 'aez_id': '004', 'crop': 'Soybean', 'updated': '19/03/2025', 'sow': ['01/12', '31/01'], 'harvest': ['01/04', '31/05'], 'growing_days': '120-130', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Carrot', 'updated': '19/03/2025', 'sow': ['01/03', '30/04'], 'harvest': ['01/09', '30/10'], 'growing_days': '180-210', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Lettuce', 'updated': '19/03/2025', 'sow': ['01/03', '31/05'], 'harvest': ['01/06', '31/08'], 'growing_days': 90, 'info': '(with nursery on land)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Tomato', 'updated': '19/03/2025', 'sow': ['01/03', '31/05'], 'harvest': ['01/07', '30/09'], 'growing_days': '120-150', 'info': '(with nursery on land)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Tomato', 'updated': '19/03/2025', 'sow': ['01/03', '31/05'], 'harvest': ['01/07', '30/09'], 'growing_days': '120-150', 'info': '(with nursery on tray)'}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Cassava', 'updated': '19/03/2025', 'sow': ['01/05', '31/08'], 'harvest': ['01/02', '31/05'], 'growing_days': '270-330', 'info': ''}
+{'aez': 'Gran Chaco', 'aez_id': '004', 'crop': 'Cassava', 'updated': '19/03/2025', 'sow': ['01/04', '30/09'], 'harvest': ['01/01', '30/06'], 'growing_days': '270-330', 'info': ''}
+{'aez': 'Oriental plains and Humid Tropic', 'aez_id': '003', 'crop': 'Banana', 'updated': '19/03/2025', 'sow': ['01/09', '31/10'], 'harvest': ['15/06', '15/07'], 'growing_days': '300-365', 'info': ''}

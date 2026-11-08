@@ -1,0 +1,511 @@
+{
+ "Quillota avocados": {
+  "http": 200,
+  "latency_s": 4.01,
+  "n": 138,
+  "sample": [
+   {
+    "objectid": 11882,
+    "gid": 11879,
+    "mslink": 70,
+    "desccomu": "QUILLOTA",
+    "rolpredi": "305-42",
+    "especie_01": "LIMONERO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "05501",
+    "provdere": "055",
+    "regidere": "05"
+   },
+   {
+    "objectid": 11912,
+    "gid": 11909,
+    "mslink": 158,
+    "desccomu": "QUILLOTA",
+    "rolpredi": "301-76",
+    "especie_01": "PALTO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "05501",
+    "provdere": "055",
+    "regidere": "05"
+   },
+   {
+    "objectid": 11913,
+    "gid": 11910,
+    "mslink": 157,
+    "desccomu": "QUILLOTA",
+    "rolpredi": "301-90",
+    "especie_01": "PALTO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "05501",
+    "provdere": "055",
+    "regidere": "05"
+   },
+   {
+    "objectid": 12035,
+    "gid": 12031,
+    "mslink": 280,
+    "desccomu": "QUILLOTA",
+    "rolpredi": "SIN-ROL",
+    "especie_01": "PALTO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "05501",
+    "provdere": "055",
+    "regidere": "05"
+   },
+   {
+    "objectid": 12036,
+    "gid": 12032,
+    "mslink": 279,
+    "desccomu": "QUILLOTA",
+    "rolpredi": "301-16",
+    "especie_01": "PALTO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "05501",
+    "provdere": "055",
+    "regidere": "05"
+   }
+  ]
+ },
+ "Ovalle table grapes": {
+  "http": 200,
+  "latency_s": 4.55,
+  "n": 35,
+  "sample": [
+   {
+    "objectid": 354,
+    "mslink": 352,
+    "desccomu": "OVALLE",
+    "rolpredi": "535-3",
+    "especie_01": "MANDARINO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "04301",
+    "provdere": "043",
+    "regidere": "04"
+   },
+   {
+    "objectid": 532,
+    "mslink": 530,
+    "desccomu": "OVALLE",
+    "rolpredi": "477-14",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "04301",
+    "provdere": "043",
+    "regidere": "04"
+   },
+   {
+    "objectid": 719,
+    "mslink": 716,
+    "desccomu": "OVALLE",
+    "rolpredi": "545-1",
+    "especie_01": "MANDARINO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "04301",
+    "provdere": "043",
+    "regidere": "04"
+   },
+   {
+    "objectid": 720,
+    "mslink": 717,
+    "desccomu": "OVALLE",
+    "rolpredi": "545-1",
+    "especie_01": "MANDARINO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "04301",
+    "provdere": "043",
+    "regidere": "04"
+   },
+   {
+    "objectid": 721,
+    "mslink": 718,
+    "desccomu": "OVALLE",
+    "rolpredi": "545-74",
+    "especie_01": "MANDARINO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "04301",
+    "provdere": "043",
+    "regidere": "04"
+   }
+  ]
+ },
+ "Requinoa cherries": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 143,
+  "sample": [
+   {
+    "objectid": 535,
+    "mslink": 288,
+    "desccomu": "REQUINOA",
+    "rolpredi": "30-316",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06116",
+    "provdere": "061",
+    "regidere": "06"
+   },
+   {
+    "objectid": 542,
+    "mslink": 270,
+    "desccomu": "REQUINOA",
+    "rolpredi": "30-211",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06116",
+    "provdere": "061",
+    "regidere": "06"
+   },
+   {
+    "objectid": 592,
+    "mslink": 221,
+    "desccomu": "REQUINOA",
+    "rolpredi": "30-228",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06116",
+    "provdere": "061",
+    "regidere": "06"
+   },
+   {
+    "objectid": 593,
+    "mslink": 222,
+    "desccomu": "REQUINOA",
+    "rolpredi": "30-223",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06116",
+    "provdere": "061",
+    "regidere": "06"
+   },
+   {
+    "objectid": 595,
+    "mslink": 220,
+    "desccomu": "REQUINOA",
+    "rolpredi": "30-228",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06116",
+    "provdere": "061",
+    "regidere": "06"
+   }
+  ]
+ },
+ "Santa Cruz Colchagua wine": {
+  "http": 200,
+  "latency_s": 4.06,
+  "n": 76,
+  "sample": [
+   {
+    "objectid": 4718,
+    "mslink": 18193,
+    "desccomu": "SANTA CRUZ",
+    "rolpredi": "502-127",
+    "especie_01": "NARANJO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06310",
+    "provdere": "063",
+    "regidere": "06"
+   },
+   {
+    "objectid": 4721,
+    "mslink": 18192,
+    "desccomu": "SANTA CRUZ",
+    "rolpredi": "502-84",
+    "especie_01": "CIRUELO EUROPEO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06310",
+    "provdere": "063",
+    "regidere": "06"
+   },
+   {
+    "objectid": 5265,
+    "mslink": 23136,
+    "desccomu": "SANTA CRUZ",
+    "rolpredi": "549-139",
+    "especie_01": "CIRUELO EUROPEO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06310",
+    "provdere": "063",
+    "regidere": "06"
+   },
+   {
+    "objectid": 5278,
+    "mslink": 23121,
+    "desccomu": "SANTA CRUZ",
+    "rolpredi": "1051-4",
+    "especie_01": "MANDARINO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06310",
+    "provdere": "063",
+    "regidere": "06"
+   },
+   {
+    "objectid": 5281,
+    "mslink": 23120,
+    "desccomu": "SANTA CRUZ",
+    "rolpredi": "545-3",
+    "especie_01": "CIRUELO EUROPEO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "06310",
+    "provdere": "063",
+    "regidere": "06"
+   }
+  ]
+ },
+ "Curico apples/cherries": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 20,
+  "sample": [
+   {
+    "objectid": 5303,
+    "gid": 5297,
+    "mslink": 2782,
+    "desccomu": "CURICO",
+    "rolpredi": "527-22",
+    "especie_01": "KIWI",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "07301",
+    "provdere": "073",
+    "regidere": "07"
+   },
+   {
+    "objectid": 5305,
+    "gid": 5299,
+    "mslink": 2780,
+    "desccomu": "CURICO",
+    "rolpredi": "527-22",
+    "especie_01": "KIWI",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "07301",
+    "provdere": "073",
+    "regidere": "07"
+   },
+   {
+    "objectid": 5318,
+    "gid": 5312,
+    "mslink": 2783,
+    "desccomu": "CURICO",
+    "rolpredi": "527-22",
+    "especie_01": "KIWI",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "07301",
+    "provdere": "073",
+    "regidere": "07"
+   },
+   {
+    "objectid": 5388,
+    "gid": 5381,
+    "mslink": 2826,
+    "desccomu": "CURICO",
+    "rolpredi": "522-151",
+    "especie_01": "CEREZO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "07301",
+    "provdere": "073",
+    "regidere": "07"
+   },
+   {
+    "objectid": 5512,
+    "gid": 5510,
+    "mslink": 2697,
+    "desccomu": "CURICO",
+    "rolpredi": "509-1",
+    "especie_01": "MANZANO ROJO",
+    "especie_02": "MANZANO VERDE",
+    "especie_03": " ",
+    "especie_04": " ",
+    "comudere": "07301",
+    "provdere": "073",
+    "regidere": "07"
+   }
+  ]
+ },
+ "Talca vineyards": {
+  "http": 200,
+  "latency_s": 4.04,
+  "n": 0,
+  "sample": []
+ },
+ "Chillan blueberries": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 4,
+  "sample": [
+   {
+    "objectid": 1547,
+    "gid": 1543,
+    "mslink": 21,
+    "desccomu": "CHILLAN",
+    "rolpredi": "2206-21",
+    "especie_01": "AVELLANO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "16101",
+    "provdere": "161",
+    "regidere": "16"
+   },
+   {
+    "objectid": 1565,
+    "gid": 1561,
+    "mslink": 23,
+    "desccomu": "CHILLAN",
+    "rolpredi": "2206-21",
+    "especie_01": "AVELLANO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "16101",
+    "provdere": "161",
+    "regidere": "16"
+   },
+   {
+    "objectid": 1566,
+    "gid": 1562,
+    "mslink": 24,
+    "desccomu": "CHILLAN",
+    "rolpredi": "2206-21",
+    "especie_01": "AVELLANO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "16101",
+    "provdere": "161",
+    "regidere": "16"
+   },
+   {
+    "objectid": 1608,
+    "gid": 1603,
+    "mslink": 3,
+    "desccomu": "CHILLAN",
+    "rolpredi": "2204-6",
+    "especie_01": "AVELLANO",
+    "especie_02": " ",
+    "especie_03": " ",
+    "comudere": "16101",
+    "provdere": "161",
+    "regidere": "16"
+   }
+  ]
+ },
+ "Los Angeles": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 23,
+  "sample": [
+   {
+    "objectid": 303,
+    "gid": 302,
+    "mslink": 302,
+    "desccomu": "LOS ANGELES",
+    "rolpredi": "1532-27",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "comudere": "08301",
+    "provdere": "083",
+    "regidere": "08"
+   },
+   {
+    "objectid": 304,
+    "gid": 303,
+    "mslink": 303,
+    "desccomu": "LOS ANGELES",
+    "rolpredi": "1532-27",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "comudere": "08301",
+    "provdere": "083",
+    "regidere": "08"
+   },
+   {
+    "objectid": 305,
+    "gid": 304,
+    "mslink": 304,
+    "desccomu": "LOS ANGELES",
+    "rolpredi": "1532-27",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "comudere": "08301",
+    "provdere": "083",
+    "regidere": "08"
+   },
+   {
+    "objectid": 306,
+    "gid": 305,
+    "mslink": 305,
+    "desccomu": "LOS ANGELES",
+    "rolpredi": "1532-27",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "comudere": "08301",
+    "provdere": "083",
+    "regidere": "08"
+   },
+   {
+    "objectid": 307,
+    "gid": 306,
+    "mslink": 306,
+    "desccomu": "LOS ANGELES",
+    "rolpredi": "1532-27",
+    "especie_01": "ARANDANO AMERICANO",
+    "especie_02": " ",
+    "comudere": "08301",
+    "provdere": "083",
+    "regidere": "08"
+   }
+  ]
+ },
+ "Temuco": {
+  "http": 200,
+  "latency_s": 4.04,
+  "n": 0,
+  "sample": []
+ },
+ "Osorno": {
+  "http": 200,
+  "latency_s": 4.04,
+  "n": 0,
+  "sample": []
+ }
+}

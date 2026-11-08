@@ -1,0 +1,18 @@
+[
+  {
+    "error": "invalid_request",
+    "detail": "body.portfolio.farms[0].polygon: exterior ring is not closed"
+  },
+  {
+    "error": "bbox_too_large",
+    "detail": "bbox spans 0.80° × 0.50°; maximum is 0.25° per side"
+  },
+  {
+    "error": "not_found",
+    "detail": "farmId 'cl-nope' is not in portfolio 'sample-cl'"
+  },
+  {
+    "error": "no_api_key",
+    "detail": "ANTHROPIC_API_KEY is not set; the farming agent is unavailable"
+  }
+]

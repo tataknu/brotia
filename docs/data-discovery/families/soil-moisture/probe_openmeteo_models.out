@@ -1,0 +1,31 @@
+era5_land      HTTP 200 0.51s grid=(-16.900,-62.500) last=('2026-11-01', 0.381) n=13
+era5           HTTP 200 0.43s grid=(-16.750,-62.500) last=('2026-11-01', 0.402) n=13
+era5_seamless  HTTP 200 0.48s grid=(-16.900,-62.500) last=('2026-11-01', 0.381) n=13
+ecmwf_ifs      HTTP 200 0.50s grid=(-16.837,-62.526) last=('2026-11-06', 0.376) n=18
+best_match     HTTP 200 0.42s grid=(-16.837,-62.526) last=('2026-11-06', 0.376) n=18
+Traceback (most recent call last):
+  File "/Users/cristian/Documents/projects/energhack/.venv/lib/python3.12/site-packages/requests/models.py", line 1116, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cristian/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cristian/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/decoder.py", line 338, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cristian/.local/share/uv/python/cpython-3.12.14-macos-aarch64-none/lib/python3.12/json/decoder.py", line 356, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/cristian/Documents/projects/energhack/docs/data-discovery/families/soil-moisture/probe_openmeteo_models.py", line 20, in <module>
+    out[m]=r.json()["daily"]["soil_moisture_0_to_100cm_mean"]; time.sleep(2)
+           ^^^^^^^^
+  File "/Users/cristian/Documents/projects/energhack/.venv/lib/python3.12/site-packages/requests/models.py", line 1120, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+era5_land 200 
+ecmwf_ifs 200 
+era5_land - ecmwf_ifs 0-100cm Sep-Dec 2025: mean=0.008 sd=0.022 n=122; era5_land range 0.328-0.462 ifs range 0.307-0.406

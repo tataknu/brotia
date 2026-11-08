@@ -1,0 +1,881 @@
+{
+  "farmId": "cl-ovalle-table-grape",
+  "asOf": "2026-11-07",
+  "zoneId": "auto-cl-ovalle-table-grape",
+  "dataTier": "enhanced",
+  "risk": {
+    "score": 58.6,
+    "scoreTier": "watch",
+    "tier": "watch",
+    "stage": {
+      "key": "bloom",
+      "label": "Bloom"
+    },
+    "components": {
+      "climate": {
+        "key": "climate",
+        "value": 0.364,
+        "drivers": [
+          {
+            "component": "climate",
+            "peril": "water",
+            "metric": "water_supply",
+            "severity": 0.52,
+            "sensitivity": 0.7,
+            "impact": 0.364,
+            "text": "Snowmelt forecast 64 % of normal for the Limarí basin; canopy moisture slightly below its own normal.",
+            "value": 64,
+            "normal": 100,
+            "unit": "% of normal",
+            "provenance": {
+              "source": "dga_snowmelt_forecast",
+              "sourceLabel": "DGA snowmelt volume forecast (Sep–Mar)",
+              "observedAt": "2026-10-15",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "basin",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": "fixture: illustrative value"
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "frost",
+            "metric": "tmin_7d_min",
+            "severity": 0.0,
+            "sensitivity": 0.8,
+            "impact": 0.0,
+            "text": "Coldest night 4.2 °C on 3 Nov; bloom damage starts at −1.1 °C.",
+            "value": 4.2,
+            "normal": -1.1,
+            "unit": "°C",
+            "provenance": {
+              "source": "cr2met_nrt",
+              "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+              "observedAt": "2026-11-06",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "0.05° (~5 km)",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "heat",
+            "metric": "tmax_7d_max",
+            "severity": 0.0,
+            "sensitivity": 0.5,
+            "impact": 0.0,
+            "text": "Hottest day 29.8 °C; heat stress starts at 35 °C.",
+            "value": 29.8,
+            "normal": 35,
+            "unit": "°C",
+            "provenance": {
+              "source": "cr2met_nrt",
+              "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+              "observedAt": "2026-11-06",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "0.05° (~5 km)",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "harvest_rain",
+            "metric": "max_rain_72h",
+            "severity": 0.0,
+            "sensitivity": 0.3,
+            "impact": 0.0,
+            "text": "No rain in the last 7 days.",
+            "value": 0.0,
+            "normal": 15,
+            "unit": "mm",
+            "provenance": {
+              "source": "cr2met_nrt",
+              "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+              "observedAt": "2026-11-06",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "0.05° (~5 km)",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "chill",
+            "metric": "chill_hours_season",
+            "severity": 0.24,
+            "sensitivity": 0.0,
+            "impact": 0.0,
+            "text": "Winter chill 132 h vs 150 h needed (not scored at bloom).",
+            "value": 132,
+            "normal": 150,
+            "unit": "h",
+            "provenance": {
+              "source": "cr2met_nrt",
+              "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+              "observedAt": "2026-08-31",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "0.05° (~5 km)",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "vigour",
+            "metric": "ndvi_z",
+            "severity": 0.0,
+            "sensitivity": 0.4,
+            "impact": 0.0,
+            "text": "Vigour (NDVI) 0.6 sd below its own normal for early November.",
+            "value": -0.6,
+            "normal": 0,
+            "unit": "z",
+            "provenance": {
+              "source": "s2_l2a_pc",
+              "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+              "observedAt": "2026-11-03",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "10 m",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "climate",
+            "peril": "abandonment",
+            "metric": "abandonment_flag",
+            "severity": 0.0,
+            "sensitivity": 1.0,
+            "impact": 0.0,
+            "text": "No abandonment signal in the last dry season.",
+            "value": false,
+            "normal": false,
+            "unit": null,
+            "provenance": {
+              "source": "s2_l2a_pc",
+              "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+              "observedAt": "2026-04-30",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "10 m",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          }
+        ]
+      },
+      "disaster": {
+        "key": "disaster",
+        "value": 0.6,
+        "drivers": [
+          {
+            "component": "disaster",
+            "peril": "declared_emergency",
+            "metric": "decree_active",
+            "severity": 0.6,
+            "sensitivity": 1.0,
+            "impact": 0.6,
+            "text": "Water-scarcity decree No. 177 covers the Limarí province until 10 Jul 2027.",
+            "value": true,
+            "normal": false,
+            "unit": null,
+            "provenance": {
+              "source": "dga_decrees",
+              "sourceLabel": "DGA water-scarcity decrees",
+              "observedAt": "2026-07-09",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "province",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "disaster",
+            "peril": "fire",
+            "metric": "burned_area",
+            "severity": 0.0,
+            "sensitivity": 1.0,
+            "impact": 0.0,
+            "text": "No burned area mapped in the zone in the last 13 months.",
+            "value": false,
+            "normal": false,
+            "unit": null,
+            "provenance": {
+              "source": "gwis_ba",
+              "sourceLabel": "GWIS burned areas (Copernicus)",
+              "observedAt": "2026-10-18",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "~500 m (MODIS/VIIRS)",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "disaster",
+            "peril": "flood",
+            "metric": "flood_footprint",
+            "severity": 0.0,
+            "sensitivity": 0.8,
+            "impact": 0.0,
+            "text": "No flood mapped in the zone in the last 13 months.",
+            "value": false,
+            "normal": false,
+            "unit": null,
+            "provenance": {
+              "source": "cems_gfm",
+              "sourceLabel": "Copernicus EMS / GFM flood extent",
+              "observedAt": "2026-11-05",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "20 m",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          }
+        ]
+      },
+      "geography": {
+        "key": "geography",
+        "value": 0.4,
+        "drivers": [
+          {
+            "component": "geography",
+            "peril": "water",
+            "metric": "basin_water_security",
+            "severity": 1,
+            "sensitivity": null,
+            "impact": 0.3,
+            "text": "Water-scarcity decrees covered this area in 11 of the years since 2008.",
+            "value": 11,
+            "normal": 10,
+            "unit": "years",
+            "provenance": {
+              "source": "dga_decrees",
+              "sourceLabel": "DGA water-scarcity decrees",
+              "observedAt": "2026-07-09",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "province",
+              "licenceTier": "unresolved",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "geography",
+            "peril": "fire",
+            "metric": "fire_recurrence",
+            "severity": 0.2,
+            "sensitivity": null,
+            "impact": 0.06,
+            "text": "Burned area in the zone in 1 of the years since 2012.",
+            "value": 1,
+            "normal": 5,
+            "unit": "years",
+            "provenance": {
+              "source": "gwis_ba",
+              "sourceLabel": "GWIS burned areas (Copernicus)",
+              "observedAt": "2026-10-18",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "~500 m (MODIS/VIIRS)",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          },
+          {
+            "component": "geography",
+            "peril": "frost",
+            "metric": "frost_pocket",
+            "severity": 0.0,
+            "sensitivity": null,
+            "impact": 0.0,
+            "text": "Orchard sits 4 m above the zone average: no frost-pocket position.",
+            "value": 4.0,
+            "normal": 0,
+            "unit": "m",
+            "provenance": {
+              "source": "cop_dem_glo30",
+              "sourceLabel": "Copernicus DEM GLO-30",
+              "observedAt": "2021-04-22",
+              "fetchedAt": "2026-11-07T15:40:00Z",
+              "resolution": "30 m",
+              "licenceTier": "commercial_ok",
+              "dataTier": "enhanced",
+              "stale": false,
+              "estimated": false,
+              "note": null
+            }
+          }
+        ]
+      }
+    },
+    "weights": {
+      "a": 0.65,
+      "b": 0.35,
+      "c": 0.3
+    },
+    "formula": "base = 0.5·(0.65·0.36 + 0.35·0.60)/(0.65+0.35) + 0.5·max(0.36, 0.60) = 0.52; risk = 100·min(1, 0.52·(1 + 0.30·0.40)) = 58.6",
+    "headline": "Bloom: Water-scarcity decree No. 177 covers the Limarí province until 10 Jul 2027.",
+    "drivers": [
+      {
+        "component": "disaster",
+        "peril": "declared_emergency",
+        "metric": "decree_active",
+        "severity": 0.6,
+        "sensitivity": 1.0,
+        "impact": 0.6,
+        "text": "Water-scarcity decree No. 177 covers the Limarí province until 10 Jul 2027.",
+        "value": true,
+        "normal": false,
+        "unit": null,
+        "provenance": {
+          "source": "dga_decrees",
+          "sourceLabel": "DGA water-scarcity decrees",
+          "observedAt": "2026-07-09",
+          "fetchedAt": "2026-11-07T15:40:00Z",
+          "resolution": "province",
+          "licenceTier": "unresolved",
+          "dataTier": "enhanced",
+          "stale": false,
+          "estimated": false,
+          "note": null
+        }
+      },
+      {
+        "component": "climate",
+        "peril": "water",
+        "metric": "water_supply",
+        "severity": 0.52,
+        "sensitivity": 0.7,
+        "impact": 0.364,
+        "text": "Snowmelt forecast 64 % of normal for the Limarí basin; canopy moisture slightly below its own normal.",
+        "value": 64,
+        "normal": 100,
+        "unit": "% of normal",
+        "provenance": {
+          "source": "dga_snowmelt_forecast",
+          "sourceLabel": "DGA snowmelt volume forecast (Sep–Mar)",
+          "observedAt": "2026-10-15",
+          "fetchedAt": "2026-11-07T15:40:00Z",
+          "resolution": "basin",
+          "licenceTier": "unresolved",
+          "dataTier": "enhanced",
+          "stale": false,
+          "estimated": false,
+          "note": "fixture: illustrative value"
+        }
+      },
+      {
+        "component": "geography",
+        "peril": "water",
+        "metric": "basin_water_security",
+        "severity": 1,
+        "sensitivity": null,
+        "impact": 0.3,
+        "text": "Water-scarcity decrees covered this area in 11 of the years since 2008.",
+        "value": 11,
+        "normal": 10,
+        "unit": "years",
+        "provenance": {
+          "source": "dga_decrees",
+          "sourceLabel": "DGA water-scarcity decrees",
+          "observedAt": "2026-07-09",
+          "fetchedAt": "2026-11-07T15:40:00Z",
+          "resolution": "province",
+          "licenceTier": "unresolved",
+          "dataTier": "enhanced",
+          "stale": false,
+          "estimated": false,
+          "note": null
+        }
+      },
+      {
+        "component": "geography",
+        "peril": "fire",
+        "metric": "fire_recurrence",
+        "severity": 0.2,
+        "sensitivity": null,
+        "impact": 0.06,
+        "text": "Burned area in the zone in 1 of the years since 2012.",
+        "value": 1,
+        "normal": 5,
+        "unit": "years",
+        "provenance": {
+          "source": "gwis_ba",
+          "sourceLabel": "GWIS burned areas (Copernicus)",
+          "observedAt": "2026-10-18",
+          "fetchedAt": "2026-11-07T15:40:00Z",
+          "resolution": "~500 m (MODIS/VIIRS)",
+          "licenceTier": "commercial_ok",
+          "dataTier": "enhanced",
+          "stale": false,
+          "estimated": false,
+          "note": null
+        }
+      }
+    ],
+    "creditActions": [
+      {
+        "ruleId": "cr-decree-low-snowmelt",
+        "action": "watch",
+        "message": "Water-scarcity decree active and snowmelt below 70 % of normal: irrigation supply at risk."
+      }
+    ]
+  },
+  "water": {
+    "irrigated": {
+      "value": "yes",
+      "evidence": "Declared irrigated by the lender; CIREN irrigated-area polygon within 500 m (HIDRICO_PUBLICO).",
+      "provenance": {
+        "source": "ciren_riego",
+        "sourceLabel": "CIREN irrigated areas (HIDRICO_PUBLICO)",
+        "observedAt": "2022-01-01",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "polygon",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    },
+    "demand": {
+      "kc": 0.6,
+      "eto7dMm": 28.4,
+      "need7dMm": 17.0,
+      "need30dMm": 70.2,
+      "provenance": {
+        "source": "derived",
+        "sourceLabel": "Derived (service)",
+        "observedAt": "2026-11-06",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "n/a",
+        "licenceTier": "commercial_ok",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": "ETc = Kc(bloom) × ETo"
+      }
+    },
+    "supply": {
+      "decreeActive": true,
+      "decreeId": "DGA decree No. 177 of 9 Jul 2026",
+      "decreeUntil": "2027-07-10",
+      "snowmeltPctOfNormal": 64,
+      "basin": "Limarí",
+      "provenance": {
+        "source": "dga_decrees",
+        "sourceLabel": "DGA water-scarcity decrees",
+        "observedAt": "2026-07-09",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "province",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": "Snowmelt % is fixture: illustrative value"
+      }
+    },
+    "stress": {
+      "ndmiZ": -0.8,
+      "ndmiPeerDelta": -0.2,
+      "canopyMinusAirC": null,
+      "level": "mild",
+      "provenance": {
+        "source": "s2_l2a_pc",
+        "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+        "observedAt": "2026-11-03",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "10 m",
+        "licenceTier": "commercial_ok",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": "No clear Landsat pass in the last 16 days for canopy temperature"
+      }
+    },
+    "abandonment": {
+      "flag": false,
+      "confidence": "high",
+      "evidence": "Dry-season 2025–26 NDVI stayed within 1 sd of its own history and of 7 peers.",
+      "provenance": {
+        "source": "s2_l2a_pc",
+        "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+        "observedAt": "2026-04-30",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "10 m",
+        "licenceTier": "commercial_ok",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    }
+  },
+  "peers": {
+    "zoneId": "auto-cl-ovalle-table-grape",
+    "nPeers": 7,
+    "farmNdviZ": -0.6,
+    "peerMedianNdviZ": -0.5,
+    "farmNdmiZ": -0.8,
+    "peerMedianNdmiZ": -0.6,
+    "reading": "normal",
+    "provenance": {
+      "source": "ciren_catastro",
+      "sourceLabel": "CIREN Catastro Frutícola + Sentinel-2 L2A",
+      "observedAt": "2026-11-03",
+      "fetchedAt": "2026-11-07T15:40:00Z",
+      "resolution": "10 m",
+      "licenceTier": "unresolved",
+      "dataTier": "enhanced",
+      "stale": false,
+      "estimated": false,
+      "note": null
+    }
+  },
+  "series": {
+    "ndvi": {
+      "variable": "ndvi",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2026-10-24",
+          "value": 0.41,
+          "p10": 0.38,
+          "p50": 0.45,
+          "p90": 0.52,
+          "estimated": false
+        },
+        {
+          "date": "2026-10-29",
+          "value": 0.43,
+          "p10": 0.4,
+          "p50": 0.47,
+          "p90": 0.54,
+          "estimated": true
+        },
+        {
+          "date": "2026-11-03",
+          "value": 0.44,
+          "p10": 0.42,
+          "p50": 0.49,
+          "p90": 0.56,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "s2_l2a_pc",
+        "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+        "observedAt": "2026-11-03",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "10 m",
+        "licenceTier": "commercial_ok",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": "2026-10-29 is gap-filled (Whittaker); baseline 5 seasons"
+      }
+    },
+    "ndmi": {
+      "variable": "ndmi",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2026-10-24",
+          "value": 0.08,
+          "p10": 0.07,
+          "p50": 0.12,
+          "p90": 0.17,
+          "estimated": false
+        },
+        {
+          "date": "2026-10-29",
+          "value": 0.08,
+          "p10": 0.08,
+          "p50": 0.13,
+          "p90": 0.18,
+          "estimated": true
+        },
+        {
+          "date": "2026-11-03",
+          "value": 0.09,
+          "p10": 0.08,
+          "p50": 0.13,
+          "p90": 0.18,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "s2_l2a_pc",
+        "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+        "observedAt": "2026-11-03",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "10 m",
+        "licenceTier": "commercial_ok",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    },
+    "precip": {
+      "variable": "precip",
+      "unit": "mm",
+      "points": [
+        {
+          "date": "2026-11-04",
+          "value": 0.0,
+          "p10": 0.0,
+          "p50": 0.0,
+          "p90": 0.1,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-05",
+          "value": 0.0,
+          "p10": 0.0,
+          "p50": 0.0,
+          "p90": 0.1,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-06",
+          "value": 0.0,
+          "p10": 0.0,
+          "p50": 0.0,
+          "p90": 0.1,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "cr2met_nrt",
+        "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+        "observedAt": "2026-11-06",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "0.05° (~5 km)",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    },
+    "tmin": {
+      "variable": "tmin",
+      "unit": "°C",
+      "points": [
+        {
+          "date": "2026-11-04",
+          "value": 6.1,
+          "p10": 4.0,
+          "p50": 6.9,
+          "p90": 9.3,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-05",
+          "value": 5.4,
+          "p10": 4.0,
+          "p50": 7.0,
+          "p90": 9.4,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-06",
+          "value": 7.0,
+          "p10": 4.1,
+          "p50": 7.0,
+          "p90": 9.4,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "cr2met_nrt",
+        "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+        "observedAt": "2026-11-06",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "0.05° (~5 km)",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    },
+    "tmax": {
+      "variable": "tmax",
+      "unit": "°C",
+      "points": [
+        {
+          "date": "2026-11-04",
+          "value": 27.9,
+          "p10": 21.8,
+          "p50": 25.1,
+          "p90": 28.4,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-05",
+          "value": 29.8,
+          "p10": 21.9,
+          "p50": 25.2,
+          "p90": 28.5,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-06",
+          "value": 28.6,
+          "p10": 21.9,
+          "p50": 25.2,
+          "p90": 28.5,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "cr2met_nrt",
+        "sourceLabel": "CR2MET NRT (CR2, Universidad de Chile)",
+        "observedAt": "2026-11-06",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "0.05° (~5 km)",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": false,
+        "note": null
+      }
+    },
+    "eto": {
+      "variable": "eto",
+      "unit": "mm",
+      "points": [
+        {
+          "date": "2026-11-04",
+          "value": 4.0,
+          "p10": 3.4,
+          "p50": 4.0,
+          "p90": 4.6,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-05",
+          "value": 4.3,
+          "p10": 3.4,
+          "p50": 4.0,
+          "p90": 4.6,
+          "estimated": false
+        },
+        {
+          "date": "2026-11-06",
+          "value": 4.1,
+          "p10": 3.5,
+          "p50": 4.1,
+          "p90": 4.7,
+          "estimated": false
+        }
+      ],
+      "provenance": {
+        "source": "derived",
+        "sourceLabel": "FAO-56 Hargreaves from CR2MET Tmin/Tmax",
+        "observedAt": "2026-11-06",
+        "fetchedAt": "2026-11-07T15:40:00Z",
+        "resolution": "0.05° (~5 km)",
+        "licenceTier": "unresolved",
+        "dataTier": "enhanced",
+        "stale": false,
+        "estimated": true,
+        "note": "Hargreaves ETo (no radiation/wind inputs)"
+      }
+    }
+  },
+  "nextInstallment": {
+    "dueDate": "2026-11-30",
+    "amount": 30000.0
+  },
+  "exposure": 120000.0,
+  "stageBands": [
+    {
+      "stage": "bloom",
+      "label": "Bloom",
+      "start": "2025-10-07",
+      "end": "2025-11-15"
+    },
+    {
+      "stage": "berry_growth",
+      "label": "Berry growth",
+      "start": "2025-11-16",
+      "end": "2025-12-14"
+    },
+    {
+      "stage": "harvest",
+      "label": "Harvest",
+      "start": "2025-12-15",
+      "end": "2026-04-30"
+    },
+    {
+      "stage": "dormancy",
+      "label": "Dormancy",
+      "start": "2026-05-01",
+      "end": "2026-08-31"
+    },
+    {
+      "stage": "budbreak",
+      "label": "Budbreak",
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    {
+      "stage": "bloom",
+      "label": "Bloom",
+      "start": "2026-10-01",
+      "end": "2026-11-07"
+    }
+  ],
+  "dataAsOf": {
+    "ndvi": "2026-11-03",
+    "ndmi": "2026-11-03",
+    "precip": "2026-11-06",
+    "tmin": "2026-11-06",
+    "tmax": "2026-11-06",
+    "eto": "2026-11-06",
+    "imagery": "2026-11-03",
+    "events": "2026-11-07",
+    "water_supply": "2026-10-15"
+  },
+  "warnings": [
+    "Fixture: series are truncated to 3 points; real responses cover the 13 months ending asOf."
+  ]
+}

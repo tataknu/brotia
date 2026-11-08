@@ -1,0 +1,443 @@
+id,name,region,lat,lon
+2,Azapa2,Arica y Parinacota,-18.520444444,-70.232666667
+144,Azapa Alto,Arica y Parinacota,-18.577453833,-69.947264
+146,Lluta Bajo,Arica y Parinacota,-18.413709833,-70.206109833
+147,Lluta Alto,Arica y Parinacota,-18.393556,-69.963339
+148,Lluta Medio,Arica y Parinacota,-18.452168,-70.067102
+151,Azapa Medio,Arica y Parinacota,-18.547727833,-70.124645833
+309,Cerro Blanco,Arica y Parinacota,-18.575,-70.07
+310,Chaca,Arica y Parinacota,-18.81,-70.156
+377,Caleta Vitor,Arica y Parinacota,-18.781479,-70.283902
+391,Ticnamar,Arica y Parinacota,-18.58007,-69.495965
+655,Pampa Concordia,Arica y Parinacota,-18.362922,-70.302033
+263,Codpa,Arica y Parinacota,-18.833055556,-69.744444444
+281,Camarones,Arica y Parinacota,-19.0,-69.9
+543,Cuya,Arica y Parinacota,-19.161922,-70.180968
+145,Lago Chungar&#xE1;,Arica y Parinacota,-18.281824,-69.138499833
+149,Socoroma,Arica y Parinacota,-18.263888833,-69.607675
+150,Salar de Surire,Arica y Parinacota,-18.794647,-69.084442833
+282,Putre,Arica y Parinacota,-18.2,-69.6
+390,Bel&#xE9;n,Arica y Parinacota,-18.468208,-69.523279
+658,Chapiqui&#xF1;a,Arica y Parinacota,-18.389472,-69.539417
+152,Visviri,Arica y Parinacota,-17.594605,-69.477417
+852,Bajo Soga,Tarapacá,-19.73416,-69.78861
+853,Pachica,Tarapacá,-19.865293,-69.435462
+551,Pica,Tarapacá,-20.501476,-69.342572
+154,Ollag&#xFC;e,Antofagasta,-21.2167,-68.233055556
+479,Altos la Portada,Antofagasta,-23.5040977,-70.4046663
+619,La Cachina,Antofagasta,-25.433987,-70.453243
+153,Calama Rural,Antofagasta,-22.471029833,-68.94298
+261,Caspana,Antofagasta,-22.334515,-68.213597
+155,San Pedro de Atacama,Antofagasta,-22.9322,-68.213458
+156,Socaire,Antofagasta,-23.590585833,-67.890062833
+157,Toconao,Antofagasta,-23.1905,-68.007169
+487,Camar,Antofagasta,-23.407102,-67.963735
+6,Copiapo,Atacama,-27.345833333,-70.407777778
+7,Bodega,Atacama,-27.343611111,-70.372777778
+700,Mayorquina,Atacama,-27.337762,-70.567188
+706,Amalfi,Atacama,-27.411203,-70.302629
+582,La Copa,Atacama,-27.345439,-70.622009
+3,Tranque Lautaro,Atacama,-27.975583333,-70.0
+5,Hornitos,Atacama,-27.728888889,-70.196666667
+283,Amolana,Atacama,-28.0,-70.0
+608,Iglesia Colorada,Atacama,-28.1489444,-69.89183333
+698,Casa Rosada,Atacama,-27.84914,-70.0875
+702,Copayapu,Atacama,-27.456639,-70.264139
+704,Las Canteras,Atacama,-27.742834,-70.182129
+708,Maria Isabel,Atacama,-27.335098,-70.780382
+710,Nantoco,Atacama,-27.55176,-70.26957
+712,Altar de la Virgen,Atacama,-27.99994,-69.98
+447,Falda Verde,Atacama,-26.299806,-70.624111
+159,Centro Experimental Huasco,Atacama,-28.58113,-70.798289833
+348,Cachiyuyo,Atacama,-29.0572,-70.90517
+716,Imperial Alto,Atacama,-28.613677,-70.709382
+9,Alto del Carmen,Atacama,-28.768166667,-70.449222222
+714,El Parral,Atacama,-28.981546,-70.195909
+8,Vallenar,Atacama,-28.526305556,-70.943083333
+612,Freirina,Atacama,-28.5066389,-71.10372222
+323,Cerro Grande,Coquimbo,-29.93849,-71.22358
+326,La Serena,Coquimbo,-29.91502,-71.24221
+337,Gabriela Mistral,Coquimbo,-29.97852,-71.08039
+356,El Romeral,Coquimbo,-29.75497,-71.25753
+325,Tongoy Balsa CMET,Coquimbo,-30.27514,-71.56114
+327,Coquimbo,Coquimbo,-30.0,-71.4
+334,Pan de Az&#xFA;car [INIA],Coquimbo,-30.06667,-71.23333
+345,UCN Guayacan,Coquimbo,-29.96663,-71.3528
+352,Las Cardas,Coquimbo,-30.25145,-71.2569
+339,Andacollo,Coquimbo,-30.24971,-71.06643
+349,Punta de Choros,Coquimbo,-29.24594,-71.4687
+616,El Trapiche,Coquimbo,-29.3718611,-71.11608333
+335,Pisco Elqui,Coquimbo,-30.11667,-70.48333
+11,Vicu&#xF1;a FDF,Coquimbo,-30.038333333,-70.696666667
+331,La Laguna,Coquimbo,-30.20289,-70.03718
+340,Vicu&#xF1;a CEAZA,Coquimbo,-30.03832,-70.69655
+18,Illapel FDF,Coquimbo,-31.731055556,-71.205555556
+329,Huintil,Coquimbo,-31.57319,-70.99831
+344,Illapel CEAZA,Coquimbo,-31.64814,-71.19695
+342,Canela,Coquimbo,-31.39,-71.41
+350,Mincha Sur,Coquimbo,-31.59,-71.42
+567,Huentelauqu&#xE9;n,Coquimbo,-31.5885,-71.509833
+360,Tilama,Coquimbo,-32.08,-71.16
+393,Los Vilos - Quebrachar,Coquimbo,-31.8603889,-71.4395833
+467,Quilimari,Coquimbo,-32.119098,-71.460005
+19,Salamanca FDF,Coquimbo,-31.787388889,-70.959611111
+357,Salamanca CEAZA,Coquimbo,-31.89,-70.75
+13,Recoleta,Coquimbo,-30.490916667,-71.165777778
+14,San Juli&#xE1;n,Coquimbo,-30.655277778,-71.318888889
+158,Algarrobo Bajo,Coquimbo,-30.633099833,-71.451409833
+160,Camarico,Coquimbo,-30.698989833,-71.3217
+324,Ovalle,Coquimbo,-30.59203,-71.24797
+347,Quebrada Seca,Coquimbo,-30.49613,-71.49051
+358,Pe&#xF1;ablanca,Coquimbo,-30.90056,-71.55375
+719,Emiliana - Limar&#xED;,Coquimbo,-30.7122546,-71.3567588
+772,Los Acacios,Coquimbo,-30.700483,-71.286422
+821,Ovalle - Quebrada Seca (Ex - Ovalle - Quebrada Seca),Coquimbo,-30.52726,-71.45012
+16,Combarbal&#xE1; FDF,Coquimbo,-31.188333333,-70.998888889
+353,Combarbal&#xE1; CEAZA,Coquimbo,-31.20093,-71.00057
+10,El Palqui FDF,Coquimbo,-30.746388889,-70.936944444
+15,Monte Patria,Coquimbo,-30.682222222,-70.939444444
+161,El Palqui INIA,Coquimbo,-30.774543833,-70.926831
+328,Rapel,Coquimbo,-30.7232,-70.7726
+338,Tascadero,Coquimbo,-31.26282,-70.54
+632,Chaguaral,Coquimbo,-30.857084,-70.730689
+17,Punitaqui,Coquimbo,-30.78,-71.256111111
+661,Ajial de Quiles,Coquimbo,-30.920303,-71.3841
+664,La Polvareda,Coquimbo,-30.882719,-71.239736
+770,Las Naranjas,Coquimbo,-30.843472,-71.347139
+343,Hurtado,Coquimbo,-30.30917,-70.62646
+346,Pichasca,Coquimbo,-30.41306,-70.90275
+354,Laguna Hurtado,Coquimbo,-30.51102,-70.4467
+38,Casablanca,Valparaíso,-33.320833333,-71.437222222
+721,Emiliana - Casablanca,Valparaíso,-33.3653188,-71.3067019
+388,El Maqui (ex Puchuncavi),Valparaíso,-32.754967,-71.343432
+398,Puchuncavi,Valparaíso,-32.7310833,-71.4241389
+623,Los Espinos,Valparaíso,-32.8901667,-70.3821388
+24,Calle Larga,Valparaíso,-32.870555556,-70.646111111
+25,Rinconada,Valparaíso,-32.837055556,-70.692527778
+22,San Esteban,Valparaíso,-32.750444444,-70.557583333
+274,Pullanc&#xF3;n,Valparaíso,-32.30708283,-71.23075
+280,El Guindo,Valparaíso,-32.35716683,-71.345472
+20,Cabildo,Valparaíso,-32.362194444,-70.819722222
+21,Petorca,Valparaíso,-32.396666667,-71.029444444
+273,San Lorenzo,Valparaíso,-32.43941683,-71.00296083
+277,Las Puertas,Valparaíso,-32.362194,-70.81972183
+278,Paihu&#xE9;n,Valparaíso,-32.37927783,-70.841622
+275,Palquico,Valparaíso,-32.25702783,-71.14163883
+276,Manuel Montt,Valparaíso,-32.322861,-71.06105583
+279,Catapilco,Valparaíso,-32.56033283,-71.311806
+32,Quillota,Valparaíso,-32.892388889,-71.206722222
+803,Quillota - Roca Fuerte (Ex - Err&#xE1;zuriz),Valparaíso,-32.89787,-71.36809
+35,Hijuelas,Valparaíso,-32.847944444,-71.067083333
+33,La Cruz FDF,Valparaíso,-32.8,-71.2
+284,La Cruz INIA,Valparaíso,-32.822,-71.2304
+34,Nogales,Valparaíso,-32.736388889,-71.199166667
+559,Cuncum&#xE9;n,Valparaíso,-33.736215,-71.421579
+723,Luis Felipe Edwards - Leyda,Valparaíso,-33.6711073,-71.5370882
+215,Cartagena - Lo Abarca (Ex - Casa Mar&#xED;n),Valparaíso,-33.524444444,-71.545555556
+742,Luis Felipe Edwards &#x2013; Santo Domingo,Valparaíso,-33.737533,-71.639331
+26,San Felipe,Valparaíso,-32.755333,-70.706917
+290,Curim&#xF3;n,Valparaíso,-32.799972,-70.700306
+31,Catemu,Valparaíso,-32.757777778,-70.942777778
+30,Llayllay,Valparaíso,-32.903333333,-70.950555556
+29,Panquehue,Valparaíso,-32.756638889,-70.808833333
+27,Putaendo,Valparaíso,-32.593694444,-70.726111111
+28,Santa Mar&#xED;a,Valparaíso,-32.749166667,-70.660277778
+499,Colliguay,Valparaíso,-33.1686089,-71.1557171
+36,Limache,Valparaíso,-32.994444444,-71.260666667
+37,Olmu&#xE9;,Valparaíso,-33.021944444,-71.186388889
+162,La Platina,Metropolitana,-33.56987,-70.627972833
+373,Rinconada - U de Chile,Metropolitana,-33.497093,-70.845436
+42,Pirque,Metropolitana,-33.673888889,-70.586944444
+48,Colina,Metropolitana,-33.218777778,-70.715833333
+438,Peldehue,Metropolitana,-33.1471111,-70.6602222
+736,Chacabuco,Metropolitana,-33.2488,-70.72322
+688,El Oasis,Metropolitana,-33.286268,-70.83606
+740,Chorrillos,Metropolitana,-33.34368,-70.8185
+40,Huech&#xFA;n (ex Lampa),Metropolitana,-33.077222222,-70.752777778
+41,Til Til,Metropolitana,-33.121333333,-70.834777778
+46,Lo Herrera,Metropolitana,-33.662888889,-70.765916667
+43,Buin,Metropolitana,-33.707361111,-70.701555556
+221,Buin - Alto Jahuel (Ex - Santa Rita),Metropolitana,-33.718611111,-70.669166667
+285,Los Tilos,Metropolitana,-33.7,-70.7
+738,Valdivia de Paine,Metropolitana,-33.7986592,-70.8413394
+49,Calera de Tango,Metropolitana,-33.630555556,-70.799166667
+47,Huelquen,Metropolitana,-33.862083333,-70.639194444
+850,Paine - El Liguai (Ex - P&#xE9;rez Cruz),Metropolitana,-33.84317,-70.61989
+39,San Diego,Metropolitana,-33.703027778,-71.371861111
+50,Chocalan,Metropolitana,-33.725555556,-71.209722222
+51,Mallarauco,Metropolitana,-33.586666667,-70.996111111
+53,Alhu&#xE9;,Metropolitana,-34.065,-71.253888889
+511,El Asiento,Metropolitana,-34.029282,-70.995098
+765,Santa Rita - Alhu&#xE9;,Metropolitana,-34.028,-71.1429
+52,Curacav&#xED;,Metropolitana,-33.438611111,-71.025555556
+732,La Aurora,Metropolitana,-33.429661,-71.029152
+728,El Parr&#xF3;n,Metropolitana,-33.508555,-71.084029
+856,Mar&#xED;a Pinto,Metropolitana,-33.494772,-71.092375
+54,San Pedro,Metropolitana,-33.891388889,-71.394166667
+268,San Pedro de Melipilla,Metropolitana,-33.897935,-71.452881
+851,San Pedro - Trinidad (Ex - Ventisquero - Trinidad),Metropolitana,-34.023,-71.344
+45,Talagante,Metropolitana,-33.67325,-70.921138889
+734,Santa Amelia,Metropolitana,-33.668744,-70.912195
+44,Melipilla,Metropolitana,-33.65,-71.1
+56,El Monte,Metropolitana,-33.691944444,-71.100833333
+55,Isla de Maipo,Metropolitana,-33.763888889,-70.886666667
+267,San Antonio de Naltahua,Metropolitana,-33.725439,-71.042558
+849,Isla de Maipo - Tarapac&#xE1; (Ex - San Pedro - Tarapac&#xE1;),Metropolitana,-33.773,-70.931
+730,El Villorrio,Metropolitana,-33.562443,-70.875305
+65,Punta Cortes,O'Higgins,-34.16975,-70.791277778
+61,Codegua Norte (ex Rancagua),O'Higgins,-34.108888889,-70.639583333
+64,Codegua,O'Higgins,-34.110277778,-70.653611111
+69,Coltauco,O'Higgins,-34.237777778,-71.005
+62,Graneros Norte,O'Higgins,-34.061944444,-70.705
+59,Santa Brisila,O'Higgins,-34.298080556,-71.3238
+70,Rapel ,O'Higgins,-34.216666667,-71.3
+67,Los Maquis,O'Higgins,-34.499722222,-70.839722222
+63,Mostazal,O'Higgins,-34.001666667,-70.701666667
+66,Olivar Alto,O'Higgins,-34.203055556,-70.824166667
+71,Peumo Norte (ex Las Cabras),O'Higgins,-34.326944444,-71.258888889
+630,Liceo Jean Buchanan,O'Higgins,-34.3972892,-71.1646719
+57,Quinta Tilcoco,O'Higgins,-34.362,-70.935277778
+389,El Arenal,O'Higgins,-34.35575,-70.991278
+667,Rayentu&#xE9;,O'Higgins,-34.321704,-70.833901
+82,Requinoa,O'Higgins,-34.321667,-70.833694
+250,Requinoa - Altair (Ex - San Pedro - Totihue),O'Higgins,-34.341111111,-70.727777778
+758,Santa Carolina - Totihue,O'Higgins,-34.33721,-70.80092
+68,San Vicente TT,O'Higgins,-34.457777778,-71.050555556
+163,El Tambo,O'Higgins,-34.470992,-70.986951
+824,San Vicente - Idahue (Ex - San Vicente - Idahue),O'Higgins,-34.49054,-71.20247
+483,Puente Negro,O'Higgins,-34.386351,-71.98571
+80,La Estrella Norte,O'Higgins,-34.213333333,-71.716111111
+260,Hidango,O'Higgins,-34.1,-71.8
+81,Marchigue,O'Higgins,-34.405555556,-71.607222222
+752,Montes - Marchigue,O'Higgins,-34.34059,-71.65213
+653,Licanchen,O'Higgins,-33.9297485,-71.8010025
+830,Navidad - Ucuquer (Ex - Navidad - Ucuquer),O'Higgins,-33.97803,-71.69775
+58,San Fernando,O'Higgins,-34.577833333,-70.975527778
+72,El Carmen,O'Higgins,-34.608055556,-70.975
+229,San Fernando - Los Lingues (Ex - Casa Silva - Los Lingues),O'Higgins,-34.502222222,-70.894722222
+74,Ch&#xE9;pica,O'Higgins,-34.738611111,-71.258055556
+60,Chimbarongo,O'Higgins,-34.670833333,-71.031666667
+774,Peor es Nada,O'Higgins,-34.783248,-71.043411
+77,Lolol,O'Higgins,-34.713611111,-71.629722222
+827,Lolol - Nilahue (Ex - Lolol - Nilahue),O'Higgins,-34.69942,-71.76865
+75,Nancagua 2,O'Higgins,-34.660833333,-71.283611111
+725,Luis Felipe Edwards - Puquillay,O'Higgins,-34.6799266,-71.1307992
+751,VP - Nancagua,O'Higgins,-34.651639,-71.216778
+79,Palmilla,O'Higgins,-34.546666667,-71.395
+230,Peralillo - Calleuque (Ex - Ventisquero - Peralillo),O'Higgins,-34.394444444,-71.445555556
+294,Placilla Chacarilla,O'Higgins,-34.641583,-71.135667
+76,Santa Cruz,O'Higgins,-34.690833333,-71.4
+232,Santa Cruz - Apalta 1 (Ex - Lapostolle - Apalta),O'Higgins,-34.593611111,-71.302222222
+754,Montes - Apalta,O'Higgins,-34.61104,-71.27045
+767,Santa Rita - Apalta,O'Higgins,-34.6094,-71.2854
+495,Deuca (ex Lien),Maule,-35.099146,-71.969797
+254,Maule - Santa Margarita (Ex - Aromo),Maule,-35.535555556,-71.598333333
+749,VP - Maule,Maule,-35.527889,-71.614778
+95,Pencahue,Maule,-35.455833333,-71.772222222
+253,Pencahue - Norte (Ex - San Pedro - Pencahue),Maule,-35.333888889,-71.769166667
+625,Pencahue - Sur (Ex - Concha y Toro),Maule,-35.44522,-71.83436
+312,San Clemente,Maule,-35.531,-71.574
+408,Las Lomillas,Maule,-35.5416389,-71.3182219
+806,San Clemente - la Higuera (Ex - Terranoble),Maule,-35.46578,-71.49424
+94,San Rafael,Maule,-35.303611111,-71.475833333
+164,Cauquenes,Maule,-35.955973,-72.289938
+166,Coronel de Maule,Maule,-36.059091833,-72.477688833
+167,Los Despachos,Maule,-36.062114,-72.371438833
+168,Santa Sof&#xED;a,Maule,-35.977643,-72.359864
+169,Sauzal,Maule,-35.714879,-72.111307833
+747,VP - Cauquenes,Maule,-35.759194,-72.069611
+762,Cauquenes-San Francisco (Ex - Santa Carolina-San Francisco),Maule,-36.06524,-72.4629
+764,Cauquenes-El Encuentro (Ex - Santa Carolina - El Encuentro),Maule,-35.89338,-72.03633
+809,Cauquenes - Keule (Ex - Concha y Toro - Cauquenes),Maule,-35.8631,-72.05086
+841,Cauquenes - Quipato (Ex - Santa Rita - Cauquenes),Maule,-35.99,-71.1373
+165,Chanco,Maule,-35.706556,-72.511167
+503,Lomas,Maule,-35.8354491,-72.587489
+291,Tutuquen,Maule,-34.961611,-71.315861
+491,San Jorge Los Niches,Maule,-35.0918,-71.120579
+696,Curic&#xF3;,Maule,-34.940973,-71.222752
+743,VP - Curic&#xF3;,Maule,-35.023972,-71.151389
+83,Tres Esquinas,Maule,-35.144722222,-71.216111111
+92,Lontue,Maule,-35.049722222,-71.248055556
+238,R&#xED;o Claro - La Reserva (Ex - Aresti),Maule,-35.151388889,-71.298055556
+769,Santa Rita - Porvenir,Maule,-35.1725,-71.2755
+91,Rauco,Maule,-34.925,-71.283055556
+90,Sagrada Familia,Maule,-34.996944444,-71.374166667
+857,Villa Pratt,Maule,-35.062167,-71.580944
+86,Morza Norte (ex Peteroa),Maule,-34.835,-71.024166667
+88,Morza,Maule,-34.851666667,-71.020277778
+89,Teno,Maule,-34.878888889,-71.165277778
+293,Rarin,Maule,-34.765667,-71.956667
+413,Vichuquen,Maule,-34.8549722,-72.0260556
+292,Miraflores FDF,Maule,-35.918056,-71.613306
+311,Santa Amada,Maule,-35.764696,-71.574996
+98,Colb&#xFA;n,Maule,-35.662222222,-71.453611111
+99,Linares 2,Maule,-35.932194,-71.566833
+100,Longav&#xED; Norte,Maule,-36.053611111,-71.683333333
+101,Longav&#xED; Sur,Maule,-35.953055556,-71.608055556
+628,Miraflores INIA,Maule,-35.818051,-71.775019
+102,Parral,Maule,-36.213333333,-71.7375
+368,Monte Flor-Tucapel,Maule,-36.2448,-71.93429
+403,Campanacura,Maule,-35.9738889,-72.0276389
+103,Parral Norte ,Maule,-36.230277778,-71.732222222
+694,Luis Felipe Edwards-Las Rosas,Maule,-35.889749,-71.856565
+727,Luis Felipe Edwards - Mantul,Maule,-35.9298435,-71.7748861
+745,VP - Retiro,Maule,-36.018778,-71.772639
+93,Maule,Maule,-35.576666667,-71.678888889
+105,San Javier,Maule,-35.629722222,-71.603888889
+241,San Javier - Mingre (Ex - J. Bouchon),Maule,-35.569166667,-71.995277778
+104,Villa Alegre,Maule,-35.696111111,-71.682222222
+84,Yerbas Buenas 2,Maule,-35.690472222,-71.553944444
+97,Yerbas Buenas,Maule,-35.743888889,-71.573055556
+175,Ninhue,Ñuble,-36.398105,-72.395202833
+179,Santa Rosa,Ñuble,-36.535195,-71.916433833
+112,Bulnes,Ñuble,-36.735555556,-72.366944444
+788,Bulnes - Larqui (Ex - Vi&#xF1;a Casanueva),Ñuble,-37.649,-72.216
+418,Cobquecura,Ñuble,-36.1245278,-72.7953889
+107,Coihueco,Ñuble,-36.557222222,-71.817222222
+109,Trehualemu (ex San Ignacio Sur),Ñuble,-36.920833333,-71.893333333
+181,Navidad,Ñuble,-36.907300833,-71.935601
+108,Pinto,Ñuble,-36.713333333,-71.875555556
+177,Portezuelo,Ñuble,-36.532037,-72.368268
+113,Quill&#xF3;n,Ñuble,-36.745,-72.504722222
+314,Centro Experimental Arroz,Ñuble,-36.409298,-72.006731
+111,Los Coligues (ex Chillan Viejo),Ñuble,-36.629166667,-72.233333333
+106,&#xD1;iqu&#xE9;n,Ñuble,-36.293611111,-71.893611111
+110,San Ignacio,Ñuble,-36.843611111,-72.124722222
+114,San Nicol&#xE1;s,Ñuble,-36.517777778,-72.094444444
+507,Puralihue,Ñuble,-36.431036,-72.647783
+180,Yungay,Ñuble,-37.141384833,-72.011761
+176,Nueva Aldea,Biobío,-36.648899833,-72.51349
+673,Santa Luc&#xED;a,Biobío,-36.69746,-72.704216
+178,Punta Parra,Biobío,-36.672393833,-72.964684
+174,Lebu,Biobío,-37.682541,-73.522166833
+670,Las Puentes,Biobío,-37.305126,-73.436712
+170,Ca&#xF1;ete,Biobío,-37.892071,-73.411734833
+776,Contulmo Urbano,Biobío,-38.018318,-73.230247
+369,Ponotro,Biobío,-38.27529,-73.498489
+118,Los Angeles,Biobío,-37.447222222,-72.517222222
+119,Las Vi&#xF1;as,Biobío,-37.501388889,-72.300555556
+120,Tierras Nobles,Biobío,-37.441944444,-72.617777778
+173,Human,Biobío,-37.433556,-72.243975
+718,Antuco,Biobío,-37.434978,-72.107747
+778,La Colonia,Biobío,-37.288681,-72.59151
+116,Mulch&#xE9;n,Biobío,-37.703611111,-72.216944444
+117,Negrete,Biobío,-37.595277778,-72.466666667
+785,Conosur - Mulch&#xE9;n,Biobío,-36.24571,-72.2994
+812,Nacimiento - Millapoa (Ex - Miguel Torres - Nacimiento),Biobío,-37.39316,-72.67649
+676,Collimallin,Araucanía,-38.606698,-72.701057
+188,Quiripio,Araucanía,-38.639721833,-73.244167
+192,Tranapuente,Araucanía,-38.690832833,-73.353333
+124,Cunco,Araucanía,-39.006666667,-72.251388889
+189,El Quincho,Araucanía,-38.913175,-72.183514
+315,Puala,Araucanía,-39.381944,-71.5725
+423,Allip&#xE9;n,Araucanía,-38.9997222,-72.5210833
+428,Los Quilantos,Araucanía,-38.9083333,-72.7982222
+640,Radal,Araucanía,-38.98547,-72.381617
+321,Caballer&#xED;a (ex San Fabi&#xE1;n),Araucanía,-38.446389,-72.849444
+129,Gorbea,Araucanía,-39.103055556,-72.615277778
+184,Cuarta Faja,Araucanía,-39.115555833,-72.605277833
+317,Sta In&#xE9;s,Araucanía,-38.504722,-72.343611
+523,La Paz,Araucanía,-39.428135,-72.718521
+371,El Membrillo,Araucanía,-38.834167,-71.6825
+126,Nueva Imperial,Araucanía,-38.761388889,-72.8775
+191,Santa Adela,Araucanía,-38.756110833,-72.891389
+644,Taplon,Araucanía,-38.83295,-72.506385
+642,San Sebasti&#xE1;n,Araucanía,-38.435064,-72.399024
+617,Faja Maisan,Araucanía,-39.071148,-72.92198
+128,Loncoche,Araucanía,-39.393333333,-72.636666667
+539,San Enrique,Araucanía,-39.261711,-71.868097
+185,Dominguez,Araucanía,-38.918610833,-73.240278
+125,Pocoyan,Araucanía,-38.9925,-73.098888889
+182,Llollinco,Araucanía,-38.976944,-72.997777833
+547,Los Arrayanes,Araucanía,-39.165408,-73.132936
+183,Carillanca,Araucanía,-38.693055833,-72.417221833
+316,Huiscapi,Araucanía,-39.263333,-72.398889
+433,Vida Nueva,Araucanía,-39.1963889,-72.2613611
+322,Perales,Araucanía,-38.663889,-72.808889
+646,El Vergel,Araucanía,-37.8278098,-72.6596649
+121,Collipulli,Araucanía,-38.001111111,-72.245555556
+319,Surco y Semilla,Araucanía,-38.0325,-72.285278
+190,San Luis,Araucanía,-38.401667,-71.9025
+648,Pailahueque,Araucanía,-38.145552,-72.6596649
+313,Marimenuco,Araucanía,-38.731667,-71.140833
+519,San Rafael,Araucanía,-38.070667,-72.724176
+531,Gaby Ranquilco,Araucanía,-38.116919,-72.883497
+370,La Isla,Araucanía,-38.03,-72.982
+115,Renaico,Araucanía,-37.726111111,-72.604722222
+320,Manzanares,Araucanía,-37.7725,-72.546111
+122,Galvarino ,Araucanía,-38.359166667,-72.709722222
+123,Traigu&#xE9;n,Araucanía,-38.357222222,-72.5475
+186,La Providencia,Araucanía,-38.289444,-72.611389
+815,Traigu&#xE9;n - La Esperanza (Ex - Aquitania),Araucanía,-38.21102,-72.6473
+318,Las Palmas,Araucanía,-38.227778,-72.273333
+375,Austral,Los Ríos,-39.787428,-73.234546
+269,Santa Carla,Los Ríos,-39.679571,-72.611389
+132,Mafil,Los Ríos,-39.631388889,-72.948333333
+266,Las Lomas,Los Ríos,-39.700929,-73.014793
+131,Mariquina,Los Ríos,-39.620833333,-73.073333333
+133,Paillaco,Los Ríos,-40.096388889,-72.926666667
+193,Lago Verde,Los Ríos,-40.165081,-72.633842833
+135,R&#xED;o Bueno,Los Ríos,-40.322777778,-72.979444444
+136,La Union,Los Ríos,-40.316666667,-73.024166667
+286,Palermo,Los Ríos,-40.3,-73.1
+295,La Union Norte,Los Ríos,-40.288667,-73.071333
+818,Futrono - Llasquenco (Ex - Casa Silva),Los Ríos,-40.1329,-72.31232
+194,El Cardal,Los Ríos,-40.386736833,-72.919058
+376,Rucatayo,Los Ríos,-40.598896,-72.586541
+782,Putenio,Los Lagos,-41.670875,-73.133367
+201,Polizones,Los Lagos,-41.115147,-73.376627833
+202,Quilanto,Los Lagos,-41.030728,-72.996308833
+199,Los Canelos,Los Lagos,-41.481326,-73.474378
+196,Colegual,Los Lagos,-41.221842833,-73.259855833
+527,Carelmapu,Los Lagos,-41.709733,-73.6722625
+287,Ensenada,Los Lagos,-41.233333333,-72.516111111
+634,Pid-Pid,Los Lagos,-42.411747,-73.783913
+636,Quilquico,Los Lagos,-42.491512,-73.708817
+638,Isla Chelin,Los Lagos,-42.589153,-73.532906
+204,Tara,Los Lagos,-42.703730833,-73.788516833
+197,Huyar Alto,Los Lagos,-42.403919,-73.568191833
+195,Butalcura,Los Lagos,-42.261761833,-73.650812
+679,Tena&#xFA;n,Los Lagos,-42.312675,-73.399902
+756,Montes - Chilo&#xE9;,Los Lagos,-42.323,-73.24497
+137,Osorno,Los Lagos,-40.533333333,-73.0725
+203,Remehue,Los Lagos,-40.522204,-73.063654833
+138,Purranque ,Los Lagos,-40.879444444,-73.0525
+198,La Pampa,Los Lagos,-40.860638833,-73.156917
+271,Desag&#xFC;e Rupanco,Los Lagos,-40.752634,-72.663894
+140,R&#xED;o Negro,Los Lagos,-40.764722222,-73.151944444
+555,Huacamapu,Los Lagos,-40.659175,-73.491723
+288,Quilacahuin,Los Lagos,-40.3,-73.3
+861,Palena Medio,Los Lagos,-43.616222,-71.783325
+143,Coyhaique,Aysén,-45.739722222,-72.125833333
+207,Tamelaike,Aysén,-45.759113833,-72.061842833
+208,Vista Hermosa,Aysén,-45.936818,-71.835341833
+265,El Claro,Aysén,-45.9812,-72.092267
+626,Arroyo el Gato,Aysén,-45.162902,-71.943627
+682,&#xD1;irehuao,Aysén,-45.249744,-71.69425
+142,Ays&#xE9;n,Aysén,-45.431944444,-72.714444444
+392,La Junta,Aysén,-43.916933,-72.387343
+206,Cochrane,Aysén,-47.241733,-72.582203
+205,Chile Chico,Aysén,-46.543241833,-71.699297833
+621,Bajada Iba&#xF1;ez,Aysén,-46.180619,-72.043261
+685,Puerto Iba&#xF1;ez,Aysén,-46.278309,-71.941433
+210,Punta Arenas Rural,Magallanes,-53.068313,-70.873761
+846,Fuerte Bulnes,Magallanes,-53.630394,-70.919266
+289,Kampenaike,Magallanes,-52.6,-70.9
+790,Estancia El Ovejero,Magallanes,-52.495389,-71.392194
+793,Estancia Laguna Blanca,Magallanes,-52.26881,-71.189728
+270,Isla Riesco,Magallanes,-53.030495,-71.933637
+796,Estancia Skyring,Magallanes,-52.527622,-71.936264
+471,Estancia 5 de Enero,Magallanes,-52.432478,-70.360583
+842,Punta Delgada,Magallanes,-52.316971,-69.8564
+844,La Pelecha,Magallanes,-52.249817,-70.750206
+848,Huertos Familiares,Magallanes,-54.934448,-67.569885
+459,Estancia Zenia,Magallanes,-53.319496,-69.698147
+832,La Fueguina,Magallanes,-53.326917,-70.283222
+839,Tres Hermanos,Magallanes,-53.508569,-69.175883
+264,Tierra del Fuego,Magallanes,-52.804319889,-69.273691
+833,Rita,Magallanes,-52.833639,-69.715389
+836,R&#xED;o Grande,Magallanes,-53.893217,-68.896183
+209,Puerto Natales,Magallanes,-51.698366833,-72.483081833
+799,Estancia Berta,Magallanes,-52.007645,-72.037323
+372,Cerro Castillo,Magallanes,-51.176975,-72.435811
+802,Complejo Torres del Paine,Magallanes,-51.386105,-72.78492

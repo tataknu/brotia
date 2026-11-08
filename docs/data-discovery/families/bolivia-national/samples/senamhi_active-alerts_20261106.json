@@ -1,0 +1,67 @@
+[
+ {
+  "id": 648,
+  "code": "93/26",
+  "date": [
+   "2026-11-07",
+   "2026-11-07"
+  ],
+  "fecha": null,
+  "fechaf": null,
+  "idAlertType": 1,
+  "idEventType": 16,
+  "status": "Aprobado",
+  "titulo": null,
+  "description": "SE PREVÉ LLUVIAS MODERADAS, TEMPORALMENTE FUERTES Y TORMENTAS ELÉCTRICAS AISLADAS CON MONTOS ACUMULADOS ENTRE 30 mm Y 50 MM A OCURRIR DESDE LA MAÑANA HASTA LA NOCHE DEL SÁBADO 07 DE NOVIEMBRE DE 2026, EN:",
+  "farms_inside": [],
+  "n_polygons": 1
+ },
+ {
+  "id": 647,
+  "code": "92/26",
+  "date": [
+   "2026-11-07",
+   "2026-11-08"
+  ],
+  "fecha": null,
+  "fechaf": null,
+  "idAlertType": 1,
+  "idEventType": 28,
+  "status": "Aprobado",
+  "titulo": null,
+  "description": "SE PRONOSTICA EL INGRESO DE FRENTE FRÍO AL TERRITORIO BOLIVIANO, QUE OCASIONARÁ DESCENSOS BRUSCOS DE TEMPERATURA ENTRE 6 °C Y 12 °C POR DEBAJO DE LOS VALORES NORMALES DE CADA REGIÓN AFECTADA. A OCURRIR ENTRE EL DÍA SÁBADO 07 HASTA EL DÍA DOMINGO 08 DE NOVIEMBRE, AFECTANDO A:",
+  "farms_inside": [
+   "Estancia Los Tajibos",
+   "Colonia Cuatro Canadas Lote 7",
+   "Finca Okinawa Dos",
+   "Arrocera Mineros",
+   "Agricola Warnes Sur",
+   "Granja Las Londras"
+  ],
+  "n_polygons": 1
+ },
+ {
+  "id": 646,
+  "code": "91/26",
+  "date": [
+   "2026-11-06",
+   "2026-11-08"
+  ],
+  "fecha": null,
+  "fechaf": null,
+  "idAlertType": 1,
+  "idEventType": 18,
+  "status": "Aprobado",
+  "titulo": null,
+  "description": "SE PRONOSTICAN VIENTOS MODERADOS, TEMPORALMENTE FUERTES, DESDE LA MAÑANA DEL DÍA VIERNES 06 HASTA LA MAÑANA DEL DÍA DOMINGO 08 DE NOVIEMBRE A OCURRIR EN:",
+  "farms_inside": [
+   "Estancia Los Tajibos",
+   "Colonia Cuatro Canadas Lote 7",
+   "Finca Okinawa Dos",
+   "Arrocera Mineros",
+   "Agricola Warnes Sur",
+   "Granja Las Londras"
+  ],
+  "n_polygons": 1
+ }
+]

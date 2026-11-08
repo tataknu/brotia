@@ -1,0 +1,222 @@
+{
+ "quillota_avocado": {
+  "crop": "avocado",
+  "found": true,
+  "orig": [
+   -71.25,
+   -32.88
+  ],
+  "new": [
+   -71.26,
+   -32.8694
+  ],
+  "dist_km": 1.5,
+  "frac": {
+   "cropland": 0.04,
+   "tree": 0.6,
+   "grass": 0.25,
+   "built": 0.006
+  },
+  "n_candidate_windows": 12879
+ },
+ "ovalle_table_grape": {
+  "crop": "table grape",
+  "found": true,
+  "orig": [
+   -71.2,
+   -30.6
+  ],
+  "new": [
+   -71.2192,
+   -30.5915
+  ],
+  "dist_km": 2.07,
+  "frac": {
+   "cropland": 0.03,
+   "tree": 0.7,
+   "grass": 0.17,
+   "built": 0.012
+  },
+  "n_candidate_windows": 2468
+ },
+ "requinoa_cherry": {
+  "crop": "cherry",
+  "found": true,
+  "orig": [
+   -70.8,
+   -34.28
+  ],
+  "new": [
+   -70.8024,
+   -34.279
+  ],
+  "dist_km": 0.25,
+  "frac": {
+   "cropland": 0.32,
+   "tree": 0.3,
+   "grass": 0.29,
+   "built": 0.024
+  },
+  "n_candidate_windows": 35572
+ },
+ "colchagua_wine": {
+  "crop": "wine grape",
+  "found": true,
+  "orig": [
+   -71.37,
+   -34.64
+  ],
+  "new": [
+   -71.377,
+   -34.6453
+  ],
+  "dist_km": 0.86,
+  "frac": {
+   "cropland": 0.69,
+   "tree": 0.1,
+   "grass": 0.12,
+   "built": 0.021
+  },
+  "n_candidate_windows": 26757
+ },
+ "curico_apple_cherry": {
+  "crop": "apple/cherry",
+  "found": true,
+  "orig": [
+   -71.24,
+   -34.98
+  ],
+  "new": [
+   -71.2611,
+   -34.9861
+  ],
+  "dist_km": 2.04,
+  "frac": {
+   "cropland": 0.86,
+   "tree": 0.01,
+   "grass": 0.09,
+   "built": 0.029
+  },
+  "n_candidate_windows": 16271
+ },
+ "talca_vineyard": {
+  "crop": "wine grape",
+  "found": true,
+  "orig": [
+   -71.66,
+   -35.43
+  ],
+  "new": [
+   -71.6894,
+   -35.4307
+  ],
+  "dist_km": 2.67,
+  "frac": {
+   "cropland": 0.07,
+   "tree": 0.66,
+   "grass": 0.17,
+   "built": 0.029
+  },
+  "n_candidate_windows": 34005
+ },
+ "parral_rice": {
+  "crop": "rice",
+  "found": true,
+  "orig": [
+   -71.83,
+   -36.14
+  ],
+  "new": [
+   -71.8452,
+   -36.1373
+  ],
+  "dist_km": 1.4,
+  "frac": {
+   "cropland": 0.78,
+   "tree": 0.0,
+   "grass": 0.19,
+   "built": 0.025
+  },
+  "n_candidate_windows": 27421
+ },
+ "chillan_blueberry": {
+  "crop": "blueberry",
+  "found": true,
+  "orig": [
+   -72.1,
+   -36.6
+  ],
+  "new": [
+   -72.0919,
+   -36.584
+  ],
+  "dist_km": 1.92,
+  "frac": {
+   "cropland": 0.23,
+   "tree": 0.44,
+   "grass": 0.29,
+   "built": 0.027
+  },
+  "n_candidate_windows": 28819
+ },
+ "losangeles_maize_wheat": {
+  "crop": "maize/wheat",
+  "found": true,
+  "orig": [
+   -72.35,
+   -37.47
+  ],
+  "new": [
+   -72.3622,
+   -37.4873
+  ],
+  "dist_km": 2.21,
+  "frac": {
+   "cropland": 0.75,
+   "tree": 0.2,
+   "grass": 0.02,
+   "built": 0.018
+  },
+  "n_candidate_windows": 6540
+ },
+ "temuco_wheat_oats": {
+  "crop": "wheat/oats",
+  "found": true,
+  "orig": [
+   -72.6,
+   -38.74
+  ],
+  "new": [
+   -72.6047,
+   -38.6973
+  ],
+  "dist_km": 4.77,
+  "frac": {
+   "cropland": 0.7,
+   "tree": 0.04,
+   "grass": 0.26,
+   "built": 0.0
+  },
+  "n_candidate_windows": 1730
+ },
+ "osorno_potato": {
+  "crop": "potato",
+  "found": true,
+  "orig": [
+   -73.13,
+   -40.57
+  ],
+  "new": [
+   -73.1379,
+   -40.5532
+  ],
+  "dist_km": 1.99,
+  "frac": {
+   "cropland": 0.71,
+   "tree": 0.14,
+   "grass": 0.14,
+   "built": 0.0
+  },
+  "n_candidate_windows": 12739
+ }
+}

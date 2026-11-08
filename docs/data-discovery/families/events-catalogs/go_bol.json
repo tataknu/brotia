@@ -1,0 +1,505 @@
+{
+"count": 74,
+"results": [
+{
+"id": 7962,
+"name": "BULL: Civil unrest - 05-2026 - Civil unrest ",
+"disaster_start_date": "2026-05-20T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 1
+},
+{
+"id": 7731,
+"name": "BOL: Flood - 12-2025 - Floods in Santa Cruz Bolivia",
+"disaster_start_date": "2025-12-13T00:00:00Z",
+"glide": "FL-2025-000235-BOL",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 7717,
+"name": "BULL: Flood - 11-2025 - Floods in Samaipata ",
+"disaster_start_date": "2025-11-17T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 7616,
+"name": "BULL: Fire - 08-2025 - Fires Bolivia 2025 ",
+"disaster_start_date": "2025-08-25T00:00:00Z",
+"glide": "FL-2025-000235-BOL",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 1
+},
+{
+"id": 7252,
+"name": "BULL: Other - 11-2024 - Landslides",
+"disaster_start_date": "2024-12-01T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Other",
+"n_appeals": 0
+},
+{
+"id": 7405,
+"name": "BOL: Pluvial flood / flood - 11-2024 - Floods La Paz Bolivia",
+"disaster_start_date": "2024-12-01T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Pluvial/Flash Flood",
+"n_appeals": 0
+},
+{
+"id": 7083,
+"name": "BOL: Fire - 07-2024 - Forest fires",
+"disaster_start_date": "2024-07-10T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 1
+},
+{
+"id": 6891,
+"name": "BOL: Flood - 02-2024 - Flood emergency - Bolivia 2024",
+"disaster_start_date": "2024-02-28T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 6656,
+"name": "BOL: Drought - 2023-09 - El Niño phenomenon",
+"disaster_start_date": "2023-09-11T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Drought",
+"n_appeals": 1
+},
+{
+"id": 6394,
+"name": "BOL: Flood - 2023-03 - Pando Floods 2023",
+"disaster_start_date": "2023-03-24T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 0
+},
+{
+"id": 6342,
+"name": "BOL: Epidemic - 2023-01 - Bolivia DENGUE epidemic 2023",
+"disaster_start_date": "2023-01-16T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 0
+},
+{
+"id": 6279,
+"name": "BOL: Civil unrest - 2022-10 - Census riots",
+"disaster_start_date": "2022-10-21T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 0
+},
+{
+"id": 6163,
+"name": "BOL: Fire - 2022-09 - Sta Cruz",
+"disaster_start_date": "2022-09-10T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 0
+},
+{
+"id": 5995,
+"name": "BOL: Terremoto - 2022-07 - Temblor 5.4 ciudad de La Paz , efectos de terremoto 7,2 en sur Peru",
+"disaster_start_date": "2022-05-26T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Earthquake",
+"n_appeals": 0
+},
+{
+"id": 5850,
+"name": "Bolivia - Tarija, Territorio Guarani , Riada ",
+"disaster_start_date": "2022-02-21T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Pluvial/Flash Flood",
+"n_appeals": 0
+},
+{
+"id": 5840,
+"name": "Bolivia: cierre de frontera Pisiga afectando a migrantes venezolanos",
+"disaster_start_date": "2022-02-17T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Population Movement",
+"n_appeals": 0
+},
+{
+"id": 5757,
+"name": "Bolivia - inundaciones municipio de Sucre 1069 familias damnificadas",
+"disaster_start_date": "2021-12-28T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 0
+},
+{
+"id": 5685,
+"name": "Bolivia- Paro  cívico nacional, enfrentamientos en Potosí, Santa Cruz , Tarija ",
+"disaster_start_date": "2021-11-09T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 0
+},
+{
+"id": 5635,
+"name": "Bolivia : Paro Cívico Nacional  planteado por diversos sectores, en relación a propuestas de ley,  s",
+"disaster_start_date": "2021-10-15T12:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 0
+},
+{
+"id": 5593,
+"name": "Bolivia - Arribo Marcha  indígena arriba  a Santa Cruz de la Sierra ",
+"disaster_start_date": "2021-09-24T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Population Movement",
+"n_appeals": 0
+},
+{
+"id": 5517,
+"name": "Bolivia  Incendios forestales Chiquitania 12.200 has. afectadas, 793 focos de calor",
+"disaster_start_date": "2021-08-19T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 0
+},
+{
+"id": 5563,
+"name": "Bolivia, Marcha indígena por el respeto a su territorio",
+"disaster_start_date": "2021-08-15T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Population Movement",
+"n_appeals": 0
+},
+{
+"id": 5121,
+"name": "Granizada, sequía y heladas Bolivia - Potosí, (09/02/21)",
+"disaster_start_date": "2021-02-09T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Other",
+"n_appeals": 0
+},
+{
+"id": 5113,
+"name": "INUNDACIONES SANTA CRUZ - BOLIVIA, 17,000 PERSONAS DAMNIFICADAS",
+"disaster_start_date": "2021-01-30T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 0
+},
+{
+"id": 4218,
+"name": "Bolivia: COVID-19",
+"disaster_start_date": "2020-04-27T23:56:03Z",
+"glide": "EP-2020-000012-CHN",
+"ifrc_severity_level_display": "Red",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 0
+},
+{
+"id": 5092,
+"name": "Bolivia - Latinoamérica 001/2021  ",
+"disaster_start_date": "2020-03-11T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 0
+},
+{
+"id": 3996,
+"name": "5607 casos de Dengue confirmados  - Bolivia 2020",
+"disaster_start_date": "2020-02-21T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 0
+},
+{
+"id": 3994,
+"name": "344 familias damnifadas en cotagaita  por riada  (POTOSI - BOLIVIA)",
+"disaster_start_date": "2020-02-06T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Other",
+"n_appeals": 0
+},
+{
+"id": 5093,
+"name": "Inundaciones Bolivia - Latinoamérica 001/2021  ",
+"disaster_start_date": "2020-01-29T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 0
+},
+{
+"id": 3983,
+"name": "728 casos confirmados, 2668 casos sospechosos, con mayor incidencia en los Municipios de Santa Cruz,",
+"disaster_start_date": "2020-01-20T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Other",
+"n_appeals": 0
+},
+{
+"id": 3875,
+"name": "Conflictos sociales elecciones presidenciales Bolivia 2019",
+"disaster_start_date": "2019-11-20T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 1
+},
+{
+"id": 3855,
+"name": "a 11 dias de las elecciones nacional Bolivia continua con convulsiones sociales en todo el pais",
+"disaster_start_date": "2019-11-01T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 0
+},
+{
+"id": 3829,
+"name": "Tensiones y disturbios internos Elecciones Bolivia 2019",
+"disaster_start_date": "2019-10-22T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Civil Unrest",
+"n_appeals": 0
+},
+{
+"id": 3809,
+"name": "GDACS Orange: Bolivia, Brazil, Paraguay DR Medium impact for agricultural drought in 189389 km2",
+"disaster_start_date": "2019-10-10T16:27:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Orange",
+"num_affected": null,
+"dtype": null,
+"n_appeals": 0
+},
+{
+"id": 3746,
+"name": "BOLIVIA: Emergencia por incendios forestales mas de 100 comunidades afectadas",
+"disaster_start_date": "2019-08-16T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 1
+},
+{
+"id": 3736,
+"name": "Incendios en Bolivia: más de 700.000 hectáreas y 1.817 familias fueron afectadas por las llamas",
+"disaster_start_date": "2019-08-12T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 0
+},
+{
+"id": 3515,
+"name": "El 2 y 3 de abril el desbordó el Río Parapeti dejando sin viviendas a 19 comunidades guaranís  Camir",
+"disaster_start_date": "2019-04-05T15:23:11.633658Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Pluvial/Flash Flood",
+"n_appeals": 0
+},
+{
+"id": 3436,
+"name": "Bolivia: Floods",
+"disaster_start_date": "2019-02-01T13:28:57Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 3179,
+"name": "Bolivia: Influenza Epidemic",
+"disaster_start_date": "2018-06-07T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 1
+},
+{
+"id": 335,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2015-03-11T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 428,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2014-02-19T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 525,
+"name": "Bolivia - Floods Potosi & Chuquisaca",
+"disaster_start_date": "2013-03-12T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 604,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2012-02-28T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 724,
+"name": "Bolivia - Floods and Landslides",
+"disaster_start_date": "2011-03-03T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 921,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2010-02-11T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 1016,
+"name": "Bolivia - Dengue",
+"disaster_start_date": "2009-03-04T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Epidemic",
+"n_appeals": 1
+},
+{
+"id": 1141,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2008-01-28T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 1201,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2007-02-15T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 1311,
+"name": "Bolivia - Floods",
+"disaster_start_date": "2006-02-01T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Flood",
+"n_appeals": 1
+},
+{
+"id": 1371,
+"name": "Bolivia - Fire September 2005",
+"disaster_start_date": "2005-09-21T00:00:00Z",
+"glide": "",
+"ifrc_severity_level_display": "Yellow",
+"num_affected": null,
+"dtype": "Fire",
+"n_appeals": 1
+}
+]
+}

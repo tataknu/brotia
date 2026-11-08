@@ -1,0 +1,9 @@
+POWER 30y GWETROOT: 200 0.5s 179531 bytes
+POWER vs ERA5-Land daily r=0.622, 30-day anomaly r=0.382, last POWER date=2026-11-03
+2023 POWER pct=17 ERA5L pct=7
+2024 POWER pct=52 ERA5L pct=0
+2025 POWER pct=59 ERA5L pct=17
+2026 POWER pct=0 ERA5L pct=87
+SoilGrids Mineros: 200 6.3s
+  clay%: {'0-5cm': 24.1, '5-15cm': 23.7, '15-30cm': 27.4, '30-60cm': 33.7, '60-100cm': 33.8}  TAW 0-100cm (wv0033-wv1500) = 147 mm
+Open-Meteo Mineros era5_land: 200 0.4s grid=(-17.199997,-63.299995) last=('2026-11-01', 0.413)

@@ -1,0 +1,10 @@
+# Los Tajibos (woody savanna pixel, ORNL 2021-2026)
+WS l=5d env=0: as-of minus final  RMS=0.0192  mean=+0.0013  p95|.|=0.0080   (last-good-obs RMS=0.0133; WS-held-at-last-good RMS=0.0133)  n=88
+WS l=50d env=0: as-of minus final  RMS=0.0200  mean=+0.0006  p95|.|=0.0235   (last-good-obs RMS=0.0159; WS-held-at-last-good RMS=0.0148)  n=88
+WS l=500d env=0: as-of minus final  RMS=0.0230  mean=-0.0010  p95|.|=0.0392   (last-good-obs RMS=0.0241; WS-held-at-last-good RMS=0.0204)  n=88
+WS l=500d env=2: as-of minus final  RMS=0.0294  mean=-0.0070  p95|.|=0.0529   (last-good-obs RMS=0.0332; WS-held-at-last-good RMS=0.0269)  n=88
+# Cuatro Canadas (cropland pixel, PC 2000-2026)
+WS l=5d env=0: as-of minus final  RMS=0.1491  mean=-0.0278  p95|.|=0.3474   (last-good-obs RMS=0.0894; WS-held-at-last-good RMS=0.0894)  n=76
+WS l=50d env=0: as-of minus final  RMS=0.1369  mean=-0.0317  p95|.|=0.3403   (last-good-obs RMS=0.0784; WS-held-at-last-good RMS=0.0785)  n=76
+WS l=500d env=0: as-of minus final  RMS=0.1159  mean=-0.0322  p95|.|=0.3209   (last-good-obs RMS=0.0769; WS-held-at-last-good RMS=0.0773)  n=76
+WS l=500d env=2: as-of minus final  RMS=0.1111  mean=-0.0385  p95|.|=0.2782   (last-good-obs RMS=0.0909; WS-held-at-last-good RMS=0.0916)  n=76

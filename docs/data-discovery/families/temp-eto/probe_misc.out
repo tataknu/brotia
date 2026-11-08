@@ -1,0 +1,18 @@
+
+[CDS AgERA5 catalogue HTTP200 0.436010s]
+
+Agrometeorological indicators from 1979 to present derived from reanalysis
+extent {"spatial": {"bbox": [[0.0, -90.0, 360.0, 90.0]]}, "temporal": {"interval": [["1979-01-01T00:00:00+00:00", "2026-10-30T00:00:00+00:00"]]}}
+licence ['https://spdx.org/licenses/CC-BY-4.0']
+updated 2026-11-06T00:00:00Z
+[GLEAM site HTTP200 0.293545s]
+download_collection":"strikingly_file_download","keenio_ecommerce_buyer_landing":"striki
+download?
+download?\u003c\/strong\u003e\u003c\/span\u003e\u003cbr\u003e\u003cspan style=\"color: v
+DOWNLOAD","link_type":null,"page_id":null,"section_id":null,"url":"https:\/\/www.strikin
+downloadJSAtOnload(link, callback) {
+downloadJSAtOnload(sourceLink);
+downloadJSAtOnload(window.siteConfigSrc, function() {
+Downloads
+[OM hourly evapotranspiration HTTP200]
+hourly ET (actual, ERA5) n 0 Oct-2023 sum mm 0 ET0 sum 201.5

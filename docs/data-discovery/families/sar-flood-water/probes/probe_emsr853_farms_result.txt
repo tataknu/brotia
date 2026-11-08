@@ -1,0 +1,16 @@
+EMSR853_AOI02_DEL_PRODUCT_observedEventA_v2.json 142 features; props sample: {'event_type': '5-Flood', 'obj_desc': 'Riverine flood', 'det_method': 'Semi-automatic extraction', 'notation': 'Flooded area', 'dmg_src_id': 3, 'area': 293.241283}
+EMSR853_AOI07_DEL_PRODUCT_observedEventA_v1.json 1 features; props sample: {'event_type': '5-Flood', 'obj_desc': 'Riverine flood', 'det_method': 'Semi-automatic extraction', 'notation': 'Flooded area', 'dmg_src_id': 2, 'area': 13.870684}
+EMSR853_AOI08_DEL_PRODUCT_observedEventA_v1.json 3 features; props sample: {'event_type': '5-Flood', 'obj_desc': 'Riverine flood', 'det_method': 'Semi-automatic extraction', 'notation': 'Flooded area', 'dmg_src_id': 2, 'area': 11.97939}
+observed flood area km2 (union of AOI 02/07/08): 68.5
+Estancia Los Tajibos             in_AOI=False in_flood=False dist_to_flood_km=  95.1
+Agropecuaria Brecha 8            in_AOI=False in_flood=False dist_to_flood_km=  77.1
+Colonia Cuatro Canadas Lote 7    in_AOI=False in_flood=False dist_to_flood_km=  82.8
+Hacienda El Cusi                 in_AOI=False in_flood=False dist_to_flood_km=  73.1
+Agricola Pailon Norte            in_AOI=False in_flood=False dist_to_flood_km=  60.2
+Granja Las Londras               in_AOI=False in_flood=False dist_to_flood_km=  59.8
+Finca Okinawa Dos                in_AOI=False in_flood=False dist_to_flood_km=  50.2
+Parcela Okinawa Uno              in_AOI=False in_flood=False dist_to_flood_km=  37.8
+Arrocera Mineros                 in_AOI=False in_flood=False dist_to_flood_km=  25.9
+Canaveral San Antonio            in_AOI=False in_flood=False dist_to_flood_km=  15.9
+Agricola Warnes Sur              in_AOI=True  in_flood=False dist_to_flood_km=  20.5
+Estancia Mineros Norte           in_AOI=False in_flood=False dist_to_flood_km=  30.4

@@ -1,0 +1,368 @@
+{
+ "Estancia Los Tajibos (soy)": {
+  "2019": {
+   "forest": 0.85,
+   "agri": 0.09,
+   "mosaic": 0.05
+  },
+  "2020": {
+   "forest": 0.85,
+   "agri": 0.1,
+   "mosaic": 0.04
+  },
+  "2021": {
+   "forest": 0.85,
+   "agri": 0.1,
+   "mosaic": 0.04
+  },
+  "2022": {
+   "forest": 0.86,
+   "agri": 0.11,
+   "mosaic": 0.02
+  },
+  "2023": {
+   "forest": 0.85,
+   "agri": 0.11,
+   "pasture": 0.02
+  },
+  "2024": {
+   "forest": 0.84,
+   "other_crops": 0.09,
+   "mosaic": 0.03
+  }
+ },
+ "Agropecuaria Brecha 8 (maize)": {
+  "2019": {
+   "agri": 0.58,
+   "mosaic": 0.23,
+   "pasture": 0.17
+  },
+  "2020": {
+   "agri": 0.68,
+   "pasture": 0.19,
+   "mosaic": 0.09
+  },
+  "2021": {
+   "agri": 0.73,
+   "pasture": 0.18,
+   "mosaic": 0.06
+  },
+  "2022": {
+   "agri": 0.72,
+   "pasture": 0.2,
+   "mosaic": 0.05
+  },
+  "2023": {
+   "agri": 0.73,
+   "pasture": 0.21,
+   "mosaic": 0.04
+  },
+  "2024": {
+   "other_crops": 0.71,
+   "pasture": 0.23,
+   "forest": 0.02
+  }
+ },
+ "Colonia Cuatro Canadas Lote 7 (soy)": {
+  "2019": {
+   "agri": 0.86,
+   "pasture": 0.11,
+   "forest": 0.02
+  },
+  "2020": {
+   "agri": 0.94,
+   "pasture": 0.05,
+   "forest": 0.02
+  },
+  "2021": {
+   "agri": 0.93,
+   "pasture": 0.05,
+   "mosaic": 0.02
+  },
+  "2022": {
+   "agri": 0.94,
+   "pasture": 0.05,
+   "mosaic": 0.0
+  },
+  "2023": {
+   "agri": 0.94,
+   "pasture": 0.05,
+   "mosaic": 0.0
+  },
+  "2024": {
+   "soy": 0.71,
+   "other_crops": 0.23,
+   "pasture": 0.06
+  }
+ },
+ "Hacienda El Cusi (sorghum)": {
+  "2019": {
+   "agri": 0.94,
+   "pasture": 0.06
+  },
+  "2020": {
+   "agri": 0.69,
+   "pasture": 0.31
+  },
+  "2021": {
+   "agri": 0.96,
+   "pasture": 0.04,
+   "mosaic": 0.0
+  },
+  "2022": {
+   "agri": 0.96,
+   "pasture": 0.04
+  },
+  "2023": {
+   "agri": 0.96,
+   "pasture": 0.04
+  },
+  "2024": {
+   "soy": 0.68,
+   "other_crops": 0.3,
+   "pasture": 0.02
+  }
+ },
+ "Agricola Pailon Norte (wheat)": {
+  "2019": {
+   "agri": 0.65,
+   "pasture": 0.35,
+   "mosaic": 0.0
+  },
+  "2020": {
+   "agri": 0.55,
+   "pasture": 0.45,
+   "mosaic": 0.0
+  },
+  "2021": {
+   "agri": 0.66,
+   "pasture": 0.33,
+   "mosaic": 0.01
+  },
+  "2022": {
+   "agri": 0.67,
+   "pasture": 0.33
+  },
+  "2023": {
+   "agri": 0.67,
+   "pasture": 0.33
+  },
+  "2024": {
+   "other_crops": 0.64,
+   "pasture": 0.28,
+   "soy": 0.08
+  }
+ },
+ "Granja Las Londras (sunflower)": {
+  "2019": {
+   "river_lake": 0.46,
+   "68": 0.25,
+   "sand": 0.18
+  },
+  "2020": {
+   "68": 0.54,
+   "river_lake": 0.29,
+   "forest": 0.17
+  },
+  "2021": {
+   "river_lake": 0.53,
+   "68": 0.32,
+   "forest": 0.15
+  },
+  "2022": {
+   "68": 0.44,
+   "river_lake": 0.23,
+   "sand": 0.2
+  },
+  "2023": {
+   "68": 0.49,
+   "river_lake": 0.25,
+   "sand": 0.14
+  },
+  "2024": {
+   "river_lake": 0.44,
+   "sand": 0.23,
+   "forest": 0.18
+  }
+ },
+ "Finca Okinawa Dos (maize)": {
+  "2019": {
+   "agri": 1.0
+  },
+  "2020": {
+   "agri": 1.0
+  },
+  "2021": {
+   "agri": 1.0
+  },
+  "2022": {
+   "agri": 1.0
+  },
+  "2023": {
+   "agri": 1.0
+  },
+  "2024": {
+   "soy": 1.0
+  }
+ },
+ "Parcela Okinawa Uno (soy)": {
+  "2019": {
+   "agri": 0.73,
+   "mosaic": 0.19,
+   "forest": 0.07
+  },
+  "2020": {
+   "agri": 0.73,
+   "mosaic": 0.2,
+   "forest": 0.07
+  },
+  "2021": {
+   "agri": 0.77,
+   "mosaic": 0.16,
+   "forest": 0.07
+  },
+  "2022": {
+   "agri": 0.82,
+   "mosaic": 0.11,
+   "forest": 0.07
+  },
+  "2023": {
+   "agri": 0.86,
+   "mosaic": 0.07,
+   "forest": 0.05
+  },
+  "2024": {
+   "other_crops": 0.84,
+   "forest": 0.05,
+   "soy": 0.05
+  }
+ },
+ "Arrocera Mineros (rice)": {
+  "2019": {
+   "mosaic": 0.25,
+   "agri": 0.22,
+   "sand": 0.17
+  },
+  "2020": {
+   "sand": 0.24,
+   "agri": 0.21,
+   "mosaic": 0.2
+  },
+  "2021": {
+   "sand": 0.27,
+   "agri": 0.24,
+   "mosaic": 0.21
+  },
+  "2022": {
+   "agri": 0.23,
+   "mosaic": 0.21,
+   "68": 0.21
+  },
+  "2023": {
+   "mosaic": 0.31,
+   "agri": 0.26,
+   "forest": 0.15
+  },
+  "2024": {
+   "other_crops": 0.33,
+   "mosaic": 0.2,
+   "sand": 0.17
+  }
+ },
+ "Canaveral San Antonio (sugarcane)": {
+  "2019": {
+   "agri": 0.9,
+   "mosaic": 0.06,
+   "forest": 0.02
+  },
+  "2020": {
+   "agri": 0.9,
+   "mosaic": 0.06,
+   "forest": 0.03
+  },
+  "2021": {
+   "agri": 0.83,
+   "mosaic": 0.11,
+   "forest": 0.03
+  },
+  "2022": {
+   "agri": 0.88,
+   "mosaic": 0.08,
+   "forest": 0.03
+  },
+  "2023": {
+   "agri": 0.9,
+   "mosaic": 0.06,
+   "pasture": 0.03
+  },
+  "2024": {
+   "other_crops": 0.92,
+   "mosaic": 0.03,
+   "pasture": 0.03
+  }
+ },
+ "Agricola Warnes Sur (soy)": {
+  "2019": {
+   "pasture": 0.6,
+   "forest": 0.21,
+   "agri": 0.11
+  },
+  "2020": {
+   "pasture": 0.63,
+   "forest": 0.28,
+   "agri": 0.08
+  },
+  "2021": {
+   "pasture": 0.58,
+   "forest": 0.27,
+   "agri": 0.11
+  },
+  "2022": {
+   "pasture": 0.6,
+   "forest": 0.28,
+   "agri": 0.09
+  },
+  "2023": {
+   "pasture": 0.61,
+   "forest": 0.26,
+   "agri": 0.1
+  },
+  "2024": {
+   "pasture": 0.73,
+   "other_crops": 0.11,
+   "forest": 0.11
+  }
+ },
+ "Estancia Mineros Norte (soy)": {
+  "2019": {
+   "agri": 0.92,
+   "forest": 0.04,
+   "pasture": 0.03
+  },
+  "2020": {
+   "agri": 0.92,
+   "forest": 0.04,
+   "pasture": 0.03
+  },
+  "2021": {
+   "agri": 0.89,
+   "pasture": 0.07,
+   "forest": 0.02
+  },
+  "2022": {
+   "agri": 0.89,
+   "pasture": 0.07,
+   "forest": 0.03
+  },
+  "2023": {
+   "agri": 0.89,
+   "pasture": 0.06,
+   "forest": 0.03
+  },
+  "2024": {
+   "other_crops": 0.77,
+   "soy": 0.15,
+   "pasture": 0.05
+  }
+ }
+}

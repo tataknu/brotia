@@ -1,0 +1,5 @@
+chirps-v3.0.rnl.2024.01.15.tif: value=3.87 nodata=None tiled=False block=(1, 7200) ovr=[] shape=(2400, 7200) 19.28s
+chirps-v3.0.rnl.2026.09.30.tif: value=0.00 nodata=None tiled=False block=(1, 7200) ovr=[] shape=(2400, 7200) 0.75s
+chirps-v3.0.prelim.2026.10.31.tif: value=0.01 nodata=None tiled=False block=(1, 7200) ovr=[] shape=(2400, 7200) 6.49s
+chirps-v2.0.2024.01.15.cog: value=4.27 nodata=None tiled=True block=(512, 512) ovr=[2, 4, 8] shape=(2000, 7200) 43.94s
+chirps-v3.0.2024.01.tif: value=109.12 nodata=None tiled=False block=(1, 7200) ovr=[] shape=(2400, 7200) 6.37s

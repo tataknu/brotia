@@ -1,0 +1,18 @@
+{
+ "_what": "DRAFT curated crop calendar for the Santa Cruz lowlands, composed from the sources probed in this folder. Dates are DD-MM. Each row cites its source; 'verified' = we pulled it live from that source on 2026-11-07. Rows marked verified=false are local-practice values that still need an ANAPO/CAO/Suyana check.",
+ "rows": [
+  {"crop": "soy", "campaign": "summer (verano)", "sow": ["15-11", "20-12"], "harvest": ["01-03", "15-04"], "days": "120-130", "source": "FAO Crop Calendar API, AEZ 003 Oriental plains", "agree": "GGCMI p3 soy_rf: plant 16-11, maturity 10-04; MCD12Q2 green-up at Cuatro Canadas 15-11..13-12 (2016-2025)", "verified": true},
+  {"crop": "soy", "campaign": "winter (invierno)", "sow": ["01-06", "30-06"], "harvest": ["10-10", "20-11"], "days": "120-130", "source": "FAO Crop Calendar API, AEZ 003 '(2nd season)'", "verified": true},
+  {"crop": "maize", "campaign": "summer", "sow": ["01-10", "31-12"], "harvest": ["16-03", "30-04"], "days": "150-190", "source": "GEOGLAM CM4EW v1.3 Santa Cruz 'Maize 1' (planting stage DOY 274, veg->repro DOY 1, ripening/harvest DOY 75, end DOY 121)", "agree": "GGCMI mai_rf: plant 22-10/16-11, maturity 29-04", "verified": true},
+  {"crop": "maize", "campaign": "winter (zafrinha, after soy)", "sow": ["01-02", "31-03"], "harvest": ["15-06", "31-08"], "source": "local practice (not in FAO/GEOGLAM/GGCMI)", "verified": false},
+  {"crop": "sorghum", "campaign": "winter (main winter crop, >500 kha in 2026)", "sow": ["01-03", "30-04"], "harvest": ["01-06", "31-07"], "days": "90-110", "source": "FAO Crop Calendar API, AEZ 003", "verified": true},
+  {"crop": "sorghum", "campaign": "spring (2nd season)", "sow": ["01-09", "31-10"], "harvest": ["01-12", "10-01"], "days": "90-110", "source": "FAO Crop Calendar API, AEZ 003 '(2nd season)'", "verified": true},
+  {"crop": "wheat", "campaign": "winter", "sow": ["10-04", "30-05"], "harvest": ["25-08", "20-10"], "days": "120-150", "source": "FAO Crop Calendar API, AEZ 003 (eastern zone 10-04..30-04 sow; northern zone 01-05..30-05)", "agree": "GEOGLAM Winter Wheat: planting DOY 91 (01-04), harvest stage DOY 244 (01-09)", "verified": true},
+  {"crop": "sunflower", "campaign": "winter", "sow": ["15-02", "30-04"], "harvest": ["15-07", "15-09"], "source": "local practice (not in FAO lowland, GEOGLAM or GGCMI; GGCMI's 01-12 planting is wrong for Santa Cruz)", "verified": false},
+  {"crop": "rice", "campaign": "summer", "sow": ["15-10", "15-12"], "harvest": ["01-03", "30-04"], "days": "120-150", "source": "FAO Crop Calendar API, AEZ 003 (mechanized, mostly rainfed)", "verified": true},
+  {"crop": "sugarcane", "campaign": "perennial / ratoon", "sow": null, "harvest": ["15-04", "15-11"], "source": "local practice: zafra roughly Apr/May-Oct/Nov (FAO has sugarcane only for valleys)", "verified": false},
+  {"crop": "chia", "campaign": "winter", "sow": ["15-02", "15-04"], "harvest": ["15-06", "31-08"], "source": "local practice", "verified": false},
+  {"crop": "quinoa", "campaign": "Altiplano", "sow": ["01-08", "31-10"], "harvest": ["01-04", "30-06"], "days": "145-180", "source": "FAO Crop Calendar API, AEZ 001 Altiplano (south/central/north rows)", "verified": true},
+  {"crop": "potato", "campaign": "Altiplano main", "sow": ["01-09", "30-11"], "harvest": ["01-02", "30-04"], "days": "160-180", "source": "FAO Crop Calendar API, AEZ 001", "verified": true}
+ ]
+}

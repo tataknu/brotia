@@ -1,0 +1,10 @@
+
+B_ours_power       vs C_refet_power      {'n': 31, 'mean_a': np.float64(5.36), 'mean_b': np.float64(5.36), 'bias': np.float64(0.0), 'mae': np.float64(0.01), 'r': np.float64(1.0)}
+
+B_ours_power       vs C_refet_power      {'n': 365, 'mean_a': np.float64(3.55), 'mean_b': np.float64(3.54), 'bias': np.float64(0.01), 'mae': np.float64(0.01), 'r': np.float64(1.0)}
+B1_power_ws2m          vs A: mean=3.55 A=4.66 bias=-1.11 MAE=1.20 r=0.835 annual=1295 vs 1701
+B2_power_ws10m_eq47    vs A: mean=4.24 A=4.66 bias=-0.42 MAE=0.58 r=0.942 annual=1548 vs 1701
+C2_refet_ws10m         vs A: mean=4.24 A=4.66 bias=-0.42 MAE=0.59 r=0.942 annual=1546 vs 1701
+HS_era5temps           vs A: mean=4.43 A=4.66 bias=-0.24 MAE=0.77 r=0.812 annual=1616 vs 1701
+u2_eq47 mean 1.16 WS2M mean 0.27
+            A_om_era5  B1_power_ws2m  B2_power_ws10m_eq47  C2_refet_ws10m  HS_era5temps

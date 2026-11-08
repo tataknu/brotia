@@ -1,0 +1,23 @@
+{'year': 2009, 'hours': 0, 'pp_mm': None, 'tmin_mean': None, 'tmax_mean': None, 'frost_h': 0, 'hot_h': 0}
+{'year': 2010, 'hours': 719, 'pp_mm': 20.3, 'tmin_mean': 7.04, 'tmax_mean': 23.14, 'frost_h': 0, 'hot_h': 4}
+{'year': 2011, 'hours': 720, 'pp_mm': 0.4, 'tmin_mean': 6.32, 'tmax_mean': 23.7, 'frost_h': 0, 'hot_h': 0}
+{'year': 2012, 'hours': 720, 'pp_mm': 5.0, 'tmin_mean': 8.06, 'tmax_mean': 22.52, 'frost_h': 0, 'hot_h': 4}
+{'year': 2013, 'hours': 720, 'pp_mm': 3.4, 'tmin_mean': 7.09, 'tmax_mean': 23.66, 'frost_h': 0, 'hot_h': 6}
+{'year': 2014, 'hours': 720, 'pp_mm': 4.0, 'tmin_mean': 7.16, 'tmax_mean': 24.1, 'frost_h': 0, 'hot_h': 16}
+{'year': 2015, 'hours': 720, 'pp_mm': 46.3, 'tmin_mean': 7.29, 'tmax_mean': 21.14, 'frost_h': 0, 'hot_h': 0}
+{'year': 2016, 'hours': 719, 'pp_mm': 31.2, 'tmin_mean': 8.62, 'tmax_mean': 22.86, 'frost_h': 0, 'hot_h': 12}
+{'year': 2017, 'hours': 720, 'pp_mm': 9.9, 'tmin_mean': 7.4, 'tmax_mean': 21.4, 'frost_h': 0, 'hot_h': 0}
+{'year': 2018, 'hours': 720, 'pp_mm': 23.2, 'tmin_mean': 8.54, 'tmax_mean': 22.35, 'frost_h': 0, 'hot_h': 1}
+{'year': 2019, 'hours': 720, 'pp_mm': 1.7, 'tmin_mean': 8.01, 'tmax_mean': 24.52, 'frost_h': 0, 'hot_h': 4}
+{'year': 2020, 'hours': 720, 'pp_mm': 0.0, 'tmin_mean': 7.41, 'tmax_mean': 26.23, 'frost_h': 0, 'hot_h': 5}
+{'year': 2021, 'hours': 720, 'pp_mm': 8.9, 'tmin_mean': 7.69, 'tmax_mean': 25.0, 'frost_h': 0, 'hot_h': 16}
+{'year': 2022, 'hours': 720, 'pp_mm': 0.0, 'tmin_mean': 6.46, 'tmax_mean': 25.71, 'frost_h': 0, 'hot_h': 15}
+{'year': 2023, 'hours': 720, 'pp_mm': 16.6, 'tmin_mean': 7.84, 'tmax_mean': 22.26, 'frost_h': 0, 'hot_h': 0}
+{'year': 2024, 'hours': 720, 'pp_mm': 14.0, 'tmin_mean': 9.17, 'tmax_mean': 24.4, 'frost_h': 0, 'hot_h': 18}
+{'year': 2025, 'hours': 720, 'pp_mm': 1.6, 'tmin_mean': 8.37, 'tmax_mean': 25.06, 'frost_h': 0, 'hot_h': 0}
+{'year': 2026, 'hours': 720, 'pp_mm': 56.4, 'tmin_mean': 10.65, 'tmax_mean': 22.48, 'frost_h': 0, 'hot_h': 0}
+pp_mm: 2026=56.4  hist n=16 median=6.95  empirical pct=100
+tmin_mean: 2026=10.65  hist n=16 median=7.550000000000001  empirical pct=100
+tmax_mean: 2026=22.48  hist n=16 median=23.68  empirical pct=25
+frost_h: 2026=0  hist n=16 median=0.0  empirical pct=100
+hot_h: 2026=0  hist n=16 median=4.0  empirical pct=31

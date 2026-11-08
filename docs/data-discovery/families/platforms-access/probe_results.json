@@ -1,0 +1,795 @@
+{
+ "pc_landing": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1",
+  "status": 200,
+  "latency_s": 0.22,
+  "bytes": 2135,
+  "excerpt": {
+   "title": "Microsoft Planetary Computer STAC API",
+   "conformsTo_n": 15
+  }
+ },
+ "pc_collections_count": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections",
+  "status": 200,
+  "latency_s": 0.88,
+  "bytes": 1774285,
+  "excerpt": {
+   "n": 139,
+   "has": {
+    "sentinel-2-l2a": true,
+    "modis-13Q1-061": true,
+    "modis-09A1-061": true,
+    "era5-pds": true,
+    "landsat-c2-l2": true,
+    "sentinel-1-rtc": true,
+    "esa-worldcover": true,
+    "jrc-gsw": true,
+    "nasadem": true,
+    "cop-dem-glo-30": true,
+    "terraclimate": true,
+    "daymet-daily-na": true,
+    "io-lulc-annual-v02": true,
+    "modis-11A1-061": true,
+    "modis-64A1-061": true,
+    "chloris-biomass": true,
+    "gpm-imerg-hhr": true,
+    "hls2-l30": true,
+    "hls2-s30": true,
+    "noaa-cdr-sea-surface-temperature-whoi": true
+   }
+  }
+ },
+ "pc_s2_latest": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "status": 200,
+  "latency_s": 0.39,
+  "bytes": 46432,
+  "excerpt": {
+   "n": 3,
+   "ids": [
+    "S2A_MSIL2A_20261104T142041_R010_T20KNG_20261104T201103",
+    "S2C_MSIL2A_20261102T141711_R010_T20KNG_20261102T174009",
+    "S2B_MSIL2A_20261028T141709_R010_T20KNG_20261028T211119"
+   ],
+   "datetimes": [
+    "2026-11-04T14:20:41.024000Z",
+    "2026-11-02T14:17:11.025000Z",
+    "2026-10-28T14:17:09.024000Z"
+   ],
+   "cloud": [
+    35.546324,
+    15.809287,
+    100.0
+   ],
+   "asset_sample": [
+    "AOT",
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05"
+   ],
+   "href_sample": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/K/NG/2026/11/04/S2A_MSIL2A_20261104T142041_N0513_R010_T20KN"
+  }
+ },
+ "pc_s2_earliest": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "status": 200,
+  "latency_s": 0.48,
+  "bytes": 16312,
+  "excerpt": {
+   "n": 1,
+   "ids": [
+    "S2A_MSIL2A_20151021T142012_R010_T20KNG_20210412T183515"
+   ],
+   "datetimes": [
+    "2015-10-21T14:20:12.027000Z"
+   ],
+   "cloud": [
+    0.698969
+   ],
+   "asset_sample": [
+    "AOT",
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05"
+   ],
+   "href_sample": "https://sentinel2l2a01.blob.core.windows.net/sentinel2-l2/20/K/NG/2015/10/21/S2A_MSIL2A_20151021T142012_N0212_R010_T20KN"
+  }
+ },
+ "pc_modis13q1_latest": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "status": 200,
+  "latency_s": 0.48,
+  "bytes": 27019,
+  "excerpt": {
+   "n": 3,
+   "ids": [
+    "MYD13Q1.A2026281.h12v10.061.2026300162609",
+    "MOD13Q1.A2026273.h12v10.061.2026289235043",
+    "MYD13Q1.A2026265.h12v10.061.2026286105317"
+   ],
+   "datetimes": [
+    null,
+    null,
+    null
+   ],
+   "cloud": [
+    0,
+    0,
+    0
+   ],
+   "asset_sample": [
+    "hdf",
+    "250m_16_days_EVI",
+    "250m_16_days_NDVI",
+    "250m_16_days_VI_Quality",
+    "250m_16_days_MIR_reflectance",
+    "250m_16_days_NIR_reflectance"
+   ],
+   "href_sample": ""
+  }
+ },
+ "pc_modis13q1_earliest": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/search",
+  "status": 200,
+  "latency_s": 1.38,
+  "bytes": 10336,
+  "excerpt": {
+   "n": 1,
+   "ids": [
+    "MOD13Q1.A2000049.h12v10.061.2020041153314"
+   ],
+   "datetimes": [
+    null
+   ],
+   "cloud": [
+    null
+   ],
+   "asset_sample": [
+    "hdf",
+    "metadata",
+    "tilejson",
+    "250m_16_days_EVI",
+    "rendered_preview",
+    "250m_16_days_NDVI"
+   ],
+   "href_sample": ""
+  }
+ },
+ "pc_era5_collection": {
+  "url": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/era5-pds",
+  "status": 200,
+  "latency_s": 0.74,
+  "bytes": 16380,
+  "excerpt": {
+   "extent": {
+    "interval": [
+     [
+      "1979-01-01T00:00:00Z",
+      null
+     ]
+    ]
+   },
+   "deprecated": null,
+   "msft:short_description": "A comprehensive reanalysis, which assimilates as many observations as possible in the upper air and near surface."
+  }
+ },
+ "pc_sas_token_s2": {
+  "url": "https://planetarycomputer.microsoft.com/api/sas/v1/token/sentinel-2-l2a",
+  "status": 200,
+  "latency_s": 0.35,
+  "bytes": 400,
+  "excerpt": {
+   "has_token": true,
+   "expiry": "2026-11-07T05:50:53Z"
+  }
+ },
+ "pc_data_api_conformance": {
+  "url": "https://planetarycomputer.microsoft.com/api/data/v1/",
+  "status": 200,
+  "latency_s": 0.35,
+  "bytes": 32,
+  "excerpt": "{'Hello': 'Planetary Developer!'}"
+ },
+ "es_landing": {
+  "url": "https://earth-search.aws.element84.com/v1",
+  "status": 200,
+  "latency_s": 0.17,
+  "bytes": 3369,
+  "excerpt": {
+   "title": "Earth Search by Element 84",
+   "stac_version": "1.0.0"
+  }
+ },
+ "es_collections": {
+  "url": "https://earth-search.aws.element84.com/v1/collections",
+  "status": 200,
+  "latency_s": 0.27,
+  "bytes": 82397,
+  "excerpt": [
+   "sentinel-2-pre-c1-l2a",
+   "cop-dem-glo-30",
+   "naip",
+   "cop-dem-glo-90",
+   "landsat-c2-l2",
+   "sentinel-2-l2a",
+   "sentinel-2-l1c",
+   "sentinel-2-c1-l2a",
+   "sentinel-1-grd"
+  ]
+ },
+ "es_s2_latest": {
+  "url": "https://earth-search.aws.element84.com/v1/search",
+  "status": 400,
+  "latency_s": 0.24,
+  "bytes": 94,
+  "excerpt": {
+   "n": 0,
+   "ids": [],
+   "datetimes": [],
+   "cloud": [],
+   "asset_sample": null,
+   "href_sample": null
+  }
+ },
+ "cdse_stac_landing": {
+  "url": "https://stac.dataspace.copernicus.eu/v1/",
+  "status": 200,
+  "latency_s": 0.43,
+  "bytes": 3670,
+  "excerpt": {
+   "title": "Copernicus Data Space Ecosystem (CDSE) asset-level STAC catalogue",
+   "stac_version": "1.0.0"
+  }
+ },
+ "cdse_stac_s2_latest": {
+  "url": "https://stac.dataspace.copernicus.eu/v1/search",
+  "status": 200,
+  "latency_s": 0.73,
+  "bytes": 214749,
+  "excerpt": {
+   "n": 3,
+   "ids": [
+    "S2A_MSIL2A_20261104T142041_N0513_R010_T20KNG_20261104T201103",
+    "S2C_MSIL2A_20261102T141711_N0513_R010_T20KNG_20261102T174009",
+    "S2B_MSIL2A_20261028T141709_N0513_R010_T20KNG_20261028T211119"
+   ],
+   "datetimes": [
+    "2026-11-04T14:20:41.024000Z",
+    "2026-11-02T14:17:11.025000Z",
+    "2026-10-28T14:17:09.024000Z"
+   ],
+   "cloud": [
+    35.55,
+    15.81,
+    100.0
+   ],
+   "asset_sample": [
+    "AOT_10m",
+    "AOT_20m",
+    "AOT_60m",
+    "B01_20m",
+    "B01_60m",
+    "B02_10m"
+   ],
+   "href_sample": ""
+  }
+ },
+ "cdse_odata_s2": {
+  "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?$filter=Collection/Name%20eq%20'SENTINEL-2'%20and%20OData.CSC.Intersects(area=geography'SRID=4326;POINT(-62.52 -16.86)')%20and%20ContentDate/Start%20gt%202026-10-01T00:00:00.000Z&$orderby=ContentDate/Start%20desc&$top=3",
+  "status": 200,
+  "latency_s": 2.0,
+  "bytes": 5433,
+  "excerpt": [
+   [
+    "S2A_MSIL1C_20261104T142041_N0513_R010_T20KNG_20261104T191356.SAFE",
+    "2026-11-04T14:20:41.024000Z"
+   ],
+   [
+    "S2A_MSIL2A_20261104T142041_N0513_R010_T20KNG_20261104T201103.SAFE",
+    "2026-11-04T14:20:41.024000Z"
+   ],
+   [
+    "S2C_MSIL2A_20261102T141711_N0513_R010_T20KNG_20261102T174009.SAFE",
+    "2026-11-02T14:17:11.025000Z"
+   ]
+  ]
+ },
+ "cdse_openeo_caps": {
+  "url": "https://openeo.dataspace.copernicus.eu/openeo/1.2/",
+  "status": 200,
+  "latency_s": 0.41,
+  "bytes": 3753,
+  "excerpt": {
+   "api_version": "1.2.0",
+   "backend_version": "0.74.0a4.dev20261026+283",
+   "title": "Copernicus Data Space Ecosystem openEO API",
+   "n_endpoints": 21
+  }
+ },
+ "cdse_openeo_collections": {
+  "url": "https://openeo.dataspace.copernicus.eu/openeo/1.2/collections",
+  "status": 200,
+  "latency_s": 2.66,
+  "bytes": 331628,
+  "excerpt": {
+   "n": 138,
+   "ids": [
+    "SENTINEL1_GRD",
+    "COPERNICUS_30",
+    "SENTINEL3_OLCI_L1B",
+    "SENTINEL3_SLSTR",
+    "SENTINEL_5P_L2",
+    "LANDSAT_BIMONTHLY_MOSAIC",
+    "SENTINEL3_SYN_L2_SYN",
+    "SENTINEL3_SLSTR_L2_LST",
+    "SENTINEL5P_L2_CO",
+    "SENTINEL5P_L2_NO2",
+    "SENTINEL5P_L2_CH4",
+    "COPERNICUS_VEGETATION_PHENOLOGY_PRODUCTIVITY_10M_SEASON1",
+    "COPERNICUS_VEGETATION_PHENOLOGY_PRODUCTIVITY_10M_SEASON2",
+    "COPERNICUS_PLANT_PHENOLOGY_INDEX",
+    "ESA_WORLDCOVER_10M_2020_V1",
+    "ESA_WORLDCOVER_10M_2021_V2",
+    "SENTINEL1_GLOBAL_MOSAICS",
+    "SENTINEL2_L2A",
+    "SENTINEL2_L1C",
+    "SENTINEL3_OLCI_L2_LAND",
+    "SENTINEL3_OLCI_L2_WATER",
+    "SENTINEL3_SYN_L2_AOD",
+    "CLMS_LCM_GLOBAL_10M_YEARLY_V1",
+    "CLMS_TCD_PANTROPICAL_10M_YEARLY_V1",
+    "CLMS_BA_GLOBAL_300M_DAILY_V4",
+    "CLMS_NDVI_GLOBAL_300M_10DAILY_V3",
+    "CLMS_ETA_GLOBAL_300M_10DAILY_V1",
+    "CLMS_HF_GLOBAL_300M_DAILY_V1",
+    "CLMS_LSP_GLOBAL_300M_YEARLY_V2",
+    "CLMS_SSM_EUROPE_1KM_DAILY_V1",
+    "CLMS_NPP_GLOBAL_300M_10DAILY_V2",
+    "CLMS_LST_TCI_GLOBAL_3KM_10DAILY_V3",
+    "CLMS_FAPAR_GLOBAL_1KM_10DAILY_V2",
+    "CLMS_FCOVER_GLOBAL_1KM_10DAILY_V2",
+    "CLMS_GDMP_GLOBAL_1KM_10DAILY_V2",
+    "CLMS_LAI_GLOBAL_1KM_10DAILY_V2",
+    "CLMS_NDVI_LTS_GLOBAL_1KM_10DAILY_V3",
+    "CLMS_NDVI_GLOBAL_1KM_10DAILY_V3",
+    "CLMS_SWI_EUROPE_1KM_DAILY_V1",
+    "CLMS_SWI_EUROPE_1KM_DAILY_V2"
+   ]
+  }
+ },
+ "cdse_openeo_jobs_noauth": {
+  "url": "https://openeo.dataspace.copernicus.eu/openeo/1.2/jobs",
+  "status": 401,
+  "latency_s": 0.33,
+  "bytes": 102,
+  "excerpt": "{'code': 'AuthenticationRequired', 'id': 'r-26110705060148a1a1611a3724b809bf', 'message': 'Unauthorized.'}"
+ },
+ "cmr_mod13q1_latest": {
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+  "status": 200,
+  "latency_s": 0.38,
+  "bytes": 15946,
+  "excerpt": [
+   [
+    "MOD13Q1.A2026289.h12v10.061.2026307125816",
+    "2026-10-16T00:00:00.000Z"
+   ],
+   [
+    "MOD13Q1.A2026273.h12v10.061.2026289235043",
+    "2026-09-30T00:00:00.000Z"
+   ],
+   [
+    "MOD13Q1.A2026257.h12v10.061.2026277222245",
+    "2026-09-14T00:00:00.000Z"
+   ]
+  ]
+ },
+ "cmr_mod13q1_earliest": {
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+  "status": 200,
+  "latency_s": 0.19,
+  "bytes": 5749,
+  "excerpt": [
+   [
+    "MOD13Q1.A2000049.h12v10.061.2020041153314",
+    "2000-02-18T00:00:00.000Z"
+   ]
+  ]
+ },
+ "cmr_vnp13a1_latest": {
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+  "status": 200,
+  "latency_s": 0.78,
+  "bytes": 10352,
+  "excerpt": [
+   [
+    "VNP13A1.A2026297.h12v10.002.2026309112348",
+    "2026-10-24T00:00:00.000Z"
+   ],
+   [
+    "VNP13A1.A2026289.h12v10.002.2026307012514",
+    "2026-10-16T00:00:00.000Z"
+   ]
+  ]
+ },
+ "cmr_smap_l4_latest": {
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+  "status": 200,
+  "latency_s": 0.25,
+  "bytes": 9377,
+  "excerpt": [
+   [
+    "SMAP_L4_SM_gph_20261104T223000_Vv8013_001.h5_u9loH5HD",
+    "2026-11-04T21:00:00.000Z"
+   ],
+   [
+    "SMAP_L4_SM_gph_20261104T193000_Vv8013_001.h5_u9loH5HD",
+    "2026-11-04T18:00:00.000Z"
+   ]
+  ]
+ },
+ "cmr_imerg_late_latest": {
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json",
+  "status": 200,
+  "latency_s": 0.39,
+  "bytes": 9329,
+  "excerpt": [
+   [
+    "GPM_3IMERGDL.07:3B-DAY-L.MS.MRG.3IMERG.20261105-S000000-E235959.V07C.nc4",
+    "2026-11-05T00:00:00.000Z"
+   ],
+   [
+    "GPM_3IMERGDL.07:3B-DAY-L.MS.MRG.3IMERG.20261104-S000000-E235959.V07C.nc4",
+    "2026-11-04T00:00:00.000Z"
+   ]
+  ]
+ },
+ "cmr_stac_lpcloud": {
+  "url": "https://cmr.earthdata.nasa.gov/stac/LPCLOUD",
+  "status": 200,
+  "latency_s": 1.24,
+  "bytes": 22651,
+  "excerpt": {
+   "title": "LPCLOUD STAC Catalog",
+   "n_links": 111
+  }
+ },
+ "appeears_products": {
+  "url": "https://appeears.earthdatacloud.nasa.gov/api/product",
+  "status": 200,
+  "latency_s": 0.44,
+  "bytes": 111855,
+  "excerpt": {
+   "n": 193,
+   "has_MOD13Q1.061": true,
+   "has_SPL4SMGP": [
+    "SPL4CMDL.008",
+    "SPL4SMGP.008"
+   ]
+  }
+ },
+ "appeears_task_noauth": {
+  "url": "https://appeears.earthdatacloud.nasa.gov/api/task",
+  "status": 403,
+  "latency_s": 0.24,
+  "bytes": 138,
+  "excerpt": "{'message': \"You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.\"}"
+ },
+ "harmony_root": {
+  "url": "https://harmony.earthdata.nasa.gov/versions",
+  "status": 200,
+  "latency_s": 0.64,
+  "bytes": 7600,
+  "excerpt": "[{'name': 'harmony/download', 'images': [{'image': 'harmonyservices/query-cmr', 'tag': 'latest', 'lastUpdated': '2026-11-03T14:45:35Z', 'imageDigest': 'sha256:fb9e8ec1c01f3d18acbf8e16d255299b9e07ea025"
+ },
+ "ornl_modis_subset": {
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/subset",
+  "error": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='modis.ornl.gov', port=443): Read timed out. (read timeout=60)\"))",
+  "latency_s": 60.17
+ },
+ "ornl_modis_dates": {
+  "url": "https://modis.ornl.gov/rst/api/v1/MOD13Q1/dates",
+  "status": 200,
+  "latency_s": 38.45,
+  "bytes": 36238,
+  "excerpt": {
+   "n": 614,
+   "first": {
+    "modis_date": "A2000049",
+    "calendar_date": "2000-02-18"
+   },
+   "last": {
+    "modis_date": "A2026289",
+    "calendar_date": "2026-10-16"
+   }
+  }
+ },
+ "openmeteo_archive_era5": {
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "status": 200,
+  "latency_s": 0.45,
+  "bytes": 2001,
+  "excerpt": {
+   "days": 38,
+   "first": "2026-10-01",
+   "last": "2026-11-07",
+   "last_nonnull_precip": "2026-10-31",
+   "sample": {
+    "time": "2026-10-29",
+    "precipitation_sum": 0.0,
+    "temperature_2m_max": 28.4,
+    "temperature_2m_min": 17.5,
+    "et0_fao_evapotranspiration": 3.73,
+    "soil_moisture_28_to_100cm_mean": 0.403
+   }
+  }
+ },
+ "openmeteo_archive_1940": {
+  "url": "https://archive-api.open-meteo.com/v1/archive",
+  "status": 200,
+  "latency_s": 0.43,
+  "bytes": 318,
+  "excerpt": {
+   "first": "1940-01-01",
+   "val": [
+    null,
+    1.4,
+    4.0
+   ]
+  }
+ },
+ "openmeteo_forecast_pastdays": {
+  "url": "https://api.open-meteo.com/v1/forecast",
+  "status": 200,
+  "latency_s": 0.1,
+  "bytes": 787,
+  "excerpt": {
+   "first": "2026-10-31",
+   "last": "2026-11-09",
+   "today": {
+    "time": "2026-11-07",
+    "precipitation_sum": 12.7,
+    "temperature_2m_max": 35.1,
+    "temperature_2m_min": 23.7,
+    "et0_fao_evapotranspiration": 6.58
+   }
+  }
+ },
+ "openmeteo_customer_noauth": {
+  "url": "https://customer-archive-api.open-meteo.com/v1/archive",
+  "status": 401,
+  "latency_s": 0.35,
+  "bytes": 75,
+  "excerpt": "{'reason': 'API key required. Please add &apikey= to the URL.', 'error': True}"
+ },
+ "power_daily_recent": {
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point",
+  "status": 200,
+  "latency_s": 0.49,
+  "bytes": 3252,
+  "excerpt": {
+   "PRECTOTCORR": [
+    "20261001",
+    "20261103",
+    [
+     [
+      "20261101",
+      2.13
+     ],
+     [
+      "20261102",
+      2.04
+     ],
+     [
+      "20261103",
+      0.85
+     ]
+    ]
+   ],
+   "T2M_MAX": [
+    "20261001",
+    "20261103",
+    [
+     [
+      "20261101",
+      35.69
+     ],
+     [
+      "20261102",
+      36.84
+     ],
+     [
+      "20261103",
+      38.14
+     ]
+    ]
+   ],
+   "T2M_MIN": [
+    "20261001",
+    "20261103",
+    [
+     [
+      "20261101",
+      24.15
+     ],
+     [
+      "20261102",
+      26.32
+     ],
+     [
+      "20261103",
+      26.33
+     ]
+    ]
+   ],
+   "GWETROOT": [
+    "20261001",
+    "20261103",
+    [
+     [
+      "20261101",
+      0.29
+     ],
+     [
+      "20261102",
+      0.28
+     ],
+     [
+      "20261103",
+      0.28
+     ]
+    ]
+   ]
+  }
+ },
+ "power_daily_1981": {
+  "url": "https://power.larc.nasa.gov/api/temporal/daily/point",
+  "status": 200,
+  "latency_s": 0.49,
+  "bytes": 675,
+  "excerpt": {
+   "PRECTOTCORR": [
+    [
+     "19810101",
+     15.68
+    ],
+    [
+     "19810102",
+     11.93
+    ]
+   ],
+   "T2M_MAX": [
+    [
+     "19810101",
+     32.22
+    ],
+    [
+     "19810102",
+     28.11
+    ]
+   ]
+  }
+ },
+ "climateserv_root": {
+  "url": "https://climateserv.servirglobal.net/",
+  "status": 200,
+  "latency_s": 0.36,
+  "bytes": 26844,
+  "excerpt": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    \n    <meta charset=\"UTF-8\">\n    <meta\n            name=\"viewport\"\n            content=\"width=device-width,"
+ },
+ "climateserv_datatypes": {
+  "url": "https://climateserv.servirglobal.net/api/getClimateScenarioInfo/",
+  "status": 200,
+  "latency_s": 0.63,
+  "bytes": 13039,
+  "excerpt": "{'unique_id': '08dc6193-2abe-409c-86b8-4f8d4500a4b8', 'RequestName': 'getClimateScenarioInfo', 'climate_DatatypeMap': [{'climate_Ensemble': 'cfsv2_ens06', 'climate_DataTypes': [{'dataType_Number': 52, 'climate_Variable': 'air_temperature', 'climate_Ensemble': 'cfsv2_ens06', 'climate_Ensemble_Label':"
+ },
+ "cds_catalogue_era5": {
+  "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-single-levels",
+  "status": 200,
+  "latency_s": 0.46,
+  "bytes": 7666,
+  "excerpt": {
+   "title": "ERA5 hourly data on single levels from 1940 to present",
+   "extent": {
+    "interval": [
+     [
+      "1940-01-01T00:00:00+00:00",
+      "2026-11-01T00:00:00+00:00"
+     ]
+    ]
+   },
+   "licence_links": [
+    "CC-BY licence"
+   ]
+  }
+ },
+ "cds_catalogue_era5land": {
+  "url": "https://cds.climate.copernicus.eu/api/catalogue/v1/collections/reanalysis-era5-land",
+  "status": 200,
+  "latency_s": 0.36,
+  "bytes": 5537,
+  "excerpt": {
+   "title": "ERA5-Land hourly data from 1950 to present",
+   "extent": {
+    "interval": [
+     [
+      "1950-01-01T00:00:00+00:00",
+      "2026-11-01T00:00:00+00:00"
+     ]
+    ]
+   }
+  }
+ },
+ "cds_retrieve_noauth": {
+  "url": "https://cds.climate.copernicus.eu/api/retrieve/v1/jobs",
+  "status": 401,
+  "latency_s": 0.31,
+  "bytes": 222,
+  "excerpt": "{'type': 'permission denied', 'title': 'permission denied', 'status': 401, 'detail': 'authentication required', 'instance': 'https://cds.climate.copernicus.eu/api/retrieve/v1/jobs', 'trace_id': '2a049"
+ },
+ "gcs_arco_era5_zmetadata": {
+  "url": "https://storage.googleapis.com/gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3/.zmetadata",
+  "status": 200,
+  "latency_s": 0.11,
+  "bytes": 132785,
+  "excerpt": {
+   "attrs": {
+    "valid_time_start": "1940-01-01",
+    "valid_time_stop": "2026-06-30",
+    "valid_time_stop_era5t": "2026-10-31"
+   },
+   "n_keys": 556
+  }
+ },
+ "gee_stac_catalog": {
+  "url": "https://storage.googleapis.com/earthengine-stac/catalog/catalog.json",
+  "status": 200,
+  "latency_s": 0.15,
+  "bytes": 25841,
+  "excerpt": {
+   "title": "Google Earth Engine Catalog",
+   "n_links": 135
+  }
+ },
+ "gee_rest_noauth": {
+  "url": "https://earthengine.googleapis.com/v1/projects/earthengine-public/assets/MODIS/061/MOD13Q1",
+  "status": 401,
+  "latency_s": 0.13,
+  "bytes": 630,
+  "excerpt": "{'error': {'code': 401, 'message': 'Request is missing required authentication credential. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers."
+ },
+ "aws_sentinel_cogs_list": {
+  "url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/?list-type=2&prefix=sentinel-s2-l2a-cogs/20/K/QA/2026/10/&max-keys=5",
+  "status": 200,
+  "latency_s": 0.26,
+  "bytes": 2302,
+  "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListBucketResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Name>sentinel-cogs</Name><Prefix>sentinel-s2-l2a-cogs/20/K/QA/2026/10/</Prefix><NextContinuationToken>1KZDt1uRQ8dYVGI6YvzTXl5aknr8+TMKbz3hmC38DfeRwrJDV1PnArqpt13GDo375oFIT60TB3X3Cr1t5epkDu4J21rAIBPYkaCKZPSzb4F7Bi2W1FhO/dHgiO/9/Ng9l</NextContinuationToken><KeyCount>5</KeyCount><MaxKeys>5</MaxKe"
+ },
+ "aws_nsf_ncar_era5_list": {
+  "url": "https://nsf-ncar-era5.s3.amazonaws.com/?list-type=2&prefix=e5.oper.an.sfc/2026&max-keys=3&delimiter=/",
+  "status": 200,
+  "latency_s": 0.25,
+  "bytes": 611,
+  "excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ListBucketResult xmlns=\"http://s3.amazonaws.com/doc/2006-03-01/\"><Name>nsf-ncar-era5</Name><Prefix>e5.oper.an.sfc/2026</Prefix><NextContinuationToken>1VieqjCP151wdjn9sEB1W9TgETiYWR1URSakX7bd1rnsqrfSZwKu58RcsvDZE80RX</NextContinuationToken><KeyCount>3</KeyCount><MaxKeys>3</MaxKeys><Delimiter>/</Delimiter><IsTruncated>true</IsTruncated><CommonPrefixes><Prefix>"
+ },
+ "aws_registry_chirps": {
+  "url": "https://raw.githubusercontent.com/awslabs/open-data-registry/main/datasets/chirps.yaml",
+  "status": 404,
+  "latency_s": 0.11,
+  "bytes": 14,
+  "excerpt": "404: Not Found"
+ },
+ "iri_chirps_point": {
+  "url": "https://iridl.ldeo.columbia.edu/SOURCES/.UCSB/.CHIRPS/.v2p0/.daily-improved/.global/.0p05/.prcp/X/-62.52/VALUE/Y/-16.86/VALUE/T/(1%20Oct%202026)/(7%20Nov%202026)/RANGEEDGES/T+exch+table-+text+text+skipanyNaN+-table+.csv",
+  "status": 200,
+  "latency_s": 0.09,
+  "bytes": 4992,
+  "excerpt": "/div>\n</div>\n    <p class=\"text-muted mt-4 mb-0\">By signing in, you agree to the <a href=\"/auth/legal/terms-of-service\" target=\"_blank\">Terms of Service</a> and <a href=\"/auth/legal/privacy-policy\" target=\"_blank\">Privacy Policy</a>\n    </p>\n    <p class=\"text-muted\">\u00a9 IRI 2025</p>\n  </body>\n</html>"
+ }
+}

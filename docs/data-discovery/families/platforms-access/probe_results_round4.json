@@ -1,0 +1,77 @@
+{
+ "openeo_collections_s2": {
+  "SENTINEL2_L2A": true,
+  "matches": [
+   "LANDSAT_BIMONTHLY_MOSAIC",
+   "SENTINEL2_L2A",
+   "SENTINEL2_L1C",
+   "CLMS_NDVI_GLOBAL_300M_10DAILY_V3",
+   "CLMS_NDVI_LTS_GLOBAL_1KM_10DAILY_V3",
+   "CLMS_NDVI_GLOBAL_1KM_10DAILY_V3",
+   "CLMS_NDVI_STS_GLOBAL_1KM_10DAILY_V3_NC"
+  ],
+  "latency_s": 1.09
+ },
+ "pc_stats_ndvi_scl_masked": {
+  "status": 500,
+  "body": "Internal Server Error",
+  "latency_s": 0.91
+ },
+ "pc_stats_ndvi_scl_masked_cloudy": {
+  "status": 500,
+  "body": "Internal Server Error",
+  "latency_s": 0.94
+ },
+ "es_s2_l2a_old_earliest": {
+  "dt": [
+   "2017-01-03T14:26:42.488000Z"
+  ],
+  "latency_s": 0.2
+ },
+ "openmeteo_bucket_sizes": {
+  "data/copernicus_era5/precipitation/": {
+   "n_listed": 167,
+   "first_keys": [
+    "data/copernicus_era5/precipitation/chunk_904.om",
+    "data/copernicus_era5/precipitation/chunk_905.om",
+    "data/copernicus_era5/precipitation/chunk_906.om"
+   ],
+   "last_keys": [
+    "data/copernicus_era5/precipitation/year_2019.om",
+    "data/copernicus_era5/precipitation/year_2020.om",
+    "data/copernicus_era5/precipitation/year_2021.om"
+   ],
+   "median_MB": 105.1,
+   "max_MB": 1752.8,
+   "truncated": false
+  },
+  "data/copernicus_era5_land/temperature_2m/": {
+   "n_listed": 157,
+   "first_keys": [
+    "data/copernicus_era5_land/temperature_2m/chunk_904.om",
+    "data/copernicus_era5_land/temperature_2m/chunk_905.om",
+    "data/copernicus_era5_land/temperature_2m/chunk_906.om"
+   ],
+   "last_keys": [
+    "data/copernicus_era5_land/temperature_2m/year_2019.om",
+    "data/copernicus_era5_land/temperature_2m/year_2020.om",
+    "data/copernicus_era5_land/temperature_2m/year_2021.om"
+   ],
+   "median_MB": 557.5,
+   "max_MB": 9675.5,
+   "truncated": false
+  },
+  "latency_s": 0.71
+ },
+ "gesdisc_opendap_imerg_head": {
+  "status": 405,
+  "location": "",
+  "latency_s": 0.42
+ },
+ "aws_registry_openmeteo": {
+  "status": 200,
+  "url": "https://raw.githubusercontent.com/awslabs/open-data-registry/main/datasets/open-meteo.yaml",
+  "license_excerpt": "CC-BY 4.0",
+  "latency_s": 0.12
+ }
+}

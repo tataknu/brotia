@@ -1,0 +1,179 @@
+{
+ "Aconcagua@Chacabuquito 05410002": {
+  "status": 200,
+  "latency_s": 0.6,
+  "grid": [
+   -32.875,
+   -70.524994
+  ],
+  "first": [
+   "1997-01-01",
+   34.73
+  ],
+  "last": [
+   "2026-12-31",
+   115.41
+  ],
+  "oct_mean_2026": 4.4,
+  "oct_mean_1991_2020_median": 0.7,
+  "oct_2026_percentile_vs_1991_2020": 75,
+  "today_value": [
+   0.73
+  ]
+ },
+ "Grande@LasRamadas 04511002 (Limari)": {
+  "status": 200,
+  "latency_s": 0.51,
+  "grid": [
+   -31.024998,
+   -70.57499
+  ],
+  "first": [
+   "1997-01-01",
+   0.0
+  ],
+  "last": [
+   "2026-12-31",
+   0.17
+  ],
+  "oct_mean_2026": 0.0,
+  "oct_mean_1991_2020_median": 0.0,
+  "oct_2026_percentile_vs_1991_2020": 0,
+  "today_value": [
+   0.0
+  ]
+ },
+ "Cachapoal@PteTermas 06008005": {
+  "status": 200,
+  "latency_s": 0.5,
+  "grid": [
+   -34.274998,
+   -70.57499
+  ],
+  "first": [
+   "1997-01-01",
+   0.22
+  ],
+  "last": [
+   "2026-12-31",
+   0.23
+  ],
+  "oct_mean_2026": 2.0,
+  "oct_mean_1991_2020_median": 0.6,
+  "oct_2026_percentile_vs_1991_2020": 100,
+  "today_value": [
+   1.13
+  ]
+ },
+ "Tinguiririca@BajoBriones 06028001": {
+  "status": 200,
+  "latency_s": 0.59,
+  "grid": [
+   -34.725,
+   -70.82499
+  ],
+  "first": [
+   "1997-01-01",
+   91.26
+  ],
+  "last": [
+   "2026-12-31",
+   186.07
+  ],
+  "oct_mean_2026": 88.3,
+  "oct_mean_1991_2020_median": 42.3,
+  "oct_2026_percentile_vs_1991_2020": 100,
+  "today_value": [
+   64.31
+  ]
+ },
+ "Teno@DespJuntaClaro 07104002": {
+  "status": 200,
+  "latency_s": 0.61,
+  "grid": [
+   -34.975,
+   -70.82499
+  ],
+  "first": [
+   "1997-01-01",
+   29.69
+  ],
+  "last": [
+   "2026-12-31",
+   87.31
+  ],
+  "oct_mean_2026": 46.4,
+  "oct_mean_1991_2020_median": 25.6,
+  "oct_2026_percentile_vs_1991_2020": 100,
+  "today_value": [
+   36.93
+  ]
+ },
+ "Maule@Armerillo 07321002": {
+  "status": 200,
+  "latency_s": 0.58,
+  "grid": [
+   -35.725,
+   -71.12499
+  ],
+  "first": [
+   "1997-01-01",
+   66.92
+  ],
+  "last": [
+   "2026-12-31",
+   226.51
+  ],
+  "oct_mean_2026": 189.7,
+  "oct_mean_1991_2020_median": 122.5,
+  "oct_2026_percentile_vs_1991_2020": 100,
+  "today_value": [
+   174.79
+  ]
+ },
+ "Nuble@LaPunilla 08105001": {
+  "status": 200,
+  "latency_s": 0.6,
+  "grid": [
+   -36.674995,
+   -71.32499
+  ],
+  "first": [
+   "1997-01-01",
+   8.84
+  ],
+  "last": [
+   "2026-12-31",
+   28.99
+  ],
+  "oct_mean_2026": 88.1,
+  "oct_mean_1991_2020_median": 68.2,
+  "oct_2026_percentile_vs_1991_2020": 88,
+  "today_value": [
+   76.8
+  ]
+ },
+ "Biobio@Rucalhue 08317001": {
+  "status": 200,
+  "latency_s": 0.6,
+  "grid": [
+   -37.725,
+   -71.924995
+  ],
+  "first": [
+   "1997-01-01",
+   68.18
+  ],
+  "last": [
+   "2026-12-31",
+   213.78
+  ],
+  "oct_mean_2026": 604.9,
+  "oct_mean_1991_2020_median": 355.6,
+  "oct_2026_percentile_vs_1991_2020": 96,
+  "today_value": [
+   561.34
+  ]
+ },
+ "_caveat": "Cells taken at DGA gauge coordinates. Aconcagua, Grande (Limari) and Cachapoal cells are OFF-RIVER (near-zero flows); see probe_glofas_cell.py. Even best-cell Aconcagua climatology contradicts DGA observations. Data non-null from 1997-01-01; values after ~today are GloFAS forecast/seasonal, not observation."
+}

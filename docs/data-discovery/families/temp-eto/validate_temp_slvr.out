@@ -1,0 +1,28 @@
+
+=== SLVR 2023-01-01..2023-12-31  station days with tmax: 365 ===
+power      tmax: n=365 bias=-0.35 MAE=2.57 r=0.814
+power      tmin: n=365 bias=+0.78 MAE=1.64 r=0.847
+era5       tmax: n=365 bias=-1.46 MAE=1.63 r=0.901
+era5       tmin: n=365 bias=+0.63 MAE=0.82 r=0.971
+era5_land  tmax: n=365 bias=-2.58 MAE=2.70 r=0.904
+era5_land  tmin: n=365 bias=+0.14 MAE=0.90 r=0.943
+best_match tmax: n=365 bias=-2.68 MAE=2.78 r=0.893
+best_match tmin: n=365 bias=-0.20 MAE=0.98 r=0.936
+  days tmax>=35 st: 77   days tmin<=5 st: 0
+  days tmax>=35 power: 97   days tmin<=5 power: 0
+  days tmax>=35 era5: 50   days tmin<=5 era5: 0
+  days tmax>=35 era5_land: 29   days tmin<=5 era5_land: 0
+
+=== SLVR 2025-01-01..2025-08-23  station days with tmax: 235 ===
+power      tmax: n=235 bias=-1.64 MAE=2.05 r=0.843
+power      tmin: n=235 bias=+0.04 MAE=1.20 r=0.929
+era5       tmax: n=235 bias=-1.66 MAE=1.72 r=0.860
+era5       tmin: n=235 bias=+0.55 MAE=0.82 r=0.973
+era5_land  tmax: n=235 bias=-3.03 MAE=3.06 r=0.870
+era5_land  tmin: n=235 bias=+0.07 MAE=0.81 r=0.959
+best_match tmax: n=235 bias=-3.18 MAE=3.20 r=0.870
+best_match tmin: n=235 bias=-0.04 MAE=0.86 r=0.955
+  days tmax>=35 st: 11   days tmin<=5 st: 0
+  days tmax>=35 power: 8   days tmin<=5 power: 0
+  days tmax>=35 era5: 1   days tmin<=5 era5: 0
+  days tmax>=35 era5_land: 0   days tmin<=5 era5_land: 0

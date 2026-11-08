@@ -1,0 +1,168 @@
+.flyin {
+  --flyin-ink: #eaf3ee;
+  --flyin-panel: rgba(14, 25, 20, 0.72);
+  --flyin-line: #4cc072;
+  --flyin-vertex: #9bdb8a;
+  position: relative;
+  overflow: hidden;
+  background: #0e1914;
+  font-family: 'IBM Plex Mono', var(--font-mono, ui-monospace), monospace;
+  color: var(--flyin-ink);
+  isolation: isolate;
+}
+
+.flyin__map {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: #0e1914;
+}
+.flyin__map.leaflet-container {
+  background: #0e1914;
+  cursor: default;
+}
+
+.flyin__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+/* Leaflet SVG paths (overlay pane): colours come from the layer options; only the look lives here. */
+.flyin__outline {
+  stroke-linejoin: miter;
+  stroke-linecap: square;
+  filter: drop-shadow(0 0 3px rgba(208, 83, 58, 0.6));
+}
+.flyin__farm {
+  stroke-linejoin: round;
+}
+
+.flyin__pin {
+  stroke: #0e1914;
+  stroke-width: 1.25px;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.55));
+}
+.flyin__leader {
+  fill: none;
+  stroke: rgba(234, 243, 238, 0.55);
+  stroke-width: 1px;
+}
+.flyin__tag {
+  fill: rgba(14, 25, 20, 0.82);
+  stroke-width: 1px;
+}
+.flyin__tag-text {
+  fill: var(--flyin-ink);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.flyin__vertex {
+  fill: var(--flyin-vertex);
+  stroke: #0e1914;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.flyin__chip {
+  position: absolute;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  white-space: nowrap;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--flyin-ink);
+  background: var(--flyin-panel);
+  border: 1px solid rgba(76, 192, 114, 0.55);
+  border-radius: 3px;
+  pointer-events: none;
+  backdrop-filter: blur(3px);
+}
+.flyin__chip-score {
+  padding-left: 8px;
+  border-left: 1px solid rgba(234, 243, 238, 0.25);
+  color: #f2a08e;
+}
+.flyin__chip-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 1.5px;
+  background: var(--flyin-vertex);
+}
+
+.flyin__grid {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, rgba(140, 190, 160, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(140, 190, 160, 0.07) 1px, transparent 1px);
+  background-size: 2.5vmax 2.5vmax;
+}
+.flyin__vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 45%, rgba(6, 12, 9, 0.55) 80%, rgba(6, 12, 9, 0.9) 100%);
+}
+
+.flyin__hud {
+  position: absolute;
+  z-index: 6;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+  color: var(--flyin-ink);
+  background: var(--flyin-panel);
+  border: 1px solid rgba(140, 190, 160, 0.18);
+  border-radius: 3px;
+  pointer-events: none;
+}
+.flyin__hud-k {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--flyin-line);
+}
+.flyin__hud-dim {
+  opacity: 0.6;
+}
+.flyin__hud--tl { top: 16px; left: 16px; }
+.flyin__hud--tc {
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  font-size: 13px;
+  padding: 8px 14px;
+}
+.flyin__hud--tc > span { display: inline-flex; align-items: center; gap: 6px; }
+.flyin__hud--tc > span + span::before { content: '·'; margin: 0 10px; opacity: 0.5; }
+.flyin__hud--tc .flyin__hud-k { font-size: 12px; }
+.flyin__sw { display: inline-block; width: 8px; height: 8px; border-radius: 1.5px; }
+.flyin__hud--tr { top: 16px; right: 16px; text-align: right; }
+.flyin__hud--bl { bottom: 16px; left: 16px; }
+.flyin__hud--br { bottom: 16px; right: 16px; }
+
+.flyin__scale {
+  height: 6px;
+  margin-bottom: 4px;
+  border: 2px solid var(--flyin-ink);
+  border-top: 0;
+}
+.flyin__attr {
+  max-width: min(60vw, 420px);
+  padding: 4px 8px;
+  font-size: 10px;
+  opacity: 0.85;
+}

@@ -1,0 +1,12 @@
+location,n_le10km,n_le25km,nearest_id,nearest_name,dist_km,latest_obs,first_year_with_data,latency_s
+Quillota avocado,2,10,32,Quillota,4.3,2026-11-07 02:00:00,2009,0.42
+Ovalle table grape,1,8,324,Ovalle,4.7,2026-11-06 23:00:00,2015,0.41
+Requinoa cherry,5,12,82,Requinoa,5.6,2026-11-07 01:00:00,2009,0.43
+Santa Cruz wine,5,11,76,Santa Cruz,6.3,2026-11-07 02:00:00,2009,0.42
+Curico apple/cherry,5,12,696,Curic&#xF3;,4.6,2026-11-07 02:00:00,2020,0.41
+Talca vineyard,0,10,95,Pencahue,10.6,2026-11-05 14:00:00,2009,0.41
+Parral rice,0,7,102,Parral,11.6,2026-11-07 02:00:00,2009,0.41
+Chillan blueberry,1,5,114,San Nicol&#xE1;s,9.2,2026-11-07 02:00:00,2009,0.41
+Los Angeles maize/wheat,1,7,119,Las Vi&#xF1;as,5.6,2026-11-07 01:00:00,2012,0.42
+Temuco wheat/oats,0,5,644,Taplon,13.1,2026-11-07 03:00:00,2018,0.41
+Osorno potato,2,3,137,Osorno,6.3,2026-11-07 02:00:00,2012,0.42

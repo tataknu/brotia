@@ -1,0 +1,195 @@
+{
+ "Quillota": {
+  "http": 200,
+  "latency_s": 3.92,
+  "n": 1,
+  "attrs": {
+   "clase": "AREAS ARTIFICIALES",
+   "tipo": " ",
+   "uso_actual": "CIUDAD",
+   "especie1": " ",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " ",
+   "subtipo": " ",
+   "desccomu": "QUILLOTA",
+   "descprov": "QUILLOTA",
+   "descregi": "REGION DE VALPARAISO"
+  }
+ },
+ "Ovalle": {
+  "http": 200,
+  "latency_s": 4.07,
+  "n": 1,
+  "attrs": {
+   "uso_actual": "CIUDAD",
+   "clase": "AREAS ARTIFICIALES",
+   "tipo": "NO APLICA",
+   "subtipo": " ",
+   "especie1": " ",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " ",
+   "nom_reg": "Región de Coquimbo",
+   "nom_pro": "Limarí",
+   "nom_com": "Ovalle"
+  }
+ },
+ "Requinoa": {
+  "http": 200,
+  "latency_s": 4.06,
+  "n": 1,
+  "attrs": {
+   "desccomu": "REQUINOA",
+   "descprov": "CACHAPOAL",
+   "descregi": "DEL LIBERTADOR GENERAL BERNARDO O\"HIGGINS RIQUELME",
+   "descregr": "VI",
+   "descregt": "SEXTA",
+   "descorig": "Ortoimagen Ciren 1:10.000. Imagenes Quick Bird II (pixel 60 cmt) desde el 2004 al 2008 (VI).",
+   "clase": "AREAS ARTIFICIALES",
+   "usoactual": "ZONA INDUSTRIAL",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " "
+  }
+ },
+ "SantaCruz_Colchagua": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 1,
+  "attrs": {
+   "desccomu": "SANTA CRUZ",
+   "descprov": "COLCHAGUA",
+   "descregi": "DEL LIBERTADOR GENERAL BERNARDO O\"HIGGINS RIQUELME",
+   "descregr": "VI",
+   "descregt": "SEXTA",
+   "descorig": "Ortoimagen Ciren 1:10.000. Imagenes Quick Bird II (pixel 60 cmt) desde el 2004 al 2008 (VI).",
+   "clase": "AREAS ARTIFICIALES",
+   "usoactual": "CIUDAD",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " "
+  }
+ },
+ "Curico": {
+  "http": 200,
+  "latency_s": 4.08,
+  "n": 1,
+  "attrs": {
+   "clase": "AREAS ARTIFICIALES",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " ",
+   "uso_actual": "CIUDAD"
+  }
+ },
+ "Talca": {
+  "http": 200,
+  "latency_s": 4.08,
+  "n": 1,
+  "attrs": {
+   "clase": "AREAS ARTIFICIALES",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " ",
+   "uso_actual": "CIUDAD"
+  }
+ },
+ "Parral": {
+  "http": 200,
+  "latency_s": 4.05,
+  "n": 1,
+  "attrs": {
+   "clase": "AREAS ARTIFICIALES",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " ",
+   "uso_actual": "CIUDAD"
+  }
+ },
+ "Chillan": {
+  "http": 200,
+  "latency_s": 4.08,
+  "n": 1,
+  "attrs": {
+   "desccomu": "CHILLAN",
+   "descprov": "DIGUILLIN",
+   "descregi": "DE NUBLE",
+   "descregr": "XVI",
+   "descregt": "DECIMO SEXTA",
+   "descorig": "Ortoimagen Ciren 1:10.000. Imagenes SPOTMaps (pixel 2,5 metros) desde el 2008 al  2009 (VIII-IX).",
+   "clase": "AREAS ARTIFICIALES",
+   "uso_actual": "CIUDAD",
+   "tipo": "NO APLICA",
+   "especie1": " ",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " "
+  }
+ },
+ "LosAngeles": {
+  "http": 200,
+  "latency_s": 4.06,
+  "n": 1,
+  "attrs": {
+   "desccomu": "LOS ANGELES",
+   "descprov": "BIOBIO",
+   "descregi": "DEL BIOBIO",
+   "clase": "AREAS ARTIFICIALES",
+   "uso_actual": "CIUDAD",
+   "tipo": "NO APLICA",
+   "especie1": "-",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " "
+  }
+ },
+ "Temuco": {
+  "http": 200,
+  "latency_s": 4.08,
+  "n": 1,
+  "attrs": {
+   "nom_reg": "Región de La Araucanía",
+   "nom_pro": "Cautín",
+   "nom_com": "Temuco",
+   "uso_actual": "CIUDAD",
+   "clase": "ÁREAS ARTIFICIALES",
+   "tipo": " ",
+   "subtipo": " ",
+   "especie1": " ",
+   "especie2": " ",
+   "especie3": " ",
+   "especie4": " ",
+   "especie5": " ",
+   "especie6": " "
+  }
+ }
+}

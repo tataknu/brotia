@@ -1,0 +1,7 @@
+  rd = DatasetReader(mempath, driver=driver, sharing=sharing, thread_safe=thread_safe, **kwargs)
+MODIS_Combined_Flood_2-Day 2025-12-18 200 0.51 s, opaque px colours: [(271825, (175, 175, 175, 255)), (32, (250, 30, 36, 255))]
+MODIS_Combined_Flood_2-Day 2025-12-20 200 0.54 s, opaque px colours: [(136466, (175, 175, 175, 255)), (4, (250, 30, 36, 255))]
+MODIS_Combined_Flood_2-Day 2026-11-05 200 0.51 s, opaque px colours: [(256244, (175, 175, 175, 255))]
+VIIRS_Combined_Flood_2-Day 2025-12-18 200 0.7 s, opaque px colours: [(150302, (175, 175, 175, 255)), (108, (250, 30, 36, 255))]
+VIIRS_Combined_Flood_2-Day 2025-12-20 200 0.55 s, opaque px colours: [(172132, (175, 175, 175, 255)), (3, (250, 30, 36, 255))]
+VIIRS_Combined_Flood_2-Day 2026-11-05 200 0.46 s, opaque px colours: [(291200, (175, 175, 175, 255))]

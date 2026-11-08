@@ -1,0 +1,11 @@
+overlap days: 16709 1981-01-01 2026-09-30
+
+30-day totals 1991-2020: mean ERA5=97.5 CHIRPS=74.4  (bias 30.9%), corr=0.669
+30-day PERCENTILE agreement (all years): corr=0.509  mean|diff|=23.2 pct-points  same 'dry' flag (<20th): 78.5%
+  2023-10-27  30d mm ERA5=  19.7 CHIRPS=  25.6   pctile ERA5=  1.1 CHIRPS=  4.0
+  2024-01-30  30d mm ERA5=  85.0 CHIRPS= 109.2   pctile ERA5=  5.8 CHIRPS= 19.6
+  2024-09-26  30d mm ERA5=  23.0 CHIRPS=  67.0   pctile ERA5= 13.8 CHIRPS= 79.3
+  2026-09-26  30d mm ERA5=  25.0 CHIRPS=  37.9   pctile ERA5= 18.7 CHIRPS= 38.2
+  ERA5 raw         wet-day freq (>=1mm)= 37.2%   72h>=120mm days 1991-2026=28
+  ERA5 QM->CHIRPS  wet-day freq (>=1mm)= 23.2%   72h>=120mm days 1991-2026=4
+  CHIRPS           wet-day freq (>=1mm)= 23.8%   72h>=120mm days 1991-2026=2

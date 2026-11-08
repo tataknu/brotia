@@ -1,0 +1,894 @@
+{
+"farm": "Estancia Los Tajibos",
+"lon": -62.52,
+"lat": -16.86,
+"product": "MOD13Q1.061",
+"source": "https://modis.ornl.gov/rst/api/v1",
+"series": {
+"2021-07-12": {
+"NDVI": 6800,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 200
+},
+"2021-07-28": {
+"NDVI": 6365,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 214
+},
+"2021-08-13": {
+"NDVI": 5703,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 225
+},
+"2021-08-29": {
+"NDVI": 6338,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 255
+},
+"2021-09-14": {
+"NDVI": 5436,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 266
+},
+"2021-09-30": {
+"NDVI": 6790,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 285
+},
+"2021-10-16": {
+"NDVI": 7177,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 292
+},
+"2021-11-01": {
+"NDVI": 6824,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 305
+},
+"2021-11-17": {
+"NDVI": 8016,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 332
+},
+"2021-12-03": {
+"NDVI": 8641,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 351
+},
+"2021-12-19": {
+"NDVI": 8199,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 362
+},
+"2022-01-01": {
+"NDVI": 8819,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 16
+},
+"2022-01-17": {
+"NDVI": 7920,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 20
+},
+"2022-02-02": {
+"NDVI": 8186,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 38
+},
+"2022-02-18": {
+"NDVI": 8170,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 59
+},
+"2022-03-06": {
+"NDVI": 7910,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 75
+},
+"2022-03-22": {
+"NDVI": 8269,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 87
+},
+"2022-04-07": {
+"NDVI": 7671,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 105
+},
+"2022-04-23": {
+"NDVI": 7351,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 128
+},
+"2022-05-09": {
+"NDVI": 7009,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 132
+},
+"2022-05-25": {
+"NDVI": 7227,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 155
+},
+"2022-06-10": {
+"NDVI": 6719,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 169
+},
+"2022-06-26": {
+"NDVI": 6746,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 178
+},
+"2022-07-12": {
+"NDVI": 6643,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 194
+},
+"2022-07-28": {
+"NDVI": 6647,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 224
+},
+"2022-08-13": {
+"NDVI": 5975,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 233
+},
+"2022-08-29": {
+"NDVI": 5892,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 242
+},
+"2022-09-14": {
+"NDVI": 5643,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 260
+},
+"2022-09-30": {
+"NDVI": 5685,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 274
+},
+"2022-10-16": {
+"NDVI": 6532,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 297
+},
+"2022-11-01": {
+"NDVI": 6602,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 309
+},
+"2022-11-17": {
+"NDVI": 7813,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 331
+},
+"2022-12-03": {
+"NDVI": 8141,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 338
+},
+"2022-12-19": {
+"NDVI": 8620,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 364
+},
+"2023-01-01": {
+"NDVI": 8397,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 6
+},
+"2023-01-17": {
+"NDVI": 6235,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 18
+},
+"2023-02-02": {
+"NDVI": 7333,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 40
+},
+"2023-02-18": {
+"NDVI": 8059,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 51
+},
+"2023-03-06": {
+"NDVI": 6782,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 65
+},
+"2023-03-22": {
+"NDVI": 8131,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 92
+},
+"2023-04-07": {
+"NDVI": 8092,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 111
+},
+"2023-04-23": {
+"NDVI": 8091,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 114
+},
+"2023-05-09": {
+"NDVI": 7684,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 133
+},
+"2023-05-25": {
+"NDVI": 7870,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 157
+},
+"2023-06-10": {
+"NDVI": 8467,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 167
+},
+"2023-06-26": {
+"NDVI": 7953,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 188
+},
+"2023-07-12": {
+"NDVI": 7651,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 193
+},
+"2023-07-28": {
+"NDVI": 6934,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 212
+},
+"2023-08-13": {
+"NDVI": 6857,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 229
+},
+"2023-08-29": {
+"NDVI": 7129,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 253
+},
+"2023-09-14": {
+"NDVI": 7560,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 265
+},
+"2023-09-30": {
+"NDVI": 8367,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 277
+},
+"2023-10-16": {
+"NDVI": 7607,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 289
+},
+"2023-11-01": {
+"NDVI": 6620,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 310
+},
+"2023-11-17": {
+"NDVI": 6631,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 332
+},
+"2023-12-03": {
+"NDVI": 7963,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 347
+},
+"2023-12-19": {
+"NDVI": 8219,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 362
+},
+"2024-01-01": {
+"NDVI": 8079,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 6
+},
+"2024-01-17": {
+"NDVI": 5762,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 28
+},
+"2024-02-02": {
+"NDVI": 7686,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 35
+},
+"2024-02-18": {
+"NDVI": 8336,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 59
+},
+"2024-03-05": {
+"NDVI": 8117,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 76
+},
+"2024-03-21": {
+"NDVI": 8368,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 86
+},
+"2024-04-06": {
+"NDVI": 7401,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 110
+},
+"2024-04-22": {
+"NDVI": 8228,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 117
+},
+"2024-05-08": {
+"NDVI": 8084,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 144
+},
+"2024-05-24": {
+"NDVI": 7810,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 151
+},
+"2024-06-09": {
+"NDVI": 7386,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 161
+},
+"2024-06-25": {
+"NDVI": 7211,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 183
+},
+"2024-07-11": {
+"NDVI": 6475,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 200
+},
+"2024-07-27": {
+"NDVI": 5603,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 224
+},
+"2024-08-12": {
+"NDVI": 5506,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 234
+},
+"2024-08-28": {
+"NDVI": 3604,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 249
+},
+"2024-09-13": {
+"NDVI": 7068,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 261
+},
+"2024-09-29": {
+"NDVI": 6781,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 278
+},
+"2024-10-15": {
+"NDVI": 7321,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 295
+},
+"2024-10-31": {
+"NDVI": 8097,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 315
+},
+"2024-11-16": {
+"NDVI": 8022,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 322
+},
+"2024-12-02": {
+"NDVI": 8522,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 337
+},
+"2024-12-18": {
+"NDVI": 8630,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 362
+},
+"2025-01-01": {
+"NDVI": 8412,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 15
+},
+"2025-01-17": {
+"NDVI": 8515,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 18
+},
+"2025-02-02": {
+"NDVI": 8640,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 35
+},
+"2025-02-18": {
+"NDVI": 8567,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 55
+},
+"2025-03-06": {
+"NDVI": 8204,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 77
+},
+"2025-03-22": {
+"NDVI": 8866,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 87
+},
+"2025-04-07": {
+"NDVI": 6818,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 101
+},
+"2025-04-23": {
+"NDVI": 7735,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 122
+},
+"2025-05-09": {
+"NDVI": 8076,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 134
+},
+"2025-05-25": {
+"NDVI": 8115,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 154
+},
+"2025-06-10": {
+"NDVI": 7903,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 169
+},
+"2025-06-26": {
+"NDVI": 7748,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 179
+},
+"2025-07-12": {
+"NDVI": 6843,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 206
+},
+"2025-07-28": {
+"NDVI": 7028,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 224
+},
+"2025-08-13": {
+"NDVI": 6198,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 231
+},
+"2025-08-29": {
+"NDVI": 6615,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 241
+},
+"2025-09-14": {
+"NDVI": 6019,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 263
+},
+"2025-09-30": {
+"NDVI": 6348,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 281
+},
+"2025-10-16": {
+"NDVI": 7251,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 296
+},
+"2025-11-01": {
+"NDVI": 7910,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 320
+},
+"2025-11-17": {
+"NDVI": 8496,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 333
+},
+"2025-12-03": {
+"NDVI": 6550,
+"pixel_reliability": 3,
+"composite_day_of_the_year": 340
+},
+"2025-12-19": {
+"NDVI": 9105,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 363
+},
+"2026-01-01": {
+"NDVI": 9027,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 1
+},
+"2026-01-17": {
+"NDVI": 8561,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 21
+},
+"2026-02-02": {
+"NDVI": 8954,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 41
+},
+"2026-02-18": {
+"NDVI": 8646,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 58
+},
+"2026-03-06": {
+"NDVI": 8701,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 76
+},
+"2026-03-22": {
+"NDVI": 8571,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 91
+},
+"2026-04-07": {
+"NDVI": 8553,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 101
+},
+"2026-04-23": {
+"NDVI": 8563,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 116
+},
+"2026-05-09": {
+"NDVI": 7775,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 136
+},
+"2026-05-25": {
+"NDVI": 8307,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 156
+},
+"2026-06-10": {
+"NDVI": 8146,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 171
+},
+"2026-06-26": {
+"NDVI": 8134,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 181
+},
+"2026-07-12": {
+"NDVI": 8087,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 196
+},
+"2026-07-28": {
+"NDVI": 7651,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 211
+},
+"2026-08-13": {
+"NDVI": 7438,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 226
+},
+"2026-08-29": {
+"NDVI": 7760,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 241
+},
+"2026-09-14": {
+"NDVI": 7342,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 271
+},
+"2026-09-30": {
+"NDVI": 7382,
+"pixel_reliability": 0,
+"composite_day_of_the_year": 276
+},
+"2026-10-16": {
+"NDVI": 8601,
+"pixel_reliability": 1,
+"composite_day_of_the_year": 294
+}
+},
+"calls": [
+[
+"NDVI",
+"2021-07-12",
+"2021-12-03",
+200,
+3.95
+],
+[
+"NDVI",
+"2021-12-19",
+"2022-05-09",
+200,
+36.25
+],
+[
+"NDVI",
+"2022-05-25",
+"2022-10-16",
+200,
+36.24
+],
+[
+"NDVI",
+"2022-11-01",
+"2023-03-22",
+200,
+57.53
+],
+[
+"NDVI",
+"2023-04-07",
+"2023-08-29",
+200,
+6.18
+],
+[
+"NDVI",
+"2023-09-14",
+"2024-02-02",
+200,
+3.98
+],
+[
+"NDVI",
+"2024-02-18",
+"2024-07-11",
+200,
+4.35
+],
+[
+"NDVI",
+"2024-07-27",
+"2024-12-18",
+200,
+4.35
+],
+[
+"NDVI",
+"2025-01-01",
+"2025-05-25",
+200,
+3.69
+],
+[
+"NDVI",
+"2025-06-10",
+"2025-11-01",
+200,
+3.82
+],
+[
+"NDVI",
+"2025-11-17",
+"2026-04-07",
+200,
+3.45
+],
+[
+"NDVI",
+"2026-04-23",
+"2026-09-14",
+200,
+3.57
+],
+[
+"NDVI",
+"2026-09-30",
+"2026-10-16",
+200,
+0.93
+],
+[
+"pixel_reliability",
+"2021-07-12",
+"2021-12-03",
+200,
+3.96
+],
+[
+"pixel_reliability",
+"2021-12-19",
+"2022-05-09",
+200,
+4.59
+],
+[
+"pixel_reliability",
+"2022-05-25",
+"2022-10-16",
+200,
+4.04
+],
+[
+"pixel_reliability",
+"2022-11-01",
+"2023-03-22",
+200,
+3.57
+],
+[
+"pixel_reliability",
+"2023-04-07",
+"2023-08-29",
+200,
+3.33
+],
+[
+"pixel_reliability",
+"2023-09-14",
+"2024-02-02",
+200,
+3.22
+],
+[
+"pixel_reliability",
+"2024-02-18",
+"2024-07-11",
+200,
+3.51
+],
+[
+"pixel_reliability",
+"2024-07-27",
+"2024-12-18",
+200,
+3.64
+],
+[
+"pixel_reliability",
+"2025-01-01",
+"2025-05-25",
+200,
+3.38
+],
+[
+"pixel_reliability",
+"2025-06-10",
+"2025-11-01",
+200,
+3.39
+],
+[
+"pixel_reliability",
+"2025-11-17",
+"2026-04-07",
+200,
+3.3
+],
+[
+"pixel_reliability",
+"2026-04-23",
+"2026-09-14",
+200,
+3.4
+],
+[
+"pixel_reliability",
+"2026-09-30",
+"2026-10-16",
+200,
+0.8
+],
+[
+"composite_day_of_the_year",
+"2021-07-12",
+"2021-12-03",
+200,
+3.59
+],
+[
+"composite_day_of_the_year",
+"2021-12-19",
+"2022-05-09",
+200,
+3.77
+],
+[
+"composite_day_of_the_year",
+"2022-05-25",
+"2022-10-16",
+200,
+3.68
+],
+[
+"composite_day_of_the_year",
+"2022-11-01",
+"2023-03-22",
+200,
+3.9
+],
+[
+"composite_day_of_the_year",
+"2023-04-07",
+"2023-08-29",
+200,
+3.79
+],
+[
+"composite_day_of_the_year",
+"2023-09-14",
+"2024-02-02",
+200,
+3.61
+],
+[
+"composite_day_of_the_year",
+"2024-02-18",
+"2024-07-11",
+200,
+3.36
+],
+[
+"composite_day_of_the_year",
+"2024-07-27",
+"2024-12-18",
+200,
+3.63
+],
+[
+"composite_day_of_the_year",
+"2025-01-01",
+"2025-05-25",
+200,
+3.52
+],
+[
+"composite_day_of_the_year",
+"2025-06-10",
+"2025-11-01",
+200,
+3.4
+],
+[
+"composite_day_of_the_year",
+"2025-11-17",
+"2026-04-07",
+200,
+3.41
+],
+[
+"composite_day_of_the_year",
+"2026-04-23",
+"2026-09-14",
+200,
+3.23
+],
+[
+"composite_day_of_the_year",
+"2026-09-30",
+"2026-10-16",
+200,
+0.93
+]
+]
+}

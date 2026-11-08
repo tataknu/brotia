@@ -1,0 +1,34 @@
+[
+ {
+  "code": "EMSR859",
+  "countries": [
+   "Chile"
+  ],
+  "eventTime": "2026-01-16T19:00:00",
+  "name": "Wildfires in the Biobio and Nuble Regions, Chile",
+  "centroid": "POINT (-72.65780628504181 -37.42899636551011)",
+  "activationTime": "2026-01-21T03:02:00",
+  "category": "Wildfire",
+  "lastUpdate": "2026-02-10T13:16:47.069139",
+  "closed": true,
+  "gdacsId": "WF1027016",
+  "n_aois": 4,
+  "n_products": 14
+ },
+ {
+  "code": "EMSR715",
+  "countries": [
+   "Chile"
+  ],
+  "eventTime": "2024-02-03T06:00:00",
+  "name": "Wildfire in Valparaiso region, Chile",
+  "centroid": "POINT (-71.526947 -33.043937)",
+  "activationTime": "2024-02-04T11:42:00",
+  "category": "Wildfire",
+  "lastUpdate": "2024-03-11T16:43:15.755560",
+  "closed": true,
+  "gdacsId": "WF1019173",
+  "n_aois": 3,
+  "n_products": 8
+ }
+]

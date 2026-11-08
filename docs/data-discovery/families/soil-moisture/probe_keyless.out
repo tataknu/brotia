@@ -1,0 +1,26 @@
+== NASA POWER daily GWET*: HTTP 200 0.67s bytes=3076 final_url=https://power.larc.nasa.gov/api/temporal/daily/point?parameters=GWETROOT%2CGWETTOP%2CGWETPROF%2CPRECTOTCORR&community=AG&latitude=-16.86&lon
+  GWETROOT: last_valid=('20261103', 0.28) n_valid=34/37
+  GWETTOP: last_valid=('20261103', 0.29) n_valid=34/37
+  GWETPROF: last_valid=('20261103', 0.31) n_valid=34/37
+  PRECTOTCORR: last_valid=('20261103', 0.85) n_valid=34/37
+== NASA POWER history start: HTTP 200 0.52s bytes=553 final_url=https://power.larc.nasa.gov/api/temporal/daily/point?parameters=GWETROOT&community=AG&latitude=-16.86&longitude=-62.52&start=19810101&end=19
+   {'GWETROOT': {'19810101': 0.53, '19810102': 0.56, '19810103': 0.57, '19810104': 0.57, '19810105': 0.57}}
+== PSL CPC soilw das: HTTP 200 0.25s bytes=2738 final_url=https://psl.noaa.gov/thredds/dodsC/Datasets/cpcsoil/soilw.mon.mean.nc.das
+   Attributes { |     lat { |         String long_name "Latitude"; |         String units "degrees_north"; |         Float32 actual_range 89.75, -89.75; |         String standard_name "latitude"; |         String axis "Y"; |         String coordinate_defines "point"; |     } |     lon { |         String long_name "Longitude"; |         String units "degrees_east"; |         Float32 actual_range 0.25, 359.75; |         String 
+== PSL CPC soilw time dds: HTTP 200 0.27s bytes=336 final_url=https://psl.noaa.gov/thredds/dodsC/Datasets/cpcsoil/soilw.mon.mean.nc.dds
+   Dataset { |     Float32 lat[lat = 360]; |     Float32 lon[lon = 720]; |     Grid { |      ARRAY: |         Float32 soilw[time = 946][lat = 360][lon = 720]; |      MAPS: |         Float64 time[time = 946]; |         Float32 lat[lat = 360]; |         Float32 lon[lon = 720]; |     } soilw; |     Float64 time[time = 946]; | } Datasets/cpcsoil/soilw.mon.mean.nc; | 
+== TerraClimate soil THREDDS dds: HTTP 200 0.18s bytes=0 final_url=http://thredds.northwestknowledge.net:8080/thredds/dodsC/agg_terraclimate_soil_1958_CurrentYear_GLOBE.nc.dds
+   
+== CEDA ESA CCI SM dir: HTTP 200 0.71s bytes=2017 final_url=https://dap.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/
+   <html> <head><title>Index of /neodc/esacci/soil_moisture/data/daily_files/COMBINED/</title></head> <body> <h1>Index of /neodc/esacci/soil_moisture/data/daily_files/COMBINED/</h1><hr><pre><a href="../">../</a> <a href="v02.1/">v02.1/</a> 11-Sep-2024 11:20 - <a href="v02.2/">v02.2/</a> 11-Sep-2024 11:21 - <a href="v03.2/">v03.2/</a> 11-Sep-2024 11:53 - <a href="v03.3/">v03.3/</a> 
+== CEDA ESA CCI SM data root: HTTP 200 0.51s bytes=4035 final_url=https://data.ceda.ac.uk/neodc/esacci/soil_moisture/data/daily_files/COMBINED/?json=
+   {"path": "/neodc/esacci/soil_moisture/data/daily_files/COMBINED", "items": [{"path": "/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v02.1", "name": "v02.1", "location": [null], "type": "dir", "fileset": "spot-2246-esacci_soilmoisture", "directory": "/neodc/esacci/soil_moisture/data/daily_files/COMBINED"}, {"path": "/neodc/esacci/soil_moisture/data/daily_files/COMBINED/v02.2", "name": "v02.2", "location": [null], "type": "dir", "fileset": "spot-2246-esacci_soilmoisture", "directory": "/neodc/esacci/soil_moisture/data/daily_files/COMBINED"}, {"path": "/neodc/esacci/soil_moisture/data/dai
+== CLMS SSM 1km manifest: ERROR ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+== CLMS SWI 12.5km manifest: ERROR ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+== GES DISC GLDAS NOAH 0.25 3H dir: HTTP 200 0.47s bytes=9951 final_url=https://hydro1.gesdisc.eosdis.nasa.gov/data/GLDAS/GLDAS_NOAH025_3H.2.1/
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="https://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> <meta name="description" content="Default Index Pag
+== GES DISC FLDAS global monthly dir: HTTP 200 0.60s bytes=13479 final_url=https://hydro1.gesdisc.eosdis.nasa.gov/data/FLDAS/FLDAS_NOAH01_C_GL_M.001/
+   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html xmlns="https://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> <meta name="description" content="Default Index Pag
+== Hydrology data rods GLDAS SoilMoi0_10: HTTP 200 0.34s bytes=2828 final_url=https://disc.gsfc.nasa.gov/information/alerts?title=The%20Hydrology%20Data%20Rods%20service%20will%20be%20discontinued%20no%20earlier%20than
+   <!DOCTYPE html> <html lang='en' ng-app="uuiApp" class="theme-gesdisc bg-deep-blue"> <head> <!-- Google Tag Manager --> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),
+== NSIDC SMAP L4 SPL4SMGP dir: ERROR ConnectionError: HTTPSConnectionPool(host='n5eil01u.ecs.nsidc.org', port=443): Max retries exceeded with url: /SMAP/SPL4SMGP.008/ (Caused by NewConnectionError("HTTPSConnection(host='n5eil01u.ecs.nsidc.org', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))

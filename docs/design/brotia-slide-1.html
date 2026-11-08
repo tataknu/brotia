@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BrotIA · Slide 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Slide 1 · BrotIA title with the seed-to-plant logo animation.
+   Keys: R or Space = replay · F = fullscreen · L = light/dark background */
+:root{ --f-mono:'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+html,body{margin:0;height:100%;background:#000}
+body{display:grid;place-items:center;overflow:hidden}
+.slide{
+  --s-bg:#0E1914; --s-grid:rgba(140,190,160,.07); --s-ink:#EAF3EE; --s-accent:#5CCB7E; --s-muted:#8DA096;
+  --A:#4CC072; --B:#9BDB8A; --S:#2E8A57; --faint:#1C2C25;
+  position:relative;width:min(100vw, 177.78vh);aspect-ratio:16/9;overflow:hidden;
+  container-type:inline-size;background-color:var(--s-bg);
+  background-image:linear-gradient(var(--s-grid) 1px,transparent 1px),linear-gradient(90deg,var(--s-grid) 1px,transparent 1px);
+  background-size:2.5cqw 2.5cqw;background-position:center;cursor:pointer;
+}
+.slide[data-bg="light"]{
+  --s-bg:#FFFFFF; --s-grid:rgba(30,80,50,.06); --s-ink:#0E2A23; --s-accent:#2FA05A; --s-muted:#6A766F;
+  --A:#2FA05A; --B:#6CC26F; --S:#1F6B43; --faint:#E4EBE6;
+}
+.stage{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4cqw}
+.lockup{display:flex;align-items:center;gap:3.4cqw}
+.icon{position:relative;width:15cqw;aspect-ratio:1;flex:none}
+.cell{position:absolute;width:12.5%;height:12.5%;border-radius:21%;will-change:transform,opacity}
+.seed{position:absolute;left:calc(3 * 14.5833%);top:calc(5 * 14.5833%);width:12.5%;height:12.5%;border-radius:21%;opacity:0;pointer-events:none;z-index:2;
+  background:#D9A55B;box-shadow:0 0 0 0 rgba(108,196,142,0)}
+.seed.ghost{z-index:1;filter:blur(.15cqw)}
+.dust{position:absolute;left:calc(3 * 14.5833% + 5%);top:calc(5 * 14.5833% + 10%);width:3%;height:3%;border-radius:20%;background:#C8924E;opacity:0;pointer-events:none}
+.word{font-family:var(--f-mono);font-weight:600;font-size:8.6cqw;line-height:1;letter-spacing:-.02em;color:var(--s-ink);white-space:nowrap;display:flex}
+.word .ch,.word .ia{display:inline-block}
+.word .ia{color:var(--s-accent)}
+.tagline{font-family:var(--f-mono);font-weight:500;font-size:1.45cqw;letter-spacing:.22em;text-transform:uppercase;color:var(--s-muted)}
+.corner{position:absolute;left:3cqw;bottom:2.6cqw;font-family:var(--f-mono);font-size:1.05cqw;letter-spacing:.12em;text-transform:uppercase;color:var(--s-muted);opacity:.7}
+</style>
+</head>
+<body>
+<div class="slide" id="slide" data-bg="dark" role="img" aria-label="BrotIA. Climate risk, agricultural lending.">
+  <div class="stage">
+    <div class="lockup">
+      <div class="icon"></div>
+      <div class="word" aria-hidden="true"><span class="ch">B</span><span class="ch">r</span><span class="ch">o</span><span class="ch">t</span><span class="ia">IA</span></div>
+    </div>
+    <div class="tagline">Climate risk · Agricultural lending</div>
+  </div>
+  <div class="corner">brotia · 2026</div>
+</div>
+
+<script>
+const GRID = [".....AA", ".B..AAA", "BBBSAA.", ".BBS...", "...S...", "...S...", "0123456"];
+const RAMP = ["#1F6B43","#2FA05A","#8CC63F","#E3C93B","#E8933A","#D0533A","#9E2F3A"];
+const STEP = 14.5833; // (7.5 + 1.25) / 60, in %
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ease = { out: "cubic-bezier(.2,.8,.2,1)", back: "cubic-bezier(.34,1.56,.64,1)" };
+const anim = (el, frames, delay, duration, easing = ease.out) =>
+  el.animate(frames, { delay, duration, easing, fill: "both" });
+
+const el = document.getElementById("slide");
+const icon = el.querySelector(".icon");
+const cells = [];
+GRID.forEach((row, r) => [...row].forEach((ch, k) => {
+  const d = document.createElement("div");
+  d.className = "cell";
+  d.style.left = (k * STEP) + "%";
+  d.style.top = (r * STEP) + "%";
+  d.style.background = ch === "." ? "var(--faint)" : /\d/.test(ch) ? RAMP[+ch] : `var(--${ch})`;
+  icon.appendChild(d);
+  cells.push({ el: d, t: ch, r, k });
+}));
+const mk = cls => { const d = document.createElement("div"); d.className = cls; icon.appendChild(d); return d; };
+const s = {
+  cells,
+  ghosts: [mk("seed ghost"), mk("seed ghost"), mk("seed ghost")],
+  seed: mk("seed"),
+  dust: Array.from({ length: 8 }, () => mk("dust")),
+  letters: [...el.querySelectorAll(".word .ch")],
+  ia: el.querySelector(".word .ia"),
+  tag: el.querySelector(".tagline"),
+  corner: el.querySelector(".corner")
+};
+
+function play() {
+  const by = t => s.cells.filter(c => c.t === t);
+  const soil = s.cells.filter(c => /\d/.test(c.t));
+  const LAND = 1500; // moment of impact (ms)
+  // Soil: the risk row, left to right
+  soil.forEach(c => anim(c.el, [{ opacity: 0, transform: "translateY(60%) scaleY(.4)" }, { opacity: 1, transform: "none" }], c.k * 70, 400));
+  // Seed pixel: falls from above the slide, squashes on impact and bounces
+  s.seed.animate([
+    { opacity: 0, transform: "translateY(-30cqw) scale(1.25)", offset: 0 },
+    { opacity: 1, transform: "translateY(-26cqw) scale(1.25)", offset: .1, easing: "cubic-bezier(.5,0,.9,.4)" },
+    { opacity: 1, transform: "translateY(0) scale(1.25)", offset: .55 },
+    { opacity: 1, transform: "translateY(0) scale(1.75,.62)", offset: .62 },
+    { opacity: 1, transform: "translateY(-2.4cqw) scale(1,1.35)", offset: .74 },
+    { opacity: 1, transform: "translateY(0) scale(1.3,.85)", offset: .85 },
+    { opacity: 1, transform: "translateY(0) scale(1)", offset: 1 }
+  ], { delay: 600, duration: 1640, easing: "ease-out", fill: "both" });
+  // Trail: copies that follow the seed and vanish on impact
+  s.ghosts.forEach((g, i) => g.animate([
+    { opacity: 0, transform: "translateY(-30cqw) scale(1.1)", offset: 0 },
+    { opacity: .45 - i * .12, transform: "translateY(-26cqw) scale(1.1)", offset: .1, easing: "cubic-bezier(.5,0,.9,.4)" },
+    { opacity: .3 - i * .08, transform: "translateY(0) scale(1.1)", offset: .55 },
+    { opacity: 0, transform: "translateY(0) scale(1.1)", offset: .6 },
+    { opacity: 0, offset: 1 }
+  ], { delay: 600 + (i + 1) * 45, duration: 1640, easing: "ease-out", fill: "both" }));
+  // Dust kicked up on impact (fill "forwards" keeps it hidden until then)
+  s.dust.forEach((d, i) => {
+    const dir = i % 2 ? 1 : -1, x = dir * (1 + Math.random() * 2.6), y = -(0.6 + Math.random() * 1.8);
+    d.animate([
+      { opacity: 1, transform: "translate(0,0)" },
+      { opacity: 1, transform: `translate(${x * .7}cqw, ${y}cqw)`, offset: .5 },
+      { opacity: 0, transform: `translate(${x}cqw, ${y * .3}cqw)` }
+    ], { delay: LAND, duration: 650, easing: "ease-out", fill: "forwards" });
+  });
+  // The soil dips in a wave from the point of impact
+  soil.forEach(c => c.el.animate([{ transform: "none" }, { transform: "translateY(30%)" }, { transform: "none" }],
+    { delay: LAND + Math.abs(c.k - 3) * 55, duration: 360, easing: "ease-in-out" }));
+  // Germination: two green pulses, then the seed pixel melts into the first stem pixel
+  s.seed.animate([
+    { boxShadow: "0 0 0 0 rgba(108,196,142,0)" },
+    { boxShadow: "0 0 0 1.1cqw rgba(108,196,142,.45)", offset: .25 },
+    { boxShadow: "0 0 0 0 rgba(108,196,142,0)", offset: .5 },
+    { boxShadow: "0 0 0 1.1cqw rgba(108,196,142,.45)", offset: .75 },
+    { boxShadow: "0 0 0 0 rgba(108,196,142,0)" }
+  ], { delay: 2300, duration: 900, easing: "ease-in-out" });
+  s.seed.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 3200, duration: 420, easing: "ease-in-out", fill: "forwards" });
+  const base = s.cells.find(c => c.t === "S" && c.r === 5);
+  anim(base.el, [{ opacity: 0, transform: "scale(.9)" }, { opacity: 1, transform: "scale(1.12)", offset: .6 }, { opacity: 1, transform: "none" }], 3200, 480);
+  // Stem grows upward
+  by("S").filter(c => c.r < 5).sort((a, b) => b.r - a.r).forEach((c, i) => {
+    c.el.style.transformOrigin = "50% 100%";
+    anim(c.el, [{ opacity: 0, transform: "scaleY(0)" }, { opacity: 1, transform: "none" }], 3550 + i * 190, 280);
+  });
+  // Leaves open outward from the stem
+  const leaf = (list, from, origin, start) => list
+    .sort((a, b) => Math.hypot(a.r - from[0], a.k - from[1]) - Math.hypot(b.r - from[0], b.k - from[1]))
+    .forEach((c, i) => {
+      c.el.style.transformOrigin = origin;
+      anim(c.el, [{ opacity: 0, transform: "scale(0) rotate(-25deg)" }, { opacity: 1, transform: "none" }], start + i * 75, 420, ease.back);
+    });
+  leaf(by("B"), [2.5, 3], "100% 50%", 4150);
+  leaf(by("A"), [2, 3], "0% 100%", 4500);
+  // The satellite grid lights up around it
+  by(".").forEach(c => anim(c.el, [{ opacity: 0 }, { opacity: 1 }], 5050 + Math.random() * 600, 500));
+  // Name letter by letter, then IA, then tagline
+  s.letters.forEach((l, i) => anim(l, [{ opacity: 0, transform: "translateY(35%)" }, { opacity: 1, transform: "none" }], 5600 + i * 110, 380));
+  anim(s.ia, [{ opacity: 0, transform: "scale(.5)" }, { opacity: 1, transform: "none" }], 6100, 520, ease.back);
+  anim(s.tag, [{ opacity: 0, transform: "translateY(40%)" }, { opacity: 1, transform: "none" }], 6700, 600);
+  anim(s.corner, [{ opacity: 0 }, { opacity: .7 }], 6900, 600);
+}
+
+function run() {
+  el.getAnimations({ subtree: true }).forEach(a => a.cancel());
+  s.cells.forEach(c => c.el.style.transformOrigin = "");
+  if (!reduce) play();
+}
+// Start once the font is ready so the name doesn't jump
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(run);
+
+el.addEventListener("click", run);
+document.addEventListener("keydown", e => {
+  const k = e.key.toLowerCase();
+  if (k === "r" || k === " ") { e.preventDefault(); run(); }
+  if (k === "f") {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen().catch(() => {});
+  }
+  if (k === "l") el.dataset.bg = el.dataset.bg === "dark" ? "light" : "dark";
+});
+</script>
+</body>
+</html>

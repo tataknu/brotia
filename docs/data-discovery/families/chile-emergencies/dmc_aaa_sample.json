@@ -1,0 +1,74 @@
+{
+ "Avisos": 5,
+ "Alertas": 1,
+ "Alarmas": 0,
+ "fecha_actualizacion": "2026-11-06 23:52",
+ "AAA": [
+  {
+   "id": "5965",
+   "tipo": "Aviso",
+   "codigoMeteo": "A599-1/2026",
+   "emision": "Jueves 5 de noviembre del 2026 a las 11:53 hrs.",
+   "fenomeno": "Viento",
+   "desde": "la tarde del jueves 05 de noviembre del 2026",
+   "hasta": "la noche del s&aacute;bado 07 de noviembre del 2026",
+   "tipoZonaAfecta": "area",
+   "textoZonaAfecta": "Litoral provincia de Huasco - Regi&oacute;n de Atacama"
+  },
+  {
+   "id": "5971",
+   "tipo": "Aviso",
+   "codigoMeteo": "A601-3/2026",
+   "emision": "Viernes 6 de noviembre del 2026 a las 12:05 hrs.",
+   "fenomeno": "Viento",
+   "desde": "la tarde del viernes 06 de noviembre del 2026",
+   "hasta": "la tarde del s&aacute;bado 07 de noviembre del 2026",
+   "tipoZonaAfecta": "zonas",
+   "textoZonaAfecta": "Coquimbo (Litoral)<br>Valpara&iacute;so (Litoral)<br>O&#039;Higgins (Litoral)<br>Maule (Litoral, Cordillera Costa)<br>&Ntilde;uble (Litoral, Cordillera Costa, Valle)<br>Biob&iacute;o (Litoral, Cordillera Costa, Valle)"
+  },
+  {
+   "id": "5970",
+   "tipo": "Alerta",
+   "codigoMeteo": "AA193/2026",
+   "emision": "Viernes 6 de noviembre del 2026 a las 12:02 hrs.",
+   "fenomeno": "Altas Temperaturas",
+   "desde": "la tarde del s&aacute;bado 07 de noviembre del 2026",
+   "hasta": "la tarde del domingo 08 de noviembre del 2026",
+   "tipoZonaAfecta": "zonas",
+   "textoZonaAfecta": "Coquimbo (Cordillera Costa, Precordillera y valles precordilleranos)<br>Valpara&iacute;so (Cordillera Costa, Precordillera y valles precordilleranos)<br>Metropolitana (Cordillera Costa, Valle, Precordillera)<br>O&#039;Higgins (Valle, Precordillera)<br>Maule (Valle, Precordillera)"
+  },
+  {
+   "id": "5975",
+   "tipo": "Aviso",
+   "codigoMeteo": "A605-5/2026",
+   "emision": "Viernes 6 de noviembre del 2026 a las 15:37 hrs.",
+   "fenomeno": "Altas Temperaturas",
+   "desde": "la tarde del s&aacute;bado 07 de noviembre del 2026",
+   "hasta": "la tarde del lunes 09 de noviembre del 2026",
+   "tipoZonaAfecta": "zonas",
+   "textoZonaAfecta": "Atacama (Cordillera Costa y sectores de valles, Pampa, Precordillera)<br>Coquimbo (Litoral)<br>Valpara&iacute;so (Litoral)<br>O&#039;Higgins (Cordillera Costa)<br>Maule (Cordillera Costa)<br>&Ntilde;uble (Cordillera Costa, Valle, Precordillera)<br>Biob&iacute;o (Cordillera Costa, Valle, Precordillera)<br>La Araucan&iacute;a (Valle, Precordillera)<br>Los R&iacute;os (Litoral, Precordillera)<br>Los Lagos (Precordillera)"
+  },
+  {
+   "id": "5973",
+   "tipo": "Aviso",
+   "codigoMeteo": "A607-1/2026",
+   "emision": "Viernes 6 de noviembre del 2026 a las 14:53 hrs.",
+   "fenomeno": "Tormentas El&eacute;ctricas",
+   "desde": "la tarde del viernes 06 de noviembre del 2026",
+   "hasta": "la noche del lunes 09 de noviembre del 2026",
+   "tipoZonaAfecta": "zonas",
+   "textoZonaAfecta": "Arica y Parinacota (Cordillera)<br>Tarapac&aacute; (Cordillera)"
+  },
+  {
+   "id": "5976",
+   "tipo": "Aviso",
+   "codigoMeteo": "A609/2026",
+   "emision": "Viernes 6 de noviembre del 2026 a las 17:40 hrs.",
+   "fenomeno": "Viento",
+   "desde": "la ma&ntilde;ana del domingo 08 de noviembre del 2026",
+   "hasta": "la noche del lunes 09 de noviembre del 2026",
+   "tipoZonaAfecta": "regiones",
+   "textoZonaAfecta": "Magallanes"
+  }
+ ]
+}

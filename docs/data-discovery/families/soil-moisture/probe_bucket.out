@@ -1,0 +1,8 @@
+Open-Meteo 30y precip+ET0: 200 0.8s 260667 bytes
+daily Pearson r (bucket vs ERA5-Land 0-100): 0.886  Spearman: 0.889
+30-day anomaly r: 0.833
+2023 bucket pct=0  era5l pct=7
+2024 bucket pct=7  era5l pct=0
+2025 bucket pct=21  era5l pct=17
+2026 bucket pct=87  era5l pct=87
+last date: 2026-11-01 bucket_frac=0.24

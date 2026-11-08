@@ -1,0 +1,122 @@
+{
+  "id": "rec-0001",
+  "zoneId": "auto-cl-requinoa-cherry",
+  "farmId": null,
+  "question": "Suggest frost and harvest-rain settings for this zone.",
+  "answer": "**Bloom frost:** keep the trigger at **−2.0 °C** (your farm setting). In the 2013–2025 backtest it caught **3 of 3** damaging bloom frosts (incl. September 2013) with **1** false alarm; the template value −2.4 °C caught **2 of 3**.\n\n**Harvest rain:** lower the 72 h trigger from **20 mm** to **15 mm**. It adds **2** hits (Nov 2019, Jan 2023 rain on ripe fruit) for **1** extra false alarm across 13 harvests.\n\n_Every number above comes from the backtest tool. These are recommendations: nothing changes until you apply them._",
+  "proposals": [
+    {
+      "id": "chg-p-0001",
+      "at": "2026-11-07T15:30:00Z",
+      "actor": {
+        "kind": "agent",
+        "name": "Farming agent"
+      },
+      "scope": {
+        "level": "zone",
+        "id": "auto-cl-requinoa-cherry"
+      },
+      "path": "overrides.cherry.rules.stages.bloom.frostCriticalC",
+      "oldValue": -2.4,
+      "newValue": -2.0,
+      "reason": "Backtest 2013–2025: 3/3 hits, 1 false alarm at −2.0 °C vs 2/3 hits at −2.4 °C.",
+      "status": "proposed",
+      "recommendationId": "rec-0001"
+    },
+    {
+      "id": "chg-p-0002",
+      "at": "2026-11-07T15:30:00Z",
+      "actor": {
+        "kind": "agent",
+        "name": "Farming agent"
+      },
+      "scope": {
+        "level": "zone",
+        "id": "auto-cl-requinoa-cherry"
+      },
+      "path": "overrides.cherry.rules.stages.harvest.harvestRainMm72h",
+      "oldValue": 20,
+      "newValue": 15,
+      "reason": "Backtest 2013–2025: +2 hits, +1 false alarm.",
+      "status": "proposed",
+      "recommendationId": "rec-0001"
+    }
+  ],
+  "evidence": [
+    {
+      "kind": "backtest",
+      "summary": "Bloom frost trigger −2.0 °C vs −2.4 °C, seasons 2013–2025",
+      "data": {
+        "param": "rules.stages.bloom.frostCriticalC",
+        "seasons": 13,
+        "candidates": [
+          {
+            "value": -2.4,
+            "hits": 2,
+            "falseAlarms": 0,
+            "missed": 1
+          },
+          {
+            "value": -2.0,
+            "hits": 3,
+            "falseAlarms": 1,
+            "missed": 0
+          }
+        ]
+      }
+    },
+    {
+      "kind": "event",
+      "summary": "September 2013 frost (central valley)",
+      "data": {
+        "start": "2013-09-17",
+        "end": "2013-09-20"
+      }
+    }
+  ],
+  "toolCalls": [
+    {
+      "name": "get_crop_template",
+      "input": {
+        "crop": "cherry"
+      },
+      "outputSummary": "6 stages; bloom frostCriticalC −2.4 °C; harvest rain 20 mm/72 h"
+    },
+    {
+      "name": "get_zone_history",
+      "input": {
+        "zoneId": "auto-cl-requinoa-cherry",
+        "variables": [
+          "tmin",
+          "precip"
+        ],
+        "from": "2013-01-01"
+      },
+      "outputSummary": "4,693 daily rows, CR2MET"
+    },
+    {
+      "name": "list_events",
+      "input": {
+        "zoneId": "auto-cl-requinoa-cherry",
+        "since": "2013-01-01"
+      },
+      "outputSummary": "3 frost events, 4 harvest-rain events"
+    },
+    {
+      "name": "backtest",
+      "input": {
+        "zoneId": "auto-cl-requinoa-cherry",
+        "crop": "cherry",
+        "params": {
+          "rules.stages.bloom.frostCriticalC": [
+            -2.4,
+            -2.0
+          ]
+        }
+      },
+      "outputSummary": "−2.0 °C: 3 hits, 1 false alarm; −2.4 °C: 2 hits, 0 false alarms"
+    }
+  ],
+  "model": "fixture-model",
+  "createdAt": "2026-11-07T15:30:00Z"
+}

@@ -1,0 +1,547 @@
+<title>Challenge Draft Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a dispatch board. Ranked feed on top, challenge sheets below, weights + final call at the end. */
+:root{
+  --bg:#EEF1EE; --panel:#FFFFFF; --ink:#13202A; --muted:#566770; --line:#D3DBD7; --chip:#E4EAE7;
+  --accent:#1D5BB8; --accent-ink:#FFFFFF; --volt:#F0B400; --volt-ink:#1B1600;
+  --good:#1C7F53; --warn:#9A6410; --bad:#B53A26;
+  --f-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D141A; --panel:#141E26; --ink:#E3EAEE; --muted:#91A2AA; --line:#25333D; --chip:#1C2832;
+  --accent:#6B9FEE; --accent-ink:#08111C; --volt:#F2C230; --volt-ink:#1B1600;
+  --good:#4DC28B; --warn:#E2A847; --bad:#EE7B64; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0D141A; --panel:#141E26; --ink:#E3EAEE; --muted:#91A2AA; --line:#25333D; --chip:#1C2832;
+  --accent:#6B9FEE; --accent-ink:#08111C; --volt:#F2C230; --volt-ink:#1B1600;
+  --good:#4DC28B; --warn:#E2A847; --bad:#EE7B64; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:16px;padding-block:20px 64px;display:grid;gap:28px}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:.01em}
+h1{font-size:28px;font-weight:700}
+h2{font-size:19px;font-weight:600}
+.eyebrow{font-family:var(--f-display);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:7px 12px;font-size:14px;font-weight:500}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.danger{color:var(--bad);border-color:var(--bad)}
+.btn.small{padding:4px 9px;font-size:13px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--chip);white-space:nowrap}
+.chip.bad{background:color-mix(in srgb,var(--bad) 16%,transparent);color:var(--bad)}
+.chip.warn{background:color-mix(in srgb,var(--warn) 18%,transparent);color:var(--warn)}
+.chip.good{background:color-mix(in srgb,var(--good) 16%,transparent);color:var(--good)}
+.chip.volt{background:var(--volt);color:var(--volt-ink)}
+
+/* Header */
+.top{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:end;justify-content:space-between;border-bottom:2px solid var(--ink);padding-bottom:16px}
+.top .sub{margin-top:4px;color:var(--muted);font-size:14px}
+.clock{display:grid;justify-items:end;gap:2px}
+.clock .t{font-family:var(--f-mono);font-size:30px;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.clock.late .t{color:var(--bad)}
+.status{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.note{padding:10px 14px;border-radius:6px;background:color-mix(in srgb,var(--warn) 14%,var(--panel));border:1px solid color-mix(in srgb,var(--warn) 40%,transparent);font-size:14px}
+
+/* Team strip */
+.team{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.member{display:grid;grid-template-columns:32px 1fr;gap:4px 10px;align-items:center;padding:10px 12px}
+.member img{width:32px;height:32px;border-radius:50%;grid-row:span 2}
+.member .nm{font-weight:600;font-size:14px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.member .pg{font-size:12px;color:var(--muted)}
+.member input{grid-column:1/-1;width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:6px 8px;font:inherit;font-size:13px}
+
+/* Leaderboard */
+.board{display:grid}
+.row{display:grid;grid-template-columns:36px minmax(0,1fr) 150px 56px;gap:12px;align-items:center;padding:12px 14px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .rk{font-family:var(--f-mono);font-size:20px;font-weight:600;color:var(--muted)}
+.row.lead .rk{color:var(--ink)}
+.row .who{min-width:0}
+.row .who .sp{font-family:var(--f-display);font-weight:600;font-size:16px}
+.row .who .ti{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .flags{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.bar{height:10px;background:var(--chip);border-radius:3px;overflow:hidden;position:relative}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
+.row.lead .bar i{background:var(--volt)}
+.bar .tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--bad);opacity:.7}
+.row .sc{font-family:var(--f-mono);font-weight:600;font-size:18px;text-align:right}
+.row.blocked{opacity:.62}
+.row a{color:inherit;text-decoration:none}
+.row a:hover .sp{text-decoration:underline}
+.locked{font-size:12px;color:var(--muted);text-align:right}
+@media (max-width:560px){.row{grid-template-columns:28px minmax(0,1fr) 52px}.row .bar{grid-column:2/3}.row .sc{grid-row:1}}
+
+/* Challenge sheets */
+.sheets{display:grid;gap:12px}
+.sheet>summary{list-style:none;display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px 16px;cursor:pointer}
+.sheet>summary::-webkit-details-marker{display:none}
+.sheet>summary .l{min-width:0}
+.sheet>summary .sp{font-family:var(--f-display);font-weight:700;font-size:18px}
+.sheet>summary .ti{font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sheet>summary .r{display:flex;gap:6px;align-items:center;flex-shrink:0}
+.sheet[open]>summary{border-bottom:1px solid var(--line)}
+.sheet .body{padding:16px;display:grid;gap:20px}
+.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fields .full{grid-column:1/-1}
+@media (max-width:700px){.fields{grid-template-columns:1fr}}
+label.f{display:grid;gap:4px;min-width:0}
+label.f span{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;font-family:var(--f-display)}
+label.f input,label.f textarea,select{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:8px 10px;font:inherit;font-size:14px;resize:vertical}
+.intel{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding:2px 0 2px 10px;white-space:pre-line}
+.crit{display:grid;gap:14px}
+.ci{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:center}
+.ci .q b{font-family:var(--f-display);font-weight:600;font-size:15px}
+.ci .q small{display:block;color:var(--muted);font-size:13px}
+.ci .an{grid-column:1/-1;display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+.ci .an span:last-child{text-align:right}
+.seg{display:flex;gap:4px}
+.seg button{width:40px;height:38px;border:1px solid var(--line);background:var(--bg);border-radius:5px;font-family:var(--f-mono);font-weight:600;font-size:15px}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.seg button:disabled{cursor:not-allowed;opacity:.5}
+@media (max-width:560px){.ci{grid-template-columns:1fr}.seg button{flex:1;width:auto}}
+.vetoes{display:flex;flex-wrap:wrap;gap:8px}
+.vetoes label{display:inline-flex;gap:6px;align-items:center;font-size:13px;padding:6px 10px;border:1px solid var(--line);border-radius:6px;cursor:pointer}
+.vetoes label.on{border-color:var(--bad);color:var(--bad)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:center;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{font-family:var(--f-display);font-weight:600;color:var(--muted)}
+td.split{background:color-mix(in srgb,var(--warn) 16%,transparent);font-weight:600}
+td img{width:20px;height:20px;border-radius:50%;vertical-align:middle;margin-right:6px}
+.foot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:center}
+
+/* Bottom: weights + decision */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+@media (max-width:820px){.two{grid-template-columns:1fr}}
+.pad{padding:16px;display:grid;gap:14px}
+.wt{display:grid;grid-template-columns:120px minmax(0,1fr) 44px;gap:10px;align-items:center;font-size:14px}
+.wt input{width:100%;accent-color:var(--accent)}
+.scen{display:grid;gap:6px;font-size:14px}
+.scen div{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed var(--line);padding-bottom:5px}
+.pick{display:grid;grid-template-columns:30px minmax(0,1fr);gap:6px 10px;align-items:center}
+.pick .n{font-family:var(--f-mono);font-weight:600;font-size:18px}
+.pick input{grid-column:2;width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:7px 9px;font:inherit;font-size:13px}
+.toggle{display:inline-flex;gap:8px;align-items:center;font-size:14px;cursor:pointer}
+.toast{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:6px;font-size:14px;max-width:calc(100% - 32px);z-index:10}
+.empty{padding:28px 16px;text-align:center;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .35s ease}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">MIT Energy &amp; Climate Hack · Fri Nov 6</div>
+      <h1>Challenge Draft Board</h1>
+      <div class="sub">Each of us scores alone. The board ranks, flags splits and vetoes, and stress-tests the pick.</div>
+    </div>
+    <div class="clock" id="clock"></div>
+  </header>
+  <div id="note"></div>
+  <section id="team-sec"></section>
+  <section id="board-sec"></section>
+  <section id="sheets-sec"></section>
+  <section class="two">
+    <div id="weights-sec"></div>
+    <div id="decision-sec"></div>
+  </section>
+</div>
+<div id="toast" class="toast" hidden></div>
+
+<script>
+const CRIT = [
+  {k:'fit',    name:'Sponsor fit',      q:'Do we solve the exact decision the sponsor needs to make?',  lo:'Vague ask, or we’d solve an adjacent problem', hi:'Rep named the decision; our output answers it directly', w:25},
+  {k:'edge',   name:'Our edge',         q:'Does one of us bring expertise most teams won’t have?',   lo:'Any team could do the same',                    hi:'Our background gives a clearly different approach', w:25},
+  {k:'demo',   name:'Result by Sun 9 AM', q:'Will a working model produce their metric ($, MW, tCO₂)?', lo:'Ideas and slides only',                  hi:'Model runs end to end on real inputs',              w:20},
+  {k:'data',   name:'Data & sponsor tools', q:'Do we have the data, and can we use their tool if they expect it?', lo:'Data promised later, or their tool is new to us', hi:'Real data in hand; we can use their tool well', w:15},
+  {k:'finals', name:'Finals story',     q:'Would judges from other tracks remember it?',                lo:'Incremental, hard to explain',                  hi:'Quantified impact with a one-line hook',            w:10},
+  {k:'field',  name:'Open field',       q:'How few strong teams will want it?',                         lo:'Flashy, everyone wants it',                     hi:'Niche or intimidating',                             w:5},
+];
+const VETOES = [
+  {k:'license', label:'Expects a tool or license none of us can use'},
+  {k:'nodata',  label:'No data until Saturday'},
+  {k:'nodemo',  label:'Nothing we could demo'},
+  {k:'nojoy',   label:'I wouldn’t want 30h on it'},
+];
+const OVERRIDE = 4.2;
+const DEADLINE = Date.parse('2026-11-07T02:30:00Z'); // 9:30 PM EST Fri
+const ASSIGN   = Date.parse('2026-11-07T03:00:00Z'); // 10:00 PM EST
+const SCEN = [
+  {name:'Our weights',   w:null},
+  {name:'Equal weights', w:{fit:1,demo:1,edge:1,data:1,finals:1,field:1}},
+  {name:'Build-first',   w:{fit:15,demo:35,edge:15,data:25,finals:5,field:5}},
+  {name:'Sponsor-first', w:{fit:35,demo:15,edge:15,data:10,finals:20,field:5}},
+  {name:'Edge-first',    w:{fit:15,demo:15,edge:40,data:10,finals:15,field:5}},
+];
+const defW = () => Object.fromEntries(CRIT.map(c => [c.k, c.w]));
+
+const S = {
+  mode:'loading', uid:null, canWrite:true,
+  challenges:{}, scores:{}, settings:{w:defW(), blind:true}, decision:{picks:['','',''], why:['','','']},
+  dirty:{}, profiles:{}, note:'',
+};
+let db = null, user = null;
+const ui = { open: lsGet('cdb-open', {}) };
+const chains = {};
+const timers = {};
+
+function lsGet(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
+function lsSet(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function clone(o){ return JSON.parse(JSON.stringify(o ?? {})); }
+const $ = id => document.getElementById(id);
+
+function toast(msg){ const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(timers.toast); timers.toast = setTimeout(() => t.hidden = true, 4200); }
+function handleErr(e){
+  const code = e && e.code;
+  if (code === 'quota_exceeded') toast('The board is full. Delete a challenge you no longer need, then try again.');
+  else if (code === 'invalid_argument'){ S.canWrite = false; toast('You can view this board but not edit it. Ask the owner to make you an Editor.'); renderAll(); }
+  else if (code === 'revoked'){ S.canWrite = false; renderAll(); }
+  else toast('Couldn’t save that change. Check your connection and try again.');
+}
+function queue(path, fn){ chains[path] = (chains[path] || Promise.resolve()).then(fn).catch(handleErr); return chains[path]; }
+
+/* ---------- data access ---------- */
+function myDoc(){ const k = S.uid || 'local'; if (!S.scores[k]) S.scores[k] = {skills:'', s:{}}; if (!S.scores[k].s) S.scores[k].s = {}; return S.scores[k]; }
+function myScore(cid){ const d = myDoc(); if (!d.s[cid]) d.s[cid] = {veto:[]}; return d.s[cid]; }
+function persistLocal(){ lsSet('cdb-local', {challenges:S.challenges, scores:S.scores, settings:S.settings, decision:S.decision}); }
+
+let mineInflight = 0;
+function saveMine(){
+  if (S.mode === 'local'){ persistLocal(); renderAll(); return; }
+  renderAll();
+  mineInflight++;
+  const body = clone(myDoc());
+  queue('scores/' + S.uid, async () => { try { await db.doc('scores/' + S.uid).set(body); } finally { mineInflight--; } });
+}
+function saveDoc(path, body){
+  if (S.mode === 'local'){ persistLocal(); renderAll(); return; }
+  queue(path, () => db.doc(path).set(body));
+}
+function debounced(key, ms, fn){ clearTimeout(timers[key]); timers[key] = setTimeout(fn, ms); }
+
+function editChallengeField(cid, field, value){
+  const key = cid + '.' + field;
+  S.dirty[key] = value;
+  if (S.challenges[cid]) S.challenges[cid][field] = value;
+  debounced(key, 500, () => {
+    if (S.mode === 'local'){ delete S.dirty[key]; persistLocal(); renderAll(); return; }
+    queue('challenges/' + cid, async () => {
+      await db.doc('challenges/' + cid).update({[field]: value});
+      if (S.dirty[key] === value) delete S.dirty[key];
+    });
+  });
+}
+function fieldVal(cid, field){ const k = cid + '.' + field; return k in S.dirty ? S.dirty[k] : (S.challenges[cid]?.[field] ?? ''); }
+
+/* ---------- scoring math ---------- */
+function cids(){ return Object.keys(S.challenges).sort((a,b) => (S.challenges[a].order ?? 99) - (S.challenges[b].order ?? 99)); }
+function stats(cid){
+  const per = {}, vetoes = {}, scorers = [];
+  for (const [uid, doc] of Object.entries(S.scores)){
+    const s = doc && doc.s && doc.s[cid]; if (!s) continue;
+    let any = false;
+    for (const c of CRIT){ const v = s[c.k]; if (typeof v === 'number' && v >= 1 && v <= 5){ (per[c.k] = per[c.k] || []).push({uid, v}); any = true; } }
+    (s.veto || []).forEach(k => (vetoes[k] = vetoes[k] || []).push(uid));
+    if (any || (s.veto || []).length) scorers.push(uid);
+  }
+  return {per, vetoes, scorers};
+}
+function weighted(per, w){
+  let num = 0, den = 0;
+  for (const c of CRIT){ const a = per[c.k]; if (!a || !a.length) continue; const m = a.reduce((x, y) => x + y.v, 0) / a.length; num += (w[c.k] || 0) * m; den += (w[c.k] || 0); }
+  return den ? num / den : null;
+}
+function splits(per){
+  const out = [];
+  for (const c of CRIT){ const a = per[c.k]; if (!a || a.length < 2) continue; const vs = a.map(x => x.v); const lo = Math.min(...vs), hi = Math.max(...vs); if (hi - lo >= 2) out.push({c, lo, hi}); }
+  return out.sort((x, y) => (y.hi - y.lo) - (x.hi - x.lo));
+}
+function ranking(w){
+  return cids().map(cid => {
+    const st = stats(cid); const score = weighted(st.per, w);
+    const vetoed = Object.keys(st.vetoes).length > 0;
+    const blocked = vetoed && !(score !== null && score >= OVERRIDE);
+    return {cid, st, score, vetoed, blocked};
+  }).sort((a, b) => (a.blocked - b.blocked) || ((b.score ?? -1) - (a.score ?? -1)) || ((S.challenges[a.cid].order ?? 99) - (S.challenges[b.cid].order ?? 99)));
+}
+function myDone(cid){ const s = (S.scores[S.uid || 'local'] || {}).s?.[cid]; return !!s && CRIT.every(c => typeof s[c.k] === 'number'); }
+function hidden(cid){ return S.settings.blind && S.mode === 'shared' && !myDone(cid); }
+function label(cid){ const c = S.challenges[cid] || {}; return (c.sponsor || 'Untitled') + (fieldVal(cid,'title') ? ' · ' + fieldVal(cid,'title') : ''); }
+
+/* ---------- people ---------- */
+let profBusy = false;
+async function refreshProfiles(ids){
+  if (!user || profBusy) return;
+  const missing = ids.filter(id => !(id in S.profiles));
+  if (!missing.length) return;
+  profBusy = true;
+  try { const ps = await user.profiles(ids); Object.assign(S.profiles, ps); } catch(e) {}
+  profBusy = false;
+  renderAll();
+}
+function person(uid){
+  if (uid === 'local') return {name:'You', avatarUrl:'', isMe:true};
+  const p = S.profiles[uid];
+  return {name: (p && p.name) || (uid === S.uid ? 'You' : 'Teammate'), avatarUrl: (p && p.avatarUrl) || '', isMe: uid === S.uid};
+}
+function avatar(uid, cls){ const p = person(uid); return p.avatarUrl ? `<img class="${cls||''}" src="${esc(p.avatarUrl)}" alt="">` : `<img class="${cls||''}" alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23889'/%3E%3C/svg%3E">`; }
+
+/* ---------- render ---------- */
+function renderClock(){
+  const now = Date.now(), el = $('clock');
+  let t, sub;
+  if (now < DEADLINE){ const d = DEADLINE - now; const h = Math.floor(d/3.6e6), m = Math.floor(d%3.6e6/6e4), s = Math.floor(d%6e4/1e3);
+    t = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`; sub = 'until preferences are due (9:30 PM)';
+    el.className = 'clock' + (d < 30*6e4 ? ' late' : '');
+  } else if (now < ASSIGN){ t = 'Closed'; sub = 'Preferences submitted · assignments at 10:00 PM'; el.className = 'clock late'; }
+  else { t = 'Assigned'; sub = 'Challenge assignments are out'; el.className = 'clock'; }
+  const mode = S.mode === 'shared' ? '<span class="chip good">Live with team</span>' : S.mode === 'local' ? '<span class="chip warn">This device only</span>' : '<span class="chip">Connecting…</span>';
+  el.innerHTML = `<div class="t">${t}</div><div class="eyebrow">${sub}</div><div class="status">${mode}${S.canWrite ? '' : '<span class="chip bad">View only</span>'}</div>`;
+}
+
+function renderNote(){
+  let html = '';
+  if (S.note) html = `<div class="note">${esc(S.note)}</div>`;
+  else if (S.mode === 'local') html = `<div class="note">Scores are saved on this device only. Open the board from its claude.ai link while signed in to score together.</div>`;
+  else if (S.mode === 'shared' && !S.uid) html = `<div class="note">You’re viewing without an identity, so you can read the board but not score. Sign in to claude.ai to add your scores.</div>`;
+  $('note').innerHTML = html;
+}
+
+function renderTeam(){
+  const ids = Object.keys(S.scores).filter(id => id !== 'local' || S.mode === 'local');
+  if (S.uid && !ids.includes(S.uid)) ids.unshift(S.uid);
+  if (S.mode === 'local' && !ids.includes('local')) ids.unshift('local');
+  refreshProfiles(ids.filter(id => id !== 'local'));
+  const n = cids().length;
+  const cards = ids.map(uid => {
+    const doc = S.scores[uid] || {}; const done = cids().filter(cid => { const s = doc.s?.[cid]; return s && CRIT.every(c => typeof s[c.k] === 'number'); }).length;
+    const me = uid === (S.uid || 'local');
+    const skills = me ? `<input id="skills" placeholder="Your strengths, e.g. ML, power systems, finance" value="${esc(doc.skills || '')}" ${S.canWrite ? '' : 'disabled'}>` : `<div class="pg" style="grid-column:1/-1">${esc(doc.skills || 'No strengths listed yet')}</div>`;
+    return `<div class="member panel">${avatar(uid)}<div class="nm">${esc(person(uid).name)}${me ? ' (you)' : ''}</div><div class="pg mono">${done}/${n} scored</div>${skills}</div>`;
+  }).join('');
+  $('team-sec').innerHTML = `<div style="display:grid;gap:10px"><div class="eyebrow">Team · ${ids.length} of 4 here</div><div class="team">${cards}</div></div>`;
+}
+
+function renderBoard(){
+  const rows = ranking(S.settings.w);
+  if (!rows.length){ $('board-sec').innerHTML = `<div style="display:grid;gap:10px"><h2>Ranking</h2><div class="panel empty">No challenges yet. Add one below as each sponsor presents.</div></div>`; return; }
+  const lead = rows.find(r => r.score !== null && !r.blocked && !hidden(r.cid));
+  const body = rows.map((r, i) => {
+    const hide = hidden(r.cid);
+    const sp = splits(r.st.per);
+    const flags = [];
+    Object.entries(r.st.vetoes).forEach(([k, who]) => flags.push(`<span class="chip bad">Veto ×${who.length}: ${esc(VETOES.find(v => v.k === k)?.label || k)}</span>`));
+    if (r.vetoed && !r.blocked) flags.push(`<span class="chip volt">Veto overridden (≥ ${OVERRIDE})</span>`);
+    if (!hide && sp.length) flags.push(`<span class="chip warn">Split on ${esc(sp[0].c.name)}: ${sp[0].lo} vs ${sp[0].hi}</span>`);
+    flags.push(`<span class="chip">${r.st.scorers.length}/4 scored</span>`);
+    const pct = r.score === null ? 0 : ((r.score - 1) / 4) * 100;
+    const right = hide ? `<div class="locked" style="grid-column:span 2">Score it to unlock</div>`
+      : `<div class="bar" title="Weighted score"><i style="width:${pct}%"></i><span class="tick" style="left:${((OVERRIDE-1)/4)*100}%"></span></div><div class="sc">${r.score === null ? '–' : r.score.toFixed(2)}</div>`;
+    return `<div class="row${lead && r.cid === lead.cid ? ' lead' : ''}${r.blocked ? ' blocked' : ''}">
+      <div class="rk">${i + 1}</div>
+      <div class="who"><a href="#${esc(r.cid)}" data-open="${esc(r.cid)}"><div class="sp">${esc(S.challenges[r.cid].sponsor || 'Untitled')}</div><div class="ti">${esc(fieldVal(r.cid,'title') || 'Challenge title not entered yet')}</div></a><div class="flags">${flags.join('')}</div></div>
+      ${right}
+    </div>`;
+  }).join('');
+  $('board-sec').innerHTML = `<div style="display:grid;gap:10px"><div class="foot"><h2>Ranking</h2><span class="muted" style="font-size:13px">Weighted mean, 1–5 · red tick = veto override line ${OVERRIDE}</span></div><div class="panel board">${body}</div></div>`;
+}
+
+function renderSheets(){
+  const list = cids();
+  const sheets = list.map(cid => {
+    const c = S.challenges[cid]; const st = stats(cid); const mine = (S.scores[S.uid || 'local'] || {}).s?.[cid] || {};
+    const dis = (S.canWrite && (S.uid || S.mode === 'local')) ? '' : 'disabled';
+    const canEditCh = S.canWrite ? '' : 'disabled';
+    const score = weighted(st.per, S.settings.w);
+    const crit = CRIT.map(cr => `<div class="ci">
+        <div class="q"><b>${esc(cr.name)}</b><small>${esc(cr.q)}</small></div>
+        <div class="seg" role="group" aria-label="${esc(cr.name)}">${[1,2,3,4,5].map(n => `<button type="button" data-score="${esc(cid)}|${cr.k}|${n}" aria-pressed="${mine[cr.k] === n}" ${dis}>${n}</button>`).join('')}</div>
+        <div class="an"><span>1 = ${esc(cr.lo)}</span><span>5 = ${esc(cr.hi)}</span></div>
+      </div>`).join('');
+    const vet = VETOES.map(v => { const on = (mine.veto || []).includes(v.k); return `<label class="${on ? 'on' : ''}"><input type="checkbox" data-veto="${esc(cid)}|${v.k}" ${on ? 'checked' : ''} ${dis}>${esc(v.label)}</label>`; }).join('');
+    let team = '';
+    const others = st.scorers;
+    if (others.length){
+      if (hidden(cid)) team = `<div class="muted" style="font-size:14px">Teammates’ scores unlock once you’ve scored all ${CRIT.length} criteria, so nobody anchors on anyone else.</div>`;
+      else {
+        const sp = new Set(splits(st.per).map(x => x.c.k));
+        team = `<div class="tbl"><table><thead><tr><th>Who</th>${CRIT.map(cr => `<th>${esc(cr.name)}</th>`).join('')}<th>Vetoes</th></tr></thead><tbody>${
+          others.map(uid => { const s = S.scores[uid].s[cid]; return `<tr><td>${avatar(uid)}${esc(person(uid).name)}</td>${CRIT.map(cr => `<td class="mono${sp.has(cr.k) ? ' split' : ''}">${s[cr.k] ?? '–'}</td>`).join('')}<td>${(s.veto||[]).length}</td></tr>`; }).join('')
+        }<tr><td><b>Mean</b></td>${CRIT.map(cr => { const a = st.per[cr.k]; return `<td class="mono"><b>${a ? (a.reduce((x,y)=>x+y.v,0)/a.length).toFixed(1) : '–'}</b></td>`; }).join('')}<td></td></tr></tbody></table></div>`;
+      }
+    }
+    const open = ui.open[cid] ? 'open' : '';
+    const vcount = Object.keys(st.vetoes).length;
+    return `<details class="sheet panel" id="${esc(cid)}" ${open} data-cid="${esc(cid)}">
+      <summary><div class="l"><div class="sp">${esc(c.sponsor || 'Untitled')}</div><div class="ti">${esc(fieldVal(cid,'title') || 'Tap to fill in the challenge')}</div></div>
+        <div class="r">${vcount ? `<span class="chip bad">${vcount} veto${vcount>1?'es':''}</span>` : ''}${myDone(cid) ? '<span class="chip good">You scored</span>' : '<span class="chip">To score</span>'}${hidden(cid) || score === null ? '' : `<span class="chip mono">${score.toFixed(2)}</span>`}</div></summary>
+      <div class="body">
+        ${c.intel ? `<div class="intel"><b>Sponsor background · not this year’s challenge</b>\n${esc(c.intel)}</div>` : ''}
+        <div class="fields">
+          <label class="f"><span>Sponsor</span><input id="f-${esc(cid)}-sponsor" data-field="${esc(cid)}|sponsor" value="${esc(fieldVal(cid,'sponsor'))}" ${canEditCh}></label>
+          <label class="f"><span>Challenge title</span><input id="f-${esc(cid)}-title" data-field="${esc(cid)}|title" value="${esc(fieldVal(cid,'title'))}" placeholder="One line" ${canEditCh}></label>
+          <label class="f full"><span>Problem statement</span><textarea id="f-${esc(cid)}-statement" data-field="${esc(cid)}|statement" rows="3" placeholder="Paste or summarize the exact ask" ${canEditCh}>${esc(fieldVal(cid,'statement'))}</textarea></label>
+          <label class="f"><span>What they provide</span><textarea id="f-${esc(cid)}-provides" data-field="${esc(cid)}|provides" rows="2" placeholder="Datasets, APIs, software licenses, mentors" ${canEditCh}>${esc(fieldVal(cid,'provides'))}</textarea></label>
+          <label class="f"><span>What the rep stressed</span><textarea id="f-${esc(cid)}-repSaid" data-field="${esc(cid)}|repSaid" rows="2" placeholder="Their words, plus the rep’s name (likely a judge)" ${canEditCh}>${esc(fieldVal(cid,'repSaid'))}</textarea></label>
+          <label class="f full"><span>Our winning angle</span><textarea id="f-${esc(cid)}-angle" data-field="${esc(cid)}|angle" rows="2" placeholder="What would we build that the other ~8 teams won’t?" ${canEditCh}>${esc(fieldVal(cid,'angle'))}</textarea></label>
+        </div>
+        <div style="display:grid;gap:12px"><div class="eyebrow">Your scores</div><div class="crit">${crit}</div></div>
+        <div style="display:grid;gap:8px"><div class="eyebrow">Your vetoes · any veto sinks it unless it scores ≥ ${OVERRIDE}</div><div class="vetoes">${vet}</div></div>
+        ${team ? `<div style="display:grid;gap:8px"><div class="eyebrow">Team scores</div>${team}</div>` : ''}
+        <div class="foot"><span class="muted" style="font-size:13px">Edits save automatically.</span>${S.canWrite ? `<button type="button" class="btn small danger" data-del="${esc(cid)}">${ui.confirmDel === cid ? 'Tap again to delete' : 'Delete challenge'}</button>` : ''}</div>
+      </div>
+    </details>`;
+  }).join('');
+  const empty = list.length ? '' : `<div class="panel empty">${S.mode === 'loading' ? 'Loading challenges…' : 'Challenges appear here. Add one per sponsor statement as they’re revealed.'}</div>`;
+  $('sheets-sec').innerHTML = `<div style="display:grid;gap:10px"><div class="foot"><h2>Challenges</h2>${S.canWrite ? '<button type="button" class="btn primary" id="add">Add challenge</button>' : ''}</div><div class="sheets">${sheets}${empty}</div></div>`;
+}
+
+function renderWeights(){
+  const a = document.activeElement;
+  if (a && a.type === 'range' && $('weights-sec').contains(a)) { renderScen(); return; }
+  const w = S.settings.w; const tot = CRIT.reduce((s, c) => s + (w[c.k] || 0), 0) || 1;
+  const sliders = CRIT.map(c => `<div class="wt"><label for="w-${c.k}">${esc(c.name)}</label><input type="range" id="w-${c.k}" min="0" max="40" step="5" value="${w[c.k] ?? c.w}" data-w="${c.k}" ${S.canWrite ? '' : 'disabled'}><span class="mono" id="wv-${c.k}">${Math.round((w[c.k]||0)/tot*100)}%</span></div>`).join('');
+  $('weights-sec').innerHTML = `<div class="panel pad"><div class="foot"><h2>Weights</h2><button type="button" class="btn small" id="wreset" ${S.canWrite ? '' : 'disabled'}>Reset</button></div>
+    ${sliders}
+    <label class="toggle"><input type="checkbox" id="blind" ${S.settings.blind ? 'checked' : ''} ${S.canWrite ? '' : 'disabled'}> Blind scoring: hide team numbers until you’ve scored a challenge</label>
+    <div style="display:grid;gap:8px"><div class="eyebrow">Does the #1 survive other weightings?</div><div class="scen" id="scen"></div></div></div>`;
+  renderScen();
+}
+function renderScen(){
+  const el = $('scen'); if (!el) return;
+  const anyHidden = cids().some(hidden);
+  if (anyHidden){ el.innerHTML = `<div class="muted" style="border:0">Score every challenge to see the stress test.</div>`; return; }
+  const leaders = SCEN.map(sc => { const r = ranking(sc.w || S.settings.w).find(x => x.score !== null && !x.blocked); return {sc, cid: r ? r.cid : null}; });
+  const base = leaders[0].cid;
+  if (!base){ el.innerHTML = `<div class="muted" style="border:0">No scores yet.</div>`; return; }
+  const holds = leaders.filter(l => l.cid === base).length;
+  el.innerHTML = leaders.map(l => `<div><span>${esc(l.sc.name)}</span><b>${l.cid ? esc(S.challenges[l.cid].sponsor || 'Untitled') : '–'}</b></div>`).join('')
+    + `<div style="border:0"><span>Verdict</span><span class="chip ${holds >= 4 ? 'good' : holds >= 3 ? 'warn' : 'bad'}">#1 holds in ${holds}/${SCEN.length}</span></div>`;
+  CRIT.forEach(c => { const v = $('wv-' + c.k); if (v){ const tot = CRIT.reduce((s, x) => s + (S.settings.w[x.k] || 0), 0) || 1; v.textContent = Math.round((S.settings.w[c.k]||0)/tot*100) + '%'; } });
+}
+
+function renderDecision(){
+  const list = cids();
+  const d = S.decision;
+  const opts = cur => `<option value="">Choose a challenge</option>` + list.map(cid => `<option value="${esc(cid)}" ${cur === cid ? 'selected' : ''}>${esc(label(cid))}</option>`).join('');
+  const picks = [0,1,2].map(i => `<div class="pick"><span class="n">${i+1}</span><select id="pick-${i}" data-pick="${i}" ${S.canWrite ? '' : 'disabled'}>${opts(d.picks?.[i] || '')}</select><input id="why-${i}" data-why="${i}" placeholder="Why we win it, in one sentence" value="${esc(('dwhy'+i) in S.dirty ? S.dirty['dwhy'+i] : (d.why?.[i] || ''))}" ${S.canWrite ? '' : 'disabled'}></div>`).join('');
+  $('decision-sec').innerHTML = `<div class="panel pad"><div class="foot"><h2>Our preferences</h2><span class="muted" style="font-size:13px">Due 9:30 PM</span></div>
+    ${picks}
+    <div class="foot"><button type="button" class="btn" id="autofill" ${S.canWrite ? '' : 'disabled'}>Fill from ranking</button><button type="button" class="btn primary" id="copy">Copy for submission</button></div>
+    <textarea id="copytext" rows="4" readonly hidden style="width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:8px;font:inherit;font-size:13px"></textarea></div>`;
+}
+
+function renderAll(){
+  const a = document.activeElement; const fid = a && a.id; let sel = null;
+  if (a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA') && a.type !== 'range' && a.type !== 'checkbox'){ try { sel = [a.selectionStart, a.selectionEnd]; } catch(e){} }
+  renderClock(); renderNote(); renderTeam(); renderBoard(); renderSheets(); renderWeights(); renderDecision();
+  if (fid && a.type !== 'range'){ const n = $(fid); if (n && n !== a){ n.focus({preventScroll:true}); if (sel) try { n.setSelectionRange(sel[0], sel[1]); } catch(e){} } }
+}
+
+/* ---------- events ---------- */
+document.addEventListener('click', e => {
+  const t = e.target.closest('button,a[data-open]'); if (!t) return;
+  if (t.dataset.open){ ui.open[t.dataset.open] = true; lsSet('cdb-open', ui.open); renderSheets(); return; }
+  if (t.dataset.score){
+    const [cid, k, n] = t.dataset.score.split('|'); const s = myScore(cid); const v = +n;
+    s[k] = s[k] === v ? undefined : v; if (s[k] === undefined) delete s[k];
+    saveMine(); return;
+  }
+  if (t.dataset.del){
+    const cid = t.dataset.del;
+    if (ui.confirmDel !== cid){ ui.confirmDel = cid; renderSheets(); clearTimeout(timers.del); timers.del = setTimeout(() => { ui.confirmDel = null; renderSheets(); }, 4000); return; }
+    ui.confirmDel = null; delete S.challenges[cid];
+    if (S.mode === 'local'){ persistLocal(); renderAll(); } else { queue('challenges/' + cid, () => db.doc('challenges/' + cid).delete()); renderAll(); }
+    toast('Challenge deleted'); return;
+  }
+  if (t.id === 'add'){
+    const max = Math.max(0, ...cids().map(c => S.challenges[c].order || 0));
+    const body = {sponsor:'New challenge', title:'', statement:'', provides:'', repSaid:'', angle:'', order:max + 1};
+    if (S.mode === 'local'){ const id = 'c' + Date.now().toString(36); S.challenges[id] = body; ui.open[id] = true; persistLocal(); renderAll(); }
+    else { const ref = db.collection('challenges').doc(); S.challenges[ref.id] = body; ui.open[ref.id] = true; lsSet('cdb-open', ui.open); queue(ref.path, () => ref.set(body)); renderAll(); }
+    return;
+  }
+  if (t.id === 'wreset'){ S.settings.w = defW(); saveDoc('meta/settings', clone(S.settings)); renderAll(); return; }
+  if (t.id === 'autofill'){
+    const top = ranking(S.settings.w).filter(r => r.score !== null && !r.blocked).slice(0, 3).map(r => r.cid);
+    S.decision.picks = [0,1,2].map(i => top[i] || ''); saveDoc('meta/decision', clone(S.decision)); renderAll(); return;
+  }
+  if (t.id === 'copy'){
+    const txt = [0,1,2].map(i => { const cid = S.decision.picks?.[i]; return cid ? `${i+1}. ${label(cid)}${S.decision.why?.[i] ? ' — ' + S.decision.why[i] : ''}` : null; }).filter(Boolean).join('\n') || 'No preferences chosen yet.';
+    const ta = $('copytext');
+    const fallback = () => { ta.hidden = false; ta.value = txt; ta.focus(); ta.select(); toast('Select-all is ready. Copy it manually.'); };
+    try { navigator.clipboard.writeText(txt).then(() => toast('Copied preferences'), fallback); } catch(err){ fallback(); }
+    return;
+  }
+});
+document.addEventListener('toggle', e => {
+  const d = e.target; if (!d.matches || !d.matches('details.sheet') || !d.dataset.cid) return;
+  ui.open[d.dataset.cid] = d.open; lsSet('cdb-open', ui.open);
+}, true);
+document.addEventListener('input', e => {
+  const t = e.target;
+  if (t.dataset.field){ const [cid, f] = t.dataset.field.split('|'); editChallengeField(cid, f, t.value); return; }
+  if (t.id === 'skills'){ myDoc().skills = t.value; debounced('skills', 600, () => saveMine()); return; }
+  if (t.dataset.w){ S.settings.w[t.dataset.w] = +t.value; renderBoard(); renderScen(); debounced('w', 500, () => saveDoc('meta/settings', clone(S.settings))); return; }
+  if (t.dataset.why !== undefined){ const i = +t.dataset.why; S.dirty['dwhy'+i] = t.value; S.decision.why = S.decision.why || ['','','']; S.decision.why[i] = t.value;
+    debounced('why'+i, 600, () => { delete S.dirty['dwhy'+i]; saveDoc('meta/decision', clone(S.decision)); }); return; }
+});
+document.addEventListener('change', e => {
+  const t = e.target;
+  if (t.dataset.veto){ const [cid, k] = t.dataset.veto.split('|'); const s = myScore(cid); s.veto = s.veto || []; s.veto = t.checked ? [...new Set([...s.veto, k])] : s.veto.filter(x => x !== k); saveMine(); return; }
+  if (t.id === 'blind'){ S.settings.blind = t.checked; saveDoc('meta/settings', clone(S.settings)); renderAll(); return; }
+  if (t.dataset.pick !== undefined){ S.decision.picks = S.decision.picks || ['','','']; S.decision.picks[+t.dataset.pick] = t.value; saveDoc('meta/decision', clone(S.decision)); renderAll(); return; }
+});
+
+/* ---------- boot ---------- */
+function startLocal(){
+  const saved = lsGet('cdb-local', null);
+  if (saved){ Object.assign(S, {challenges:saved.challenges || {}, scores:saved.scores || {}, settings:saved.settings || S.settings, decision:saved.decision || S.decision}); }
+  S.mode = 'local'; S.note = ''; renderAll();
+}
+async function init(){
+  renderAll();
+  setInterval(renderClock, 1000);
+  if (!window.claude || !window.claude.use){ startLocal(); return; }
+  const slow = setTimeout(() => { if (S.mode === 'loading'){ S.note = 'Can’t reach the shared board yet. Keep this open; it will connect on its own.'; renderAll(); } }, 10000);
+  try { [db, user] = await Promise.all([claude.use('db'), claude.use('user')]); } catch(e){ db = null; }
+  if (!db){ clearTimeout(slow); startLocal(); return; }
+  S.uid = user ? await user.id() : null;
+  const cw = user ? await user.can('data.write') : null; if (cw === false) S.canWrite = false;
+  const seen = new Set();
+  const ready = name => { if (seen.has(name)) return; seen.add(name); if (seen.size === 4){ clearTimeout(slow); S.mode = 'shared'; S.note = ''; } renderAll(); };
+  const fail = e => { clearTimeout(slow); if (e && e.code === 'revoked'){ S.canWrite = false; } else { S.note = 'Lost the connection to the shared board. Reload the page to reconnect.'; } renderAll(); };
+  db.collection('challenges').onSnapshot(snap => {
+    const next = {}; snap.docs.forEach(d => { next[d.id] = clone(d.data()); });
+    S.challenges = next; ready('c');
+  }, fail);
+  db.collection('scores').onSnapshot(snap => {
+    const next = {}; snap.docs.forEach(d => { next[d.id] = clone(d.data()); });
+    if (S.uid && mineInflight > 0 && S.scores[S.uid]) next[S.uid] = S.scores[S.uid];
+    S.scores = next; ready('s');
+  }, fail);
+  db.doc('meta/settings').onSnapshot(snap => {
+    if (snap.exists){ const d = snap.data(); const a = document.activeElement; const dragging = a && a.type === 'range';
+      S.settings = {w: dragging ? S.settings.w : Object.assign(defW(), d.w || {}), blind: d.blind !== false}; }
+    ready('w');
+  }, fail);
+  db.doc('meta/decision').onSnapshot(snap => {
+    if (snap.exists){ const d = clone(snap.data()); S.decision = {picks: d.picks || ['','',''], why: d.why || ['','','']}; }
+    ready('d');
+  }, fail);
+}
+init();
+</script>

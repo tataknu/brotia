@@ -1,0 +1,40 @@
+GET soy_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 119 kB 0.7s
+soy_rf  Cuatro Canadas (-62.47,-17.30)   plant  16-Nov  maturity  10-Apr  len 145 d
+soy_rf  Okinawa (-62.85,-17.18)          plant  16-Nov  maturity  10-Apr  len 145 d
+soy_rf  Mineros (-63.29,-17.20)          plant  16-Nov  maturity  10-Apr  len 145 d
+GET mai_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 131 kB 0.8s
+mai_rf  Cuatro Canadas (-62.47,-17.30)   plant  16-Nov  maturity  29-Apr  len 164 d
+mai_rf  Okinawa (-62.85,-17.18)          plant  22-Oct  maturity  29-Apr  len 189 d
+mai_rf  Mineros (-63.29,-17.20)          plant  22-Oct  maturity  29-Apr  len 189 d
+GET sor_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 79 kB 0.7s
+sor_rf  Cuatro Canadas (-62.47,-17.30)   plant  01-Dec  maturity  30-Apr  len 150 d
+sor_rf  Okinawa (-62.85,-17.18)          plant  01-Dec  maturity  30-Apr  len 150 d
+sor_rf  Mineros (-63.29,-17.20)          plant  01-Dec  maturity  30-Apr  len 150 d
+GET sun_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 67 kB 0.6s
+sun_rf  Cuatro Canadas (-62.47,-17.30)   plant  01-Dec  maturity  30-Apr  len 150 d
+sun_rf  Okinawa (-62.85,-17.18)          plant  01-Dec  maturity  30-Apr  len 150 d
+sun_rf  Mineros (-63.29,-17.20)          plant  01-Dec  maturity  30-Apr  len 150 d
+GET swh_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 140 kB 0.9s
+swh_rf  Cuatro Canadas (-62.47,-17.30)   plant  01-Dec  maturity  08-May  len 158 d
+swh_rf  Okinawa (-62.85,-17.18)          plant  01-Dec  maturity  08-May  len 158 d
+swh_rf  Mineros (-63.29,-17.20)          plant  01-Dec  maturity  08-May  len 158 d
+GET wwh_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 108 kB 0.7s
+wwh_rf  Cuatro Canadas (-62.47,-17.30)   plant  01-Dec  maturity  08-May  len 158 d
+wwh_rf  Okinawa (-62.85,-17.18)          plant  01-Dec  maturity  08-May  len 158 d
+wwh_rf  Mineros (-63.29,-17.20)          plant  01-Dec  maturity  08-May  len 158 d
+GET ri1_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 96 kB 0.6s
+ri1_rf  Cuatro Canadas (-62.47,-17.30)   plant  31-Oct  maturity  28-Feb  len 120 d
+ri1_rf  Okinawa (-62.85,-17.18)          plant  31-Oct  maturity  28-Feb  len 120 d
+ri1_rf  Mineros (-63.29,-17.20)          plant  31-Oct  maturity  28-Feb  len 120 d
+GET ri2_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 74 kB 0.7s
+ri2_rf  Cuatro Canadas (-62.47,-17.30)   plant  31-Oct  maturity  31-Mar  len 151 d
+ri2_rf  Okinawa (-62.85,-17.18)          plant  31-Oct  maturity  31-Mar  len 151 d
+ri2_rf  Mineros (-63.29,-17.20)          plant  31-Oct  maturity  31-Mar  len 151 d
+GET sgc_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 57 kB 0.6s
+sgc_rf  Cuatro Canadas (-62.47,-17.30)   plant  01-Jan  maturity  31-Dec  len 364 d
+sgc_rf  Okinawa (-62.85,-17.18)          plant  01-Jan  maturity  31-Dec  len 364 d
+sgc_rf  Mineros (-63.29,-17.20)          plant  01-Jan  maturity  31-Dec  len 364 d
+GET pot_rf_ggcmi_crop_calendar_phase3_v1.01.nc4 HTTP 200 74 kB 0.6s
+pot_rf  Cuatro Canadas (-62.47,-17.30)   plant  06-Dec  maturity  04-Jul  len 210 d
+pot_rf  Okinawa (-62.85,-17.18)          plant  06-Dec  maturity  04-Jul  len 210 d
+pot_rf  Mineros (-63.29,-17.20)          plant  06-Dec  maturity  04-Jul  len 210 d

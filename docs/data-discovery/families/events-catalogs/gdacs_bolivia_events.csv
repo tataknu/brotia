@@ -1,0 +1,420 @@
+type,id,episode,from_,to,alert,source,severity,countries,glide,lon,lat,farms_inside,min_dist_km
+WF,1033500,7,2026-10-30,2026-11-06,Green,GWIS,Green impact for forestfire in 7001 ha,Bolivia,,-65.1214,-13.2725,,
+WF,1033508,2,2026-11-01,2026-11-06,Green,GWIS,Green impact for forestfire in 5725 ha,Bolivia,,-60.7498,-16.6483,0,192.5
+WF,1033447,7,2026-10-26,2026-11-04,Green,GWIS,Green impact for forestfire in 7455 ha,Bolivia,,-65.4278,-12.8176,,
+WF,1033142,13,2026-10-21,2026-10-26,Green,GWIS,Green impact for forestfire in 14278 ha,Bolivia,,-67.6805,-13.0592,,
+WF,1032686,11,2026-10-07,2026-10-15,Green,GWIS,Green impact for forestfire in 10309 ha,Bolivia,,-63.1292,-13.1708,,
+WF,1032807,2,2026-10-13,2026-10-14,Green,GWIS,Green impact for forestfire in 5154 ha,Bolivia,,-64.9417,-21.6873,,
+WF,1032697,7,2026-10-09,2026-10-11,Green,GWIS,Green impact for forestfire in 10291 ha,Bolivia,,-67.5657,-12.9545,,
+WF,1032690,4,2026-10-03,2026-10-10,Green,GWIS,Green impact for forestfire in 5990 ha,Bolivia,,-67.2085,-12.7593,,
+WF,1032574,11,2026-10-02,2026-10-09,Green,GWIS,Green impact for forestfire in 11479 ha,Bolivia,,-63.1275,-13.0345,,
+WF,1032473,9,2026-09-26,2026-09-30,Green,GWIS,Green impact for forestfire in 9991 ha,Bolivia,,-65.4061,-12.1676,,
+WF,1032484,3,2026-09-28,2026-09-29,Green,GWIS,Green impact for forestfire in 6031 ha,Bolivia,,-65.3702,-12.6258,,
+WF,1032289,15,2026-09-15,2026-09-24,Green,GWIS,Green impact for forestfire in 9066 ha,Bolivia,,-65.8051,-12.4366,,
+WF,1031526,16,2026-08-25,2026-09-09,Green,GWIS,Green impact for forestfire in 9019 ha,Bolivia,,-60.9379,-15.8545,0,201.9
+WF,1031551,13,2026-08-31,2026-09-06,Green,GWIS,Green impact for forestfire in 12949 ha,Bolivia,,-65.448,-12.32,,
+WF,1031682,6,2026-08-31,2026-09-05,Green,GWIS,Green impact for forestfire in 5853 ha,Bolivia,,-65.0387,-13.3951,,
+WF,1031583,7,2026-08-29,2026-09-05,Green,GWIS,Green impact for forestfire in 6681 ha,Bolivia,,-60.022,-16.4202,0,275.6
+WF,1031373,17,2026-08-22,2026-09-05,Green,GWIS,Green impact for forestfire in 6059 ha,Bolivia,,-60.0854,-16.5015,0,266.6
+WF,1031546,5,2026-08-22,2026-09-04,Green,GWIS,Green impact for forestfire in 5823 ha,Bolivia,,-65.1653,-12.5755,,
+WF,1031475,2,2026-08-30,2026-09-02,Green,GWIS,Green impact for forestfire in 5309 ha,Bolivia,,-65.5251,-12.4104,,
+WF,1031378,10,2026-08-27,2026-09-01,Green,GWIS,Green impact for forestfire in 7417 ha,Bolivia,,-62.2145,-13.5901,,
+WF,1031424,1,2026-08-30,2026-08-31,Green,GWIS,Green impact for forestfire in 5451 ha,Bolivia,,-67.4541,-12.6348,,
+WF,1031255,5,2026-08-13,2026-08-28,Green,GWIS,Green impact for forestfire in 9252 ha,Bolivia,,-59.5145,-17.4101,,
+WF,1029736,35,2026-07-24,2026-08-08,Green,GWIS,Green impact for forestfire in 7517 ha,Bolivia,,-59.531,-17.4106,,
+WF,1029575,29,2026-07-18,2026-08-01,Green,GWIS,Green impact for forestfire in 9124 ha,Bolivia,,-59.081,-18.3398,,
+WF,1029600,31,2026-07-18,2026-08-01,Green,GWIS,Green impact for forestfire in 16165 ha,Bolivia,,-59.6245,-16.3599,,
+WF,1029598,1,2026-07-18,2026-07-22,Green,GWIS,Green impact for forestfire in 8542 ha,Bolivia,,-64.8502,-21.5047,,
+WF,1029413,7,2026-06-26,2026-07-10,Green,GWIS,Green impact for forestfire in 5157 ha,Bolivia,,-59.5657,-16.3905,,
+WF,1028785,2,2026-05-24,2026-06-04,Green,GWIS,Green impact for forestfire in 5360 ha,Bolivia,,-59.6309,-16.6624,,
+WF,1028755,2,2026-05-28,2026-06-04,Green,GWIS,Green impact for forestfire in 7418 ha,Bolivia,,-59.765,-16.7111,,
+WF,1028697,3,2026-05-11,2026-05-17,Green,GWIS,Green impact for forestfire in 8167 ha,Bolivia,,-59.7677,-16.7093,,
+DR,1016449,99,2023-06-11,2026-05-10,Green,GDO,Minor impact for agricultural drought in 320952 km2,"Argentina, Bolivia, Brazil, Paraguay",DR-2023-000204-BRA,-53.808,-24.245,0,371.6
+FL,1103664,5,2025-12-13,2025-12-24,Green,GLOFAS,Magnitude 0 ,Bolivia,,-66.1676,-17.4012,,
+FL,1103643,1,2025-12-03,2025-12-03,Green,GLOFAS,Magnitude 0 ,"Bolivia, Spain",,-63.7904,-18.1739,12,0.0
+FL,1103620,1,2025-11-17,2025-11-19,Green,GLOFAS,Magnitude 0 ,Bolivia,,-63.8758,-18.1797,0,110.5
+WF,1025379,1,2025-11-08,2025-11-13,Green,GWIS,Green impact for forestfire in 20054 ha,"Bolivia, Brazil",,-58.0534,-19.904,,
+WF,1025359,1,2025-11-09,2025-11-11,Green,GWIS,Green impact for forestfire in 12123 ha,"Bolivia, Brazil, Paraguay",,-58.1244,-19.7464,,
+WF,1025387,1,2025-11-07,2025-11-11,Green,GWIS,Green impact for forestfire in 6430 ha,Bolivia,,-67.9667,-12.8854,,
+WF,1025535,1,2025-11-01,2025-11-09,Green,GWIS,Green impact for forestfire in 8264 ha,Bolivia,,-62.3676,-13.3039,,
+WF,1025381,1,2025-11-07,2025-11-08,Green,GWIS,Green impact for forestfire in 6231 ha,"Paraguay, Bolivia",,-58.1495,-19.9822,,
+WF,1025705,1,2025-10-04,2025-10-09,Green,GWIS,Green impact for forestfire in 7133 ha,Bolivia,,-62.1311,-14.4653,0,261.4
+WF,1025722,1,2025-10-04,2025-10-09,Green,GWIS,Green impact for forestfire in 5056 ha,Bolivia,,-63.7699,-14.501,0,280.3
+WF,1025060,5,2025-09-12,2025-09-16,Green,GWIS,Green impact for forestfire in 5984 ha,Bolivia,,-65.0276,-15.6914,0,247.3
+WF,1025053,1,2025-09-10,2025-09-14,Green,GWIS,Green impact for forestfire in 5120 ha,Bolivia,,-65.0767,-15.7733,0,247.5
+WF,1025014,4,2025-09-07,2025-09-11,Green,GWIS,Green impact for forestfire in 7316 ha,Bolivia,,-64.5159,-15.518,0,214.5
+WF,1024977,6,2025-09-04,2025-09-08,Green,GWIS,Green impact for forestfire in 9397 ha,Bolivia,,-65.1203,-13.4914,,
+WF,1024650,4,2025-08-19,2025-08-21,Green,GWIS,Green impact for forestfire in 15005 ha,Bolivia,,-60.6981,-14.5686,0,317.8
+WF,1024569,7,2025-08-09,2025-08-16,Green,GWIS,Green impact for forestfire in 13324 ha,Bolivia,,-62.187,-13.5271,,
+WF,1024507,24,2025-08-05,2025-08-15,Green,GWIS,Green impact for forestfire in 15481 ha,Bolivia,,-60.796,-14.2735,,
+WF,1024330,18,2025-07-24,2025-08-02,Green,GWIS,Green impact for forestfire in 9206 ha,Bolivia,,-63.5375,-14.5623,0,270.9
+WF,1024332,2,2025-07-15,2025-07-25,Green,GWIS,Green impact for forestfire in 5329 ha,Bolivia,,-61.5371,-16.4653,0,112.9
+WF,1024279,12,2025-07-12,2025-07-22,Green,GWIS,Green impact for forestfire in 6178 ha,Bolivia,,-60.3766,-17.7559,0,231.3
+WF,1024280,9,2025-07-11,2025-07-21,Green,GWIS,Green impact for forestfire in 5506 ha,Bolivia,,-59.6043,-18.0624,,
+WF,1024283,10,2025-07-11,2025-07-21,Green,GWIS,Green impact for forestfire in 11050 ha,Bolivia,,-59.5935,-16.3487,,
+WF,1024267,17,2025-07-10,2025-07-20,Green,GWIS,Green impact for forestfire in 7006 ha,Bolivia,,-60.3834,-16.0855,0,247.2
+FL,1103218,4,2025-04-16,2025-05-06,Orange,GLOFAS,Magnitude 0 ,Bolivia,FL-2025-000057-BOL,-68.108,-16.5064,,
+FL,1103232,1,2025-04-12,2025-04-14,Green,GLOFAS,Magnitude 0 ,Bolivia,,-68.42,-14.7207,,
+FL,1103160,6,2025-03-04,2025-03-22,Green,GLOFAS,Magnitude 0 ,Bolivia,,-66.1676,-17.4012,,
+FL,1103178,4,2025-03-06,2025-03-12,Green,GLOFAS,Magnitude 0 ,Bolivia,,-64.9438,-20.8265,,
+FL,1103111,1,2025-02-04,2025-02-06,Green,GLOFAS,Magnitude 0 ,Bolivia,,-68.7538,-11.0185,,
+FL,1103095,3,2025-01-16,2025-01-23,Green,GLOFAS,Magnitude 0 ,Bolivia,,-63.599,-17.1097,0,34.7
+FL,1103076,1,2025-01-06,2025-01-08,Green,GLOFAS,Magnitude 0 ,Bolivia,,-67.4404,-15.5765,,
+FL,1103020,3,2024-11-22,2024-12-03,Green,GLOFAS,Magnitude 0 ,Bolivia,,-65.5957,-22.0907,,
+FL,1102993,1,2024-11-03,2024-11-06,Green,GLOFAS,Magnitude 0 ,Bolivia,,-63.8333,-21.5833,,
+WF,1022881,3,2024-10-29,2024-11-04,Green,GWIS,Green impact for forestfire in 6097 ha,Bolivia,,-68.7259,-12.9507,,
+WF,1022734,3,2024-10-12,2024-10-14,Green,GWIS,Green impact for forestfire in 6059 ha,Bolivia,,-67.3344,-13.0789,,
+WF,1022724,6,2024-10-10,2024-10-13,Green,GWIS,Green impact for forestfire in 8635 ha,Bolivia,,-64.1748,-14.9187,0,252.1
+WF,1022722,7,2024-10-11,2024-10-13,Green,GWIS,Green impact for forestfire in 10119 ha,Bolivia,,-65.8536,-14.6306,0,390.8
+WF,1022608,16,2024-10-05,2024-10-09,Green,GWIS,Green impact for forestfire in 21426 ha,Bolivia,,-57.9157,-18.896,,
+WF,1022555,11,2024-10-02,2024-10-07,Green,GWIS,Green impact for forestfire in 15429 ha,Bolivia,,-66.2987,-13.2372,,
+WF,1022614,1,2024-10-02,2024-10-07,Green,GWIS,Green impact for forestfire in 5657 ha,Bolivia,,-62.123,-14.1992,,
+WF,1022602,1,2024-10-01,2024-10-06,Green,GWIS,Green impact for forestfire in 5003 ha,Bolivia,,-66.9118,-12.7765,,
+WF,1022603,1,2024-10-01,2024-10-06,Green,GWIS,Green impact for forestfire in 5058 ha,Bolivia,,-59.5277,-18.4172,,
+WF,1022549,9,2024-09-30,2024-10-05,Green,GWIS,Green impact for forestfire in 6317 ha,Bolivia,,-63.2915,-13.9182,,
+WF,1022575,5,2024-09-30,2024-10-05,Green,GWIS,Green impact for forestfire in 19498 ha,Bolivia,,-62.8503,-14.6719,0,238.2
+WF,1022583,3,2024-09-30,2024-10-05,Green,GWIS,Green impact for forestfire in 5755 ha,Bolivia,,-65.4906,-14.6765,0,358.2
+WF,1022548,5,2024-10-01,2024-10-05,Green,GWIS,Green impact for forestfire in 5610 ha,Bolivia,,-62.9839,-15.8248,0,119.2
+WF,1022536,7,2024-09-29,2024-10-04,Green,GWIS,Green impact for forestfire in 6382 ha,Bolivia,,-62.4255,-15.7664,0,114.3
+WF,1022560,4,2024-09-29,2024-10-04,Green,GWIS,Green impact for forestfire in 7124 ha,Bolivia,,-64.8594,-15.9857,0,215.7
+WF,1022554,4,2024-09-28,2024-10-03,Green,GWIS,Green impact for forestfire in 5608 ha,Bolivia,,-63.6786,-16.3178,0,88.1
+WF,1022526,5,2024-09-30,2024-10-02,Green,GWIS,Green impact for forestfire in 16466 ha,Bolivia,,-67.4148,-13.2739,,
+WF,1022550,1,2024-09-30,2024-10-02,Green,GWIS,Green impact for forestfire in 5519 ha,Bolivia,,-67.6365,-12.6588,,
+WF,1022440,16,2024-09-27,2024-10-02,Green,GWIS,Green impact for forestfire in 8059 ha,Bolivia,,-66.9211,-13.6013,,
+WF,1022446,15,2024-09-27,2024-10-02,Green,GWIS,Green impact for forestfire in 33142 ha,Bolivia,,-65.2133,-14.1227,,
+WF,1022478,12,2024-09-27,2024-10-02,Green,GWIS,Green impact for forestfire in 11704 ha,Bolivia,,-64.5702,-16.0658,0,182.2
+WF,1022501,6,2024-09-27,2024-10-02,Green,GWIS,Green impact for forestfire in 24946 ha,Bolivia,,-67.5428,-13.1548,,
+WF,1022528,5,2024-09-27,2024-10-02,Green,GWIS,Green impact for forestfire in 44723 ha,Bolivia,,-62.4693,-14.6248,0,233.6
+WF,1022510,6,2024-09-28,2024-10-02,Green,GWIS,Green impact for forestfire in 14489 ha,Bolivia,,-62.4104,-14.615,0,240.6
+WF,1022507,2,2024-09-29,2024-10-01,Green,GWIS,Green impact for forestfire in 5461 ha,Bolivia,,-65.7289,-12.7233,,
+WF,1022499,3,2024-09-27,2024-10-01,Green,GWIS,Green impact for forestfire in 5212 ha,Bolivia,,-67.4683,-13.0822,,
+WF,1022489,1,2024-09-27,2024-09-30,Green,GWIS,Green impact for forestfire in 9876 ha,Bolivia,,-67.5462,-13.1704,,
+WF,1022408,6,2024-09-24,2024-09-29,Green,GWIS,Green impact for forestfire in 6973 ha,Bolivia,,-58.5741,-18.0857,,
+WF,1022415,3,2024-09-25,2024-09-28,Green,GWIS,Green impact for forestfire in 5194 ha,Bolivia,,-65.3842,-13.8249,,
+WF,1022352,18,2024-09-21,2024-09-26,Green,GWIS,Green impact for forestfire in 30998 ha,Bolivia,,-67.745,-12.8182,,
+WF,1022369,8,2024-09-21,2024-09-26,Green,GWIS,Green impact for forestfire in 9535 ha,Bolivia,,-64.633,-12.8342,,
+WF,1022400,2,2024-09-24,2024-09-26,Green,GWIS,Green impact for forestfire in 5106 ha,Bolivia,,-58.5345,-16.6216,,
+WF,1022378,3,2024-09-20,2024-09-25,Green,GWIS,Green impact for forestfire in 5628 ha,Bolivia,,-66.1224,-12.5897,,
+WF,1022398,4,2024-09-20,2024-09-25,Green,GWIS,Green impact for forestfire in 5526 ha,Bolivia,,-64.7577,-16.1888,0,193.4
+WF,1022399,4,2024-09-20,2024-09-25,Green,GWIS,Green impact for forestfire in 9584 ha,Bolivia,,-64.0559,-13.3914,,
+WF,1022315,14,2024-09-19,2024-09-24,Green,GWIS,Green impact for forestfire in 9721 ha,Bolivia,,-65.4859,-14.0264,,
+WF,1022383,1,2024-09-19,2024-09-24,Green,GWIS,Green impact for forestfire in 5945 ha,Bolivia,,-66.6892,-12.4916,,
+WF,1022379,2,2024-09-20,2024-09-24,Green,GWIS,Green impact for forestfire in 5240 ha,Bolivia,,-58.5436,-17.9955,,
+WF,1022316,12,2024-09-18,2024-09-23,Green,GWIS,Green impact for forestfire in 31719 ha,Bolivia,,-62.2267,-14.8806,0,208.6
+WF,1022317,12,2024-09-18,2024-09-23,Green,GWIS,Green impact for forestfire in 10715 ha,Bolivia,,-58.9121,-17.9638,,
+WF,1022339,9,2024-09-18,2024-09-23,Green,GWIS,Green impact for forestfire in 7929 ha,Bolivia,,-59.1712,-17.9487,,
+WF,1022347,6,2024-09-18,2024-09-23,Green,GWIS,Green impact for forestfire in 11361 ha,Bolivia,,-59.4793,-17.9381,,
+WF,1022344,7,2024-09-19,2024-09-23,Green,GWIS,Green impact for forestfire in 7008 ha,Bolivia,,-62.95,-15.4247,0,156.7
+WF,1022312,9,2024-09-17,2024-09-22,Green,GWIS,Green impact for forestfire in 10245 ha,Bolivia,,-63.6268,-13.4234,,
+WF,1022323,6,2024-09-17,2024-09-22,Green,GWIS,Green impact for forestfire in 6966 ha,Bolivia,,-57.7958,-18.1176,,
+WF,1022274,8,2024-09-16,2024-09-21,Green,GWIS,Green impact for forestfire in 6617 ha,Bolivia,,-66.0769,-12.3263,,
+WF,1022318,1,2024-09-17,2024-09-21,Green,GWIS,Green impact for forestfire in 5148 ha,Bolivia,,-59.7145,-17.0669,,
+WF,1022313,1,2024-09-17,2024-09-20,Green,GWIS,Green impact for forestfire in 5279 ha,Bolivia,,-59.7884,-16.9804,,
+WF,1022222,11,2024-09-15,2024-09-20,Green,GWIS,Green impact for forestfire in 11108 ha,Bolivia,,-65.2877,-11.7297,,
+WF,1022139,11,2024-09-13,2024-09-17,Green,GWIS,Green impact for forestfire in 12025 ha,Bolivia,,-65.3199,-12.5948,,
+WF,1022229,1,2024-09-12,2024-09-17,Green,GWIS,Green impact for forestfire in 5306 ha,Bolivia,,-64.4594,-12.6447,,
+WF,1022165,1,2024-09-13,2024-09-14,Green,GWIS,Green impact for forestfire in 5111 ha,Bolivia,,-65.5336,-13.6986,,
+WF,1022144,5,2024-09-09,2024-09-14,Green,GWIS,Green impact for forestfire in 8631 ha,Bolivia,,-64.5299,-12.625,,
+WF,1022020,5,2024-09-10,2024-09-13,Green,GWIS,Green impact for forestfire in 8759 ha,Bolivia,,-64.4685,-14.3957,0,315.5
+WF,1022037,7,2024-09-09,2024-09-13,Green,GWIS,Green impact for forestfire in 35482 ha,"Brazil, Bolivia",,-57.9609,-20.2183,,
+WF,1021930,10,2024-09-01,2024-09-06,Green,GWIS,Green impact for forestfire in 7240 ha,Bolivia,,-64.5052,-14.0728,,
+WF,1021999,2,2024-09-05,2024-09-05,Green,GWIS,Green impact for forestfire in 6983 ha,"Bolivia, Paraguay",,-58.9128,-19.425,,
+WF,1021953,5,2024-09-01,2024-09-05,Green,GWIS,Green impact for forestfire in 8165 ha,Bolivia,,-65.8315,-12.9209,,
+WF,1021872,11,2024-08-28,2024-09-02,Green,GWIS,Green impact for forestfire in 11600 ha,Bolivia,,-67.2962,-12.8473,,
+WF,1021877,6,2024-08-28,2024-09-02,Green,GWIS,Green impact for forestfire in 5419 ha,Bolivia,,-66.7424,-12.312,,
+WF,1021891,3,2024-08-29,2024-09-02,Green,GWIS,Green impact for forestfire in 5173 ha,"Bolivia, Brazil",,-59.4954,-16.3384,,
+WF,1021874,6,2024-08-27,2024-09-01,Green,GWIS,Green impact for forestfire in 5819 ha,Bolivia,,-59.4662,-16.9847,,
+WF,1021902,2,2024-08-27,2024-09-01,Green,GWIS,Green impact for forestfire in 5774 ha,Bolivia,,-66.8303,-13.0431,,
+WF,1021879,3,2024-08-28,2024-08-31,Green,GWIS,Green impact for forestfire in 5469 ha,Bolivia,,-64.5078,-14.9881,0,265.2
+WF,1021890,1,2024-08-30,2024-08-31,Green,GWIS,Green impact for forestfire in 5151 ha,Bolivia,,-60.8726,-15.4198,0,237.2
+WF,1021801,12,2024-08-26,2024-08-31,Green,GWIS,Green impact for forestfire in 8207 ha,Bolivia,,-65.6246,-12.9295,,
+WF,1021843,6,2024-08-26,2024-08-31,Green,GWIS,Green impact for forestfire in 5924 ha,Bolivia,,-61.5891,-16.5584,0,104.5
+WF,1021884,2,2024-08-26,2024-08-31,Green,GWIS,Green impact for forestfire in 5349 ha,Bolivia,,-64.0349,-16.3424,0,113.5
+WF,1021887,1,2024-08-26,2024-08-31,Green,GWIS,Green impact for forestfire in 5020 ha,Bolivia,,-59.8316,-17.4311,,
+WF,1021876,4,2024-08-26,2024-08-31,Green,GWIS,Green impact for forestfire in 5604 ha,"Bolivia, Brazil",,-64.9,-12.0321,,
+WF,1021770,15,2024-08-25,2024-08-30,Green,GWIS,Green impact for forestfire in 11319 ha,Bolivia,,-65.4418,-11.9199,,
+WF,1021793,12,2024-08-25,2024-08-30,Green,GWIS,Green impact for forestfire in 8486 ha,Bolivia,,-66.0609,-12.9032,,
+WF,1021802,9,2024-08-25,2024-08-30,Green,GWIS,Green impact for forestfire in 8120 ha,Bolivia,,-65.3683,-12.0022,,
+WF,1021856,1,2024-08-25,2024-08-30,Green,GWIS,Green impact for forestfire in 5430 ha,Bolivia,,-61.6158,-16.4039,0,107.9
+WF,1021822,3,2024-08-27,2024-08-29,Green,GWIS,Green impact for forestfire in 5750 ha,Bolivia,,-66.5596,-12.3384,,
+WF,1021771,10,2024-08-25,2024-08-29,Green,GWIS,Green impact for forestfire in 10333 ha,Bolivia,,-66.539,-12.4711,,
+WF,1021701,12,2024-08-23,2024-08-28,Green,GWIS,Green impact for forestfire in 13323 ha,Bolivia,,-66.7893,-12.7792,,
+WF,1021707,8,2024-08-21,2024-08-26,Green,GWIS,Green impact for forestfire in 10694 ha,Bolivia,,-66.847,-12.4374,,
+WF,1021733,5,2024-08-21,2024-08-26,Green,GWIS,Green impact for forestfire in 9113 ha,Bolivia,,-65.1771,-11.827,,
+WF,1021755,4,2024-08-21,2024-08-26,Green,GWIS,Green impact for forestfire in 7557 ha,Bolivia,,-65.3947,-12.1447,,
+WF,1021702,3,2024-08-23,2024-08-25,Green,GWIS,Green impact for forestfire in 8816 ha,Bolivia,,-65.5008,-12.5108,,
+WF,1021610,19,2024-08-20,2024-08-25,Green,GWIS,Green impact for forestfire in 26382 ha,Bolivia,,-64.3985,-13.3534,,
+WF,1021660,10,2024-08-20,2024-08-25,Green,GWIS,Green impact for forestfire in 6764 ha,Bolivia,,-64.9767,-14.0329,,
+WF,1021737,1,2024-08-20,2024-08-25,Green,GWIS,Green impact for forestfire in 14408 ha,Bolivia,,-65.5154,-12.4881,,
+WF,1021576,11,2024-08-18,2024-08-23,Green,GWIS,Green impact for forestfire in 9728 ha,Bolivia,,-67.7375,-13.0558,,
+WF,1021693,2,2024-08-20,2024-08-23,Green,GWIS,Green impact for forestfire in 5312 ha,Bolivia,,-64.9656,-14.2282,,
+WF,1021394,17,2024-08-16,2024-08-21,Green,GWIS,Green impact for forestfire in 10348 ha,Bolivia,,-66.3794,-13.6167,,
+WF,1021449,8,2024-08-17,2024-08-21,Green,GWIS,Green impact for forestfire in 12565 ha,Bolivia,,-60.5371,-15.5448,0,253.3
+WF,1021448,2,2024-08-17,2024-08-19,Green,GWIS,Green impact for forestfire in 5631 ha,"Bolivia, Brazil",,-59.004,-16.3565,,
+WF,1021361,9,2024-08-13,2024-08-19,Green,GWIS,Green impact for forestfire in 10403 ha,Bolivia,,-65.3824,-14.2403,,
+WF,1021363,10,2024-08-13,2024-08-19,Green,GWIS,Green impact for forestfire in 17387 ha,Bolivia,,-60.418,-16.7955,0,223.8
+WF,1021418,5,2024-08-13,2024-08-19,Green,GWIS,Green impact for forestfire in 7013 ha,Bolivia,,-68.1088,-12.6771,,
+WF,1021226,17,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 76207 ha,Bolivia,,-60.6851,-15.2876,0,253.1
+WF,1021264,11,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 15449 ha,Bolivia,,-62.7867,-15.4163,0,153.6
+WF,1021478,1,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 5640 ha,Bolivia,,-58.1825,-17.4686,,
+WF,1021479,1,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 5772 ha,Bolivia,,-58.4191,-17.6632,,
+WF,1021484,1,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 6847 ha,Bolivia,,-62.1034,-15.9469,0,105.9
+WF,1021486,1,2024-08-11,2024-08-19,Green,GWIS,Green impact for forestfire in 9398 ha,Bolivia,,-63.4133,-13.486,,
+WF,1021353,8,2024-08-12,2024-08-19,Green,GWIS,Green impact for forestfire in 20183 ha,Bolivia,,-59.1813,-17.641,,
+WF,1021398,2,2024-08-12,2024-08-19,Green,GWIS,Green impact for forestfire in 6873 ha,Bolivia,,-59.1766,-17.505,,
+WF,1021463,1,2024-08-12,2024-08-19,Green,GWIS,Green impact for forestfire in 5061 ha,Bolivia,,-63.2785,-15.5275,0,161.5
+WF,1021464,1,2024-08-12,2024-08-19,Green,GWIS,Green impact for forestfire in 5131 ha,Bolivia,,-60.1864,-16.4257,0,259.1
+WF,1021471,1,2024-08-12,2024-08-19,Green,GWIS,Green impact for forestfire in 9104 ha,Bolivia,,-61.2675,-15.6981,0,182.4
+WF,1021314,4,2024-08-10,2024-08-19,Green,GWIS,Green impact for forestfire in 11562 ha,Bolivia,,-65.2563,-12.9665,,
+WF,1021488,1,2024-08-10,2024-08-19,Green,GWIS,Green impact for forestfire in 13403 ha,Bolivia,,-64.9758,-13.5975,,
+WF,1021497,1,2024-08-10,2024-08-19,Green,GWIS,Green impact for forestfire in 6466 ha,Bolivia,,-58.3827,-17.5431,,
+WF,1021205,15,2024-08-10,2024-08-19,Green,GWIS,Green impact for forestfire in 45733 ha,"Bolivia, Brazil",,-58.8652,-16.3869,,
+WF,1021219,12,2024-08-10,2024-08-18,Green,GWIS,Green impact for forestfire in 16779 ha,Bolivia,,-63.127,-13.184,,
+WF,1021265,9,2024-08-11,2024-08-18,Green,GWIS,Green impact for forestfire in 8657 ha,Bolivia,,-58.9533,-16.4837,,
+WF,1021462,1,2024-08-13,2024-08-18,Green,GWIS,Green impact for forestfire in 5005 ha,Bolivia,,-64.16,-16.2568,0,131.1
+WF,1021358,6,2024-08-14,2024-08-17,Green,GWIS,Green impact for forestfire in 9447 ha,"Bolivia, Brazil",,-58.9013,-16.328,,
+WF,1021389,4,2024-08-12,2024-08-17,Green,GWIS,Green impact for forestfire in 6233 ha,Bolivia,,-59.8319,-16.5544,,
+WF,1021494,1,2024-08-10,2024-08-17,Green,GWIS,Green impact for forestfire in 5920 ha,Bolivia,,-65.1059,-13.3218,,
+WF,1021346,4,2024-08-13,2024-08-16,Green,GWIS,Green impact for forestfire in 6928 ha,Bolivia,,-64.9889,-13.578,,
+WF,1021313,4,2024-08-10,2024-08-15,Green,GWIS,Green impact for forestfire in 6050 ha,Bolivia,,-64.1318,-12.787,,
+WF,1021280,6,2024-08-11,2024-08-15,Green,GWIS,Green impact for forestfire in 22668 ha,Bolivia,,-59.6873,-16.4919,,
+WF,1021220,7,2024-08-11,2024-08-14,Green,GWIS,Green impact for forestfire in 10135 ha,Bolivia,,-61.9157,-15.7914,0,128.1
+WF,1021048,14,2024-08-10,2024-08-14,Green,GWIS,Green impact for forestfire in 41121 ha,Bolivia,,-58.7233,-16.7172,,
+WF,1021227,6,2024-08-10,2024-08-14,Green,GWIS,Green impact for forestfire in 8899 ha,"Brazil, Bolivia",,-58.0787,-17.4582,,
+WF,1021268,1,2024-08-11,2024-08-13,Green,GWIS,Green impact for forestfire in 5513 ha,Bolivia,,-65.0145,-12.1976,,
+WF,1021273,1,2024-08-11,2024-08-13,Green,GWIS,Green impact for forestfire in 6641 ha,Bolivia,,-65.0069,-12.2038,,
+WF,1020627,18,2024-07-31,2024-08-12,Green,GWIS,Green impact for forestfire in 7785 ha,Bolivia,,-61.9195,-16.039,0,108.1
+WF,1020725,8,2024-08-01,2024-08-11,Green,GWIS,Green impact for forestfire in 17106 ha,Bolivia,,-64.0799,-13.5128,,
+WF,1020622,24,2024-07-30,2024-08-11,Green,GWIS,Green impact for forestfire in 18580 ha,Bolivia,,-65.581,-13.1225,,
+WF,1020821,6,2024-08-06,2024-08-11,Green,GWIS,Green impact for forestfire in 8732 ha,Bolivia,,-58.3311,-17.6365,,
+WF,1020758,11,2024-08-06,2024-08-11,Green,GWIS,Green impact for forestfire in 22180 ha,"Bolivia, Brazil",,-60.2785,-15.8969,0,260.1
+WF,1020851,3,2024-08-05,2024-08-08,Green,GWIS,Green impact for forestfire in 10016 ha,Bolivia,,-65.0743,-13.516,,
+WF,1020767,3,2024-07-27,2024-08-08,Green,GWIS,Green impact for forestfire in 23321 ha,Bolivia,,-65.2415,-12.3045,,
+WF,1020671,8,2024-07-29,2024-08-08,Green,GWIS,Green impact for forestfire in 6749 ha,Bolivia,,-65.927,-12.8685,,
+WF,1020687,13,2024-08-02,2024-08-08,Green,GWIS,Green impact for forestfire in 13018 ha,Bolivia,,-59.5201,-17.6251,,
+WF,1020665,4,2024-08-01,2024-08-08,Green,GWIS,Green impact for forestfire in 9523 ha,Bolivia,,-65.2047,-14.428,0,358.2
+WF,1020685,4,2024-08-03,2024-08-08,Green,GWIS,Green impact for forestfire in 14518 ha,Bolivia,,-63.9355,-13.7281,,
+WF,1020946,1,2024-07-01,2024-08-08,Orange,GWIS,Green impact for forestfire in 950351 ha,"Bolivia, Brazil",WF-2024-000137-BOL,-59.038,-16.98,,
+WF,1020587,17,2024-07-23,2024-08-08,Green,GWIS,Green impact for forestfire in 8050 ha,Bolivia,,-61.6984,-16.051,0,123.8
+WF,1020769,2,2024-07-23,2024-08-08,Green,GWIS,Green impact for forestfire in 8294 ha,Bolivia,,-61.2921,-15.6598,0,184.7
+WF,1020448,26,2024-07-23,2024-08-08,Green,GWIS,Green impact for forestfire in 35158 ha,"Brazil, Bolivia",,-57.4884,-18.3199,,
+WF,1020628,16,2024-07-24,2024-08-08,Green,GWIS,Green impact for forestfire in 9460 ha,Bolivia,,-62.1965,-16.0837,0,87.6
+WF,1020691,2,2024-07-25,2024-08-08,Green,GWIS,Green impact for forestfire in 18289 ha,Bolivia,,-65.0549,-13.2784,,
+WF,1020735,6,2024-07-26,2024-08-08,Green,GWIS,Green impact for forestfire in 6718 ha,Bolivia,,-62.1116,-15.872,0,112.3
+WF,1020636,14,2024-07-24,2024-08-07,Green,GWIS,Green impact for forestfire in 7828 ha,Bolivia,,-59.8174,-17.727,,
+WF,1020407,19,2024-07-18,2024-08-07,Green,GWIS,Green impact for forestfire in 17533 ha,Bolivia,,-59.5434,-17.7897,,
+WF,1020531,7,2024-07-18,2024-08-07,Green,GWIS,Green impact for forestfire in 6808 ha,Bolivia,,-60.575,-17.0518,0,206.8
+WF,1020297,43,2024-07-20,2024-08-07,Green,GWIS,Green impact for forestfire in 57875 ha,Bolivia,,-59.2079,-18.5389,,
+WF,1020780,1,2024-07-21,2024-08-07,Orange,GWIS,Orange impact for forestfire in 9056 ha,Bolivia,WF-2024-000134-BOL,-65.4766,-12.6317,,
+WF,1020856,1,2024-08-04,2024-08-07,Green,GWIS,Green impact for forestfire in 29373 ha,"Bolivia, Brazil",,-58.0764,-19.5174,,
+WF,1020738,2,2024-08-03,2024-08-07,Green,GWIS,Green impact for forestfire in 8638 ha,Bolivia,,-62.8119,-13.781,,
+WF,1020631,9,2024-07-31,2024-08-07,Green,GWIS,Green impact for forestfire in 5299 ha,Bolivia,,-58.8499,-18.7001,,
+WF,1020763,2,2024-07-31,2024-08-07,Green,GWIS,Green impact for forestfire in 6503 ha,Bolivia,,-60.5608,-16.9723,0,209.2
+WF,1020428,5,2024-07-27,2024-08-07,Green,GWIS,Green impact for forestfire in 58985 ha,Bolivia,,-64.8243,-13.6999,,
+WF,1020845,1,2024-08-06,2024-08-07,Green,GWIS,Green impact for forestfire in 12342 ha,"Paraguay, Bolivia",,-58.1845,-19.8351,,
+WF,1020721,3,2024-08-03,2024-08-06,Green,GWIS,Green impact for forestfire in 7162 ha,Bolivia,,-64.5965,-13.801,,
+WF,1020768,1,2024-07-23,2024-08-06,Green,GWIS,Green impact for forestfire in 5424 ha,Bolivia,,-61.9734,-15.7967,0,129.0
+WF,1020772,1,2024-07-23,2024-08-06,Green,GWIS,Green impact for forestfire in 7921 ha,Bolivia,,-62.3785,-16.7082,0,17.5
+WF,1020589,19,2024-07-24,2024-08-06,Green,GWIS,Green impact for forestfire in 14484 ha,Bolivia,,-58.8217,-16.8872,,
+WF,1020625,9,2024-07-26,2024-08-06,Green,GWIS,Green impact for forestfire in 6893 ha,Bolivia,,-62.8489,-16.2021,0,73.6
+WF,1020600,11,2024-07-25,2024-08-06,Green,GWIS,Green impact for forestfire in 9497 ha,Bolivia,,-62.4265,-16.4619,0,35.3
+WF,1020466,21,2024-07-26,2024-08-05,Green,GWIS,Green impact for forestfire in 23962 ha,"Bolivia, Brazil",,-59.9649,-16.3512,0,273.4
+WF,1020483,15,2024-07-27,2024-08-05,Green,GWIS,Green impact for forestfire in 8426 ha,Bolivia,,-65.1269,-14.0997,,
+WF,1020469,12,2024-07-20,2024-08-05,Green,GWIS,Green impact for forestfire in 7681 ha,Bolivia,,-64.4371,-16.0803,0,167.7
+WF,1020692,3,2024-07-23,2024-08-05,Green,GWIS,Green impact for forestfire in 8005 ha,Bolivia,,-59.5971,-16.4192,,
+WF,1020580,2,2024-07-17,2024-08-05,Green,GWIS,Green impact for forestfire in 6023 ha,Bolivia,,-65.8578,-12.6919,,
+WF,1020619,14,2024-08-01,2024-08-05,Green,GWIS,Green impact for forestfire in 18398 ha,Bolivia,,-65.2398,-12.292,,
+WF,1020468,14,2024-07-30,2024-08-05,Green,GWIS,Green impact for forestfire in 10880 ha,Bolivia,,-64.3442,-16.1636,0,152.7
+WF,1020582,6,2024-07-30,2024-08-04,Green,GWIS,Green impact for forestfire in 15161 ha,Bolivia,,-64.401,-13.5391,,
+WF,1020638,4,2024-07-20,2024-08-04,Green,GWIS,Green impact for forestfire in 5913 ha,Bolivia,,-61.1767,-15.7062,0,192.7
+WF,1020674,2,2024-07-20,2024-08-04,Green,GWIS,Green impact for forestfire in 5057 ha,Bolivia,,-62.6488,-16.425,0,43.8
+WF,1020672,1,2024-07-24,2024-08-04,Green,GWIS,Green impact for forestfire in 5107 ha,Bolivia,,-63.7981,-15.9761,0,129.5
+WF,1020403,20,2024-07-19,2024-08-03,Green,GWIS,Green impact for forestfire in 20381 ha,Bolivia,,-64.1841,-15.4136,0,194.6
+WF,1020945,1,2024-07-22,2024-08-03,Green,GWIS,Green impact for forestfire in 6749 ha,Bolivia,,-63.7696,-14.3296,0,298.3
+WF,1020410,16,2024-07-18,2024-08-02,Green,GWIS,Green impact for forestfire in 9144 ha,Bolivia,,-60.1093,-16.4169,0,263.6
+WF,1020418,11,2024-07-25,2024-08-02,Green,GWIS,Green impact for forestfire in 28961 ha,Bolivia,,-59.1908,-16.498,,
+WF,1020347,32,2024-07-20,2024-08-01,Green,GWIS,Green impact for forestfire in 33954 ha,Bolivia,,-59.4149,-16.4973,,
+WF,1020408,8,2024-07-16,2024-07-31,Green,GWIS,Green impact for forestfire in 6135 ha,Bolivia,,-61.8105,-15.8172,0,133.3
+WF,1020416,3,2024-07-28,2024-07-31,Green,GWIS,Green impact for forestfire in 5857 ha,Bolivia,,-64.7832,-13.6401,,
+WF,1020548,1,2024-07-25,2024-07-30,Green,GWIS,Green impact for forestfire in 5704 ha,Bolivia,,-63.9079,-14.1657,,
+WF,1020395,8,2024-07-27,2024-07-28,Green,GWIS,Green impact for forestfire in 23355 ha,"Bolivia, Paraguay, Brazil",,-58.0642,-19.9183,,
+WF,1020789,1,2024-07-12,2024-07-28,Green,GWIS,Green impact for forestfire in 6178 ha,Bolivia,,-63.101,-16.099,0,94.4
+WF,1020328,18,2024-07-13,2024-07-28,Green,GWIS,Green impact for forestfire in 35205 ha,Bolivia,,-64.2937,-13.8016,,
+WF,1020329,13,2024-07-12,2024-07-27,Green,GWIS,Green impact for forestfire in 11285 ha,Bolivia,,-61.0689,-15.5831,0,207.6
+WF,1020348,13,2024-07-19,2024-07-27,Green,GWIS,Green impact for forestfire in 7930 ha,Bolivia,,-65.4382,-12.196,,
+WF,1020562,1,2024-07-23,2024-07-27,Green,GWIS,Green impact for forestfire in 5641 ha,Bolivia,,-64.7046,-12.834,,
+WF,1020227,25,2024-07-11,2024-07-26,Green,GWIS,Green impact for forestfire in 25725 ha,Bolivia,,-60.8722,-15.7715,0,201.7
+WF,1020788,1,2024-07-13,2024-07-26,Green,GWIS,Green impact for forestfire in 5995 ha,Bolivia,,-63.0152,-16.3029,0,76.2
+WF,1020786,1,2024-07-14,2024-07-26,Green,GWIS,Green impact for forestfire in 5533 ha,Bolivia,,-58.7716,-16.9648,,
+WF,1020326,3,2024-07-15,2024-07-24,Green,GWIS,Green impact for forestfire in 5832 ha,Bolivia,,-64.413,-15.2233,0,235.0
+WF,1020327,4,2024-07-15,2024-07-24,Green,GWIS,Green impact for forestfire in 5276 ha,Bolivia,,-64.7424,-13.3544,,
+WF,1020226,16,2024-07-14,2024-07-24,Green,GWIS,Green impact for forestfire in 11866 ha,Bolivia,,-62.7322,-16.4117,0,47.4
+WF,1020189,29,2024-07-09,2024-07-24,Green,GWIS,Green impact for forestfire in 137276 ha,Bolivia,,-58.9839,-17.0423,,
+WF,1020225,14,2024-07-14,2024-07-22,Green,GWIS,Green impact for forestfire in 14486 ha,Bolivia,,-64.3048,-13.7348,,
+WF,1020228,9,2024-07-11,2024-07-21,Green,GWIS,Green impact for forestfire in 17851 ha,Bolivia,,-58.734,-17.0834,,
+WF,1019967,10,2024-06-25,2024-07-08,Green,GWIS,Green impact for forestfire in 20773 ha,Bolivia,,-60.5433,-15.9485,0,231.5
+WF,1019963,7,2024-06-28,2024-07-06,Green,GWIS,Green impact for forestfire in 9317 ha,Bolivia,,-58.3399,-18.5906,,
+WF,1020068,2,2024-07-01,2024-07-05,Green,GWIS,Green impact for forestfire in 7199 ha,Bolivia,,-64.5079,-13.808,,
+WF,1019858,9,2024-06-13,2024-06-26,Green,GWIS,Green impact for forestfire in 10355 ha,Bolivia,,-60.3426,-16.1263,0,248.5
+WF,1019922,1,2024-06-10,2024-06-24,Green,GWIS,Green impact for forestfire in 5127 ha,"Bolivia, Brazil",,-58.4164,-16.5311,,
+WF,1019798,14,2024-06-04,2024-06-19,Green,GWIS,Green impact for forestfire in 32520 ha,"Brazil, Bolivia",,-57.7155,-18.8316,,
+WF,1019814,10,2024-06-04,2024-06-18,Green,GWIS,Green impact for forestfire in 14975 ha,"Brazil, Bolivia",,-57.5394,-18.4777,,
+WF,1019827,4,2024-06-11,2024-06-14,Green,GWIS,Green impact for forestfire in 15380 ha,"Bolivia, Brazil",,-57.9857,-19.9872,,
+WF,1019810,2,2024-05-28,2024-06-09,Green,GWIS,Green impact for forestfire in 5820 ha,Bolivia,,-60.6178,-15.8365,0,233.0
+FL,1102536,1,2024-03-20,2024-03-22,Green,GLOFAS,Magnitude 0 ,Bolivia,,-68.1336,-16.4955,,
+FL,1102518,2,2024-03-08,2024-03-12,Green,GLOFAS,Magnitude 0 ,Bolivia,,-68.1336,-16.4955,,
+FL,1102492,2,2024-02-23,2024-02-28,Green,GLOFAS,Magnitude 0 ,Bolivia,,-66.046,-17.3205,,
+FL,1102485,2,2024-02-10,2024-02-14,Green,GLOFAS,Magnitude 0 ,Bolivia,,-65.7535,-19.5893,0,335.3
+FL,1102440,4,2024-01-15,2024-01-31,Green,GLOFAS,Magnitude 0 ,Bolivia,,-66.1578,-17.385,,
+WF,1018791,2,2023-12-20,2023-12-21,Green,GWIS,Green impact for forestfire in 5083 ha,Bolivia,,-62.236,-17.9322,0,57.3
+WF,1018800,2,2023-12-07,2023-12-20,Green,GWIS,Green impact for forestfire in 6650 ha,Bolivia,,-61.3734,-14.0539,,
+WF,1018787,2,2023-12-16,2023-12-19,Green,GWIS,Green impact for forestfire in 6903 ha,Bolivia,,-60.8974,-14.6579,0,294.4
+FL,1102392,1,2023-12-05,2023-12-07,Green,GLOFAS,Magnitude 0 ,Bolivia,,-65.6586,-20.8178,,
+DR,1016612,5,2023-08-21,2023-11-30,Orange,GDO,Medium impact for agricultural drought in 319815 km2,"Bolivia, Brazil, Peru, Paraguay",DR-2023-000191-BOL,-65.017,-15.867,10,0.0
+WF,1018546,5,2023-11-05,2023-11-27,Red,GWIS,Green impact for forestfire in 49853 ha,Bolivia,WF-2023-000240-BOL,-61.9568,-14.7754,0,221.7
+WF,1018597,7,2023-11-14,2023-11-26,Green,GWIS,Green impact for forestfire in 8613 ha,Bolivia,WF-2023-000239-BOL,-66.9258,-13.7031,,
+WF,1018605,4,2023-11-09,2023-11-23,Green,GWIS,Green impact for forestfire in 8021 ha,Bolivia,,-65.3371,-16.1135,0,250.3
+WF,1018623,2,2023-11-08,2023-11-22,Green,GWIS,Green impact for forestfire in 9070 ha,Bolivia,,-65.5315,-16.1617,0,266.0
+WF,1018584,5,2023-11-08,2023-11-21,Green,GWIS,Green impact for forestfire in 5299 ha,Bolivia,,-65.3185,-16.336,0,238.4
+WF,1018582,2,2023-11-10,2023-11-20,Green,GWIS,Green impact for forestfire in 11317 ha,Bolivia,,-63.1697,-13.8982,,
+WF,1018618,2,2023-11-10,2023-11-20,Green,GWIS,Green impact for forestfire in 9105 ha,Bolivia,,-67.4318,-14.5784,,
+WF,1018622,1,2023-11-13,2023-11-20,Green,GWIS,Green impact for forestfire in 9952 ha,Bolivia,,-67.5185,-14.7146,,
+WF,1018525,6,2023-11-05,2023-11-20,Green,GWIS,Green impact for forestfire in 22742 ha,Bolivia,,-62.9806,-14.7307,0,227.8
+WF,1018523,6,2023-11-08,2023-11-19,Green,GWIS,Green impact for forestfire in 16392 ha,Bolivia,,-61.8094,-14.6003,0,254.0
+WF,1018608,2,2023-11-08,2023-11-19,Green,GWIS,Green impact for forestfire in 6454 ha,Bolivia,,-64.0671,-13.7476,,
+WF,1018619,1,2023-11-08,2023-11-19,Green,GWIS,Green impact for forestfire in 5107 ha,"Bolivia, Brazil",,-62.0867,-13.2693,,
+WF,1018607,2,2023-11-08,2023-11-19,Green,GWIS,Green impact for forestfire in 9274 ha,"Brazil, Bolivia",,-61.5534,-13.485,,
+WF,1018547,5,2023-11-05,2023-11-19,Green,GWIS,Green impact for forestfire in 6437 ha,Bolivia,,-66.8098,-13.6979,,
+WF,1018585,3,2023-11-05,2023-11-19,Green,GWIS,Green impact for forestfire in 5743 ha,Bolivia,,-63.3343,-14.5836,0,264.8
+WF,1018586,3,2023-11-05,2023-11-19,Green,GWIS,Green impact for forestfire in 13545 ha,Bolivia,,-62.2307,-15.0582,0,194.5
+WF,1018574,3,2023-11-14,2023-11-19,Green,GWIS,Green impact for forestfire in 17590 ha,Bolivia,,-65.9357,-15.3964,,
+WF,1018595,2,2023-11-14,2023-11-19,Green,GWIS,Green impact for forestfire in 7463 ha,Bolivia,,-63.0945,-13.7736,,
+WF,1018614,1,2023-11-14,2023-11-19,Green,GWIS,Green impact for forestfire in 5239 ha,Bolivia,,-62.2665,-13.8793,,
+WF,1018594,2,2023-11-15,2023-11-19,Green,GWIS,Green impact for forestfire in 9401 ha,Bolivia,,-61.3905,-14.1204,,
+WF,1018613,1,2023-11-15,2023-11-19,Green,GWIS,Green impact for forestfire in 5552 ha,Bolivia,,-64.0705,-12.6008,,
+WF,1018645,1,2023-11-15,2023-11-19,Green,GWIS,Green impact for forestfire in 11650 ha,Bolivia,,-60.4488,-18.0098,0,230.0
+WF,1018516,6,2023-11-12,2023-11-19,Green,GWIS,Green impact for forestfire in 16136 ha,Bolivia,,-62.9218,-13.9293,,
+WF,1018578,3,2023-11-11,2023-11-19,Green,GWIS,Green impact for forestfire in 6489 ha,Bolivia,,-64.1763,-13.4285,,
+WF,1018551,4,2023-11-13,2023-11-19,Green,GWIS,Green impact for forestfire in 9760 ha,Bolivia,,-67.538,-12.4962,,
+WF,1018576,3,2023-11-13,2023-11-19,Green,GWIS,Green impact for forestfire in 8034 ha,Bolivia,,-62.9889,-13.2097,,
+WF,1018646,1,2023-11-13,2023-11-19,Green,GWIS,Green impact for forestfire in 22013 ha,Bolivia,,-58.4699,-17.288,,
+WF,1018580,2,2023-11-10,2023-11-19,Green,GWIS,Green impact for forestfire in 5589 ha,Bolivia,,-61.9092,-15.2871,0,182.4
+WF,1018604,2,2023-11-10,2023-11-19,Green,GWIS,Green impact for forestfire in 5529 ha,Bolivia,,-67.4562,-14.7996,,
+WF,1018520,6,2023-11-09,2023-11-19,Green,GWIS,Green impact for forestfire in 37064 ha,Bolivia,,-61.8622,-14.2627,,
+WF,1018606,2,2023-11-09,2023-11-19,Green,GWIS,Green impact for forestfire in 5614 ha,Bolivia,,-62.3148,-15.1183,0,188.5
+WF,1018493,6,2023-11-10,2023-11-18,Green,GWIS,Green impact for forestfire in 6796 ha,Bolivia,,-58.4989,-16.9403,,
+WF,1018581,2,2023-11-10,2023-11-18,Green,GWIS,Green impact for forestfire in 7024 ha,Bolivia,,-65.1509,-15.366,0,281.2
+WF,1018601,1,2023-11-10,2023-11-18,Green,GWIS,Green impact for forestfire in 5773 ha,Bolivia,,-65.5263,-15.3924,0,311.1
+WF,1018603,1,2023-11-10,2023-11-18,Green,GWIS,Green impact for forestfire in 8687 ha,Bolivia,,-67.2332,-14.5668,,
+WF,1018510,2,2023-11-11,2023-11-18,Green,GWIS,Green impact for forestfire in 11772 ha,Bolivia,,-64.7604,-15.2374,0,250.9
+WF,1018539,4,2023-11-11,2023-11-18,Green,GWIS,Green impact for forestfire in 15269 ha,Bolivia,,-62.0186,-14.833,0,223.5
+WF,1018560,3,2023-11-11,2023-11-18,Green,GWIS,Green impact for forestfire in 6953 ha,Bolivia,,-65.7871,-15.5341,0,326.2
+WF,1018561,3,2023-11-11,2023-11-18,Green,GWIS,Green impact for forestfire in 7943 ha,Bolivia,,-66.1724,-14.3786,,
+WF,1018552,3,2023-11-13,2023-11-18,Green,GWIS,Green impact for forestfire in 11679 ha,Bolivia,,-65.1289,-14.8444,0,313.8
+WF,1018598,1,2023-11-13,2023-11-18,Green,GWIS,Green impact for forestfire in 5613 ha,Bolivia,,-67.4226,-14.5537,,
+WF,1018617,1,2023-11-13,2023-11-18,Green,GWIS,Green impact for forestfire in 8019 ha,Bolivia,,-65.9277,-15.0569,,
+WF,1018568,2,2023-11-16,2023-11-18,Green,GWIS,Green impact for forestfire in 6634 ha,Bolivia,,-64.5244,-15.2144,0,241.2
+WF,1018592,1,2023-11-17,2023-11-18,Green,GWIS,Green impact for forestfire in 6516 ha,Bolivia,,-65.6491,-13.9279,,
+WF,1018633,1,2023-11-17,2023-11-18,Green,GWIS,Green impact for forestfire in 5911 ha,"Bolivia, Paraguay",,-58.095,-20.08,,
+WF,1018573,2,2023-11-14,2023-11-18,Green,GWIS,Green impact for forestfire in 5652 ha,Bolivia,,-58.6416,-16.8489,,
+WF,1018596,1,2023-11-14,2023-11-18,Green,GWIS,Green impact for forestfire in 5930 ha,Bolivia,,-65.6984,-15.4561,0,325.2
+WF,1018487,8,2023-11-05,2023-11-18,Green,GWIS,Green impact for forestfire in 14755 ha,Bolivia,,-65.6509,-15.9808,0,282.9
+WF,1018501,6,2023-11-05,2023-11-18,Green,GWIS,Green impact for forestfire in 9123 ha,Bolivia,,-66.3719,-15.2068,,
+WF,1018526,4,2023-11-05,2023-11-18,Green,GWIS,Green impact for forestfire in 9320 ha,Bolivia,,-65.4448,-15.8392,0,275.8
+WF,1018610,1,2023-11-05,2023-11-18,Green,GWIS,Green impact for forestfire in 5548 ha,Bolivia,,-65.8875,-15.8647,0,319.3
+WF,1018485,8,2023-11-06,2023-11-18,Green,GWIS,Green impact for forestfire in 10737 ha,Bolivia,,-64.9015,-15.5614,0,244.0
+WF,1018541,4,2023-11-07,2023-11-18,Green,GWIS,Green impact for forestfire in 6771 ha,Bolivia,,-66.1425,-15.0274,,
+WF,1018503,6,2023-11-03,2023-11-18,Green,GWIS,Green impact for forestfire in 23520 ha,Bolivia,,-62.7578,-14.8239,0,214.8
+WF,1018527,4,2023-11-03,2023-11-18,Green,GWIS,Green impact for forestfire in 9136 ha,Bolivia,,-64.0315,-15.4295,0,193.3
+WF,1018564,2,2023-11-03,2023-11-18,Green,GWIS,Green impact for forestfire in 17657 ha,Bolivia,,-65.5471,-14.6841,0,358.4
+WF,1018587,1,2023-11-03,2023-11-18,Green,GWIS,Green impact for forestfire in 22988 ha,Bolivia,,-67.565,-13.5306,,
+WF,1018514,6,2023-11-04,2023-11-18,Green,GWIS,Green impact for forestfire in 6343 ha,Bolivia,,-67.321,-14.1975,,
+WF,1018593,1,2023-11-15,2023-11-18,Green,GWIS,Green impact for forestfire in 5144 ha,Bolivia,,-64.7429,-16.0836,0,198.6
+WF,1018489,5,2023-11-02,2023-11-17,Green,GWIS,Green impact for forestfire in 9983 ha,Bolivia,,-62.259,-13.3168,,
+WF,1018544,2,2023-11-05,2023-11-17,Green,GWIS,Green impact for forestfire in 7506 ha,Bolivia,,-62.2335,-15.0742,0,194.8
+WF,1018558,1,2023-11-12,2023-11-17,Green,GWIS,Green impact for forestfire in 9396 ha,Bolivia,,-61.8319,-14.2412,,
+WF,1018636,1,2023-11-11,2023-11-17,Green,GWIS,Green impact for forestfire in 8968 ha,Bolivia,,-58.6914,-17.3075,,
+WF,1018521,2,2023-11-09,2023-11-16,Green,GWIS,Green impact for forestfire in 8116 ha,Bolivia,,-65.5784,-14.6987,0,363.8
+WF,1018545,2,2023-11-05,2023-11-16,Green,GWIS,Green impact for forestfire in 18113 ha,Bolivia,,-67.5728,-13.5219,,
+WF,1018524,2,2023-11-06,2023-11-16,Green,GWIS,Green impact for forestfire in 9159 ha,Bolivia,,-63.0018,-13.7297,,
+WF,1018484,4,2023-11-06,2023-11-15,Green,GWIS,Green impact for forestfire in 9667 ha,Bolivia,,-67.5306,-13.4932,,
+WF,1018513,2,2023-11-06,2023-11-15,Green,GWIS,Green impact for forestfire in 6416 ha,Bolivia,,-61.8744,-14.7039,0,242.9
+WF,1018451,5,2023-11-08,2023-11-13,Green,GWIS,Green impact for forestfire in 13037 ha,Bolivia,,-58.549,-16.8379,,
+WF,1018356,10,2023-10-30,2023-11-13,Green,GWIS,Green impact for forestfire in 9937 ha,Bolivia,,-66.0435,-14.3363,,
+WF,1018486,2,2023-11-05,2023-11-12,Green,GWIS,Green impact for forestfire in 6184 ha,Bolivia,,-63.0894,-12.9749,,
+WF,1018163,6,2023-10-20,2023-10-28,Green,GWIS,Green impact for forestfire in 7692 ha,Bolivia,,-65.3743,-15.8854,0,267.3
+WF,1018105,5,2023-10-21,2023-10-27,Green,GWIS,Green impact for forestfire in 11363 ha,Bolivia,,-65.4996,-15.9355,0,274.5
+WF,1018164,3,2023-10-17,2023-10-27,Green,GWIS,Green impact for forestfire in 10172 ha,Bolivia,,-64.5251,-14.2885,,
+WF,1018245,1,2023-10-19,2023-10-27,Green,GWIS,Green impact for forestfire in 6474 ha,Bolivia,,-64.2154,-13.4352,,
+WF,1018106,4,2023-10-20,2023-10-26,Green,GWIS,Green impact for forestfire in 5780 ha,Bolivia,,-65.0513,-16.6779,0,199.2
+WF,1018085,5,2023-10-18,2023-10-26,Green,GWIS,Green impact for forestfire in 10309 ha,Bolivia,,-64.8684,-15.7122,0,230.4
+WF,1018114,4,2023-10-12,2023-10-26,Green,GWIS,Green impact for forestfire in 5580 ha,Bolivia,,-67.1986,-14.958,,
+WF,1018093,4,2023-10-13,2023-10-26,Green,GWIS,Green impact for forestfire in 7829 ha,Bolivia,,-67.1084,-14.605,,
+WF,1018091,5,2023-10-15,2023-10-26,Green,GWIS,Green impact for forestfire in 8547 ha,Bolivia,,-64.6472,-16.6206,0,156.1
+WF,1018141,2,2023-10-15,2023-10-25,Green,GWIS,Green impact for forestfire in 5405 ha,Bolivia,,-65.9429,-13.2162,,
+WF,1018140,2,2023-10-16,2023-10-25,Green,GWIS,Green impact for forestfire in 7747 ha,Bolivia,,-63.6189,-14.5066,0,275.6
+WF,1018132,1,2023-10-22,2023-10-25,Green,GWIS,Green impact for forestfire in 5488 ha,Bolivia,,-64.5183,-14.3137,0,330.7
+WF,1018158,1,2023-10-22,2023-10-25,Green,GWIS,Green impact for forestfire in 5903 ha,Bolivia,,-65.04,-15.7134,0,245.3
+WF,1018096,3,2023-10-10,2023-10-24,Green,GWIS,Green impact for forestfire in 6467 ha,Bolivia,,-62.3003,-15.0308,0,198.5
+WF,1018113,2,2023-10-13,2023-10-24,Green,GWIS,Green impact for forestfire in 6373 ha,Bolivia,,-61.8551,-14.6234,0,254.4
+WF,1017973,7,2023-10-10,2023-10-23,Green,GWIS,Green impact for forestfire in 10473 ha,Bolivia,,-64.7081,-16.777,0,155.8
+WF,1018092,1,2023-10-15,2023-10-22,Green,GWIS,Green impact for forestfire in 5902 ha,Bolivia,,-64.5259,-16.853,0,136.7
+WF,1018027,3,2023-10-16,2023-10-22,Green,GWIS,Green impact for forestfire in 9276 ha,Bolivia,,-64.5827,-16.7146,0,147.1
+WF,1018000,2,2023-10-15,2023-10-20,Green,GWIS,Green impact for forestfire in 7214 ha,Bolivia,,-58.5885,-16.458,,
+WF,1018001,2,2023-10-15,2023-10-20,Green,GWIS,Green impact for forestfire in 5462 ha,Bolivia,,-66.1783,-13.3911,,
+WF,1017865,5,2023-10-03,2023-10-17,Green,GWIS,Green impact for forestfire in 8308 ha,Bolivia,,-62.0015,-14.558,0,256.0
+WF,1017902,3,2023-10-04,2023-10-17,Green,GWIS,Green impact for forestfire in 7429 ha,Bolivia,,-64.962,-13.0402,,
+WF,1017825,5,2023-10-06,2023-10-15,Green,GWIS,Green impact for forestfire in 7260 ha,Bolivia,,-65.1525,-12.9305,,
+WF,1017838,3,2023-10-08,2023-10-14,Green,GWIS,Green impact for forestfire in 6415 ha,Bolivia,,-64.9869,-13.3544,,
+WF,1017741,6,2023-10-03,2023-10-13,Green,GWIS,Green impact for forestfire in 7573 ha,Bolivia,,-68.0415,-13.2504,,
+WF,1017729,7,2023-09-29,2023-10-12,Green,GWIS,Green impact for forestfire in 27615 ha,Bolivia,,-64.1209,-13.5603,,
+WF,1017806,2,2023-10-07,2023-10-11,Green,GWIS,Green impact for forestfire in 5005 ha,Bolivia,,-60.6032,-15.8488,0,235.7
+WF,1017726,3,2023-10-02,2023-10-09,Green,GWIS,Green impact for forestfire in 6498 ha,Bolivia,,-64.8495,-13.7249,,
+WF,1017674,4,2023-10-01,2023-10-07,Green,GWIS,Green impact for forestfire in 12655 ha,Bolivia,,-65.1588,-14.9594,0,308.9
+WF,1017708,2,2023-09-30,2023-10-07,Green,GWIS,Green impact for forestfire in 9444 ha,Bolivia,,-64.127,-13.5166,,
+WF,1017626,4,2023-09-24,2023-10-06,Green,GWIS,Green impact for forestfire in 5720 ha,Bolivia,,-64.6495,-16.8934,0,149.2
+WF,1017721,2,2023-10-04,2023-10-06,Green,GWIS,Green impact for forestfire in 5152 ha,Bolivia,,-65.1705,-13.3912,,
+WF,1017642,1,2023-10-01,2023-10-04,Green,GWIS,Green impact for forestfire in 5163 ha,Bolivia,,-65.138,-14.954,0,308.8
+WF,1017571,3,2023-09-20,2023-10-01,Green,GWIS,Green impact for forestfire in 5549 ha,Bolivia,,-61.0302,-15.8185,0,197.3
+WF,1017557,3,2023-09-20,2023-09-29,Green,GWIS,Green impact for forestfire in 7938 ha,Bolivia,,-67.4518,-13.461,,
+WF,1017553,2,2023-09-23,2023-09-29,Green,GWIS,Green impact for forestfire in 7725 ha,Bolivia,,-67.035,-13.3893,,
+WF,1017509,3,2023-09-21,2023-09-27,Green,GWIS,Green impact for forestfire in 6856 ha,Bolivia,,-65.4632,-15.3181,0,310.1
+WF,1017470,5,2023-09-16,2023-09-27,Green,GWIS,Green impact for forestfire in 11611 ha,Bolivia,,-65.3834,-15.1324,0,314.8
+WF,1017517,3,2023-09-17,2023-09-27,Green,GWIS,Green impact for forestfire in 6366 ha,Bolivia,,-68.272,-12.9543,,
+WF,1017415,7,2023-09-19,2023-09-27,Green,GWIS,Green impact for forestfire in 6795 ha,Bolivia,,-66.713,-14.1614,,
+WF,1017430,6,2023-09-19,2023-09-27,Green,GWIS,Green impact for forestfire in 16472 ha,Bolivia,,-67.8952,-13.1786,,
+WF,1017535,2,2023-09-20,2023-09-27,Green,GWIS,Green impact for forestfire in 5419 ha,Bolivia,,-66.6386,-13.1475,,
+WF,1017391,2,2023-09-10,2023-09-20,Green,GWIS,Green impact for forestfire in 5019 ha,Bolivia,,-66.1,-13.3286,,
+WF,1017305,6,2023-09-07,2023-09-19,Green,GWIS,Green impact for forestfire in 13610 ha,Bolivia,,-66.0353,-14.0762,,
+WF,1017344,3,2023-09-14,2023-09-19,Green,GWIS,Green impact for forestfire in 7632 ha,Bolivia,,-65.9408,-14.4318,,
+WF,1017278,4,2023-09-11,2023-09-16,Green,GWIS,Green impact for forestfire in 11630 ha,Bolivia,,-66.0831,-13.8933,,
+WF,1017240,2,2023-09-08,2023-09-13,Green,GWIS,Green impact for forestfire in 8856 ha,Bolivia,,-68.1067,-12.8983,,
+WF,1017425,1,2023-09-08,2023-09-12,Green,GWIS,Green impact for forestfire in 6922 ha,"Brazil, Bolivia",,-57.9942,-19.8375,,
+WF,1017044,2,2023-08-29,2023-09-04,Green,GWIS,Green impact for forestfire in 8249 ha,Bolivia,,-67.4205,-13.0801,,
+WF,1017058,1,2023-08-28,2023-09-03,Green,GWIS,Green impact for forestfire in 9372 ha,Bolivia,,-60.9178,-18.0423,0,182.3
+WF,1017040,1,2023-08-29,2023-09-02,Green,GWIS,Green impact for forestfire in 5584 ha,Bolivia,,-67.4316,-13.3236,,
+WF,1017043,1,2023-08-29,2023-09-02,Green,GWIS,Green impact for forestfire in 7328 ha,Bolivia,,-67.4977,-13.1889,,
+WF,1017047,1,2023-08-29,2023-09-01,Green,GWIS,Green impact for forestfire in 8791 ha,Bolivia,,-67.3825,-13.1465,,
+WF,1017131,1,2023-08-19,2023-09-01,Green,GWIS,Green impact for forestfire in 5966 ha,Bolivia,,-66.7963,-14.1563,,
+WF,1017116,1,2023-08-23,2023-08-30,Green,GWIS,Green impact for forestfire in 5193 ha,Bolivia,,-65.2713,-12.2545,,
+WF,1016652,3,2023-08-22,2023-08-29,Green,GWIS,Green impact for forestfire in 18833 ha,Bolivia,,-64.8121,-13.8855,,
+WF,1016706,1,2023-08-25,2023-08-26,Green,GWIS,Green impact for forestfire in 12522 ha,Bolivia,,-67.8003,-12.868,,
+WF,1016713,1,2023-08-25,2023-08-26,Green,GWIS,Green impact for forestfire in 5670 ha,Bolivia,,-67.9306,-12.8851,,
+WF,1016757,1,2023-08-21,2023-08-26,Green,GWIS,Green impact for forestfire in 6884 ha,Bolivia,,-64.9023,-12.9682,,
+WF,1016655,2,2023-08-22,2023-08-26,Green,GWIS,Green impact for forestfire in 8336 ha,Bolivia,,-67.5152,-12.6152,,
+WF,1016826,2,2023-08-17,2023-08-25,Green,GWIS,Green impact for forestfire in 8651 ha,Bolivia,,-61.5748,-17.9703,0,116.6
+WF,1016509,4,2023-08-17,2023-08-23,Green,GWIS,Green impact for forestfire in 8700 ha,Bolivia,,-61.5703,-17.9682,0,116.7
+WF,1016616,1,2023-08-18,2023-08-21,Green,GWIS,Green impact for forestfire in 5048 ha,Bolivia,,-66.4751,-13.0477,,
+WF,1016334,1,2023-08-05,2023-08-11,Green,GWIS,Green impact for forestfire in 6313 ha,Bolivia,,-64.65,-13.6169,,
+WF,1016064,3,2023-07-23,2023-08-03,Green,GWIS,Green impact for forestfire in 5793 ha,Bolivia,,-59.329,-16.5159,,
+WF,1016033,4,2023-07-23,2023-08-02,Green,GWIS,Green impact for forestfire in 7122 ha,Bolivia,,-61.7457,-15.6888,0,150.1
+WF,1016056,1,2023-07-28,2023-08-01,Green,GWIS,Green impact for forestfire in 5927 ha,Bolivia,,-65.4197,-12.205,,
+WF,1015919,1,2023-07-07,2023-07-22,Green,GWIS,Green impact for forestfire in 5408 ha,Bolivia,,-60.3764,-17.7502,0,233.0
+WF,1015834,3,2023-07-12,2023-07-20,Green,GWIS,Green impact for forestfire in 7581 ha,Bolivia,,-65.7237,-12.3389,,
+WF,1015330,6,2023-06-20,2023-07-09,Green,GWIS,Green impact for forestfire in 5845 ha,Bolivia,,-61.5358,-16.4385,0,113.3
+WF,1015368,3,2023-06-21,2023-07-07,Green,GWIS,Green impact for forestfire in 6604 ha,Bolivia,,-58.2592,-18.6424,,
+WF,1015106,10,2023-06-24,2023-07-06,Green,GWIS,Green impact for forestfire in 5880 ha,Bolivia,,-60.7835,-17.6046,0,184.0
+FL,1102094,1,2023-06-14,2023-06-20,Green,GLOFAS,Magnitude 0 ,Bolivia,,-62.5571,-17.2663,12,0.0
+FL,1101901,3,2023-03-22,2023-03-27,Green,GLOFAS,Magnitude 0 ,Bolivia,,-67.7275,-16.1886,,
+FL,1101848,3,2023-02-02,2023-02-05,Green,GLOFAS,Magnitude 0 ,Bolivia,,-65.641,-14.992,0,353.1
+FL,1101865,1,2023-01-01,2023-01-03,Green,GLOFAS,Magnitude 0 ,Bolivia,,-64.4737,-19.4853,0,263.7

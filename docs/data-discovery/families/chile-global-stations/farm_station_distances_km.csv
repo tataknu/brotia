@@ -1,0 +1,12 @@
+farm,lon,lat,nearest_synop_on_ogimet,synop_km,synop_elev_m,nearest_ghcnd,ghcnd_km,nearest_iem_metar,iem_km
+Quillota avocado,-71.25,-32.88,85556 Viña del Mar  Ad. (Torquemada),22.5,140,CI000085543 QUINTERO,27.2,SCVM,22.6
+Ovalle table grape,-71.2,-30.6,85504 Ovalle Escuela Agrícola,2.6,310,CI000085488 LA SERENA,75.9,SCSE,76.0
+Requinoa cherry,-70.8,-34.28,85608 Rancagua,12.2,482,CI000085629 CURICO,86.1,SCRG,12.0
+Santa Cruz wine,-71.37,-34.64,85619 Nilahue - La Quebrada,33.5,81,CI000085629 CURICO,38.5,SCIC,38.4
+Curico apple/cherry,-71.24,-34.98,"85629 General Freire, Curicó Ad.",2.4,229,CI000085629 CURICO,1.6,SCIC,1.6
+Talca vineyard,-71.66,-35.43,85631 Panguilemo,7.9,119,CI000085629 CURICO,64.5,SCIC,64.5
+Parral rice,-71.83,-36.14,85663 Retiro Copihue,9.7,162,CIM00085672 GENERAL BERNARDO O HIGGINS,52.3,SCCH,53.2
+Chillan blueberry,-72.1,-36.6,"85672 General Bernardo O'Higgins, Chillán Ad.",5.9,152,CIM00085672 GENERAL BERNARDO O HIGGINS,6.5,SCCH,5.6
+Los Angeles maize/wheat,-72.35,-37.47,"85704 El Huertón liceo agrícola, Los Ángeles",6.8,173,CIM00085682 CARRIEL SUR INTL,100.0,SCGE,10.1
+Temuco wheat/oats,-72.6,-38.74,"85743 Maquehue, Temuco Ad.",4.1,93,CI000085743 TEMUCO,3.1,SCTC,4.6
+Osorno potato,-73.13,-40.57,85794 Puerto Varas ESSAL,84.9,70,CIM00085782 OSORNO,7.5,SCJO,7.0

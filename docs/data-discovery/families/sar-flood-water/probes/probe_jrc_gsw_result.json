@@ -1,0 +1,93 @@
+{
+ "pc": {
+  "Estancia Los Tajibos": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0,
+   "recurrence_max": 0,
+   "ever_water_frac": 0.0,
+   "seasonal_px": 0
+  },
+  "Agropecuaria Brecha 8": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0014,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.0027,
+   "seasonal_px": 0
+  },
+  "Colonia Cuatro Canadas Lote 7": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0,
+   "recurrence_max": 0,
+   "ever_water_frac": 0.0,
+   "seasonal_px": 0
+  },
+  "Hacienda El Cusi": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0003,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.0003,
+   "seasonal_px": 0
+  },
+  "Agricola Pailon Norte": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0,
+   "recurrence_max": 0,
+   "ever_water_frac": 0.0,
+   "seasonal_px": 0
+  },
+  "Granja Las Londras": {
+   "occ_mean_pct": 0.74,
+   "occ_px_gt0_frac": 0.1558,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.1559,
+   "seasonal_px": 538
+  },
+  "Finca Okinawa Dos": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0002,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.0003,
+   "seasonal_px": 0
+  },
+  "Parcela Okinawa Uno": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0017,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.0017,
+   "seasonal_px": 11
+  },
+  "Arrocera Mineros": {
+   "occ_mean_pct": 0.47,
+   "occ_px_gt0_frac": 0.1617,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.1772,
+   "seasonal_px": 246
+  },
+  "Canaveral San Antonio": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0011,
+   "recurrence_max": 100,
+   "ever_water_frac": 0.0011,
+   "seasonal_px": 1
+  },
+  "Agricola Warnes Sur": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0,
+   "recurrence_max": 0,
+   "ever_water_frac": 0.0,
+   "seasonal_px": 0
+  },
+  "Estancia Mineros Norte": {
+   "occ_mean_pct": 0.0,
+   "occ_px_gt0_frac": 0.0,
+   "recurrence_max": 0,
+   "ever_water_frac": 0.0,
+   "seasonal_px": 0
+  }
+ },
+ "gcs": {
+  "status": "ok",
+  "read_s": 1.21,
+  "occ_mean_mineros": 0.47
+ }
+}

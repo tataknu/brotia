@@ -1,0 +1,1554 @@
+{
+ "requinoa_cherry": {
+  "lonlat": [
+   -70.8,
+   -34.28
+  ],
+  "elevation_m": "1765.85 meters",
+  "last_valid_hour": "2026-11-04 23:00:00",
+  "latency_s": 2.4,
+  "indicators": {
+   "chill_hours": {
+    "season": 2026,
+    "value": 1763.0,
+    "baseline_n": 25,
+    "baseline_median": 1917.0,
+    "pctile_le": 16
+   },
+   "chill_portions": {
+    "season": 2026,
+    "value": 79.5,
+    "baseline_n": 25,
+    "baseline_median": 80.0,
+    "pctile_le": 40
+   },
+   "frost_hours_m2": {
+    "season": 2026,
+    "value": 23.0,
+    "baseline_n": 25,
+    "baseline_median": 30.0,
+    "pctile_le": 44
+   },
+   "min_spring_T": {
+    "season": 2026,
+    "value": -8.3,
+    "baseline_n": 25,
+    "baseline_median": -4.5,
+    "pctile_le": 0
+   },
+   "harvest_rain_days": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 79
+   },
+   "harvest_rain_max3d": {
+    "season": 2025,
+    "value": 6.1,
+    "baseline_n": 24,
+    "baseline_median": 7.65,
+    "pctile_le": 21
+   },
+   "heat_days_32": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 75
+   },
+   "heat_days_35": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "vanazon_run": {
+    "season": 2025,
+    "value": 6.0,
+    "baseline_n": 24,
+    "baseline_median": 8.5,
+    "pctile_le": 33
+   }
+  },
+  "history": [
+   {
+    "season": 2001,
+    "chill_hours": 2272.0,
+    "chill_portions": 81.2,
+    "frost_hours_m2": 9.0,
+    "min_spring_T": -2.8,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 4.2,
+    "heat_days_32": 2.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 16.0
+   },
+   {
+    "season": 2002,
+    "chill_hours": 2170.0,
+    "chill_portions": 80.0,
+    "frost_hours_m2": 27.0,
+    "min_spring_T": -4.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 7.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 9.0
+   },
+   {
+    "season": 2003,
+    "chill_hours": 1867.0,
+    "chill_portions": 80.6,
+    "frost_hours_m2": 23.0,
+    "min_spring_T": -4.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 18.6,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 10.0
+   },
+   {
+    "season": 2004,
+    "chill_hours": 1917.0,
+    "chill_portions": 81.4,
+    "frost_hours_m2": 33.0,
+    "min_spring_T": -5.1,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 19.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 18.0
+   },
+   {
+    "season": 2005,
+    "chill_hours": 2116.0,
+    "chill_portions": 83.2,
+    "frost_hours_m2": 61.0,
+    "min_spring_T": -6.7,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 18.1,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 4.0
+   },
+   {
+    "season": 2006,
+    "chill_hours": 1822.0,
+    "chill_portions": 75.2,
+    "frost_hours_m2": 31.0,
+    "min_spring_T": -4.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 8.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 16.0
+   },
+   {
+    "season": 2007,
+    "chill_hours": 2272.0,
+    "chill_portions": 80.3,
+    "frost_hours_m2": 31.0,
+    "min_spring_T": -5.0,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 7.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 15.0
+   },
+   {
+    "season": 2008,
+    "chill_hours": 2116.0,
+    "chill_portions": 84.2,
+    "frost_hours_m2": 8.0,
+    "min_spring_T": -3.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 9.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 10.0
+   },
+   {
+    "season": 2009,
+    "chill_hours": 1788.0,
+    "chill_portions": 78.0,
+    "frost_hours_m2": 73.0,
+    "min_spring_T": -6.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 7.0
+   },
+   {
+    "season": 2010,
+    "chill_hours": 2109.0,
+    "chill_portions": 79.8,
+    "frost_hours_m2": 31.0,
+    "min_spring_T": -4.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 8.0
+   },
+   {
+    "season": 2011,
+    "chill_hours": 2050.0,
+    "chill_portions": 79.2,
+    "frost_hours_m2": 31.0,
+    "min_spring_T": -4.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.8,
+    "heat_days_32": 1.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 12.0
+   },
+   {
+    "season": 2012,
+    "chill_hours": 1892.0,
+    "chill_portions": 82.0,
+    "frost_hours_m2": 16.0,
+    "min_spring_T": -3.7,
+    "harvest_rain_days": 2.0,
+    "harvest_rain_max3d": 41.6,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 12.0
+   },
+   {
+    "season": 2013,
+    "chill_hours": 1891.0,
+    "chill_portions": 79.9,
+    "frost_hours_m2": 79.0,
+    "min_spring_T": -5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 12.0
+   },
+   {
+    "season": 2014,
+    "chill_hours": 1997.0,
+    "chill_portions": 79.0,
+    "frost_hours_m2": 21.0,
+    "min_spring_T": -5.1,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 14.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 4.0
+   },
+   {
+    "season": 2015,
+    "chill_hours": 1819.0,
+    "chill_portions": 82.3,
+    "frost_hours_m2": 51.0,
+    "min_spring_T": -6.6,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 12.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 7.0
+   },
+   {
+    "season": 2016,
+    "chill_hours": 2002.0,
+    "chill_portions": 84.2,
+    "frost_hours_m2": 30.0,
+    "min_spring_T": -3.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 7.0,
+    "heat_days_32": 4.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 5.0
+   },
+   {
+    "season": 2017,
+    "chill_hours": 2190.0,
+    "chill_portions": 81.9,
+    "frost_hours_m2": 39.0,
+    "min_spring_T": -5.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 4.8,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 7.0
+   },
+   {
+    "season": 2018,
+    "chill_hours": 1869.0,
+    "chill_portions": 81.3,
+    "frost_hours_m2": 2.0,
+    "min_spring_T": -2.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 9.9,
+    "heat_days_32": 2.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 4.0
+   },
+   {
+    "season": 2019,
+    "chill_hours": 1749.0,
+    "chill_portions": 77.9,
+    "frost_hours_m2": 20.0,
+    "min_spring_T": -3.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 3.0
+   },
+   {
+    "season": 2020,
+    "chill_hours": 2027.0,
+    "chill_portions": 75.2,
+    "frost_hours_m2": 23.0,
+    "min_spring_T": -3.9,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 23.6,
+    "heat_days_32": 1.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 16.0
+   },
+   {
+    "season": 2021,
+    "chill_hours": 1735.0,
+    "chill_portions": 77.6,
+    "frost_hours_m2": 30.0,
+    "min_spring_T": -5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 8.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 12.0
+   },
+   {
+    "season": 2022,
+    "chill_hours": 1885.0,
+    "chill_portions": 76.8,
+    "frost_hours_m2": 40.0,
+    "min_spring_T": -3.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.7,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 4.0
+   },
+   {
+    "season": 2023,
+    "chill_hours": 1572.0,
+    "chill_portions": 71.3,
+    "frost_hours_m2": 11.0,
+    "min_spring_T": -3.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.1,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 2.0
+   },
+   {
+    "season": 2024,
+    "chill_hours": 2095.0,
+    "chill_portions": 83.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -1.6,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 10.3,
+    "heat_days_32": 2.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 3.0
+   },
+   {
+    "season": 2025,
+    "chill_hours": 1717.0,
+    "chill_portions": 77.7,
+    "frost_hours_m2": 14.0,
+    "min_spring_T": -3.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.1,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 6.0
+   },
+   {
+    "season": 2026,
+    "chill_hours": 1763.0,
+    "chill_portions": 79.5,
+    "frost_hours_m2": 23.0,
+    "min_spring_T": -8.3,
+    "harvest_rain_days": NaN,
+    "harvest_rain_max3d": NaN,
+    "heat_days_32": NaN,
+    "heat_days_35": NaN,
+    "vanazon_run": NaN
+   }
+  ]
+ },
+ "ovalle_tablegrape": {
+  "lonlat": [
+   -71.2,
+   -30.6
+  ],
+  "elevation_m": "578.98 meters",
+  "last_valid_hour": "2026-11-04 23:00:00",
+  "latency_s": 2.5,
+  "indicators": {
+   "chill_hours": {
+    "season": 2026,
+    "value": 49.0,
+    "baseline_n": 25,
+    "baseline_median": 120.0,
+    "pctile_le": 16
+   },
+   "chill_portions": {
+    "season": 2026,
+    "value": 22.0,
+    "baseline_n": 25,
+    "baseline_median": 33.8,
+    "pctile_le": 4
+   },
+   "frost_hours_m2": {
+    "season": 2026,
+    "value": 0.0,
+    "baseline_n": 25,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "min_spring_T": {
+    "season": 2026,
+    "value": 8.6,
+    "baseline_n": 25,
+    "baseline_median": 5.4,
+    "pctile_le": 100
+   },
+   "harvest_rain_days": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "harvest_rain_max3d": {
+    "season": 2025,
+    "value": 2.4,
+    "baseline_n": 24,
+    "baseline_median": 0.8,
+    "pctile_le": 88
+   },
+   "heat_days_32": {
+    "season": 2025,
+    "value": 1.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "heat_days_35": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "vanazon_run": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 79
+   }
+  },
+  "history": [
+   {
+    "season": 2001,
+    "chill_hours": 120.0,
+    "chill_portions": 36.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.5,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2002,
+    "chill_hours": 245.0,
+    "chill_portions": 45.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 6.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.1,
+    "heat_days_32": 1.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2003,
+    "chill_hours": 111.0,
+    "chill_portions": 32.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 4.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.8,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2004,
+    "chill_hours": 161.0,
+    "chill_portions": 37.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.7,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2005,
+    "chill_hours": 104.0,
+    "chill_portions": 33.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 3.6,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2006,
+    "chill_hours": 32.0,
+    "chill_portions": 22.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 6.0,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2007,
+    "chill_hours": 406.0,
+    "chill_portions": 46.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 4.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.8,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2008,
+    "chill_hours": 105.0,
+    "chill_portions": 38.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2009,
+    "chill_hours": 94.0,
+    "chill_portions": 31.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.6,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2010,
+    "chill_hours": 319.0,
+    "chill_portions": 49.7,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 4.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2011,
+    "chill_hours": 357.0,
+    "chill_portions": 49.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2012,
+    "chill_hours": 153.0,
+    "chill_portions": 27.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.5,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2013,
+    "chill_hours": 132.0,
+    "chill_portions": 31.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.5,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2014,
+    "chill_hours": 213.0,
+    "chill_portions": 36.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 4.0,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.6,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2015,
+    "chill_hours": 76.0,
+    "chill_portions": 24.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2016,
+    "chill_hours": 21.0,
+    "chill_portions": 23.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 6.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2017,
+    "chill_hours": 141.0,
+    "chill_portions": 47.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 4.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.0,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2018,
+    "chill_hours": 117.0,
+    "chill_portions": 27.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 6.8,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2019,
+    "chill_hours": 164.0,
+    "chill_portions": 31.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2020,
+    "chill_hours": 136.0,
+    "chill_portions": 35.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2021,
+    "chill_hours": 66.0,
+    "chill_portions": 23.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.4,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2022,
+    "chill_hours": 107.0,
+    "chill_portions": 37.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 5.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.3,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2023,
+    "chill_hours": 13.0,
+    "chill_portions": 7.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 7.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.8,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2024,
+    "chill_hours": 144.0,
+    "chill_portions": 36.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 8.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.2,
+    "heat_days_32": 0.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2025,
+    "chill_hours": 47.0,
+    "chill_portions": 23.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 6.8,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.4,
+    "heat_days_32": 1.0,
+    "heat_days_35": 0.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2026,
+    "chill_hours": 49.0,
+    "chill_portions": 22.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 8.6,
+    "harvest_rain_days": NaN,
+    "harvest_rain_max3d": NaN,
+    "heat_days_32": NaN,
+    "heat_days_35": NaN,
+    "vanazon_run": NaN
+   }
+  ]
+ },
+ "curico_apple": {
+  "lonlat": [
+   -71.24,
+   -34.98
+  ],
+  "elevation_m": "447.77 meters",
+  "last_valid_hour": "2026-11-04 23:00:00",
+  "latency_s": 2.4,
+  "indicators": {
+   "chill_hours": {
+    "season": 2026,
+    "value": 527.0,
+    "baseline_n": 25,
+    "baseline_median": 700.0,
+    "pctile_le": 8
+   },
+   "chill_portions": {
+    "season": 2026,
+    "value": 58.9,
+    "baseline_n": 25,
+    "baseline_median": 66.0,
+    "pctile_le": 20
+   },
+   "frost_hours_m2": {
+    "season": 2026,
+    "value": 0.0,
+    "baseline_n": 25,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "min_spring_T": {
+    "season": 2026,
+    "value": 1.0,
+    "baseline_n": 25,
+    "baseline_median": 1.9,
+    "pctile_le": 20
+   },
+   "harvest_rain_days": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 79
+   },
+   "harvest_rain_max3d": {
+    "season": 2025,
+    "value": 2.6,
+    "baseline_n": 24,
+    "baseline_median": 4.949999999999999,
+    "pctile_le": 33
+   },
+   "heat_days_32": {
+    "season": 2025,
+    "value": 45.0,
+    "baseline_n": 24,
+    "baseline_median": 45.0,
+    "pctile_le": 54
+   },
+   "heat_days_35": {
+    "season": 2025,
+    "value": 20.0,
+    "baseline_n": 24,
+    "baseline_median": 11.0,
+    "pctile_le": 83
+   },
+   "vanazon_run": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 67
+   }
+  },
+  "history": [
+   {
+    "season": 2001,
+    "chill_hours": 686.0,
+    "chill_portions": 72.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.7,
+    "heat_days_32": 48.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2002,
+    "chill_hours": 902.0,
+    "chill_portions": 68.7,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 7.5,
+    "heat_days_32": 39.0,
+    "heat_days_35": 10.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2003,
+    "chill_hours": 535.0,
+    "chill_portions": 62.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.0,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 30.2,
+    "heat_days_32": 45.0,
+    "heat_days_35": 7.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2004,
+    "chill_hours": 582.0,
+    "chill_portions": 66.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 10.5,
+    "heat_days_32": 44.0,
+    "heat_days_35": 11.0,
+    "vanazon_run": 2.0
+   },
+   {
+    "season": 2005,
+    "chill_hours": 607.0,
+    "chill_portions": 72.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.6,
+    "harvest_rain_days": 2.0,
+    "harvest_rain_max3d": 29.1,
+    "heat_days_32": 42.0,
+    "heat_days_35": 9.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2006,
+    "chill_hours": 481.0,
+    "chill_portions": 55.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.0,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 12.4,
+    "heat_days_32": 33.0,
+    "heat_days_35": 9.0,
+    "vanazon_run": 3.0
+   },
+   {
+    "season": 2007,
+    "chill_hours": 1155.0,
+    "chill_portions": 71.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.2,
+    "heat_days_32": 48.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2008,
+    "chill_hours": 763.0,
+    "chill_portions": 69.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 3.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.2,
+    "heat_days_32": 55.0,
+    "heat_days_35": 18.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2009,
+    "chill_hours": 631.0,
+    "chill_portions": 57.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.3,
+    "heat_days_32": 36.0,
+    "heat_days_35": 10.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2010,
+    "chill_hours": 906.0,
+    "chill_portions": 68.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 9.6,
+    "heat_days_32": 30.0,
+    "heat_days_35": 5.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2011,
+    "chill_hours": 854.0,
+    "chill_portions": 69.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.0,
+    "heat_days_32": 43.0,
+    "heat_days_35": 11.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2012,
+    "chill_hours": 650.0,
+    "chill_portions": 59.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.8,
+    "harvest_rain_days": 4.0,
+    "harvest_rain_max3d": 74.2,
+    "heat_days_32": 33.0,
+    "heat_days_35": 6.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2013,
+    "chill_hours": 765.0,
+    "chill_portions": 65.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.7,
+    "heat_days_32": 49.0,
+    "heat_days_35": 10.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2014,
+    "chill_hours": 796.0,
+    "chill_portions": 64.7,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.9,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 18.2,
+    "heat_days_32": 51.0,
+    "heat_days_35": 12.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2015,
+    "chill_hours": 599.0,
+    "chill_portions": 61.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 4.6,
+    "heat_days_32": 35.0,
+    "heat_days_35": 16.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2016,
+    "chill_hours": 543.0,
+    "chill_portions": 67.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.8,
+    "heat_days_32": 49.0,
+    "heat_days_35": 21.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2017,
+    "chill_hours": 899.0,
+    "chill_portions": 76.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 3.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.4,
+    "heat_days_32": 46.0,
+    "heat_days_35": 10.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2018,
+    "chill_hours": 730.0,
+    "chill_portions": 59.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.6,
+    "heat_days_32": 45.0,
+    "heat_days_35": 20.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2019,
+    "chill_hours": 700.0,
+    "chill_portions": 60.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.2,
+    "heat_days_32": 61.0,
+    "heat_days_35": 26.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2020,
+    "chill_hours": 873.0,
+    "chill_portions": 68.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 6.9,
+    "heat_days_32": 34.0,
+    "heat_days_35": 5.0,
+    "vanazon_run": 3.0
+   },
+   {
+    "season": 2021,
+    "chill_hours": 586.0,
+    "chill_portions": 56.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.8,
+    "heat_days_32": 39.0,
+    "heat_days_35": 11.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2022,
+    "chill_hours": 706.0,
+    "chill_portions": 66.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.0,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.1,
+    "heat_days_32": 59.0,
+    "heat_days_35": 21.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2023,
+    "chill_hours": 408.0,
+    "chill_portions": 49.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.0,
+    "heat_days_32": 54.0,
+    "heat_days_35": 22.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2024,
+    "chill_hours": 1077.0,
+    "chill_portions": 75.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.7,
+    "heat_days_32": 62.0,
+    "heat_days_35": 20.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2025,
+    "chill_hours": 571.0,
+    "chill_portions": 57.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 3.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.6,
+    "heat_days_32": 45.0,
+    "heat_days_35": 20.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2026,
+    "chill_hours": 527.0,
+    "chill_portions": 58.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.0,
+    "harvest_rain_days": NaN,
+    "harvest_rain_max3d": NaN,
+    "heat_days_32": NaN,
+    "heat_days_35": NaN,
+    "vanazon_run": NaN
+   }
+  ]
+ },
+ "parral_rice": {
+  "lonlat": [
+   -71.83,
+   -36.14
+  ],
+  "elevation_m": "217.6 meters",
+  "last_valid_hour": "2026-11-04 23:00:00",
+  "latency_s": 2.5,
+  "indicators": {
+   "chill_hours": {
+    "season": 2026,
+    "value": 639.0,
+    "baseline_n": 25,
+    "baseline_median": 892.0,
+    "pctile_le": 4
+   },
+   "chill_portions": {
+    "season": 2026,
+    "value": 68.3,
+    "baseline_n": 25,
+    "baseline_median": 76.2,
+    "pctile_le": 8
+   },
+   "frost_hours_m2": {
+    "season": 2026,
+    "value": 0.0,
+    "baseline_n": 25,
+    "baseline_median": 0.0,
+    "pctile_le": 100
+   },
+   "min_spring_T": {
+    "season": 2026,
+    "value": 1.6,
+    "baseline_n": 25,
+    "baseline_median": 0.9,
+    "pctile_le": 80
+   },
+   "harvest_rain_days": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.0,
+    "pctile_le": 62
+   },
+   "harvest_rain_max3d": {
+    "season": 2025,
+    "value": 1.6,
+    "baseline_n": 24,
+    "baseline_median": 9.9,
+    "pctile_le": 17
+   },
+   "heat_days_32": {
+    "season": 2025,
+    "value": 56.0,
+    "baseline_n": 24,
+    "baseline_median": 50.0,
+    "pctile_le": 67
+   },
+   "heat_days_35": {
+    "season": 2025,
+    "value": 28.0,
+    "baseline_n": 24,
+    "baseline_median": 24.0,
+    "pctile_le": 58
+   },
+   "vanazon_run": {
+    "season": 2025,
+    "value": 0.0,
+    "baseline_n": 24,
+    "baseline_median": 0.5,
+    "pctile_le": 50
+   }
+  },
+  "history": [
+   {
+    "season": 2001,
+    "chill_hours": 818.0,
+    "chill_portions": 81.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 10.9,
+    "heat_days_32": 63.0,
+    "heat_days_35": 30.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2002,
+    "chill_hours": 1037.0,
+    "chill_portions": 79.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.5,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 9.8,
+    "heat_days_32": 38.0,
+    "heat_days_35": 12.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2003,
+    "chill_hours": 778.0,
+    "chill_portions": 72.6,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -0.0,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 52.5,
+    "heat_days_32": 56.0,
+    "heat_days_35": 17.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2004,
+    "chill_hours": 735.0,
+    "chill_portions": 76.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.3,
+    "harvest_rain_days": 2.0,
+    "harvest_rain_max3d": 31.6,
+    "heat_days_32": 46.0,
+    "heat_days_35": 22.0,
+    "vanazon_run": 2.0
+   },
+   {
+    "season": 2005,
+    "chill_hours": 795.0,
+    "chill_portions": 84.7,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.7,
+    "harvest_rain_days": 3.0,
+    "harvest_rain_max3d": 28.4,
+    "heat_days_32": 47.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2006,
+    "chill_hours": 540.0,
+    "chill_portions": 66.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.4,
+    "harvest_rain_days": 2.0,
+    "harvest_rain_max3d": 36.7,
+    "heat_days_32": 28.0,
+    "heat_days_35": 11.0,
+    "vanazon_run": 4.0
+   },
+   {
+    "season": 2007,
+    "chill_hours": 1434.0,
+    "chill_portions": 81.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -0.1,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 11.1,
+    "heat_days_32": 65.0,
+    "heat_days_35": 31.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2008,
+    "chill_hours": 934.0,
+    "chill_portions": 78.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.2,
+    "heat_days_32": 61.0,
+    "heat_days_35": 31.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2009,
+    "chill_hours": 830.0,
+    "chill_portions": 70.2,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.0,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 16.2,
+    "heat_days_32": 27.0,
+    "heat_days_35": 12.0,
+    "vanazon_run": 2.0
+   },
+   {
+    "season": 2010,
+    "chill_hours": 1096.0,
+    "chill_portions": 81.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.9,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 12.6,
+    "heat_days_32": 46.0,
+    "heat_days_35": 10.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2011,
+    "chill_hours": 1033.0,
+    "chill_portions": 78.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 10.0,
+    "heat_days_32": 50.0,
+    "heat_days_35": 25.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2012,
+    "chill_hours": 855.0,
+    "chill_portions": 72.7,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.5,
+    "harvest_rain_days": 3.0,
+    "harvest_rain_max3d": 38.4,
+    "heat_days_32": 41.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2013,
+    "chill_hours": 993.0,
+    "chill_portions": 74.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -1.1,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.1,
+    "heat_days_32": 55.0,
+    "heat_days_35": 29.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2014,
+    "chill_hours": 919.0,
+    "chill_portions": 76.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.0,
+    "heat_days_32": 61.0,
+    "heat_days_35": 30.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2015,
+    "chill_hours": 846.0,
+    "chill_portions": 72.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -0.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 2.8,
+    "heat_days_32": 48.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2016,
+    "chill_hours": 787.0,
+    "chill_portions": 75.5,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.2,
+    "harvest_rain_days": 1.0,
+    "harvest_rain_max3d": 13.5,
+    "heat_days_32": 54.0,
+    "heat_days_35": 29.0,
+    "vanazon_run": 1.0
+   },
+   {
+    "season": 2017,
+    "chill_hours": 1132.0,
+    "chill_portions": 79.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.2,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 5.8,
+    "heat_days_32": 50.0,
+    "heat_days_35": 18.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2018,
+    "chill_hours": 996.0,
+    "chill_portions": 74.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": -0.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 11.3,
+    "heat_days_32": 49.0,
+    "heat_days_35": 26.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2019,
+    "chill_hours": 892.0,
+    "chill_portions": 74.1,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.3,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 3.5,
+    "heat_days_32": 59.0,
+    "heat_days_35": 35.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2020,
+    "chill_hours": 992.0,
+    "chill_portions": 78.9,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 2.0,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.5,
+    "heat_days_32": 46.0,
+    "heat_days_35": 19.0,
+    "vanazon_run": 3.0
+   },
+   {
+    "season": 2021,
+    "chill_hours": 829.0,
+    "chill_portions": 71.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.9,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 9.1,
+    "heat_days_32": 47.0,
+    "heat_days_35": 23.0,
+    "vanazon_run": 2.0
+   },
+   {
+    "season": 2022,
+    "chill_hours": 1047.0,
+    "chill_portions": 77.0,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 0.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 0.6,
+    "heat_days_32": 66.0,
+    "heat_days_35": 30.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2023,
+    "chill_hours": 646.0,
+    "chill_portions": 65.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 7.8,
+    "heat_days_32": 59.0,
+    "heat_days_35": 33.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2024,
+    "chill_hours": 1239.0,
+    "chill_portions": 83.8,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.7,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.2,
+    "heat_days_32": 64.0,
+    "heat_days_35": 30.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2025,
+    "chill_hours": 822.0,
+    "chill_portions": 77.4,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.4,
+    "harvest_rain_days": 0.0,
+    "harvest_rain_max3d": 1.6,
+    "heat_days_32": 56.0,
+    "heat_days_35": 28.0,
+    "vanazon_run": 0.0
+   },
+   {
+    "season": 2026,
+    "chill_hours": 639.0,
+    "chill_portions": 68.3,
+    "frost_hours_m2": 0.0,
+    "min_spring_T": 1.6,
+    "harvest_rain_days": NaN,
+    "harvest_rain_max3d": NaN,
+    "heat_days_32": NaN,
+    "heat_days_35": NaN,
+    "vanazon_run": NaN
+   }
+  ]
+ }
+}

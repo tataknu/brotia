@@ -1,0 +1,15 @@
+SoilGrids properties/query: 200 12.84s 5293 bytes
+  bdod (kg/dm³, d_factor=100): {'0-5cm': 124, '5-15cm': 130, '15-30cm': 137, '30-60cm': 136, '60-100cm': 139}
+  clay (%, d_factor=10): {'0-5cm': 300, '5-15cm': 282, '15-30cm': 311, '30-60cm': 368, '60-100cm': 369}
+  sand (%, d_factor=10): {'0-5cm': 456, '5-15cm': 469, '15-30cm': 453, '30-60cm': 418, '60-100cm': 415}
+  silt (%, d_factor=10): {'0-5cm': 244, '5-15cm': 249, '15-30cm': 236, '30-60cm': 214, '60-100cm': 216}
+  soc (g/kg, d_factor=10): {'0-5cm': 306, '5-15cm': 192, '15-30cm': 130, '30-60cm': 71, '60-100cm': 46}
+  wv0010 (10-2 cm³/cm³, d_factor=10): {'0-5cm': 389, '5-15cm': 381, '15-30cm': 376, '30-60cm': 388, '60-100cm': 375}
+  wv0033 (10-2 cm³/cm³, d_factor=10): {'0-5cm': 289, '5-15cm': 288, '15-30cm': 289, '30-60cm': 292, '60-100cm': 288}
+  wv1500 (10-2 cm³/cm³, d_factor=10): {'0-5cm': 134, '5-15cm': 139, '15-30cm': 142, '30-60cm': 177, '60-100cm': 172}
+  0-5cm: sand=45.6% clay=30.0% soc=30.6g/kg -> Saxton FC=0.338 WP=0.206 AWC=0.132; SoilGrids wv0033=28.9 wv1500=13.4
+  5-15cm: sand=46.9% clay=28.2% soc=19.2g/kg -> Saxton FC=0.312 WP=0.187 AWC=0.125; SoilGrids wv0033=28.8 wv1500=13.9
+  15-30cm: sand=45.3% clay=31.1% soc=13.0g/kg -> Saxton FC=0.319 WP=0.197 AWC=0.122; SoilGrids wv0033=28.9 wv1500=14.2
+  30-60cm: sand=41.8% clay=36.8% soc=7.1g/kg -> Saxton FC=0.346 WP=0.225 AWC=0.121; SoilGrids wv0033=29.2 wv1500=17.7
+  60-100cm: sand=41.5% clay=36.9% soc=4.6g/kg -> Saxton FC=0.344 WP=0.224 AWC=0.121; SoilGrids wv0033=28.8 wv1500=17.2
+TAW 0-100cm Saxton-Rawls = 122 mm; SoilGrids wv0033-wv1500 = 126 mm

@@ -1,0 +1,20 @@
+# agrometeorologia.cl (INIA) monthly TA_MIN availability, probed 2026-11-07, form range 2009-01..2026-10 (form max)
+station | name, comuna, network | valid months | first valid | last valid | http/latency
+INIA-64 | Algarrobo Bajo, Ovalle, INIA | 189/214 | Feb-2011 | Oct-2026 | HTTP 200 4.3s
+INIA-319 | Los Acacios, Ovalle, INIA | 60/214 | Nov-2021 | Oct-2026 | HTTP 200 2.1s
+EXT-1029 | Liceo Agrícola Quillota, Quillota, DMC | 23/214 | Dic-2024 | Oct-2026 | HTTP 200 1.4s
+INIA-332 | Altair, Requinoa, VDCH | 27/214 | Ago-2024 | Oct-2026 | HTTP 200 1.9s
+INIA-215 | San Jorge Los Niches, Curicó, INIA | 111/214 | Ago-2017 | Oct-2026 | HTTP 200 3.2s
+EXT-963 | Los Niches, Curicó, AGRICHILE | 58/214 | Ene-2022 | Oct-2026 | HTTP 200 2.0s
+EXT-156 | Panguilemo, Talca, DMC | 95/214 | Dic-2018 | Oct-2026 | HTTP 200 1.3s
+INIA-154 | Monte Flor-Tucapel, Parral, INIA | 131/214 | Dic-2015 | Oct-2026 | HTTP 200 3.7s
+EXT-960 | Parral, Parral, AGRICHILE | 58/214 | Ene-2022 | Oct-2026 | HTTP 200 3.0s
+INIA-351 | Quilamapu, Chillán, INIA | 13/214 | Oct-2025 | Oct-2026 | HTTP 200 1.4s
+INIA-17 | Santa Rosa, Chillán, INIA | 199/214 | Abr-2010 | Oct-2026 | HTTP 200 4.1s
+INIA-21 | Human, Los Ángeles, INIA | 203/214 | Dic-2009 | Oct-2026 | HTTP 200 2.5s
+INIA-239 | Collimallin, Temuco, INIA | 104/214 | Mar-2018 | Oct-2026 | HTTP 200 2.2s
+EXT-74 | Temuco, Temuco, ANPROS | 63/214 | Mar-2021 | Oct-2026 | HTTP 200 1.6s
+INIA-19 | Remehue, Osorno, INIA | 205/214 | Oct-2009 | Oct-2026 | HTTP 200 4.1s
+EXT-101 | Escuela Agrícola Ovalle, Ovalle, DMC | 88/214 | Dic-2018 | Oct-2026 | HTTP 200 1.9s
+EXT-18 | Talhuén, Ovalle, CEAZA | 166/214 | Ene-2013 | Oct-2026 | HTTP 200 1.5s
+EXT-152 | Aeródromo General Freire, Curicó, DMC | 106/214 | Ene-2018 | Oct-2026 | HTTP 200 1.4s

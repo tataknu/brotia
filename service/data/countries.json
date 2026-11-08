@@ -1,0 +1,171 @@
+[
+ {
+  "code": "AR",
+  "name": "Argentina",
+  "nameEs": "Argentina",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -64.0,
+   -34.0
+  ],
+  "zoom": 4,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "BO",
+  "name": "Bolivia",
+  "nameEs": "Bolivia",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -64.7,
+   -16.7
+  ],
+  "zoom": 5,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "BR",
+  "name": "Brazil",
+  "nameEs": "Brasil",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -51.9,
+   -14.2
+  ],
+  "zoom": 4,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "CL",
+  "name": "Chile",
+  "nameEs": "Chile",
+  "dataTier": "enhanced",
+  "comingLater": false,
+  "center": [
+   -71.0,
+   -33.5
+  ],
+  "zoom": 6,
+  "defaultCurrency": "CLP"
+ },
+ {
+  "code": "CO",
+  "name": "Colombia",
+  "nameEs": "Colombia",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -74.3,
+   4.6
+  ],
+  "zoom": 5,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "EC",
+  "name": "Ecuador",
+  "nameEs": "Ecuador",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -78.2,
+   -1.8
+  ],
+  "zoom": 6,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "GY",
+  "name": "Guyana",
+  "nameEs": "Guyana",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -58.9,
+   4.9
+  ],
+  "zoom": 6,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "PY",
+  "name": "Paraguay",
+  "nameEs": "Paraguay",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -58.4,
+   -23.4
+  ],
+  "zoom": 6,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "PE",
+  "name": "Peru",
+  "nameEs": "Perú",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -75.0,
+   -9.2
+  ],
+  "zoom": 5,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "SR",
+  "name": "Suriname",
+  "nameEs": "Surinam",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -56.0,
+   3.9
+  ],
+  "zoom": 7,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "UY",
+  "name": "Uruguay",
+  "nameEs": "Uruguay",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -55.8,
+   -32.5
+  ],
+  "zoom": 6,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "VE",
+  "name": "Venezuela",
+  "nameEs": "Venezuela",
+  "dataTier": "standard",
+  "comingLater": false,
+  "center": [
+   -66.6,
+   6.4
+  ],
+  "zoom": 5,
+  "defaultCurrency": "USD"
+ },
+ {
+  "code": "GLOBAL",
+  "name": "Global",
+  "nameEs": "Global",
+  "dataTier": "standard",
+  "comingLater": true,
+  "center": [
+   0.0,
+   0.0
+  ],
+  "zoom": 2,
+  "defaultCurrency": "USD"
+ }
+]

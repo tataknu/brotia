@@ -1,0 +1,150 @@
+[
+  {
+    "id": "dga_decree:177-2026",
+    "kind": "declared_emergency",
+    "title": "Water-scarcity decree No. 177 (Limarí province)",
+    "region": "Coquimbo · Limarí",
+    "start": "2026-07-09",
+    "end": "2027-07-10",
+    "severity": "severe",
+    "source": "DGA",
+    "evidenceKind": "official_declaration",
+    "geometry": null,
+    "affectedFarmIds": [],
+    "affectedExposure": 0,
+    "provenance": {
+      "source": "dga_decrees",
+      "sourceLabel": "DGA water-scarcity decrees",
+      "observedAt": "2026-07-09",
+      "fetchedAt": "2026-11-07T15:40:00Z",
+      "resolution": "province",
+      "licenceTier": "unresolved",
+      "dataTier": "enhanced",
+      "stale": false,
+      "estimated": false,
+      "note": "Decree list XLS + decree page scrape (ADR-0006)"
+    }
+  },
+  {
+    "id": "cems:EMSR859",
+    "kind": "fire",
+    "title": "Wildfires in the Biobío and Ñuble regions",
+    "region": "Biobío · Ñuble",
+    "start": "2026-01-16",
+    "end": null,
+    "severity": "extreme",
+    "source": "Copernicus EMS Rapid Mapping",
+    "evidenceKind": "narrative",
+    "geometry": null,
+    "affectedFarmIds": [],
+    "affectedExposure": 0,
+    "provenance": {
+      "source": "cems_activations",
+      "sourceLabel": "Copernicus EMS activations",
+      "observedAt": "2026-01-16",
+      "fetchedAt": "2026-11-07T15:40:00Z",
+      "resolution": "n/a",
+      "licenceTier": "commercial_ok",
+      "dataTier": "enhanced",
+      "stale": false,
+      "estimated": false,
+      "note": "Activation record; footprint not ingested"
+    }
+  },
+  {
+    "id": "gwis:11749494",
+    "kind": "fire",
+    "title": "Wildfire near Chillán (686 ha burned)",
+    "region": "Ñuble · Diguillín",
+    "start": "2023-02-08",
+    "end": "2023-02-08",
+    "severity": "severe",
+    "source": "GWIS (Copernicus)",
+    "evidenceKind": "observed_footprint",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -72.0692,
+            -36.6843
+          ],
+          [
+            -72.0642,
+            -36.6792
+          ],
+          [
+            -72.0567,
+            -36.6798
+          ],
+          [
+            -72.0605,
+            -36.6713
+          ],
+          [
+            -72.0564,
+            -36.6697
+          ],
+          [
+            -72.0495,
+            -36.665
+          ],
+          [
+            -72.0573,
+            -36.661
+          ],
+          [
+            -72.0602,
+            -36.6553
+          ],
+          [
+            -72.067,
+            -36.6536
+          ],
+          [
+            -72.0777,
+            -36.6559
+          ],
+          [
+            -72.0787,
+            -36.6644
+          ],
+          [
+            -72.079,
+            -36.6737
+          ],
+          [
+            -72.0857,
+            -36.6736
+          ],
+          [
+            -72.0857,
+            -36.6828
+          ],
+          [
+            -72.0797,
+            -36.6809
+          ],
+          [
+            -72.0692,
+            -36.6843
+          ]
+        ]
+      ]
+    },
+    "affectedFarmIds": [],
+    "affectedExposure": 0,
+    "provenance": {
+      "source": "gwis_ba",
+      "sourceLabel": "GWIS burned areas (Copernicus)",
+      "observedAt": "2023-02-08",
+      "fetchedAt": "2026-11-07T15:40:00Z",
+      "resolution": "~500 m (MODIS/VIIRS)",
+      "licenceTier": "commercial_ok",
+      "dataTier": "enhanced",
+      "stale": false,
+      "estimated": false,
+      "note": "Perimeter simplified for the fixture"
+    }
+  }
+]

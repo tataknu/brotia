@@ -1,0 +1,24 @@
+== LPDAAC HLSL30 B04 (https, no login)
+status=401 time=0.337386s bytes=27 final=https://urs.earthdata.nasa.gov/oauth/authorize?client_id=FtSFfbOeuxDcdf4px-elGw&response_type=code&redirect_uri=https://data.lpdaac.earthdatacloud.nasa.gov/login&state=%2Flp-prod-protected%2FHLSL30.020%2FHLS.L30.T20KNG.2026293T141021.v2.0%2FHLS.L30.T20KNG.2026293T141021.v2.0.B04.tif&app_type=401
+== PC hls2 B04 unsigned
+status=409 time=0.488434s bytes=248 final=https://hls2euwest.blob.core.windows.net/hls2/L30/20/K/NG/2026/10/20/HLS.L30.T20KNG.2026293T141021.v2.0/HLS.L30.T20KNG.2026293T141021.v2.0.B04.tif
+== PC hls2 B04 signed (anonymous SAS)
+status=206 time=0.509728s bytes=16384 final=https://hls2euwest.blob.core.windows.net/hls2/L30/20/K/NG/2026/10/20/HLS.L30.T20KNG.2026293T141021.v2.0/HLS.L30.T20KNG.2026293T141021.v2.0.B04.tif?<SAS-token-redacted>
+== USGS landsatlook /data SR_B4 (no login)
+status=200 time=0.370827s bytes=33066 final=https://ers.cr.usgs.gov/login?redirectUrl=https://ers.cr.usgs.gov/?redirect_url%3Dhttps%253A%252F%252Flandsatlook.usgs.gov%252Fdata%252Fcollection02%252Flevel-2%252Fstandard%252Foli-tirs%252F2026%252F230%252F072%252FLC09_L2SP_230072_20261028_20261031_02_T2%252FLC09_L2SP_230072_20261028_20261031_02_T2_SR_B4.TIF
+== AWS usgs-landsat requester-pays (unsigned https)
+status=403 time=0.234490s bytes=321 final=https://usgs-landsat.s3.us-west-2.amazonaws.com/collection02/level-2/standard/oli-tirs/2026/230/072/LC09_L2SP_230072_20261028_20261031_02_T2/LC09_L2SP_230072_20261028_20261031_02_T2_SR_B4.TIF
+== PC landsat-c2 SR_B4 unsigned
+status=409 time=0.518601s bytes=248 final=https://landsateuwest.blob.core.windows.net/landsat-c2/level-2/standard/oli-tirs/2026/230/072/LC09_L2SP_230072_20261028_20261031_02_T2/LC09_L2SP_230072_20261028_20261031_02_T2_SR_B4.TIF
+== CDSE odata https asset (no token)
+status=401 time=0.321568s bytes=96 final=https://download.dataspace.copernicus.eu/odata/v1/Products(b771437f-f754-47dd-81ff-c7e9e4a14ea7)/$value
+== CDSE Sentinel Hub WMS (no instance)
+status=404 time=0.425733s bytes=418 final=https://sh.dataspace.copernicus.eu/ogc/wms/
+== CDSE openEO capabilities
+status=200 time=0.646645s bytes=3753 final=https://openeo.dataspace.copernicus.eu/openeo/1.2/
+== CDSE statistical API (no token)
+status=405 time=0.306785s bytes=129 final=https://sh.dataspace.copernicus.eu/api/v1/statistics
+== ES c1 B04 (public S3 https)
+status=206 time=0.332496s bytes=16384 final=https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/20/K/NG/2026/11/S2A_T20KNG_20261104T142519_L2A/B04.tif
+== PC data API item info
+status=206 time=1.021951s bytes=6006 final=https://planetarycomputer.microsoft.com/api/data/v1/item/info?collection=sentinel-2-l2a&item=S2A_MSIL2A_20261104T142041_R010_T20KNG_20261104T201103

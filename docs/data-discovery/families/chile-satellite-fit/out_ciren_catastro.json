@@ -1,0 +1,448 @@
+{
+ "requinoa_cherry": {
+  "layer": 61,
+  "http": 200,
+  "seconds": 4.03,
+  "calls": 1,
+  "n_polygons": 1335,
+  "all": {
+   "n": 1335,
+   "median_ha": 2.46,
+   "p90_ha": 6.44,
+   "max_ha": 44.9,
+   "share_lt_modis_px": 0.86
+  },
+  "by_species": {
+   "NOGAL": {
+    "n": 149,
+    "median_ha": 5.01,
+    "p90_ha": 16.39,
+    "max_ha": 44.9,
+    "share_lt_modis_px": 0.54
+   },
+   "CEREZO": {
+    "n": 333,
+    "median_ha": 2.38,
+    "p90_ha": 4.94,
+    "max_ha": 19.8,
+    "share_lt_modis_px": 0.92
+   },
+   "NECTARINO": {
+    "n": 209,
+    "median_ha": 1.34,
+    "p90_ha": 4.25,
+    "max_ha": 8.8,
+    "share_lt_modis_px": 0.97
+   },
+   "DURAZNERO TIPO CONSERVERO": {
+    "n": 200,
+    "median_ha": 1.4,
+    "p90_ha": 4.01,
+    "max_ha": 7.2,
+    "share_lt_modis_px": 0.95
+   },
+   "VID DE MESA": {
+    "n": 109,
+    "median_ha": 3.15,
+    "p90_ha": 4.24,
+    "max_ha": 7.9,
+    "share_lt_modis_px": 0.97
+   },
+   "MANZANO ROJO": {
+    "n": 65,
+    "median_ha": 3.73,
+    "p90_ha": 8.3,
+    "max_ha": 15.0,
+    "share_lt_modis_px": 0.69
+   },
+   "CIRUELO JAPONES": {
+    "n": 77,
+    "median_ha": 2.73,
+    "p90_ha": 7.34,
+    "max_ha": 13.9,
+    "share_lt_modis_px": 0.78
+   },
+   "MANZANO VERDE": {
+    "n": 49,
+    "median_ha": 3.22,
+    "p90_ha": 6.1,
+    "max_ha": 8.9,
+    "share_lt_modis_px": 0.86
+   }
+  },
+  "test_field": {
+   "site": "requinoa_cherry",
+   "species": "CEREZO",
+   "ha": 19.75,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 61",
+   "comuna": "REQUINOA"
+  }
+ },
+ "quillota_avocado": {
+  "layer": 59,
+  "http": 200,
+  "seconds": 4.77,
+  "calls": 1,
+  "n_polygons": 740,
+  "all": {
+   "n": 740,
+   "median_ha": 1.49,
+   "p90_ha": 5.45,
+   "max_ha": 43.0,
+   "share_lt_modis_px": 0.9
+  },
+  "by_species": {
+   "PALTO": {
+    "n": 496,
+    "median_ha": 1.2,
+    "p90_ha": 4.92,
+    "max_ha": 43.0,
+    "share_lt_modis_px": 0.91
+   },
+   "LIMONERO": {
+    "n": 102,
+    "median_ha": 2.7,
+    "p90_ha": 8.03,
+    "max_ha": 18.3,
+    "share_lt_modis_px": 0.77
+   },
+   "NARANJO": {
+    "n": 56,
+    "median_ha": 2.25,
+    "p90_ha": 4.92,
+    "max_ha": 8.7,
+    "share_lt_modis_px": 0.93
+   },
+   "CEREZO": {
+    "n": 24,
+    "median_ha": 1.37,
+    "p90_ha": 3.69,
+    "max_ha": 4.5,
+    "share_lt_modis_px": 1.0
+   },
+   "MANDARINO": {
+    "n": 16,
+    "median_ha": 1.5,
+    "p90_ha": 7.49,
+    "max_ha": 8.9,
+    "share_lt_modis_px": 0.81
+   },
+   "NOGAL": {
+    "n": 6,
+    "median_ha": 5.9,
+    "p90_ha": 10.9,
+    "max_ha": 10.9,
+    "share_lt_modis_px": 0.33
+   },
+   "ARANDANO AMERICANO": {
+    "n": 16,
+    "median_ha": 0.91,
+    "p90_ha": 2.22,
+    "max_ha": 3.5,
+    "share_lt_modis_px": 1.0
+   },
+   "OLIVO": {
+    "n": 6,
+    "median_ha": 3.89,
+    "p90_ha": 4.16,
+    "max_ha": 4.2,
+    "share_lt_modis_px": 1.0
+   }
+  },
+  "test_field": {
+   "site": "quillota_avocado",
+   "species": "PALTO",
+   "ha": 42.98,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 59",
+   "comuna": "QUILLOTA"
+  }
+ },
+ "curico_apple_cherry": {
+  "layer": 62,
+  "http": 200,
+  "seconds": 4.23,
+  "calls": 1,
+  "n_polygons": 719,
+  "all": {
+   "n": 719,
+   "median_ha": 2.31,
+   "p90_ha": 5.67,
+   "max_ha": 38.9,
+   "share_lt_modis_px": 0.88
+  },
+  "by_species": {
+   "CEREZO": {
+    "n": 430,
+    "median_ha": 2.0,
+    "p90_ha": 5.29,
+    "max_ha": 38.9,
+    "share_lt_modis_px": 0.9
+   },
+   "MANZANO ROJO": {
+    "n": 112,
+    "median_ha": 2.95,
+    "p90_ha": 6.83,
+    "max_ha": 31.4,
+    "share_lt_modis_px": 0.77
+   },
+   "KIWI": {
+    "n": 92,
+    "median_ha": 2.85,
+    "p90_ha": 4.96,
+    "max_ha": 9.7,
+    "share_lt_modis_px": 0.93
+   },
+   "PERAL": {
+    "n": 24,
+    "median_ha": 2.6,
+    "p90_ha": 7.58,
+    "max_ha": 13.2,
+    "share_lt_modis_px": 0.79
+   },
+   "CIRUELO JAPONES": {
+    "n": 26,
+    "median_ha": 1.49,
+    "p90_ha": 4.68,
+    "max_ha": 7.9,
+    "share_lt_modis_px": 0.92
+   },
+   "MANZANO VERDE": {
+    "n": 14,
+    "median_ha": 3.34,
+    "p90_ha": 4.79,
+    "max_ha": 5.4,
+    "share_lt_modis_px": 0.93
+   },
+   "ARANDANO AMERICANO": {
+    "n": 10,
+    "median_ha": 2.61,
+    "p90_ha": 2.78,
+    "max_ha": 2.8,
+    "share_lt_modis_px": 1.0
+   },
+   "MEMBRILLO": {
+    "n": 6,
+    "median_ha": 1.95,
+    "p90_ha": 4.76,
+    "max_ha": 4.8,
+    "share_lt_modis_px": 1.0
+   }
+  },
+  "test_field": {
+   "site": "curico_apple_cherry",
+   "species": "MANZANO ROJO",
+   "ha": 31.41,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 62",
+   "comuna": "CURICO"
+  }
+ },
+ "ovalle_table_grape": {
+  "layer": 58,
+  "http": 200,
+  "seconds": 3.83,
+  "calls": 1,
+  "n_polygons": 159,
+  "all": {
+   "n": 159,
+   "median_ha": 2.79,
+   "p90_ha": 16.15,
+   "max_ha": 546.6,
+   "share_lt_modis_px": 0.69
+  },
+  "by_species": {
+   "OLIVO": {
+    "n": 2,
+    "median_ha": 546.58,
+    "p90_ha": 546.58,
+    "max_ha": 546.6,
+    "share_lt_modis_px": 0.5
+   },
+   "MANDARINO": {
+    "n": 39,
+    "median_ha": 7.16,
+    "p90_ha": 21.65,
+    "max_ha": 24.7,
+    "share_lt_modis_px": 0.44
+   },
+   "PALTO": {
+    "n": 49,
+    "median_ha": 2.01,
+    "p90_ha": 16.7,
+    "max_ha": 31.2,
+    "share_lt_modis_px": 0.73
+   },
+   "LIMONERO": {
+    "n": 15,
+    "median_ha": 4.98,
+    "p90_ha": 9.78,
+    "max_ha": 11.5,
+    "share_lt_modis_px": 0.6
+   },
+   "ARANDANO AMERICANO": {
+    "n": 26,
+    "median_ha": 1.97,
+    "p90_ha": 3.8,
+    "max_ha": 4.9,
+    "share_lt_modis_px": 1.0
+   },
+   "NOGAL": {
+    "n": 8,
+    "median_ha": 2.73,
+    "p90_ha": 16.47,
+    "max_ha": 16.5,
+    "share_lt_modis_px": 0.75
+   },
+   "ALMENDRO": {
+    "n": 8,
+    "median_ha": 3.07,
+    "p90_ha": 10.1,
+    "max_ha": 10.1,
+    "share_lt_modis_px": 0.62
+   },
+   "NARANJO": {
+    "n": 5,
+    "median_ha": 2.69,
+    "p90_ha": 16.15,
+    "max_ha": 16.1,
+    "share_lt_modis_px": 0.8
+   }
+  },
+  "test_field": {
+   "site": "ovalle_table_grape",
+   "species": "VID DE MESA",
+   "ha": 5.84,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 58",
+   "comuna": "OVALLE"
+  }
+ },
+ "colchagua_wine": {
+  "layer": 61,
+  "http": 200,
+  "seconds": 4.09,
+  "calls": 1,
+  "n_polygons": 360,
+  "all": {
+   "n": 360,
+   "median_ha": 3.7,
+   "p90_ha": 10.14,
+   "max_ha": 114.7,
+   "share_lt_modis_px": 0.68
+  },
+  "by_species": {
+   "CIRUELO EUROPEO": {
+    "n": 121,
+    "median_ha": 5.21,
+    "p90_ha": 14.61,
+    "max_ha": 38.0,
+    "share_lt_modis_px": 0.5
+   },
+   "CEREZO": {
+    "n": 112,
+    "median_ha": 2.64,
+    "p90_ha": 6.46,
+    "max_ha": 16.8,
+    "share_lt_modis_px": 0.85
+   },
+   "PALTO": {
+    "n": 7,
+    "median_ha": 1.65,
+    "p90_ha": 114.72,
+    "max_ha": 114.7,
+    "share_lt_modis_px": 0.57
+   },
+   "VID DE MESA": {
+    "n": 38,
+    "median_ha": 3.02,
+    "p90_ha": 7.13,
+    "max_ha": 9.9,
+    "share_lt_modis_px": 0.84
+   },
+   "PERAL": {
+    "n": 21,
+    "median_ha": 4.67,
+    "p90_ha": 8.06,
+    "max_ha": 15.5,
+    "share_lt_modis_px": 0.67
+   },
+   "NARANJO": {
+    "n": 16,
+    "median_ha": 3.19,
+    "p90_ha": 11.17,
+    "max_ha": 13.2,
+    "share_lt_modis_px": 0.75
+   },
+   "MANDARINO": {
+    "n": 13,
+    "median_ha": 5.47,
+    "p90_ha": 8.01,
+    "max_ha": 12.0,
+    "share_lt_modis_px": 0.46
+   },
+   "NOGAL": {
+    "n": 8,
+    "median_ha": 4.65,
+    "p90_ha": 12.41,
+    "max_ha": 12.4,
+    "share_lt_modis_px": 0.75
+   }
+  },
+  "test_field": {
+   "site": "colchagua_wine",
+   "species": "VID DE MESA",
+   "ha": 9.87,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 61",
+   "comuna": "PALMILLA"
+  }
+ },
+ "chillan_blueberry": {
+  "layer": 63,
+  "http": 200,
+  "seconds": 3.58,
+  "calls": 1,
+  "n_polygons": 34,
+  "all": {
+   "n": 34,
+   "median_ha": 1.43,
+   "p90_ha": 3.96,
+   "max_ha": 5.3,
+   "share_lt_modis_px": 1.0
+  },
+  "by_species": {
+   "AVELLANO": {
+    "n": 9,
+    "median_ha": 2.63,
+    "p90_ha": 5.26,
+    "max_ha": 5.3,
+    "share_lt_modis_px": 1.0
+   },
+   "ARANDANO AMERICANO": {
+    "n": 20,
+    "median_ha": 1.08,
+    "p90_ha": 1.77,
+    "max_ha": 2.3,
+    "share_lt_modis_px": 1.0
+   },
+   "MANZANO ROJO": {
+    "n": 4,
+    "median_ha": 3.85,
+    "p90_ha": 3.95,
+    "max_ha": 4.0,
+    "share_lt_modis_px": 1.0
+   },
+   "MANZANO VERDE": {
+    "n": 1,
+    "median_ha": 4.76,
+    "p90_ha": 4.76,
+    "max_ha": 4.8,
+    "share_lt_modis_px": 1.0
+   }
+  },
+  "test_field": {
+   "site": "chillan_blueberry",
+   "species": "ARANDANO AMERICANO",
+   "ha": 2.3,
+   "source": "CIREN CATASTRO_FRUTICOLA layer 63",
+   "comuna": "CHILLAN"
+  }
+ }
+}

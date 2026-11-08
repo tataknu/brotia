@@ -1,0 +1,94 @@
+{
+ "rio_grande_pailon": {
+  "status": 200,
+  "latency_s": 0.59,
+  "grid": [
+   -17.524998,
+   -62.82499
+  ],
+  "first": "1997-01-01",
+  "last": "2026-12-31",
+  "n": 10957,
+  "mean_all": 519.1,
+  "last7_mean": 195.7,
+  "pct_vs_same_week": 6.9,
+  "peak_2024_jan_apr": [
+   "2024-03-25",
+   806.2
+  ],
+  "annual_max_top3": {
+   "2008": 2359.0,
+   "2014": 1953.0,
+   "2018": 1713.0
+  }
+ },
+ "rio_grande_puente_banegas_area": {
+  "status": 200,
+  "latency_s": 0.58,
+  "grid": [
+   -17.024998,
+   -63.024994
+  ],
+  "first": "1997-01-01",
+  "last": "2026-12-31",
+  "n": 10957,
+  "mean_all": 520.4,
+  "last7_mean": 196.12,
+  "pct_vs_same_week": 6.9,
+  "peak_2024_jan_apr": [
+   "2024-03-25",
+   806.2
+  ],
+  "annual_max_top3": {
+   "2008": 2365.0,
+   "2014": 1958.0,
+   "2018": 1717.0
+  }
+ },
+ "pirai_candidate_mineros": {
+  "status": 200,
+  "latency_s": 0.57,
+  "grid": [
+   -17.224998,
+   -63.32499
+  ],
+  "first": "1997-01-01",
+  "last": "2026-12-31",
+  "n": 10957,
+  "mean_all": 28.9,
+  "last7_mean": 12.39,
+  "pct_vs_same_week": 24.1,
+  "peak_2024_jan_apr": [
+   "2024-01-01",
+   53.1
+  ],
+  "annual_max_top3": {
+   "2000": 308.0,
+   "2007": 243.0,
+   "2017": 212.0
+  }
+ },
+ "farm_cuatro_canadas_local": {
+  "status": 200,
+  "latency_s": 0.57,
+  "grid": [
+   -17.274998,
+   -62.47499
+  ],
+  "first": "1997-01-01",
+  "last": "2026-12-31",
+  "n": 10957,
+  "mean_all": 0.6,
+  "last7_mean": 0.03,
+  "pct_vs_same_week": 72.4,
+  "peak_2024_jan_apr": [
+   "2024-03-28",
+   0.1
+  ],
+  "annual_max_top3": {
+   "2007": 77.0,
+   "2006": 49.0,
+   "2000": 39.0
+  }
+ }
+}

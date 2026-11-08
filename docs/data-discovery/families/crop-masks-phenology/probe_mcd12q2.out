@@ -1,0 +1,37 @@
+bands 200 0.35s ['Dormancy.Num_Modes_01', 'Dormancy.Num_Modes_02', 'EVI_Amplitude.Num_Modes_01', 'EVI_Amplitude.Num_Modes_02', 'EVI_Area.Num_Modes_01', 'EVI_Area.Num_Modes_02', 'EVI_Minimum.Num_Modes_01', 'EVI_Minimum.Num_Modes_02', 'Greenup.Num_Modes_01', 'Greenup.Num_Modes_02', 'Maturity.Num_Modes_01', 'Maturity.Num_Modes_02', 'MidGreendown.Num_Modes_01', 'MidGreendown.Num_Modes_02', 'MidGreenup.Num_Modes_01', 'MidGreenup.Num_Modes_02', 'NumCycles', 'QA_Detailed.Num_Modes_01', 'QA_Detailed.Num_Modes_02', 'QA_Overall.Num_Modes_01', 'QA_Overall.Num_Modes_02', 'Senescence.Num_Modes_01', 'Senescence.Num_Modes_02']
+== Colonia Cuatro Canadas Lote 7 LC_Type1: {'2015': 12, '2016': 12, '2017': 12, '2018': 12, '2019': 12, '2020': 12, '2021': 12, '2022': 12, '2023': 12, '2024': 12}
+2015 cycles 1 | c1 2015-01-13 2015-06-06 2015-06-30 | c2 None None None | QA 0
+2016 cycles 1 | c1 2015-11-17 2016-01-28 2016-03-06 | c2 None None None | QA 0
+2017 cycles 1 | c1 2017-01-01 2017-05-28 2017-06-27 | c2 None None None | QA 0
+2018 cycles 1 | c1 2017-11-29 2018-01-13 2018-02-12 | c2 None None None | QA 0
+2019 cycles 1 | c1 2018-11-15 2019-01-11 2019-02-09 | c2 None None None | QA 0
+2020 cycles 2 | c1 2019-11-17 2020-01-02 2020-02-05 | c2 2020-05-02 2020-06-13 2020-07-16 | QA 0
+2021 cycles 1 | c1 2020-12-13 2021-02-02 2021-03-08 | c2 None None None | QA 0
+2022 cycles 1 | c1 2021-12-02 2022-01-14 2022-02-10 | c2 None None None | QA 0
+2023 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2024 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2025 cycles 1 | c1 2024-11-11 2025-01-08 2025-02-13 | c2 None None None | QA 0
+== Finca Okinawa Dos LC_Type1: {'2015': 12, '2016': 12, '2017': 12, '2018': 12, '2019': 12, '2020': 12, '2021': 12, '2022': 12, '2023': 12, '2024': 12}
+2015 cycles 1 | c1 2015-01-05 2015-02-12 2015-03-10 | c2 None None None | QA 0
+2016 cycles 2 | c1 2015-12-04 2016-01-18 2016-02-16 | c2 2016-04-24 2016-05-29 2016-06-28 | QA 0
+2017 cycles 2 | c1 2016-11-05 2017-01-06 2017-02-12 | c2 2017-05-16 2017-07-03 2017-08-02 | QA 0
+2018 cycles 2 | c1 2017-12-03 2018-01-14 2018-02-13 | c2 2018-05-09 2018-06-11 2018-07-06 | QA 0
+2019 cycles 2 | c1 2018-10-07 2019-01-05 2019-02-09 | c2 2019-05-03 2019-06-12 2019-07-10 | QA 0
+2020 cycles 2 | c1 2019-10-25 2020-01-12 2020-02-18 | c2 2020-05-20 2020-06-27 2020-07-22 | QA 0
+2021 cycles 2 | c1 2020-12-13 2021-02-02 2021-03-06 | c2 2021-05-19 2021-06-21 2021-07-19 | QA 0
+2022 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2023 cycles 1 | c1 2022-10-20 2023-01-20 2023-02-22 | c2 None None None | QA 0
+2024 cycles 1 | c1 2023-11-16 2024-01-23 2024-03-01 | c2 None None None | QA 0
+2025 cycles 1 | c1 2024-12-13 2025-01-31 2025-03-04 | c2 None None None | QA 0
+== Estancia Los Tajibos LC_Type1: {'2015': 4, '2016': 8, '2017': 8, '2018': 8, '2019': 8, '2020': 8, '2021': 4, '2022': 8, '2023': 8, '2024': 8}
+2015 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2016 cycles 2 | c1 2015-09-23 2015-12-08 2016-03-02 | c2 2016-09-07 2016-11-05 2017-02-09 | QA 0
+2017 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2018 cycles 2 | c1 2017-09-15 2017-12-06 2018-02-08 | c2 2018-09-23 2018-11-30 2019-02-16 | QA 0
+2019 cycles 32767 | c1 None None None | c2 None None None | QA 32767
+2020 cycles 1 | c1 2019-10-07 2019-12-10 2020-02-08 | c2 None None None | QA 0
+2021 cycles 1 | c1 2020-10-24 2020-12-26 2021-02-19 | c2 None None None | QA 0
+2022 cycles 1 | c1 2021-09-30 2021-12-07 2022-02-02 | c2 None None None | QA 0
+2023 cycles 1 | c1 2022-10-13 2022-12-21 2023-02-06 | c2 None None None | QA 0
+2024 cycles 2 | c1 2023-09-15 2024-02-17 2024-03-28 | c2 2024-09-24 2024-11-29 2025-01-25 | QA 0
+2025 cycles 1 | c1 2025-09-25 2025-12-03 2026-01-19 | c2 None None None | QA 0

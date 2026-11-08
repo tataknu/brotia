@@ -1,0 +1,326 @@
+[
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.31
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KNG_20260210T193550",
+  "status": 200,
+  "s": 0.37
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+  "status": 200,
+  "s": 0.56
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.68
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+  "status": 200,
+  "s": 0.38
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.34
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KNG_20260210T193550",
+  "status": 200,
+  "s": 0.42
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.56
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+  "status": 200,
+  "s": 0.44
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.29
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 200,
+  "s": 0.45
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.5
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+  "status": 200,
+  "s": 0.4
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.31
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 200,
+  "s": 0.4
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.49
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+  "status": 200,
+  "s": 0.44
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.48
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 200,
+  "s": 0.35
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.5
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+  "status": 200,
+  "s": 0.41
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.34
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 200,
+  "s": 0.54
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.47
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+  "status": 200,
+  "s": 0.4
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.4
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 500,
+  "s": 0.27
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KNF_20260210T193550",
+  "status": 500,
+  "s": 0.46
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KNG_20260210T193550",
+  "status": 200,
+  "s": 0.41
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+  "status": 200,
+  "s": 0.35
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.59
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+  "status": 200,
+  "s": 0.38
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.49
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KMF_20260210T193550",
+  "status": 200,
+  "s": 0.36
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+  "status": 200,
+  "s": 0.37
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+  "status": 200,
+  "s": 0.36
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KMG_20260205T175909",
+  "status": 200,
+  "s": 0.38
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.59
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+  "status": 200,
+  "s": 0.39
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.48
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KMF_20260210T193550",
+  "status": 200,
+  "s": 0.42
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+  "status": 200,
+  "s": 0.4
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.59
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+  "status": 200,
+  "s": 0.39
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.38
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KMF_20260210T193550",
+  "status": 200,
+  "s": 0.39
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+  "status": 200,
+  "s": 0.68
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.7
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260822T142709_R053_T20KMF_20260822T180618",
+  "status": 200,
+  "s": 0.42
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.39
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2B_MSIL2A_20260210T141709_R010_T20KMF_20260210T193550",
+  "status": 200,
+  "s": 0.46
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+  "status": 200,
+  "s": 0.43
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.57
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+  "status": 200,
+  "s": 0.46
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.39
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260218T142711_R053_T20KMG_20260218T180412",
+  "status": 200,
+  "s": 0.38
+ },
+ {
+  "call": "stac_search",
+  "status": 200,
+  "s": 0.63
+ },
+ {
+  "call": "item_statistics",
+  "item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+  "status": 200,
+  "s": 0.43
+ }
+]

@@ -1,0 +1,121 @@
+
+FECHA    TMAX  TMIN  NOMBRE                                                                         
+-------- ----- ----- ----------------------------------------                                       
+05112026  27.6  15.0 AEROPARQUE AERO                                                                
+05112026  25.0   8.4 AZUL AERO                                                                      
+05112026  26.4   7.2 BAHIA BLANCA AERO                                                              
+05112026  11.8   5.4 BARILOCHE AERO                                                                 
+05112026 -10.0 -15.2 BASE BELGRANO II                                                               
+05112026   1.4  -1.5 BASE CARLINI (EX JUBANY)                                                       
+05112026  -0.8  -4.0 BASE ESPERANZA                                                                 
+05112026  -3.1  -6.3 BASE MARAMBIO                                                                  
+05112026   3.1  -1.4 BASE ORCADAS                                                                   
+05112026  -0.5 -12.3 BASE SAN MARTIN                                                                
+05112026  24.4   7.5 BENITO JUAREZ AERO                                                             
+05112026  27.3  16.3 BERNARDO DE IRIGOYEN AERO                                                      
+05112026  26.1   6.0 BOLIVAR AERO                                                                   
+05112026  29.0  13.4 BUENOS AIRES OBSERVATORIO                                                      
+05112026         9.0 CAMPO DE MAYO AERO                                                             
+05112026  28.5  19.4 CATAMARCA AERO                                                                 
+05112026  28.0  12.3 CERES AERO                                                                     
+05112026  31.5  15.1 CHAMICAL AERO                                                                  
+05112026  13.5   4.5 CHAPELCO AERO                                                                  
+05112026  29.4  14.9 CHEPES                                                                         
+05112026  32.5  14.1 CHILECITO AERO                                                                 
+05112026  16.8       COMODORO RIVADAVIA AERO                                                        
+05112026  26.9  11.5 CONCORDIA AERO                                                                 
+05112026  27.4   9.4 CORDOBA AERO                                                                   
+05112026  29.2  12.2 CORDOBA OBSERVATORIO                                                           
+05112026  25.0   7.4 CORONEL SUAREZ AERO                                                            
+05112026  27.2  17.8 CORRIENTES AERO                                                                
+05112026  24.6   9.6 DOLORES AERO                                                                   
+05112026  14.4   7.6 EL BOLSON AERO                                                                 
+05112026  14.4   3.4 EL CALAFATE AERO                                                               
+05112026  27.0   8.0 EL PALOMAR AERO                                                                
+05112026         9.5 ESCUELA DE AVIACION MILITAR AERO                                               
+05112026  13.2   5.6 ESQUEL AERO                                                                    
+05112026  26.2  10.5 EZEIZA AERO                                                                    
+05112026        19.7 FORMOSA AERO                                                                   
+05112026  29.0  10.0 GENERAL PICO AERO                                                              
+05112026  13.5   5.0 GOBERNADOR GREGORES AERO                                                       
+05112026  26.4  10.2 GUALEGUAYCHU AERO                                                              
+05112026  30.2  20.3 IGUAZU AERO                                                                    
+05112026  28.5  19.5 ITUZAINGO                                                                      
+05112026  30.5   8.4 JACHAL                                                                         
+05112026  25.2  18.8 JUJUY AERO                                                                     
+05112026  23.5  15.9 JUJUY U N                                                                      
+05112026  27.3   8.3 JUNIN AERO                                                                     
+05112026  26.6  10.3 LA PLATA AERO                                                                  
+05112026  27.2   8.9 LA QUIACA OBSERVATORIO                                                         
+05112026  32.5  15.5 LA RIOJA AERO                                                                  
+05112026  28.5   9.5 LABOULAYE AERO                                                                 
+05112026  26.0  10.6 LAS FLORES                                                                     
+05112026  34.0  20.6 LAS LOMITAS                                                                    
+05112026  23.0   3.8 MALARGUE AERO                                                                  
+05112026  15.5   4.4 MAQUINCHAO                                                                     
+05112026  24.2   8.0 MAR DEL PLATA AERO                                                             
+05112026  29.6   7.9 MARCOS JUAREZ AERO                                                             
+05112026             MARIANO MORENO AERO                                                            
+05112026  32.0  13.0 MENDOZA AERO                                                                   
+05112026  29.6  11.2 MENDOZA OBSERVATORIO                                                           
+05112026  26.8  13.5 MERCEDES AERO (CTES)                                                           
+05112026         9.8 MERLO AERO                                                                     
+05112026  24.0  16.5 METAN                                                                          
+05112026  26.5  14.7 MONTE CASEROS AERO                                                             
+05112026  26.3  11.2 MORON AERO                                                                     
+05112026  26.4   8.7 NEUQUEN AERO                                                                   
+05112026  27.5  10.3 NUEVE DE JULIO                                                                 
+05112026  26.0  18.0 OBERA                                                                          
+05112026  25.5  12.1 OLAVARRIA AERO                                                                 
+05112026  25.8  21.6 ORAN AERO                                                                      
+05112026  28.0  14.2 PARANA AERO                                                                    
+05112026  17.5   1.9 PASO DE INDIOS                                                                 
+05112026  26.5  15.5 PASO DE LOS LIBRES AERO                                                        
+05112026  26.5  11.7 PEHUAJO AERO                                                                   
+05112026  12.9   3.8 PERITO MORENO AERO                                                             
+05112026  24.3   9.8 PIGUE AERO                                                                     
+05112026  27.9  10.6 PILAR OBSERVATORIO                                                             
+05112026  29.3  19.0 POSADAS AERO                                                                   
+05112026  29.5  17.5 PRESIDENCIA ROQUE SAENZ PEÑA AERO                                              
+05112026  17.4   8.0 PUERTO DESEADO AERO                                                            
+05112026  22.2   9.6 PUERTO MADRYN AERO                                                             
+05112026  26.0  11.5 PUNTA INDIO B.A.                                                               
+05112026  29.4  10.0 RAFAELA AERO                                                                   
+05112026  26.4  16.0 RECONQUISTA AERO                                                               
+05112026  28.1  18.5 RESISTENCIA AERO                                                               
+05112026  29.0  13.0 RIO CUARTO AERO                                                                
+05112026  13.8   2.0 RIO GALLEGOS AERO                                                              
+05112026  12.6   0.8 RIO GRANDE B.A.                                                                
+05112026  34.0  19.8 RIVADAVIA                                                                      
+05112026  25.8   7.4 ROSARIO AERO                                                                   
+05112026  25.6  16.1 SALTA AERO                                                                     
+05112026  23.2  11.4 SAN ANTONIO OESTE AERO                                                         
+05112026  26.3  10.7 SAN FERNANDO AERO                                                              
+05112026  33.0  10.0 SAN JUAN AERO                                                                  
+05112026  15.7   7.2 SAN JULIAN AERO                                                                
+05112026  29.0  14.0 SAN LUIS AERO                                                                  
+05112026  32.0  12.5 SAN MARTIN (MZA)                                                               
+05112026  31.6   9.9 SAN RAFAEL AERO                                                                
+05112026  13.8   5.0 SANTA CRUZ AERO                                                                
+05112026  29.1   8.2 SANTA ROSA AERO                                                                
+05112026  30.0  10.7 SANTA ROSA DE CONLARA AERO                                                     
+05112026  31.0  13.6 SANTIAGO DEL ESTERO AERO                                                       
+05112026  27.5   9.0 SAUCE VIEJO AERO                                                               
+05112026  29.2  10.0 SUNCHALES AERO                                                                 
+05112026  25.2   6.4 TANDIL AERO                                                                    
+05112026  29.4  18.8 TARTAGAL AERO                                                                  
+05112026  27.8  17.8 TERMAS DE RIO HONDO AERO                                                       
+05112026  32.5  13.0 TINOGASTA                                                                      
+05112026  23.6  10.7 TRELEW AERO                                                                    
+05112026  28.0  11.0 TRENQUE LAUQUEN                                                                
+05112026  26.0   7.1 TRES ARROYOS                                                                   
+05112026  26.7  18.0 TUCUMAN AERO                                                                   
+05112026   9.0   3.9 USHUAIA AERO                                                                   
+05112026  24.7   6.0 USPALLATA                                                                      
+05112026  27.7   9.5 VENADO TUERTO AERO                                                             
+05112026  30.2   8.7 VICTORICA                                                                      
+05112026         8.1 VIEDMA AERO                                                                    
+05112026  30.7   9.0 VILLA DE MARIA DEL RIO SECO                                                    
+05112026  30.8   9.8 VILLA DOLORES AERO                                                             
+05112026  25.6   9.8 VILLA GESELL AERO                                                              
+05112026  30.7   7.1 VILLA REYNOLDS AERO                                                            

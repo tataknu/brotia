@@ -1,0 +1,16 @@
+sentinel-1-rtc: 36 items, 36 distinct days, 0.6s, platforms={'sentinel-1d': 14, 'sentinel-1a': 7, 'sentinel-1c': 15}, orbit={'descending': 36}
+  first=2025-10-02 last=2026-11-03 median gap=12 max gap=24
+  sample props: {'sar:polarizations': ['VV', 'VH'], 'sar:instrument_mode': 'IW', 'sat:relative_orbit': 10, 's1:processing_level': '1'}
+  assets: ['vh', 'vv', 'tilejson', 'rendered_preview']
+sentinel-1-grd: 37 items, 37 distinct days, 0.8s, platforms={'sentinel-1d': 15, 'sentinel-1a': 7, 'sentinel-1c': 15}, orbit={'descending': 37}
+  first=2025-10-02 last=2026-11-03 median gap=12 max gap=24
+  sample props: {'sar:polarizations': ['VV', 'VH'], 'sar:instrument_mode': 'IW', 'sat:relative_orbit': 10, 's1:processing_level': '1'}
+  assets: ['vh', 'vv', 'thumbnail', 'safe-manifest', 'schema-noise-vh', 'schema-noise-vv', 'schema-product-vh', 'schema-product-vv']
+2019 rtc distinct days: 73 {'SENTINEL-1B': 73, 'SENTINEL-1A': 1} 0.7s
+2020 rtc distinct days: 90 {'SENTINEL-1B': 89, 'SENTINEL-1A': 3} 0.9s
+2021 rtc distinct days: 88 {'SENTINEL-1B': 88} 0.9s
+2022 rtc distinct days: 13 {'SENTINEL-1A': 13} 0.6s
+2023 rtc distinct days: 23 {'SENTINEL-1A': 23} 0.7s
+2024 rtc distinct days: 25 {'SENTINEL-1A': 25} 0.8s
+2025 rtc distinct days: 34 {'sentinel-1c': 20, 'sentinel-1a': 4, 'SENTINEL-1A': 10} 0.7s
+2026 rtc distinct days: 29 {'sentinel-1d': 14, 'sentinel-1a': 7, 'sentinel-1c': 8} 0.7s

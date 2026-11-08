@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "contractVersion": 1,
+  "serviceVersion": "0.1.0",
+  "time": "2026-11-07T16:07:00Z",
+  "agentAvailable": true,
+  "srMode": "ai",
+  "srModel": "example-s2-sr-x4",
+  "sources": [
+    {
+      "source": "cr2met_nrt",
+      "ok": true,
+      "lastFetchedAt": "2026-11-07T15:40:00Z",
+      "stale": false
+    },
+    {
+      "source": "open_meteo",
+      "ok": false,
+      "lastFetchedAt": "2026-11-06T22:10:00Z",
+      "stale": true
+    }
+  ]
+}

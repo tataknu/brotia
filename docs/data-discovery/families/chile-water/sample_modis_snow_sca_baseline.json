@@ -1,0 +1,272 @@
+{
+ "upper Aconcagua": {
+  "series": {
+   "2001": {
+    "snow_frac_clear": 0.973,
+    "cloud_frac": 0.0,
+    "date": "2001-09-30"
+   },
+   "2002": {
+    "snow_frac_clear": 0.976,
+    "cloud_frac": 0.0,
+    "date": "2002-09-30"
+   },
+   "2003": {
+    "snow_frac_clear": 0.936,
+    "cloud_frac": 0.0,
+    "date": "2003-09-30"
+   },
+   "2004": {
+    "snow_frac_clear": 0.824,
+    "cloud_frac": 0.0,
+    "date": "2004-09-29"
+   },
+   "2005": {
+    "snow_frac_clear": 0.971,
+    "cloud_frac": 0.002,
+    "date": "2005-09-30"
+   },
+   "2006": {
+    "snow_frac_clear": 0.937,
+    "cloud_frac": 0.0,
+    "date": "2006-09-30"
+   },
+   "2007": {
+    "snow_frac_clear": 0.925,
+    "cloud_frac": 0.0,
+    "date": "2007-09-30"
+   },
+   "2008": {
+    "snow_frac_clear": 0.919,
+    "cloud_frac": 0.0,
+    "date": "2008-09-29"
+   },
+   "2009": {
+    "snow_frac_clear": 0.956,
+    "cloud_frac": 0.003,
+    "date": "2009-09-30"
+   },
+   "2010": {
+    "snow_frac_clear": 0.839,
+    "cloud_frac": 0.0,
+    "date": "2010-09-30"
+   },
+   "2011": {
+    "snow_frac_clear": 0.907,
+    "cloud_frac": 0.0,
+    "date": "2011-09-30"
+   },
+   "2012": {
+    "snow_frac_clear": 0.868,
+    "cloud_frac": 0.003,
+    "date": "2012-09-29"
+   },
+   "2013": {
+    "snow_frac_clear": 0.906,
+    "cloud_frac": 0.0,
+    "date": "2013-09-30"
+   },
+   "2014": {
+    "snow_frac_clear": 0.871,
+    "cloud_frac": 0.0,
+    "date": "2014-09-30"
+   },
+   "2015": {
+    "snow_frac_clear": 0.953,
+    "cloud_frac": 0.008,
+    "date": "2015-09-30"
+   },
+   "2016": {
+    "snow_frac_clear": 0.875,
+    "cloud_frac": 0.0,
+    "date": "2016-09-29"
+   },
+   "2017": {
+    "snow_frac_clear": 0.978,
+    "cloud_frac": 0.0,
+    "date": "2017-09-30"
+   },
+   "2018": {
+    "snow_frac_clear": 0.937,
+    "cloud_frac": 0.0,
+    "date": "2018-09-30"
+   },
+   "2019": {
+    "snow_frac_clear": 0.604,
+    "cloud_frac": 0.001,
+    "date": "2019-09-30"
+   },
+   "2020": {
+    "snow_frac_clear": 0.849,
+    "cloud_frac": 0.0,
+    "date": "2020-09-29"
+   },
+   "2021": {
+    "snow_frac_clear": 0.772,
+    "cloud_frac": 0.0,
+    "date": "2021-09-30"
+   },
+   "2022": {
+    "snow_frac_clear": 0.918,
+    "cloud_frac": 0.0,
+    "date": "2022-09-30"
+   },
+   "2023": {
+    "snow_frac_clear": 0.947,
+    "cloud_frac": 0.0,
+    "date": "2023-09-30"
+   },
+   "2024": {
+    "snow_frac_clear": 0.883,
+    "cloud_frac": 0.0,
+    "date": "2024-09-29"
+   },
+   "2025": {
+    "snow_frac_clear": 0.862,
+    "cloud_frac": 0.0,
+    "date": "2025-09-30"
+   },
+   "2026": {
+    "snow_frac_clear": 0.93,
+    "cloud_frac": 0.181,
+    "date": "2026-09-30"
+   }
+  },
+  "2026_percentile_vs_2001_2025": 60
+ },
+ "upper Maule": {
+  "series": {
+   "2001": {
+    "snow_frac_clear": 0.907,
+    "cloud_frac": 0.0,
+    "date": "2001-09-30"
+   },
+   "2002": {
+    "snow_frac_clear": 0.948,
+    "cloud_frac": 0.018,
+    "date": "2002-09-30"
+   },
+   "2003": {
+    "snow_frac_clear": 0.834,
+    "cloud_frac": 0.0,
+    "date": "2003-09-30"
+   },
+   "2004": {
+    "snow_frac_clear": 0.863,
+    "cloud_frac": 0.004,
+    "date": "2004-09-29"
+   },
+   "2005": {
+    "snow_frac_clear": 0.881,
+    "cloud_frac": 0.0,
+    "date": "2005-09-30"
+   },
+   "2006": {
+    "snow_frac_clear": 0.917,
+    "cloud_frac": 0.001,
+    "date": "2006-09-30"
+   },
+   "2007": {
+    "snow_frac_clear": 0.908,
+    "cloud_frac": 0.002,
+    "date": "2007-09-30"
+   },
+   "2008": {
+    "snow_frac_clear": 0.856,
+    "cloud_frac": 0.004,
+    "date": "2008-09-29"
+   },
+   "2009": {
+    "snow_frac_clear": 0.885,
+    "cloud_frac": 0.001,
+    "date": "2009-09-30"
+   },
+   "2010": {
+    "snow_frac_clear": 0.854,
+    "cloud_frac": 0.0,
+    "date": "2010-09-30"
+   },
+   "2011": {
+    "snow_frac_clear": 0.94,
+    "cloud_frac": 0.001,
+    "date": "2011-09-30"
+   },
+   "2012": {
+    "snow_frac_clear": 0.716,
+    "cloud_frac": 0.008,
+    "date": "2012-09-29"
+   },
+   "2013": {
+    "snow_frac_clear": 0.881,
+    "cloud_frac": 0.0,
+    "date": "2013-09-30"
+   },
+   "2014": {
+    "snow_frac_clear": 0.894,
+    "cloud_frac": 0.0,
+    "date": "2014-09-30"
+   },
+   "2015": {
+    "snow_frac_clear": 0.892,
+    "cloud_frac": 0.036,
+    "date": "2015-09-30"
+   },
+   "2016": {
+    "snow_frac_clear": 0.643,
+    "cloud_frac": 0.0,
+    "date": "2016-09-29"
+   },
+   "2017": {
+    "snow_frac_clear": 0.927,
+    "cloud_frac": 0.072,
+    "date": "2017-09-30"
+   },
+   "2018": {
+    "snow_frac_clear": 0.941,
+    "cloud_frac": 0.0,
+    "date": "2018-09-30"
+   },
+   "2019": {
+    "snow_frac_clear": 0.917,
+    "cloud_frac": 0.004,
+    "date": "2019-09-30"
+   },
+   "2020": {
+    "snow_frac_clear": 0.889,
+    "cloud_frac": 0.004,
+    "date": "2020-09-29"
+   },
+   "2021": {
+    "snow_frac_clear": 0.82,
+    "cloud_frac": 0.0,
+    "date": "2021-09-30"
+   },
+   "2022": {
+    "snow_frac_clear": 0.896,
+    "cloud_frac": 0.015,
+    "date": "2022-09-30"
+   },
+   "2023": {
+    "snow_frac_clear": 0.89,
+    "cloud_frac": 0.0,
+    "date": "2023-09-30"
+   },
+   "2024": {
+    "snow_frac_clear": 0.889,
+    "cloud_frac": 0.017,
+    "date": "2024-09-29"
+   },
+   "2025": {
+    "snow_frac_clear": 0.932,
+    "cloud_frac": 0.0,
+    "date": "2025-09-30"
+   },
+   "2026": {
+    "snow_frac_clear": 0.904,
+    "cloud_frac": 0.156,
+    "date": "2026-09-30"
+   }
+  },
+  "2026_percentile_vs_2001_2025": 64
+ }
+}

@@ -1,0 +1,35 @@
+{
+  "contractVersion": 1,
+  "generatedAt": "2026-11-08T05:30:00Z",
+  "asOf": "2026-11-07",
+  "portfolioId": "sample-cl",
+  "portfolioName": "Chile fruit and nut orchards (sample)",
+  "farmIds": [
+    "cl-requinoa-cherry",
+    "cl-ovalle-table-grape"
+  ],
+  "files": [
+    "manifest.json",
+    "portfolio.json",
+    "crops.json",
+    "countries.json",
+    "assessment-portfolio.json",
+    "assessment-farm-cl-requinoa-cherry.json",
+    "assessment-farm-cl-ovalle-table-grape.json",
+    "imagery-cl-requinoa-cherry.json",
+    "imagery-cl-ovalle-table-grape.json",
+    "events.json",
+    "imagery/cl-ovalle-table-grape/2026-10-24_ndvi.png",
+    "imagery/cl-ovalle-table-grape/2026-10-24_rgb.png",
+    "imagery/cl-ovalle-table-grape/2026-10-24_ndvi_sr.png",
+    "imagery/cl-ovalle-table-grape/2026-10-24_rgb_sr.png",
+    "imagery/cl-ovalle-table-grape/2026-10-29_ndvi.png",
+    "imagery/cl-ovalle-table-grape/2026-10-29_ndvi_sr.png",
+    "imagery/cl-ovalle-table-grape/2026-11-03_ndvi.png",
+    "imagery/cl-ovalle-table-grape/2026-11-03_rgb.png"
+  ],
+  "imageryFrames": 3,
+  "warnings": [
+    "Fixture: the Requínoa imagery PNGs are omitted from this list for brevity."
+  ]
+}

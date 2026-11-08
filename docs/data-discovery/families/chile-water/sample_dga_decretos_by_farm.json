@@ -1,0 +1,210 @@
+{
+ "Quillota avocados": {
+  "n_decrees": 20,
+  "years_with_decree": [
+   2008,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Quillota",
+   "TERRITORIO": "Provincia",
+   "NUM_DECRETO": 149,
+   "FT_DECRETO": "09-09-2022",
+   "FT_CADUCIDAD": "11-09-2023",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.5,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Ovalle/Limari grapes": {
+  "n_decrees": 18,
+  "years_with_decree": [
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Coquimbo",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 109,
+   "FT_DECRETO": "06-07-2022",
+   "FT_CADUCIDAD": "06-07-2023",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.54,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Requinoa cherries": {
+  "n_decrees": 5,
+  "years_with_decree": [
+   2011,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Libertador General Bernardo O'Higgins",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 27,
+   "FT_DECRETO": "01-03-2022",
+   "FT_CADUCIDAD": "01-09-2022",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.8,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Santa Cruz wine": {
+  "n_decrees": 4,
+  "years_with_decree": [
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Libertador General Bernardo O'Higgins",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 27,
+   "FT_DECRETO": "01-03-2022",
+   "FT_CADUCIDAD": "01-09-2022",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.47,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Curico apples": {
+  "n_decrees": 12,
+  "years_with_decree": [
+   2008,
+   2011,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Curico",
+   "TERRITORIO": "Provincia",
+   "NUM_DECRETO": 174,
+   "FT_DECRETO": "14-10-2022",
+   "FT_CADUCIDAD": "14-10-2023",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.5,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Talca vineyards": {
+  "n_decrees": 9,
+  "years_with_decree": [
+   2014,
+   2015,
+   2016,
+   2017,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Maule",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 26,
+   "FT_DECRETO": "25-02-2022",
+   "FT_CADUCIDAD": "26-08-2022",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.48,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Parral rice": {
+  "n_decrees": 8,
+  "years_with_decree": [
+   2015,
+   2016,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Maule",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 26,
+   "FT_DECRETO": "25-02-2022",
+   "FT_CADUCIDAD": "26-08-2022",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.48,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Chillan blueberries": {
+  "n_decrees": 1,
+  "years_with_decree": [
+   2023
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Ñuble",
+   "TERRITORIO": "Region",
+   "NUM_DECRETO": 66,
+   "FT_DECRETO": "23-04-2023",
+   "FT_CADUCIDAD": "23-04-2022",
+   "VIGENTE": "SI"
+  },
+  "latency_s": 0.46,
+  "active_per_STALE_arcgis_flag": true
+ },
+ "Los Angeles maize": {
+  "n_decrees": 0,
+  "years_with_decree": [],
+  "latest": null,
+  "latency_s": 0.46,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Temuco wheat": {
+  "n_decrees": 0,
+  "years_with_decree": [],
+  "latest": null,
+  "latency_s": 0.51,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "Osorno potatoes": {
+  "n_decrees": 2,
+  "years_with_decree": [
+   2021
+  ],
+  "latest": {
+   "NOM_TERRITORIO": "Osorno",
+   "TERRITORIO": "Provincia",
+   "NUM_DECRETO": 213,
+   "FT_DECRETO": "07/10/2021",
+   "FT_CADUCIDAD": "07/04/2022",
+   "VIGENTE": "NO"
+  },
+  "latency_s": 0.5,
+  "active_per_STALE_arcgis_flag": false
+ },
+ "_caveat": "ArcGIS layer last updated 2023-04-21; VIGENTE flag is stale. Use sample_decretos_status_by_farm.json (DGA XLS) for current status."
+}

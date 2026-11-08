@@ -1,0 +1,16 @@
+30y daily era5_land: 200 7.6s 417414 bytes
+            soil_moisture_0_to_7cm_mean  ...  soil_moisture_0_to_100cm_mean
+time                                     ...                               
+2026-10-30                        0.417  ...                          0.385
+2026-10-31                        0.408  ...                          0.383
+2026-11-01                        0.394  ...                          0.381
+
+[3 rows x 4 columns]
+last non-null: 2026-11-01 00:00:00 rows: 11268 nulls: {'soil_moisture_0_to_7cm_mean': 5, 'soil_moisture_7_to_28cm_mean': 5, 'soil_moisture_28_to_100cm_mean': 5, 'soil_moisture_0_to_100cm_mean': 5}
+Oct7-Nov1 0-100cm mean by year (last 8): {2019: 0.344, 2020: 0.318, 2021: 0.333, 2022: 0.366, 2023: 0.323, 2024: 0.315, 2025: 0.342, 2026: 0.396}
+2026 window mean=0.396 percentile vs 1996-2025 = 87
+2023 window: 0.323 pct: 7
+ecmwf_ifs 429 {'error': True, 'reason': 'Minutely API request limit exceeded. Please try again in one minute.'}
+era5 429 {'error': True, 'reason': 'Minutely API request limit exceeded. Please try again in one minute.'}
+era5_seamless 429 {'reason': 'Minutely API request limit exceeded. Please try again in one minute.', 'error': True}
+era5_ensemble 429 {'error': True, 'reason': 'Minutely API request limit exceeded. Please try again in one minute.'}

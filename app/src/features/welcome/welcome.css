@@ -1,0 +1,62 @@
+/* Welcome: full-screen BrotIA title with the seed-to-plant logo animation (docs/design/brotia-slide-1.html). */
+.wl {
+  --s-bg: #0e1914; --s-grid: rgba(140, 190, 160, 0.07); --s-ink: #eaf3ee; --s-accent: #5ccb7e; --s-muted: #8da096;
+  --A: #4cc072; --B: #9bdb8a; --S: #2e8a57; --faint: #1c2c25;
+  position: fixed; inset: 0; overflow: hidden; display: grid; place-items: center;
+  background-color: var(--s-bg);
+  background-image: linear-gradient(var(--s-grid) 1px, transparent 1px), linear-gradient(90deg, var(--s-grid) 1px, transparent 1px);
+  background-size: 2.5vmax 2.5vmax; background-position: center;
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  transition: opacity 0.5s ease;
+}
+.wl[data-bg='light'] {
+  --s-bg: #ffffff; --s-grid: rgba(30, 80, 50, 0.06); --s-ink: #0e2a23; --s-accent: #2fa05a; --s-muted: #6a766f;
+  --A: #2fa05a; --B: #6cc26f; --S: #1f6b43; --faint: #e4ebe6;
+}
+.wl.wl-leaving { opacity: 0; }
+.wl-slide { position: relative; width: min(100vw, 177.78vh); aspect-ratio: 16 / 9; container-type: inline-size; }
+.wl-stage { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4cqw; }
+.wl-lockup { display: flex; align-items: center; gap: 3.4cqw; }
+.wl-icon { position: relative; width: 15cqw; aspect-ratio: 1; flex: none; }
+.wl-cell { position: absolute; width: 12.5%; height: 12.5%; border-radius: 21%; will-change: transform, opacity; }
+.wl-seed { position: absolute; left: calc(3 * 14.5833%); top: calc(5 * 14.5833%); width: 12.5%; height: 12.5%; border-radius: 21%;
+  opacity: 0; pointer-events: none; z-index: 2; background: #d9a55b; box-shadow: 0 0 0 0 rgba(108, 196, 142, 0); }
+.wl-seed.wl-ghost { z-index: 1; filter: blur(0.15cqw); }
+.wl-dust { position: absolute; left: calc(3 * 14.5833% + 5%); top: calc(5 * 14.5833% + 10%); width: 3%; height: 3%; border-radius: 20%;
+  background: #c8924e; opacity: 0; pointer-events: none; }
+.wl-word { font-weight: 600; font-size: 8.6cqw; line-height: 1; letter-spacing: -0.02em; color: var(--s-ink); white-space: nowrap; display: flex; }
+.wl-word .wl-ch, .wl-word .wl-ia { display: inline-block; }
+.wl-word .wl-ia { color: var(--s-accent); }
+.wl-tagline { font-weight: 500; font-size: 1.45cqw; letter-spacing: 0.22em; text-transform: uppercase; color: var(--s-muted); }
+.wl-corner { position: absolute; left: 3vmax; bottom: 2.6vmax; font-size: max(11px, 0.6vmax); letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--s-muted); opacity: 0.7; }
+
+/* Next: a pixel arrow that appears once the title has landed */
+.wl-next { position: absolute; right: 3vmax; bottom: 2.2vmax; display: inline-flex; align-items: center; gap: 0.9em;
+  font: 500 max(12px, 0.75vmax) / 1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--s-ink); background: transparent; border: 1px solid color-mix(in srgb, var(--s-muted) 45%, transparent);
+  border-radius: 6px; padding: 0.9em 1.1em; cursor: pointer; opacity: 0; transform: translateY(8px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.2s ease, background 0.2s ease; }
+.wl-next.wl-show { opacity: 1; transform: none; }
+.wl-next:hover { border-color: var(--s-accent); background: color-mix(in srgb, var(--s-accent) 10%, transparent); }
+.wl-next:focus-visible { outline: 2px solid var(--s-accent); outline-offset: 3px; }
+.wl-arrow { display: grid; grid-template-columns: repeat(5, 0.5em); grid-template-rows: repeat(5, 0.5em); gap: 0.14em; }
+.wl-arrow i { border-radius: 21%; background: transparent; }
+.wl-arrow i.on { background: var(--s-accent); }
+.wl-next:hover .wl-arrow { animation: wl-nudge 0.9s ease-in-out infinite; }
+@keyframes wl-nudge { 50% { transform: translateX(0.3em); } }
+@media (prefers-reduced-motion: reduce) {
+  .wl, .wl-next { transition: none; }
+  .wl-next:hover .wl-arrow { animation: none; }
+}
+
+/* Story slides sit above the logo; the corner wordmark moves to the top so the step indicator owns bottom-left. */
+.wl-story { position: absolute; inset: 0; z-index: 5; }
+.wl .wl-corner { bottom: auto; top: 2.6vmax; z-index: 30; }
+.wl .wl-next { z-index: 30; opacity: 0; }
+.wl .wl-next.wl-show { opacity: 0.55; }
+.wl .wl-next.wl-show:hover { opacity: 1; }
+.wl.wl-in-story .wl-corner { visibility: hidden; }
+/* On the map slide, keep Esri's attribution and the fly-in HUD clear */
+.wl.wl-on-map .st-steps { left: 50%; transform: translateX(-50%); }
+.wl.wl-on-map .wl-next { bottom: 6.5vmax; }

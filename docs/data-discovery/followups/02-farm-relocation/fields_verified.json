@@ -1,0 +1,1638 @@
+[
+ {
+  "name": "Estancia Los Tajibos",
+  "crop": "soy",
+  "orig_lonlat": [
+   -62.52,
+   -16.86
+  ],
+  "orig_fractions": {
+   "mb_n": 974,
+   "mb39_soy": 0.032,
+   "mb72_othercrop": 0.064,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.031,
+   "mb15_pasture": 0.009,
+   "mb3_forest": 0.864,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.112,
+   "glad_soy_max21_23": 0.053,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.011,
+   "glad_soy_2023": 0.051,
+   "wc40_cropland": 0.062,
+   "wc30_grass": 0.011,
+   "wc10_tree": 0.924,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 11553,
+  "status": "moved",
+  "lonlat": [
+   -62.52396,
+   -16.87521
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.528171,
+      -16.879289
+     ],
+     [
+      -62.519722,
+      -16.87927
+     ],
+     [
+      -62.519742,
+      -16.871134
+     ],
+     [
+      -62.528191,
+      -16.871154
+     ],
+     [
+      -62.528171,
+      -16.879289
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.315,
+   "mb72_othercrop": 0.635,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.049,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.95,
+   "glad_soy_max21_23": 0.967,
+   "glad_soy_2021": 0.824,
+   "glad_soy_2022": 0.782,
+   "glad_soy_2023": 0.923,
+   "wc40_cropland": 0.947,
+   "wc30_grass": 0.049,
+   "wc10_tree": 0.004,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 1.74,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 39.2,
+   "status": 200,
+   "s": 0.56,
+   "px": 8370,
+   "clear_frac": 1.0,
+   "ndvi": 0.837,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.011,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+   "date": "2026-08-14",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.38,
+   "px": 8370,
+   "clear_frac": 1.0,
+   "ndvi": 0.359,
+   "tried": [
+    {
+     "date": "2026-08-14",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.478
+ },
+ {
+  "name": "Agropecuaria Brecha 8",
+  "crop": "maize",
+  "orig_lonlat": [
+   -62.7,
+   -16.97
+  ],
+  "orig_fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.022,
+   "mb72_othercrop": 0.71,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.017,
+   "mb15_pasture": 0.226,
+   "mb3_forest": 0.026,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.74,
+   "glad_soy_max21_23": 0.18,
+   "glad_soy_2021": 0.015,
+   "glad_soy_2022": 0.073,
+   "glad_soy_2023": 0.156,
+   "wc40_cropland": 0.153,
+   "wc30_grass": 0.652,
+   "wc10_tree": 0.079,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 7900,
+  "status": "moved",
+  "lonlat": [
+   -62.68862,
+   -16.97385
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.692838,
+      -16.977921
+     ],
+     [
+      -62.684384,
+      -16.977908
+     ],
+     [
+      -62.684398,
+      -16.969773
+     ],
+     [
+      -62.692851,
+      -16.969786
+     ],
+     [
+      -62.692838,
+      -16.977921
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.019,
+   "mb72_othercrop": 0.968,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.006,
+   "mb15_pasture": 0.006,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.99,
+   "glad_soy_max21_23": 0.947,
+   "glad_soy_2021": 0.683,
+   "glad_soy_2022": 0.779,
+   "glad_soy_2023": 0.934,
+   "wc40_cropland": 0.856,
+   "wc30_grass": 0.097,
+   "wc10_tree": 0.015,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 1.28,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2B_MSIL2A_20260210T141709_R010_T20KNG_20260210T193550",
+   "date": "2026-02-10",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 33.5,
+   "status": 200,
+   "s": 0.42,
+   "px": 8277,
+   "clear_frac": 0.948,
+   "ndvi": 0.719,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.948,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+   "date": "2026-08-14",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.44,
+   "px": 8277,
+   "clear_frac": 1.0,
+   "ndvi": 0.334,
+   "tried": [
+    {
+     "date": "2026-08-14",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.385
+ },
+ {
+  "name": "Colonia Cuatro Canadas Lote 7",
+  "crop": "soy",
+  "orig_lonlat": [
+   -62.47,
+   -17.3
+  ],
+  "orig_fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.701,
+   "mb72_othercrop": 0.235,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.004,
+   "mb15_pasture": 0.059,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.938,
+   "glad_soy_max21_23": 0.931,
+   "glad_soy_2021": 0.852,
+   "glad_soy_2022": 0.683,
+   "glad_soy_2023": 0.893,
+   "wc40_cropland": 0.863,
+   "wc30_grass": 0.006,
+   "wc10_tree": 0.126,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "status": "kept",
+  "lonlat": [
+   -62.47,
+   -17.3
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.474223,
+      -17.304079
+     ],
+     [
+      -62.465754,
+      -17.304056
+     ],
+     [
+      -62.465778,
+      -17.295921
+     ],
+     [
+      -62.474246,
+      -17.295944
+     ],
+     [
+      -62.474223,
+      -17.304079
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.701,
+   "mb72_othercrop": 0.235,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.004,
+   "mb15_pasture": 0.059,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.938,
+   "glad_soy_max21_23": 0.931,
+   "glad_soy_2021": 0.852,
+   "glad_soy_2022": 0.683,
+   "glad_soy_2023": 0.893,
+   "wc40_cropland": 0.863,
+   "wc30_grass": 0.006,
+   "wc10_tree": 0.126,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 0.0,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 5,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 15.0,
+   "status": 200,
+   "s": 0.45,
+   "px": 8145,
+   "clear_frac": 1.0,
+   "ndvi": 0.694,
+   "tried": [
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+   "date": "2026-08-26",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.4,
+   "px": 8145,
+   "clear_frac": 1.0,
+   "ndvi": 0.326,
+   "tried": [
+    {
+     "date": "2026-08-26",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.368
+ },
+ {
+  "name": "Hacienda El Cusi",
+  "crop": "sorghum",
+  "orig_lonlat": [
+   -62.55,
+   -17.38
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.676,
+   "mb72_othercrop": 0.307,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.017,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.983,
+   "glad_soy_max21_23": 0.891,
+   "glad_soy_2021": 0.698,
+   "glad_soy_2022": 0.109,
+   "glad_soy_2023": 0.827,
+   "wc40_cropland": 0.739,
+   "wc30_grass": 0.225,
+   "wc10_tree": 0.036,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "status": "kept",
+  "lonlat": [
+   -62.55,
+   -17.38
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.554226,
+      -17.384077
+     ],
+     [
+      -62.545754,
+      -17.384058
+     ],
+     [
+      -62.545774,
+      -17.375923
+     ],
+     [
+      -62.554246,
+      -17.375942
+     ],
+     [
+      -62.554226,
+      -17.384077
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.676,
+   "mb72_othercrop": 0.307,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.017,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.983,
+   "glad_soy_max21_23": 0.891,
+   "glad_soy_2021": 0.698,
+   "glad_soy_2022": 0.109,
+   "glad_soy_2023": 0.827,
+   "wc40_cropland": 0.739,
+   "wc30_grass": 0.225,
+   "wc10_tree": 0.036,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 0.0,
+  "area_ha": 81.1,
+  "modis_px_centres": 15,
+  "modis_px_full": 7,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 15.0,
+   "status": 200,
+   "s": 0.4,
+   "px": 8225,
+   "clear_frac": 1.0,
+   "ndvi": 0.785,
+   "tried": [
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+   "date": "2026-08-26",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.44,
+   "px": 8225,
+   "clear_frac": 1.0,
+   "ndvi": 0.416,
+   "tried": [
+    {
+     "date": "2026-08-26",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.369
+ },
+ {
+  "name": "Agricola Pailon Norte",
+  "crop": "wheat",
+  "orig_lonlat": [
+   -62.68,
+   -17.56
+  ],
+  "orig_fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.053,
+   "mb72_othercrop": 0.676,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.271,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.729,
+   "glad_soy_max21_23": 0.42,
+   "glad_soy_2021": 0.006,
+   "glad_soy_2022": 0.001,
+   "glad_soy_2023": 0.419,
+   "wc40_cropland": 0.611,
+   "wc30_grass": 0.344,
+   "wc10_tree": 0.046,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 7252,
+  "status": "moved",
+  "lonlat": [
+   -62.6808,
+   -17.54464
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.685035,
+      -17.548711
+     ],
+     [
+      -62.676555,
+      -17.548697
+     ],
+     [
+      -62.67657,
+      -17.540562
+     ],
+     [
+      -62.685049,
+      -17.540576
+     ],
+     [
+      -62.685035,
+      -17.548711
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.818,
+   "mb72_othercrop": 0.134,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.047,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.952,
+   "glad_soy_max21_23": 0.996,
+   "glad_soy_2021": 0.988,
+   "glad_soy_2022": 0.791,
+   "glad_soy_2023": 0.973,
+   "wc40_cropland": 0.884,
+   "wc30_grass": 0.002,
+   "wc10_tree": 0.115,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 1.71,
+  "area_ha": 81.1,
+  "modis_px_centres": 15,
+  "modis_px_full": 7,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 15.0,
+   "status": 200,
+   "s": 0.35,
+   "px": 8270,
+   "clear_frac": 0.982,
+   "ndvi": 0.853,
+   "tried": [
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.982,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+   "date": "2026-08-26",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.41,
+   "px": 8270,
+   "clear_frac": 1.0,
+   "ndvi": 0.574,
+   "tried": [
+    {
+     "date": "2026-08-26",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.279
+ },
+ {
+  "name": "Granja Las Londras",
+  "crop": "sunflower",
+  "orig_lonlat": [
+   -62.76,
+   -17.74
+  ],
+  "orig_fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.0,
+   "mb72_othercrop": 0.0,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.018,
+   "mb3_forest": 0.174,
+   "mb33_water": 0.447,
+   "mb23_sand": 0.224,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.0,
+   "glad_soy_max21_23": 0.08,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.08,
+   "wc40_cropland": 0.0,
+   "wc30_grass": 0.0,
+   "wc10_tree": 0.109,
+   "wc80_water": 0.53,
+   "jrc_ever_water": 0.263,
+   "jrc_occ_mean": 1.41
+  },
+  "n_screen_candidates": 1325,
+  "status": "moved",
+  "lonlat": [
+   -62.79722,
+   -17.72116
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.801464,
+      -17.725227
+     ],
+     [
+      -62.792975,
+      -17.725218
+     ],
+     [
+      -62.792985,
+      -17.717084
+     ],
+     [
+      -62.801473,
+      -17.717092
+     ],
+     [
+      -62.801464,
+      -17.725227
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.008,
+   "mb72_othercrop": 0.968,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.025,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.976,
+   "glad_soy_max21_23": 0.995,
+   "glad_soy_2021": 0.993,
+   "glad_soy_2022": 0.989,
+   "glad_soy_2023": 0.961,
+   "wc40_cropland": 0.99,
+   "wc30_grass": 0.001,
+   "wc10_tree": 0.008,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 4.46,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 15.0,
+   "status": 200,
+   "s": 0.54,
+   "px": 8310,
+   "clear_frac": 0.997,
+   "ndvi": 0.824,
+   "tried": [
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.997,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+   "date": "2026-08-26",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.4,
+   "px": 8310,
+   "clear_frac": 1.0,
+   "ndvi": 0.572,
+   "tried": [
+    {
+     "date": "2026-08-26",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.252
+ },
+ {
+  "name": "Finca Okinawa Dos",
+  "crop": "maize",
+  "orig_lonlat": [
+   -62.85,
+   -17.18
+  ],
+  "orig_fractions": {
+   "mb_n": 930,
+   "mb39_soy": 1.0,
+   "mb72_othercrop": 0.0,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.0,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 1.0,
+   "glad_soy_max21_23": 1.0,
+   "glad_soy_2021": 1.0,
+   "glad_soy_2022": 0.045,
+   "glad_soy_2023": 1.0,
+   "wc40_cropland": 1.0,
+   "wc30_grass": 0.0,
+   "wc10_tree": 0.0,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "status": "kept",
+  "lonlat": [
+   -62.85,
+   -17.18
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.854228,
+      -17.184071
+     ],
+     [
+      -62.845765,
+      -17.184065
+     ],
+     [
+      -62.845772,
+      -17.175929
+     ],
+     [
+      -62.854235,
+      -17.175935
+     ],
+     [
+      -62.854228,
+      -17.184071
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 1.0,
+   "mb72_othercrop": 0.0,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.0,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 1.0,
+   "glad_soy_max21_23": 1.0,
+   "glad_soy_2021": 1.0,
+   "glad_soy_2022": 0.045,
+   "glad_soy_2023": 1.0,
+   "wc40_cropland": 1.0,
+   "wc30_grass": 0.0,
+   "wc10_tree": 0.0,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 0.0,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KNG_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 39.2,
+   "status": 200,
+   "s": 0.35,
+   "px": 8280,
+   "clear_frac": 1.0,
+   "ndvi": 0.859,
+   "tried": [
+    {
+     "date": null,
+     "clear_frac": null,
+     "status": 500
+    },
+    {
+     "date": null,
+     "clear_frac": null,
+     "status": 500
+    },
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.179,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+   "date": "2026-08-14",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.38,
+   "px": 8280,
+   "clear_frac": 1.0,
+   "ndvi": 0.54,
+   "tried": [
+    {
+     "date": "2026-08-14",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.319
+ },
+ {
+  "name": "Parcela Okinawa Uno",
+  "crop": "soy",
+  "orig_lonlat": [
+   -62.93,
+   -17.27
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.06,
+   "mb72_othercrop": 0.843,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.031,
+   "mb15_pasture": 0.023,
+   "mb3_forest": 0.043,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.918,
+   "glad_soy_max21_23": 0.113,
+   "glad_soy_2021": 0.004,
+   "glad_soy_2022": 0.105,
+   "glad_soy_2023": 0.061,
+   "wc40_cropland": 0.62,
+   "wc30_grass": 0.24,
+   "wc10_tree": 0.134,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 2639,
+  "status": "moved",
+  "lonlat": [
+   -62.91634,
+   -17.25601
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.920572,
+      -17.260077
+     ],
+     [
+      -62.912105,
+      -17.260074
+     ],
+     [
+      -62.912109,
+      -17.251938
+     ],
+     [
+      -62.920576,
+      -17.251942
+     ],
+     [
+      -62.920572,
+      -17.260077
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.695,
+   "mb72_othercrop": 0.272,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.033,
+   "mb15_pasture": 0.0,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.983,
+   "glad_soy_max21_23": 0.863,
+   "glad_soy_2021": 0.439,
+   "glad_soy_2022": 0.508,
+   "glad_soy_2023": 0.823,
+   "wc40_cropland": 0.916,
+   "wc30_grass": 0.008,
+   "wc10_tree": 0.076,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.006,
+   "jrc_occ_mean": 0.01
+  },
+  "moved_km": 2.13,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KMG_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 19.2,
+   "status": 200,
+   "s": 0.38,
+   "px": 8370,
+   "clear_frac": 1.0,
+   "ndvi": 0.843,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.747,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.814,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.502,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260814T141711_R010_T20KNG_20260814T191310",
+   "date": "2026-08-14",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.39,
+   "px": 8280,
+   "clear_frac": 0.997,
+   "ndvi": 0.451,
+   "tried": [
+    {
+     "date": "2026-08-14",
+     "clear_frac": 0.997,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.392
+ },
+ {
+  "name": "Arrocera Mineros",
+  "crop": "rice",
+  "orig_lonlat": [
+   -63.29,
+   -17.2
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.0,
+   "mb72_othercrop": 0.315,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.19,
+   "mb15_pasture": 0.143,
+   "mb3_forest": 0.132,
+   "mb33_water": 0.001,
+   "mb23_sand": 0.175,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.41,
+   "glad_soy_max21_23": 0.0,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.105,
+   "wc30_grass": 0.147,
+   "wc10_tree": 0.364,
+   "wc80_water": 0.003,
+   "jrc_ever_water": 0.29,
+   "jrc_occ_mean": 0.78
+  },
+  "n_screen_candidates": 0,
+  "n_screen_candidates_nonsoy": 3264,
+  "provisional": "no field within 10 km shows paddy evidence (JRC ever-water >=5%) on cropland; placed on nearest non-soy cropland instead",
+  "status": "moved_provisional",
+  "lonlat": [
+   -63.28204,
+   -17.18863
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -63.286283,
+      -17.192696
+     ],
+     [
+      -63.277819,
+      -17.192708
+     ],
+     [
+      -63.277807,
+      -17.184572
+     ],
+     [
+      -63.28627,
+      -17.184561
+     ],
+     [
+      -63.286283,
+      -17.192696
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.022,
+   "mb72_othercrop": 0.937,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.014,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.959,
+   "glad_soy_max21_23": 0.0,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.857,
+   "wc30_grass": 0.106,
+   "wc10_tree": 0.036,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 1.52,
+  "area_ha": 81.1,
+  "modis_px_centres": 12,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 14.5,
+   "status": 200,
+   "s": 0.4,
+   "px": 8316,
+   "clear_frac": 0.997,
+   "ndvi": 0.621,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.247,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.997,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+   "date": "2026-08-27",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.1,
+   "status": 200,
+   "s": 0.39,
+   "px": 8270,
+   "clear_frac": 1.0,
+   "ndvi": 0.519,
+   "tried": [
+    {
+     "date": "2026-08-27",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.102
+ },
+ {
+  "name": "Canaveral San Antonio",
+  "crop": "sugarcane",
+  "orig_lonlat": [
+   -63.21,
+   -17.29
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.006,
+   "mb72_othercrop": 0.926,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.027,
+   "mb15_pasture": 0.031,
+   "mb3_forest": 0.009,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.946,
+   "glad_soy_max21_23": 0.0,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.528,
+   "wc30_grass": 0.339,
+   "wc10_tree": 0.132,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 2300,
+  "status": "moved",
+  "lonlat": [
+   -63.19392,
+   -17.29482
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -63.198159,
+      -17.298879
+     ],
+     [
+      -63.18969,
+      -17.298887
+     ],
+     [
+      -63.189682,
+      -17.290751
+     ],
+     [
+      -63.19815,
+      -17.290743
+     ],
+     [
+      -63.198159,
+      -17.298879
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.0,
+   "mb72_othercrop": 0.948,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.025,
+   "mb15_pasture": 0.027,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.96,
+   "glad_soy_max21_23": 0.0,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.872,
+   "wc30_grass": 0.047,
+   "wc10_tree": 0.073,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 1.79,
+  "km_to_montero": 7.8,
+  "area_ha": 81.1,
+  "modis_px_centres": 12,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 14.5,
+   "status": 200,
+   "s": 0.68,
+   "px": 8277,
+   "clear_frac": 1.0,
+   "ndvi": 0.694,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.412,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2B_MSIL2A_20260822T142709_R053_T20KMF_20260822T180618",
+   "date": "2026-08-22",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.42,
+   "px": 8277,
+   "clear_frac": 1.0,
+   "ndvi": 0.472,
+   "tried": [
+    {
+     "date": "2026-08-22",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.222
+ },
+ {
+  "name": "Agricola Warnes Sur",
+  "crop": "soy",
+  "orig_lonlat": [
+   -63.08,
+   -17.56
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.0,
+   "mb72_othercrop": 0.125,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.056,
+   "mb15_pasture": 0.74,
+   "mb3_forest": 0.079,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.153,
+   "glad_soy_max21_23": 0.0,
+   "glad_soy_2021": 0.0,
+   "glad_soy_2022": 0.0,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.024,
+   "wc30_grass": 0.407,
+   "wc10_tree": 0.496,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 1,
+  "n_screen_candidates_20km": 333,
+  "provisional": "no multi-year soy field within 10 km; nearest one found within 20 km",
+  "status": "moved_provisional",
+  "lonlat": [
+   -62.95299,
+   -17.50664
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -62.95723,
+      -17.510706
+     ],
+     [
+      -62.948752,
+      -17.510704
+     ],
+     [
+      -62.948754,
+      -17.502569
+     ],
+     [
+      -62.957232,
+      -17.502571
+     ],
+     [
+      -62.95723,
+      -17.510706
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.153,
+   "mb72_othercrop": 0.823,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.025,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.976,
+   "glad_soy_max21_23": 0.868,
+   "glad_soy_2021": 0.451,
+   "glad_soy_2022": 0.755,
+   "glad_soy_2023": 0.839,
+   "wc40_cropland": 0.923,
+   "wc30_grass": 0.077,
+   "wc10_tree": 0.001,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 14.72,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260205T141711_R010_T20KMF_20260205T175909",
+   "date": "2026-02-05",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 14.5,
+   "status": 200,
+   "s": 0.43,
+   "px": 8277,
+   "clear_frac": 0.999,
+   "ndvi": 0.754,
+   "tried": [
+    {
+     "date": "2026-02-10",
+     "clear_frac": 0.036,
+     "status": 200
+    },
+    {
+     "date": "2026-02-05",
+     "clear_frac": 0.999,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2A_MSIL2A_20260826T142051_R010_T20KNF_20260827T000212",
+   "date": "2026-08-26",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.0,
+   "status": 200,
+   "s": 0.46,
+   "px": 8188,
+   "clear_frac": 1.0,
+   "ndvi": 0.509,
+   "tried": [
+    {
+     "date": "2026-08-26",
+     "clear_frac": 1.0,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.245
+ },
+ {
+  "name": "Estancia Mineros Norte",
+  "crop": "soy",
+  "orig_lonlat": [
+   -63.18,
+   -17.03
+  ],
+  "orig_fractions": {
+   "mb_n": 960,
+   "mb39_soy": 0.14,
+   "mb72_othercrop": 0.775,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.006,
+   "mb15_pasture": 0.052,
+   "mb3_forest": 0.023,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.918,
+   "glad_soy_max21_23": 0.079,
+   "glad_soy_2021": 0.04,
+   "glad_soy_2022": 0.039,
+   "glad_soy_2023": 0.0,
+   "wc40_cropland": 0.547,
+   "wc30_grass": 0.221,
+   "wc10_tree": 0.224,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "n_screen_candidates": 3401,
+  "status": "moved",
+  "lonlat": [
+   -63.14999,
+   -17.00403
+  ],
+  "polygon": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      -63.154223,
+      -17.008095
+     ],
+     [
+      -63.145768,
+      -17.008101
+     ],
+     [
+      -63.145762,
+      -16.999966
+     ],
+     [
+      -63.154217,
+      -16.999959
+     ],
+     [
+      -63.154223,
+      -17.008095
+     ]
+    ]
+   ]
+  },
+  "fractions": {
+   "mb_n": 930,
+   "mb39_soy": 0.476,
+   "mb72_othercrop": 0.515,
+   "mb18_agri": 0.0,
+   "mb21_mosaic": 0.0,
+   "mb15_pasture": 0.0,
+   "mb3_forest": 0.0,
+   "mb33_water": 0.0,
+   "mb23_sand": 0.0,
+   "mb12_grass": 0.0,
+   "mb24_urban": 0.0,
+   "mb_agri": 0.991,
+   "glad_soy_max21_23": 0.888,
+   "glad_soy_2021": 0.733,
+   "glad_soy_2022": 0.657,
+   "glad_soy_2023": 0.741,
+   "wc40_cropland": 0.948,
+   "wc30_grass": 0.049,
+   "wc10_tree": 0.002,
+   "wc80_water": 0.0,
+   "jrc_ever_water": 0.0,
+   "jrc_occ_mean": 0.0
+  },
+  "moved_km": 4.3,
+  "area_ha": 81.1,
+  "modis_px_centres": 16,
+  "modis_px_full": 8,
+  "s2_janfeb": {
+   "item": "S2C_MSIL2A_20260218T142711_R053_T20KMG_20260218T180412",
+   "date": "2026-02-18",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 19.4,
+   "status": 200,
+   "s": 0.38,
+   "px": 8311,
+   "clear_frac": 0.921,
+   "ndvi": 0.682,
+   "tried": [
+    {
+     "date": "2026-02-18",
+     "clear_frac": 0.921,
+     "status": 200
+    }
+   ]
+  },
+  "s2_julaug": {
+   "item": "S2C_MSIL2A_20260827T142711_R053_T20KMG_20260827T192955",
+   "date": "2026-08-27",
+   "baseline": "05.12",
+   "dn_offset_applied": 1000,
+   "scene_cloud_pct": 0.1,
+   "status": 200,
+   "s": 0.43,
+   "px": 8311,
+   "clear_frac": 0.989,
+   "ndvi": 0.441,
+   "tried": [
+    {
+     "date": "2026-08-27",
+     "clear_frac": 0.989,
+     "status": 200
+    }
+   ]
+  },
+  "ndvi_amplitude": 0.241
+ }
+]

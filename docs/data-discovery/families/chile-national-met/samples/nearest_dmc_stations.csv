@@ -1,0 +1,67 @@
+site,lon,lat,rank,dist_km,codigoNacional,nombre,owner,altitud,fechaInstalacion,tipo,dmc_annual_2024_valid_days
+Quillota avocados,-71.25,-32.88,1,3.6,320124,"Quillota, Liceo Agrícola",DMC,123,2024-11-28,Automática/Climatológica,0
+Quillota avocados,-71.25,-32.88,2,4.3,320096,Quillota,FDF,142,,EMA (regional bulletin),356
+Quillota avocados,-71.25,-32.88,3,5.4,320097,La Cruz,FDF,153,,EMA (regional bulletin),353
+Quillota avocados,-71.25,-32.88,4,6.2,320028,"La Cruz,  INIA",INIA,176,,EMA (regional bulletin),152
+Quillota avocados,-71.25,-32.88,5,12.3,320027,"La Calera,  D.O.S",DMC,235,1912-01-01,Convencional/Pluviométrica,
+Quillota avocados,-71.25,-32.88,6,12.8,320099,Limache,FDF,91,,EMA (regional bulletin),
+Ovalle/Limari grapes,-71.2,-30.6,1,0.5,300930,Ovalle Oficina Meteorológica (Liceo),DMC,252,1912-01-01,Convencional/Sinóptica,0
+Ovalle/Limari grapes,-71.2,-30.6,2,2.6,300024,Ovalle Escuela Agrícola,DMC,310,1978-01-01,Automática/Climatológica,350
+Ovalle/Limari grapes,-71.2,-30.6,3,3.7,300012,Los Peñones Sendos,DMC,196,1962-11-01,Convencional/Pluviométrica,0
+Ovalle/Limari grapes,-71.2,-30.6,4,4.5,300909,"El Tuqui, Ovalle Ad.",DMC,339,1942-02-01,Convencional/Sinóptica Aeronáutica,0
+Ovalle/Limari grapes,-71.2,-30.6,5,11.1,300016,"Ovalle, Huallillinga (ex Altar Alto)",DMC,299,1946-12-01,Convencional/Pluviométrica,
+Ovalle/Limari grapes,-71.2,-30.6,6,12.6,300050,Ovalle Recoleta,FDF,403,,EMA (regional bulletin),
+Requinoa cherries,-70.8,-34.28,1,5.2,340049,Totihue,DMC,383,1989-01-01,Convencional/AgroMeteorológica,0
+Requinoa cherries,-70.8,-34.28,2,5.6,340147,Rayentué,INIA,376,,EMA (regional bulletin),362
+Requinoa cherries,-70.8,-34.28,3,5.8,340077,"Los Choapinos, Requinoa",FDF,375,,EMA (regional bulletin),356
+Requinoa cherries,-70.8,-34.28,4,8.8,340119,Olivar Olivar Alto,FDF,457,,EMA (regional bulletin),356
+Requinoa cherries,-70.8,-34.28,5,11.3,340159,Altair,INIA,480,,EMA (regional bulletin),
+Requinoa cherries,-70.8,-34.28,6,11.8,340009,Parrón,DMC,693,1920-08-01,Convencional/Climatológica,
+Santa Cruz Colchagua wine,-71.37,-34.64,1,6.3,340132,Santa Cruz,FDF,173,,EMA (regional bulletin),356
+Santa Cruz Colchagua wine,-71.37,-34.64,2,7.2,340072,Palmilla fundo,DMC,160,1988-05-01,Convencional/AgroMeteorológica,0
+Santa Cruz Colchagua wine,-71.37,-34.64,3,8.2,340128,Nancagua 2,FDF,189,,EMA (regional bulletin),356
+Santa Cruz Colchagua wine,-71.37,-34.64,4,8.5,340061,Yaquil,DMC,157,1990-06-01,Convencional/AgroMeteorológica,0
+Santa Cruz Colchagua wine,-71.37,-34.64,5,10.6,340127,Palmilla,FDF,151,,EMA (regional bulletin),
+Santa Cruz Colchagua wine,-71.37,-34.64,6,10.7,340064,Colchagua,DMC,152,1993-09-01,Convencional/AgroMeteorológica,
+Curico apples/cherries,-71.24,-34.98,1,2.4,340031,"General Freire, Curicó Ad.",DMC,229,1917-10-01,Mixta/Sinóptica Aeronáutica,366
+Curico apples/cherries,-71.24,-34.98,2,7.2,340144,Curicó Tutuquén,FDF,183,,EMA (regional bulletin),298
+Curico apples/cherries,-71.24,-34.98,3,7.3,340143,Rauco,FDF,212,,EMA (regional bulletin),340
+Curico apples/cherries,-71.24,-34.98,4,7.8,350080,Molina Lontue,FDF,233,,EMA (regional bulletin),334
+Curico apples/cherries,-71.24,-34.98,5,10.7,340029,El Romeral Essam,DMC,311,1963-11-01,Convencional/Pluviométrica,
+Curico apples/cherries,-71.24,-34.98,6,12.4,340145,Sagrada Familia,FDF,164,,EMA (regional bulletin),
+Talca vineyards,-71.66,-35.43,1,0.1,350030,San Agustín de Aurora,DMC,105,1991-04-15,Convencional/AgroMeteorológica,0
+Talca vineyards,-71.66,-35.43,2,0.3,350005,San Luis de Talca,DMC,106,1926-01-01,Convencional/TermoPluviométrica,0
+Talca vineyards,-71.66,-35.43,3,1.0,350906,Talca regimiento,DMC,104,1972-09-01,Convencional/Climatológica,0
+Talca vineyards,-71.66,-35.43,4,1.4,350050,Talca Universidad Autónoma de Chile - Radiación UV.,DMC,100,2010-07-13,Automática/Radiométrica,0
+Talca vineyards,-71.66,-35.43,5,1.7,350024,Universidad de Talca,DMC,94,1979-01-01,Convencional/Climatológica,
+Talca vineyards,-71.66,-35.43,6,1.9,350035,Maqui 1,DMC,89,1991-08-01,Convencional/AgroMeteorológica,
+Parral rice,-71.83,-36.14,1,1.5,360002,Parral Sendos,DMC,182,1923-01-01,Convencional/Pluviométrica,0
+Parral rice,-71.83,-36.14,2,6.4,360033,Parral Copihue,DMC,169,1992-10-01,Convencional/AgroMeteorológica,0
+Parral rice,-71.83,-36.14,3,6.8,360004,Campamento Cuatro,DMC,180,1974-01-01,Convencional/Pluviométrica,0
+Parral rice,-71.83,-36.14,4,9.7,360047,Retiro Copihue,DMC,162,2016-11-17,Automática/Climatológica,346
+Parral rice,-71.83,-36.14,5,11.6,360043,Parral  (FDF),FDF,213,,EMA (regional bulletin),
+Parral rice,-71.83,-36.14,6,13.3,360080,"Retiro, Parral Norte",FDF,210,,EMA (regional bulletin),
+Chillan blueberries,-72.1,-36.6,1,1.1,360100,Quilamapu INIA,INIA,135,,EMA (regional bulletin),0
+Chillan blueberries,-72.1,-36.6,2,5.9,360011,"General Bernardo O'Higgins, Chillán Ad.",DMC,152,1939-04-01,Automática/Sinóptica Aeronáutica,366
+Chillan blueberries,-72.1,-36.6,3,9.2,360083,San Nicolas,FDF,129,,EMA (regional bulletin),319
+Chillan blueberries,-72.1,-36.6,4,9.2,360095,Los Aromos,FDF,169,,EMA (regional bulletin),0
+Chillan blueberries,-72.1,-36.6,5,10.1,360032,Instituto Profesional Adventista  Chillán,DMC,193,1984-08-01,Convencional/TermoPluviométrica,
+Chillan blueberries,-72.1,-36.6,6,12.3,360085,Chillan Los Colihues,FDF,96,,EMA (regional bulletin),
+Los Angeles maize/wheat,-72.35,-37.47,1,0.4,370028,Los Ángeles Sendos,DMC,160,1918-03-01,Convencional/Pluviométrica,0
+Los Angeles maize/wheat,-72.35,-37.47,2,5.6,370070,"Los Angeles, Las Viñas",FDF,158,,EMA (regional bulletin),347
+Los Angeles maize/wheat,-72.35,-37.47,3,6.8,370036,"El Huertón liceo agrícola, Los Ángeles",DMC,173,1996-03-01,Automática/Climatológica,330
+Los Angeles maize/wheat,-72.35,-37.47,4,10.2,370011,Los Ángeles - Human I.N.I.A  ,INIA,195,,EMA (regional bulletin),142
+Los Angeles maize/wheat,-72.35,-37.47,5,10.4,370033,"María Dolores, Los Angeles Ad.",DMC,114,1941-01-01,Mixta/Sinóptica Aeronáutica,
+Los Angeles maize/wheat,-72.35,-37.47,6,15.0,370069,Los Angeles,FDF,106,,EMA (regional bulletin),
+Temuco wheat/oats,-72.6,-38.74,1,2.0,380012,Padre las Casas,DMC,111,1913-01-01,Convencional/Pluviométrica,0
+Temuco wheat/oats,-72.6,-38.74,2,2.0,380081,Universidad de la Frontera Temuco,DMC,107,2021-11-29,Automática/Cielométrica,0
+Temuco wheat/oats,-72.6,-38.74,3,4.1,380013,"Maquehue, Temuco Ad.",DMC,93,1941-01-01,Automática/Climatológica,366
+Temuco wheat/oats,-72.6,-38.74,4,6.0,380028,Temuco  (Universidad Católica de Temuco - Radiación UV.),DMC,153,2012-01-01,Automática/Radiométrica,0
+Temuco wheat/oats,-72.6,-38.74,5,6.4,380022,Temuco Universidad Católica,DMC,144,1982-01-01,Convencional/Climatológica,
+Temuco wheat/oats,-72.6,-38.74,6,8.8,380032,Rucamanque-UFRO,DMC,344,2014-11-01,Automática/Climatológica,
+Osorno potatoes,-73.13,-40.57,1,1.9,400010,Osorno Ovejería,DMC,24,1903-01-01,Convencional/Pluviométrica,0
+Osorno potatoes,-73.13,-40.57,2,2.7,400013,Juan Kalt Bode (Fundación Adolfo Matthei),DMC,53,1910-01-01,Automática/Climatológica,284
+Osorno potatoes,-73.13,-40.57,3,5.4,400014,"Barro Blanco, Osorno",DMC,70,1963-12-01,Convencional/AgroMeteorológica,0
+Osorno potatoes,-73.13,-40.57,4,6.3,400054,Osorno (FDF),FDF,72,,EMA (regional bulletin),355
+Osorno potatoes,-73.13,-40.57,5,7.7,400011,Remehue I.N.I.A.,INIA,73,,EMA (regional bulletin),
+Osorno potatoes,-73.13,-40.57,6,7.9,400009,"Cañal Bajo,  Osorno Ad.",DMC,57,1952-01-01,Mixta/Sinóptica Aeronáutica,

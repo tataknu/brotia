@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 1,
+  "id": "sample-cl",
+  "name": "Chile fruit and nut orchards (sample)",
+  "lender": "Banco Valle Andino",
+  "country": "CL",
+  "currency": "USD",
+  "createdAt": "2026-11-07T15:00:00Z",
+  "zones": [
+    {
+      "id": "auto-cl-requinoa-cherry",
+      "name": "Requínoa cherries (own zone)",
+      "center": [
+        -70.802946,
+        -34.283693
+      ],
+      "radiusM": 3338,
+      "auto": true,
+      "overrides": {},
+      "color": null
+    },
+    {
+      "id": "auto-cl-ovalle-table-grape",
+      "name": "Ovalle table grapes (own zone)",
+      "center": [
+        -71.241711,
+        -30.582887
+      ],
+      "radiusM": 3338,
+      "auto": true,
+      "overrides": {
+        "table_grape": {
+          "rules": {
+            "stages": {
+              "harvest": {
+                "harvestRainMm72h": 5
+              }
+            }
+          }
+        }
+      },
+      "color": null
+    }
+  ],
+  "farms": [
+    {
+      "id": "cl-requinoa-cherry",
+      "name": "Requínoa cherries",
+      "crop": "cherry",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -70.80403,
+              -34.28413
+            ],
+            [
+              -70.80258,
+              -34.28458
+            ],
+            [
+              -70.80187,
+              -34.28327
+            ],
+            [
+              -70.80331,
+              -34.2828
+            ],
+            [
+              -70.80403,
+              -34.28413
+            ]
+          ]
+        ]
+      },
+      "areaHa": 2.27,
+      "centroid": [
+        -70.802946,
+        -34.283693
+      ],
+      "zoneId": "auto-cl-requinoa-cherry",
+      "covered": null,
+      "irrigatedDeclared": null,
+      "plantingYear": null,
+      "ciren": {
+        "especie": "CEREZO",
+        "variedad": null,
+        "sourceLayer": "CATASTRO_FRUTICOLA/61",
+        "objectId": 22722
+      },
+      "overrides": {
+        "rules": {
+          "stages": {
+            "bloom": {
+              "frostCriticalC": -2.0
+            }
+          }
+        }
+      },
+      "creditRuleOverrides": {
+        "cr-risk-high-before-installment": {
+          "when": {
+            "withinDaysBeforeInstallment": 90
+          }
+        }
+      },
+      "loan": {
+        "originationDate": "2026-07-01",
+        "maturityDate": "2028-01-31",
+        "amount": 120000.0,
+        "currency": "USD",
+        "scheduleType": "custom",
+        "installments": [
+          {
+            "dueDate": "2027-01-31",
+            "amount": 60000.0
+          },
+          {
+            "dueDate": "2028-01-31",
+            "amount": 60000.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "cl-ovalle-table-grape",
+      "name": "Ovalle table grapes",
+      "crop": "table_grape",
+      "polygon": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -71.24342,
+              -30.58173
+            ],
+            [
+              -71.24252,
+              -30.58386
+            ],
+            [
+              -71.24122,
+              -30.58411
+            ],
+            [
+              -71.24005,
+              -30.58401
+            ],
+            [
+              -71.24096,
+              -30.58178
+            ],
+            [
+              -71.24342,
+              -30.58173
+            ]
+          ]
+        ]
+      },
+      "areaHa": 5.82,
+      "centroid": [
+        -71.241711,
+        -30.582887
+      ],
+      "zoneId": "auto-cl-ovalle-table-grape",
+      "covered": null,
+      "irrigatedDeclared": true,
+      "plantingYear": null,
+      "ciren": {
+        "especie": "VID DE MESA",
+        "variedad": null,
+        "sourceLayer": "CATASTRO_FRUTICOLA/58",
+        "objectId": 663
+      },
+      "overrides": {},
+      "creditRuleOverrides": {},
+      "loan": {
+        "originationDate": "2025-06-01",
+        "maturityDate": "2028-05-31",
+        "amount": 180000.0,
+        "currency": "USD",
+        "scheduleType": "semiannual",
+        "installments": [
+          {
+            "dueDate": "2025-11-30",
+            "amount": 30000.0
+          },
+          {
+            "dueDate": "2026-05-31",
+            "amount": 30000.0
+          },
+          {
+            "dueDate": "2026-11-30",
+            "amount": 30000.0
+          },
+          {
+            "dueDate": "2027-05-31",
+            "amount": 30000.0
+          },
+          {
+            "dueDate": "2027-11-30",
+            "amount": 30000.0
+          },
+          {
+            "dueDate": "2028-05-31",
+            "amount": 30000.0
+          }
+        ]
+      }
+    }
+  ],
+  "creditRules": [
+    {
+      "id": "pf-score-80",
+      "name": "Very high score",
+      "enabled": true,
+      "when": {
+        "metric": "risk.score",
+        "op": "gte",
+        "value": 80,
+        "withinDaysBeforeInstallment": null,
+        "and": null
+      },
+      "then": "restructure_review",
+      "message": "Risk score 80 or more: open a restructuring review."
+    }
+  ],
+  "cropOverrides": {},
+  "audit": [
+    {
+      "id": "chg-0001",
+      "at": "2026-11-07T15:10:00Z",
+      "actor": {
+        "kind": "user",
+        "name": "Credit analyst"
+      },
+      "scope": {
+        "level": "zone",
+        "id": "auto-cl-ovalle-table-grape"
+      },
+      "path": "overrides.table_grape.rules.stages.harvest.harvestRainMm72h",
+      "oldValue": 8,
+      "newValue": 5,
+      "reason": "Flame Seedless block: Agroseguros 'lluvia mayor' is 5 mm for this variety.",
+      "status": "applied",
+      "recommendationId": null
+    },
+    {
+      "id": "chg-0002",
+      "at": "2026-11-07T15:12:00Z",
+      "actor": {
+        "kind": "user",
+        "name": "Credit analyst"
+      },
+      "scope": {
+        "level": "farm",
+        "id": "cl-requinoa-cherry"
+      },
+      "path": "overrides.rules.stages.bloom.frostCriticalC",
+      "oldValue": -2.4,
+      "newValue": -2.0,
+      "reason": "Frost-pocket position at the foot of the slope; be more conservative.",
+      "status": "applied",
+      "recommendationId": null
+    },
+    {
+      "id": "chg-0003",
+      "at": "2026-11-07T15:13:00Z",
+      "actor": {
+        "kind": "user",
+        "name": "Credit analyst"
+      },
+      "scope": {
+        "level": "farm",
+        "id": "cl-requinoa-cherry"
+      },
+      "path": "creditRuleOverrides.cr-risk-high-before-installment.when.withinDaysBeforeInstallment",
+      "oldValue": 60,
+      "newValue": 90,
+      "reason": "Harvest-linked repayment: watch earlier.",
+      "status": "applied",
+      "recommendationId": null
+    }
+  ]
+}

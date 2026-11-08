@@ -1,0 +1,186 @@
+{
+ "_source": "FAO-56 (Allen et al. 1998) Table 12 (single Kc, standard climate RHmin 45%, u2 2 m/s) and Table 11 (stage lengths). Fetched https://www.fao.org/4/x0490e/x0490e0b.htm on 2026-11-07. Quinoa and chia are NOT in FAO-56 (literature, unverified). Adjust Kc_mid/Kc_end for climate with FAO-56 Eq. 62 when RHmin != 45% or u2 != 2 m/s.",
+ "_stage_note": "stages_days_fao56 is the FAO-56 row quoted; stages_days_santacruz rescales it to the FAO Crop Calendar growing_days for AEZ 003 (Oriental plains) or local practice. The rescaled numbers are a proposal, not a source value.",
+ "soy": {
+  "kc_ini": 0.4,
+  "kc_mid": 1.15,
+  "kc_end": 0.5,
+  "height_m": "0.5-1.0",
+  "stages_days_fao56": [
+   15,
+   15,
+   40,
+   15
+  ],
+  "fao56_region": "Tropics (Dec)",
+  "stages_days_santacruz": [
+   20,
+   30,
+   50,
+   25
+  ],
+  "total_days_santacruz": 125,
+  "verified": true
+ },
+ "maize": {
+  "kc_ini": 0.3,
+  "kc_mid": 1.2,
+  "kc_end": "0.60 (harvest high moisture) / 0.35 (dry in field)",
+  "height_m": 2.0,
+  "stages_days_fao56": [
+   30,
+   50,
+   60,
+   40
+  ],
+  "fao56_region": "East Africa (alt.)",
+  "stages_days_santacruz": [
+   25,
+   40,
+   45,
+   30
+  ],
+  "total_days_santacruz": 140,
+  "verified": true
+ },
+ "wheat": {
+  "kc_ini": 0.3,
+  "kc_mid": 1.15,
+  "kc_end": "0.25-0.40",
+  "height_m": 1.0,
+  "stages_days_fao56": [
+   20,
+   25,
+   60,
+   30
+  ],
+  "fao56_region": "spring wheat 35-45 deg L",
+  "stages_days_santacruz": [
+   20,
+   30,
+   50,
+   25
+  ],
+  "total_days_santacruz": 125,
+  "verified": true
+ },
+ "sorghum": {
+  "kc_ini": 0.3,
+  "kc_mid": "1.00-1.10",
+  "kc_end": 0.55,
+  "height_m": "1-2",
+  "stages_days_fao56": [
+   20,
+   35,
+   40,
+   30
+  ],
+  "fao56_region": "USA, Pakis., Med. May/June (130 d)",
+  "stages_days_santacruz": [
+   15,
+   30,
+   35,
+   20
+  ],
+  "total_days_santacruz": 100,
+  "verified": true
+ },
+ "sunflower": {
+  "kc_ini": 0.35,
+  "kc_mid": "1.00-1.15",
+  "kc_end": 0.35,
+  "height_m": 2.0,
+  "stages_days_fao56": [
+   25,
+   35,
+   45,
+   25
+  ],
+  "fao56_region": "Med./Calif. Apr-May",
+  "stages_days_santacruz": [
+   20,
+   30,
+   40,
+   20
+  ],
+  "total_days_santacruz": 110,
+  "verified": true
+ },
+ "rice": {
+  "kc_ini": 1.05,
+  "kc_mid": 1.2,
+  "kc_end": "0.90-0.60",
+  "height_m": 1.0,
+  "stages_days_fao56": [
+   30,
+   30,
+   60,
+   30
+  ],
+  "fao56_region": "Tropics",
+  "stages_days_santacruz": [
+   25,
+   30,
+   50,
+   30
+  ],
+  "total_days_santacruz": 135,
+  "note": "Santa Cruz rice is mostly rainfed/upland; Kc_ini 1.05 assumes flooded paddy - use ~0.5-0.7 for rainfed upland rice (assumption).",
+  "verified": true
+ },
+ "sugarcane": {
+  "kc_ini": 0.4,
+  "kc_mid": 1.25,
+  "kc_end": 0.75,
+  "height_m": 3.0,
+  "stages_days_fao56": [
+   25,
+   70,
+   135,
+   50
+  ],
+  "fao56_region": "ratoon, low latitudes (virgin: 35/60/190/120)",
+  "stages_days_santacruz": [
+   25,
+   70,
+   135,
+   50
+  ],
+  "total_days_santacruz": 280,
+  "note": "ratoon crop; use FAO-56 ratoon row for most fields",
+  "verified": true
+ },
+ "potato": {
+  "kc_ini": 0.5,
+  "kc_mid": 1.15,
+  "kc_end": 0.75,
+  "height_m": 0.6,
+  "stages_days_fao56": [
+   25,
+   30,
+   30,
+   45
+  ],
+  "fao56_region": "Semi-arid Jan/Nov",
+  "verified": true
+ },
+ "quinoa": {
+  "kc_ini": 0.5,
+  "kc_mid": 1.0,
+  "kc_end": 0.7,
+  "source": "Garcia et al. 2003, Agric. Water Manage. (Bolivian Altiplano lysimeters)",
+  "verified": false
+ },
+ "chia": {
+  "kc_by_stage": [
+   0.68,
+   0.81,
+   0.97,
+   1.2,
+   0.83
+  ],
+  "source": "Lysimeter study, Majes irrigation (Arequipa, Peru), May-Oct; thesis-level evidence",
+  "verified": false
+ },
+ "_verified_by": "Table 12 rows for potato/soy/sunflower/wheat/maize/rice/sugarcane and Table 11 rows for soy/sunflower/sorghum/rice/sugarcane/potato parsed from the FAO HTML; maize Table 11 row and sorghum Kc_mid/end came via a page summary."
+}

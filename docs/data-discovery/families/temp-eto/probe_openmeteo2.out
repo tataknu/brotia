@@ -1,0 +1,7 @@
+era5_land first_valid {'temperature_2m_max': '1950-01-01', 'temperature_2m_min': '1950-01-01', 'et0_fao_evapotranspiration': None} last_valid {'temperature_2m_max': '2026-10-31', 'temperature_2m_min': '2026-10-31', 'et0_fao_evapotranspiration': None} nulls_since1995 {'temperature_2m_max': 6, 'temperature_2m_min': 6, 'et0_fao_evapotranspiration': 11633}
+era5 first_valid {'temperature_2m_max': '1950-01-01', 'temperature_2m_min': '1950-01-01', 'et0_fao_evapotranspiration': '1950-01-01'} last_valid {'temperature_2m_max': '2026-10-31', 'temperature_2m_min': '2026-10-31', 'et0_fao_evapotranspiration': '2026-10-31'} nulls_since1995 {'temperature_2m_max': 6, 'temperature_2m_min': 6, 'et0_fao_evapotranspiration': 6}
+Traceback (most recent call last):
+  File "/Users/cristian/Documents/projects/energhack/docs/data-discovery/families/temp-eto/probe_openmeteo2.py", line 6, in <module>
+    d=pd.DataFrame(r.json()["daily"]).set_index("time")
+                   ~~~~~~~~^^^^^^^^^
+KeyError: 'daily'

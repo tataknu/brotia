@@ -1,0 +1,184 @@
+{
+ "points": {
+  "valley_w": {
+   "lon": -71.4,
+   "lat": -34.967,
+   "elev_m": 147
+  },
+  "station": {
+   "lon": -71.233,
+   "lat": -34.967,
+   "elev_m": 214
+  },
+  "valley_e": {
+   "lon": -71.12,
+   "lat": -34.967,
+   "elev_m": 298
+  },
+  "foothill_1": {
+   "lon": -71.0,
+   "lat": -34.967,
+   "elev_m": 469
+  },
+  "foothill_2": {
+   "lon": -70.9,
+   "lat": -34.967,
+   "elev_m": 748
+  },
+  "foothill_3": {
+   "lon": -70.8,
+   "lat": -34.967,
+   "elev_m": 1707
+  }
+ },
+ "frost_nights": [
+  {
+   "date": "2023-06-15",
+   "sat": "MYD",
+   "station_tmin": -1.0,
+   "valley_w": 5.1,
+   "station": 0.2,
+   "valley_e": 2.6,
+   "foothill_1": 1.1,
+   "foothill_2": 1.0,
+   "foothill_3": 6.3
+  },
+  {
+   "date": "2023-06-15",
+   "sat": "MOD",
+   "station_tmin": -1.0,
+   "valley_w": 4.9,
+   "station": 2.3,
+   "valley_e": 3.0,
+   "foothill_1": 2.6,
+   "foothill_2": 3.5,
+   "foothill_3": 6.8
+  },
+  {
+   "date": "2023-06-14",
+   "sat": "MYD",
+   "station_tmin": -3.7,
+   "valley_w": null,
+   "station": -2.4,
+   "valley_e": -1.6,
+   "foothill_1": -1.1,
+   "foothill_2": -0.0,
+   "foothill_3": 5.2
+  },
+  {
+   "date": "2023-06-14",
+   "sat": "MOD",
+   "station_tmin": -3.7,
+   "valley_w": 1.1,
+   "station": -0.5,
+   "valley_e": 0.0,
+   "foothill_1": -0.1,
+   "foothill_2": 2.8,
+   "foothill_3": 5.7
+  },
+  {
+   "date": "2024-08-08",
+   "sat": "MYD",
+   "station_tmin": -1.9,
+   "valley_w": 0.8,
+   "station": -2.1,
+   "valley_e": -1.1,
+   "foothill_1": -1.5,
+   "foothill_2": -0.2,
+   "foothill_3": -0.8
+  },
+  {
+   "date": "2024-08-08",
+   "sat": "MOD",
+   "station_tmin": -1.9,
+   "valley_w": 1.5,
+   "station": -0.5,
+   "valley_e": 0.3,
+   "foothill_1": 0.5,
+   "foothill_2": 0.8,
+   "foothill_3": -2.3
+  },
+  {
+   "date": "2024-07-20",
+   "sat": "MYD",
+   "station_tmin": -1.2,
+   "valley_w": 1.0,
+   "station": -1.7,
+   "valley_e": -0.3,
+   "foothill_1": 0.0,
+   "foothill_2": 1.9,
+   "foothill_3": 5.9
+  },
+  {
+   "date": "2024-07-20",
+   "sat": "MOD",
+   "station_tmin": -1.2,
+   "valley_w": 1.4,
+   "station": -0.0,
+   "valley_e": 1.4,
+   "foothill_1": 1.1,
+   "foothill_2": 4.0,
+   "foothill_3": 4.9
+  },
+  {
+   "date": "2024-07-13",
+   "sat": "MYD",
+   "station_tmin": -2.0,
+   "valley_w": 0.9,
+   "station": -2.0,
+   "valley_e": -0.1,
+   "foothill_1": -2.3,
+   "foothill_2": -0.9,
+   "foothill_3": 4.6
+  },
+  {
+   "date": "2024-07-13",
+   "sat": "MOD",
+   "station_tmin": -2.0,
+   "valley_w": 0.4,
+   "station": -1.3,
+   "valley_e": 0.8,
+   "foothill_1": -1.0,
+   "foothill_2": 1.7,
+   "foothill_3": 3.4
+  },
+  {
+   "date": "2024-07-08",
+   "sat": "MYD",
+   "station_tmin": -4.3,
+   "valley_w": 0.6,
+   "station": -3.2,
+   "valley_e": -1.6,
+   "foothill_1": -2.5,
+   "foothill_2": -1.2,
+   "foothill_3": null
+  },
+  {
+   "date": "2024-07-07",
+   "sat": "MOD",
+   "station_tmin": -3.1,
+   "valley_w": 0.3,
+   "station": -2.2,
+   "valley_e": -1.8,
+   "foothill_1": -1.5,
+   "foothill_2": -0.8,
+   "foothill_3": -0.6
+  },
+  {
+   "date": "2024-07-05",
+   "sat": "MOD",
+   "station_tmin": -0.7,
+   "valley_w": 2.3,
+   "station": -0.2,
+   "valley_e": 0.6,
+   "foothill_1": -0.9,
+   "foothill_2": 0.1,
+   "foothill_3": -1.0
+  }
+ ],
+ "s2_archive_first_item_requinoa": {
+  "id": "S2A_MSIL2A_20150808T144816_R096_T19HCC_20210411T191030",
+  "date": "2015-08-08",
+  "s": 1.78
+ }
+}

@@ -1,0 +1,1203 @@
+{
+ "weekly_url": "https://dga.mop.gob.cl/uploads/sites/13/2026/01/2026-11-02_Boletin-hidrometeorologico-1.pdf",
+ "reservoirs": [
+  {
+   "embalse": "Conchi",
+   "region": "Antofagasta",
+   "cuenca": "Loa",
+   "capacidad_hm3": 22.0,
+   "prom_hist_mensual_hm3": 17.6,
+   "volumen_actual_hm3": 18.7,
+   "pct_capacidad": 85,
+   "vol_mes_anterior": 18.7,
+   "vol_ano_anterior": 19.7,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Lautaro",
+   "region": "Atacama",
+   "cuenca": "Copiapó",
+   "capacidad_hm3": 23.0,
+   "prom_hist_mensual_hm3": 7.8,
+   "volumen_actual_hm3": 15.2,
+   "pct_capacidad": 67,
+   "vol_mes_anterior": 15.2,
+   "vol_ano_anterior": 2.7,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Santa Juana",
+   "region": "Atacama",
+   "cuenca": "Huasco",
+   "capacidad_hm3": 166.0,
+   "prom_hist_mensual_hm3": 123.5,
+   "volumen_actual_hm3": 171.0,
+   "pct_capacidad": 103,
+   "vol_mes_anterior": 171.0,
+   "vol_ano_anterior": 113.5,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "La Laguna",
+   "region": "Coquimbo",
+   "cuenca": "Elqui",
+   "capacidad_hm3": 38.0,
+   "prom_hist_mensual_hm3": 31.8,
+   "volumen_actual_hm3": 16.4,
+   "pct_capacidad": 43,
+   "vol_mes_anterior": 16.0,
+   "vol_ano_anterior": 17.0,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Puclaro",
+   "region": "Coquimbo",
+   "cuenca": "Elqui",
+   "capacidad_hm3": 209.0,
+   "prom_hist_mensual_hm3": 138.3,
+   "volumen_actual_hm3": 113.8,
+   "pct_capacidad": 54,
+   "vol_mes_anterior": 111.9,
+   "vol_ano_anterior": 42.1,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Recoleta (++)",
+   "region": "Coquimbo",
+   "cuenca": "Limarí",
+   "capacidad_hm3": 100.0,
+   "prom_hist_mensual_hm3": 68.1,
+   "volumen_actual_hm3": 100.0,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 100.0,
+   "vol_ano_anterior": 20.5,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "La Paloma (+++)",
+   "region": "Coquimbo",
+   "cuenca": "Limarí",
+   "capacidad_hm3": 750.0,
+   "prom_hist_mensual_hm3": 441.8,
+   "volumen_actual_hm3": 612.8,
+   "pct_capacidad": 82,
+   "vol_mes_anterior": 599.9,
+   "vol_ano_anterior": 81.9,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Cogotí (+)",
+   "region": "Coquimbo",
+   "cuenca": "Limarí",
+   "capacidad_hm3": 137.0,
+   "prom_hist_mensual_hm3": 76.9,
+   "volumen_actual_hm3": 136.7,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 136.7,
+   "vol_ano_anterior": 36.4,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Culimo (&)",
+   "region": "Coquimbo",
+   "cuenca": "Quilimarí",
+   "capacidad_hm3": 9.0,
+   "prom_hist_mensual_hm3": 3.3,
+   "volumen_actual_hm3": 9.2,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 9.2,
+   "vol_ano_anterior": 5.2,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "El Bato",
+   "region": "Coquimbo",
+   "cuenca": "Choapa",
+   "capacidad_hm3": 26.0,
+   "prom_hist_mensual_hm3": 18.6,
+   "volumen_actual_hm3": 25.5,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 25.5,
+   "vol_ano_anterior": 25.0,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Corrales",
+   "region": "Coquimbo",
+   "cuenca": "Choapa",
+   "capacidad_hm3": 50.0,
+   "prom_hist_mensual_hm3": 40.4,
+   "volumen_actual_hm3": 50.0,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 50.0,
+   "vol_ano_anterior": 49.2,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Los Aromos",
+   "region": "Valparaíso",
+   "cuenca": "Aconcagua",
+   "capacidad_hm3": 35.0,
+   "prom_hist_mensual_hm3": 28.5,
+   "volumen_actual_hm3": 35.0,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 35.0,
+   "vol_ano_anterior": 32.7,
+   "uso": "Agua Potable"
+  },
+  {
+   "embalse": "Peñuelas",
+   "region": "Valparaíso",
+   "cuenca": "Peñuelas",
+   "capacidad_hm3": 95.0,
+   "prom_hist_mensual_hm3": 19.2,
+   "volumen_actual_hm3": 16.3,
+   "pct_capacidad": 17,
+   "vol_mes_anterior": 16.3,
+   "vol_ano_anterior": 9.1,
+   "uso": "Agua Potable"
+  },
+  {
+   "embalse": "El Yeso(*)",
+   "region": "Metropolitana",
+   "cuenca": "Maipo",
+   "capacidad_hm3": 220.0,
+   "prom_hist_mensual_hm3": 155.3,
+   "volumen_actual_hm3": 149.4,
+   "pct_capacidad": 68,
+   "vol_mes_anterior": 148.7,
+   "vol_ano_anterior": 187.2,
+   "uso": "Agua Potable"
+  },
+  {
+   "embalse": "Convento Viejo",
+   "region": "O´Higgins",
+   "cuenca": "Rapel",
+   "capacidad_hm3": 237.0,
+   "prom_hist_mensual_hm3": 218.8,
+   "volumen_actual_hm3": 233.3,
+   "pct_capacidad": 98,
+   "vol_mes_anterior": 233.0,
+   "vol_ano_anterior": 199.1,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Rapel (@)",
+   "region": "O´Higgins",
+   "cuenca": "Rapel",
+   "capacidad_hm3": 471.0,
+   "prom_hist_mensual_hm3": 540.2,
+   "volumen_actual_hm3": 435.1,
+   "pct_capacidad": 92,
+   "vol_mes_anterior": 440.6,
+   "vol_ano_anterior": 599.3,
+   "uso": "Generación"
+  },
+  {
+   "embalse": "Colbún",
+   "region": "Maule",
+   "cuenca": "Maule",
+   "capacidad_hm3": 1544.0,
+   "prom_hist_mensual_hm3": 1334.1,
+   "volumen_actual_hm3": 1539.9,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 1537.0,
+   "vol_ano_anterior": 1258.8,
+   "uso": "Generación"
+  },
+  {
+   "embalse": "Lag. Maule (#)",
+   "region": "Maule",
+   "cuenca": "Maule",
+   "capacidad_hm3": 1359.0,
+   "prom_hist_mensual_hm3": 699.1,
+   "volumen_actual_hm3": 731.9,
+   "pct_capacidad": 54,
+   "vol_mes_anterior": 729.8,
+   "vol_ano_anterior": 827.7,
+   "uso": "Generación y Riego"
+  },
+  {
+   "embalse": "Bullileo",
+   "region": "Maule",
+   "cuenca": "Maule",
+   "capacidad_hm3": 60.0,
+   "prom_hist_mensual_hm3": 57.7,
+   "volumen_actual_hm3": 60.0,
+   "pct_capacidad": 100,
+   "vol_mes_anterior": 60.0,
+   "vol_ano_anterior": 59.7,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Digua",
+   "region": "Maule",
+   "cuenca": "Maule",
+   "capacidad_hm3": 225.0,
+   "prom_hist_mensual_hm3": 199.9,
+   "volumen_actual_hm3": 222.8,
+   "pct_capacidad": 99,
+   "vol_mes_anterior": 222.9,
+   "vol_ano_anterior": 178.3,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Tutuvén",
+   "region": "Maule",
+   "cuenca": "Maule",
+   "capacidad_hm3": 22.0,
+   "prom_hist_mensual_hm3": 12.3,
+   "volumen_actual_hm3": 16.8,
+   "pct_capacidad": 77,
+   "vol_mes_anterior": 16.8,
+   "vol_ano_anterior": 7.5,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Coihueco",
+   "region": "Ñuble",
+   "cuenca": "Itata",
+   "capacidad_hm3": 29.3,
+   "prom_hist_mensual_hm3": 28.3,
+   "volumen_actual_hm3": 27.7,
+   "pct_capacidad": 95,
+   "vol_mes_anterior": 27.7,
+   "vol_ano_anterior": 28.5,
+   "uso": "Riego"
+  },
+  {
+   "embalse": "Lago Laja",
+   "region": "Biobío",
+   "cuenca": "Biobío",
+   "capacidad_hm3": 5582.0,
+   "prom_hist_mensual_hm3": 2091.4,
+   "volumen_actual_hm3": 1843.6,
+   "pct_capacidad": 33,
+   "vol_mes_anterior": 1819.5,
+   "vol_ano_anterior": 1616.7,
+   "uso": "Generación y Riego"
+  },
+  {
+   "embalse": "Ralco",
+   "region": "Biobío",
+   "cuenca": "Biobío",
+   "capacidad_hm3": 1174.0,
+   "prom_hist_mensual_hm3": 936.0,
+   "volumen_actual_hm3": 1153.8,
+   "pct_capacidad": 98,
+   "vol_mes_anterior": 1155.1,
+   "vol_ano_anterior": 766.5,
+   "uso": "Generación"
+  },
+  {
+   "embalse": "Pangue",
+   "region": "Biobío",
+   "cuenca": "Biobío",
+   "capacidad_hm3": 83.0,
+   "prom_hist_mensual_hm3": 75.3,
+   "volumen_actual_hm3": 82.1,
+   "pct_capacidad": 99,
+   "vol_mes_anterior": 82.2,
+   "vol_ano_anterior": 78.1,
+   "uso": "Generación"
+  }
+ ],
+ "snow_routes": [
+  {
+   "cuenca": "Elqui",
+   "ruta": "Cerro Olivares",
+   "elev_m": 3566,
+   "val_2026": 109,
+   "prom_1991_2020": 19,
+   "anom_pct": 485,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Limarí",
+   "ruta": "Quebrada Larga",
+   "elev_m": 3550,
+   "val_2026": 158,
+   "prom_1991_2020": 42,
+   "anom_pct": 274,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Limarí",
+   "ruta": "Cerro Vega Negra",
+   "elev_m": 3529,
+   "val_2026": 288,
+   "prom_1991_2020": 94,
+   "anom_pct": 205,
+   "val_2025": "s.d."
+  },
+  {
+   "cuenca": "Choapa",
+   "ruta": "El Soldado",
+   "elev_m": 3293,
+   "val_2026": 106,
+   "prom_1991_2020": 95,
+   "anom_pct": 12,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Petorca",
+   "ruta": "Nacimiento del Sobrante",
+   "elev_m": 3143,
+   "val_2026": 188,
+   "prom_1991_2020": 91,
+   "anom_pct": 107,
+   "val_2025": "s.d."
+  },
+  {
+   "cuenca": "Aconcagua",
+   "ruta": "Portillo",
+   "elev_m": 3032,
+   "val_2026": 220,
+   "prom_1991_2020": 112,
+   "anom_pct": 97,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Maipo",
+   "ruta": "Laguna Negra",
+   "elev_m": 2785,
+   "val_2026": 125,
+   "prom_1991_2020": 127,
+   "anom_pct": -2,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Maule",
+   "ruta": "Lo Aguirre",
+   "elev_m": 1989,
+   "val_2026": 21,
+   "prom_1991_2020": 177,
+   "anom_pct": -88,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Itata",
+   "ruta": "Volcán Chillán",
+   "elev_m": 2078,
+   "val_2026": 63,
+   "prom_1991_2020": 118,
+   "anom_pct": -47,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Biobío",
+   "ruta": "Alto Mallines",
+   "elev_m": 1784,
+   "val_2026": 0,
+   "prom_1991_2020": 119,
+   "anom_pct": -100,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Elqui",
+   "ruta": "Cerro Olivares",
+   "elev_m": 3566,
+   "val_2026": 490,
+   "prom_1991_2020": 66,
+   "anom_pct": 642,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Limarí",
+   "ruta": "Quebrada Larga",
+   "elev_m": 3550,
+   "val_2026": 711,
+   "prom_1991_2020": 154,
+   "anom_pct": 361,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Limarí",
+   "ruta": "Cerro Vega Negra",
+   "elev_m": 3529,
+   "val_2026": 1294,
+   "prom_1991_2020": 381,
+   "anom_pct": 240,
+   "val_2025": "s.d."
+  },
+  {
+   "cuenca": "Choapa",
+   "ruta": "El Soldado",
+   "elev_m": 3293,
+   "val_2026": 477,
+   "prom_1991_2020": 298,
+   "anom_pct": 60,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Petorca",
+   "ruta": "Nacimiento del Sobrante",
+   "elev_m": 3143,
+   "val_2026": 846,
+   "prom_1991_2020": 295,
+   "anom_pct": 187,
+   "val_2025": "s.d."
+  },
+  {
+   "cuenca": "Aconcagua",
+   "ruta": "Portillo",
+   "elev_m": 3032,
+   "val_2026": 990,
+   "prom_1991_2020": 450,
+   "anom_pct": 120,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Maipo",
+   "ruta": "Laguna Negra",
+   "elev_m": 2785,
+   "val_2026": 563,
+   "prom_1991_2020": 477,
+   "anom_pct": 18,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Maule",
+   "ruta": "Lo Aguirre1",
+   "elev_m": 1989,
+   "val_2026": 94,
+   "prom_1991_2020": 720,
+   "anom_pct": -87,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Itata",
+   "ruta": "Volcán Chillán",
+   "elev_m": 2078,
+   "val_2026": 284,
+   "prom_1991_2020": 535,
+   "anom_pct": -47,
+   "val_2025": "0"
+  },
+  {
+   "cuenca": "Biobío",
+   "ruta": "Alto Mallines",
+   "elev_m": 1784,
+   "val_2026": 0,
+   "prom_1991_2020": 524,
+   "anom_pct": -100,
+   "val_2025": "0"
+  }
+ ],
+ "forecast_url": "https://dga.mop.gob.cl/uploads/sites/13/2026/10/Pronostico-DGA-Deshielos-2026-2027.pdf",
+ "snowmelt_forecast": [
+  {
+   "estacion": "Copiapó en Pastillo",
+   "region": "Atacama",
+   "q_sep_mar_m3s": [
+    2.0,
+    3.0,
+    4.0,
+    5.7,
+    7.5,
+    7.2,
+    6.0
+   ],
+   "vol_pron_hm3": 93,
+   "vol_prom_1991_2020_hm3": 47,
+   "anom_pct": 98
+  },
+  {
+   "estacion": "Huasco en el Maitén",
+   "region": "Atacama",
+   "q_sep_mar_m3s": [
+    10.0,
+    15.0,
+    22.0,
+    30.0,
+    33.0,
+    20.0,
+    12.2
+   ],
+   "vol_pron_hm3": 374,
+   "vol_prom_1991_2020_hm3": 178,
+   "anom_pct": 110
+  },
+  {
+   "estacion": "Elqui en Algarrobal",
+   "region": "Coquimbo",
+   "q_sep_mar_m3s": [
+    14.0,
+    25.0,
+    37.0,
+    58.0,
+    40.0,
+    30.0,
+    25.0
+   ],
+   "vol_pron_hm3": 602,
+   "vol_prom_1991_2020_hm3": 260,
+   "anom_pct": 131
+  },
+  {
+   "estacion": "Hurtado en San Agustín",
+   "region": "Coquimbo",
+   "q_sep_mar_m3s": [
+    7.0,
+    8.5,
+    10.5,
+    11.5,
+    10.0,
+    7.0,
+    5.0
+   ],
+   "vol_pron_hm3": 156,
+   "vol_prom_1991_2020_hm3": 71,
+   "anom_pct": 120
+  },
+  {
+   "estacion": "Grande en Las Ramadas",
+   "region": "Coquimbo",
+   "q_sep_mar_m3s": [
+    5.0,
+    10.0,
+    15.0,
+    14.0,
+    6.0,
+    4.0,
+    3.0
+   ],
+   "vol_pron_hm3": 150,
+   "vol_prom_1991_2020_hm3": 110,
+   "anom_pct": 36
+  },
+  {
+   "estacion": "Choapa en Cuncumén",
+   "region": "Coquimbo",
+   "q_sep_mar_m3s": [
+    9.0,
+    16.7,
+    30.5,
+    27.4,
+    13.6,
+    7.9,
+    5.8
+   ],
+   "vol_pron_hm3": 291,
+   "vol_prom_1991_2020_hm3": 262,
+   "anom_pct": 11
+  },
+  {
+   "estacion": "Putaendo Resguardo Patos",
+   "region": "Valparaíso",
+   "q_sep_mar_m3s": [
+    8.5,
+    11.0,
+    17.0,
+    18.0,
+    9.0,
+    6.0,
+    5.0
+   ],
+   "vol_pron_hm3": 196,
+   "vol_prom_1991_2020_hm3": 210,
+   "anom_pct": -7
+  },
+  {
+   "estacion": "Aconcagua en Chacabuquito",
+   "region": "Valparaíso",
+   "q_sep_mar_m3s": [
+    25.6,
+    40.5,
+    71.3,
+    82.4,
+    65.2,
+    39.5,
+    23.4
+   ],
+   "vol_pron_hm3": 914,
+   "vol_prom_1991_2020_hm3": 893,
+   "anom_pct": 2
+  },
+  {
+   "estacion": "Juncal en Juncal",
+   "region": "Valparaíso",
+   "q_sep_mar_m3s": [
+    1.5,
+    3.0,
+    5.5,
+    7.5,
+    8.0,
+    7.0,
+    5.5
+   ],
+   "vol_pron_hm3": 100,
+   "vol_prom_1991_2020_hm3": 151,
+   "anom_pct": -34
+  },
+  {
+   "estacion": "Mapocho en Los Almendros",
+   "region": "Metropolitana",
+   "q_sep_mar_m3s": [
+    8.0,
+    10.7,
+    11.2,
+    10.2,
+    6.8,
+    4.8,
+    3.3
+   ],
+   "vol_pron_hm3": 144,
+   "vol_prom_1991_2020_hm3": 155,
+   "anom_pct": -7
+  },
+  {
+   "estacion": "Maipo en el Manzano",
+   "region": "Metropolitana",
+   "q_sep_mar_m3s": [
+    66.7,
+    90.9,
+    148.9,
+    221.9,
+    213.9,
+    147.9,
+    99.9
+   ],
+   "vol_pron_hm3": 2602,
+   "vol_prom_1991_2020_hm3": 2914,
+   "anom_pct": -11
+  },
+  {
+   "estacion": "Colorado antes junta Maipo",
+   "region": "Metropolitana",
+   "q_sep_mar_m3s": [
+    14.0,
+    20.0,
+    30.0,
+    45.0,
+    50.0,
+    37.0,
+    23.0
+   ],
+   "vol_pron_hm3": 576,
+   "vol_prom_1991_2020_hm3": 816,
+   "anom_pct": -29
+  },
+  {
+   "estacion": "Cachapoal en Puente Termas",
+   "region": "O'Higgins",
+   "q_sep_mar_m3s": [
+    60.0,
+    95.0,
+    140.0,
+    180.0,
+    170.0,
+    120.0,
+    90.0
+   ],
+   "vol_pron_hm3": 2247,
+   "vol_prom_1991_2020_hm3": 2556,
+   "anom_pct": -12
+  },
+  {
+   "estacion": "Claro en Hacienda Las Nieves",
+   "region": "O'Higgins",
+   "q_sep_mar_m3s": [
+    12.0,
+    10.0,
+    12.0,
+    15.0,
+    9.0,
+    6.0,
+    4.5
+   ],
+   "vol_pron_hm3": 180,
+   "vol_prom_1991_2020_hm3": 171,
+   "anom_pct": 5
+  },
+  {
+   "estacion": "Tinguiririca en Bajo Briones",
+   "region": "O'Higgins",
+   "q_sep_mar_m3s": [
+    45.0,
+    50.0,
+    66.0,
+    70.0,
+    65.0,
+    50.0,
+    35.0
+   ],
+   "vol_pron_hm3": 1001,
+   "vol_prom_1991_2020_hm3": 1227,
+   "anom_pct": -18
+  },
+  {
+   "estacion": "Teno después de junta con Claro",
+   "region": "Maule",
+   "q_sep_mar_m3s": [
+    51.9,
+    68.2,
+    97.8,
+    91.4,
+    52.1,
+    32.6,
+    25.7
+   ],
+   "vol_pron_hm3": 1103,
+   "vol_prom_1991_2020_hm3": 1200,
+   "anom_pct": -8
+  },
+  {
+   "estacion": "Claro en Los Queñes",
+   "region": "Maule",
+   "q_sep_mar_m3s": [
+    21.0,
+    22.0,
+    23.0,
+    18.0,
+    12.7,
+    7.0,
+    6.0
+   ],
+   "vol_pron_hm3": 288,
+   "vol_prom_1991_2020_hm3": 324,
+   "anom_pct": -11
+  },
+  {
+   "estacion": "Maule en Armerillo",
+   "region": "Maule",
+   "q_sep_mar_m3s": [
+    290.0,
+    335.0,
+    440.0,
+    355.0,
+    210.0,
+    135.0,
+    100.0
+   ],
+   "vol_pron_hm3": 4901,
+   "vol_prom_1991_2020_hm3": 4598,
+   "anom_pct": 7
+  },
+  {
+   "estacion": "Ñuble en San Fabián",
+   "region": "Ñuble",
+   "q_sep_mar_m3s": [
+    180.0,
+    200.0,
+    205.0,
+    125.1,
+    70.3,
+    45.3,
+    35.9
+   ],
+   "vol_pron_hm3": 2264,
+   "vol_prom_1991_2020_hm3": 1664,
+   "anom_pct": 36
+  }
+ ],
+ "monthly_url": "https://dga.mop.gob.cl/uploads/sites/13/2026/02/Boletin_septiembre_2026_v8_compr.pdf",
+ "monthly_gauge_q_oct_to_sep": {
+  "Río Aconcagua en Chacabuquito": {
+   "Q.2025-2026": [
+    20.3,
+    29.0,
+    25.4,
+    23.0,
+    15.8,
+    11.9,
+    8.9,
+    7.1,
+    6.0,
+    10.2,
+    20.1,
+    25.7
+   ],
+   "Q.2024-2025": [
+    37.4,
+    64.3,
+    51.3,
+    37.7,
+    28.2,
+    16.6,
+    10.7,
+    9.4,
+    9.1,
+    9.2,
+    10.5,
+    12.7
+   ],
+   "Q.Promedio*": [
+    28.2,
+    51.0,
+    64.2,
+    50.9,
+    32.0,
+    20.3,
+    13.5,
+    12.1,
+    13.4,
+    13.2,
+    14.1,
+    18.3
+   ],
+   "Q.Mín.Mes*": [
+    6.1,
+    12.1,
+    14.5,
+    17.3,
+    15.4,
+    12.1,
+    7.3,
+    4.9,
+    4.7,
+    5.5,
+    5.1,
+    5.5
+   ]
+  },
+  "Río Grande en Las Ramadas": {
+   "Q.2025-2026": [
+    2.5,
+    1.7,
+    1.1,
+    0.8,
+    0.7,
+    0.7,
+    0.6,
+    0.9,
+    1.0,
+    1.9,
+    4.0,
+    7.4
+   ],
+   "Q.2024-2025": [
+    4.7,
+    3.7,
+    2.3,
+    1.5,
+    1.0,
+    0.9,
+    0.8,
+    0.9,
+    0.9,
+    1.0,
+    1.7,
+    2.3
+   ],
+   "Q.Promedio*": [
+    5.9,
+    7.5,
+    5.0,
+    2.8,
+    1.9,
+    1.6,
+    1.6,
+    1.8,
+    2.2,
+    2.3,
+    2.6,
+    3.8
+   ],
+   "Q.Mín.Mes*": [
+    0.8,
+    0.6,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.6,
+    0.7,
+    0.7,
+    0.8,
+    0.9,
+    0.9
+   ]
+  },
+  "Río Cachapoal en Puente Termas": {
+   "Q.2025-2026": [
+    75.8,
+    89.2,
+    101.9,
+    158.6,
+    119.4,
+    85.7,
+    61.4,
+    50.3,
+    21.8,
+    56.6,
+    66.6,
+    61.4
+   ],
+   "Q.2024-2025": [
+    101.4,
+    146.0,
+    167.0,
+    138.7,
+    91.4,
+    53.3,
+    25.2,
+    38.2,
+    27.6,
+    22.9,
+    41.1,
+    42.8
+   ],
+   "Q.Promedio*": [
+    61.2,
+    114.1,
+    140.7,
+    129.8,
+    95.8,
+    61.8,
+    42.5,
+    38.4,
+    34.5,
+    38.9,
+    41.1,
+    45.8
+   ],
+   "Q.Mín.Mes*": [
+    22.4,
+    45.4,
+    52.4,
+    65.9,
+    54.6,
+    44.2,
+    25.7,
+    17.8,
+    16.4,
+    16.0,
+    15.7,
+    18.3
+   ]
+  },
+  "Río Tinguiririca bajo Los Briones": {
+   "Q.2025-2026": [
+    35.0,
+    48.0,
+    46.4,
+    38.7,
+    26.8,
+    19.2,
+    14.3,
+    9.5,
+    7.3,
+    35.2,
+    45.5,
+    43.7
+   ],
+   "Q.2024-2025": [
+    64.2,
+    79.7,
+    78.2,
+    63.3,
+    39.9,
+    26.0,
+    20.5,
+    16.3,
+    14.9,
+    13.8,
+    19.8,
+    24.2
+   ],
+   "Q.Promedio*": [
+    45.7,
+    70.8,
+    89.5,
+    87.6,
+    57.5,
+    35.2,
+    24.6,
+    24.2,
+    33.6,
+    30.3,
+    34.3,
+    36.3
+   ],
+   "Q.Mín.Mes*": [
+    13.8,
+    29.3,
+    31.6,
+    37.3,
+    29.5,
+    21.4,
+    10.0,
+    6.3,
+    9.6,
+    10.5,
+    11.0,
+    12.1
+   ]
+  },
+  "Río Maule en Armerillo": {
+   "Q.2025-2026": [
+    232.2,
+    215.6,
+    154.8,
+    108.8,
+    104.3,
+    109.0,
+    107.8,
+    103.4,
+    101.9,
+    446.0,
+    408.2,
+    430.0
+   ],
+   "Q.2024-2025": [
+    29.7,
+    11.8,
+    6.0,
+    3.1,
+    2.2,
+    2.2,
+    3.2,
+    14.5,
+    24.2,
+    19.6,
+    40.2,
+    31.5
+   ],
+   "Q.Promedio*": [
+    310.2,
+    363.7,
+    264.2,
+    159.6,
+    115.3,
+    92.7,
+    90.5,
+    136.3,
+    191.1,
+    209.5,
+    233.0,
+    233.9
+   ],
+   "Q.Mín.Mes*": [
+    174.9,
+    162.7,
+    102.1,
+    72.3,
+    61.4,
+    53.2,
+    54.1,
+    55.3,
+    79.0,
+    109.3,
+    112.0,
+    145.0
+   ]
+  },
+  "Río Ñuble en San Fabián": {
+   "Q.2025-2026": [
+    109.1,
+    68.1,
+    29.9,
+    16.3,
+    14.9,
+    29.8,
+    20.2,
+    28.9,
+    27.6,
+    241.3,
+    250.2,
+    201.4
+   ],
+   "Q.2024-2025": [
+    203.5,
+    148.9,
+    74.4,
+    34.6,
+    19.2,
+    14.9,
+    15.7,
+    37.4,
+    52.2,
+    51.1,
+    119.7,
+    101.6
+   ],
+   "Q.Promedio*": [
+    142.2,
+    130.0,
+    84.8,
+    43.9,
+    27.8,
+    21.5,
+    27.8,
+    83.2,
+    146.8,
+    138.1,
+    130.3,
+    135.1
+   ],
+   "Q.Mín.Mes*": [
+    47.0,
+    27.7,
+    26.9,
+    18.0,
+    14.1,
+    10.2,
+    8.9,
+    12.5,
+    26.0,
+    51.5,
+    40.6,
+    46.1
+   ]
+  },
+  "Río Biobío en Rucalhue": {
+   "Q.2025-2026": [
+    135.6,
+    81.3,
+    55.2,
+    37.7,
+    35.3,
+    67.2,
+    55.8,
+    113.3,
+    106.3,
+    230.6,
+    279.8,
+    219.7
+   ],
+   "Q.2024-2025": [
+    668.5,
+    535.8,
+    292.9,
+    151.3,
+    144.1,
+    135.8,
+    156.8,
+    248.2,
+    222.5,
+    239.3,
+    484.9,
+    398.9
+   ],
+   "Q.Promedio*": [
+    568.4,
+    478.8,
+    325.0,
+    186.8,
+    139.8,
+    124.6,
+    148.2,
+    299.0,
+    587.1,
+    643.6,
+    559.4,
+    560.4
+   ],
+   "Q.Mín.Mes*": [
+    208.1,
+    130.8,
+    87.1,
+    84.0,
+    68.6,
+    70.8,
+    61.9,
+    87.3,
+    92.1,
+    192.5,
+    214.0,
+    211.5
+   ]
+  }
+ }
+}

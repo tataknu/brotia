@@ -1,0 +1,110 @@
+{
+  "farmId": "cl-ovalle-table-grape",
+  "bbox": [
+    -71.243629,
+    -30.584291,
+    -71.239841,
+    -30.581549
+  ],
+  "crs": "EPSG:4326",
+  "nativeResolutionM": 10,
+  "srResolutionM": 2.5,
+  "frames": [
+    {
+      "date": "2026-10-24",
+      "kind": "observed",
+      "daysToClear": 0,
+      "clearFraction": 0.97,
+      "ndviMean": 0.41,
+      "ndviP10": 0.33,
+      "ndviP90": 0.49,
+      "urls": {
+        "ndvi": "/files/imagery/cl-ovalle-table-grape/2026-10-24_ndvi.png",
+        "rgb": "/files/imagery/cl-ovalle-table-grape/2026-10-24_rgb.png",
+        "ndviSr": "/files/imagery/cl-ovalle-table-grape/2026-10-24_ndvi_sr.png",
+        "rgbSr": "/files/imagery/cl-ovalle-table-grape/2026-10-24_rgb_sr.png"
+      },
+      "srKind": "ai",
+      "srModel": "example-s2-sr-x4"
+    },
+    {
+      "date": "2026-10-29",
+      "kind": "interpolated",
+      "daysToClear": 5,
+      "clearFraction": null,
+      "ndviMean": 0.43,
+      "ndviP10": 0.35,
+      "ndviP90": 0.51,
+      "urls": {
+        "ndvi": "/files/imagery/cl-ovalle-table-grape/2026-10-29_ndvi.png",
+        "rgb": null,
+        "ndviSr": "/files/imagery/cl-ovalle-table-grape/2026-10-29_ndvi_sr.png",
+        "rgbSr": null
+      },
+      "srKind": "ai",
+      "srModel": "example-s2-sr-x4"
+    },
+    {
+      "date": "2026-11-03",
+      "kind": "observed",
+      "daysToClear": 0,
+      "clearFraction": 0.92,
+      "ndviMean": 0.44,
+      "ndviP10": 0.36,
+      "ndviP90": 0.52,
+      "urls": {
+        "ndvi": "/files/imagery/cl-ovalle-table-grape/2026-11-03_ndvi.png",
+        "rgb": "/files/imagery/cl-ovalle-table-grape/2026-11-03_rgb.png",
+        "ndviSr": null,
+        "rgbSr": null
+      },
+      "srKind": null,
+      "srModel": null
+    }
+  ],
+  "legend": {
+    "min": 0,
+    "max": 1,
+    "colormap": "rdylgn",
+    "stops": [
+      [
+        0.0,
+        "#a50026"
+      ],
+      [
+        0.2,
+        "#f46d43"
+      ],
+      [
+        0.4,
+        "#fee08b"
+      ],
+      [
+        0.6,
+        "#a6d96a"
+      ],
+      [
+        0.8,
+        "#1a9850"
+      ],
+      [
+        1.0,
+        "#006837"
+      ]
+    ]
+  },
+  "coveredWarning": "Table grape orchards are often under overhead plastic or mesh. If this one is covered, NDVI reads the cover, not the vines.",
+  "trustNote": "All numbers come from native 10 m Sentinel-2 pixels. AI-enhanced images are for display only.",
+  "provenance": {
+    "source": "s2_l2a_pc",
+    "sourceLabel": "Sentinel-2 L2A (Planetary Computer)",
+    "observedAt": "2026-11-03",
+    "fetchedAt": "2026-11-07T15:40:00Z",
+    "resolution": "10 m",
+    "licenceTier": "commercial_ok",
+    "dataTier": "enhanced",
+    "stale": false,
+    "estimated": false,
+    "note": "Fixture truncated to 3 frames; real timelines cover 13 months on a 5-day grid plus every observed date"
+  }
+}

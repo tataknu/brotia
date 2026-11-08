@@ -1,0 +1,14 @@
+Estancia Los Tajibos
+  1981-1990  ERA5    915  CHIRPS    838  ratio 1.09
+  1991-2000  ERA5    914  CHIRPS    518  ratio 1.76
+  2001-2010  ERA5    917  CHIRPS    749  ratio 1.23
+  2011-2020  ERA5    880  CHIRPS    597  ratio 1.47
+  2021-2024  ERA5    862  CHIRPS    779  ratio 1.11
+  corr of yearly totals: 0.18
+Arrocera Mineros
+  1981-1990  ERA5   1099  CHIRPS   1051  ratio 1.05
+  1991-2000  ERA5   1181  CHIRPS    633  ratio 1.87
+  2001-2010  ERA5   1153  CHIRPS    928  ratio 1.24
+  2011-2020  ERA5   1072  CHIRPS    710  ratio 1.51
+  2021-2024  ERA5    996  CHIRPS    820  ratio 1.21
+  corr of yearly totals: 0.08

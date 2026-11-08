@@ -1,0 +1,122 @@
+{
+ "Estancia Los Tajibos": {
+  "center_2020_2024": [
+   8,
+   4,
+   8,
+   8,
+   8
+  ],
+  "crop_frac_3km_2024": 0.48
+ },
+ "Agropecuaria Brecha 8": {
+  "center_2020_2024": [
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "crop_frac_3km_2024": 0.36
+ },
+ "Colonia Cuatro Canadas Lote 7": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 1.0
+ },
+ "Hacienda El Cusi": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 1.0
+ },
+ "Agricola Pailon Norte": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 1.0
+ },
+ "Granja Las Londras": {
+  "center_2020_2024": [
+   10,
+   10,
+   10,
+   10,
+   10
+  ],
+  "crop_frac_3km_2024": 0.32
+ },
+ "Finca Okinawa Dos": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 1.0
+ },
+ "Parcela Okinawa Uno": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 0.8
+ },
+ "Arrocera Mineros": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 0.48
+ },
+ "Canaveral San Antonio": {
+  "center_2020_2024": [
+   10,
+   10,
+   10,
+   9,
+   9
+  ],
+  "crop_frac_3km_2024": 0.16
+ },
+ "Agricola Warnes Sur": {
+  "center_2020_2024": [
+   9,
+   9,
+   9,
+   9,
+   9
+  ],
+  "crop_frac_3km_2024": 0.0
+ },
+ "Estancia Mineros Norte": {
+  "center_2020_2024": [
+   12,
+   12,
+   12,
+   12,
+   12
+  ],
+  "crop_frac_3km_2024": 0.96
+ }
+}

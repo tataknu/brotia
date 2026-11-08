@@ -1,0 +1,24 @@
+# environments and dependencies
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# secrets
+.env
+.env.*
+
+# local data and build output (rebuilt by the service / vite)
+*.duckdb
+*.duckdb.wal
+service/data/files/
+app/dist/
+.cache/
+.review/
+
+# local tooling
+.claude/
+.agents/
+skills-lock.json
+.DS_Store

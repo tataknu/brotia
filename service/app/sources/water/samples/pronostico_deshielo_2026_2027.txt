@@ -1,0 +1,1282 @@
+PRONÓSTICO DE CAUDALES DE DESHIELO
+
+ Período septiembre 2026 – marzo 2027
+
+
+
+
+              REALIZADO POR:
+
+          DIVISIÓN DE HIDROLOGÍA
+
+
+
+                  SDT N° 559
+
+
+
+          Santiago, septiembre 2026
+
+
+                SSD: 20507725
+INDICE
+
+PRESENTACIÓN ............................................................................................. 3
+
+BASES DEL PRONÓSTICO ............................................................................... 3
+
+SITUACIÓN GENERAL ..................................................................................... 5
+
+  PRECIPITACIONES ...................................................................................... 7
+
+  EMBALSES ................................................................................................13
+
+PRONÓSTICO ...............................................................................................14
+
+CONCLUSIONES ...........................................................................................26
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                    2
+PRESENTACIÓN
+
+       La Dirección General de Aguas (DGA), como organismo de la
+Administración del Estado encargado de promover la gestión y administración
+del recurso hídrico en un marco de sustentabilidad, interés público y
+asignación eficiente, elabora anualmente un pronóstico de volúmenes de
+deshielo y caudales medios mensuales para la temporada de riego del período
+primavera-verano. Ello, con el propósito de dar a conocer la situación
+hidrológica general del país, específicamente en lo relativo a las zonas de
+riego de las principales cuencas del norte chico, zona central y sur (desde la
+cuenca del río Copiapó hasta la cuenca del río Itata).
+
+       Contar con la información correcta permite mejorar la gestión de los
+recursos hídricos del país. Por ello este Servicio tiene como objetivo convertir
+el informe en una herramienta preventiva y de ayuda para enfrentar del
+mejor modo la situación hídrica del país en los meses venideros, ofreciendo
+un escenario general de la disponibilidad hídrica. Cabe hacer presente que
+este pronóstico puede presentar desajustes en algunos territorios, dadas las
+diversas variables físicas que inciden en la producción hídrica de cada cuenca,
+razón por la cual hay que considerarlo con la suficiente cautela y criterio
+técnico a la hora de la toma de decisiones.
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                  3
+BASES DEL PRONÓSTICO
+
+        El presente pronóstico es realizado con datos de la Red Hidrométrica
+Nacional (RHN) de la DGA, para las estaciones fluviométricas ubicadas en las
+zonas altas de las cuencas, y se ha elaborado de acuerdo con los siguientes
+criterios y supuestos.
+
+      La información de lluvias y caudales usada para la elaboración del
+       pronóstico considera como fecha límite el 31 de agosto del año en
+       curso. Para nieves, la información usada es la tomada a finales de
+       agosto o comienzos de septiembre, período en el cual el manto nival
+       alcanza la mayor madurez de temporada.
+      La información sobre nieves proviene de las estaciones nivométricas
+       de la DGA, las cuales cuentan con los datos estadísticos necesarios
+       para ser incluidas en los modelos predictivos. Además, la estadística
+       publicada en este informe y utilizada en los modelos es evaluada y
+       definida con base en las mediciones de campo realizadas por el
+       personal de la DGA, utilizando el método Monte Rosa.
+      El período de pronóstico abarca desde septiembre hasta marzo, debido
+       a la relevancia de estos meses para la agricultura de riego. Este
+       pronóstico está dirigido a los usuarios que dependen de esta
+       información para sus actividades y la gestión de los recursos hídricos.
+      Metodológicamente, la distribución mensual de los caudales medios
+       puede presentar variaciones en el pronóstico en función de ciertos
+       eventos climáticos. Entre ellos destacan temperaturas superiores a lo
+       normal y episodios de precipitación asociados a sistemas como bajas
+       segregadas durante la temporada de primavera-verano. Estos factores
+       pueden incidir directamente en los procesos de fusión del manto nival.
+       En consecuencia, dichas condiciones repercuten en el régimen mensual
+       de caudales pasantes, generando aumentos o disminuciones en
+       comparación con lo esperado.
+      Los pronósticos se realizan exclusivamente para las cuencas indicadas
+       en el presente informe, por lo que los resultados no son aplicables a
+       cuencas más pequeñas, intermedias o de secano, que presenten
+       condiciones hidrológicas distintas. En esos casos, será necesario
+       realizar análisis específicos, al igual que para los caudales diarios.
+      Se consideran como variables independientes los datos registrados
+       hasta el mes de agosto, y para el período de primavera-verano se han
+       estimado precipitaciones promedio. Por lo tanto, los caudales
+       pronosticados pueden diferir de los reales si las precipitaciones
+       resultan significativamente distintas a las proyectadas.
+      La magnitud de los errores está relacionada con la calidad y cantidad
+       de antecedentes disponibles, así como con las características
+       hidrológicas de cada cuenca. En términos generales, el margen de
+       error de este pronóstico es del ±20%, considerando la estadística
+       histórica.
+      Los volúmenes pronosticados corresponden a valores del régimen
+       natural de los ríos. Sin embargo, estos pueden verse alterados debido
+       al uso de los recursos hídricos en las zonas aguas arriba de las
+       respectivas estaciones fluviométricas de control.
+
+Pronóstico de caudales de deshielo 2026-2027                                4
+SITUACIÓN GENERAL
+
+        En términos generales, el año 2026 ha presentado una marcada
+variabilidad pluviométrica. Durante el primer semestre predominó un
+escenario prácticamente seco, con precipitaciones muy por debajo de los
+valores normales. Sin embargo, a partir de julio las condiciones cambiaron
+significativamente debido a la ocurrencia de una serie de sistemas frontales,
+entre los que destacó el “megaevento” de precipitaciones registrado en la
+zona centro-sur del país a mediados de julio. Este fenómeno provocó una
+modificación sustancial de las condiciones hidrológicas, transformando una
+situación de escasez a una condición excepcionalmente húmeda en gran parte
+de la zona centro-norte de Chile. En sectores de la zona central se
+mantuvieron déficits o valores cercanos a lo normal, mientras que algunas
+estaciones de la zona centro-sur y sur del área analizada alcanzaron
+condiciones de superávit (Cuadro 1). Esta mejoría en el escenario hídrico
+responde a la combinación de diversos factores climáticos de gran escala,
+tales como el establecimiento del fenómeno de El Niño (ENSO), caracterizado
+por anomalías positivas de temperatura superficial del mar cercanas a 2 °C
+en la región Niño 3.4, condición que favorece la convección atmosférica y
+aumenta la disponibilidad de vapor de agua. Asimismo, una fase negativa del
+Índice de Oscilación Antártica (AAO/SAM) contribuyó al fortalecimiento de
+altas presiones en latitudes australes, favoreciendo el desplazamiento de
+sistemas frontales hacia la zona central de Chile. Finalmente, la presencia de
+la Oscilación Madden-Julian (MJO) en fase 8 promovió condiciones favorables
+para la convección y el desarrollo de precipitaciones sobre la zona central del
+país123. En conjunto, estos factores generaron un contexto atmosférico
+propicio para el incremento de las precipitaciones durante la segunda mitad
+del año, contribuyendo significativamente a la mitigación de los déficits
+pluviométricos observados previamente.
+
+       En cuanto a la acumulación nival, particularmente al equivalente en
+agua de la nieve (EAN, Cuadro 2), se observan, en general, valores superiores
+al promedio histórico y a los registrados durante la temporada anterior. Se
+registraron eventos de acumulación durante julio y agosto, siendo los de
+mayor importancia los observados a mediados de julio. Entre las regiones de
+Coquimbo y Valparaíso, la acumulación nival presenta superávit significativo,
+destacando las rutas de nieve Cerro Olivares y Quebrada Larga, donde el
+superávit es del 573% y 328%, respectivamente. Desde la Región
+Metropolitana hacia el sur, el EAN se encuentra por sobre el promedio
+histórico, con superávits que varían entre 5% y 40% (Cuadro 2).
+
+      En relación con los embalses (Cuadro 3), se ha observado un
+importante aumento de las reservas respecto al año anterior, especialmente
+para el tramo comprendido entre las regiones de Atacama y Coquimbo. En la
+Región de Atacama, el embalse Santa Juana se encuentra cercano al 80% de
+su capacidad. En la Región de Coquimbo, los embalses Recoleta, Cogotí,
+
+1
+    https://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/mjo.shtml
+    https://iri.columbia.edu/our-expertise/climate/forecasts/enso/current/
+    https://www.cpc.ncep.noaa.gov/products/precip/CWlink/daily_ao_index/aao/aao.gefs.sprd2.png
+
+Pronóstico de caudales de deshielo 2026-2027                                                     5
+Culimo, y Corrales se encuentran al 100% de su capacidad, adicionalmente
+El Bato se encuentra al 99%. Asimismo, las reservas La Laguna, Puclaro y La
+Paloma, alcanzan un 26%, 33% y 45% de su capacidad total
+respectivamente. El período invernal registrado permite estimar que,
+producto de los próximos deshielos, la disponibilidad de reservas debiese
+aumentar, entregando una mayor disposición de recursos durante la
+temporada de riego. Esta situación brindaría en estas regiones una
+planificación del uso de dichas reservas a un corto y mediano plazo. En la
+Región de Valparaíso, la condición actual presenta un escenario bastante más
+favorable que la temporada previa, ya que el embalse Los Aromos está casi
+a plena capacidad, con 34 mill-m³, mientras que Peñuelas alcanza un 17%
+con 17 mill-m³. Entre las regiones Metropolitana y de O’Higgins, la situación
+de los embalses en términos generales es prácticamente similar a la
+temporada anterior. El embalse El Yeso se encuentra al 66% de su capacidad,
+la cual debiera aumentar con los deshielos. En este tramo, los embalses
+Convento Viejo y Rapel presentan un 91% y 80% de su capacidad
+respectivamente. Entre las regiones del Maule y del Biobío, la gran parte de
+los embalses disponen mayores volúmenes que la temporada previa,
+destacando los embalses como Colbún, Bullileo, Ralco y Pangue donde la
+capacidad actual supera el 95%. Sin embargo, en las grandes reservas de
+esta zona como son Laguna del Maule y Lago Laja, los volúmenes aún son
+menores a la temporada anterior.
+
+       Respecto a los caudales medios mensuales la condición para el tramo
+del pronóstico, en términos generales, muestra un escenario favorable para
+la temporada de riego. En la Región de Atacama producto de las lluvias los
+caudales presentan un importante superávit, especialmente en el río Huasco
+donde el superávit es mayor al 200%. En la Región de Coquimbo, producto
+del período invernal, las cuencas de los Elqui y Limarí presentan un superávit
+por sobre el 30%. Entre la Región de Valparaíso y Región Metropolitana, como
+única excepción, los registros actuales presentan un déficit del 20%. Entre
+las regiones de O’Higgins y Ñuble, los caudales se sitúan por sobre la media,
+con un superávit promedio superior al 50 %. Destacan las cuencas de los ríos
+Cachapoal, Teno, Maule y Ñuble, cuyos superávits alcanzan 62%, 63%, 75%
+y 92%, respectivamente.
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                6
+PRECIPITACIONES
+
+       En la Figura 1 se presenta la distribución espacial de las precipitaciones
+expresadas en porcentaje con respecto al promedio estadístico. Las figuras 2
+y 3 muestran las precipitaciones, tanto pluviales como nivales, registradas al
+31 de agosto del presente año, en estaciones representativas de las zonas
+norte, centro y sur del área de pronóstico.
+
+   Figura 1. Distribución y situación de precipitaciones al 31 de agosto.
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                   7
+      Los antecedentes hidrológicos en cuanto a precipitaciones líquidas que
+caracterizan la zona de pronóstico se presentan hasta el mes de agosto y se
+muestran en el Cuadro 1 y Figura 2.
+
+               Cuadro 1. Precipitaciones acumuladas al 31 de agosto.
+
+                                          Promedio       Déficit/Superávit
+                     2025       2026
+    Estación                             1991-2020
+                                                       2025          2026
+                      mm        mm          mm          %              %
+Copiapó               4,0       34,1        18,2        -78            87
+Vallenar              52,4     199,4        38,2        44            422
+La Serena            122,2      177,0       83,0        47            113
+Ovalle               103,0      252,9       95,6         8            165
+Salamanca            169,2      430,5      186,0        -9            131
+San Felipe           173,0      306,9      171,1         1             79
+Lago Peñuelas        258,8      343,2      528,1        -51           -35
+Santiago             189,0      216,0      247,0        -23           -13
+Rancagua             227,2      305,7      317,9        -29            -4
+San Fernando         355,7      459,9      535,9        -34           -14
+Curicó               373,2      475,7      500,1        -25            -5
+Talca                269,1      478,6      480,1        -44            0
+Linares              401,5      663,0      660,4        -39            0
+Parral               598,8     1004,5      719,6        -17            40
+Chillán              543,4      867,8      804,2        -32            8
+Angol                723,3     1091,9      886,9        -18            23
+Temuco               735,3     1045,9      888,6        -17            18
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                 8
+ Figura 2. Distribuciones estacionales de precipitaciones al 31 de agosto.
+                                               200
+
+
+
+
+           Precipitación acumulada (mm)
+                                               150
+
+
+                                               100
+
+
+                                               50
+
+
+                                                0
+                                                     Abr             May          Jun            Jul         Ago
+
+                                                           Vallenar- 2026   Vallenar- Promedio 1991-2020
+
+
+                                               200
+
+
+
+
+                Precipitación acumulada (mm)
+                                               150
+
+
+                                               100
+
+
+                                                50
+
+
+                                                 0
+                                                     Abr              May         Jun            Jul         Ago
+
+                                                       La Serena- 2026      La Serena- Promedio 1991-2020
+
+
+                                               300
+
+
+
+
+           Precipitación acumulada (mm)
+                                               250
+
+                                               200
+
+                                               150
+
+                                               100
+
+                                               50
+
+                                                0
+                                                     Abr             May          Jun            Jul         Ago
+
+                                                      San Felipe- 2026      San Felipe- Promedio 1991-2020
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                       9
+                                          250
+
+
+
+
+           Precipitación acumulada (mm)
+                                          200
+
+                                          150
+
+                                          100
+
+                                          50
+
+                                           0
+                                                Abr             May          Jun            Jul       Ago
+
+                                                      Santiago- 2026   Santiago- Promedio 1991-2020
+
+
+                                          250
+
+
+
+
+           Precipitación acumulada (mm)
+                                          200
+
+                                          150
+
+                                          100
+
+                                           50
+
+                                           0
+                                                Abr             May          Jun            Jul       Ago
+
+                                                  Rancagua- 2026       Rancagua- Promedio 1991-2020
+
+
+
+                                          250
+
+
+
+
+           Precipitación acumulada (mm)
+                                          200
+
+                                          150
+
+                                          100
+
+                                           50
+
+                                           0
+                                                Abr             May          Jun            Jul       Ago
+
+                                                         Talca- 2026   Talca- Promedio 1991-2020
+
+
+                                          450
+
+
+
+
+           Precipitación acumulada (mm)
+                                          400
+                                          350
+                                          300
+                                          250
+                                          200
+                                          150
+                                          100
+                                           50
+                                           0
+                                                Abr             May          Jun            Jul       Ago
+
+                                                       Chillán- 2026   Chillán- Promedio 1991-2020
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                10
+      Por otra parte, la información respecto a precipitaciones sólidas se
+presenta en el Cuadro 2 y Figura 3.
+
+                            Cuadro 2. Acumulación máxima nival de EAN al 31 de agosto.
+
+
+                                                                                   Promedio              Déficit/Superávit
+                                                       2025            2026
+    Cuenca                       Ruta de nieve                                    1991-2020
+
+                                                                                                       2025              2026
+                                                        mm             mm             mm                 %                %
+Elqui                            Cerro Olivares           0            444             66               -100             573
+Limarí                          Quebrada Larga           122           660             154              -21              328
+Limarí                          Cerro Vega Negra         272           834             381              -29              119
+Choapa                             El Soldado            60            693             298              -80              133
+Aconcagua                           Portillo             325           728             450              -28               62
+Maipo                            Laguna Negra            225           670             477              -53               40
+Maule                              Lo Aguirre            510           756             720              -29               5
+Itata                            Volcán Chillán          340           650             535              -36               21
+Biobío                            Alto Mallines          360           657             524              -31               25
+
+
+
+
+                           Figura 3. Acumulación máxima del EAN (mm) al 31 de agosto.
+                        1,000
+
+
+
+
+  EL Soldado-EAN (mm)
+                         800
+
+                         600
+
+                         400
+
+                         200
+
+                           0
+                                     May                         Jun                         Jul                   Ago
+
+                                                  El Soldado- 2026            El Soldado- Promedio 1991-2020
+
+
+                        1000
+
+                         800
+
+
+
+
+  Portillo-EAN (mm)
+                         600
+
+                         400
+
+                         200
+
+                           0
+                                    May                          Jun                         Jul                   Ago
+
+                                                     Portillo- 2026           Portillo- Promedio 1991-2020
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                                    11
+                          1000
+
+
+
+
+  Laguna Negra-EAN (mm)
+                           800
+
+                           600
+
+                           400
+
+                           200
+
+                             0
+                                 May                    Jun                Jul                   Ago
+
+                                       Laguna Negra- 2026     Laguna Negra- Promedio 1991-2020
+
+
+                          1000
+
+
+
+
+  Lo Aguirre-EAN (mm)
+                           800
+
+                           600
+
+                           400
+
+                           200
+
+                             0
+                                 May                    Jun                Jul                   Ago
+
+                                          Lo Aguirre- 2026    Lo Aguirre- Promedio 1991-2020
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                           12
+            EMBALSES
+
+                 En el Cuadro 3 y Figura 4 se presenta la situación de los principales
+            embalses, en cuanto al volumen del agua almacenada al 31 de agosto.
+
+                               Cuadro 3. Estado de embalses al 31 de agosto.
+
+                                                           Promedio Volumen
+                                               Capacidad     1991-  actual vs   2025     2026
+    Embalse          Región         Cuenca                   2020   Capacidad                       Uso principal
+
+                                                mill-m3    mill-m3     %        mill-m3 mill-m3
+Conchi             Antofagasta        Loa         22          19       90         21      20            Riego
+Lautaro              Atacama        Copiapó       26          12       40         5       10            Riego
+Santa Juana          Atacama        Huasco       166         127       79        117      132           Riego
+La Laguna           Coquimbo         Elqui        38          31       26         18      10            Riego
+Puclaro             Coquimbo         Elqui       209         141       33         45      69            Riego
+Recoleta            Coquimbo        Limarí       100          69       100        22      100           Riego
+La Paloma           Coquimbo        Limarí        750        431       45         74      334           Riego
+Cogotí              Coquimbo        Limarí        137         74       100        38      137           Riego
+Culimo              Coquimbo       Quilimarí       9          3        100        5        9            Riego
+El Bato             Coquimbo        Choapa        26          20       99         25      25            Riego
+Corrales            Coquimbo        Choapa        50          35       100        44      50            Riego
+Los Aromos          Valparaíso     Aconcagua      35          28       96         36      34        Agua Potable
+Lago Peñuelas       Valparaíso     Peñuelas       95          21       17         11      17        Agua Potable
+El Yeso            Metropolitana     Maipo       220         164       66        186      144       Agua Potable
+Convento Viejo      O'Higgins        Rapel       237         191       91        207      215           Riego
+Rapel               O'Higgins        Rapel       695         525       80        533      557        Generación
+Colbún                Maule          Maule       1544        1038      98        834     1517        Generación
+Laguna del Maule      Maule          Maule       1359        654       51        765      687     Generación y Riego
+Bullileo              Maule          Maule        60          54       99         40      59            Riego
+Digua                 Maule          Maule       225         200       85        190      192           Riego
+Tutuvén               Maule          Maule        22          12       60         7       13            Riego
+Coihueco              Ñuble          Itata        29          25       77         27      22            Riego
+Lago Laja             Biobío        Biobío       5582        1674      23        1457    1293     Generación y Riego
+Ralco                 Biobío        Biobío       1174        700       98        467     1154        Generación
+Pangue                Biobío        Biobío        83          76       100        71      83         Generación
+
+
+
+
+            Pronóstico de caudales de deshielo 2026-2027                                                13
+      En la Figura 4 se presentan los volúmenes registrados al 31 de agosto
+de 2026. Se observa que los embalses de la Región de Coquimbo presentan
+un aumento importante respecto de los volúmenes registrados al 31 de
+agosto de 2025
+
+          Figura 4. Estado de embalses al 31 de agosto (mill-m³)
+
+
+
+
+PRONÓSTICO
+
+       El pronóstico ha sido elaborado para 19 estaciones fluviométricas
+comprendidas entre los ríos Copiapó y Ñuble. En el Cuadro 4 se presentan los
+volúmenes pronosticados para la próxima temporada de deshielo y una
+distribución mensual, de carácter referencial, para los meses septiembre a
+marzo, resaltando los caudales máximos. Asimismo, se muestra la
+comparación entre los volúmenes pronosticados respecto a los promedios
+históricos, y también a los observados durante la temporada pasada. En la
+Figura 5 se muestran los caudales mensuales pronosticados y se comparan
+con los caudales correspondientes a diversas probabilidades de excedencia
+(20%, 50% y 85%). Asimismo, se presenta la incertidumbre asociada a los
+valores pronosticados mediante una banda de ±20%, delimitada por sus
+respectivos límites inferior y superior.
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                             14
+                                        Cuadro 4. Caudales pronosticados para la temporada 2026–20272.
+                                                                                                                                                    Déficit/Superávit
+                                                                                                                                     Vol. Prom.
+                                                        Sep       Oct      Nov       Dic       Ene       Feb      Mar       Vol.                     respecto a Vol.
+             Estación                    Región                                                                                      1991-2020
+                                                                                                                                                    Prom. 1991-2020
+
+                                                                                    m3/s                                  mill-m3         mill-m3          %
+Copiapó en Pastillo                   Atacama           2,0       3,0       4,0      5,7       7,5       7,2       6,0       93             47             98
+Huasco en el Maitén                   Atacama          10,0      15,0      22,0      30,0      33,0     20,0      12,2      374            178            110
+Elqui en Algarrobal                   Coquimbo         14,0      25,0      37,0      58,0      40,0     30,0      25,0      602            260            131
+Hurtado en San Agustín                Coquimbo          7,0       8,5      10,5      11,5      10,0      7,0       5,0      156             71            120
+Grande en Las Ramadas                 Coquimbo          5,0      10,0      15,0      14,0      6,0       4,0       3,0      150            110             36
+Choapa en Cuncumén                    Coquimbo          9,0      16,7      30,5      27,4      13,6      7,9       5,8      291            262             11
+Putaendo Resguardo Patos              Valparaíso        8,5      11,0      17,0      18,0      9,0       6,0       5,0      196            210             -7
+Aconcagua en Chacabuquito             Valparaíso       25,6      40,5      71,3      82,4      65,2     39,5      23,4      914            893             2
+Juncal en Juncal                      Valparaíso        1,5       3,0       5,5      7,5       8,0       7,0       5,5      100            151            -34
+Mapocho en Los Almendros              Metropolitana     8,0      10,7      11,2      10,2      6,8       4,8       3,3      144            155             -7
+Maipo en el Manzano                   Metropolitana    66,7      90,9     148,9     221,9     213,9     147,9     99,9      2602           2914           -11
+Colorado antes junta Maipo            Metropolitana    14,0      20,0      30,0      45,0      50,0     37,0      23,0      576            816            -29
+Cachapoal en Puente Termas            O'Higgins        60,0      95,0     140,0     180,0     170,0     120,0     90,0      2247           2556           -12
+Claro en Hacienda Las Nieves          O'Higgins        12,0      10,0      12,0      15,0      9,0       6,0       4,5      180            171             5
+Tinguiririca en Bajo Briones          O'Higgins        45,0      50,0      66,0      70,0      65,0     50,0      35,0      1001           1227           -18
+Teno después de junta con Claro       Maule            51,9      68,2      97,8      91,4      52,1     32,6      25,7      1103           1200            -8
+Claro en Los Queñes                   Maule            21,0      22,0      23,0      18,0      12,7      7,0       6,0      288            324            -11
+Maule en Armerillo                    Maule            290,0     335,0    440,0     355,0     210,0     135,0     100,0     4901           4598            7
+Ñuble en San Fabián                   Ñuble            180,0     200,0    205,0     125,1      70,3     45,3      35,9      2264           1664            36
+
+
+
+
+                               2
+                                   Los caudales mensuales destacados con color Cyan corresponden a los máximos del periodo pronosticado
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                                                                      15
+     Figura 5. Caudales pronosticados para la temporada 2026–2027.
+                                                     Río Copiapó en Pastillo
+                                                     Temporada 2026/2027
+                     10
+                     9
+                     8
+                     7
+
+
+
+
+     Caudal (m³/s)
+                     6
+                     5
+                     4
+                     3
+                     2
+                     1
+                     0
+                             Sep       Oct           Nov          Dic          Ene        Feb    Mar
+
+                ±20% Pronóstico        Qpronóstico           Q85% (Seco)         Q50% (Normal)   Q20% (Húmedo)
+
+
+                                                  Río Huasco en el Maitén
+                                                   Temporada 2026/2027
+                     45
+
+                     40
+
+                     35
+
+                     30
+
+
+
+     Caudal (m³/s)
+                     25
+
+                     20
+
+                     15
+
+                     10
+
+                     5
+
+                     0
+                             Sep       Oct           Nov          Dic          Ene        Feb    Mar
+
+                     ±20% Pronóstico     Qpronóstico          Q85% (Seco)        Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                 16
+                                                      Río Elqui en Algarrobal
+                                                      Temporada 2026/2027
+                     80
+
+                     70
+
+                     60
+
+                     50
+
+
+     Caudal (m³/s)
+                     40
+
+                     30
+
+                     20
+
+                     10
+
+                      0
+                              Sep      Oct            Nov          Dic          Ene           Feb     Mar
+
+                ±20% Pronóstico         Qpronóstico            Q85% (Seco)            Q50% (Normal)    Q20% (Húmedo)
+
+
+                                               Río Hurtado en San Agustín
+                                                 Temporada 2026/2027
+                     16
+
+                     14
+
+                     12
+
+                     10
+
+
+     Caudal (m³/s)
+                      8
+
+                      6
+
+                      4
+
+                      2
+
+                      0
+                              Sep      Oct            Nov          Dic          Ene           Feb     Mar
+
+                     ±20% Pronóstico    Qpronóstico            Q85% (Seco)            Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                     17
+                                                    Río Grande en Las Ramadas
+                                                      Temporada 2026/2027
+                     20
+                     18
+                     16
+                     14
+
+
+
+
+     Caudal (m³/s)
+                     12
+                     10
+                     8
+                     6
+                     4
+                     2
+                     0
+                             Sep        Oct            Nov        Dic           Ene          Feb      Mar
+
+                      ±20% Pronóstico         Qpronóstico       Q85% (Seco)           Q50% (Normal)     Q20% (Húmedo)
+
+
+                                                     Río Choapa en Cuncumén
+                                                      Temporada 2026/2027
+                     40
+
+                     35
+
+                     30
+
+                     25
+
+
+     Caudal (m³/s)
+                     20
+
+                     15
+
+                     10
+
+                     5
+
+                     0
+                             Sep        Oct            Nov        Dic           Ene          Feb      Mar
+
+                     ±20% Pronóstico      Qpronóstico         Q85% (Seco)         Q50% (Normal)       Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                      18
+                                                                    Río Aconcagua en Chacabuquito
+                                                                         Temporada 2026/2027
+                                  140
+
+                                  120
+
+                                  100
+
+
+
+
+                  Caudal (m³/s)
+                                   80
+
+                                   60
+
+                                   40
+
+                                   20
+
+                                       0
+                                               Sep       Oct             Nov        Dic         Ene           Feb      Mar
+
+                                       ±20% Pronóstico         Qpronóstico      Q85% (Seco)         Q50% (Normal)      Q20% (Húmedo)
+
+
+
+
+                                                                 Río Putaendo en resguardo Los Patos
+                                  35                                    Temporada 2026/2027
+
+                                  30
+
+                                  25
+
+
+
+
+  Caudal (m³/s)
+                                  20
+
+                                  15
+
+                                  10
+
+                                  5
+
+                                  0
+                                             Sep         Oct             Nov         Dic         Ene            Feb     Mar
+
+                                       ±20% Pronóstico         Qpronóstico        Q85% (Seco)          Q50% (Normal)    Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                                       19
+                                                Río Juncal en Juncal
+                                               Temporada 2026/2027
+                     18
+
+                     16
+
+                     14
+
+                     12
+
+
+
+     Caudal (m³/s)
+                     10
+
+                     8
+
+                     6
+
+                     4
+
+                     2
+
+                     0
+                             Sep       Oct         Nov        Dic        Ene          Feb    Mar
+
+                     ±20% Pronóstico     Qpronóstico       Q85% (Seco)       Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+                                              Río Mapocho en Los Almendros
+                                                  Temporada 2026/2027
+                     25
+
+
+                     20
+
+
+
+
+     Caudal (m³/s)
+                     15
+
+
+                     10
+
+
+                     5
+
+
+                     0
+                             Sep       Oct         Nov        Dic        Ene          Feb    Mar
+
+                     ±20% Pronóstico     Qpronóstico      Q85% (Seco)        Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                             20
+                                                                          Maipo en El Manzano
+                                                                          Temporada 2026/2027
+                           350
+
+                           300
+
+                           250
+
+
+
+
+           Caudal (m³/s)
+                           200
+
+                           150
+
+                           100
+
+                               50
+
+                               0
+                                          Sep               Oct           Nov            Dic            Ene             Feb         Mar
+
+                                ±20% Pronóstico               Qpronóstico          Q85% (Seco)                Q50% (Normal)         Q20% (Húmedo)
+
+
+
+
+                                                                       Río Colorado en junta Maipo
+                   80                                                     Temporada 2026/2027
+
+                   70
+
+                   60
+
+                   50
+
+
+   Caudal (m³/s)
+                   40
+
+                   30
+
+                   20
+
+                   10
+
+                           0
+                                       Sep            Oct              Nov         Dic            Ene             Feb         Mar
+                                    ±20% Pronóstico               Qpronóstico       Q85% (Seco)               Q50% (Normal)          Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                                                   21
+                                                           Río Claro en Hacienda Las Nieves
+                                                                Temporada 2026/2027
+                   20
+                   18
+                   16
+                   14
+
+
+
+
+   Caudal (m³/s)
+                   12
+                   10
+                           8
+                           6
+                           4
+                           2
+                           0
+                                      Sep         Oct            Nov         Dic          Ene            Feb     Mar
+
+                                ±20% Pronóstico         Qpronóstico       Q85% (Seco)          Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+                                                            Río Cachapoal en Puente Termas
+                                                                 Temporada 2026/2027
+                           250
+
+
+                           200
+
+
+
+
+           Caudal (m³/s)
+                           150
+
+
+                           100
+
+
+                               50
+
+
+                                0
+                                        Sep        Oct            Nov        Dic         Ene           Feb     Mar
+
+                               ±20% Pronóstico      Qpronóstico          Q85% (Seco)           Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                              22
+                                                  Río Tinguiririca en Bajo Briones
+                                                      Temporada 2026/2027
+                    120
+
+
+                    100
+
+
+                    80
+
+
+
+    Caudal (m³/s)
+                    60
+
+
+                    40
+
+
+                    20
+
+
+                     0
+                             Sep        Oct            Nov          Dic          Ene          Feb      Mar
+
+                      ±20% Pronóstico         Qpronóstico        Q85% (Seco)           Q50% (Normal)    Q20% (Húmedo)
+
+
+
+
+                                                Río Teno después de junta con Claro
+                                                      Temporada 2026/2027
+                    160
+
+                    140
+
+                    120
+
+                    100
+
+
+    Caudal (m³/s)
+                     80
+
+                     60
+
+                     40
+
+                     20
+
+                     0
+                             Sep        Oct            Nov          Dic          Ene          Feb      Mar
+
+                    ±20% Pronóstico      Qpronóstico           Q85% (Seco)           Q50% (Normal)     Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                       23
+                                                          Río Claro en Los Queñes
+                                                          Temporada 2026/2027
+                         40
+
+                         35
+
+                         30
+
+                         25
+
+
+         Caudal (m³/s)
+                         20
+
+                         15
+
+                         10
+
+                         5
+
+                         0
+                                  Sep       Oct             Nov          Dic         Ene            Feb     Mar
+
+                         ±20% Pronóstico      Qpronóstico          Q85% (Seco)        Q50% (Normal)       Q20% (Húmedo)
+
+
+
+
+                                                          Río Maule en Armerillo
+                                                          Temporada 2026/2027
+                    700
+
+                    600
+
+                    500
+
+
+
+
+    Caudal (m³/s)
+                    400
+
+                    300
+
+                    200
+
+                    100
+
+                         0
+                                 Sep        Oct            Nov         Dic          Ene          Feb      Mar
+
+                          ±20% Pronóstico         Qpronóstico        Q85% (Seco)          Q50% (Normal)    Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                          24
+                                                      Río Ñuble en San Fabián
+                                                       Temporada 2026/2027
+                    300
+
+
+                    250
+
+
+                    200
+
+
+
+    Caudal (m³/s)
+                    150
+
+
+                    100
+
+
+                    50
+
+
+                     0
+                             Sep        Oct            Nov         Dic          Ene           Feb     Mar
+
+                      ±20% Pronóstico         Qpronóstico       Q85% (Seco)           Q50% (Normal)   Q20% (Húmedo)
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                                                                     25
+CONCLUSIONES
+
+       En términos generales, el año 2026 ha presentado, hasta la fecha,
+condiciones hidrológicas favorables entre las regiones de Atacama y
+Coquimbo, y condiciones variables, en general cercanas a las normales,
+desde la Región de Valparaíso hacia el sur del área analizada. Esta situación
+se explica principalmente por el significativo aporte de las precipitaciones
+registradas durante julio. Esta recuperación coincidió con una configuración
+de forzantes climáticos de gran escala favorable para el ingreso de sistemas
+frontales y la ocurrencia de precipitaciones en la zona central y centro-norte
+del país, entre los que destacan las condiciones asociadas al fenómeno de El
+Niño, la fase negativa de la AAO/SAM y la fase 8 de la MJO.
+
+      Como consecuencia, el escenario observado durante la primera mitad
+del año estuvo caracterizado por condiciones de escasez y déficit
+pluviométrico generalizado, experimentando una marcada recuperación a
+contar del mes de julio. Hasta el 31 de agosto, se observan condiciones de
+superávit pluviométrico entre las regiones de Atacama y Coquimbo, mientras
+que desde Valparaíso hacia el sur predominan acumulados cercanos a los
+valores normales para la época.
+
+       Al comparar el comportamiento pluviométrico de 2026 con el
+registrado durante 2025, se aprecia que los montos acumulados de
+precipitación son superiores en la mayoría de las regiones del país. Esta
+diferencia coincide con las distintas condiciones climáticas observadas en
+ambos períodos. Mientras que durante 2025 predominó una condición ENSO
+neutral, en 2026 se observaron condiciones asociadas a El Niño,
+históricamente relacionadas con una mayor probabilidad de precipitaciones
+en la zona centro y centro-norte de Chile.
+
+       En cuanto a la acumulación nival, la temporada 2026 se caracterizó por
+presentar condiciones favorables en gran parte de las cuencas analizadas,
+registrándose valores de EAN superiores al promedio histórico en todas las
+rutas de nieve consideradas. Destacan especialmente las cuencas de la
+Región de Coquimbo, donde los mayores superávits se observaron en Cerro
+Olivares y Quebrada Larga, reflejando el importante aporte de las nevadas
+ocurridas durante julio y agosto. Desde la cuenca del Aconcagua hacia el sur,
+las acumulaciones también se situaron por sobre la media histórica, aunque
+con excedentes más moderados, del orden de 5% a 62%. Estas condiciones
+permiten anticipar una disponibilidad de agua proveniente del deshielo
+superior a la observada en la temporada anterior en gran parte de las cuencas
+de pronóstico.
+
+      Sobre la situación de los embalses, entre las regiones de Atacama y de
+Coquimbo, los reservorios en general presentan una condición muy favorable
+para afrontar la temporada de riego. Se destaca que al final de agosto existen
+embalses que presentan un 100% de su capacidad, como es el caso de los
+embalses Recoleta, Cogotí, Culimo y Corrales. Cabe destacar que estos
+embalses han estado vertiendo durante los meses de julio y agosto debido a
+
+
+Pronóstico de caudales de deshielo 2026-2027                               26
+la acumulación de precipitaciones. También, destaca el importante
+incremento de volúmenes que se ha registrado en embalses como Lautaro,
+Santa Juana y Puclaro. Entre las regiones de Valparaíso y la Región
+Metropolitana, la condición de las reservas es similar a la observada en la
+temporada previa, pudiendo mejorar con los deshielos venideros. Entre las
+regiones de O’Higgins y Ñuble, la situación es heterogénea, con aumentos y
+disminuciones respecto de la temporada anterior. Resaltan los volúmenes
+almacenados en Colbún y Ralco, ambos equivalentes al 98% de sus
+respectivas capacidades. En esta zona, además, se espera que las reservas
+actuales puedan aumentar con los deshielos, particularmente en las grandes
+reservas como son Laguna del Maule y Lago Laja.
+
+       En vista de los antecedentes expuestos, se puede resumir el pronóstico
+estacional de la siguiente manera:
+
+      En la Región de Atacama se proyectan volúmenes significativamente
+superiores al promedio histórico, con superávits cercanos al 100%. Asimismo,
+los volúmenes pronosticados son aproximadamente el doble de sus
+respectivos promedios históricos.
+
+      En la Región de Coquimbo también se pronostica un escenario de
+buena disponibilidad, con superávits respecto del promedio histórico que
+varían entre 11% y 131%. Por lo tanto, se proyecta una condición favorable,
+aunque con diferencias importantes en la magnitud de los excedentes entre
+cuencas.
+
+       Entre las regiones de Valparaíso y Metropolitana se proyecta, en
+términos generales, una condición moderadamente deficitaria respecto del
+promedio histórico, aunque con diferencias importantes entre las estaciones
+analizadas.
+
+      Entre las regiones de O’Higgins y Ñuble, los volúmenes pronosticados
+presentan una condición general cercana al promedio histórico, pero con una
+marcada variabilidad entre estaciones.
+
+      En todo el tramo del pronóstico, producto de las importantes
+acumulaciones nivales y eventuales episodios de altas temperaturas que
+pudiesen ocurrir, se podrían esperar incrementos de caudales, especialmente
+en cabeceras de cuencas, los cuales pudiesen generar situaciones de riesgo
+y/o de alerta.
+
+       De acuerdo con el escenario hidrológico que se prevé, la Dirección
+General de Aguas realizará, como lo ha venido haciendo regularmente, un
+seguimiento y actualización mensual de la información hidrometeorológica,
+utilizando su propia red de monitoreo y con controles especiales si fuese
+necesario; información que se publicará regularmente en la página web de la
+DGA.
+
+
+
+
+Pronóstico de caudales de deshielo 2026-2027                              27
+                                                  https://dga.mop.gob.cl/
+
+
+
+
+                 Pronóstico de caudales de deshielo 2026-2027                                 28
+                https://firmador.mop.gob.cl/Publico/ValidaDoc?n=o8yS7UOxAJ8=&i=twXVtv/L2RY=
+
+
+
+
+Este documento ha sido firmado electrónicamente de acuerdo con la Ley Nº 19.799
+

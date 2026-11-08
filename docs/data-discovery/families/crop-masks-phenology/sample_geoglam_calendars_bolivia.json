@@ -1,0 +1,156 @@
+[
+{
+"country": "Bolivia",
+"region": "Beni",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Beni",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Chuquisaca",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Chuquisaca",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Cochabamba",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Cochabamba",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "La Paz",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "La Paz",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Oruro",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Oruro",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Santa Cruz",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Santa Cruz",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Tarija",
+"crop": "Winter Wheat",
+"planting": "91",
+"vegetative": "152",
+"harvest": "244",
+"endofseaso": "274",
+"outofseaso": "305",
+"minimalpro": "0"
+},
+{
+"country": "Bolivia",
+"region": "Tarija",
+"crop": "Maize 1",
+"planting": "274",
+"vegetative": "1",
+"harvest": "75",
+"endofseaso": "121",
+"outofseaso": "152",
+"minimalpro": "0"
+}
+]

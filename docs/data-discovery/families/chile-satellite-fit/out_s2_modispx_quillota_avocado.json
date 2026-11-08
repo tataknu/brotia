@@ -1,0 +1,3174 @@
+{
+ "site": "modispx_quillota_avocado",
+ "lonlat": [
+  -71.28406376832764,
+  -32.87606292225455
+ ],
+ "window": [
+  "2021-11-01",
+  "2026-11-06"
+ ],
+ "n_items": 465,
+ "unique_dates": 381,
+ "errors": 0,
+ "tiles": {
+  "19HBD": 465
+ },
+ "search_s": 2.8,
+ "stats_s": 47.6,
+ "first_item": "2021-11-09",
+ "last_item": "2026-11-03",
+ "clear50_per_calendar_month_mean": {
+  "1": 3.8,
+  "2": 4.8,
+  "3": 5.0,
+  "4": 4.4,
+  "5": 2.6,
+  "6": 3.0,
+  "7": 3.6,
+  "8": 2.2,
+  "9": 3.2,
+  "10": 2.8,
+  "11": 3.6,
+  "12": 5.4
+ },
+ "max_gaps_days": [
+  [
+   50,
+   "2026-07-11",
+   "2026-08-30"
+  ],
+  [
+   40,
+   "2023-06-17",
+   "2023-07-27"
+  ],
+  [
+   30,
+   "2026-09-14",
+   "2026-10-14"
+  ],
+  [
+   27,
+   "2026-05-17",
+   "2026-06-13"
+  ],
+  [
+   25,
+   "2024-07-16",
+   "2024-08-10"
+  ]
+ ],
+ "monthly": {
+  "2021-11": {
+   "dates": 5,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4603
+  },
+  "2021-12": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.4618
+  },
+  "2022-01": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4604
+  },
+  "2022-02": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4557
+  },
+  "2022-03": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.449
+  },
+  "2022-04": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4358
+  },
+  "2022-05": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4643
+  },
+  "2022-06": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5575
+  },
+  "2022-07": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.6838
+  },
+  "2022-08": {
+   "dates": 7,
+   "clear50": 1,
+   "clear80": 1,
+   "ndvi_median80": 0.6412
+  },
+  "2022-09": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.7048
+  },
+  "2022-10": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5615
+  },
+  "2022-11": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4798
+  },
+  "2022-12": {
+   "dates": 6,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4746
+  },
+  "2023-01": {
+   "dates": 6,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4744
+  },
+  "2023-02": {
+   "dates": 5,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.4726
+  },
+  "2023-03": {
+   "dates": 6,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4574
+  },
+  "2023-04": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4573
+  },
+  "2023-05": {
+   "dates": 5,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4783
+  },
+  "2023-06": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4882
+  },
+  "2023-07": {
+   "dates": 6,
+   "clear50": 1,
+   "clear80": 1,
+   "ndvi_median80": 0.1197
+  },
+  "2023-08": {
+   "dates": 7,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5866
+  },
+  "2023-09": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.5853
+  },
+  "2023-10": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.5601
+  },
+  "2023-11": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 3,
+   "ndvi_median80": 0.4769
+  },
+  "2023-12": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4551
+  },
+  "2024-01": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4595
+  },
+  "2024-02": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.436
+  },
+  "2024-03": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4368
+  },
+  "2024-04": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.4499
+  },
+  "2024-05": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4698
+  },
+  "2024-06": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.512
+  },
+  "2024-07": {
+   "dates": 7,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5532
+  },
+  "2024-08": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.5665
+  },
+  "2024-09": {
+   "dates": 4,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.5326
+  },
+  "2024-10": {
+   "dates": 6,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.502
+  },
+  "2024-11": {
+   "dates": 6,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4456
+  },
+  "2024-12": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4464
+  },
+  "2025-01": {
+   "dates": 5,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4202
+  },
+  "2025-02": {
+   "dates": 5,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4113
+  },
+  "2025-03": {
+   "dates": 7,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.3895
+  },
+  "2025-04": {
+   "dates": 7,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4127
+  },
+  "2025-05": {
+   "dates": 6,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4166
+  },
+  "2025-06": {
+   "dates": 7,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.5153
+  },
+  "2025-07": {
+   "dates": 9,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.5279
+  },
+  "2025-08": {
+   "dates": 7,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.5606
+  },
+  "2025-09": {
+   "dates": 8,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5333
+  },
+  "2025-10": {
+   "dates": 8,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4454
+  },
+  "2025-11": {
+   "dates": 7,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.4139
+  },
+  "2025-12": {
+   "dates": 8,
+   "clear50": 7,
+   "clear80": 7,
+   "ndvi_median80": 0.4169
+  },
+  "2026-01": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4051
+  },
+  "2026-02": {
+   "dates": 6,
+   "clear50": 5,
+   "clear80": 5,
+   "ndvi_median80": 0.4218
+  },
+  "2026-03": {
+   "dates": 6,
+   "clear50": 6,
+   "clear80": 6,
+   "ndvi_median80": 0.4241
+  },
+  "2026-04": {
+   "dates": 7,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.4508
+  },
+  "2026-05": {
+   "dates": 6,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.4637
+  },
+  "2026-06": {
+   "dates": 7,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4535
+  },
+  "2026-07": {
+   "dates": 9,
+   "clear50": 3,
+   "clear80": 3,
+   "ndvi_median80": 0.4546
+  },
+  "2026-08": {
+   "dates": 7,
+   "clear50": 1,
+   "clear80": 1,
+   "ndvi_median80": 0.5402
+  },
+  "2026-09": {
+   "dates": 8,
+   "clear50": 4,
+   "clear80": 4,
+   "ndvi_median80": 0.5468
+  },
+  "2026-10": {
+   "dates": 8,
+   "clear50": 2,
+   "clear80": 2,
+   "ndvi_median80": 0.6581
+  },
+  "2026-11": {
+   "dates": 1,
+   "clear50": 0,
+   "clear80": 0,
+   "ndvi_median80": null
+  }
+ },
+ "per_date": {
+  "2026-11-03": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 53.0,
+   "baseline": "05.13"
+  },
+  "2026-10-31": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 93.6,
+   "baseline": "05.13"
+  },
+  "2026-10-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.0,
+   "baseline": "05.13"
+  },
+  "2026-10-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.5,
+   "baseline": "05.13",
+   "ndvi": 0.6581,
+   "ndmi": 0.1956
+  },
+  "2026-10-19": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 67.8,
+   "baseline": "05.13"
+  },
+  "2026-10-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.4,
+   "baseline": "05.13",
+   "ndvi": 0.6406,
+   "ndmi": 0.1589
+  },
+  "2026-10-11": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 97.5,
+   "baseline": "05.13"
+  },
+  "2026-10-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 21.1,
+   "baseline": "05.13"
+  },
+  "2026-10-04": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.13"
+  },
+  "2026-09-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.13"
+  },
+  "2026-09-24": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.13"
+  },
+  "2026-09-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 24.9,
+   "baseline": "05.13"
+  },
+  "2026-09-19": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-09-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.5473,
+   "ndmi": 0.045
+  },
+  "2026-09-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 31.7,
+   "baseline": "05.12",
+   "ndvi": 0.5104,
+   "ndmi": 0.0711
+  },
+  "2026-09-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.2,
+   "baseline": "05.12",
+   "ndvi": 0.5468,
+   "ndmi": 0.0318
+  },
+  "2026-09-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 34.9,
+   "baseline": "05.12",
+   "ndvi": 0.5449,
+   "ndmi": 0.0008
+  },
+  "2026-08-30": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 14.2,
+   "baseline": "05.12",
+   "ndvi": 0.5402,
+   "ndmi": 0.007
+  },
+  "2026-08-25": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-08-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 84.8,
+   "baseline": "05.12"
+  },
+  "2026-08-15": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.8,
+   "baseline": "05.12"
+  },
+  "2026-08-12": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 53.8,
+   "baseline": "05.12"
+  },
+  "2026-08-10": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 88.1,
+   "baseline": "05.12"
+  },
+  "2026-08-05": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.9,
+   "baseline": "05.12"
+  },
+  "2026-07-31": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-07-26": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.7,
+   "baseline": "05.12"
+  },
+  "2026-07-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-07-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.5,
+   "baseline": "05.12"
+  },
+  "2026-07-16": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-07-11": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 49.9,
+   "baseline": "05.12",
+   "ndvi": 0.4546,
+   "ndmi": -0.05
+  },
+  "2026-07-06": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.5,
+   "baseline": "05.12"
+  },
+  "2026-07-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.4,
+   "baseline": "05.12",
+   "ndvi": 0.4459,
+   "ndmi": -0.0479
+  },
+  "2026-07-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 22.0,
+   "baseline": "05.12",
+   "ndvi": 0.461,
+   "ndmi": -0.0319
+  },
+  "2026-06-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.3,
+   "baseline": "05.12",
+   "ndvi": 0.4628,
+   "ndmi": -0.0359
+  },
+  "2026-06-21": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.4,
+   "baseline": "05.12",
+   "ndvi": 0.4535,
+   "ndmi": -0.037
+  },
+  "2026-06-16": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.9,
+   "baseline": "05.12"
+  },
+  "2026-06-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 44.9,
+   "baseline": "05.12",
+   "ndvi": 0.4491,
+   "ndmi": -0.0467
+  },
+  "2026-06-11": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 30.8,
+   "baseline": "05.12"
+  },
+  "2026-06-06": {
+   "clear_frac": 0.289,
+   "tile": "19HBD",
+   "tile_cc": 21.0,
+   "baseline": "05.12",
+   "ndvi": 0.3269,
+   "ndmi": -0.1012
+  },
+  "2026-06-01": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.12"
+  },
+  "2026-05-24": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.9,
+   "baseline": "05.12"
+  },
+  "2026-05-22": {
+   "clear_frac": 0.193,
+   "tile": "19HBD",
+   "tile_cc": 72.7,
+   "baseline": "05.12",
+   "ndvi": 0.1109,
+   "ndmi": 0.0239
+  },
+  "2026-05-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.2,
+   "baseline": "05.12",
+   "ndvi": 0.4637,
+   "ndmi": -0.0363
+  },
+  "2026-05-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.6,
+   "baseline": "05.12",
+   "ndvi": 0.481,
+   "ndmi": -0.0048
+  },
+  "2026-05-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 50.2,
+   "baseline": "05.12",
+   "ndvi": 0.4344,
+   "ndmi": -0.0469
+  },
+  "2026-05-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4586,
+   "ndmi": -0.0417
+  },
+  "2026-04-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4508,
+   "ndmi": -0.0365
+  },
+  "2026-04-22": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.3,
+   "baseline": "05.12",
+   "ndvi": 0.453,
+   "ndmi": -0.0363
+  },
+  "2026-04-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 82.5,
+   "baseline": "05.12"
+  },
+  "2026-04-14": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.2,
+   "baseline": "05.12"
+  },
+  "2026-04-12": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 71.5,
+   "baseline": "05.12"
+  },
+  "2026-04-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 14.3,
+   "baseline": "05.12",
+   "ndvi": 0.4419,
+   "ndmi": -0.0482
+  },
+  "2026-04-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4346,
+   "ndmi": -0.0566
+  },
+  "2026-03-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 18.6,
+   "baseline": "05.12",
+   "ndvi": 0.4358,
+   "ndmi": -0.0521
+  },
+  "2026-03-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.12",
+   "ndvi": 0.4365,
+   "ndmi": -0.0677
+  },
+  "2026-03-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4241,
+   "ndmi": -0.0642
+  },
+  "2026-03-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 38.8,
+   "baseline": "05.12",
+   "ndvi": 0.4151,
+   "ndmi": -0.0674
+  },
+  "2026-03-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.9,
+   "baseline": "05.12",
+   "ndvi": 0.4069,
+   "ndmi": -0.0679
+  },
+  "2026-03-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4234,
+   "ndmi": -0.0637
+  },
+  "2026-02-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.12",
+   "ndvi": 0.4169,
+   "ndmi": -0.0702
+  },
+  "2026-02-21": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.6,
+   "baseline": "05.12",
+   "ndvi": 0.4182,
+   "ndmi": -0.0531
+  },
+  "2026-02-16": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4253,
+   "ndmi": -0.0545
+  },
+  "2026-02-11": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4252,
+   "ndmi": -0.0534
+  },
+  "2026-02-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.12",
+   "ndvi": 0.4218,
+   "ndmi": -0.0722
+  },
+  "2026-02-01": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 74.4,
+   "baseline": "05.11"
+  },
+  "2026-01-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.2,
+   "baseline": "05.11",
+   "ndvi": 0.4107,
+   "ndmi": -0.0807
+  },
+  "2026-01-22": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 24.1,
+   "baseline": "05.11",
+   "ndvi": 0.3891,
+   "ndmi": -0.0847
+  },
+  "2026-01-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.7,
+   "baseline": "05.11",
+   "ndvi": 0.4039,
+   "ndmi": -0.0688
+  },
+  "2026-01-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 70.0,
+   "baseline": "05.11",
+   "ndvi": 0.4051,
+   "ndmi": -0.0542
+  },
+  "2026-01-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 44.8,
+   "baseline": "05.11",
+   "ndvi": 0.4114,
+   "ndmi": -0.0708
+  },
+  "2026-01-02": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 76.6,
+   "baseline": "05.11"
+  },
+  "2025-12-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 38.3,
+   "baseline": "05.11",
+   "ndvi": 0.4058,
+   "ndmi": -0.0574
+  },
+  "2025-12-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.11",
+   "ndvi": 0.4169,
+   "ndmi": -0.0582
+  },
+  "2025-12-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.4238,
+   "ndmi": -0.0481
+  },
+  "2025-12-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 54.6,
+   "baseline": "05.11",
+   "ndvi": 0.4143,
+   "ndmi": -0.0509
+  },
+  "2025-12-13": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 60.4,
+   "baseline": "05.11"
+  },
+  "2025-12-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 55.0,
+   "baseline": "05.11",
+   "ndvi": 0.4261,
+   "ndmi": -0.0454
+  },
+  "2025-12-05": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 15.9,
+   "baseline": "05.11",
+   "ndvi": 0.4135,
+   "ndmi": -0.0627
+  },
+  "2025-12-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 50.6,
+   "baseline": "05.11",
+   "ndvi": 0.4222,
+   "ndmi": -0.044
+  },
+  "2025-11-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 61.1,
+   "baseline": "05.11"
+  },
+  "2025-11-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 73.0,
+   "baseline": "05.11"
+  },
+  "2025-11-18": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 8.5,
+   "baseline": "05.11"
+  },
+  "2025-11-15": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 80.0,
+   "baseline": "05.11"
+  },
+  "2025-11-13": {
+   "clear_frac": 0.876,
+   "tile": "19HBD",
+   "tile_cc": 36.9,
+   "baseline": "05.11",
+   "ndvi": 0.4134,
+   "ndmi": -0.0322
+  },
+  "2025-11-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 73.7,
+   "baseline": "05.11",
+   "ndvi": 0.4139,
+   "ndmi": -0.0421
+  },
+  "2025-11-03": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 91.0,
+   "baseline": "05.11"
+  },
+  "2025-10-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 10.0,
+   "baseline": "05.11",
+   "ndvi": 0.4273,
+   "ndmi": -0.055
+  },
+  "2025-10-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.4454,
+   "ndmi": -0.042
+  },
+  "2025-10-24": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 87.3,
+   "baseline": "05.11"
+  },
+  "2025-10-19": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 85.0,
+   "baseline": "05.11"
+  },
+  "2025-10-14": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 77.8,
+   "baseline": "05.11"
+  },
+  "2025-10-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 58.0,
+   "baseline": "05.11"
+  },
+  "2025-10-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.0,
+   "baseline": "05.11",
+   "ndvi": 0.4743,
+   "ndmi": -0.0102
+  },
+  "2025-10-04": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 76.3,
+   "baseline": "05.11"
+  },
+  "2025-09-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 53.0,
+   "baseline": "05.11"
+  },
+  "2025-09-26": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.8,
+   "baseline": "05.11"
+  },
+  "2025-09-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 9.2,
+   "baseline": "05.11",
+   "ndvi": 0.4907,
+   "ndmi": 0.0031
+  },
+  "2025-09-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 19.3,
+   "baseline": "05.11",
+   "ndvi": 0.4977,
+   "ndmi": 0.0081
+  },
+  "2025-09-14": {
+   "clear_frac": 0.287,
+   "tile": "19HBD",
+   "tile_cc": 39.6,
+   "baseline": "05.11",
+   "ndvi": 0.4466,
+   "ndmi": -0.0337
+  },
+  "2025-09-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.8,
+   "baseline": "05.11",
+   "ndvi": 0.5351,
+   "ndmi": 0.0295
+  },
+  "2025-09-06": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.9,
+   "baseline": "05.11"
+  },
+  "2025-09-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.7,
+   "baseline": "05.11",
+   "ndvi": 0.5333,
+   "ndmi": 0.0381
+  },
+  "2025-08-30": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 97.3,
+   "baseline": "05.11"
+  },
+  "2025-08-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.5,
+   "baseline": "05.11",
+   "ndvi": 0.5606,
+   "ndmi": 0.0479
+  },
+  "2025-08-20": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 20.0,
+   "baseline": "05.11",
+   "ndvi": 0.5432,
+   "ndmi": 0.0184
+  },
+  "2025-08-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 72.1,
+   "baseline": "05.11"
+  },
+  "2025-08-15": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.1,
+   "baseline": "05.11"
+  },
+  "2025-08-10": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 17.5,
+   "baseline": "05.11",
+   "ndvi": 0.567,
+   "ndmi": 0.0443
+  },
+  "2025-08-05": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.8,
+   "baseline": "05.11"
+  },
+  "2025-07-31": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 97.1,
+   "baseline": "05.11"
+  },
+  "2025-07-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 11.7,
+   "baseline": "05.11",
+   "ndvi": 0.5279,
+   "ndmi": 0.0145
+  },
+  "2025-07-26": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.9,
+   "baseline": "05.11"
+  },
+  "2025-07-21": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 66.1,
+   "baseline": "05.11",
+   "ndvi": 0.5197,
+   "ndmi": -0.0021
+  },
+  "2025-07-16": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.4,
+   "baseline": "05.11",
+   "ndvi": 0.5458,
+   "ndmi": 0.0148
+  },
+  "2025-07-11": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 7.5,
+   "baseline": "05.11",
+   "ndvi": 0.5466,
+   "ndmi": 0.0264
+  },
+  "2025-07-08": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 65.7,
+   "baseline": "05.11"
+  },
+  "2025-07-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.2,
+   "baseline": "05.11",
+   "ndvi": 0.523,
+   "ndmi": -0.0239
+  },
+  "2025-07-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.0,
+   "baseline": "05.11",
+   "ndvi": 0.5172,
+   "ndmi": -0.0338
+  },
+  "2025-06-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.5153,
+   "ndmi": -0.0275
+  },
+  "2025-06-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.2,
+   "baseline": "05.11"
+  },
+  "2025-06-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.11",
+   "ndvi": 0.5221,
+   "ndmi": -0.0262
+  },
+  "2025-06-16": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 76.2,
+   "baseline": "05.11"
+  },
+  "2025-06-11": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.0,
+   "baseline": "05.11"
+  },
+  "2025-06-06": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 88.4,
+   "baseline": "05.11"
+  },
+  "2025-06-01": {
+   "clear_frac": 0.959,
+   "tile": "19HBD",
+   "tile_cc": 2.0,
+   "baseline": "05.11",
+   "ndvi": 0.4376,
+   "ndmi": -0.0845
+  },
+  "2025-05-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.9,
+   "baseline": "05.11",
+   "ndvi": 0.4988,
+   "ndmi": -0.0409
+  },
+  "2025-05-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.6,
+   "baseline": "05.11"
+  },
+  "2025-05-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.11"
+  },
+  "2025-05-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 81.5,
+   "baseline": "05.11",
+   "ndvi": 0.3993,
+   "ndmi": -0.0779
+  },
+  "2025-05-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 95.6,
+   "baseline": "05.11"
+  },
+  "2025-05-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.5,
+   "baseline": "05.11",
+   "ndvi": 0.4166,
+   "ndmi": -0.0903
+  },
+  "2025-04-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.4127,
+   "ndmi": -0.0972
+  },
+  "2025-04-22": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 85.0,
+   "baseline": "05.11",
+   "ndvi": 0.3725,
+   "ndmi": -0.0815
+  },
+  "2025-04-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 43.6,
+   "baseline": "05.11",
+   "ndvi": 0.4087,
+   "ndmi": -0.0702
+  },
+  "2025-04-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 78.1,
+   "baseline": "05.11"
+  },
+  "2025-04-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.4,
+   "baseline": "05.11",
+   "ndvi": 0.4073,
+   "ndmi": -0.091
+  },
+  "2025-04-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.4129,
+   "ndmi": -0.0883
+  },
+  "2025-04-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.0,
+   "baseline": "05.11",
+   "ndvi": 0.4183,
+   "ndmi": -0.0786
+  },
+  "2025-03-28": {
+   "clear_frac": 0.077,
+   "tile": "19HBD",
+   "tile_cc": 79.3,
+   "baseline": "05.11",
+   "ndvi": 0.2231,
+   "ndmi": -0.1403
+  },
+  "2025-03-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 49.3,
+   "baseline": "05.11",
+   "ndvi": 0.3755,
+   "ndmi": -0.0991
+  },
+  "2025-03-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 75.5,
+   "baseline": "05.11"
+  },
+  "2025-03-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.9,
+   "baseline": "05.11",
+   "ndvi": 0.3895,
+   "ndmi": -0.0876
+  },
+  "2025-03-13": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 54.7,
+   "baseline": "05.11"
+  },
+  "2025-03-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.3891,
+   "ndmi": -0.0903
+  },
+  "2025-03-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.3934,
+   "ndmi": -0.0836
+  },
+  "2025-02-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 17.8,
+   "baseline": "05.11",
+   "ndvi": 0.3976,
+   "ndmi": -0.0637
+  },
+  "2025-02-21": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 53.7,
+   "baseline": "05.11",
+   "ndvi": 0.4024,
+   "ndmi": -0.056
+  },
+  "2025-02-16": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 45.4,
+   "baseline": "05.11",
+   "ndvi": 0.4156,
+   "ndmi": -0.0388
+  },
+  "2025-02-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 10.4,
+   "baseline": "05.11",
+   "ndvi": 0.4121,
+   "ndmi": -0.0457
+  },
+  "2025-02-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 54.1,
+   "baseline": "05.11",
+   "ndvi": 0.4113,
+   "ndmi": -0.0442
+  },
+  "2025-01-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "05.11",
+   "ndvi": 0.4137,
+   "ndmi": -0.0498
+  },
+  "2025-01-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 74.5,
+   "baseline": "05.11"
+  },
+  "2025-01-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.5,
+   "baseline": "05.11",
+   "ndvi": 0.4222,
+   "ndmi": -0.0462
+  },
+  "2025-01-12": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 83.8,
+   "baseline": "05.11"
+  },
+  "2025-01-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 47.1,
+   "baseline": "05.11",
+   "ndvi": 0.4202,
+   "ndmi": -0.0274
+  },
+  "2024-12-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 17.1,
+   "baseline": "05.11",
+   "ndvi": 0.432,
+   "ndmi": -0.0333
+  },
+  "2024-12-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 62.8,
+   "baseline": "05.11"
+  },
+  "2024-12-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 35.3,
+   "baseline": "05.11",
+   "ndvi": 0.4464,
+   "ndmi": -0.0054
+  },
+  "2024-12-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.9,
+   "baseline": "05.11",
+   "ndvi": 0.4474,
+   "ndmi": -0.0035
+  },
+  "2024-12-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.6,
+   "baseline": "05.11",
+   "ndvi": 0.4529,
+   "ndmi": -0.0013
+  },
+  "2024-12-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 42.4,
+   "baseline": "05.11",
+   "ndvi": 0.4412,
+   "ndmi": -0.0067
+  },
+  "2024-11-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.11",
+   "ndvi": 0.4456,
+   "ndmi": -0.0185
+  },
+  "2024-11-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 3.6,
+   "baseline": "05.11",
+   "ndvi": 0.4444,
+   "ndmi": -0.0208
+  },
+  "2024-11-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 45.4,
+   "baseline": "05.11",
+   "ndvi": 0.4416,
+   "ndmi": -0.0215
+  },
+  "2024-11-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 41.7,
+   "baseline": "05.11",
+   "ndvi": 0.4345,
+   "ndmi": -0.0183
+  },
+  "2024-11-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 15.2,
+   "baseline": "05.11",
+   "ndvi": 0.4496,
+   "ndmi": -0.0347
+  },
+  "2024-11-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 63.4,
+   "baseline": "05.11",
+   "ndvi": 0.4675,
+   "ndmi": -0.0095
+  },
+  "2024-10-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 83.9,
+   "baseline": "05.11"
+  },
+  "2024-10-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 8.6,
+   "baseline": "05.11",
+   "ndvi": 0.4796,
+   "ndmi": -0.0024
+  },
+  "2024-10-19": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 87.5,
+   "baseline": "05.11"
+  },
+  "2024-10-14": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 97.7,
+   "baseline": "05.11"
+  },
+  "2024-10-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.0,
+   "baseline": "05.11"
+  },
+  "2024-10-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 50.6,
+   "baseline": "05.11",
+   "ndvi": 0.502,
+   "ndmi": 0.0395
+  },
+  "2024-09-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 86.7,
+   "baseline": "05.11"
+  },
+  "2024-09-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.7,
+   "baseline": "05.11",
+   "ndvi": 0.5308,
+   "ndmi": 0.0528
+  },
+  "2024-09-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 42.5,
+   "baseline": "05.11",
+   "ndvi": 0.5326,
+   "ndmi": 0.0596
+  },
+  "2024-09-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 4.0,
+   "baseline": "05.11",
+   "ndvi": 0.5608,
+   "ndmi": 0.0739
+  },
+  "2024-08-30": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 75.4,
+   "baseline": "05.11"
+  },
+  "2024-08-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.3,
+   "baseline": "05.11",
+   "ndvi": 0.5637,
+   "ndmi": 0.0582
+  },
+  "2024-08-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.1,
+   "baseline": "05.11"
+  },
+  "2024-08-15": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.6,
+   "baseline": "05.11"
+  },
+  "2024-08-10": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 18.7,
+   "baseline": "05.11",
+   "ndvi": 0.5665,
+   "ndmi": 0.0523
+  },
+  "2024-08-05": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.2,
+   "baseline": "05.11"
+  },
+  "2024-07-31": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.11"
+  },
+  "2024-07-26": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 86.0,
+   "baseline": "05.11"
+  },
+  "2024-07-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 56.9,
+   "baseline": "05.10"
+  },
+  "2024-07-16": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.5523,
+   "ndmi": 0.039
+  },
+  "2024-07-11": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 6.9,
+   "baseline": "05.10",
+   "ndvi": 0.5495,
+   "ndmi": 0.0377
+  },
+  "2024-07-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "05.10",
+   "ndvi": 0.5532,
+   "ndmi": 0.0526
+  },
+  "2024-07-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.5753,
+   "ndmi": 0.0294
+  },
+  "2024-06-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 36.8,
+   "baseline": "05.10",
+   "ndvi": 0.581,
+   "ndmi": 0.0444
+  },
+  "2024-06-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.9,
+   "baseline": "05.10"
+  },
+  "2024-06-16": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 60.6,
+   "baseline": "05.10",
+   "ndvi": 0.4993,
+   "ndmi": 0.0504
+  },
+  "2024-06-11": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.9,
+   "baseline": "05.10"
+  },
+  "2024-06-06": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.9,
+   "baseline": "05.10"
+  },
+  "2024-06-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 28.1,
+   "baseline": "05.10",
+   "ndvi": 0.512,
+   "ndmi": -0.0055
+  },
+  "2024-05-27": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.5,
+   "baseline": "05.10"
+  },
+  "2024-05-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.9,
+   "baseline": "05.10"
+  },
+  "2024-05-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.6,
+   "baseline": "05.10",
+   "ndvi": 0.4689,
+   "ndmi": -0.0348
+  },
+  "2024-05-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.7,
+   "baseline": "05.10",
+   "ndvi": 0.4698,
+   "ndmi": -0.0253
+  },
+  "2024-05-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.7,
+   "baseline": "05.10"
+  },
+  "2024-05-02": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 90.2,
+   "baseline": "05.10"
+  },
+  "2024-04-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.10",
+   "ndvi": 0.4461,
+   "ndmi": -0.0645
+  },
+  "2024-04-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 75.8,
+   "baseline": "05.10"
+  },
+  "2024-04-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.4516,
+   "ndmi": -0.0692
+  },
+  "2024-04-12": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 91.6,
+   "baseline": "05.10"
+  },
+  "2024-04-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.3,
+   "baseline": "05.10",
+   "ndvi": 0.4499,
+   "ndmi": -0.0615
+  },
+  "2024-04-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 31.2,
+   "baseline": "05.10",
+   "ndvi": 0.445,
+   "ndmi": -0.0838
+  },
+  "2024-03-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 54.4,
+   "baseline": "05.10"
+  },
+  "2024-03-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 50.4,
+   "baseline": "05.10",
+   "ndvi": 0.4247,
+   "ndmi": -0.0914
+  },
+  "2024-03-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 3.8,
+   "baseline": "05.10",
+   "ndvi": 0.4368,
+   "ndmi": -0.0709
+  },
+  "2024-03-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.10",
+   "ndvi": 0.4451,
+   "ndmi": -0.0721
+  },
+  "2024-03-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.4486,
+   "ndmi": -0.0649
+  },
+  "2024-03-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 9.2,
+   "baseline": "05.10",
+   "ndvi": 0.4344,
+   "ndmi": -0.077
+  },
+  "2024-02-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 51.5,
+   "baseline": "05.10",
+   "ndvi": 0.4371,
+   "ndmi": -0.0713
+  },
+  "2024-02-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.1,
+   "baseline": "05.10"
+  },
+  "2024-02-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 31.2,
+   "baseline": "05.10",
+   "ndvi": 0.436,
+   "ndmi": -0.0727
+  },
+  "2024-02-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.10",
+   "ndvi": 0.433,
+   "ndmi": -0.076
+  },
+  "2024-02-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 39.8,
+   "baseline": "05.10",
+   "ndvi": 0.4241,
+   "ndmi": -0.0803
+  },
+  "2024-02-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.6,
+   "baseline": "05.10",
+   "ndvi": 0.4387,
+   "ndmi": -0.0707
+  },
+  "2024-01-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 76.7,
+   "baseline": "05.10"
+  },
+  "2024-01-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 75.7,
+   "baseline": "05.10"
+  },
+  "2024-01-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.6,
+   "baseline": "05.10",
+   "ndvi": 0.4354,
+   "ndmi": -0.057
+  },
+  "2024-01-13": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 73.9,
+   "baseline": "05.10"
+  },
+  "2024-01-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.4595,
+   "ndmi": -0.0461
+  },
+  "2024-01-03": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 74.3,
+   "baseline": "05.10"
+  },
+  "2023-12-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 11.1,
+   "baseline": "05.10",
+   "ndvi": 0.4557,
+   "ndmi": -0.0484
+  },
+  "2023-12-24": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 72.7,
+   "baseline": "05.10"
+  },
+  "2023-12-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 52.7,
+   "baseline": "05.10",
+   "ndvi": 0.4485,
+   "ndmi": -0.0232
+  },
+  "2023-12-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 58.1,
+   "baseline": "05.10",
+   "ndvi": 0.4464,
+   "ndmi": -0.0391
+  },
+  "2023-12-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "05.10",
+   "ndvi": 0.4598,
+   "ndmi": -0.0375
+  },
+  "2023-12-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 41.2,
+   "baseline": "05.10",
+   "ndvi": 0.4551,
+   "ndmi": -0.0319
+  },
+  "2023-11-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "05.10",
+   "ndvi": 0.4769,
+   "ndmi": -0.026
+  },
+  "2023-11-24": {
+   "clear_frac": 0.728,
+   "tile": "19HBD",
+   "tile_cc": 66.8,
+   "baseline": "05.09",
+   "ndvi": 0.4446,
+   "ndmi": 0.0469
+  },
+  "2023-11-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.4799,
+   "ndmi": -0.0187
+  },
+  "2023-11-14": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 94.9,
+   "baseline": "05.10"
+  },
+  "2023-11-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 90.7,
+   "baseline": "05.10"
+  },
+  "2023-11-04": {
+   "clear_frac": 0.988,
+   "tile": "19HBD",
+   "tile_cc": 83.3,
+   "baseline": "05.09",
+   "ndvi": 0.305,
+   "ndmi": 0.0579
+  },
+  "2023-10-30": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 90.2,
+   "baseline": "05.10"
+  },
+  "2023-10-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 63.4,
+   "baseline": "05.09",
+   "ndvi": 0.5036,
+   "ndmi": 0.0749
+  },
+  "2023-10-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.09"
+  },
+  "2023-10-15": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 55.7,
+   "baseline": "05.10",
+   "ndvi": 0.5601,
+   "ndmi": 0.0897
+  },
+  "2023-10-10": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.1,
+   "baseline": "05.10"
+  },
+  "2023-10-05": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 41.7,
+   "baseline": "05.09",
+   "ndvi": 0.571,
+   "ndmi": 0.0928
+  },
+  "2023-09-30": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 64.7,
+   "baseline": "05.10"
+  },
+  "2023-09-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 7.9,
+   "baseline": "05.09",
+   "ndvi": 0.5826,
+   "ndmi": 0.0802
+  },
+  "2023-09-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.6,
+   "baseline": "05.10"
+  },
+  "2023-09-15": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 34.9,
+   "baseline": "05.10",
+   "ndvi": 0.5853,
+   "ndmi": 0.0442
+  },
+  "2023-09-10": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.4,
+   "baseline": "05.09"
+  },
+  "2023-09-05": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "05.10"
+  },
+  "2023-08-31": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.3,
+   "baseline": "05.10",
+   "ndvi": 0.5836,
+   "ndmi": 0.0269
+  },
+  "2023-08-26": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.4,
+   "baseline": "05.10",
+   "ndvi": 0.5926,
+   "ndmi": 0.0364
+  },
+  "2023-08-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.2,
+   "baseline": "05.10"
+  },
+  "2023-08-16": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 94.2,
+   "baseline": "05.10"
+  },
+  "2023-08-11": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 42.6,
+   "baseline": "05.10"
+  },
+  "2023-08-06": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 11.5,
+   "baseline": "05.10",
+   "ndvi": 0.5866,
+   "ndmi": 0.0245
+  },
+  "2023-08-01": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 6.0,
+   "baseline": "05.10",
+   "ndvi": 0.5546,
+   "ndmi": -0.0111
+  },
+  "2023-07-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 18.5,
+   "baseline": "05.10",
+   "ndvi": 0.1197,
+   "ndmi": 0.0286
+  },
+  "2023-07-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 87.0,
+   "baseline": "05.10"
+  },
+  "2023-07-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 91.4,
+   "baseline": "05.10"
+  },
+  "2023-07-12": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 87.2,
+   "baseline": "05.10"
+  },
+  "2023-07-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 85.1,
+   "baseline": "05.10"
+  },
+  "2023-07-02": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.5,
+   "baseline": "05.10"
+  },
+  "2023-06-27": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 89.5,
+   "baseline": "05.10"
+  },
+  "2023-06-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.8,
+   "baseline": "05.09"
+  },
+  "2023-06-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 6.2,
+   "baseline": "05.10",
+   "ndvi": 0.486,
+   "ndmi": -0.0744
+  },
+  "2023-06-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 19.0,
+   "baseline": "05.10",
+   "ndvi": 0.4882,
+   "ndmi": -0.0274
+  },
+  "2023-06-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 62.6,
+   "baseline": "05.10"
+  },
+  "2023-06-02": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.3,
+   "baseline": "05.10"
+  },
+  "2023-05-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.8,
+   "baseline": "05.10"
+  },
+  "2023-05-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.9,
+   "baseline": "05.09"
+  },
+  "2023-05-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.4,
+   "baseline": "05.09",
+   "ndvi": 0.4759,
+   "ndmi": -0.0774
+  },
+  "2023-05-13": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 44.4,
+   "baseline": "05.09"
+  },
+  "2023-05-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 30.6,
+   "baseline": "05.09",
+   "ndvi": 0.4783,
+   "ndmi": -0.0496
+  },
+  "2023-04-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 89.7,
+   "baseline": "05.10"
+  },
+  "2023-04-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 91.1,
+   "baseline": "05.10"
+  },
+  "2023-04-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 13.1,
+   "baseline": "05.10",
+   "ndvi": 0.4633,
+   "ndmi": -0.04
+  },
+  "2023-04-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.8,
+   "baseline": "05.10",
+   "ndvi": 0.4573,
+   "ndmi": -0.0291
+  },
+  "2023-04-08": {
+   "clear_frac": 0.995,
+   "tile": "19HBD",
+   "tile_cc": 59.4,
+   "baseline": "05.10",
+   "ndvi": 0.4053,
+   "ndmi": 0.0325
+  },
+  "2023-04-03": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 94.9,
+   "baseline": "05.10"
+  },
+  "2023-03-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.6,
+   "baseline": "05.10",
+   "ndvi": 0.4675,
+   "ndmi": -0.0441
+  },
+  "2023-03-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.5,
+   "baseline": "05.10",
+   "ndvi": 0.4574,
+   "ndmi": -0.0383
+  },
+  "2023-03-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 30.1,
+   "baseline": "05.10",
+   "ndvi": 0.4589,
+   "ndmi": -0.0436
+  },
+  "2023-03-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 4.2,
+   "baseline": "05.10",
+   "ndvi": 0.4514,
+   "ndmi": -0.0419
+  },
+  "2023-03-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 50.3,
+   "baseline": "05.10",
+   "ndvi": 0.453,
+   "ndmi": -0.0374
+  },
+  "2023-03-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 54.8,
+   "baseline": "05.10",
+   "ndvi": 0.4518,
+   "ndmi": -0.0291
+  },
+  "2023-02-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 8.8,
+   "baseline": "04.00",
+   "ndvi": 0.4591,
+   "ndmi": -0.0224
+  },
+  "2023-02-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.0,
+   "baseline": "05.10",
+   "ndvi": 0.4546,
+   "ndmi": -0.0249
+  },
+  "2023-02-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 30.1,
+   "baseline": "05.10",
+   "ndvi": 0.4726,
+   "ndmi": -0.0056
+  },
+  "2023-02-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 74.6,
+   "baseline": "05.10"
+  },
+  "2023-02-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.4,
+   "baseline": "05.10",
+   "ndvi": 0.4744,
+   "ndmi": 0.0093
+  },
+  "2023-01-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "05.10",
+   "ndvi": 0.4718,
+   "ndmi": 0.0035
+  },
+  "2023-01-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 63.9,
+   "baseline": "04.00",
+   "ndvi": 0.4646,
+   "ndmi": 0.0123
+  },
+  "2023-01-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 59.4,
+   "baseline": "05.10",
+   "ndvi": 0.4715,
+   "ndmi": 0.0217
+  },
+  "2023-01-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 35.6,
+   "baseline": "04.00",
+   "ndvi": 0.4877,
+   "ndmi": 0.0288
+  },
+  "2023-01-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 47.7,
+   "baseline": "05.10",
+   "ndvi": 0.4744,
+   "ndmi": 0.0016
+  },
+  "2023-01-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "04.00",
+   "ndvi": 0.4858,
+   "ndmi": 0.0185
+  },
+  "2022-12-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 39.7,
+   "baseline": "04.00",
+   "ndvi": 0.4652,
+   "ndmi": 0.0155
+  },
+  "2022-12-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "04.00",
+   "ndvi": 0.4722,
+   "ndmi": 0.015
+  },
+  "2022-12-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.5,
+   "baseline": "04.00",
+   "ndvi": 0.4746,
+   "ndmi": 0.0095
+  },
+  "2022-12-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 52.0,
+   "baseline": "04.00",
+   "ndvi": 0.4703,
+   "ndmi": 0.0126
+  },
+  "2022-12-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 30.8,
+   "baseline": "04.00",
+   "ndvi": 0.4776,
+   "ndmi": -0.0021
+  },
+  "2022-12-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 14.6,
+   "baseline": "04.00",
+   "ndvi": 0.4827,
+   "ndmi": 0.0142
+  },
+  "2022-11-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.7,
+   "baseline": "04.00"
+  },
+  "2022-11-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 40.8,
+   "baseline": "04.00",
+   "ndvi": 0.4751,
+   "ndmi": 0.0151
+  },
+  "2022-11-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 13.7,
+   "baseline": "04.00",
+   "ndvi": 0.4798,
+   "ndmi": 0.0156
+  },
+  "2022-11-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "04.00",
+   "ndvi": 0.4998,
+   "ndmi": 0.0299
+  },
+  "2022-11-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 95.5,
+   "baseline": "04.00"
+  },
+  "2022-11-04": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 71.4,
+   "baseline": "04.00"
+  },
+  "2022-10-30": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 17.1,
+   "baseline": "04.00",
+   "ndvi": 0.4732,
+   "ndmi": 0.0769
+  },
+  "2022-10-25": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 73.3,
+   "baseline": "04.00",
+   "ndvi": 0.5394,
+   "ndmi": 0.1027
+  },
+  "2022-10-20": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.9,
+   "baseline": "04.00",
+   "ndvi": 0.5615,
+   "ndmi": 0.1001
+  },
+  "2022-10-15": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 54.8,
+   "baseline": "05.10",
+   "ndvi": 0.5688,
+   "ndmi": 0.1271
+  },
+  "2022-10-10": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 78.8,
+   "baseline": "05.10"
+  },
+  "2022-10-05": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 81.0,
+   "baseline": "05.10"
+  },
+  "2022-09-30": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 69.4,
+   "baseline": "05.10",
+   "ndvi": 0.6552,
+   "ndmi": 0.2668
+  },
+  "2022-09-25": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 62.2,
+   "baseline": "04.00"
+  },
+  "2022-09-20": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 50.0,
+   "baseline": "05.10"
+  },
+  "2022-09-15": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 92.1,
+   "baseline": "05.10"
+  },
+  "2022-09-10": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 48.4,
+   "baseline": "04.00",
+   "ndvi": 0.7048,
+   "ndmi": 0.3345
+  },
+  "2022-09-05": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 61.0,
+   "baseline": "04.00",
+   "ndvi": 0.7516,
+   "ndmi": 0.3524
+  },
+  "2022-08-31": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 99.5,
+   "baseline": "05.10"
+  },
+  "2022-08-26": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.8,
+   "baseline": "05.10"
+  },
+  "2022-08-21": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 75.7,
+   "baseline": "05.10"
+  },
+  "2022-08-16": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 68.0,
+   "baseline": "05.10"
+  },
+  "2022-08-11": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 57.8,
+   "baseline": "05.10",
+   "ndvi": 0.6412,
+   "ndmi": 0.2891
+  },
+  "2022-08-06": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.0,
+   "baseline": "04.00"
+  },
+  "2022-08-01": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 97.7,
+   "baseline": "04.00"
+  },
+  "2022-07-27": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 33.2,
+   "baseline": "04.00"
+  },
+  "2022-07-22": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 12.9,
+   "baseline": "04.00",
+   "ndvi": 0.6838,
+   "ndmi": 0.2007
+  },
+  "2022-07-17": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 81.1,
+   "baseline": "04.00"
+  },
+  "2022-07-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.4,
+   "baseline": "04.00",
+   "ndvi": 0.6927,
+   "ndmi": 0.1634
+  },
+  "2022-07-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.0,
+   "baseline": "04.00",
+   "ndvi": 0.6664,
+   "ndmi": 0.1512
+  },
+  "2022-07-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.9,
+   "baseline": "04.00",
+   "ndvi": 0.6564,
+   "ndmi": 0.1426
+  },
+  "2022-06-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 18.5,
+   "baseline": "04.00",
+   "ndvi": 0.6089,
+   "ndmi": 0.0658
+  },
+  "2022-06-22": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 91.6,
+   "baseline": "04.00"
+  },
+  "2022-06-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 1.3,
+   "baseline": "04.00",
+   "ndvi": 0.5448,
+   "ndmi": 0.0228
+  },
+  "2022-06-12": {
+   "clear_frac": 0.282,
+   "tile": "19HBD",
+   "tile_cc": 81.3,
+   "baseline": "04.00",
+   "ndvi": 0.1749,
+   "ndmi": -0.0036
+  },
+  "2022-06-07": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 57.4,
+   "baseline": "04.00",
+   "ndvi": 0.5575,
+   "ndmi": 0.009
+  },
+  "2022-06-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 38.3,
+   "baseline": "04.00",
+   "ndvi": 0.4902,
+   "ndmi": -0.0246
+  },
+  "2022-05-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 98.1,
+   "baseline": "05.10"
+  },
+  "2022-05-23": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 100.0,
+   "baseline": "04.00"
+  },
+  "2022-05-18": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 86.6,
+   "baseline": "04.00"
+  },
+  "2022-05-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 3.6,
+   "baseline": "04.00",
+   "ndvi": 0.4588,
+   "ndmi": -0.0657
+  },
+  "2022-05-08": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 53.9,
+   "baseline": "05.10"
+  },
+  "2022-05-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "04.00",
+   "ndvi": 0.4643,
+   "ndmi": -0.0609
+  },
+  "2022-04-28": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "04.00",
+   "ndvi": 0.499,
+   "ndmi": 0.0094
+  },
+  "2022-04-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 30.1,
+   "baseline": "05.10",
+   "ndvi": 0.4551,
+   "ndmi": -0.0685
+  },
+  "2022-04-18": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 78.1,
+   "baseline": "05.10"
+  },
+  "2022-04-13": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.6,
+   "baseline": "05.10",
+   "ndvi": 0.4358,
+   "ndmi": -0.0591
+  },
+  "2022-04-08": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 56.6,
+   "baseline": "05.10",
+   "ndvi": 0.4152,
+   "ndmi": -0.0514
+  },
+  "2022-04-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 16.4,
+   "baseline": "04.00",
+   "ndvi": 0.4184,
+   "ndmi": -0.0671
+  },
+  "2022-03-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "05.10",
+   "ndvi": 0.434,
+   "ndmi": -0.0441
+  },
+  "2022-03-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "04.00",
+   "ndvi": 0.4359,
+   "ndmi": -0.0447
+  },
+  "2022-03-19": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 83.4,
+   "baseline": "05.10"
+  },
+  "2022-03-14": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 71.4,
+   "baseline": "05.10"
+  },
+  "2022-03-09": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 3.9,
+   "baseline": "05.10",
+   "ndvi": 0.449,
+   "ndmi": -0.0238
+  },
+  "2022-03-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 60.4,
+   "baseline": "04.00",
+   "ndvi": 0.4636,
+   "ndmi": -0.0209
+  },
+  "2022-02-27": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "04.00",
+   "ndvi": 0.4557,
+   "ndmi": -0.0186
+  },
+  "2022-02-22": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 4.9,
+   "baseline": "04.00",
+   "ndvi": 0.4567,
+   "ndmi": -0.0159
+  },
+  "2022-02-17": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 44.7,
+   "baseline": "05.10",
+   "ndvi": 0.4625,
+   "ndmi": 0.0045
+  },
+  "2022-02-12": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 32.2,
+   "baseline": "04.00",
+   "ndvi": 0.441,
+   "ndmi": -0.0072
+  },
+  "2022-02-07": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 74.8,
+   "baseline": "04.00"
+  },
+  "2022-02-02": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 13.8,
+   "baseline": "04.00",
+   "ndvi": 0.453,
+   "ndmi": -0.0069
+  },
+  "2022-01-28": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 87.4,
+   "baseline": "04.00"
+  },
+  "2022-01-23": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.2,
+   "baseline": "03.00",
+   "ndvi": 0.4665,
+   "ndmi": 0.0011
+  },
+  "2022-01-18": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.0,
+   "baseline": "03.00",
+   "ndvi": 0.4604,
+   "ndmi": -0.0032
+  },
+  "2022-01-13": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 88.4,
+   "baseline": "03.00"
+  },
+  "2022-01-08": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 88.3,
+   "baseline": "03.00"
+  },
+  "2022-01-03": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 25.5,
+   "baseline": "03.00",
+   "ndvi": 0.4524,
+   "ndmi": -0.0116
+  },
+  "2021-12-29": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 96.8,
+   "baseline": "03.00"
+  },
+  "2021-12-24": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 46.7,
+   "baseline": "03.00",
+   "ndvi": 0.4518,
+   "ndmi": -0.0
+  },
+  "2021-12-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 55.6,
+   "baseline": "04.00",
+   "ndvi": 0.4567,
+   "ndmi": 0.0109
+  },
+  "2021-12-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 5.7,
+   "baseline": "04.00",
+   "ndvi": 0.4651,
+   "ndmi": 0.007
+  },
+  "2021-12-09": {
+   "clear_frac": 0.074,
+   "tile": "19HBD",
+   "tile_cc": 74.4,
+   "baseline": "03.00",
+   "ndvi": 0.3721,
+   "ndmi": 0.1273
+  },
+  "2021-12-04": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 2.3,
+   "baseline": "03.00",
+   "ndvi": 0.4618,
+   "ndmi": 0.0071
+  },
+  "2021-11-29": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 8.4,
+   "baseline": "03.00",
+   "ndvi": 0.4623,
+   "ndmi": 0.0041
+  },
+  "2021-11-24": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 93.5,
+   "baseline": "03.00"
+  },
+  "2021-11-19": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 68.0,
+   "baseline": "03.00",
+   "ndvi": 0.4581,
+   "ndmi": 0.0083
+  },
+  "2021-11-14": {
+   "clear_frac": 1.0,
+   "tile": "19HBD",
+   "tile_cc": 0.1,
+   "baseline": "03.00",
+   "ndvi": 0.4603,
+   "ndmi": -0.0001
+  },
+  "2021-11-09": {
+   "clear_frac": 0.0,
+   "tile": "19HBD",
+   "tile_cc": 70.3,
+   "baseline": "03.00"
+  }
+ }
+}

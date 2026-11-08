@@ -1,0 +1,54 @@
+{
+ "pc_stats_ndvi_raw": {
+  "status": 200,
+  "mean": 0.5387,
+  "std": 0.0857,
+  "count": 11990.0,
+  "valid_percent": 100.0,
+  "latency_s": 0.58
+ },
+ "pc_stats_ndvi_offset_corrected": {
+  "status": 200,
+  "mean": 0.794,
+  "std": 0.1118,
+  "count": 11990.0,
+  "valid_percent": 100.0,
+  "latency_s": 0.55
+ },
+ "pc_stats_ndmi_offset_corrected": {
+  "status": 200,
+  "mean": 0.2685,
+  "std": 0.1208,
+  "count": 11990.0,
+  "valid_percent": 100.0,
+  "latency_s": 0.6
+ },
+ "pc_s2_offset_meta": {
+  "s2:processing_baseline": "05.13",
+  "boa_add_offset_in_props": {},
+  "B04_raster_bands": null,
+  "latency_s": 0.47
+ },
+ "es_c1_offset_meta": {
+  "B04_raster_bands": [
+   {
+    "nodata": 0,
+    "data_type": "uint16",
+    "spatial_resolution": 10,
+    "scale": 0.0001,
+    "offset": -0.1
+   }
+  ],
+  "baseline": "05.13",
+  "latency_s": 0.14
+ },
+ "climateserv_chirps_job": {
+  "submit_status": 200,
+  "job": "6efcb825-d8ec-4608-8354-1f2eaa3c95e7",
+  "progress": "[100.0]",
+  "n": 0,
+  "first": [],
+  "last": [],
+  "latency_s": 5.77
+ }
+}

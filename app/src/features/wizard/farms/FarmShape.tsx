@@ -1,0 +1,84 @@
+/** One draft farm drawn on the map: coloured by crop, name tooltip, click to select, optional vertex editing. */
+import { memo, useEffect, useMemo, useRef } from 'react';
+import { Polygon as LeafletPolygon, Tooltip, useMap } from 'react-leaflet';
+import type L from 'leaflet';
+import { CROP_META } from '@/domain/constants';
+import type { Farm } from '@/domain/types';
+import { toLatLngs } from '@/shared/map';
+
+export interface FarmShapeProps {
+  farm: Farm;
+  selected: boolean;
+  /** Vertex editing (geoman) is on for this farm. */
+  editing?: boolean;
+  onSelect?: (id: string) => void;
+  /** Registers / unregisters the Leaflet layer so the parent can read edited vertices. */
+  registerLayer?: (id: string, layer: L.Polygon | null) => void;
+  /** Clicks pass through (e.g. while placing a zone centre). */
+  interactive?: boolean;
+}
+
+export const FarmShape = memo(function FarmShape({ farm, selected, editing = false, onSelect, registerLayer, interactive = true }: FarmShapeProps) {
+  const map = useMap();
+  const layerRef = useRef<L.Polygon | null>(null);
+  // react-leaflet resets vertices whenever `positions` changes by reference, so keep it stable per polygon.
+  const positions = useMemo(() => toLatLngs(farm.polygon), [farm.polygon]);
+  const color = CROP_META[farm.crop]?.color ?? '#1F6B43';
+
+  useEffect(() => {
+    if (!registerLayer) return;
+    registerLayer(farm.id, layerRef.current);
+    return () => registerLayer(farm.id, null);
+  }, [farm.id, registerLayer]);
+
+  useEffect(() => {
+    const layer = layerRef.current;
+    if (!editing || !layer?.pm) return;
+    layer.pm.enable({ allowSelfIntersection: false, snappable: true });
+    layer.bringToFront();
+    return () => {
+      if (layer.pm.enabled()) layer.pm.disable();
+    };
+  }, [editing]);
+
+  useEffect(() => {
+    if (selected) layerRef.current?.bringToFront();
+  }, [selected]);
+
+  const handlers = useMemo(
+    () => ({
+      click: (e: L.LeafletMouseEvent) => {
+        // While drawing, clicks place vertices; do not change the selection.
+        if (map.pm?.globalDrawModeEnabled()) return;
+        if (!onSelect) return;
+        if (e.originalEvent) e.originalEvent.stopPropagation();
+        onSelect(farm.id);
+      },
+    }),
+    [map, onSelect, farm.id],
+  );
+
+  return (
+    <LeafletPolygon
+      ref={layerRef}
+      positions={positions}
+      eventHandlers={handlers}
+      interactive={interactive}
+      bubblingMouseEvents={!onSelect}
+      pathOptions={{
+        color: selected ? '#FFFFFF' : color,
+        weight: selected ? 4 : 2,
+        fillColor: color,
+        fillOpacity: selected ? 0.4 : 0.25,
+        dashArray: editing ? '6 4' : undefined,
+      }}
+    >
+      {interactive && (
+        <Tooltip sticky direction="top" opacity={0.95}>
+          <span className="font-medium">{farm.name || 'Unnamed farm'}</span>
+          <span className="text-muted"> · {CROP_META[farm.crop]?.label}</span>
+        </Tooltip>
+      )}
+    </LeafletPolygon>
+  );
+});

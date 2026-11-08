@@ -1,0 +1,146 @@
+{
+ "quillota_avocado": {
+  "crop": "avocado",
+  "item": "ESA_WorldCover_10m_2021_v200_S33W072",
+  "status": 200,
+  "s": 0.72,
+  "frac": {
+   "built": 0.92,
+   "tree": 0.06,
+   "shrub": 0.01,
+   "bare": 0.01,
+   "cropland": 0.0
+  }
+ },
+ "ovalle_table_grape": {
+  "crop": "table grape",
+  "item": "ESA_WorldCover_10m_2021_v200_S33W072",
+  "status": 200,
+  "s": 0.68,
+  "frac": {
+   "built": 0.97,
+   "tree": 0.02,
+   "shrub": 0.0,
+   "grass": 0.0,
+   "bare": 0.0
+  }
+ },
+ "requinoa_cherry": {
+  "crop": "cherry",
+  "item": "ESA_WorldCover_10m_2021_v200_S36W072",
+  "status": 200,
+  "s": 0.63,
+  "frac": {
+   "grass": 0.33,
+   "cropland": 0.3,
+   "tree": 0.2,
+   "shrub": 0.11,
+   "built": 0.05,
+   "bare": 0.01,
+   "water": 0.0
+  }
+ },
+ "colchagua_wine": {
+  "crop": "wine grape",
+  "item": "ESA_WorldCover_10m_2021_v200_S36W072",
+  "status": 200,
+  "s": 0.6,
+  "frac": {
+   "built": 0.91,
+   "tree": 0.07,
+   "grass": 0.02,
+   "shrub": 0.0,
+   "cropland": 0.0,
+   "bare": 0.0
+  }
+ },
+ "curico_apple_cherry": {
+  "crop": "apple/cherry",
+  "item": "ESA_WorldCover_10m_2021_v200_S36W072",
+  "status": 200,
+  "s": 0.63,
+  "frac": {
+   "built": 0.98,
+   "cropland": 0.01,
+   "tree": 0.0,
+   "grass": 0.0,
+   "bare": 0.0
+  }
+ },
+ "talca_vineyard": {
+  "crop": "wine grape",
+  "item": "ESA_WorldCover_10m_2021_v200_S36W072",
+  "status": 200,
+  "s": 0.64,
+  "frac": {
+   "built": 0.98,
+   "tree": 0.02,
+   "bare": 0.0
+  }
+ },
+ "parral_rice": {
+  "crop": "rice",
+  "item": "ESA_WorldCover_10m_2021_v200_S39W072",
+  "status": 200,
+  "s": 0.42,
+  "frac": {
+   "built": 0.91,
+   "tree": 0.05,
+   "grass": 0.02,
+   "cropland": 0.01,
+   "shrub": 0.0,
+   "bare": 0.0
+  }
+ },
+ "chillan_blueberry": {
+  "crop": "blueberry",
+  "item": "ESA_WorldCover_10m_2021_v200_S39W075",
+  "status": 200,
+  "s": 0.64,
+  "frac": {
+   "built": 0.94,
+   "tree": 0.05,
+   "shrub": 0.0,
+   "grass": 0.0,
+   "bare": 0.0
+  }
+ },
+ "losangeles_maize_wheat": {
+  "crop": "maize/wheat",
+  "item": "ESA_WorldCover_10m_2021_v200_S39W075",
+  "status": 200,
+  "s": 0.46,
+  "frac": {
+   "built": 0.93,
+   "tree": 0.07,
+   "grass": 0.0,
+   "bare": 0.0
+  }
+ },
+ "temuco_wheat_oats": {
+  "crop": "wheat/oats",
+  "item": "ESA_WorldCover_10m_2021_v200_S39W075",
+  "status": 200,
+  "s": 0.72,
+  "frac": {
+   "built": 0.92,
+   "tree": 0.07,
+   "grass": 0.01,
+   "cropland": 0.0
+  }
+ },
+ "osorno_potato": {
+  "crop": "potato",
+  "item": "ESA_WorldCover_10m_2021_v200_S42W075",
+  "status": 200,
+  "s": 0.85,
+  "frac": {
+   "built": 0.51,
+   "tree": 0.44,
+   "grass": 0.04,
+   "bare": 0.01,
+   "cropland": 0.0,
+   "water": 0.0
+  }
+ }
+}

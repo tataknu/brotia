@@ -1,0 +1,362 @@
+{
+ "Estancia Los Tajibos (soy)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 441
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 815
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 709
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 546
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 848
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 600
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 720
+  }
+ },
+ "Agropecuaria Brecha 8 (maize)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.026,
+   "ms": 355
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.0,
+   "ms": 426
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.0,
+   "ms": 374
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 463
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.579,
+   "ms": 453
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.398,
+   "ms": 366
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 0.994,
+   "ms": 352
+  }
+ },
+ "Colonia Cuatro Canadas Lote 7 (soy)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.808,
+   "ms": 309
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.004,
+   "ms": 337
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.087,
+   "ms": 330
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 388
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.463,
+   "ms": 434
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 1.0,
+   "ms": 374
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 376
+  }
+ },
+ "Hacienda El Cusi (sorghum)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.6,
+   "ms": 350
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.001,
+   "ms": 362
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.005,
+   "ms": 355
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.08,
+   "ms": 380
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.929,
+   "ms": 351
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 1.0,
+   "ms": 425
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 365
+  }
+ },
+ "Agricola Pailon Norte (wheat)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 352
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 371
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 402
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 386
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 347
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 361
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 349
+  }
+ },
+ "Granja Las Londras (sunflower)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 372
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 369
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 433
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 366
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 358
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 329
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 406
+  }
+ },
+ "Finca Okinawa Dos (maize)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.99,
+   "ms": 456
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.0,
+   "ms": 357
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.0,
+   "ms": 430
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.048,
+   "ms": 388
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 1.0,
+   "ms": 374
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.99,
+   "ms": 364
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 466
+  }
+ },
+ "Parcela Okinawa Uno (soy)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.389,
+   "ms": 336
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.028,
+   "ms": 481
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.0,
+   "ms": 345
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 361
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.027,
+   "ms": 353
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.179,
+   "ms": 340
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 432
+  }
+ },
+ "Arrocera Mineros (rice)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.023,
+   "ms": 352
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.01,
+   "ms": 358
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.047,
+   "ms": 354
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.072,
+   "ms": 380
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.096,
+   "ms": 361
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.976,
+   "ms": 352
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 375
+  }
+ },
+ "Canaveral San Antonio (sugarcane)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.099,
+   "ms": 343
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.0,
+   "ms": 347
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.065,
+   "ms": 357
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 358
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.061,
+   "ms": 329
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.603,
+   "ms": 404
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 603
+  }
+ },
+ "Agricola Warnes Sur (soy)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 333
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 411
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 332
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 353
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": null,
+   "ms": 368
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": null,
+   "ms": 363
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": null,
+   "ms": 399
+  }
+ },
+ "Estancia Mineros Norte (soy)": {
+  "temporarycrops|tc-annual|2021-10-27": {
+   "frac100": 0.254,
+   "ms": 359
+  },
+  "maize|tc-maize-second|2021-04-16": {
+   "frac100": 0.013,
+   "ms": 362
+  },
+  "maize|tc-maize-main|2021-08-11": {
+   "frac100": 0.094,
+   "ms": 389
+  },
+  "wintercereals|tc-wintercereals|2021-10-27": {
+   "frac100": 0.0,
+   "ms": 346
+  },
+  "activecropland|tc-wintercereals|2021-10-27": {
+   "frac100": 0.416,
+   "ms": 352
+  },
+  "activecropland|tc-maize-second|2021-04-16": {
+   "frac100": 0.568,
+   "ms": 384
+  },
+  "activecropland|tc-maize-main|2021-08-11": {
+   "frac100": 1.0,
+   "ms": 398
+  }
+ }
+}

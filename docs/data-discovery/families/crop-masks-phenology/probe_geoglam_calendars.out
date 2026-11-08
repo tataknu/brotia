@@ -1,0 +1,13 @@
+members=10 listed in 0.8s, fetched 1 kB of 554 MB
+  .3/: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/']
+  .cpg: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.cpg']
+  .dbf: 1 files, 2.1 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.dbf']
+  .prj: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.prj']
+  .sbn: 1 files, 0.1 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.sbn']
+  .sbx: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.sbx']
+  .shp: 1 files, 845.7 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.shp']
+  .shx: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.shx']
+  .xml: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.xml']
+  .txt: 1 files, 0.0 MB, e.g. ['GEOGLAM_CM4EW_Calendars_V1.3/ReadMe_GEOGLAM_CM4EW_Calendars.txt']
+candidate: GEOGLAM_CM4EW_Calendars_V1.3/GEOGLAM_CM4EW_Calendars_V1.3.dbf 2096192
+candidate: GEOGLAM_CM4EW_Calendars_V1.3/ReadMe_GEOGLAM_CM4EW_Calendars.txt 4290
