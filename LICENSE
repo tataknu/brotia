@@ -1,0 +1,27 @@
+Copyright (c) 2026 Rafael Ferrada, Josefina Larrain, Cristian Vildosola and Fernanda Villablanca.
+All rights reserved.
+
+BrotIA, including its source code, risk methodology, crop templates, designs, presentation and
+documentation in this repository (the "Software"), is proprietary.
+
+The Software is made visible for evaluation only, as part of the MIT Energy and Climate Hack 2026.
+No licence is granted to use, copy, modify, merge, publish, distribute, sublicense, sell or create
+derivative works of the Software, in whole or in part, without the prior written permission of the
+copyright holders. Viewing the Software, and forking it on GitHub as allowed by GitHub's Terms of
+Service, does not grant any of those rights.
+
+Third-party material in this repository remains the property of its owners and is used under its own
+terms, including:
+- the Suyana name and logo (trademarks of their owner);
+- the CIREN fruit cadastre, DGA, CR2MET and RAN data (Chilean public sources);
+- Copernicus Sentinel-2 and Copernicus DEM data, which contain modified Copernicus Sentinel data;
+- ERA5, NASA FIRMS, GWIS and Copernicus EMS data;
+- Esri World Imagery basemap tiles;
+- the SEN2SRLite model weights (CC0-1.0);
+- open-source libraries listed in app/package.json and service/pyproject.toml, under their own licences.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL
+THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR
+ITS USE. Outputs are a climate-stress signal, not a credit decision or a default prediction.
+
+For permission requests, contact the copyright holders.

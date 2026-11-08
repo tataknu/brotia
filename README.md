@@ -147,3 +147,10 @@ built, is [`docs/v1-status.md`](docs/v1-status.md).
 ## Team
 
 Rafael Ferrada · Josefina Larrain · Cristian Vildosola · Fernanda Villablanca
+
+## License
+
+Copyright © 2026 Rafael Ferrada, Josefina Larrain, Cristian Vildosola and Fernanda Villablanca.
+**All rights reserved.** This repository is shared for evaluation only; no licence is granted to use, copy,
+modify or distribute it without written permission. Third-party data, models and marks (including the
+Suyana name and logo) belong to their owners. See [`LICENSE`](LICENSE).
