@@ -63,3 +63,6 @@
 
 /* Opening frame: pure black over everything (logo, counter, buttons) until → or a click */
 .wl-blank { position: fixed; inset: 0; z-index: 1000; background: #000; cursor: none; }
+
+/* The corner "Enter platform" button is hidden for the recording; Enter or the last → still enter the platform. */
+.wl-next { display: none !important; }
