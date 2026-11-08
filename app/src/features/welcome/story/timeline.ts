@@ -7,8 +7,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 export type SceneDef = { id: string; label: string; dur: number };
 
 export const SCENES: SceneDef[] = [
-  { id: 'problem', label: 'Problem', dur: 6000 },
-  { id: 'solution', label: 'Solution', dur: 7500 },
+  { id: 'problem', label: 'Problem', dur: 9000 },
+  { id: 'solution', label: 'Solution', dur: 11500 },
   { id: 'field', label: 'Field', dur: 5000 },
   { id: 'season', label: 'Season', dur: 10500 },
   { id: 'loan', label: 'Loan', dur: 9300 },

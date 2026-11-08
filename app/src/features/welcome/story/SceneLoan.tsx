@@ -81,7 +81,7 @@ export function SceneLoan({ t, d }: { t: number; d: StoryData | null }) {
   // Beats.
   const pulse = ramp(t, SIGNAL, SIGNAL + 350) * (1 - ramp(t, SIGNAL + 500, SIGNAL + 1300));
   const scan = easeOut(ramp(t, SIGNAL + 150, SIGNAL + 750));
-  const scanFade = 1 - 0.7 * ramp(t, SIGNAL + 800, SIGNAL + 1400);
+  const scanFade = 1 - ramp(t, SIGNAL + 800, SIGNAL + 1600);
   const redP = ramp(t, ALERT, ALERT + 700);
   const glow = redP > 0 ? 0.35 + 0.65 * Math.abs(Math.sin(((t - ALERT) / 900) * Math.PI)) * (1 - ramp(t, ALERT + 1800, ALERT + 2700)) : 0;
   const proj = easeOut(ramp(t, ALERT + 200, ALERT + 800));

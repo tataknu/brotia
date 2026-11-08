@@ -74,5 +74,6 @@ export function Dissolve({ p, cols = 32, rows = 18 }: { p: number; cols?: number
 export const fmtMoney = (n: number, cur: string) => `${cur} ${n.toLocaleString('en-US', { maximumFractionDigits: 0 })}`;
 export const fmtDate = (iso: string) => {
   const d = new Date(`${iso}T12:00:00Z`);
-  return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+  const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${d.getUTCDate()} ${MON[d.getUTCMonth()]} ${d.getUTCFullYear()}`;
 };

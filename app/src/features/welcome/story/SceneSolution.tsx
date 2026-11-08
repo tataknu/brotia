@@ -57,7 +57,7 @@ const LIGHT = (k: number) => 1500 + k * 400;
 // The risk level as a live signal: wobbles low, rises through watch, crosses high, dips back once, settles high.
 const KEYS: [number, number][] = [
   [0, 10], [1500, 10], [2300, 18], [2700, 14], [3100, 24], [3500, 20], [3900, 40], [4300, 37],
-  [4700, 52], [5000, 64], [5300, 57], [5700, 76], [6100, 80], [6500, 84],
+  [4700, 52], [5400, 64], [6000, 57], [6800, 70], [7600, 66], [8400, 78], [9200, 74], [10000, 82], [10500, 84],
 ];
 
 function levelAt(t: number): number {
@@ -72,7 +72,7 @@ function levelAt(t: number): number {
     }
   }
   // a small deterministic shimmer while the signal is live; gone by the hold
-  const live = ramp(t, 1200, 1800) * (1 - ramp(t, 5900, 6500));
+  const live = ramp(t, 1200, 1800) * (1 - ramp(t, 9900, 10500));
   return v + live * 0.7 * Math.sin(t / 95) * Math.sin(t / 233);
 }
 
@@ -223,7 +223,7 @@ export function SceneSolution({ t }: { t: number }) {
           </div>
         </div>
       </div>
-      <div className="st-caption" style={{ opacity: ramp(t, 6000, 6700) }}>
+      <div className="st-caption" style={{ opacity: ramp(t, 10000, 10700) }}>
         One risk score per crop, stage and zone.
       </div>
     </div>
