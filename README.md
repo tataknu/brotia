@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app/public/brand/brotia-mark.svg" alt="BrotIA" width="96">
+  <img src="docs/brand/brotia-logo.gif" alt="BrotIA: climate risk · agricultural lending" width="560">
 </p>
 
 # BrotIA
