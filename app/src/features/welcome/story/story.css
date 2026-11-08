@@ -248,7 +248,7 @@
 
 /* S10 · Q&A: 3×2 clickable cards with a mini visual each; one answer panel over the grid with a pixel wipe:
    a topic visual on the left (≈38 %), the answer bullets on the right. */
-.st-qa-hint { position: absolute; right: 7cqw; top: 6.05cqw; font-size: 0.8cqw; letter-spacing: 0.18em; text-transform: uppercase; color: #6f8479; }
+.st-qa-hint { position: absolute; right: 13cqw; top: 6.05cqw; font-size: 0.8cqw; letter-spacing: 0.18em; text-transform: uppercase; color: #6f8479; }
 .st-qa-grid { position: absolute; left: 7cqw; right: 7cqw; top: 15cqw; bottom: 7.4cqw; display: grid; grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); gap: 1.6cqw; }
 .st-qa-card { position: relative; display: flex; flex-direction: column; align-items: stretch; gap: 0.9cqw; text-align: left; min-height: 0; overflow: hidden;
@@ -438,3 +438,9 @@
 .st-qa-math math { display: block; margin: 0; text-align: left; font-family: 'STIX Two Math', 'Latin Modern Math', 'Cambria Math', math;
   font-size: 1.7cqw; color: #eaf3ee; }
 .st-qa-v-risk ~ * .st-qa-list li b, .st-qa-list-math li b { text-transform: none; font-size: 0.8cqw; letter-spacing: 0.04em; }
+
+/* Small QR to the live demo, top right on the closing and Q&A slides */
+.st-miniqr { position: absolute; top: 3cqw; right: 3.5cqw; z-index: 6; display: flex; flex-direction: column; align-items: center; gap: 0.5cqw; pointer-events: none; }
+.st-miniqr-code { width: 7cqw; aspect-ratio: 1; background: #eaf3ee; border-radius: 0.5cqw; box-shadow: 0 0 0 1px rgba(141, 160, 150, 0.25); }
+.st-miniqr-code svg { display: block; width: 100%; height: 100%; fill: #0e1914; }
+.st-miniqr span { font-size: 0.75cqw; letter-spacing: 0.04em; color: #8da096; }

@@ -11,6 +11,7 @@ import { SceneField } from './SceneField';
 import { SceneLoan } from './SceneLoan';
 import { SceneProblem } from './SceneProblem';
 import { SceneQa } from './SceneQa';
+import { MiniQr } from './MiniQr';
 import { SceneSeason } from './SceneSeason';
 import { SceneSolution } from './SceneSolution';
 import { SceneTry } from './SceneTry';
@@ -104,7 +105,10 @@ export const StorySlide = forwardRef<SlideHandle, SlideProps>(function StorySlid
   }
   return (
     <div className={`st-root${reduce ? ' st-reduce' : ''}`}>
-      <div className="st-stage">{body}</div>
+      <div className="st-stage">
+        {body}
+        {(scene.id === 'cta' || scene.id === 'qa') && <MiniQr t={t} />}
+      </div>
       <Dissolve p={wipe} />
     </div>
   );
