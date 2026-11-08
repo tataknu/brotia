@@ -548,9 +548,6 @@ export function SceneQa({ t }: { t: number }) {
       <div className="st-title">
         <Typed text="Questions? Open a card." p={ramp(t, HEAD[0], HEAD[1])} />
       </div>
-      <div className="st-qa-hint" style={{ opacity: ramp(t, 2200, 2700) }}>
-        click a card · Enter opens · Esc closes
-      </div>
 
       <div className="st-qa-grid" data-qa onClick={own}>
         {QA_CARDS.map((c, i) => {

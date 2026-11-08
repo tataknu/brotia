@@ -1,7 +1,7 @@
 /** Small QR to the live demo, pinned top right on the closing and Q&A slides. */
 import { useMemo } from 'react';
 import qrcode from 'qrcode-generator';
-import { DEMO_URL, DEMO_URL_LABEL } from './demoUrl';
+import { DEMO_URL } from './demoUrl';
 import { ramp } from './timeline';
 
 const QUIET = 4;
@@ -26,7 +26,6 @@ export function MiniQr({ t }: { t: number }) {
           ))}
         </svg>
       </div>
-      <span>{DEMO_URL_LABEL}</span>
     </div>
   );
 }
