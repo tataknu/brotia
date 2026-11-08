@@ -11,6 +11,7 @@ import { SceneLoan } from './SceneLoan';
 import { SceneProblem } from './SceneProblem';
 import { SceneSeason } from './SceneSeason';
 import { SceneSolution } from './SceneSolution';
+import { SceneTry } from './SceneTry';
 import { SCENES, ramp, useTimeline } from './timeline';
 import type { StoryData } from './useStoryData';
 import './story.css';
@@ -86,6 +87,9 @@ export const StorySlide = forwardRef<SlideHandle, SlideProps>(function StorySlid
       break;
     case 'loan':
       body = <SceneLoan t={t} d={data} />;
+      break;
+    case 'try':
+      body = <SceneTry t={t} />;
       break;
     default:
       body = <SceneCta t={t} />;

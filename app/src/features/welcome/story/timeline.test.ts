@@ -9,6 +9,10 @@ describe('story timeline', () => {
     expect(sceneAt(TOTAL + 999).index).toBe(SCENES.length - 1);
   });
 
+  it('ends with the CTA, then the try-it-yourself QR slide', () => {
+    expect(SCENES.slice(-2).map((s) => s.id)).toEqual(['cta', 'try']);
+  });
+
   it('pauses, resumes and seeks exactly', () => {
     let now = 1000;
     const c = new Clock(() => now);

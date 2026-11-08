@@ -4,7 +4,7 @@
   "installCommand": "cd app && npm ci",
   "buildCommand": "cd app && VITE_SERVICE_URL=https://service.offline.invalid npm run build",
   "outputDirectory": "app/dist",
-  "rewrites": [{ "source": "/((?!assets/|snapshot/|brand/|partners/).*)", "destination": "/index.html" }],
+  "rewrites": [{ "source": "/((?!assets/|snapshot/|brand/|partners/|story/).*)", "destination": "/index.html" }],
   "headers": [
     { "source": "/snapshot/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }] },
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
