@@ -22,3 +22,8 @@ app/dist/
 .agents/
 skills-lock.json
 .DS_Store
+
+# hackathon working files (kept local)
+challenge-board.html
+challenge-scoring.md
+di.html
