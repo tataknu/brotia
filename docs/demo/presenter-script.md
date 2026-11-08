@@ -48,12 +48,19 @@ Speak at a calm pace: about 2.5 words per second.
 
 **→**
 
-## 7 · Try it yourself (about 5 s)
+## 7 · Business model (about 8 s)
+> The business model is printer-and-ink. Banks pay a flat fee for the tool, priced near cost.
+> Suyana earns its margin on the cover sold inside it: the analyst sees the uninsured exposure, and quotes and binds in one click.
+> The more of the book a bank insures, the lower the premium. We start with a one-season pilot with one lender.
+
+**→**
+
+## 8 · Try it yourself (about 5 s)
 > This is the real report for that portfolio, and the Los Ángeles block is right at the top. Scan the code and try it yourself.
 
 **→**
 
-## 8 · Close (about 3 s)
+## 9 · Close (about 3 s)
 > BrotIA: climate risk for agricultural lending. Let's go inside.
 
 **→** (enter the platform)

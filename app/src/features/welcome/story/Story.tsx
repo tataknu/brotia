@@ -5,6 +5,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from 'react';
 import { FlyInScene } from '../flyin/FlyInScene';
 import { Dissolve } from './pixel';
+import { SceneBusiness } from './SceneBusiness';
 import { SceneCta } from './SceneCta';
 import { SceneField } from './SceneField';
 import { SceneLoan } from './SceneLoan';
@@ -87,6 +88,9 @@ export const StorySlide = forwardRef<SlideHandle, SlideProps>(function StorySlid
       break;
     case 'loan':
       body = <SceneLoan t={t} d={data} />;
+      break;
+    case 'business':
+      body = <SceneBusiness t={t} d={data} />;
       break;
     case 'try':
       body = <SceneTry t={t} />;

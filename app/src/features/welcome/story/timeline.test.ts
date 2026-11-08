@@ -9,8 +9,8 @@ describe('story timeline', () => {
     expect(sceneAt(TOTAL + 999).index).toBe(SCENES.length - 1);
   });
 
-  it('ends with the CTA, then the try-it-yourself QR slide', () => {
-    expect(SCENES.slice(-2).map((s) => s.id)).toEqual(['try', 'cta']);
+  it('ends with the business model, the try-it-yourself QR slide, then the CTA', () => {
+    expect(SCENES.slice(-3).map((s) => s.id)).toEqual(['business', 'try', 'cta']);
   });
 
   it('pauses, resumes and seeks exactly', () => {

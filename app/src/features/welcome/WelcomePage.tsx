@@ -4,7 +4,7 @@
  * Rendered outside the app shell.
  * Keys: → / Space / PageDown / click = next (skips a running animation to its end first) · ← / PageUp = back ·
  * R = replay the current slide · Enter = enter the platform · F = fullscreen · L = light/dark (logo).
- * `?scene=N` opens story scene N (1–7; 7 = try-it-yourself QR) directly; `?scene=0` is the logo. `&end=1` opens it on its final frame. `?nomap=1` swaps the map fly-in for a pixel zoom.
+ * `?scene=N` opens story scene N (1–8; 6 = business model, 7 = try-it-yourself QR) directly; `?scene=0` is the logo. `&end=1` opens it on its final frame. `?nomap=1` swaps the map fly-in for a pixel zoom.
  * The map slide (`?scene=3`, step 4) has two beats under one step: (a) portfolio view, then → (b) the dive into one
  * orchard; `&beat=2` opens beat (b). Review only: `&at=0.5` freezes the open beat at that progress.
  */

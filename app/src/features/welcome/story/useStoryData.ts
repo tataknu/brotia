@@ -28,6 +28,8 @@ export type StoryData = {
   driverText: string;
   nextInstallment: Inst | null;
   exposure: number | null;
+  /** Portfolio assessment: loan exposure by risk tier (normal / watch / high), in `currency`. */
+  exposureByTier: Record<string, number> | null;
   frames: { date: string; kind: string; src: string; rgb: string | null }[];
   ndvi: Pt[];
   ndmi: Pt[];
@@ -79,6 +81,7 @@ export function useStoryData(farmId = STORY_FARM, portfolioId = STORY_PORTFOLIO)
           driverText: driver?.text ?? '',
           nextInstallment: a.nextInstallment ?? null,
           exposure: a.exposure ?? null,
+          exposureByTier: pa?.exposureByTier ?? null,
           frames: im.frames
             .filter((f: { urls: { ndvi: string | null } }) => f.urls.ndvi)
             .map((f: { date: string; kind: string; urls: { ndvi: string; rgb: string | null } }) => ({
