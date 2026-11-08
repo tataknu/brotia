@@ -61,8 +61,14 @@ Speak at a calm pace: about 2.5 words per second.
 **→**
 
 ## 9 · Close (about 3 s)
-> BrotIA: climate risk for agricultural lending. Let's go inside.
+> BrotIA: climate risk for agricultural lending.
 
+**→**
+
+## 10 · Q&A
+> Happy to take questions. The technical answers are on these cards.
+
+Click a card to open it (Esc closes): data sources, the risk score, clouds, what "normal" means, where AI comes in, limits.
 **→** (enter the platform)
 
 ---

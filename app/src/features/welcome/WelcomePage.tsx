@@ -4,7 +4,7 @@
  * Rendered outside the app shell.
  * Keys: → / Space / PageDown / click = next (skips a running animation to its end first) · ← / PageUp = back ·
  * R = replay the current slide · Enter = enter the platform · F = fullscreen · L = light/dark (logo).
- * `?scene=N` opens story scene N (1–8; 6 = business model, 7 = try-it-yourself QR) directly; `?scene=0` is the logo. `&end=1` opens it on its final frame. `?nomap=1` swaps the map fly-in for a pixel zoom.
+ * `?scene=N` opens story scene N (1–9; 6 = business model, 7 = try-it-yourself QR, 8 = CTA, 9 = Q&A; `&qa=N` opens Q&A card N) directly; `?scene=0` is the logo. `&end=1` opens it on its final frame. `?nomap=1` swaps the map fly-in for a pixel zoom.
  * The map slide (`?scene=3`, step 4) has two beats under one step: (a) portfolio view, then → (b) the dive into one
  * orchard; `&beat=2` opens beat (b). Review only: `&at=0.5` freezes the open beat at that progress.
  */
@@ -12,6 +12,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './welcome.css';
 import { StorySlide, type SlideHandle } from './story/Story';
+import { isQaTarget } from './story/qa';
 import { SCENES } from './story/timeline';
 import { useStoryData } from './story/useStoryData';
 import { WarmUp } from './WarmUp';
@@ -252,6 +253,8 @@ export function WelcomePage() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const k = e.key.toLowerCase();
+      // Q&A cards own Enter / Space / Esc (open, close); arrows still navigate.
+      if (isQaTarget(e.target) && (k === 'enter' || k === ' ' || k === 'escape')) return;
       if (k === 'arrowright' || k === ' ' || k === 'pagedown') {
         e.preventDefault();
         next();
@@ -302,7 +305,7 @@ export function WelcomePage() {
       </div>
       <div className="wl-corner">brotia · 2026</div>
       {step > 0 && (
-        <div className="wl-story" onClick={next}>
+        <div className="wl-story" onClick={(e) => !isQaTarget(e.target) && next()}>
           <StorySlide key={`${step}-${replay}`} ref={slideRef} index={step - 1} data={data} reduce={!!reduce} noMap={noMap} startDone={startDone} sub={onMap ? sub : 0} freezeAt={step === initialStep && sub === initialSub ? freezeAt : undefined} />
         </div>
       )}

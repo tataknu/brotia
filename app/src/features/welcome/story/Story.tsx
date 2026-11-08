@@ -10,6 +10,7 @@ import { SceneCta } from './SceneCta';
 import { SceneField } from './SceneField';
 import { SceneLoan } from './SceneLoan';
 import { SceneProblem } from './SceneProblem';
+import { SceneQa } from './SceneQa';
 import { SceneSeason } from './SceneSeason';
 import { SceneSolution } from './SceneSolution';
 import { SceneTry } from './SceneTry';
@@ -94,6 +95,9 @@ export const StorySlide = forwardRef<SlideHandle, SlideProps>(function StorySlid
       break;
     case 'try':
       body = <SceneTry t={t} />;
+      break;
+    case 'qa':
+      body = <SceneQa t={t} />;
       break;
     default:
       body = <SceneCta t={t} />;
