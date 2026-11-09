@@ -38,6 +38,7 @@ import {
 } from './homeModel';
 import { AllocationBar, MixBar, PaymentScheduleChart, RiskScaleLegend, ScoreGauge, ScoreText, TierDot, TierLegend } from './HomeCharts';
 import { useAssessments, type ProbeState } from './useAssessments';
+import { paths } from '@/shell/paths';
 
 export function HomePage() {
   const portfolios = useStore((s) => s.portfolios);
@@ -56,10 +57,10 @@ export function HomePage() {
           description="Create a portfolio or load the Chilean sample to see the payments coming due and the climate risk behind them."
           action={
             <div className="flex flex-wrap justify-center gap-2">
-              <Link to="/portfolios/new" className={buttonClass('primary', 'sm')}>
+              <Link to={paths.newPortfolio} className={buttonClass('primary', 'sm')}>
                 <Plus size={16} /> New portfolio
               </Link>
-              <Link to="/portfolios" className={buttonClass('secondary', 'sm')}>
+              <Link to={paths.portfolios} className={buttonClass('secondary', 'sm')}>
                 Portfolios
               </Link>
             </div>
@@ -348,7 +349,7 @@ function PortfolioRisk({
     <article aria-label={r.name} className="px-5 py-5">
       <div className="grid gap-x-8 gap-y-5 md:grid-cols-2 xl:grid-cols-[minmax(0,14rem)_minmax(0,1fr)_minmax(0,1fr)_minmax(0,15rem)]">
         <div className="min-w-0">
-          <Link to={`/portfolios/${r.id}`} className="block truncate text-base font-semibold text-ink hover:text-brand focus:outline-none focus-visible:underline">
+          <Link to={paths.portfolio(r.id)} className="block truncate text-base font-semibold text-ink hover:text-brand focus:outline-none focus-visible:underline">
             <PortfolioName name={r.name} code={r.code} />
           </Link>
           <div className="mt-0.5 text-sm text-muted">
@@ -359,7 +360,7 @@ function PortfolioRisk({
             {r.asOf && state?.source !== 'snapshot' && <span className="text-xs text-muted">Risk as of {date(r.asOf)}</span>}
           </div>
           <Link
-            to={`/portfolios/${r.id}`}
+            to={paths.portfolio(r.id)}
             className="mt-3 inline-flex items-center gap-1 rounded text-sm font-medium text-brand hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
           >
             Open report <ArrowRight size={14} />
@@ -419,7 +420,7 @@ function PortfolioRisk({
           {top.map((f) => (
             <Link
               key={f.farmId}
-              to={`/portfolios/${r.id}/farms/${f.farmId}`}
+              to={paths.farm(r.id, f.farmId)}
               className="inline-flex min-w-0 items-center gap-1.5 rounded text-ink hover:text-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
             >
               <TierDot tier={f.tier} />
@@ -567,7 +568,7 @@ function IncidentsKpi({ k, names, loading, className }: { k: ReturnType<typeof h
                     {i.kind === 'credit_rule' && i.action ? `${CREDIT_ACTION_LABELS[i.action]}: ` : ''}
                     {i.detail}
                   </div>
-                  <Link to={`/portfolios/${i.portfolioId}`} className="text-brand hover:underline focus:outline-none focus-visible:underline">
+                  <Link to={paths.portfolio(i.portfolioId)} className="text-brand hover:underline focus:outline-none focus-visible:underline">
                     {names.get(i.portfolioId) ?? i.portfolioId}
                   </Link>
                 </li>
@@ -694,7 +695,7 @@ function PortfolioTable({
           {rows.map((r, i) => (
             <tr key={r.id} className={`border-t border-line ${i % 2 ? 'bg-surface/60' : ''}`}>
               <th scope="row" className="max-w-[16rem] py-2.5 pl-5 pr-3 text-left font-normal">
-                <Link to={`/portfolios/${r.id}`} className="block truncate font-medium text-ink hover:text-brand focus:outline-none focus-visible:underline">
+                <Link to={paths.portfolio(r.id)} className="block truncate font-medium text-ink hover:text-brand focus:outline-none focus-visible:underline">
                   {r.name}
                 </Link>
                 <RowStatus s={states[r.id]} />
@@ -711,7 +712,7 @@ function PortfolioTable({
               </td>
               <td className="px-3 py-2.5 text-right font-mono tabular-nums">{r.creditActions === null ? '–' : r.creditActions}</td>
               <td className="py-2.5 pl-3 pr-5 text-right">
-                <Link to={`/portfolios/${r.id}`} className="inline-flex items-center gap-1 whitespace-nowrap rounded text-xs font-medium text-brand hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40">
+                <Link to={paths.portfolio(r.id)} className="inline-flex items-center gap-1 whitespace-nowrap rounded text-xs font-medium text-brand hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40">
                   Report <ArrowRight size={12} />
                 </Link>
               </td>
@@ -764,7 +765,7 @@ function UpcomingTable({ items, currency, pending }: { items: ReturnType<typeof 
             {shown.map((i, n) => (
               <tr key={`${i.portfolioId}/${i.farmId}/${i.dueDate}`} className={`border-t border-line ${n % 2 ? 'bg-surface/60' : ''}`}>
                 <th scope="row" className="max-w-[9rem] py-2 pl-5 pr-3 text-left font-normal sm:max-w-[18rem]">
-                  <Link to={`/portfolios/${i.portfolioId}/farms/${i.farmId}`} className="flex min-w-0 items-center gap-1.5 text-ink hover:text-brand focus:outline-none focus-visible:underline">
+                  <Link to={paths.farm(i.portfolioId, i.farmId)} className="flex min-w-0 items-center gap-1.5 text-ink hover:text-brand focus:outline-none focus-visible:underline">
                     <TierDot tier={i.tier} className="sm:hidden" />
                     <span className="truncate">{i.farmName}</span>
                   </Link>

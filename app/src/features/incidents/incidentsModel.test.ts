@@ -148,8 +148,8 @@ group('sidebar badge and links', () => {
 
   it('links events to the farm Events tab and credit rules to its Overview', () => {
     const [crit, , , , , ev] = allRows([sample], '24h');
-    expect(farmHref(crit, 'cl-ovalle-table-grape')).toBe(`/portfolios/${portfolio.id}/farms/cl-ovalle-table-grape`);
-    expect(farmHref(ev, 'cl-curico-cherry')).toBe(`/portfolios/${portfolio.id}/farms/cl-curico-cherry?tab=events`);
+    expect(farmHref(crit, 'cl-ovalle-table-grape')).toBe(`/app/portfolios/${portfolio.id}/farms/cl-ovalle-table-grape`);
+    expect(farmHref(ev, 'cl-curico-cherry')).toBe(`/app/portfolios/${portfolio.id}/farms/cl-curico-cherry?tab=events`);
   });
 
   it('moves the sensor detail out of the event headline', () => {

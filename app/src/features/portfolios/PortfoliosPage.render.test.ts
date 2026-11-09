@@ -42,7 +42,7 @@ describe('PortfoliosPage', () => {
     expect(html).toContain('Enhanced data');
     expect(html).toContain('Table grape');
     expect(html).toContain('Restore sample portfolios');
-    expect(html).toContain(`href="/portfolios/${sample.id}"`);
+    expect(html).toContain(`href="/app/portfolios/${sample.id}"`);
     expect(html).not.toContain('>Total<'); // one portfolio: no total row
   });
   it('shows the portfolio code in mono before the name', () => {

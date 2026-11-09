@@ -17,6 +17,7 @@ import { useStore } from '@/state/store';
 import { Button, DataTierPill, EmptyState, Modal, PortfolioName, buttonClass } from '@/shared/ui';
 import { date, hectares, localDate, money } from '@/shared/format';
 import { countryInfo, sortPortfolios, summarise, type PortfolioSummary } from './portfolioModel';
+import { paths } from '@/shell/paths';
 
 export function PortfoliosPage() {
   const portfolios = useStore((s) => s.portfolios);
@@ -57,12 +58,12 @@ export function PortfoliosPage() {
         </div>
         <div className="flex flex-wrap gap-2">
           {draft && (
-            <Link className={buttonClass('secondary', 'md')} to="/portfolios/new">
+            <Link className={buttonClass('secondary', 'md')} to={paths.newPortfolio}>
               <PencilLine size={16} />
               Continue draft
             </Link>
           )}
-          <Link className={buttonClass('primary', 'md')} to="/portfolios/new">
+          <Link className={buttonClass('primary', 'md')} to={paths.newPortfolio}>
             <FilePlus2 size={16} />
             New portfolio
           </Link>
@@ -88,7 +89,7 @@ export function PortfoliosPage() {
             title="No portfolios yet"
             description="Create a new portfolio: pick a country, draw or pick farms from the CIREN orchard cadastre, add loans and rules."
             action={
-              <Link className={buttonClass('primary', 'sm')} to="/portfolios/new">
+              <Link className={buttonClass('primary', 'sm')} to={paths.newPortfolio}>
                 New portfolio
               </Link>
             }
@@ -251,7 +252,7 @@ function PortfolioRow({
             {c.flag || <Globe2 size={16} />}
           </span>
           <div className="min-w-0">
-            <Link to={`/portfolios/${portfolio.id}`} className="block max-w-[260px] truncate font-medium text-ink hover:text-brand focus:outline-none focus-visible:underline">
+            <Link to={paths.portfolio(portfolio.id)} className="block max-w-[260px] truncate font-medium text-ink hover:text-brand focus:outline-none focus-visible:underline">
               <PortfolioName name={portfolio.name} code={portfolio.code} />
             </Link>
             <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-xs text-muted">
@@ -276,7 +277,7 @@ function PortfolioRow({
       <td className={TDN}>{s.rulesEdited}</td>
       <td className={`${TD} whitespace-nowrap text-right`}>
         <div className="flex items-center justify-end gap-1">
-          <Link to={`/portfolios/${portfolio.id}`} className={buttonClass('secondary', 'sm')} aria-label={`Open ${name}`}>
+          <Link to={paths.portfolio(portfolio.id)} className={buttonClass('secondary', 'sm')} aria-label={`Open ${name}`}>
             Open
             <ArrowRight size={16} />
           </Link>

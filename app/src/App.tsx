@@ -21,6 +21,7 @@ import { useStore } from '@/state/store';
 import { bootstrapSamples } from '@/state/samples';
 import { ConnectionDot, SidebarNav } from '@/shell/Sidebar';
 import { routeContext } from '@/shell/routeContext';
+import { paths } from '@/shell/paths';
 
 export default function App() {
   const { pathname } = useLocation();
@@ -88,7 +89,7 @@ export default function App() {
           >
             <Menu size={20} />
           </button>
-          <Link to="/" aria-label="BrotIA home" className="rounded-card focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/30">
+          <Link to={paths.home} aria-label="BrotIA home" className="rounded-card focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/30">
             <BrotiaLogo size={22} />
           </Link>
           <div className="flex-1" />
@@ -100,13 +101,14 @@ export default function App() {
         <div className="flex min-h-0 flex-1">
           <main ref={mainRef} className="min-h-0 min-w-0 flex-1 overflow-y-auto bg-white">
             <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/incidents" element={<IncidentsPage />} />
-              <Route path="/portfolios" element={<PortfoliosPage />} />
-              <Route path="/portfolios/new" element={<WizardPage />} />
-              <Route path="/portfolios/:portfolioId" element={<PortfolioReportPage />} />
-              <Route path="/portfolios/:portfolioId/farms/:farmId" element={<FarmPage />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
+              {/* Relative to the /app/* mount in main.tsx (src/shell/paths.ts) */}
+              <Route index element={<HomePage />} />
+              <Route path="incidents" element={<IncidentsPage />} />
+              <Route path="portfolios" element={<PortfoliosPage />} />
+              <Route path="portfolios/new" element={<WizardPage />} />
+              <Route path="portfolios/:portfolioId" element={<PortfolioReportPage />} />
+              <Route path="portfolios/:portfolioId/farms/:farmId" element={<FarmPage />} />
+              <Route path="*" element={<Navigate to={paths.home} replace />} />
             </Routes>
           </main>
           {agentOpen && (

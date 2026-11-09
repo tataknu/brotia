@@ -28,6 +28,7 @@ import type {
 } from './reportModel';
 import { TIERS_DESC } from './reportModel';
 import { ChartCard, TierChip } from './parts';
+import { paths } from '@/shell/paths';
 
 const num = 'font-mono tabular-nums';
 const th = 'px-3 py-2 text-xs font-medium text-muted';
@@ -185,7 +186,7 @@ export function UpcomingInstallmentsList({ portfolioId, rows, currency, asOf, da
               {rows.map((r) => (
                 <tr key={`${r.farmId}:${r.dueDate}`}>
                   <th scope="row" className="px-3 py-2 pl-5 text-left font-normal">
-                    <Link to={`/portfolios/${portfolioId}/farms/${r.farmId}`} className="inline-flex items-center gap-1.5 font-medium text-ink hover:text-brand">
+                    <Link to={paths.farm(portfolioId, r.farmId)} className="inline-flex items-center gap-1.5 font-medium text-ink hover:text-brand">
                       <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: cropColor(r.crop) }} aria-hidden />
                       {r.farmName}
                     </Link>

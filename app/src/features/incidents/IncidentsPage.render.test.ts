@@ -1,7 +1,7 @@
 /** Server render of the Incidents page and its sidebar item (node). Effects do not run in SSR, so every portfolio is still assessing. */
 import { createElement } from 'react';
 import { renderToString } from 'react-dom/server';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
 import App from '@/App';
 import { loadFixture } from '@/shared/testing/fixtures';
@@ -10,6 +10,9 @@ import { useStore } from '@/state/store';
 import { IncidentsPage } from './IncidentsPage';
 
 const sample = loadFixture<Portfolio>('portfolio-sample.json');
+
+/** App mounted under /app/* as in main.tsx. */
+const AppAtRoot = () => createElement(Routes, null, createElement(Route, { path: '/app/*', element: createElement(App) }));
 
 const render = (el: Parameters<typeof createElement>[0], path = '/incidents') => {
   // zustand v5 hands React its INITIAL state as the server snapshot; copy the live state in (test-only).
@@ -26,7 +29,7 @@ describe('IncidentsPage', () => {
     const html = render(IncidentsPage);
     expect(html).toContain('Incidents');
     expect(html).toContain('No portfolios yet');
-    expect(html).toContain('href="/portfolios/new"');
+    expect(html).toContain('href="/app/portfolios/new"');
   });
 
   it('shows the filters and a loading state while assessments run', () => {
@@ -43,9 +46,9 @@ describe('IncidentsPage', () => {
     expect(render(IncidentsPage, '/incidents?window=7d')).toMatch(/aria-checked="true"[^>]*>7 days/);
   });
 
-  it('is routed at /incidents with a sidebar item under Home', () => {
-    const html = render(App, '/incidents');
-    expect(html).toContain('href="/incidents"');
+  it('is routed at /app/incidents with a sidebar item under Home', () => {
+    const html = render(AppAtRoot, '/app/incidents');
+    expect(html).toContain('href="/app/incidents"');
     expect(html.indexOf('>Home<')).toBeLessThan(html.indexOf('>Incidents<'));
     expect(html.indexOf('>Incidents<')).toBeLessThan(html.indexOf('>Portfolios<'));
     // No assessment yet → no badge.

@@ -12,6 +12,7 @@ import { riskColor } from '@/shared/chartColors';
 import { CREDIT_ACTION_LABELS, PERIL_LABELS, date, money, number, pct } from '@/shared/format';
 import { kpis } from '@/features/dashboard/dashboardModel';
 import type { Incident, ReportTotals } from './reportModel';
+import { paths } from '@/shell/paths';
 
 const num = 'font-mono tabular-nums';
 
@@ -109,7 +110,7 @@ export function IncidentsList({ portfolioId, incidents, nearby, asOf, currency }
                 <p className="flex flex-wrap items-center gap-x-2 text-ink">
                   <span className="text-xs text-muted">{i.kind === 'event' ? (i.event ? PERIL_LABELS[i.event.kind] ?? 'Event' : 'Event') : (i.action ? CREDIT_ACTION_LABELS[i.action] : 'Credit rule')}</span>
                   {i.kind === 'credit_rule' ? (
-                    <Link to={`/portfolios/${portfolioId}/farms/${i.farmIds[0]}`} className="font-medium hover:text-brand">
+                    <Link to={paths.farm(portfolioId, i.farmIds[0])} className="font-medium hover:text-brand">
                       {i.title}
                     </Link>
                   ) : (

@@ -8,6 +8,7 @@ import type { CreditAction, Currency, Portfolio } from '@/domain/types';
 import { Badge, CropPill, type BadgeTone } from '@/shared/ui';
 import { CREDIT_ACTION_LABELS, date, money } from '@/shared/format';
 import { actionCounts, type ActionRow } from './dashboardModel';
+import { paths } from '@/shell/paths';
 
 const ICON: Record<CreditAction, LucideIcon> = { restructure_review: ShieldAlert, high: ShieldAlert, field_visit: MapPinned, watch: Eye };
 const TONE: Record<CreditAction, BadgeTone> = { restructure_review: 'danger', high: 'danger', field_visit: 'warn', watch: 'warn' };
@@ -45,7 +46,7 @@ export function CreditActionsPanel({ rows, portfolio, currency }: { rows: Action
                   </Badge>
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                      <Link to={`/portfolios/${portfolio.id}/farms/${r.farmId}`} className="font-medium text-ink hover:text-brand">
+                      <Link to={paths.farm(portfolio.id, r.farmId)} className="font-medium text-ink hover:text-brand">
                         {r.farmName}
                       </Link>
                       {r.crop && <CropPill crop={r.crop} />}

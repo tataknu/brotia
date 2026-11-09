@@ -15,6 +15,7 @@ import { CREDIT_ACTION_LABELS, date, money, number, pct } from '@/shared/format'
 import { dueLabel, installmentInfo } from '@/features/dashboard/dashboardModel';
 import type { ReportRow, ReportTotals, SortKey, SortState } from './reportModel';
 import { TierChip } from './parts';
+import { paths } from '@/shell/paths';
 
 const ACTION_TONE: Record<CreditAction, string> = {
   restructure_review: 'bg-danger-soft text-danger-ink',
@@ -146,7 +147,7 @@ export function ReportTable({
               >
                 <th scope="row" className="max-w-[300px] py-2 pl-4 pr-2.5 text-left font-normal">
                   <Link
-                    to={`/portfolios/${portfolioId}/farms/${r.farmId}`}
+                    to={paths.farm(portfolioId, r.farmId)}
                     onClick={(e) => e.stopPropagation()}
                     className="block truncate rounded font-medium text-ink hover:text-brand focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
                     title={r.headline}

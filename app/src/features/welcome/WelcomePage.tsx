@@ -16,6 +16,7 @@ import { isQaTarget } from './story/qa';
 import { SCENES } from './story/timeline';
 import { useStoryData } from './story/useStoryData';
 import { WarmUp } from './WarmUp';
+import { paths } from '@/shell/paths';
 
 const GRID = ['.....AA', '.B..AAA', 'BBBSAA.', '.BBS...', '...S...', '...S...', '0123456'];
 const RAMP = ['#1F6B43', '#2FA05A', '#8CC63F', '#E3C93B', '#E8933A', '#D0533A', '#9E2F3A'];
@@ -211,7 +212,7 @@ export function WelcomePage() {
   const enter = useCallback(() => {
     if (leaving) return;
     setLeaving(true);
-    window.setTimeout(() => navigate('/'), reduce ? 0 : 480);
+    window.setTimeout(() => navigate(paths.home), reduce ? 0 : 480);
   }, [leaving, navigate, reduce]);
 
   const finishLogo = useCallback(() => {

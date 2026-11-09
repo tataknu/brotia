@@ -18,6 +18,7 @@ import { date } from '@/shared/format';
 import { sortPortfolios } from '@/features/portfolios/portfolioModel';
 import { useIncidentBadge } from '@/features/incidents/useIncidentBadge';
 import { routeContext } from './routeContext';
+import { paths } from '@/shell/paths';
 
 export type NavVariant = 'rail' | 'drawer';
 
@@ -65,14 +66,14 @@ export function SidebarNav({ variant, onNavigate, onToggleAgent }: { variant: Na
   const asOf = useDataAsOf();
   const full = variant === 'drawer';
 
-  const onPortfolios = pathname === '/portfolios';
-  const onNew = pathname === '/portfolios/new';
+  const onPortfolios = pathname === paths.portfolios;
+  const onNew = pathname === paths.newPortfolio;
 
   return (
     <div className="flex h-full min-h-0 flex-col">
       <div className={clsx('flex h-16 shrink-0 items-center px-5', !full && 'max-lg:justify-center max-lg:px-0')}>
         <Link
-          to="/"
+          to={paths.home}
           onClick={onNavigate}
           aria-label="BrotIA home"
           className="rounded-card focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
@@ -84,7 +85,7 @@ export function SidebarNav({ variant, onNavigate, onToggleAgent }: { variant: Na
       <nav aria-label="Main" className={clsx('min-h-0 flex-1 overflow-y-auto px-3 pb-3', !full && 'max-lg:px-2')}>
         <ul className="space-y-0.5">
           <li>
-            <NavLink to="/" end onClick={onNavigate} aria-label="Home" title="Home" className={({ isActive }) => itemClass(isActive, variant)}>
+            <NavLink to={paths.home} end onClick={onNavigate} aria-label="Home" title="Home" className={({ isActive }) => itemClass(isActive, variant)}>
               {({ isActive }) => (
                 <>
                   <House size={18} className={iconClass(isActive)} />
@@ -97,7 +98,7 @@ export function SidebarNav({ variant, onNavigate, onToggleAgent }: { variant: Na
             <IncidentsItem variant={variant} onNavigate={onNavigate} />
           </li>
           <li>
-            <Link to="/portfolios" onClick={onNavigate} aria-label="Portfolios" title="Portfolios" aria-current={onPortfolios ? 'page' : undefined} className={itemClass(onPortfolios, variant)}>
+            <Link to={paths.portfolios} onClick={onNavigate} aria-label="Portfolios" title="Portfolios" aria-current={onPortfolios ? 'page' : undefined} className={itemClass(onPortfolios, variant)}>
               <BriefcaseBusiness size={18} className={iconClass(onPortfolios || !!ctx.portfolioId)} />
               <Label variant={variant}>Portfolios</Label>
               {sorted.length > 0 && <span className={clsx('ml-auto font-mono text-xs text-muted', !full && 'hidden lg:inline')}>{sorted.length}</span>}
@@ -109,7 +110,7 @@ export function SidebarNav({ variant, onNavigate, onToggleAgent }: { variant: Na
                   return (
                     <li key={p.id}>
                       <Link
-                        to={`/portfolios/${p.id}`}
+                        to={paths.portfolio(p.id)}
                         onClick={onNavigate}
                         aria-current={active && !ctx.farmId ? 'page' : undefined}
                         title={portfolioLabel(p)}
@@ -127,7 +128,7 @@ export function SidebarNav({ variant, onNavigate, onToggleAgent }: { variant: Na
             )}
           </li>
           <li>
-            <Link to="/portfolios/new" onClick={onNavigate} aria-label="New portfolio" title="New portfolio" aria-current={onNew ? 'page' : undefined} className={itemClass(onNew, variant)}>
+            <Link to={paths.newPortfolio} onClick={onNavigate} aria-label="New portfolio" title="New portfolio" aria-current={onNew ? 'page' : undefined} className={itemClass(onNew, variant)}>
               <Plus size={18} className={iconClass(onNew)} />
               <Label variant={variant}>New portfolio</Label>
             </Link>
@@ -172,7 +173,7 @@ function IncidentsItem({ variant, onNavigate }: { variant: NavVariant; onNavigat
   return (
     <>
       {probes}
-      <NavLink to="/incidents" onClick={onNavigate} aria-label={label} title={label} className={({ isActive }) => itemClass(isActive, variant)}>
+      <NavLink to={paths.incidents} onClick={onNavigate} aria-label={label} title={label} className={({ isActive }) => itemClass(isActive, variant)}>
         {({ isActive }) => (
           <>
             <span className="relative inline-flex shrink-0">

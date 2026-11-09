@@ -12,6 +12,7 @@ import { Button, Modal, Stepper } from '@/shared/ui';
 import { StepPortfolio } from './portfolio/StepPortfolio';
 import { StepCredit } from './credit/StepCredit';
 import { LAST_STEP, WIZARD_STEPS, maxReachableStep, stepBlocker } from './gates';
+import { paths } from '@/shell/paths';
 
 const StepFarms = lazy(() => import('./farms/StepFarms'));
 const StepZones = lazy(() => import('./zones/StepZones'));
@@ -59,7 +60,7 @@ export function WizardPage() {
     if (isLast) {
       leaving.current = true;
       const id = commitDraft();
-      if (id) navigate(`/portfolios/${id}`);
+      if (id) navigate(paths.portfolio(id));
       return;
     }
     setWizardStep(step + 1);
@@ -114,7 +115,7 @@ export function WizardPage() {
                 onClick={() => {
                   leaving.current = true;
                   setConfirmDiscard(false);
-                  navigate('/portfolios');
+                  navigate(paths.portfolios);
                   discardDraft();
                 }}
               >

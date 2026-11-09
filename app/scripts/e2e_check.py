@@ -11,7 +11,7 @@ chrome-headless-shell; a Python with the 'websockets' package (service/.venv has
 
 The report is walked tab by tab (Overview, Payments, Exposures, Risks, Demographics, synced to ?tab=), with a
 keyboard check (ArrowRight on the tab list) and a back-navigation check of the water status lookups.
-The Incidents page (/incidents, v1.4) is checked in both modes: the sidebar item sits under Home and its 24 h badge
+The Incidents page (/app/incidents, v1.4) is checked in both modes: the sidebar item sits under Home and its 24 h badge
 equals the page's 24 h rows; rows are grouped critical → warning → events; event rows link to the farm's Events tab
 and credit rules to its Overview; both source popovers open; the kind filter and the 7-day window work.
 Home (v1.4) is checked for its order (payment KPIs, payment schedule by tier, risk per portfolio, allocation collapsed,
@@ -180,10 +180,10 @@ async def step(name, coro):
 
 async def home_and_sample(c):
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=APP + '/')
+    await c.call('Page.navigate', url=APP + '/app')
     await asyncio.sleep(1.5)
     await c.js('localStorage.clear()')
-    await c.call('Page.navigate', url=APP + '/')
+    await c.call('Page.navigate', url=APP + '/app')
     await c.wait(f"{TXT}.includes('BrotIA') || !!document.querySelector('[aria-label=Sidebar]')", label='shell')
     await asyncio.sleep(1.0)
     empty = await c.js(f"{TXT}.slice(0, 2000)")
@@ -196,26 +196,26 @@ async def home_and_sample(c):
         await c.wait(f"{TXT}.includes('Live data')", timeout=15, label='live pill')
         check('live: connection pill says Live data', True)
 
-    sel = f"aside[aria-label=Sidebar] a[href='/portfolios/{PF}']"
-    sel_sur = f"aside[aria-label=Sidebar] a[href='/portfolios/{PF_SUR}']"
+    sel = f"aside[aria-label=Sidebar] a[href='/app/portfolios/{PF}']"
+    sel_sur = f"aside[aria-label=Sidebar] a[href='/app/portfolios/{PF_SUR}']"
     await c.wait(f'!!document.querySelector("{sel}") && !!document.querySelector("{sel_sur}")', timeout=60, label='both samples auto-loaded')
     side = await c.js(f"[...document.querySelectorAll('aside[aria-label=Sidebar] a')].map(a => a.textContent)")
     check(f'{tag}both samples auto-load on first start; the sidebar lists both with their codes',
           any('CLSF1' in x and 'Chile Specialty Fruit Credit I' in x for x in side) and any('CLSO2' in x and 'Southern Orchards Credit II' in x for x in side),
           json.dumps([x for x in side if x and ('CLS' in x)]))
-    await c.call('Page.navigate', url=APP + '/portfolios')
+    await c.call('Page.navigate', url=APP + '/app/portfolios')
     await c.wait(f"{TXT}.includes('Restore sample portfolios') && {TXT}.includes('CLSF1')", timeout=30, label='portfolios list')
     pl = await c.js(f"(t => ({{ load: t.includes('Load sample'), card: !!document.querySelector('[aria-label=\"Sample portfolios\"]'), demo: /Demo/.test(t) }}))({TXT})")
     check(f'{tag}Portfolios page: no "load sample" UI, no "Demo" names, restore link present', not pl['load'] and not pl['card'] and not pl['demo'], json.dumps(pl))
     await c.js(f'document.querySelector("{sel}").click()')
-    await c.wait(f"location.pathname === '/portfolios/{PF}'", timeout=60, label='report route')
+    await c.wait(f"location.pathname === '/app/portfolios/{PF}'", timeout=60, label='report route')
     check(f'{tag}sample-cl opens its report', True)
 
 
 async def sur_book(c):
     """The second sample (ADR-0026): its report with a TOTAL row, one farm overview, and Home showing both books."""
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF_SUR}')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF_SUR}')
     await c.wait(f"(t => t.includes('CLSO2') && t.includes('Southern Orchards Credit II') && /TOTAL[\\s\\S]{{0,80}}100\\.0%/.test(t) && document.querySelectorAll('table tbody tr').length >= 9)({TXT})",
                  timeout=240, label='sur report')
     await c.settle(120)
@@ -224,12 +224,12 @@ async def sur_book(c):
     check(f'{tag}sur report: 9 farms, TOTAL row', k['rows'] >= 9, json.dumps(k))
     if not OFFLINE:
         await full_page_shot(c, '60-report-sur.png')
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF_SUR}/farms/{SUR_FARM}?tab=overview')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF_SUR}/farms/{SUR_FARM}?tab=overview')
     await c.wait(f"{TXT}.includes('Maule (Talca) cherries') && /Risk score|score/i.test({TXT})", timeout=180, label='sur farm')
     await c.settle(120)
     t = await c.js(f"{TXT}.slice(0, 600)")
     check(f'{tag}sur farm overview renders ({SUR_FARM})', 'Needs the live service' not in t and 'Assessment needs the live service' not in t, t.replace('\n', ' | ')[:200])
-    await c.call('Page.navigate', url=APP + '/')
+    await c.call('Page.navigate', url=APP + '/app')
     await c.wait(f"{TXT}.includes('Risk as of') && !{TXT}.includes('Tier pending')", timeout=180, label='home with both')
     h = await c.js(f"""(() => {{ const t = {TXT}; const s = document.querySelector('section[aria-labelledby=risk-h]');
         return {{ riskRows: s ? s.querySelectorAll('article').length : -1, cl: t.includes('CLSF1'), sur: t.includes('CLSO2') }}; }})()""")
@@ -329,7 +329,7 @@ async def report(c):
     await c.wait("location.pathname.includes('/farms/')", timeout=10, label='farm page')
     await asyncio.sleep(1.5)
     await c.js('history.back()')
-    await c.wait(f"location.pathname === '/portfolios/{PF}'", timeout=10, label='back to report')
+    await c.wait(f"location.pathname === '/app/portfolios/{PF}'", timeout=10, label='back to report')
     await click_tab(c, 'Risks')
     try:
         await c.wait(f"/12 of 12 farms checked(?!…)/.test({TXT})", timeout=60, label='water status after back')
@@ -364,7 +364,7 @@ TAB_CHECKS = {
 
 async def farm_tabs(c, farm_id, short, shots):
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF}/farms/{farm_id}')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF}/farms/{farm_id}')
     await c.wait(f"{TXT}.includes('Risk score') && /\\b(High stress|Watch|Normal)\\b/.test({TXT}) && !!document.querySelector('[role=tablist]')", timeout=180, label=f'{farm_id} header')
     tier = await c.js(f"({TXT}.match(/\\b(High stress|Watch|Normal)\\b/)||[])[0]")
     check(f'{tag}{short}: header with score and tier', bool(tier), f'tier={tier}')
@@ -443,7 +443,7 @@ OVERVIEW_EXPECT = {
 
 async def overview_only(c, farm_id, short, expect, more, shot):
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF}/farms/{farm_id}')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF}/farms/{farm_id}')
     await c.wait(f"(() => {{ const t = {TXT}; return {TAB_CHECKS['overview']}; }})()", timeout=180, label=f'{short} overview')
     await c.settle(120)
     ov = await overview_info(c)
@@ -461,7 +461,7 @@ HOME_BARS = "[...document.querySelectorAll('section[aria-labelledby=pay-h] path.
 
 async def home_with_data(c):
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=APP + '/')
+    await c.call('Page.navigate', url=APP + '/app')
     await c.wait(f"{TXT}.includes('Portfolio overview') && /Due in next 90 days\\n\\$[\\d,]{{4,}}/.test({TXT})", timeout=120, label='home KPIs')
     await c.settle(120)
     await c.wait(f"!{TXT}.includes('Tier pending') && {TXT}.includes('Risk as of')", timeout=60, label='home tiers')
@@ -495,7 +495,7 @@ async def home_while_assessing(c):
     c.hold, c.held = True, []
     await c.call('Fetch.enable', patterns=[{'urlPattern': '*://localhost:8787/assess/portfolio*'}])
     try:
-        await c.call('Page.navigate', url=APP + '/')
+        await c.call('Page.navigate', url=APP + '/app')
         await c.wait(f"/Due in next 90 days\\n\\$[\\d,]{{4,}}/.test({TXT}) && {TXT}.includes('Tier pending') && /Assessing \\d+ of \\d+/.test({TXT})", timeout=30, label='home while assessing')
         await asyncio.sleep(1.0)
         k = await c.js(f"""(() => {{ const t = {TXT}; return {{ held: 0, bars: {HOME_BARS}, upcoming: document.querySelectorAll('section[aria-labelledby=pay-h] tbody tr').length,
@@ -537,7 +537,7 @@ INCIDENTS_INFO = r"""(() => {
 async def incidents_page(c):
     """Sidebar Incidents item (under Home, 24 h badge) and the /incidents page: groups, links, provenance, filters."""
     tag = 'offline: ' if OFFLINE else ''
-    await c.call('Page.navigate', url=APP + '/incidents')
+    await c.call('Page.navigate', url=APP + '/app/incidents')
     await c.wait(f"{TXT}.includes('Incidents') && (!!document.querySelector('[data-testid=incident-row]') || {TXT}.includes('No incidents in'))", timeout=180, label='incidents list')
     await c.settle(120)
     d = await c.js(INCIDENTS_INFO)
@@ -568,7 +568,7 @@ async def incidents_page(c):
 
 
 async def agent_panel(c):
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF}/farms/cl-ovalle-table-grape?tab=overview')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF}/farms/cl-ovalle-table-grape?tab=overview')
     await c.wait(f"/verdict/i.test({TXT}) && {TXT}.includes('Next payment')", timeout=120, label='farm overview')
     await c.click_button('Farming agent', 'aside[aria-label=Sidebar] button')
     await c.wait("!!document.querySelector('[aria-label=\"Question for the farming agent\"]')", timeout=15, label='agent panel')
@@ -591,20 +591,20 @@ async def agent_panel(c):
 
 async def phone(c):
     await c.viewport(390, 844, mobile=True)
-    await c.call('Page.navigate', url=APP + '/')
+    await c.call('Page.navigate', url=APP + '/app')
     await c.wait(f"{TXT}.includes('Due in next 90 days') && {TXT}.includes('Total outstanding')", timeout=120, label='phone home')
     await c.settle(120)
     await c.wait(f"!{TXT}.includes('Tier pending')", timeout=60, label='phone home tiers')
     w = await c.js("document.documentElement.scrollWidth")
     check('phone: home fits 390 px without horizontal scroll', w <= 390, f'scrollWidth={w}')
     await c.shot('40-phone-home.png')
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF}')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF}')
     await c.wait(f"{TXT}.includes('Farms and loans')", timeout=120, label='phone report')
     await c.settle(120)
     w = await c.js("document.documentElement.scrollWidth")
     check('phone: report fits 390 px without horizontal scroll', w <= 390, f'scrollWidth={w}')
     await c.shot('41-phone-report.png')
-    await c.call('Page.navigate', url=f'{APP}/portfolios/{PF}/farms/cl-ovalle-table-grape')
+    await c.call('Page.navigate', url=f'{APP}/app/portfolios/{PF}/farms/cl-ovalle-table-grape')
     await c.wait(f"/verdict/i.test({TXT}) && {TXT}.includes('Next payment')", timeout=120, label='phone farm overview')
     await c.settle(120)
     await asyncio.sleep(1.0)
@@ -615,7 +615,7 @@ async def phone(c):
 
 
 async def wizard(c):
-    await c.call('Page.navigate', url=APP + '/portfolios/new')
+    await c.call('Page.navigate', url=APP + '/app/portfolios/new')
     await c.wait("!!document.querySelector('input[placeholder^=\"e.g. Central\"]')", label='wizard step 1')
     await c.js("window.__h.setVal(document.querySelector('input[placeholder^=\"e.g. Central\"]'), 'Valle de Limarí orchards')")
     await c.js("window.__h.setVal(document.querySelector('input[placeholder^=\"e.g. Banco\"]'), 'Test lender')")
@@ -659,7 +659,7 @@ async def main():
             if not OFFLINE:
                 await step('home with data', home_with_data(c))
                 await step('home while assessing', home_while_assessing(c))
-                await c.call('Page.navigate', url=APP + '/portfolios')
+                await c.call('Page.navigate', url=APP + '/app/portfolios')
                 await c.wait(f"{TXT}.includes('Your portfolios')", label='portfolios list')
                 await asyncio.sleep(0.8)
                 await c.shot('02-portfolios.png')

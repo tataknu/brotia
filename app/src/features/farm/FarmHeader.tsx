@@ -16,6 +16,7 @@ import { Button, CropPill, PortfolioName, TierBadge } from '@/shared/ui';
 import { TIER_COLORS } from '@/shared/chartColors';
 import { dueInLabel } from './farmData';
 import { Skeleton } from './parts';
+import { paths } from '@/shell/paths';
 
 export function SourceBadge({ source, snapshotDate }: { source: DataSource | undefined; snapshotDate: string | null }) {
   const cls = 'inline-flex items-center gap-1.5 whitespace-nowrap rounded-full px-2 py-0.5 text-xs font-medium';
@@ -87,7 +88,7 @@ export function FarmHeader({
     <header className="space-y-3">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
         <Link
-          to={`/portfolios/${portfolio.id}`}
+          to={paths.portfolio(portfolio.id)}
           className="inline-flex items-center gap-1.5 rounded-card text-sm text-muted hover:text-ink focus:outline-none focus-visible:ring-2 focus-visible:ring-brand/30"
         >
           <ArrowLeft size={16} />

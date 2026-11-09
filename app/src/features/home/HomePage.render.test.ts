@@ -26,7 +26,7 @@ describe('HomePage', () => {
     expect(html).toContain('Portfolio overview');
     expect(html).not.toContain('Multiple allocation performance');
     expect(html).toContain('No portfolios yet');
-    expect(html).toContain('href="/portfolios/new"');
+    expect(html).toContain('href="/app/portfolios/new"');
   });
 
   it('never blanks while assessments load: payments and outstanding from the loan schedules, tiers pending', () => {
@@ -51,7 +51,7 @@ describe('HomePage', () => {
     expect(html).not.toMatch(/<details[^>]*open/);
     expect(html).toContain('Second book');
     expect(html).toContain('Open report');
-    expect(html).toContain(`href="/portfolios/${sample.id}"`);
+    expect(html).toContain(`href="/app/portfolios/${sample.id}"`);
   });
 
   it('separates currencies instead of adding them', () => {

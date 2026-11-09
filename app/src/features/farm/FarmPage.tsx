@@ -21,6 +21,7 @@ import { PeersCard, WaterLadderCard } from './WaterPeersCards';
 import { RulesTab } from './RulesTab';
 import { EventsTab } from './EventsTab';
 import { ErrorPanel, Skeleton } from './parts';
+import { paths } from '@/shell/paths';
 
 const ImageryCard = lazy(() => import('./ImageryViewer').then((m) => ({ default: m.ImageryCard })));
 const SeriesSection = lazy(() => import('./FarmCharts').then((m) => ({ default: m.SeriesSection })));
@@ -69,7 +70,7 @@ export function FarmPage() {
           title="Portfolio not found"
           description="This portfolio is not saved in this browser. Load the sample portfolio or create a new one."
           action={
-            <Link to="/portfolios" className={buttonClass('primary', 'sm')}>
+            <Link to={paths.portfolios} className={buttonClass('primary', 'sm')}>
               Go to portfolios
             </Link>
           }
@@ -85,7 +86,7 @@ export function FarmPage() {
           title="Farm not found"
           description={`“${portfolio.name}” has no farm with this id. It may have been removed.`}
           action={
-            <Link to={`/portfolios/${portfolio.id}`} className={buttonClass('primary', 'sm')}>
+            <Link to={paths.portfolio(portfolio.id)} className={buttonClass('primary', 'sm')}>
               Back to the portfolio
             </Link>
           }

@@ -10,6 +10,7 @@
 import type { CreditAction, Currency, Portfolio, PortfolioAssessment } from '@/domain/types';
 import { incidents, nearbyEventCount, type Incident } from '@/features/report/reportModel';
 import { splitActionMessage } from '@/features/farm/overviewModel';
+import { paths } from '@/shell/paths';
 
 /* ───────────────────────── windows and filters ───────────────────────── */
 
@@ -225,6 +226,6 @@ export function badgeSummary(entries: readonly PortfolioEntry[]): BadgeSummary {
 
 /** Farm link for a row: events open the farm's Events tab, credit rules its Overview. */
 export function farmHref(r: Pick<IncidentRow, 'portfolioId' | 'incident'>, farmId: string): string {
-  const base = `/portfolios/${r.portfolioId}/farms/${farmId}`;
+  const base = paths.farm(r.portfolioId, farmId);
   return r.incident.kind === 'event' ? `${base}?tab=events` : base;
 }

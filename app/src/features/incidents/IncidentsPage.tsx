@@ -31,6 +31,7 @@ import {
   type IncidentSeverity,
   type PortfolioEntry,
 } from './incidentsModel';
+import { paths } from '@/shell/paths';
 
 export function IncidentsPage() {
   const portfolios = useStore((s) => s.portfolios);
@@ -46,10 +47,10 @@ export function IncidentsPage() {
           description="Create a portfolio or load the Chilean sample to follow its credit-rule triggers and climate events here."
           action={
             <div className="flex flex-wrap justify-center gap-2">
-              <Link to="/portfolios/new" className={buttonClass('primary', 'sm')}>
+              <Link to={paths.newPortfolio} className={buttonClass('primary', 'sm')}>
                 <Plus size={16} /> New portfolio
               </Link>
-              <Link to="/portfolios" className={buttonClass('secondary', 'sm')}>
+              <Link to={paths.portfolios} className={buttonClass('secondary', 'sm')}>
                 Portfolios
               </Link>
             </div>
@@ -316,7 +317,7 @@ function IncidentTable({ groups, ruleNames, states }: { groups: ReturnType<typeo
                     )}
                   </td>
                   <td className="max-w-[12rem] px-3 py-2.5">
-                    <Link to={`/portfolios/${r.portfolioId}`} className="block truncate text-ink hover:text-brand focus:outline-none focus-visible:underline">
+                    <Link to={paths.portfolio(r.portfolioId)} className="block truncate text-ink hover:text-brand focus:outline-none focus-visible:underline">
                       <PortfolioName name={r.portfolioName} code={r.portfolioCode} />
                     </Link>
                   </td>

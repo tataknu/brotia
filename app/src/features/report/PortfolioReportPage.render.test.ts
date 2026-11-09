@@ -167,7 +167,7 @@ describe('ReportTable', () => {
   it('marks the sorted column and links each farm', () => {
     const html = render();
     expect(html).toContain('aria-sort="descending"');
-    expect(html).toContain(`href="/portfolios/${sample.id}/farms/cl-ovalle-table-grape"`);
+    expect(html).toContain(`href="/app/portfolios/${sample.id}/farms/cl-ovalle-table-grape"`);
     // weighted risk per row: 50 % × 58.6 = 29.30
     expect(html).toContain('29.30');
     expect(html.indexOf('cl-ovalle-table-grape')).toBeLessThan(html.indexOf('cl-requinoa-cherry'));

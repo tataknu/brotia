@@ -46,6 +46,7 @@ import { IncidentsList, KpiStrip } from './ReportKpis';
 import { FarmProbes } from './FarmProbes';
 import { AssessmentError, AssessmentLoading, SourcePill, Warnings } from './parts';
 import { useInsuranceColumn } from './insurance/useInsuranceColumn';
+import { paths } from '@/shell/paths';
 
 const PaymentsTab = lazy(() => import('./tabs/PaymentsTab'));
 const ExposuresTab = lazy(() => import('./tabs/ExposuresTab'));
@@ -112,7 +113,7 @@ export function PortfolioReportPage() {
           title="Portfolio not found"
           description="It may have been deleted, or it lives in another browser. Portfolios are stored in this browser only."
           action={
-            <Link to="/portfolios" className={buttonClass('primary', 'sm')}>
+            <Link to={paths.portfolios} className={buttonClass('primary', 'sm')}>
               Back to portfolios
             </Link>
           }
@@ -122,7 +123,7 @@ export function PortfolioReportPage() {
   }
 
   const country = countryInfo(portfolio.country, countries);
-  const openFarm = (id: string) => navigate(`/portfolios/${portfolio.id}/farms/${id}`);
+  const openFarm = (id: string) => navigate(paths.farm(portfolio.id, id));
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
@@ -173,7 +174,7 @@ export function PortfolioReportPage() {
           title="No farms in this portfolio"
           description="Add farms with loans to see their climate stress and exposure."
           action={
-            <Button size="sm" onClick={() => navigate('/portfolios/new')}>
+            <Button size="sm" onClick={() => navigate(paths.newPortfolio)}>
               New portfolio
             </Button>
           }
